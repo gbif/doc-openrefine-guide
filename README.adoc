@@ -1,0 +1,10 @@
+Guía de Uso Básico de OpenRefine
+--------------------------------
+
+_This is information *about* this document's source code.  It is not part of the document._
+
+The document is available in a temporary location as https://labs.gbif.org/documents/openrefine-guide/[HTML] and https://labs.gbif.org/documents/openrefine-guide/index.pdf[PDF].
+
+The build status is https://builds.gbif.org/job/doc-openrefine-guide/[image:https://builds.gbif.org/job/doc-openrefine-guide/badge/icon[Build status]]
+
+The document is built using AsciiDoc, for guidance on how to make changes or suggestions see the https://labs.gbif.org/documents/documentation-guidelines[GBIF Documentation Guidelines].
