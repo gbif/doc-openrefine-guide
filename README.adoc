@@ -1,5 +1,4 @@
-Guía de Uso Básico de OpenRefine
---------------------------------
+= Guía de Uso Básico de OpenRefine
 
 _This is information *about* this document's source code.  It is not part of the document._
 

@@ -1,24 +1,34 @@
 [[guía-de-uso-básico-de-openrefine]]
-Guía de Uso Básico de OpenRefine
---------------------------------
+== Guía de Uso Básico de OpenRefine
 
-*_Suggested citation:_*
+=== Suggested citation:
 Zermoglio PF, Wieczorek JR. 2019. Guía de Uso Básico de OpenRefine. Versión 3.0 ES version. Available online at #foo.
 
-*_Persistent URI:_*
+=== Persistent URI:
 #foo
 
-*_Authors:_*
+=== Authors:
 Paula F Zermoglio and John Wieczorek (VertNet) are authors of original version and of this version of document.
 
-*_Contributors:_*
+=== Contributors:
 Anabela Plos (Museo Argentino de Ciencias Naturales and GBIF Argentina) and David Bloom (VertNet) contributed to this version of the document.
 
-*_License:_* "Guía de Uso Básico de OpenRefine" is licensed under https://creativecommons.org/licenses/by/4.0[Creative Commons Attribution 4.0 Unported License].
+=== License:
+"Guía de Uso Básico de OpenRefine" is licensed under https://creativecommons.org/licenses/by/4.0[Creative Commons Attribution 4.0 Unported License].
 
-*_Original Language of text:_* ES, *_Original Language of figures/captions:_* ES, *_This version Language of text:_* ES, *_This version Language of figures/captions:_* ES
+=== Original Language of text:
+Spanish.
 
-*_Document Control:_*
+=== Original Language of figures/captions:
+Spanish
+
+=== This version Language of text:
+Spanish
+
+=== This version Language of figures/captions:
+Spanish
+
+=== Document Control:
 Third (GitHub) edition published, March 2019.
 
 First published, February 2017. Authors: Paula F Zermoglio, John R Wieczorek.
