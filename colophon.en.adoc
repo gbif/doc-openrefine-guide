@@ -2,7 +2,7 @@
 == Guía de Uso Básico de OpenRefine
 
 === Suggested citation:
-Zermoglio PF, Wieczorek JR. 2019. Guía de Uso Básico de OpenRefine. Versión 3.0 ES version. Available online at #foo.
+Zermoglio PF, Wieczorek JR. 2019. Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad. Versión 3.0-ES. Available online at #foo. doi:xxxxxx
 
 === Persistent URI:
 #foo
@@ -11,10 +11,9 @@ Zermoglio PF, Wieczorek JR. 2019. Guía de Uso Básico de OpenRefine. Versión 3
 Paula F Zermoglio and John Wieczorek (VertNet) are authors of original version and of this version of document.
 
 === Contributors:
-Anabela Plos (Museo Argentino de Ciencias Naturales and GBIF Argentina) and David Bloom (VertNet) contributed to this version of the document.
 
 === License:
-"Guía de Uso Básico de OpenRefine" is licensed under https://creativecommons.org/licenses/by/4.0[Creative Commons Attribution 4.0 Unported License].
+"Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad. Versión 3.0-ES." is licensed under https://creativecommons.org/licenses/by/4.0[Creative Commons Attribution 4.0 Unported License].
 
 === Original Language of text:
 Spanish.
@@ -29,6 +28,6 @@ Spanish
 Spanish
 
 === Document Control:
-Third (GitHub) edition published, March 2019.
+Third (GitHub) edition published, April 2019.
 
 First published, February 2017. Authors: Paula F Zermoglio, John R Wieczorek.
