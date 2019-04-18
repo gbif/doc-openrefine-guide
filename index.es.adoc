@@ -13,13 +13,10 @@ ifdef::backend-html5[]
 _languageLinks:pdf[Este documento también está disponible en,PDF format]  y languageLinks:languages[en otros idiomas:,.]_
 endif::backend-html5[]
 
-include::colophon.es.adoc[]
-
-== Colofón
-
 include::preface.es.adoc[]
 
 == Preface
+=== Colofón
 === Comentarios Preliminares
 === Objetivo
 === Cómo usar esta guía
