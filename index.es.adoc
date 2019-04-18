@@ -1,0 +1,59 @@
+= Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad
+:toc: left
+:toclevels: 3
+:numbered:
+:revnumber: {git-metadata-sha-short}
+:revdate: {localdate}
+:title-logo-image: img/_src/xxxx.jpg
+:icons: font
+:pagenums:
+:license: https://creativecommons.org/licenses/by/4.0
+
+ifdef::backend-html5[]
+_languageLinks:pdf[Este documento también está disponible en,PDF format]  y languageLinks:languages[en otros idiomas:,.]_
+endif::backend-html5[]
+
+Comentarios Preliminares
+Objetivo
+Cómo usar esta guía
+
+1. Carga de datos y creación de un proyecto
+
+2. Limpieza de datos
+A. Manejo básico de columnas
+A.1. Manejo básico de columnas
+A.2. Nuevas columnas vacías
+A.3. Nuevas columnas a partir transformaciones simples de otras columnas
+B. Uso de Facetas
+B.1. Facetas de texto
+B.2. Facetas y espacios en blanco
+B.3. Facetas numéricas
+B.4. Facetas y duplicados
+B.5. Número de elecciones límite en las Facetas
+C. Uso de Filtros
+C.1. Filtros simples
+C.2. Filtros con expresiones regulares
+D. Uso de Agrupamientos
+D.1. Agrupamientos simples
+E. Deshacer y rehacer cambios
+E.1. Deshacer pasos
+E.2. Guardar pasos para rehacer luego
+E.3. Rehacer pasos guardados
+F. Marcado de registros: banderas y estrellas
+F.1. Marcado con banderas y estrellas
+F.2. Conservación de banderas y estrellas en la exportación
+F.3. Uso de banderas y estrellas para eliminar registros
+
+3. Guardado y exportación de datos y proyectos
+A. Guardado de datos y proyectos
+B. Exportación de datos y proyectos
+
+4. Consultas a servicios externos
+A. Consultas externas a través de URLs
+A.1. Resolución de nombres científicos usando Global Names Resolver
+A.2. Georreferenciación usando GeoLocate
+A.3. Limpieza de fechas utilizando Canadensys Date Parsing
+
+Agradecimientos
+
+Apéndice 1: instalación de OpenRefine
