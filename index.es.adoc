@@ -16,6 +16,9 @@ endif::backend-html5[]
 include::colophon.es.adoc[]
 
 == Colofón
+
+include::preface.es.adoc[]
+== Preface
 === Comentarios Preliminares
 === Objetivo
 === Cómo usar esta guía
