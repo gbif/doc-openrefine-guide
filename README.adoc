@@ -1,9 +1,11 @@
-= Guía de Uso Básico de OpenRefine
+https://builds.gbif.org/job/doc-openrefine-guide/[image:https://builds.gbif.org/job/doc-openrefine-guide/badge/icon[Build status]]
+
+= Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad
+
+La presente guía ha sido construida con fines únicamente pedagógicos. El objetivo de esta guía es mostrar cómo utilizar algunas de las funciones básicas de OpenRefine que pueden utilizarse para evaluar y mejorar la calidad de datos de biodiversidad.
 
 _This is information *about* this document's source code.  It is not part of the document._
 
-The document is available in a temporary location as https://labs.gbif.org/documents/openrefine-guide/[HTML] and https://labs.gbif.org/documents/openrefine-guide/index.pdf[PDF].
-
-The build status is https://builds.gbif.org/job/doc-openrefine-guide/[image:https://builds.gbif.org/job/doc-openrefine-guide/badge/icon[Build status]]
+It is available in Spanish in both HTML and PDF at https://labs.gbif.org/documents/openrefine-guide/[Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad]. The location of these documents is currently considered temporary.
 
 The document is built using AsciiDoc, for guidance on how to make changes or suggestions see the https://labs.gbif.org/documents/documentation-guidelines[GBIF Documentation Guidelines].

@@ -3,5 +3,5 @@
 *.html
 *.pdf
 *.??.adoc
-!*.en.adoc
+!*.es.adoc
 *.mo

@@ -1,0 +1,83 @@
+= Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad
+:toc: left
+:toclevels: 3
+:numbered:
+:revnumber: {git-metadata-sha-short}
+:revdate: {localdate}
+:title-logo-image: img/_src/xxxx.jpg
+:icons: font
+:pagenums:
+:license: https://creativecommons.org/licenses/by/4.0
+
+ifdef::backend-html5[]
+_languageLinks:pdf[Este documento también está disponible en,PDF format]  y languageLinks:languages[en otros idiomas:,.]_
+endif::backend-html5[]
+
+:sectnums!:
+
+include::colophon.es.adoc[]
+
+== Colofón
+
+include::preface.es.adoc[]
+
+== Preface
+=== Comentarios Preliminares
+=== Objetivo
+=== Cómo usar esta guía
+
+:sectnums:
+
+include::xxxx.es.adoc[]
+
+== Carga de datos y creación de un proyecto
+
+include::xxxx.es.adoc[]
+
+== Limpieza de datos
+=== Manejo básico de columnas
+==== Manejo básico de columnas
+==== Nuevas columnas vacías
+==== Nuevas columnas a partir transformaciones simples de otras columnas
+=== Uso de Facetas
+==== Facetas de texto
+==== Facetas y espacios en blanco
+==== Facetas numéricas
+==== Facetas y duplicados
+==== Número de elecciones límite en las Facetas
+=== Uso de Filtros
+==== Filtros simples
+==== Filtros con expresiones regulares
+=== Uso de Agrupamientos
+==== Agrupamientos simples
+=== Deshacer y rehacer cambios
+==== Deshacer pasos
+==== Guardar pasos para rehacer luego
+==== Rehacer pasos guardados
+=== Marcado de registros: banderas y estrellas
+==== Marcado con banderas y estrellas
+==== Conservación de banderas y estrellas en la exportación
+==== Uso de banderas y estrellas para eliminar registros
+
+include::xxxx.es.adoc[]
+
+== Guardado y exportación de datos y proyectos
+=== Guardado de datos y proyectos
+=== Exportación de datos y proyectos
+
+include::xxxx.es.adoc[]
+
+== Consultas a servicios externos
+=== Consultas externas a través de URLs
+==== Resolución de nombres científicos usando Global Names Resolver
+==== Georreferenciación usando GeoLocate
+==== Limpieza de fechas utilizando Canadensys Date Parsing
+
+include::afterword.es.adoc[]
+
+== Epílogo
+=== Agradecimientos
+
+include::appa.es.adoc[]
+
+== Apéndice A: instalación de OpenRefine
