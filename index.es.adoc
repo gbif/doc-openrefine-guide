@@ -18,6 +18,7 @@ include::colophon.es.adoc[]
 == Colofón
 
 include::preface.es.adoc[]
+
 == Preface
 === Comentarios Preliminares
 === Objetivo
