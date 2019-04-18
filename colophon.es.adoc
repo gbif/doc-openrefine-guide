@@ -1,0 +1,22 @@
+== Colophon
+
+=== Cita bibliográfica sugerida
+Zermoglio PF & Wieczorek JR. Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad. Tercera edición. GBIF Secretariat: Copenhagen. https://doi.org/10.15468/doc-xxxx-xxxx.
+
+=== URI persistente
+https://doi.org/10.15468/doc-xxxx-xxxx
+
+=== Colaboradores
+#foo
+
+=== Licencia
+El documento Creación de un nodo participante eficaz de GBIF se publica bajo una licencia https://creativecommons.org/licenses/by/4.0/deed.es[Creative Commons Atribución 4.0 Internacional].
+
+=== Control de documentos
+Tercera edición, Abril 2019.
+
+// if desired, include reference to provenance
+Este documento se basa en una publicación anterior….
+
+=== Imagen de la portada
+#foo
