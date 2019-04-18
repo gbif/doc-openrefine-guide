@@ -10,7 +10,7 @@
 :license: https://creativecommons.org/licenses/by/4.0
 
 ifdef::backend-html5[]
-_languageLinks:pdf[Este documento también está disponible en,PDF format]  y languageLinks:languages[en otros idiomas:,.]_
+_languageLinks:pdf[Este documento también está disponible en,PDF format]languageLinks:languages[ y en otros idiomas:,]._
 endif::backend-html5[]
 
 :sectnums!:
