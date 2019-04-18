@@ -67,7 +67,8 @@ include::xxxx.es.adoc[]
 
 include::afterword.es.adoc[]
 
-== Agradecimientos
+== Epílogo
+=== Agradecimientos
 
 include::appa.es.adoc[]
 
