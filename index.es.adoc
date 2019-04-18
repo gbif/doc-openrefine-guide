@@ -17,7 +17,7 @@ endif::backend-html5[]
 
 include::colophon.es.adoc[]
 
-=== Colofón
+== Colofón
 
 include::preface.es.adoc[]
 
