@@ -1,0 +1,49 @@
+== Limpieza de datos 
+
+=== Manejo básico de columnas
+
+Muchas veces no queremos modificar los datos directamente en los campos (columnas) en que se presentan, dado que queremos mantener los valores originales y/o queremos proveer información adicional basada en ciertos campos. Por ejemplo, podríamos tener como campos individuales el género y el epíteto específico y queremos agregar el campo nombre científico como concatenación de los dos; o viceversa: tenemos un único campo nombre científico y queremos proveer ese campo y otros dos campos para género y epíteto, a partir de la división del anterior pero sin perderlo. 
+
+Para estos casos es útil crear nuevos campos en nuevas columnas.
+
+// Buscar otra denominación para que no sea igual al título de la sección -PZ
+==== Manejo básico de columnas
+
+Veamos primero algunas funciones básicas que se pueden aplicar sobre los campos:
+
+1.	*Renombrar un campo.* 
++
+Hacer click en la flecha azul del campo --> Editar columnas --> Renombrar esta columna
+
+2.	*Eliminar un campo.*
++
+Hacer click en la flecha azul del campo --> Editar columnas --> Eliminar esta columna
+
+3.	*Mover un campo.* 
++
+Hacer click en la flecha azul del campo
+
+	--> Editar columnas 	--> Mover columna al principio	      
+		-->  Mover columna al final
+		-->  Mover columna a la izquierda
+		-->  Mover columna a la derecha
+
+Estas tres opciones pueden verse en la <<img-fig-07,Figura 7>>.
+
+[#img-fig-07]
+.Figura 7
+image::es.figure-07.jpg[Figura 7]
+
+4.	*Reordenar o eliminar varios campos a la vez.*
++
+Hacer click en la flecha azul en el campo “Todo” (<img-fig-08,Figura 8a>>).
+
+	--> Editar columnas 	--> Ordenar / Eliminar columnas…
+
+Se abrirá entonces una ventana como la que se muestra en la <<img-fig-08,Figura 8b>>. Allí puede ordenar los campos simplemente arrastrándolos arriba o abajo en la lista, y eliminarlos arrastrándolos hacia la parte derecha de la ventana. Una vez que termine de modificar el orden de los campos, haga click en “Aceptar”.
+
+[#img-fig-08]
+.Figura 8
+image::es.figure-08.jpg[Figura 8]
+
+En OpenRefine se considera que cualquiera de los cuatro cambios descriptos anteriormente son cambios a los datos, y por ende se registran como tales en el historial de cambios (Ver más abajo sección Deshacer/Rehacer cambios).
