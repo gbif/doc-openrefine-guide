@@ -21,7 +21,7 @@ include::colophon.es.adoc[]
 
 include::preface.es.adoc[]
 
-== Preface
+== Prefacio
 === Comentarios Preliminares
 === Objetivo
 === Cómo usar esta guía
