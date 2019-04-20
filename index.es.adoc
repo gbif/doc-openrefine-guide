@@ -35,7 +35,7 @@ include::ch01.es.adoc[]
 
 == Carga de datos y creación de un proyecto
 
-include::xxxx.es.adoc[]
+include::ch02.es.adoc[]
 
 == Limpieza de datos
 === Manejo básico de columnas
@@ -62,13 +62,13 @@ include::xxxx.es.adoc[]
 ==== Conservación de banderas y estrellas en la exportación
 ==== Uso de banderas y estrellas para eliminar registros
 
-include::xxxx.es.adoc[]
+include::ch03.es.adoc[]
 
 == Guardado y exportación de datos y proyectos
 === Guardado de datos y proyectos
 === Exportación de datos y proyectos
 
-include::xxxx.es.adoc[]
+include::ch04.es.adoc[]
 
 == Consultas a servicios externos
 === Consultas externas a través de URLs
