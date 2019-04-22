@@ -55,3 +55,40 @@ image::es.figure-29.jpg[Figura 29,align=center]
 Oprima “Aceptar” para ejecutar la transformación, y verá que en la faceta que ha sido filtrada ya no hay registros que contengan “sp.” como parte del valor en el campo scientificName.
 
 Cierre la faceta y el filtro del campo scientificName.
+
+==== Filtros con expresiones regulares
+
+Los filtros se pueden utilizar también incluyendo expresiones regulares, que permite buscar ciertos patrones en los valores de los campos. Por ejemplo, se pueden buscar palabras que comiencen con ciertas letras, o que comiencen con mayúscula o minúscula, etc.
+
+A modo de ejemplo, buscaremos valores en el campo genus que comiencen con minúscula. Para ello, abra una faceta y un filtro de texto para el campo genus. En el filtro coloque la siguiente expresión en el cuadro de texto: ^[a-z], y seleccione las opciones “Distingue mayúsculas y minúsculas” y “regex” (Figura 30a). Con dicha expresión se pueden buscar los valores en los que la primera letra es minúscula.
+
+[#img-fig-30]
+.Figura 30
+image::es.figure-30.jpg[Figura 30,align=center]
+
+Siguiendo estos pasos, debería poder ver dos valores (Figura 30b). Corrija estos valores filtrados, dado que el género debe comenzar con mayúscula.
+
+OpenRefine acepta un lenguaje de expresiones regulares Java, que puede consultar aquí: http://docs.oracle.com/javase/tutorial/essential/regex/index.html. Algunas expresiones que pueden ser útiles como filtros para diversos campos son:
+
+* ^[A-C]
+Busca las cadenas de texto que comienzan (^) con mayúscula de la A a la C ([A-C])
+* ^[^a-d]
+Busca las cadenas de texto que comienzan (^) con cualquier caracter en minúscula salvo de la a a la d ([^a-d]) – el ^ dentro del [] indica negación.
+* ^\w
+Busca las cadenas de texto que comienzan (^) con un una letra (\w) –de la a a la z, mayúscula o minúscula.
+* ^\s
+Busca las cadenas de texto que comienzan (^) con un espacio en blanco (\s).
+* ^\d
+Busca las cadenas de texto que comienzan (^) con un dígito (\d).
+* ^\D
+Busca las cadenas de texto que comienzan (^) con un caracter no dígito (\D). Equivalente a la expresión con negación ^[^0-9].
+* \d{4}
+Busca cadenas de texto que contengan dígitos (\d), en particular 4 dígitos ({4}).
+* ^\w.*\d$
+Busca las cadenas de texto que comiencen (^) con una letra (\w), sigan (.) cualquier caracter (*) y terminen ($) con un dígito (\d).
+* ^[A-Z].*\s[A-Z]
+Busca las cadenas de texto que comienzan (^) con mayúscula ([A-Z]) –cualquier mayúscula de la A a la Z– seguidas de (.) cualquier caracter (*), luego un espacio (\s), luego otra letra mayúscula ([A-Z]).
+
+Pruebe el uso de algunas de esas expresiones en distintos campos.
+
+_Para más ejemplos y usos, puede https://github.com/OpenRefine/OpenRefine/wiki[consultar el repositorio de OpenRefine] en GitHub._
