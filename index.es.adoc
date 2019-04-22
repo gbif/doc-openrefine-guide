@@ -28,6 +28,8 @@ include::ch01.es.adoc[]
 
 include::ch02.es.adoc[]
 
+include::ch02b.es.adoc[]
+
 include::ch03.es.adoc[]
 
 include::ch04.es.adoc[]
