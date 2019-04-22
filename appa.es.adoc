@@ -23,6 +23,7 @@ Para instalar OpenRefine 3.1 en su computadora, siga los siguientes pasos:
 
 *NOTE*: Existe también una https://github.com/OpenRefine/OpenRefine/releases/download/3.1/openrefine-linux-3.1.tar.gz[versión para Linux].
 
-Para saber más
+=== Para saber más
+
 *	https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions[Instrucciones adicionales sobre cómo instalar Open Refine]
-*	Si además quiere hacer algunas pruebas de uso, puede consultar las funciones básicas en la sección http://openrefine.org/index.html[_Introduction to OpenRefine_] 
+*	Si además quiere hacer algunas pruebas de uso, puede consultar las funciones básicas en la sección http://openrefine.org/index.html[_Introduction to OpenRefine_]
