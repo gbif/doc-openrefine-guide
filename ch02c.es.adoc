@@ -1,0 +1,57 @@
+=== Uso de Filtros
+
+==== Filtros simples
+
+OpenRefine permite el uso de filtros sobre campos particulares, función que puede ser muy útil para la limpieza de datos. Veremos un ejemplo a continuación.
+
+Ubique el campo specificEpithet y cree una faceta de texto (haga click en la flecha azul, --> Facetas --> Faceta de texto). Luego vaya nuevamente a la flecha azul y cree un filtro de texto (“Filtro de texto”). Sobre el menú de la izquierda se abrirá una ventana como la que se muestra en la Figura 25.
+
+[#img-fig-25]
+.Figura 25
+image::es.figure-25.jpg[Figura 25,align=center]
+
+En el cuadro de texto puede escribir el valor sobre el cual desea filtrar.
+
+Por ejemplo, pruebe escribiendo “sp.”. 
+
+En el menú de la izquierda, dentro de la faceta se mostrará el valor que usted buscó, y en la pantalla principal se mostrarán los registros asociados que tienen dicho valor en el campo specificEpithet (Figura 26).
+
+[#img-fig-26]
+.Figura 26
+image::es.figure-26.jpg[Figura 26,align=center]
+
+Note que verá dos valores, uno en letra minúscula y otro en letra mayúscula. Si sólo desea ver los valores escritos con minúscula, en el filtro debe seleccionar “Distingue mayúsculas y minúsculas”, o puede seleccionar “sp.” directamente sobre la faceta de specificEpithet.
+
+Corrija los valores “sp.” y “SP.” utilizando la función “editar” sobre los valores en la faceta (el valor correcto debería ser nulo).
+
+Cierre el filtro y la faceta de specificEpithet.
+
+Abra una faceta de texto y un filtro para el campo scientificName. En el filtro, busque el valor “sp.”. Verá entonces varios valores para ese campo que incluyen “sp.”, como se muestra en la Figura 27.
+
+[#img-fig-27]
+.Figura 27
+image::es.figure-27.jpg[Figura 27,align=center]
+
+Debe corregir esos nombres, sacando “sp.” y dejando solamente el nombre del género. Para no tener que hacerlo uno por uno, puede seguir los siguientes pasos.
+
+Haga click sobre la flecha azul en scientificName, seleccione “Editar celdas” y allí “Transformar…” (Figura 28).
+
+[#img-fig-28]
+.Figura 28
+image::es.figure-28.jpg[Figura 28,align=center]
+
+Se abrirá entonces una ventana como la mostrada en la Figura 29. En el cuadro de texto, pegue la siguiente expresión:
+---
+value.replace(" sp.", "")
+---
+Dicha expresión tiene la función de reemplazar lo que está entre las primeras comillas por aquello que está entre las segundas comillas, es decir, la porción “ sp.” ([espacio]sp.) por “” ([nada]). 
+
+En la Figura 29 puede observar cómo se vería el resultado del cambio en la pestaña “Vista previa”. 
+
+[#img-fig-29]
+.Figura 29
+image::es.figure-29.jpg[Figura 29,align=center]
+
+Oprima “Aceptar” para ejecutar la transformación, y verá que en la faceta que ha sido filtrada ya no hay registros que contengan “sp.” como parte del valor en el campo scientificName.
+
+Cierre la faceta y el filtro del campo scientificName.
