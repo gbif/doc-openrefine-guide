@@ -1,4 +1,4 @@
-== Colophon
+== Colofón
 
 === Cita bibliográfica sugerida
 Zermoglio PF & Wieczorek JR. Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad. Tercera edición. GBIF Secretariat: Copenhagen. https://doi.org/10.15468/doc-gzjg-af18.
