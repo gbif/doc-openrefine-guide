@@ -20,67 +20,18 @@ endif::backend-html5[]
 
 include::colophon.es.adoc[]
 
-== Colofón
-
 include::preface.es.adoc[]
-
-== Prefacio
-=== Comentarios Preliminares
-=== Objetivo
-=== Cómo usar esta guía
 
 :sectnums:
 
 include::ch01.es.adoc[]
 
-== Carga de datos y creación de un proyecto
-
 include::ch02.es.adoc[]
-
-== Limpieza de datos
-=== Manejo básico de columnas
-==== Manejo básico de columnas
-==== Nuevas columnas vacías
-==== Nuevas columnas a partir transformaciones simples de otras columnas
-=== Uso de Facetas
-==== Facetas de texto
-==== Facetas y espacios en blanco
-==== Facetas numéricas
-==== Facetas y duplicados
-==== Número de elecciones límite en las Facetas
-=== Uso de Filtros
-==== Filtros simples
-==== Filtros con expresiones regulares
-=== Uso de Agrupamientos
-==== Agrupamientos simples
-=== Deshacer y rehacer cambios
-==== Deshacer pasos
-==== Guardar pasos para rehacer luego
-==== Rehacer pasos guardados
-=== Marcado de registros: banderas y estrellas
-==== Marcado con banderas y estrellas
-==== Conservación de banderas y estrellas en la exportación
-==== Uso de banderas y estrellas para eliminar registros
 
 include::ch03.es.adoc[]
 
-== Guardado y exportación de datos y proyectos
-=== Guardado de datos y proyectos
-=== Exportación de datos y proyectos
-
 include::ch04.es.adoc[]
-
-== Consultas a servicios externos
-=== Consultas externas a través de URLs
-==== Resolución de nombres científicos usando Global Names Resolver
-==== Georreferenciación usando GeoLocate
-==== Limpieza de fechas utilizando Canadensys Date Parsing
 
 include::afterword.es.adoc[]
 
-== Epílogo
-=== Agradecimientos
-
 include::appa.es.adoc[]
-
-== Apéndice A: instalación de OpenRefine
