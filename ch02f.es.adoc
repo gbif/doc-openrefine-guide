@@ -23,7 +23,7 @@ Para marcar todos esos registros con una bandera, haga click en la flecha azul d
 
 [#img-fig-36]
 .Figura 36
-image::es.figure-36.jpg[Figura 36,align=center]
+image::img/es.figure-36.jpg[Figura 36,align=center]
 
 Una vez que lo haya hecho, verá que todos los registros seleccionados están marcados ahora con una bandera.
 
@@ -51,7 +51,7 @@ Al oprimir “Aceptar” su campo se habrá creado. Verifique los valores que to
 
 [#img-fig-37]
 .Figura 37
-image::es.figure-37.jpg[Figura 37,align=center]
+image::img/es.figure-37.jpg[Figura 37,align=center]
 
 Puede repetir el proceso creando otro campo para las estrellas, usando la expresión:
 ---
@@ -70,6 +70,6 @@ Las banderas y estrellas se pueden utilizar para eliminar grupos de registros. P
 
 [#img-fig-38]
 .Figura 38
-image::es.figure-38.jpg[Figura 38,align=center]
+image::img/es.figure-38.jpg[Figura 38,align=center]
 
 De esta forma habrá eliminado todos los registros que fueron marcados con una bandera.
