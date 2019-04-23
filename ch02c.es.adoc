@@ -8,7 +8,7 @@ Ubique el campo specificEpithet y cree una faceta de texto (haga click en la fle
 
 [#img-fig-25]
 .Figura 25
-image::es.figure-25.jpg[Figura 25,align=center]
+image::img/es.figure-25.jpg[Figura 25,align=center]
 
 En el cuadro de texto puede escribir el valor sobre el cual desea filtrar.
 
@@ -18,7 +18,7 @@ En el menú de la izquierda, dentro de la faceta se mostrará el valor que usted
 
 [#img-fig-26]
 .Figura 26
-image::es.figure-26.jpg[Figura 26,align=center]
+image::img/es.figure-26.jpg[Figura 26,align=center]
 
 Note que verá dos valores, uno en letra minúscula y otro en letra mayúscula. Si sólo desea ver los valores escritos con minúscula, en el filtro debe seleccionar “Distingue mayúsculas y minúsculas”, o puede seleccionar “sp.” directamente sobre la faceta de specificEpithet.
 
@@ -50,7 +50,7 @@ En la Figura 29 puede observar cómo se vería el resultado del cambio en la pes
 
 [#img-fig-29]
 .Figura 29
-image::es.figure-29.jpg[Figura 29,align=center]
+image::img/es.figure-29.jpg[Figura 29,align=center]
 
 Oprima “Aceptar” para ejecutar la transformación, y verá que en la faceta que ha sido filtrada ya no hay registros que contengan “sp.” como parte del valor en el campo scientificName.
 
@@ -64,7 +64,7 @@ A modo de ejemplo, buscaremos valores en el campo genus que comiencen con minús
 
 [#img-fig-30]
 .Figura 30
-image::es.figure-30.jpg[Figura 30,align=center]
+image::img/es.figure-30.jpg[Figura 30,align=center]
 
 Siguiendo estos pasos, debería poder ver dos valores (Figura 30b). Corrija estos valores filtrados, dado que el género debe comenzar con mayúscula.
 
