@@ -28,7 +28,7 @@ Una vez que haya corregido los valores en el punto anterior, notará que aún ap
 
 [#img-fig-14]
 .Figura 14
-image::es.img/figure-14.jpg[Figura 14,align=center]
+image::img/es.figure-14.jpg[Figura 14,align=center]
 
 Para corregir estos errores, asegúrese de que ninguno de los valores en la faceta están seleccionados y que el número de registros que se muestra arriba de la tabla es el total (24984). Sobre la columna kingdom, haga click sobre la flecha azul y siga las siguientes opciones (Figura 15):
 ----
