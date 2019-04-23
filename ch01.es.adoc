@@ -6,11 +6,11 @@ Para comenzar a utilizar OpenRefine debe cargar sus datos en el programa y crear
 [discrete]
 === Step 1
 
-*Abra la aplicación OpenRefine*. Si utiliza Windows, se abrirá una ventana de comandos que mostrará las acciones que OpenRefine está realizando (<<img-fig-01,Figura 1>>). No cierre esta ventana mientras esté trabajando con el programa.
+*Abra la aplicación OpenRefine*. Si utiliza Windows, se abrirá una ventana de comandos que mostrará las acciones que OpenRefine está realizando (<<img-fig-01>>). No cierre esta ventana mientras esté trabajando con el programa.
 
 [#img-fig-01]
-.Figura 1
-image::img/es.figure-01.jpg[Figura 1,align=center]
+.TODO This figure needs a caption
+image::img/es.figure-01.jpg[TODO This figure ought to have a text description,align=center]
 
 OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamente después de ejecutar la aplicación (<<img-fig-02,Figura 2>>). Si OpenRefine no abre, puede acceder manualmente ingresando la siguiente URL en su navegador:
 
