@@ -13,9 +13,9 @@ Para comenzar a utilizar OpenRefine debe cargar sus datos en el programa y crear
 image::img/es.figure-01.jpg[TODO This figure ought to have a text description,align=center]
 
 OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamente después de ejecutar la aplicación (<<img-fig-02,Figura 2>>). Si OpenRefine no abre, puede acceder manualmente ingresando la siguiente URL en su navegador:
-
+----
     http://127.0.0.1:3333
-
+----
 [#img-fig-02]
 .ADD CAPTION
 image::img/es.figure-02.jpg[Figura 2,align=center]
