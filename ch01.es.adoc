@@ -17,7 +17,7 @@ OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamen
     http://127.0.0.1:3333
 
 [#img-fig-02]
-.Figura 2
+.ADD CAPTION
 image::img/es.figure-02.jpg[Figura 2,align=center]
 
 En el menú de la izquierda tiene opciones para crear, abrir o importar proyectos. Si usted no tiene ningún proyecto aún, en la opción de “Abrir proyecto” verá una lista vacía. 
