@@ -23,7 +23,7 @@ La ventana también muestra el tamaño del clúster (“Número de valores” ag
 
 [#img-fig-31]
 .Figura 31
-image::es.figure-31.jpg[Figura 31,align=center]
+image::img/es.figure-31.jpg[Figura 31,align=center]
 
 Además, para cada cluster verá una opción para fusionar los valores (“¿Unir?”) y el nuevo valor que se asignará a todos los registros del cluster (“Nuevo valor de las celdas”). 
 
@@ -39,7 +39,7 @@ Una vez resueltos los agrupamientos, si ha decidido no agrupar algunas de las op
 
 [#img-fig-32]
 .Figura 32
-image::es.figure-32.jpg[Figura 32,align=center]
+image::img/es.figure-32.jpg[Figura 32,align=center]
 
 Pruebe agrupamientos con distintos métodos para limpiar los datos.
 
