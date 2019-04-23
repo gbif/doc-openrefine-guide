@@ -30,7 +30,7 @@ Abra una faceta de texto y un filtro para el campo scientificName. En el filtro,
 
 [#img-fig-27]
 .Figura 27
-image::es.figure-27.jpg[Figura 27,align=center]
+image::img/es.figure-27.jpg[Figura 27,align=center]
 
 Debe corregir esos nombres, sacando “sp.” y dejando solamente el nombre del género. Para no tener que hacerlo uno por uno, puede seguir los siguientes pasos.
 
@@ -38,7 +38,7 @@ Haga click sobre la flecha azul en scientificName, seleccione “Editar celdas�
 
 [#img-fig-28]
 .Figura 28
-image::es.figure-28.jpg[Figura 28,align=center]
+image::img/es.figure-28.jpg[Figura 28,align=center]
 
 Se abrirá entonces una ventana como la mostrada en la Figura 29. En el cuadro de texto, pegue la siguiente expresión:
 ---
