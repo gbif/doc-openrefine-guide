@@ -29,7 +29,7 @@ Note que la primera opción, “Exportar proyecto”, permite exportar el proyec
 
 [#img-fig-39]
 .Figura 39
-image::es.figure-39.jpg[Figura 39,align=center]
+image::img/es.figure-39.jpg[Figura 39,align=center]
 
 La exportación de proyectos es útil cuando uno quiere abrir el mismo proyecto en OpenRefine en otra computadora.
 
@@ -37,7 +37,7 @@ Haciendo click en “Exportar proyecto” se abrirá una ventana en la que puede
 
 [#img-fig-40]
 .Figura 40
-image::es.figure-40.jpg[Figura 40,align=center]
+image::img/es.figure-40.jpg[Figura 40,align=center]
 
 Escoja la opción deseada y haga click en “Exportar”. El archivo exportado tendrá una extensión .tar.gz, que sólo puede ser abierto por el programa (no se descarga un archivo de datos que pueda abrir en un procesador de textos ni en una planilla de cálculo).
 
@@ -49,7 +49,7 @@ Para una exportación más personalizada, en el menú “Exportar” escoja “C
 
 [#img-fig-41]
 .Figura 41
-image::es.figure-41.jpg[Figura 41,align=center]
+image::img/es.figure-41.jpg[Figura 41,align=center]
 
 En la pestaña “Contenido” puede elegir qué campos exportar y modificar ciertos parámetros para cada campo individualmente.
 
@@ -59,7 +59,7 @@ Para descargar los datos, vaya a la pestaña “Descarga”, como se ve en la <<
 
 [#img-fig-42]
 .Figura 42
-image::es.figure-42.jpg[Figura 42,align=center]
+image::img/es.figure-42.jpg[Figura 42,align=center]
 
 En esta pestaña puede seleccionar el formato de los datos para la descarga. Escoja el que prefiera y haga click en “Descargar”. Inmediatamente comenzará la descarga de los datos.
 
