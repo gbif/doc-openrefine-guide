@@ -4,7 +4,7 @@
 
 OpenRefine permite el uso de filtros sobre campos particulares, función que puede ser muy útil para la limpieza de datos. Veremos un ejemplo a continuación.
 
-Ubique el campo specificEpithet y cree una faceta de texto (haga click en la flecha azul, --> Facetas --> Faceta de texto). Luego vaya nuevamente a la flecha azul y cree un filtro de texto (“Filtro de texto”). Sobre el menú de la izquierda se abrirá una ventana como la que se muestra en la Figura 25.
+Ubique el campo specificEpithet y cree una faceta de texto (haga click en la flecha azul, --> Facetas --> Faceta de texto). Luego vaya nuevamente a la flecha azul y cree un filtro de texto (“Filtro de texto”). Sobre el menú de la izquierda se abrirá una ventana como la que se muestra en la <<img-fig-25,Figura 25>>.
 
 [#img-fig-25]
 .Figura 25
@@ -14,7 +14,7 @@ En el cuadro de texto puede escribir el valor sobre el cual desea filtrar.
 
 Por ejemplo, pruebe escribiendo “sp.”. 
 
-En el menú de la izquierda, dentro de la faceta se mostrará el valor que usted buscó, y en la pantalla principal se mostrarán los registros asociados que tienen dicho valor en el campo specificEpithet (Figura 26).
+En el menú de la izquierda, dentro de la faceta se mostrará el valor que usted buscó, y en la pantalla principal se mostrarán los registros asociados que tienen dicho valor en el campo specificEpithet (<<img-fig-26,Figura 26>>).
 
 [#img-fig-26]
 .Figura 26
@@ -26,7 +26,7 @@ Corrija los valores “sp.” y “SP.” utilizando la función “editar” so
 
 Cierre el filtro y la faceta de specificEpithet.
 
-Abra una faceta de texto y un filtro para el campo scientificName. En el filtro, busque el valor “sp.”. Verá entonces varios valores para ese campo que incluyen “sp.”, como se muestra en la Figura 27.
+Abra una faceta de texto y un filtro para el campo scientificName. En el filtro, busque el valor “sp.”. Verá entonces varios valores para ese campo que incluyen “sp.”, como se muestra en la <<img-fig-27,Figura 27>>.
 
 [#img-fig-27]
 .Figura 27
@@ -34,7 +34,7 @@ image::img/es.figure-27.jpg[Figura 27,align=center]
 
 Debe corregir esos nombres, sacando “sp.” y dejando solamente el nombre del género. Para no tener que hacerlo uno por uno, puede seguir los siguientes pasos.
 
-Haga click sobre la flecha azul en scientificName, seleccione “Editar celdas” y allí “Transformar…” (Figura 28).
+Haga click sobre la flecha azul en scientificName, seleccione “Editar celdas” y allí “Transformar…” (<<img-fig-28,Figura 28>>).
 
 [#img-fig-28]
 .Figura 28
@@ -46,7 +46,7 @@ value.replace(" sp.", "")
 ---
 Dicha expresión tiene la función de reemplazar lo que está entre las primeras comillas por aquello que está entre las segundas comillas, es decir, la porción “ sp.” ([espacio]sp.) por “” ([nada]). 
 
-En la Figura 29 puede observar cómo se vería el resultado del cambio en la pestaña “Vista previa”. 
+En la <<img-fig-29,Figura 29>> puede observar cómo se vería el resultado del cambio en la pestaña “Vista previa”. 
 
 [#img-fig-29]
 .Figura 29
@@ -60,13 +60,13 @@ Cierre la faceta y el filtro del campo scientificName.
 
 Los filtros se pueden utilizar también incluyendo expresiones regulares, que permite buscar ciertos patrones en los valores de los campos. Por ejemplo, se pueden buscar palabras que comiencen con ciertas letras, o que comiencen con mayúscula o minúscula, etc.
 
-A modo de ejemplo, buscaremos valores en el campo genus que comiencen con minúscula. Para ello, abra una faceta y un filtro de texto para el campo genus. En el filtro coloque la siguiente expresión en el cuadro de texto: ^[a-z], y seleccione las opciones “Distingue mayúsculas y minúsculas” y “regex” (Figura 30a). Con dicha expresión se pueden buscar los valores en los que la primera letra es minúscula.
+A modo de ejemplo, buscaremos valores en el campo genus que comiencen con minúscula. Para ello, abra una faceta y un filtro de texto para el campo genus. En el filtro coloque la siguiente expresión en el cuadro de texto: ^[a-z], y seleccione las opciones “Distingue mayúsculas y minúsculas” y “regex” (<<img-fig-30,Figura 30a>>). Con dicha expresión se pueden buscar los valores en los que la primera letra es minúscula.
 
 [#img-fig-30]
 .Figura 30
 image::img/es.figure-30.jpg[Figura 30,align=center]
 
-Siguiendo estos pasos, debería poder ver dos valores (Figura 30b). Corrija estos valores filtrados, dado que el género debe comenzar con mayúscula.
+Siguiendo estos pasos, debería poder ver dos valores (<<img-fig-30,Figura 30b>>). Corrija estos valores filtrados, dado que el género debe comenzar con mayúscula.
 
 OpenRefine acepta un lenguaje de expresiones regulares Java, que puede consultar aquí: http://docs.oracle.com/javase/tutorial/essential/regex/index.html. Algunas expresiones que pueden ser útiles como filtros para diversos campos son:
 
