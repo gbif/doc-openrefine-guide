@@ -24,7 +24,7 @@ Para ver detalles sobre cómo descargar e instalar OpenRefine en su computadora,
 
 ====	Datos
 
-El conjunto de datos modelo utilizado en esta guía (link:../EjercicioModelo_OpenRefine_Datos.zip[EjercicioModelo_OpenRefine_Datos.csv]) puede obtenerse a través de: https://tinyurl.com/yd8mekzw. Descargar el archivo, y no manipularlo en otros programas (e.g., MS Excel) antes de abrirlo en OpenRefine, dado que ello puede cambiar los formatos y/o codificación del archivo.
+El conjunto de datos modelo utilizado en esta guía puede obtenerse aquí: /data/EjercicioModelo_OpenRefine_Datos.zip[EjercicioModelo_OpenRefine_Datos.csv]. Descargar el archivo, y no manipularlo en otros programas (e.g., MS Excel) antes de abrirlo en OpenRefine, dado que ello puede cambiar los formatos y/o codificación del archivo.
 
 El conjunto de datos modelo fue derivado a partir del conjunto de datos: 
 
