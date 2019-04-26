@@ -363,24 +363,27 @@ Uno de los campos sobre el que se puede corroborar la calidad de los datos es el
 
 Recordemos primero la http://rs.tdwg.org/dwc/terms/index.htm#eventDate[*definición de [source]`"eventDate"` en el estándar Darwin Core*]:
 
+****
 _The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E)._
+****
 
 Si piensa en un ejemplar de museo, [source]`"eventDate"` refiere a cuándo fue colectado el ejemplar. Si piensa en una observación, [source]`"eventDate"` refiere a cuándo fue realizada esa observación.
 
 Darwin Core sugiere que se utilice para capturar la información de fecha el estándar https://en.wikipedia.org/wiki/ISO_8601[ISO 8601:2004(E)]. Para fechas únicas, este estándar tiene el siguiente formato:
 
-----
+****
 AAAA-MM-DDTHH:mmX
-----
+****
+
 Donde:
 
-* AAAA: año, con cuatro dígitos.
-* MM: mes, con dos dígitos. E.g.: mayo sería 05.
-* DD: día, con dos dígitos. E.g.: segundo día de un mes sería 02.
-* T: indica que lo que viene a continuación es la hora.
-* HH: horas, con dos dígitos, en formato de 24 hs.
-* mm: minutos, con dos dígitos.
-* X: indica la zona horaria. La zona horaria se determina tomando como base UTC (Coordinated Universal Time). Si uno está justo sobre la zona horaria UTC, X se reemplaza por “Z”. Si uno está en otra zona horaria, debe reemplazarse X por la diferencia horaria correspondiente.
+* [source]`"AAAA"`: año, con cuatro dígitos.
+* [source]`"MM"`: mes, con dos dígitos. E.g.: mayo sería 05.
+* [source]`"DD"`: día, con dos dígitos. E.g.: segundo día de un mes sería 02.
+* [source]`"T"`: indica que lo que viene a continuación es la hora.
+* [source]`"HH"`: horas, con dos dígitos, en formato de 24 hs.
+* [source]`"mm"`: minutos, con dos dígitos.
+* [source]`"X"`: indica la zona horaria. La zona horaria se determina tomando como base UTC (Coordinated Universal Time). Si uno está justo sobre la zona horaria UTC, X se reemplaza por “Z”. Si uno está en otra zona horaria, debe reemplazarse X por la diferencia horaria correspondiente.
 
 Por ejemplo, Argentina es UTC-3, o sea, 03horas00minutos al oeste (-) de UTC, por lo cual X debe reemplazarse por “-0300”.
 
@@ -424,6 +427,7 @@ NOTE: Este formato también puede utilizarse para expresar rangos de fecha de ma
 Muchas veces, a pesar de lo que indica el estándar Darwin Core, encontramos en el campo [source]`"eventDate"` fechas que no siguen el formato sugerido. Para limpiarlas, puede hacer uso de la herramienta que ofrece http://data.canadensys.net/tools/dates[Canadensys: Date Parsing].
 
 Esta herramienta permite interpretar fechas, devolviéndolas en formato estándar. Ejemplos de los tipos de valores que puede interpretar son:
+
 * Jun 13, 2008
 * 15 Jan 2011
 * 2009 IV 02
