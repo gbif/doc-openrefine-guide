@@ -82,31 +82,31 @@ image::img/es.figure-45.jpg[Figura 45,align=center]
 
 Una vez que haya creado el campo, verá que contiene, aún en formato JSON, los valores de interés extraídos de GNR. Por ejemplo:
 
-----
+....
 uBio NameBank; Cinna lateralis; | Catalogue of Life; Cinna lateralis Walter; Andropogon virginicus L. | ITIS; Cinna lateralis Walter; Andropogon virginicus L. | GBIF Backbone Taxonomy; Cinna lateralis Walter; Andropogon virginicus L. | EOL; Cinna lateralis Walter; | Tropicos - Missouri Botanical Garden; Cinna lateralis Walter; | The International Plant Names Index; Cinna lateralis Walter; | uBio NameBank; Cinna lateralis Walter; | uBio NameBank; Cinna lateralis Walter, 1788; | Arctos; Cinna lateralis Walter;
-----
+....
 
 Note que algunas fuentes encuentran el nombre pero no proveen un nombre aceptado, por ejemplo: 
 
-----
+....
 uBio NameBank; Cinna lateralis;
-----
+....
 
 no tiene un valor en el tercer lugar, mientras que:
 
-----
+....
 Catalogue of Life; Cinna lateralis Walter; Andropogon virginicus L.
-----
+....
 
 provee el nombre encontrado y el nombre válido.
 
 Note además que algunas fuentes tienen más de una variante asociada al nombre, por ejemplo:
 
-----
+....
 uBio NameBank; Cinna lateralis;
 uBio NameBank; Cinna lateralis Walter;
 uBio NameBank; Cinna lateralis Walter, 1788;
-----
+....
 
 IMPORTANT: No todos los nombres serán necesariamente encontrados en todas las fuentes consultadas, por lo que el número de fuentes variará de un nombre al otro. En consecuencia, la ubicación de las fuentes en la cadena de texto no será homogénea de un registro al otro. Una consecuencia de esto es que si usted quiere luego separar el contenido en campos distintos de acuerdo a la fuente consultada (e.g., un campo para ITIS, uno para Catalogue of Life, etc.), no podrá hacerlo de modo que cada nuevo campo tenga los datos de una misma y única fuente.
 
@@ -199,10 +199,10 @@ En los resultados puede tener tres casos:
 }
 ----
 <1> Las coordenadas: [source,javascript]`"coordinates": [-64.471941, -23.643418]`
-<2> Las localidad original que consultó: `"parsePattern" : "YUTO"`
-<3> El radio de incerteza en metros: `"uncertaintyRadiusMeters" : 3036`
-<4> El polígono de incerteza asociado: `"uncertaintyPolygon" : "Unavailable"`, en este caso no disponible.
-<5> Los desplazamientos: distancia en millas y grados en una dirección: `"displacedDistanceMiles" : 0, "displacedHeadingDegrees" : 0`, en este caso con valores `0` porque no se especifica desplazamiento de ningún tipo en la localidad (e.g., 45km de Yuto, o 45km N Yuto).
+<2> Las localidad original que consultó: [source]`"parsePattern" : "YUTO"`
+<3> El radio de incerteza en metros: [source]`"uncertaintyRadiusMeters" : 3036`
+<4> El polígono de incerteza asociado: [source]`"uncertaintyPolygon" : "Unavailable"`, en este caso no disponible.
+<5> Los desplazamientos: distancia en millas y grados en una dirección: [source]`"displacedDistanceMiles" : 0, "displacedHeadingDegrees" : 0`, en este caso con valores `0` porque no se especifica desplazamiento de ningún tipo en la localidad (e.g., 45km de Yuto, o 45km N Yuto).
 <6> La correspondencia en el gacetero consultado: `GazPartMatch`, y en éste la división administrativa bajo la cual se encontró la localidad: `|:Adm=JUJUY|`.
 
 *Caso 3)* Varios resultados encontrados para un mismo valor de localidad. Esto sucede comúnmente cuando no se especifican en la consulta niveles administrativos por debajo de país (e.g., podría haber en un mismo país varios lugares con el mismo nombre). Un ejemplo sería:
