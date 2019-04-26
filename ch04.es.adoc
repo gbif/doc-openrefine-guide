@@ -470,6 +470,7 @@ forEach(value.parseJson().get("data").get("results"),v,v.get("iso8601"))[0])
 image::img/es.figure-51.jpg[Figura 51,align=center]
 
 Para extraer el año, mes o día, pegue en cambio una de las siguientes expresiones:
+
 * Año: [source]`"forEach(value.parseJson().get("data").get("results"),v,v.get("year"))[0])"`
 * Mes: [source]`"forEach(value.parseJson().get("data").get("results"),v,v.get("month"))[0])"`
 * Día: [source]`"forEach(value.parseJson().get("data").get("results"),v,v.get("day"))[0])"`
