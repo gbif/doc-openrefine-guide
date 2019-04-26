@@ -1,6 +1,6 @@
 :sectnums!:
 
-= Apéndice 1: instalación de OpenRefine
+== Apéndice 1: instalación de OpenRefine
 
 NOTE: Estas instrucciones han sido adaptadas y traducidas al castellano a partir de un instructivo preparado por el GBIF-BID Programme.
 

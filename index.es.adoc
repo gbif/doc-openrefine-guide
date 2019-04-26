@@ -5,7 +5,7 @@ Paula F. Zermoglio & John R. Wieczorek
 :numbered:
 :revnumber: {git-metadata-sha-short}
 :revdate: {localdate}
-:title-logo-image: img/_src/xxxx.jpg
+:title-logo-image: img/es.header-cover-figure.jpg
 :icons: font
 :pagenums:
 :license: https://creativecommons.org/licenses/by/4.0
