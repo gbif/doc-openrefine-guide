@@ -13,10 +13,7 @@ Para comenzar a utilizar OpenRefine debe cargar sus datos en el programa y crear
 image::img/es.figure-01.jpg[TODO This figure ought to have a text description,align=center]
 
 
-OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamente después de ejecutar la aplicación (<<img-fig-02,Figura 2>>). Si OpenRefine no abre, puede acceder manualmente ingresando la siguiente URL en su navegador:
-----
-    http://127.0.0.1:3333
-----
+OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamente después de ejecutar la aplicación (<<img-fig-02,Figura 2>>). Si OpenRefine no abre, puede acceder manualmente ingresando la siguiente URL en su navegador: *link:http://127.0.0.1:3333[]*
 [#img-fig-02]
 .ADD CAPTION
 image::img/es.figure-02.jpg[Figura 2,align=center]
@@ -43,7 +40,7 @@ NOTE: Si sube archivos con formato .xls o .xlsx, tenga en cuenta que no podrá m
 
 Verá entonces una pantalla como la que se muestra en la <<img-fig-04,Figura 4>>. Allí puede ver una muestra de sus datos, dar nombre a su proyecto, y puede modificar varios aspectos de la carga de los datos al programa: codificación, criterio para la separación en columnas, inclusión o no de la primera fila, etc.
 
-OpenRefine sugiere algunas de las codificaciones más utilizadas cuando se hace click en el cuadro de texto “Codificación de caracteres”. Asegúrese de escoger correctamente la codificación. Si está utilizando el conjunto de datos de prueba proporcionado, escoja UTF-8 (<<img-fig-05,Figura 5).
+OpenRefine sugiere algunas de las codificaciones más utilizadas cuando se hace click en el cuadro de texto “Codificación de caracteres”. Asegúrese de escoger correctamente la codificación. Si está utilizando el conjunto de datos de prueba proporcionado, escoja UTF-8 (<<img-fig-05,Figura 5>>).
 
 OpenRefine presenta la opción de “Detectar y transformar texto en números, fechas, ...”. Si esta opción es seleccionada, el programa tratará de interpretar ciertos campos transformándolos a determinados formatos. Por ejemplo, si detecta campos de fecha, tratará de colocar los valores de las celdas de ese campo en formato de fecha estándar. Dada la naturaleza de los datos sobre biodiversidad con los que solemos trabajar, estas interpretaciones pueden ser incorrectas e introducir más errores. Asegúrese entonces de desmarque esta opción durante el paso de importación de datos.
 
