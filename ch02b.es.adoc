@@ -4,7 +4,7 @@ La función “Facetas” es una forma de visualización de los datos, que permi
 
 ==== Facetas de texto
 
-Ubique la columna kingdom y haga click sobre la flecha azul. Dentro de “Facetas”, escoja “Faceta de texto”, como se muestra a continuación (<<img-fig-12,Figura 12a>>). Se abrirá entonces a la izquierda una ventana con la faceta (<<img-fig-12,Figura 12b>>).
+Ubique la columna [source]`kingdom` y haga click sobre la flecha azul. Dentro de “Facetas”, escoja “Faceta de texto”, como se muestra a continuación (<<img-fig-12,Figura 12a>>). Se abrirá entonces a la izquierda una ventana con la faceta (<<img-fig-12,Figura 12b>>).
 
 [#img-fig-12]
 .Figura 12
@@ -30,11 +30,11 @@ Una vez que haya corregido los valores en el punto anterior, notará que aún ap
 .Figura 14
 image::img/es.figure-14.jpg[Figura 14,align=center]
 
-Para corregir estos errores, asegúrese de que ninguno de los valores en la faceta están seleccionados y que el número de registros que se muestra arriba de la tabla es el total (24984). Sobre la columna kingdom, haga click sobre la flecha azul y siga las siguientes opciones (<<img-fig-15,Figura 15>>):
+Para corregir estos errores, asegúrese de que ninguno de los valores en la faceta están seleccionados y que el número de registros que se muestra arriba de la tabla es el total (24984). Sobre la columna [source]`kingdom`, haga click sobre la flecha azul y siga las siguientes opciones (<<img-fig-15,Figura 15>>):
 ----
 Editar celdas 	--> Transformaciones comunes 	--> Quitar espacios al inicio y final
 ----
-Esta función permite eliminar espacios en blanco que puedan aparecer al principio y al final de cadenas de texto. Cuando termine este paso, los 24,984 registros deberían tener el valor “Plantae” en la columna kingdom.
+Esta función permite eliminar espacios en blanco que puedan aparecer al principio y al final de cadenas de texto. Cuando termine este paso, los 24,984 registros deberían tener el valor “Plantae” en la columna [source]`kingdom`.
 
 [#img-fig-15]
 .Figura 15
@@ -42,7 +42,7 @@ image::img/es.figure-15.jpg[Figura 15,align=center]
 
 ===== Espacios en blanco extra entre palabras en una cadena de texto
 
-A veces en campos que contienen cadenas de texto con varias palabras puede haber espacios en blanco extra entre palabras. Para ver un ejemplo, ubique la columna stateProvince en el conjunto de datos. Arme una faceta de texto para dicha columna (click sobre la flecha azul --> Facetas --> Faceta de texto). Luego, en la faceta, ordene los valores por número de registros asociados (seleccionando “conteo”). Verá entonces los valores que se encuentran en este campo como se muestra en la <<<<img-fig-16,Figura 16>>.
+A veces en campos que contienen cadenas de texto con varias palabras puede haber espacios en blanco extra entre palabras. Para ver un ejemplo, ubique la columna [source]`stateProvince` en el conjunto de datos. Arme una faceta de texto para dicha columna (click sobre la flecha azul --> Facetas --> Faceta de texto). Luego, en la faceta, ordene los valores por número de registros asociados (seleccionando “conteo”). Verá entonces los valores que se encuentran en este campo como se muestra en la <<<<img-fig-16,Figura 16>>.
 
 Note que en primer y tercer lugar figura aparentemente el mismo valor, “Buenos Aires”. La diferencia entre ambos valores es que uno de ellos tiene un doble espacio entre las palabras.
 
@@ -50,7 +50,7 @@ Note que en primer y tercer lugar figura aparentemente el mismo valor, “Buenos
 .Figura 16
 image::img/es.figure-16.jpg[Figura 16,align=center]
 
-Para corregir este error, sobre la columna stateProvince, haga click sobre la flecha azul y siga la siguiente ruta (<<<<img-fig-17,Figura 17>>):
+Para corregir este error, sobre la columna [source]`stateProvince`, haga click sobre la flecha azul y siga la siguiente ruta (<<<<img-fig-17,Figura 17>>):
 
 ---
 Editar celdas 	--> Transformaciones Comunes 	--> Contraer espacios consecutivos
@@ -67,7 +67,7 @@ Una vez que haya removido los espacios en blanco extra, en la faceta sólo verá
 
 Las facetas también pueden aplicarse a campos numéricos, y en ese caso son muy útiles para, por ejemplo detectar valores fuera de rangos de interés.
 
-A modo de ejemplo, armaremos una faceta numérica sobre el campo day que hemos creado más arriba. Para ello, hacer click en la flecha azul del campo y seguir la ruta:
+A modo de ejemplo, armaremos una faceta numérica sobre el campo [source]`day` que hemos creado más arriba. Para ello, hacer click en la flecha azul del campo y seguir la ruta:
 ---
 Facetas 		--> Faceta numérica
 ---
@@ -93,7 +93,7 @@ Las facetas también permiten la detección y corrección de duplicados.
 
 *NOTA*: cuando hablamos aquí de duplicados, nos referimos a valores duplicados dentro de una columna, no necesariamente a registros enteros duplicados, o a duplicados en el sentido biológico/de colecciones. Por ello, tenga especial cuidado a la hora de actuar sobre estos valores duplicados, pues podrían tener efectos a diferentes niveles.
 
-Veremos un ejemplo de duplicados en la columna catalogNumber. Para ello, haga click en la flecha azul y luego siga la siguiente ruta: 
+Veremos un ejemplo de duplicados en la columna [source]`catalogNumber`. Para ello, haga click en la flecha azul y luego siga la siguiente ruta:
 
 ---
 Facetas 		--> Facetas personalizadas 	--> Faceta por duplicados 
@@ -126,7 +126,7 @@ image::img/es.figure-22.jpg[Figura 22,align=center]
 
 En OpenRefine existe un límite para el número de elecciones de faceta que se muestran (“choices”). Muchas veces dicho número está pre-configurado a un valor de 2000. Ello quiere decir que sólo podrá ver 2000 opciones dentro de la faceta de interés.
 
-Por ejemplo, si tiene configurado el valor a 2000 y trata de armar una faceta de texto en el campo specificEpithet, verá que a la derecha la faceta no muestra los valores esperados sino un mensaje que dice que hay demasiados valores para mostrar (<<img-fig-23,Figura 23a>>).
+Por ejemplo, si tiene configurado el valor a 2000 y trata de armar una faceta de texto en el campo [source]`specificEpithet`, verá que a la derecha la faceta no muestra los valores esperados sino un mensaje que dice que hay demasiados valores para mostrar (<<img-fig-23,Figura 23a>>).
 
 [#img-fig-23]
 .Figura 23
@@ -134,7 +134,7 @@ image::img/es.figure-23.jpg[Figura 23,align=center]
 
 Haciendo click en “Fije un límite”, se abrirá otra ventana donde puede cambiar el límite al valor preferido (<<img-fig-23,Figura 23b>>).
 
-Una vez que haya cambiado el valor límite, y si este valor es lo suficientemente grande, podrá ver todos los valores en la faceta del campo de interés (en el ejemplo anterior, el campo specificEpithet).
+Una vez que haya cambiado el valor límite, y si este valor es lo suficientemente grande, podrá ver todos los valores en la faceta del campo de interés (en el ejemplo anterior, el campo [source]`specificEpithet`).
 
 Alternativamente, para modificar en cualquier momento el límite en el número de valores que se pueden desplegar por faceta, puede ir a la siguiente dirección en su navegador web:
 ---

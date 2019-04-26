@@ -10,6 +10,7 @@ Paula F. Zermoglio & John R. Wieczorek
 :pagenums:
 :license: https://creativecommons.org/licenses/by/4.0
 :xrefstyle: short
+:source-highlighter: pygments
 
 ifdef::backend-html5[]
 _languageLinks:pdf[Este documento también está disponible en,PDF format]languageLinks:languages[ y en otros idiomas:,]._

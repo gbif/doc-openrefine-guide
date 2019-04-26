@@ -79,31 +79,34 @@ Veamos ahora cómo crear nuevas columnas con datos modificados a partir de colum
 ===== Concatenaciones
 
 Si desea crear un campo que sea la concatenación de otros dos campos separados, siga la siguiente ruta:
-Utilizaremos como ejemplo la concatenación de los campos genus y specificEpithet.
+Utilizaremos como ejemplo la concatenación de los campos [source]`genus` y [source]`specificEpithet`.
 
-Click en la flecha azul del campo genus 
+Click en la flecha azul del campo [source]`genus`
 	--> Editar columnas 	--> Agregar columna basada en esta columna...
 
-Se abrirá una nueva ventana (<<img-fig-10,Figura 10>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo scientificName en los datos).
+Se abrirá una nueva ventana (<<img-fig-10,Figura 10>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`scientificName` en los datos).
 
 En el cuadro de texto, pegue la siguiente expresión:
 
-Expresión ejemplo:	cells["genus"].value + " " + cells["specificEpithet"].value
-Expresión general:	cells["campo1"].value + " " + cells["campo2"].value
+Expresión ejemplo:	[source]`cells["genus"].value + " " + cells["specificEpithet"].value` +
+Expresión general:	[source]`cells["campo1"].value + " " + cells["campo2"].value`
 
-La expresión ejemplo concatena (+) los valores del campo genus (cells["genus"].value) y los del campo specificEpithet (cells["specificEpithet"].value), con un espacio entre los valores (" ").
+La expresión ejemplo concatena (`+`) los valores del campo [source]`genus` ([source]`cells["genus"].value`) y los del campo [source]`specificEpithet` ([source]`cells["specificEpithet"].value`), con un espacio entre los valores ("[source]`` ``").
 
 [#img-fig-10]
 .Figura 10
 image::img/es.figure-10.jpg[Figura 10,align=center]
 
-Note que esta expresión funciona cuando ambos campos, genus y specificEpithet, tienen valores, es decir no son nulos. Si alguno de los dos campos tiene valores nulos, entonces no se lleva a cabo la concatenación. Por ejemplo, si hay un valor para genus pero specificEpithet está vacío, el campo de concatenación aparecerá vacío. Esto se debe a que no se puede operar sobre valores nulos.
+Note que esta expresión funciona cuando ambos campos, [source]`genus` y [source]`specificEpithet`, tienen valores, es decir no son nulos. Si alguno de los dos campos tiene valores nulos, entonces no se lleva a cabo la concatenación. Por ejemplo, si hay un valor para genus pero specificEpithet está vacío, el campo de concatenación aparecerá vacío. Esto se debe a que no se puede operar sobre valores nulos.
 
 En este caso, puede sortear el problema utilizando en cambio la siguiente expresión:
 
+[source,javascript]
+----
 if(isBlank(cells["genus"].value), "", cells["genus"].value) + " " + if(isBlank(cells["specificEpithet"].value), "", cells["specificEpithet"].value)
+----
 
-Lo que dicha expresión significa es: concatenar (+) dos partes, cada una proviene de una sub-expresión “if”, separadas por un espacio (+ " " +). Cada una de estas sub-expresiones indica: si (if) el valor del campo dado es nulo (isBlank(cells["genus"].value)), colocar un blanco  (""), si no (,), colocar el valor del campo (cells["genus"].value). La otra sub-expresión es lo mismo pero para epíteto específico. 
+Lo que dicha expresión significa es: concatenar ([source]`+`) dos partes, cada una proviene de una sub-expresión [source]`if`, separadas por un espacio ([source]`+ " " +`). Cada una de estas sub-expresiones indica: si ([source]`if`) el valor del campo dado es nulo ([source]`isBlank(cells["genus"].value)`), colocar un blanco  ([source]`""`), si no ([source]`,`), colocar el valor del campo ([source]`cells["genus"].value`). La otra sub-expresión es lo mismo pero para epíteto específico.
 
 Los resultados esperados utilizando cada una de las dos fórmulas se resumen en la siguiente tabla:
 
@@ -165,9 +168,9 @@ Los resultados esperados utilizando cada una de las dos fórmulas se resumen en 
 
 ===== Divisiones
 Si desea crear campos separados a partir de los valores en un único campo, siga la siguiente ruta:
-Utilizaremos como ejemplo la división del campo eventDate para agregar tres campos: año, mes y día (year, month y day)
+Utilizaremos como ejemplo la división del campo [source]`eventDate` para agregar tres campos: año, mes y día (year, month y day)
 
-Click en la flecha azul del campo eventDate 
+Click en la flecha azul del campo [source]`eventDate`
 --> Editar columnas 	--> Dividir en varias columnas...
 
 Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>). Allí debe escoger si se dividirá por separador o por longitud de caracteres, y en el primer caso qué tipo de separador se utilizará (puede ser espacio –tab-, coma, punto y coma, guión, etc.).
@@ -179,7 +182,7 @@ En este caso, si exploramos los datos del campo original veremos que año, mes y
 .Figura 11
 image::img/es.figure-11.jpg[Figura 11,align=center]
 
-Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo eventDate. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda (flecha azul-->Editar columnas --> Renombrar esta columna). En este caso, nómbrelos “year”, “month” y “day” según corresponda.
+Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`eventDate`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda (flecha azul-->Editar columnas --> Renombrar esta columna). En este caso, nómbrelos “year”, “month” y “day” según corresponda.
 
 
 <<IMPORTANT,NOTA IMPORTANTE>>: Cuando efectúe este tipo de divisiones de campos utilizando como criterio o bien separadores o bien longitud de caracteres, asegúrese de que en el campo original no haya distintos formatos para diferentes registros. Vea el siguiente ejemplo: 

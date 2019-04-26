@@ -14,13 +14,13 @@ Nos referimos a consultas a través de URLs cuando el proceso implica proveer a 
 
 ==== Resolución de nombres científicos usando Global Names Resolver
 
-En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo scientificName) contra el servicio Global Names Resolver (http://resolver.globalnames.org, de aquí en más GNR).
+En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`scientificName`) contra el servicio Global Names Resolver (http://resolver.globalnames.org, de aquí en más GNR).
 
-Para acortar el tiempo de consulta, cree una faceta para el campo genus (click en la flecha azul --> Facetas --> Faceta de texto) y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna parece tener 3 especies asociadas: C. lateralis (1 registro), C. arundinacea (6 registros) y C. latifolia (3 registros).
+Para acortar el tiempo de consulta, cree una faceta para el campo [source]`genus` (click en la flecha azul --> Facetas --> Faceta de texto) y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna parece tener 3 especies asociadas: C. lateralis (1 registro), C. arundinacea (6 registros) y C. latifolia (3 registros).
 
 Para comparar los nombres contra el GNR, haremos un llamado al servicio y capturaremos los resultados en un nuevo campo:
 
-A partir del campo scientificName, cree una nueva columna a partir de una dirección URL haciendo click en la flecha azul del campo y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
+A partir del campo [source]`scientificName`, cree una nueva columna a partir de una dirección URL haciendo click en la flecha azul del campo y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
 
 Editar columnas 	--> Agregar columna accediendo a URLs...
 
@@ -30,9 +30,13 @@ image::img/es.figure-43.jpg[Figura 43,align=center]
 
 Se abrirá una ventana como la mostrada en la <<img-fig-44,Figura 44>>. Allí, dé un nombre al nuevo campo (por ejemplo, GNR_Json_sciName), y en el cuadro de texto coloque la siguiente expresión:
 
-"http://resolver.globalnames.org/name_resolvers.json?names="+escape(cells["scientificName"].value,"url")
+[source,javascript]
+----
+"http://resolver.globalnames.org/name_resolvers.json?names=" +
+  escape(cells["scientificName"].value,"url")
+----
 
-Dicha expresión indica se hará una consulta en el GNR utilizando como valores de comparación aquellos que se encuentran en el campo scientificName. Es importante que el nombre del campo que utiliza en la expresión sea idéntico al nombre del campo del cual tomará los valores originales, o de otro modo el llamado será infructuoso.
+Dicha expresión indica se hará una consulta en el GNR utilizando como valores de comparación aquellos que se encuentran en el campo [source]`scientificName`. Es importante que el nombre del campo que utiliza en la expresión sea idéntico al nombre del campo del cual tomará los valores originales, o de otro modo el llamado será infructuoso.
 
 [#img-fig-44]
 .Figura 44
@@ -41,8 +45,11 @@ image::img/es.figure-44.jpg[Figura 44,align=center]
 Note que en esta ventana, arriba a la derecha, tiene una opción para modificar el “Tiempo de retraso”. Este valor indica el tiempo que transcurre entre llamados o consultas sucesivas que se hacen al servicio en cuestión. Por defecto, el valor es de 5000 milisegundos. Puede reducir este tiempo para acelerar el proceso de comparación. Tenga en cuenta, sin embargo, que muchos servicios bloquean los llamados si éstos ocurren muy cercanos en el tiempo, pues consideran que puede tratarse de un ataque. El máximo número de consultas que pueden realizar por unidad de tiempo depende de cada servicio en particular. 
 
 NOTA: La expresión utilizada es muy general, y devolverá los valores de todos los parámetros que GNR provee respecto de un nombre científico. Puede consultar dichos parámetros en http://resolver.globalnames.org/api. Si no quiere obtener en el resultado todos los valores, puede modificar la expresión especificando valores para todos o algunos de los parámetros. Por ejemplo: GNR resuelve los nombres consultando diferentes fuentes, a las que asigna identificadores (data_source_id); si sólo quiere obtener los resultados provenientes de la fuente Catalogue of Life (que en GNR tiene id=1), puede utilizar la siguiente expresión:
+[source,javascript]
 ----
-"http://resolver.globalnames.org/name_resolvers.json?names="+escape(cells["scientificName"].value,"url")+"&data_source_ids=1"
+"http://resolver.globalnames.org/name_resolvers.json?names=" +
+  escape(cells["scientificName"].value,"url") +
+  "&data_source_ids=1"
 ----
 Una vez que haya creado el nuevo campo con la expresión general, verá que contiene, en formato JSON, los resultados de la consulta en GNR para cada nombre, con todos los parámetros y valores que GNR reporta.
 
@@ -58,9 +65,16 @@ Para ello, a partir del campo en JSON (en el ejemplo, GNR_Json_sciName), cree un
 
 Dé un nombre al nuevo campo (por ejemplo, GNR_sciName_options) y en el cuadro de texto, coloque la siguiente expresión (<<img-fig-45,Figura 45>>): 
 
-forEach(value.parseJson().get("data")[0].get("results"),v,v.get("data_source_title") + "; " + v.get("name_string") + "; " + if(isBlank(v.get("current_name_string")), "", v.get("current_name_string"))).join(" | ")
+[source,javascript]
+----
+forEach(value.parseJson().get("data")[0].get("results"), v,
+  v.get("data_source_title") + "; " +
+  v.get("name_string") + "; " +
+  if(isBlank(v.get("current_name_string")), "", v.get("current_name_string")))
+.join(" | ")
+----
 
-Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estructura secciones “data” y dentro de esta “results” –un “result” proveniente de cada fuente consultada (por ejemplo, un “result” de Catalogue of Life). Dentro de cada sección “results” extrae los valores de interés (“data_source_title”, “name_string” y “current_name_string”) y los separa con un “;”. Como no todas las fuentes proveen un nombre aceptado (“current_name_string”), la expresión “if” especifica que si ese parámetro es nulo debe dejarse el espacio vacío (“”), y si no, colocar el valor extraído. Por último, une los grupos de valores extraídos en una única cadena de texto, separados por un “ | ". 
+Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estructura secciones “data” y dentro de esta “results” –un “result” proveniente de cada fuente consultada (por ejemplo, un “result” de Catalogue of Life). Dentro de cada sección “results” extrae los valores de interés (“data_source_title”, “name_string” y “current_name_string”) y los separa con un “;”. Como no todas las fuentes proveen un nombre aceptado (“current_name_string”), la expresión [source]`if` especifica que si ese parámetro es nulo debe dejarse el espacio vacío ([source]``""``), y si no, colocar el valor extraído. Por último, une los grupos de valores extraídos en una única cadena de texto, separados por un [source]` | `.
 
 [#img-fig-45]
 .Figura 45
@@ -68,47 +82,71 @@ image::img/es.figure-45.jpg[Figura 45,align=center]
 
 Una vez que haya creado el campo, verá que contiene, aún en formato JSON, los valores de interés extraídos de GNR. Por ejemplo:
 
+----
 uBio NameBank; Cinna lateralis; | Catalogue of Life; Cinna lateralis Walter; Andropogon virginicus L. | ITIS; Cinna lateralis Walter; Andropogon virginicus L. | GBIF Backbone Taxonomy; Cinna lateralis Walter; Andropogon virginicus L. | EOL; Cinna lateralis Walter; | Tropicos - Missouri Botanical Garden; Cinna lateralis Walter; | The International Plant Names Index; Cinna lateralis Walter; | uBio NameBank; Cinna lateralis Walter; | uBio NameBank; Cinna lateralis Walter, 1788; | Arctos; Cinna lateralis Walter;
+----
 
 Note que algunas fuentes encuentran el nombre pero no proveen un nombre aceptado, por ejemplo: 
 
-uBio NameBank; Cinna lateralis; 
+----
+uBio NameBank; Cinna lateralis;
+----
 
 no tiene un valor en el tercer lugar, mientras que:
 
+----
 Catalogue of Life; Cinna lateralis Walter; Andropogon virginicus L.
+----
 
 provee el nombre encontrado y el nombre válido.
 
 Note además que algunas fuentes tienen más de una variante asociada al nombre, por ejemplo:
 
-* uBio NameBank; Cinna lateralis; 
-* uBio NameBank; Cinna lateralis Walter;
-* uBio NameBank; Cinna lateralis Walter, 1788;
+----
+uBio NameBank; Cinna lateralis;
+uBio NameBank; Cinna lateralis Walter;
+uBio NameBank; Cinna lateralis Walter, 1788;
+----
 
 IMPORTANT: No todos los nombres serán necesariamente encontrados en todas las fuentes consultadas, por lo que el número de fuentes variará de un nombre al otro. En consecuencia, la ubicación de las fuentes en la cadena de texto no será homogénea de un registro al otro. Una consecuencia de esto es que si usted quiere luego separar el contenido en campos distintos de acuerdo a la fuente consultada (e.g., un campo para ITIS, uno para Catalogue of Life, etc.), no podrá hacerlo de modo que cada nuevo campo tenga los datos de una misma y única fuente.
 
 En este caso, le conviene en cambio hacer varios llamados a GNR separados, cada uno especificando una fuente determinada. Como se menciona más arriba, si quiere por ejemplo sólo consultar los valores dados por Catalogue of Life, use la expresión siguiente:
 
-"http://resolver.globalnames.org/name_resolvers.json?names="+escape(cells["scientificName"].value,"url")+"&data_source_ids=1"
+[source,javascript]
+----
+"http://resolver.globalnames.org/name_resolvers.json?names=" +
+  escape(cells["scientificName"].value,"url") +
+  "&data_source_ids=1"
+----
 
 y luego arme un nuevo campo extrayendo los resultados de interés, usando la expresión:
 
-forEach(value.parseJson().get("data")[0].get("results"),v,v.get("data_source_title") + "; " + v.get("name_string") + "; " + if(isBlank(v.get("current_name_string")), "", v.get("current_name_string"))).join(" | ")
+[source,javascript]
+----
+forEach(value.parseJson().get("data")[0].get("results"), v,
+  v.get("data_source_title") + "; " +
+  v.get("name_string") + "; " +
+  if(isBlank(v.get("current_name_string")), "", v.get("current_name_string")))
+.join(" | ")
+----
 
 A partir de los resultados obtenidos, puede extraer los nombres separando la nueva columna en columnas distintas utilizando separadores apropiados (ver sección de separación de columnas).
 
 ==== Georreferenciación usando GeoLocate
 
-En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta al servicio, construiremos previamente dos facetas. La primera sobre el campo country, dentro de la cual seleccionaremos el valor “Argentina”. La segunda faceta será sobre el campo genus, dentro de la cual seleccionaremos el valor “Acacia”. Una vez aplicadas ambas facetas y escogidos los valores, verá que en la ventana principal sólo se muestra un subconjunto de registros que cumplen estas condiciones simultáneamente.
+En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta al servicio, construiremos previamente dos facetas. La primera sobre el campo [source]`country`, dentro de la cual seleccionaremos el valor “Argentina”. La segunda faceta será sobre el campo [source]`genus`, dentro de la cual seleccionaremos el valor “Acacia”. Una vez aplicadas ambas facetas y escogidos los valores, verá que en la ventana principal sólo se muestra un subconjunto de registros que cumplen estas condiciones simultáneamente.
 
-Llevaremos a cabo la georreferenciación a partir del campo locality. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en la flecha azul --> Editar columnas --> Agregar columna accediendo a URLs…
+Llevaremos a cabo la georreferenciación a partir del campo [source]`locality`. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en la flecha azul --> Editar columnas --> Agregar columna accediendo a URLs…
 
 Se abrirá una nueva ventana (<<img-fig-46,Figura 46>>). Allí dé un nombre al nuevo campo, por ejemplo “GeoLocate_Json_georref”, y pegue en el cuadro de texto la siguiente expresión:
 
-"http://www.museum.tulane.edu/webservices/geolocatesvcv2/glcwrap.aspx?Country=Argentina&fmt=json&Locality="+escape(value,'url')
+[source,javascript]
+----
+"http://www.museum.tulane.edu/webservices/geolocatesvcv2/glcwrap.aspx?Country=Argentina&fmt=json&Locality=" +
+  escape(value,'url')
+----
 
-En esta expresión, “fmt” indica el formato en el que el resultado será devuelto por el servicio. GeoLocate ofrece dos posibles formatos, json y geojson.
+En esta expresión, `fmt` indica el formato en el que el resultado será devuelto por el servicio. GeoLocate ofrece dos posibles formatos, JSON y GeoJSON.
 
 [#img-fig-46]
 .Figura 46
