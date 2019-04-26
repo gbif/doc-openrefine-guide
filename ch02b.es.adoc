@@ -90,7 +90,7 @@ Los tres errores encontrados deben ser consultados con la información original 
 
 Las facetas también permiten la detección y corrección de duplicados. 
 
-*NOTA*: cuando hablamos aquí de duplicados, nos referimos a valores duplicados dentro de una columna, no necesariamente a registros enteros duplicados, o a duplicados en el sentido biológico/de colecciones. Por ello, tenga especial cuidado a la hora de actuar sobre estos valores duplicados, pues podrían tener efectos a diferentes niveles.
+NOTE: cuando hablamos aquí de duplicados, nos referimos a valores duplicados dentro de una columna, no necesariamente a registros enteros duplicados, o a duplicados en el sentido biológico/de colecciones. Por ello, tenga especial cuidado a la hora de actuar sobre estos valores duplicados, pues podrían tener efectos a diferentes niveles.
 
 Veremos un ejemplo de duplicados en la columna [source]`catalogNumber`. Para ello, haga click en la flecha azul y luego siga la siguiente ruta:
 
@@ -114,7 +114,7 @@ image::img/es.figure-21.jpg[Figura 21,align=center]
 
 Corrija los números de catálogo. Para hacerlo, edite las celdas individualmente: sobre la celda haga click en el botón “editar”, modifique el valor y haga click en “Aplicar” (<<img-fig-22,Figura 22>>). 
 
-*NOTE*: en la práctica la corrección de los números de catálogo sólo debe hacerse una vez que los números y los datos asociados han sido comprobados con las etiquetas de los especímenes.
+NOTE: en la práctica la corrección de los números de catálogo sólo debe hacerse una vez que los números y los datos asociados han sido comprobados con las etiquetas de los especímenes.
 
 [#img-fig-22]
 .Figura 22
