@@ -63,9 +63,9 @@ Para ver los pasos de exportación de datos, vea la sección de Exportación de 
 Las banderas y estrellas se pueden utilizar para eliminar grupos de registros. Para ello, siga los siguientes pasos:
 
 . Marque con una bandera (o estrella) los registros deseados. Puede hacerlo uno por uno o en grupos a través del marcado dentro de facetas (ver más arriba).
-. Cree una faceta para la bandera. Haga click en la flecha azul sobre el campo “Todo” -> Facetas -> Faceta por bandera (Figura 38a).
+. Cree una faceta para la bandera. Haga click en la flecha azul sobre el campo “Todo” -> Facetas -> Faceta por bandera (<<img-fig-38,Figura 38a>>).
 . En esta nueva faceta, a la izquierda, seleccione la opción “true” haciendo click sobre ella. Ello le mostrará los registros a los que se ha asignado una bandera.
-. Haga click nuevamente sobre la flecha azul del campo “Todo” -> Editar filas -> Eliminar todas las filas que encajen (Figura 38b).
+. Haga click nuevamente sobre la flecha azul del campo “Todo” -> Editar filas -> Eliminar todas las filas que encajen (<<img-fig-38,Figura 38b>>).
 
 [#img-fig-38]
 .Figura 38
