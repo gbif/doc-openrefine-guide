@@ -107,7 +107,59 @@ Lo que dicha expresión significa es: concatenar (+) dos partes, cada una provie
 
 Los resultados esperados utilizando cada una de las dos fórmulas se resumen en la siguiente tabla:
 
-// add table —KC
+.Generalized examples of the types of institutions designated as hosts of GBIF Participant nodes.
+[cols=4,options="header"]
+|===
+
+|Expresión
+
+|genus
+
+|specificEpithet
+
+|concat_scientificName
+
+.3+.^|1
+
+|Filago
+
+|lasiocarpa
+
+|Filago lasiocarpa
+
+|Filago
+
+|null
+
+|null
+
+|null
+
+|lasiocarpa
+
+|null
+
+.3+.^|2
+
+|Filago
+
+|lasiocarpa
+
+|Filago lasiocarpa
+
+|Filago
+
+|null
+
+|Filago
+
+|null
+
+|lasiocarpa
+
+|lasiocarpa
+
+|===
 
 <<NOTE,NOTA>>: Para evitar de modo más general este problema de celdas nulas, cuando importa el conjunto de datos para crear su proyecto al principio del proceso, puede asegurarse de NO seleccionar la opción “Store blank cells as nulls” (ver <<img-fig-04,Figura 4>>).
 
