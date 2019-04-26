@@ -4,9 +4,9 @@ OpenRefine ofrece la posibilidad de consultar fuentes externas, una función que
 
 En OpenRefine las consultas externas pueden realizarse por dos vías: a través de URLs, o a través de servicios de reconciliación. En esta guía sólo se incluyen los métodos referidos a las consultas a través de URLs. Para ver explicaciones referidas al uso de algunos servicios de reconciliación consultar versiones anteriores de este documento; tener en cuenta que esos servicios no han sido actualizados en concordancia con las actualizaciones de OpenRefine, y muchos no funcionan a partir de OpenRefine 2.8.
 
-NOTA: Debe recordarse que para poder realizar consultas a servicios que se encuentran en línea se requiere conexión a internet. 
+NOTE: Debe recordarse que para poder realizar consultas a servicios que se encuentran en línea se requiere conexión a internet.
 
-NOTA: La velocidad a la que se obtienen los resultados de las consultas depende de la velocidad de respuesta del servicio en particular. De esta forma, si se quieren comparar muchos registros, el tiempo de la operación será prolongado. Para acortar tiempos, se pueden hacer comparaciones de registros contra el servicio deseado dentro de una faceta, es decir, en una fracción particular de los registros. 
+NOTE: La velocidad a la que se obtienen los resultados de las consultas depende de la velocidad de respuesta del servicio en particular. De esta forma, si se quieren comparar muchos registros, el tiempo de la operación será prolongado. Para acortar tiempos, se pueden hacer comparaciones de registros contra el servicio deseado dentro de una faceta, es decir, en una fracción particular de los registros.
 
 === Consultas externas a través de URLs
 
@@ -16,13 +16,13 @@ Nos referimos a consultas a través de URLs cuando el proceso implica proveer a 
 
 En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`scientificName`) contra el servicio Global Names Resolver (http://resolver.globalnames.org, de aquí en más GNR).
 
-Para acortar el tiempo de consulta, cree una faceta para el campo [source]`genus` (click en la flecha azul --> Facetas --> Faceta de texto) y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna parece tener 3 especies asociadas: C. lateralis (1 registro), C. arundinacea (6 registros) y C. latifolia (3 registros).
+Para acortar el tiempo de consulta, cree una faceta para el campo [source]`genus` (click en la flecha azul -> Facetas -> Faceta de texto) y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna parece tener 3 especies asociadas: C. lateralis (1 registro), C. arundinacea (6 registros) y C. latifolia (3 registros).
 
 Para comparar los nombres contra el GNR, haremos un llamado al servicio y capturaremos los resultados en un nuevo campo:
 
 A partir del campo [source]`scientificName`, cree una nueva columna a partir de una dirección URL haciendo click en la flecha azul del campo y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
 
-Editar columnas 	--> Agregar columna accediendo a URLs...
+Editar columnas	-> Agregar columna accediendo a URLs…
 
 [#img-fig-43]
 .Figura 43
@@ -44,7 +44,7 @@ image::img/es.figure-44.jpg[Figura 44,align=center]
 
 Note que en esta ventana, arriba a la derecha, tiene una opción para modificar el “Tiempo de retraso”. Este valor indica el tiempo que transcurre entre llamados o consultas sucesivas que se hacen al servicio en cuestión. Por defecto, el valor es de 5000 milisegundos. Puede reducir este tiempo para acelerar el proceso de comparación. Tenga en cuenta, sin embargo, que muchos servicios bloquean los llamados si éstos ocurren muy cercanos en el tiempo, pues consideran que puede tratarse de un ataque. El máximo número de consultas que pueden realizar por unidad de tiempo depende de cada servicio en particular. 
 
-NOTA: La expresión utilizada es muy general, y devolverá los valores de todos los parámetros que GNR provee respecto de un nombre científico. Puede consultar dichos parámetros en http://resolver.globalnames.org/api. Si no quiere obtener en el resultado todos los valores, puede modificar la expresión especificando valores para todos o algunos de los parámetros. Por ejemplo: GNR resuelve los nombres consultando diferentes fuentes, a las que asigna identificadores (data_source_id); si sólo quiere obtener los resultados provenientes de la fuente Catalogue of Life (que en GNR tiene id=1), puede utilizar la siguiente expresión:
+NOTE: La expresión utilizada es muy general, y devolverá los valores de todos los parámetros que GNR provee respecto de un nombre científico. Puede consultar dichos parámetros en http://resolver.globalnames.org/api. Si no quiere obtener en el resultado todos los valores, puede modificar la expresión especificando valores para todos o algunos de los parámetros. Por ejemplo: GNR resuelve los nombres consultando diferentes fuentes, a las que asigna identificadores (data_source_id); si sólo quiere obtener los resultados provenientes de la fuente Catalogue of Life (que en GNR tiene id=1), puede utilizar la siguiente expresión:
 [source,javascript]
 ----
 "http://resolver.globalnames.org/name_resolvers.json?names=" +
@@ -61,7 +61,7 @@ Dado que GNR consulta varias fuentes de nombres taxonómicos, nos interesa saber
 * Nombre encontrado en la fuente: "name_string"
 * Nombre aceptado por la fuente: "current_name_string"
 
-Para ello, a partir del campo en JSON (en el ejemplo, GNR_Json_sciName), cree un nuevo campo (haga click en la flecha azul -->  Editar columnas --> Agregar columna basada en esta columna).
+Para ello, a partir del campo en JSON (en el ejemplo, GNR_Json_sciName), cree un nuevo campo (haga click en la flecha azul ->  Editar columnas -> Agregar columna basada en esta columna).
 
 Dé un nombre al nuevo campo (por ejemplo, GNR_sciName_options) y en el cuadro de texto, coloque la siguiente expresión (<<img-fig-45,Figura 45>>): 
 
@@ -136,7 +136,7 @@ A partir de los resultados obtenidos, puede extraer los nombres separando la nue
 
 En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta al servicio, construiremos previamente dos facetas. La primera sobre el campo [source]`country`, dentro de la cual seleccionaremos el valor “Argentina”. La segunda faceta será sobre el campo [source]`genus`, dentro de la cual seleccionaremos el valor “Acacia”. Una vez aplicadas ambas facetas y escogidos los valores, verá que en la ventana principal sólo se muestra un subconjunto de registros que cumplen estas condiciones simultáneamente.
 
-Llevaremos a cabo la georreferenciación a partir del campo [source]`locality`. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en la flecha azul --> Editar columnas --> Agregar columna accediendo a URLs…
+Llevaremos a cabo la georreferenciación a partir del campo [source]`locality`. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en la flecha azul -> Editar columnas -> Agregar columna accediendo a URLs…
 
 Se abrirá una nueva ventana (<<img-fig-46,Figura 46>>). Allí dé un nombre al nuevo campo, por ejemplo “GeoLocate_Json_georref”, y pegue en el cuadro de texto la siguiente expresión:
 
@@ -284,7 +284,7 @@ Para visualizar la estructura de los resultados en JSON de modo más amigable, p
 image::img/es.figure-47.jpg[Figura 47,align=center]
 --
 
-*NOTA:* La expresión utilizada es muy simple y sólo le pide al servicio que resuelva la georreferenciación en base al campo localidad y teniendo como valor fijo “Argentina” para el campo país, pero sin especificar los valores de otros campos geográficos. Sin embargo, todos los campos se pueden incluir en la expresión para obtener resultados más específicos. Ello puede hacerse de dos maneras:
+NOTE: La expresión utilizada es muy simple y sólo le pide al servicio que resuelva la georreferenciación en base al campo localidad y teniendo como valor fijo “Argentina” para el campo país, pero sin especificar los valores de otros campos geográficos. Sin embargo, todos los campos se pueden incluir en la expresión para obtener resultados más específicos. Ello puede hacerse de dos maneras:
 
 . Establecer los valores de los campos como valores fijos, como hicimos con el país, agregando luego por ejemplo: `&state=VALOR` donde VALOR es el valor fijo que uno establece (e.g., “Córdoba”). Esto restringirá los resultados en función de esos parámetros.
 . Incluir los campos como valores a consultar, en cuyo caso para cada campo hay que incluir como valor: [source,javascript]`+escape(cells.NOMBREDELCAMPO.value.'url')+`
@@ -305,7 +305,7 @@ Para extraer las coordenadas puede seguir dos métodos: 1) extraer latitud y lon
 
 *Método 1:* extraer latitud y longitud conjuntamente
 
-Haga click en la flecha azul del campo GeoLocate_Json_georref --> Editar columnas --> Agregar columna basada en esta columna.
+Haga click en la flecha azul del campo GeoLocate_Json_georref -> Editar columnas -> Agregar columna basada en esta columna.
 
 De un nombre al nuevo campo, por ejemplo, GeoLocate_parseCoord, y en el cuadro de texto pegue la siguiente expresión:
 
@@ -316,7 +316,7 @@ forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)),
 .join("|")
 ----
 
-Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura Json particular Objeto --> Arreglo --> Objeto --> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la Figura 47).
+Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura Json particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la Figura 47).
 
 El nuevo campo tendrá valores como los siguientes, por ejemplo, para un registro cuya consulta devolvió tres resultados:
 [source]
@@ -328,7 +328,7 @@ IMPORTANT: Note que GeoLocate provee como primer valor de coordenadas la longitu
 
 Dividiremos ahora este campo en tres partes, una para cada resultado:
 
-Haga click en la flecha azul del campo --> Editar columnas --> Dividir en varias columnas.
+Haga click en la flecha azul del campo -> Editar columnas -> Dividir en varias columnas.
 
 Escoja como separador `|`. Desmarque la opción “Eliminar esta columna” si quiere mantener el campo original (esto es recomendable, siempre puede eliminar los campos después).
 
@@ -336,7 +336,7 @@ Tendrá entonces ahora una serie de campos con valores del tipo: `-64.158097; -2
 
 *Método 2:* extraer latitud y longitud independientemente
 
-Haga click en la flecha azul del campo GeoLocate_Json_georref --> Editar columnas --> Agregar columna basada en esta columna.
+Haga click en la flecha azul del campo GeoLocate_Json_georref -> Editar columnas -> Agregar columna basada en esta columna.
 
 De un nombre al nuevo campo, por ejemplo, GeoLocate_parseLong, y en el cuadro de texto pegue la siguiente expresión:
 [source,javascript]

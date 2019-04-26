@@ -13,35 +13,28 @@ Veamos primero algunas funciones básicas que se pueden aplicar sobre los campos
 
 1.	*Renombrar un campo.* 
 +
-Hacer click en la flecha azul del campo --> Editar columnas --> Renombrar esta columna
+Hacer click en la flecha azul del campo -> Editar columnas -> Renombrar esta columna
 
 2.	*Eliminar un campo.*
 +
-Hacer click en la flecha azul del campo --> Editar columnas --> Eliminar esta columna
+Hacer click en la flecha azul del campo -> Editar columnas -> Eliminar esta columna
 
-3.	*Mover un campo.* 
+3.	*Mover un campo.*
 +
-Hacer click en la flecha azul del campo
-
-	--> Editar columnas 	--> Mover columna al principio	      
-		-->  Mover columna al final
-		-->  Mover columna a la izquierda
-		-->  Mover columna a la derecha
-
+Hacer click en la flecha azul del campo -> Editar columnas -> Mover columna al principio, Mover columna al final, Mover columna a la izquierda, Mover columna a la derecha
++
 Estas tres opciones pueden verse en la <<img-fig-07,Figura 7>>.
-
++
 [#img-fig-07]
 .!Figura 7
 image::img/es.figure-07.jpg[Figura 7,align=center]
 
 4.	*Reordenar o eliminar varios campos a la vez.*
 +
-Hacer click en la flecha azul en el campo “Todo” (<img-fig-08,Figura 8a>>).
-
-	--> Editar columnas 	--> Ordenar / Eliminar columnas…
-
+Hacer click en la flecha azul en el campo “Todo” (<<img-fig-08,Figura 8a>>) -> Editar columnas -> Ordenar / Eliminar columnas…
++
 Se abrirá entonces una ventana como la que se muestra en la <<img-fig-08,Figura 8b>>. Allí puede ordenar los campos simplemente arrastrándolos arriba o abajo en la lista, y eliminarlos arrastrándolos hacia la parte derecha de la ventana. Una vez que termine de modificar el orden de los campos, haga click en “Aceptar”.
-
++
 [#img-fig-08]
 .Figura 8
 image::img/es.figure-08.jpg[Figura 8,align=center]
@@ -54,13 +47,13 @@ Se pueden crear nuevos campos en base a cero, uno o más campos preexistentes.
 
 Para crear un nuevo campo de cero, sobre cualquier columna preexistente siga la ruta: 
 
-Editar columnas --> Agregar columna basada en esta columna... 
+Editar columnas -> Agregar columna basada en esta columna…
 
 Se abrirá una ventana como la que se muestra en la <<img-fig-09,Figura 9>>.
 
 Arriba de todo, coloque el nombre del nuevo campo.
 
-<<IMPORTANT,NOTA IMPORTANTE>>: Debe tener extremo cuidado al escoger los nombres que dará a las nuevas columnas. Considere que el nombre sea indicativo de lo que contiene (e.g., no le ponga “Columna 1” o “Transformación 3”). OpenRefine no le dejará utilizar nombres que ya hayan sido utilizados para nombrar otros campos dentro del proyecto. Considere qué otros campos tiene en su base de datos original y no utilice nombres que ya hayan sido utilizados, se evitará así importar datos a columnas equivocadas al volver a su base de datos.
+IMPORTANT: Debe tener extremo cuidado al escoger los nombres que dará a las nuevas columnas. Considere que el nombre sea indicativo de lo que contiene (e.g., no le ponga “Columna 1” o “Transformación 3”). OpenRefine no le dejará utilizar nombres que ya hayan sido utilizados para nombrar otros campos dentro del proyecto. Considere qué otros campos tiene en su base de datos original y no utilice nombres que ya hayan sido utilizados, se evitará así importar datos a columnas equivocadas al volver a su base de datos.
 
 Luego, en el cuadro de texto “Expresión” escriba: “null”. Ello quiere decir que se creará un campo con valores nulos. Luego oprima “Aceptar”. Alternativamente, en vez de “null” puede colocar la expresión: "", y el nuevo campo tendrá valores en blanco.
 
@@ -70,7 +63,7 @@ image::img/es.figure-09.jpg[Figura 9,align=center]
 
 El nuevo campo, con el nombre que le haya dado, aparecerá a la derecha de aquel a partir del cual fue generado.
 
-<<IMPORTANT,NOTA IMPORTANTE>>: Tenga en cuenta que las columnas nuevas que cree en la aplicación no estarán en su base de datos original. Al importar nuevamente los datos que han sido limpiados a su base de datos, dependiendo de cómo esté estructurada esa base de datos, es posible que estas nuevas columnas no sean importadas o que reciba un mensaje de error de importación porque el número de campos del archivo no coincide con el de la base de datos. En estos casos, debe asegurarse de agregar los nuevos campos en su base de datos si desea importar todos los campos nuevos.
+IMPORTANT: Tenga en cuenta que las columnas nuevas que cree en la aplicación no estarán en su base de datos original. Al importar nuevamente los datos que han sido limpiados a su base de datos, dependiendo de cómo esté estructurada esa base de datos, es posible que estas nuevas columnas no sean importadas o que reciba un mensaje de error de importación porque el número de campos del archivo no coincide con el de la base de datos. En estos casos, debe asegurarse de agregar los nuevos campos en su base de datos si desea importar todos los campos nuevos.
 
 ==== Nuevas columnas a partir transformaciones simples de otras columnas
 
@@ -82,7 +75,7 @@ Si desea crear un campo que sea la concatenación de otros dos campos separados,
 Utilizaremos como ejemplo la concatenación de los campos [source]`genus` y [source]`specificEpithet`.
 
 Click en la flecha azul del campo [source]`genus`
-	--> Editar columnas 	--> Agregar columna basada en esta columna...
+	-> Editar columnas 	-> Agregar columna basada en esta columna...
 
 Se abrirá una nueva ventana (<<img-fig-10,Figura 10>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`scientificName` en los datos).
 
@@ -164,36 +157,40 @@ Los resultados esperados utilizando cada una de las dos fórmulas se resumen en 
 
 |===
 
-<<NOTE,NOTA>>: Para evitar de modo más general este problema de celdas nulas, cuando importa el conjunto de datos para crear su proyecto al principio del proceso, puede asegurarse de NO seleccionar la opción “Store blank cells as nulls” (ver <<img-fig-04,Figura 4>>).
+NOTE: Para evitar de modo más general este problema de celdas nulas, cuando importa el conjunto de datos para crear su proyecto al principio del proceso, puede asegurarse de NO seleccionar la opción “Store blank cells as nulls” (ver <<img-fig-04,Figura 4>>).
 
 ===== Divisiones
 Si desea crear campos separados a partir de los valores en un único campo, siga la siguiente ruta:
 Utilizaremos como ejemplo la división del campo [source]`eventDate` para agregar tres campos: año, mes y día (year, month y day)
 
-Click en la flecha azul del campo [source]`eventDate`
---> Editar columnas 	--> Dividir en varias columnas...
+Click en la flecha azul del campo [source]`eventDate` -> Editar columnas -> Dividir en varias columnas...
 
 Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>). Allí debe escoger si se dividirá por separador o por longitud de caracteres, y en el primer caso qué tipo de separador se utilizará (puede ser espacio –tab-, coma, punto y coma, guión, etc.).
 En este caso, si exploramos los datos del campo original veremos que año, mes y día están separados por barras oblicuas (“/”), de modo que elegiremos esta barra como separador.
 
-<<IMPORTANT,NOTA IMPORTANTE>>: *Desmarque la opción “Eliminar esta columna” a la derecha*. Si la deja seleccionada, perderá el campo original y sólo tendrá los tres nuevos campos.
+IMPORTANT: *Desmarque la opción “Eliminar esta columna” a la derecha*. Si la deja seleccionada, perderá el campo original y sólo tendrá los tres nuevos campos.
 
 [#img-fig-11]
 .Figura 11
 image::img/es.figure-11.jpg[Figura 11,align=center]
 
-Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`eventDate`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda (flecha azul-->Editar columnas --> Renombrar esta columna). En este caso, nómbrelos “year”, “month” y “day” según corresponda.
+Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`eventDate`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda (flecha azul -> Editar columnas -> Renombrar esta columna). En este caso, nómbrelos “year”, “month” y “day” según corresponda.
 
 
-<<IMPORTANT,NOTA IMPORTANTE>>: Cuando efectúe este tipo de divisiones de campos utilizando como criterio o bien separadores o bien longitud de caracteres, asegúrese de que en el campo original no haya distintos formatos para diferentes registros. Vea el siguiente ejemplo: 
+IMPORTANT: Cuando efectúe este tipo de divisiones de campos utilizando como criterio o bien separadores o bien longitud de caracteres, asegúrese de que en el campo original no haya distintos formatos para diferentes registros. Vea el siguiente ejemplo:
 
 Se quiere separar un campo nombrado “coordenadas” que contiene datos de latitud y longitud separados por coma, del tipo: “-32.04588990, -54.98789901”, para obtener dos campos distintos, latitud y longitud. 
 
 Si todos los campos tienen el mismo formato, obtendrá dos campos nuevos de la siguiente forma:
-				campo 1: -32.04588990
-				campo 2: -54.98789901
+....
+campo 1: -32.04588990
+campo 2: -54.98789901
+....
 
 En cambio, si en algún registro los valores dentro del campo coordenadas no están en formato decimal, entonces tendrá problemas al dividir el campo. Suponga como ejemplo que uno o más registros tienen valores con formato “34° 20’ 15,2’’ S, 54° 49’ 13’’ O”. En ese caso, la separación le dará 3 campos en vez de dos, con la latitud incorrectamente separada:
-				campo 1: 34° 20’ 15
-				campo 2: 2’’ S
-				campo 3: 54° 49´ 13´´ O
+
+....
+campo 1: 34° 20’ 15
+campo 2: 2’’ S
+campo 3: 54° 49´ 13´´ O
+....

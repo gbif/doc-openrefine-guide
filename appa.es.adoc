@@ -2,7 +2,7 @@
 
 = Apéndice 1: instalación de OpenRefine
 
-*NOTE*: Estas instrucciones han sido adaptadas y traducidas al castellano a partir de un instructivo preparado por el GBIF-BID Programme.
+NOTE: Estas instrucciones han sido adaptadas y traducidas al castellano a partir de un instructivo preparado por el GBIF-BID Programme.
 
 === Requerimientos
 
@@ -21,9 +21,9 @@ Para instalar OpenRefine 3.1 en su computadora, siga los siguientes pasos:
 .	Abra y arrastre el icono en la carpeta Applications.
 .	Haga doble clic en él y su navegador web mostrará una nueva ventana con la aplicación.
 
-*NOTE*: Si tiene problemas para instalar Open Refine en Mac puede deberse a que sólo trabaja con java 6 y 7. También puede probar instalando la última versión (no estable) disponible en la http://openrefine.org/download.html[web de OpenRefine].
+NOTE: Si tiene problemas para instalar Open Refine en Mac puede deberse a que sólo trabaja con Java 6 y 7. También puede probar instalando la última versión (no estable) disponible en la http://openrefine.org/download.html[web de OpenRefine].
 
-*NOTE*: Existe también una https://github.com/OpenRefine/OpenRefine/releases/download/3.1/openrefine-linux-3.1.tar.gz[versión para Linux].
+NOTE: Existe también una https://github.com/OpenRefine/OpenRefine/releases/download/3.1/openrefine-linux-3.1.tar.gz[versión para Linux].
 
 === Para saber más
 
