@@ -277,7 +277,7 @@ Note que los tres resultados del ejemplo corresponden a provincias distintas en 
 [NOTE]
 .Visualizando JSON
 --
-Para visualizar la estructura de los resultados en JSON de modo más amigable, puede probar copiando el resultado de alguna celda en un analizador de JSON en línea. Existen muchas opciones, una de ellas es http://json.parser.online.fr/. Allí, seleccionando distintas opciones arriba a la derecha podrá distinguir mejor la estructura, cuáles son los objetos, los arreglos y las cadenas de texto y cómo están relacionados unos con otros (Figura 47). Esto puede ser muy útil a la hora de armar expresiones para desglosar el contenido de los campos en nuevos campos sin perder información.
+Para visualizar la estructura de los resultados en JSON de modo más amigable, puede probar copiando el resultado de alguna celda en un analizador de JSON en línea. Existen muchas opciones, una de ellas es http://json.parser.online.fr/. Allí, seleccionando distintas opciones arriba a la derecha podrá distinguir mejor la estructura, cuáles son los objetos, los arreglos y las cadenas de texto y cómo están relacionados unos con otros (<<img-fig-47,Figura 47>>). Esto puede ser muy útil a la hora de armar expresiones para desglosar el contenido de los campos en nuevos campos sin perder información.
 
 [#img-fig-47]
 .Figura 47
@@ -316,7 +316,7 @@ forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)),
 .join("|")
 ----
 
-Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura Json particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la Figura 47).
+Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura Json particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la <<img-fig-47,Figura 47>>).
 
 El nuevo campo tendrá valores como los siguientes, por ejemplo, para un registro cuya consulta devolvió tres resultados:
 [source]
@@ -458,7 +458,7 @@ NOTE: La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… v�
 image::img/es.figure-50.jpg[Figura 50,align=center]
 
 Fíjese que en el primer caso de la figura, Canadensys ha podido resolver la fecha, mientras que en el segundo caso no ha podido, dado que no puede interpretar inequívocamente “6” y “4” como día y mes o viceversa (como se explica más arriba).
-Ahora que tiene el JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el JSON, cree nuevas columnas: Editar columnas --> Agregar columna basada en esta columna (Figura 51).
+Ahora que tiene el JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el JSON, cree nuevas columnas: Editar columnas --> Agregar columna basada en esta columna (<<img-fig-51,Figura 51>>).
 
 Para extraer sólo la fecha en formato ISO, en la ventana nombre la nueva columna (por ejemplo, “ISO_eventDate”) y en el cuadro de texto pegue la siguiente expresión:
 ----
@@ -474,7 +474,7 @@ Para extraer el año, mes o día, pegue en cambio una de las siguientes expresio
 * Mes: [source]`"forEach(value.parseJson().get("data").get("results"),v,v.get("month"))[0])"`
 * Día: [source]`"forEach(value.parseJson().get("data").get("results"),v,v.get("day"))[0])"`
 
-Verá que algunos de los resultados serán nulos, éstos corresponden a los casos que Canadensys no ha podido resolver (como se explica más arriba) (<<img-fig-52,Figura 52>).
+Verá que algunos de los resultados serán nulos, éstos corresponden a los casos que Canadensys no ha podido resolver (como se explica más arriba) (<<img-fig-52,Figura 52>>).
 
 [#img-fig-52]
 .Figura 52
