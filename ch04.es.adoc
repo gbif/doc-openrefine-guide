@@ -360,3 +360,122 @@ IMPORTANT: A la hora de agregar datos de georreferenciación, contraste siempre 
 ===== Breve introducción
 
 Uno de los campos sobre el que se puede corroborar la calidad de los datos es el campo de fecha: [source]`"eventDate"`.
+
+Recordemos primero la http://rs.tdwg.org/dwc/terms/index.htm#eventDate[*definición de [source]`"eventDate"` en el estándar Darwin Core*]:
+
+_The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E)._
+
+Si piensa en un ejemplar de museo, [source]`"eventDate"` refiere a cuándo fue colectado el ejemplar. Si piensa en una observación, [source]`"eventDate"` refiere a cuándo fue realizada esa observación.
+
+Darwin Core sugiere que se utilice para capturar la información de fecha el estándar https://en.wikipedia.org/wiki/ISO_8601[ISO 8601:2004(E)]. Para fechas únicas, este estándar tiene el siguiente formato:
+
+----
+AAAA-MM-DDTHH:mmX
+----
+Donde:
+
+AAAA: año, con cuatro dígitos.
+MM: mes, con dos dígitos. E.g.: mayo sería 05.
+DD: día, con dos dígitos. E.g.: segundo día de un mes sería 02.
+T: indica que lo que viene a continuación es la hora.
+HH: horas, con dos dígitos, en formato de 24 hs.
+mm: minutos, con dos dígitos.
+
+X: indica la zona horaria. La zona horaria se determina tomando como base UTC (Coordinated Universal Time). Si uno está justo sobre la zona horaria UTC, X se reemplaza por “Z”. Si uno está en otra zona horaria, debe reemplazarse X por la diferencia horaria correspondiente.
+
+Por ejemplo, Argentina es UTC-3, o sea, 03horas00minutos al oeste (-) de UTC, por lo cual X debe reemplazarse por “-0300”.
+
+NOTE: De este formato, uno puede utilizar tanto el formato completo (incluyendo la hora) como sólo la primera parte, AAAA-MM-DD.
+
+NOTE: Este formato también puede utilizarse para expresar rangos de fecha de manera estandarizada. Para ello, se usa el mismo formato y se separan las fechas con barras “/”, ver ejemplos abajo.
+
+.Ejemplos
+|===
+[cols=2,options="header"]
+| Fecha original
+
+| Fecha estandarizada
+
+| 12 Feb 1809
+
+| 1809-02-12
+
+| 12/02/1809
+
+| 1809-02-12
+
+| Jun 1906
+
+| 1906-06
+
+| 1971
+
+| 1971
+
+| 20 Feb 2009 8:40am UTC
+
+| 2009-02-20T08:40Z
+
+| 8 Mar 1963 2:07pm, en la zona horaria 6 horas más temprano que UTC
+
+| 1963-03-08T14:07-0600
+
+| 13-15 Nov 2007
+
+| 2007-11-13/15
+
+| 1 Mar 2007 1pm UTC – 11 May 2008 3:30pm UTC
+
+| 2007-03-01T13:00:00Z/2008-05-11T15:30:00Z
+
+|===
+
+Limpieza de fechas
+Muchas veces, a pesar de lo que indica el estándar Darwin Core, encontramos en el campo eventDate fechas que no siguen el formato sugerido. Para limpiarlas, puede hacer uso de la herramienta que ofrece Canadensys: Date Parsing (http://data.canadensys.net/tools/dates).
+Esta herramienta permite interpretar fechas, devolviéndolas en formato estándar. Ejemplos de los tipos de valores que puede interpretar son:
+Jun 13, 2008
+15 Jan 2011
+2009 IV 02
+2 VII 1986
+
+Algunas fechas, sin embargo no las interpreta, veamos el siguiente ejemplo (Figura 48):
+ 
+Figura 48.
+En las dos líneas inferiores, “13” sólo puede referir a días, pues no hay un mes “13”.
+En las dos líneas superiores, en cambio, “2” y “4” pueden ambos referir a mes y día. Como en distintas partes del mundo se utilizan sistemas distintos (primero se pone día y luego mes, o viceversa), la herramienta no puede determinar inequívocamente cuál es cuál, y por ende no hace la interpretación.
+
+Debe tener esto en cuenta cuando utilice la herramienta para limpiar los datos.
+
+Ahora sí, invoque Date Parsing desde OpenRefine. Para ello, primero seleccione algunas fechas mediante una faceta, para reducir el tiempo de consulta. Luego, sobre la columna eventDate haga click en la flecha azul --> Editar columna --> Agregar columna accediendo a URLs… (Figura 49). En la ventana que aparece, nombre la nueva columna (por ejemplo “Canadensys_eventDate”) y pegue en el cuadro de texto la siguiente expresión:
+"http://data.canadensys.net/tools/dates.json?data="+escape(cells["eventDate"].value,"url")"
+Esta expresión le indica a la herramienta que evalúe los valores del campo eventDate y que envíe los resultados en formato JSON.
+ 
+Figura 49.
+
+NOTA: La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… váyase a almorzar, o incluso a dormir y lo revisa al día siguiente… Cuando vuelva, encontrará el nuevo campo con los valores estandarizados! En formato JSON… (Figura 50).
+ 
+Figura 50.
+
+Fíjese que en el primer caso de la figura, Canadensys ha podido resolver la fecha, mientras que en el segundo caso no ha podido, dado que no puede interpretar inequívocamente “6” y “4” como día y mes o viceversa (como se explica más arriba).
+Ahora que tiene el JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el JSON, cree nuevas columnas: Editar columnas --> Agregar columna basada en esta columna (Figura 51).
+
+Para extraer sólo la fecha en formato ISO, en la ventana nombre la nueva columna (por ejemplo, “ISO_eventDate”) y en el cuadro de texto pegue la siguiente expresión:
+
+forEach(value.parseJson().get("data").get("results"),v,v.get("iso8601"))[0])
+
+ 
+Figura 51.
+Para extraer el año, mes o día, pegue en cambio una de las siguientes expresiones:
+Año:
+forEach(value.parseJson().get("data").get("results"),v,v.get("year"))[0])
+Mes:
+forEach(value.parseJson().get("data").get("results"),v,v.get("month"))[0])
+Día:
+forEach(value.parseJson().get("data").get("results"),v,v.get("day"))[0])
+
+	Verá que algunos de los resultados serán nulos, éstos corresponden a los casos que Canadensys no ha podido resolver (como se explica más arriba) (Figura 52).
+ 
+Figura 52.
+Para terminar de limpiar las fechas, entonces, tendrá que revisar los valores que no hayan sido estandarizados por la herramienta. Para ello, sobre el campo ISO_eventDate puede armar una faceta y seleccionar el valor “blank”. Luego, arme una faceta sobre el campo eventDate (el que tenía los valores originales) y si estos son pocos, puede hacer un chequeo manual y completar el campo ISO_eventDate.
+
+
