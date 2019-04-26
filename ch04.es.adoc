@@ -156,7 +156,201 @@ Una vez que haya creado el nuevo campo con la expresión general, verá que cont
 
 En los resultados puede tener tres casos:
 
-Caso 1) Ningún resultado encontrado. Ello quiere decir que GeoLocate no ha podido ubicar la localidad de interés. En la celda correspondiente verá lo siguiente:
+*Caso 1)* Ningún resultado encontrado. Ello quiere decir que GeoLocate no ha podido ubicar la localidad de interés. En la celda correspondiente verá lo siguiente:
+[source,javascript]
 ----
-{ "engineVersion" : "GLC:5.21|U:1.01374|eng:1.0", "numResults" : 0, "executionTimems" : 171.6003 }
+{
+  "engineVersion" : "GLC:5.21|U:1.01374|eng:1.0",
+  "numResults" : 0,
+  "executionTimems" : 171.6003
+}
 ----
+
+*Caso 2)* Un único resultado encontrado. En la celda correspondiente verá, por ejemplo, lo siguiente:
+[source,javascript]
+----
+{
+  "engineVersion": "GLC:5.21|U:1.01374|eng:1.0",
+  "numResults": 1,
+  "executionTimems": 171.6003,
+  "resultSet": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -64.471941, -23.643418 ] <1>
+        },
+        "properties": {
+          "parsePattern": "YUTO", <2>
+          "precision": "High",
+          "score": 79,
+          "uncertaintyRadiusMeters": 3036, <3>
+          "uncertaintyPolygon": "Unavailable", <4>
+          "displacedDistanceMiles": 0, <5>
+          "displacedHeadingDegrees": 0,
+          "debug": ":GazPartMatch=False|:inAdm=True|:Adm=JUJUY|:NPExtent=5040|:NP=YUTO|:KFID=|YUTO" <6>
+        }
+      }
+    ],
+    "crs": { "type": "EPSG", "properties": { "code": 4326 } }
+  }
+}
+----
+<1> Las coordenadas: [source,javascript]`"coordinates": [-64.471941, -23.643418]`
+<2> Las localidad original que consultó: `"parsePattern" : "YUTO"`
+<3> El radio de incerteza en metros: `"uncertaintyRadiusMeters" : 3036`
+<4> El polígono de incerteza asociado: `"uncertaintyPolygon" : "Unavailable"`, en este caso no disponible.
+<5> Los desplazamientos: distancia en millas y grados en una dirección: `"displacedDistanceMiles" : 0, "displacedHeadingDegrees" : 0`, en este caso con valores `0` porque no se especifica desplazamiento de ningún tipo en la localidad (e.g., 45km de Yuto, o 45km N Yuto).
+<6> La correspondencia en el gacetero consultado: `GazPartMatch`, y en éste la división administrativa bajo la cual se encontró la localidad: `|:Adm=JUJUY|`.
+
+*Caso 3)* Varios resultados encontrados para un mismo valor de localidad. Esto sucede comúnmente cuando no se especifican en la consulta niveles administrativos por debajo de país (e.g., podría haber en un mismo país varios lugares con el mismo nombre). Un ejemplo sería:
+[source,javascript]
+----
+{
+  "engineVersion": "GLC:5.21|U:1.01374|eng:1.0",
+  "numResults": 3, <1>
+  "executionTimems": 187.2004,
+  "resultSet": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -64.158097, -26.21252 ] <2>
+        },
+        "properties": {
+          "parsePattern": "TARTAGAL", <3>
+          "precision": "High",
+          "score": 83,
+          "uncertaintyRadiusMeters": 301,
+          "uncertaintyPolygon": "Unavailable",
+          "displacedDistanceMiles": 0,
+          "displacedHeadingDegrees": 0,
+          "debug": ":GazPartMatch=False|:inAdm=True|:Adm=SANTIAGO DEL ESTERO|:NPExtent=500|:NP=TARTAGAL|:KFID=|TARTAGAL" <4>
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -59.846115, -28.671732 ] <2>
+        },
+        "properties": {
+          "parsePattern": "TARTAGAL", <3>
+          "precision": "High",
+          "score": 83,
+          "uncertaintyRadiusMeters": 3036,
+          "uncertaintyPolygon": "Unavailable",
+          "displacedDistanceMiles": 0,
+          "displacedHeadingDegrees": 0,
+          "debug": ":GazPartMatch=False|:inAdm=True|:Adm=SANTA FE|:NPExtent=5040|:NP=TARTAGAL|:KFID=|TARTAGAL" <4>
+        }
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [ -63.801314, -22.516365 ] <2>
+        },
+        "properties": {
+          "parsePattern": "TARTAGAL", <3>
+          "precision": "High",
+          "score": 83,
+          "uncertaintyRadiusMeters": 3036,
+          "uncertaintyPolygon": "Unavailable",
+          "displacedDistanceMiles": 0,
+          "displacedHeadingDegrees": 0,
+          "debug": ":GazPartMatch=False|:inAdm=True|:Adm=SALTA|:NPExtent=5040|:NP=TARTAGAL|:KFID=|TARTAGAL" <4>
+        }
+      }
+    ],
+    "crs": { "type": "EPSG", "properties": { "code": 4326 } }
+  }
+}
+----
+
+Note que los tres resultados del ejemplo corresponden a provincias distintas en las que se encuentra una localidad “Tartagal”, puede comparar las coordenadas para cada una.
+
+[NOTE]
+.Visualizando JSON
+--
+Para visualizar la estructura de los resultados en JSON de modo más amigable, puede probar copiando el resultado de alguna celda en un analizador de JSON en línea. Existen muchas opciones, una de ellas es http://json.parser.online.fr/. Allí, seleccionando distintas opciones arriba a la derecha podrá distinguir mejor la estructura, cuáles son los objetos, los arreglos y las cadenas de texto y cómo están relacionados unos con otros (Figura 47). Esto puede ser muy útil a la hora de armar expresiones para desglosar el contenido de los campos en nuevos campos sin perder información.
+
+[#img-fig-47]
+.Figura 47
+image::img/es.figure-47.jpg[Figura 47,align=center]
+--
+
+*NOTA:* La expresión utilizada es muy simple y sólo le pide al servicio que resuelva la georreferenciación en base al campo localidad y teniendo como valor fijo “Argentina” para el campo país, pero sin especificar los valores de otros campos geográficos. Sin embargo, todos los campos se pueden incluir en la expresión para obtener resultados más específicos. Ello puede hacerse de dos maneras:
+
+. Establecer los valores de los campos como valores fijos, como hicimos con el país, agregando luego por ejemplo: `&state=VALOR` donde VALOR es el valor fijo que uno establece (e.g., “Córdoba”). Esto restringirá los resultados en función de esos parámetros.
+. Incluir los campos como valores a consultar, en cuyo caso para cada campo hay que incluir como valor: [source,javascript]`+escape(cells.NOMBREDELCAMPO.value.'url')+`
+
+La expresión con todos los campos se verá entonces como:
+[source,javascript]
+----
+"http://www.museum.tulane.edu/webservices/geolocatesvcv2/glcwrap.aspx?country=Argentina&state=" +
+  escape(cells.stateProvince.value,'url')+"&locality="+escape(cells.locality.value,'url')
+----
+Note que el nombre del campo será el que tiene en su base de datos. Note también que en la base de datos dada para este ejercicio no hay un campo correspondiente a [source]`county`, pero GeoLocate permite incluirlo si lo hubiera.
+
+Para poder trabajar con estos resultados más cómodamente, debemos extraer de allí los valores de interés. En este paso debe tener cuidado. Debido a que no especificamos todos los campos geográficos en la consulta a GeoLocate, recuerde que los registros pueden tener más de un resultado posible, y que cada resultado tiene sus propios parámetros de georreferenciación.
+
+A modo de ejemplo, extraeremos en nuevos campos los valores de las coordenadas. (El conjunto de datos provisto para realizar los ejercicios de esta guía contiene campos originales de latitud y longitud provistos por la fuente, puede utilizarlos para contrastar los resultados obtenidos utilizando GeoLocate).
+
+Para extraer las coordenadas puede seguir dos métodos: 1) extraer latitud y longitud conjuntamente y luego separar; o 2) extraer latitud y longitud de modo independiente.
+
+*Método 1:* extraer latitud y longitud conjuntamente
+
+Haga click en la flecha azul del campo GeoLocate_Json_georref --> Editar columnas --> Agregar columna basada en esta columna.
+
+De un nombre al nuevo campo, por ejemplo, GeoLocate_parseCoord, y en el cuadro de texto pegue la siguiente expresión:
+
+[source,javascript]
+----
+forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)), w,
+  w.geometry.coordinates.join("; "))
+.join("|")
+----
+
+Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura Json particular Objeto --> Arreglo --> Objeto --> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la Figura 47).
+
+El nuevo campo tendrá valores como los siguientes, por ejemplo, para un registro cuya consulta devolvió tres resultados:
+[source]
+----
+-64.158097; -26.21252|-59.846115; -28.671732|-63.801314; -22.516365
+----
+
+IMPORTANT: Note que GeoLocate provee como primer valor de coordenadas la longitud y como segundo valor la latitud.
+
+Dividiremos ahora este campo en tres partes, una para cada resultado:
+
+Haga click en la flecha azul del campo --> Editar columnas --> Dividir en varias columnas.
+
+Escoja como separador `|`. Desmarque la opción “Eliminar esta columna” si quiere mantener el campo original (esto es recomendable, siempre puede eliminar los campos después).
+
+Tendrá entonces ahora una serie de campos con valores del tipo: `-64.158097; -26.21252`. Sobre cada uno, puede realizar una nueva separación utilizando como separador `;`.
+
+*Método 2:* extraer latitud y longitud independientemente
+
+Haga click en la flecha azul del campo GeoLocate_Json_georref --> Editar columnas --> Agregar columna basada en esta columna.
+
+De un nombre al nuevo campo, por ejemplo, GeoLocate_parseLong, y en el cuadro de texto pegue la siguiente expresión:
+[source,javascript]
+----
+forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)), w,
+  w.geometry.coordinates[0]).join("; "))
+.join("|")
+----
+Esta expresión es diferente a la usada anteriormente en que se especifica qué valor del arreglo coordenadas se desea obtener: `[0]`. En OpenRefine, el primer valor se indica con 0, el segundo con 1, y así sucesivamente. Dado que en los resultados de la consulta se indica primero la longitud, ésta será el valor `[0]`, y la latitud será el valor `[1]` dentro del arreglo “coordinates”.
+
+El nuevo campo creado tendrá valores como los siguientes: `-64.158097; -59.846115; -63.801314` cada uno correspondiente a una longitud de uno de los resultados obtenidos de la consulta a GeoLocate para un determinado registro.
+
+Puede repetir el proceso para obtener las latitudes, cambiando en la expresión anterior `[0]` por `[1]`, y luego separar los campos por resultado, utilizando como separador `;`.
+
+IMPORTANT: Debe tener en cuenta que, como se mencionó antes, cuantos más datos se provean al servicio de GeoLocate en la consulta más sencillo será desglosar los resultados después. El proceso de desglose puede ser muy engorroso y requiere que sea muy meticuloso a la hora de nombrar campos y separar contenido. Si no está familiarizado con el uso de JSON, es preferible que realice el desglose “pasito a pasito” para evitar perder o mezclar información. Por ejemplo, puede crear un documento con el flujo de trabajo donde enumere los pasos a seguir con todos los detalles necesarios (incluya allí el tipo de resultados que espera ver y cómo se verían en los campos).
+
+IMPORTANT: A la hora de agregar datos de georreferenciación, contraste siempre los resultados contra los campos geográficos que tiene. En el caso de tener varios resultados posibles, no siempre el primer resultado es el correcto. Recuerde reportar cuál fue el proceso de georreferenciación utilizado y todos los parámetros posibles asociados. Para consultar en qué campos de Darwin Core se reporta cada parámetro, puede referirse a: http://rs.tdwg.org/dwc/terms/#location, y consultar: https://github.com/tdwg/dwc-qa/wiki/Georeferences.
