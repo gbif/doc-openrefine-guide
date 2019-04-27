@@ -3,7 +3,7 @@
 ==== Agrupamientos simples
 Los agrupamientos permiten, como su nombre lo indica, agrupar valores de acuerdo a diferentes criterios. Por ejemplo, pueden agruparse valores de acuerdo al grado de similitud en cuanto a las letras que los componen o en cuanto a la fonética asociada. Esta función es muy útil para corregir errores de ortografía y variaciones en los datos.
 
-Ubique el campo [source]`stateProvince` y arme una faceta de texto para este campo.
+Ubique el campo [source]`"stateProvince"` y arme una faceta de texto para este campo.
 
 En la ventana de la faceta, haga click en el botón “Agrupar”. Se abrirá entonces una ventana como la mostrada en la <<img-fig-31,Figura 31>>.
 

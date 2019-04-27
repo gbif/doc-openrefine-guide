@@ -14,13 +14,13 @@ Nos referimos a consultas a través de URLs cuando el proceso implica proveer a 
 
 ==== Resolución de nombres científicos usando Global Names Resolver
 
-En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`scientificName`) contra el servicio Global Names Resolver (http://resolver.globalnames.org, de aquí en más GNR).
+En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`"scientificName"`) contra el servicio Global Names Resolver (http://resolver.globalnames.org, de aquí en más GNR).
 
-Para acortar el tiempo de consulta, cree una faceta para el campo [source]`genus` (click en la flecha azul -> Facetas -> Faceta de texto) y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna parece tener 3 especies asociadas: C. lateralis (1 registro), C. arundinacea (6 registros) y C. latifolia (3 registros).
+Para acortar el tiempo de consulta, cree una faceta para el campo [source]`"genus"` (click en la flecha azul -> Facetas -> Faceta de texto) y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna parece tener 3 especies asociadas: C. lateralis (1 registro), C. arundinacea (6 registros) y C. latifolia (3 registros).
 
 Para comparar los nombres contra el GNR, haremos un llamado al servicio y capturaremos los resultados en un nuevo campo:
 
-A partir del campo [source]`scientificName`, cree una nueva columna a partir de una dirección URL haciendo click en la flecha azul del campo y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
+A partir del campo [source]`"scientificName"`, cree una nueva columna a partir de una dirección URL haciendo click en la flecha azul del campo y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
 
 Editar columnas	-> Agregar columna accediendo a URLs…
 
@@ -36,7 +36,7 @@ Se abrirá una ventana como la mostrada en la <<img-fig-44,Figura 44>>. Allí, d
   escape(cells["scientificName"].value,"url")
 ----
 
-Dicha expresión indica se hará una consulta en el GNR utilizando como valores de comparación aquellos que se encuentran en el campo [source]`scientificName`. Es importante que el nombre del campo que utiliza en la expresión sea idéntico al nombre del campo del cual tomará los valores originales, o de otro modo el llamado será infructuoso.
+Dicha expresión indica se hará una consulta en el GNR utilizando como valores de comparación aquellos que se encuentran en el campo [source]`"scientificName"`. Es importante que el nombre del campo que utiliza en la expresión sea idéntico al nombre del campo del cual tomará los valores originales, o de otro modo el llamado será infructuoso.
 
 [#img-fig-44]
 .Figura 44
@@ -74,7 +74,7 @@ forEach(value.parseJson().get("data")[0].get("results"), v,
 .join(" | ")
 ----
 
-Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estructura secciones “data” y dentro de esta “results” –un “result” proveniente de cada fuente consultada (por ejemplo, un “result” de Catalogue of Life). Dentro de cada sección “results” extrae los valores de interés (“data_source_title”, “name_string” y “current_name_string”) y los separa con un “;”. Como no todas las fuentes proveen un nombre aceptado (“current_name_string”), la expresión [source]`if` especifica que si ese parámetro es nulo debe dejarse el espacio vacío ([source]``""``), y si no, colocar el valor extraído. Por último, une los grupos de valores extraídos en una única cadena de texto, separados por un [source]` | `.
+Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estructura secciones “data” y dentro de esta “results” –un “result” proveniente de cada fuente consultada (por ejemplo, un “result” de Catalogue of Life). Dentro de cada sección “results” extrae los valores de interés (“data_source_title”, “name_string” y “current_name_string”) y los separa con un “;”. Como no todas las fuentes proveen un nombre aceptado (“current_name_string”), la expresión [source]`if` especifica que si ese parámetro es nulo debe dejarse el espacio vacío ([source]``""``), y si no, colocar el valor extraído. Por último, une los grupos de valores extraídos en una única cadena de texto, separados por un [source]`` | ``.
 
 [#img-fig-45]
 .Figura 45
@@ -82,31 +82,36 @@ image::img/es.figure-45.jpg[Figura 45,align=center]
 
 Una vez que haya creado el campo, verá que contiene, aún en formato JSON, los valores de interés extraídos de GNR. Por ejemplo:
 
-....
+// Disable default Javascript formatting for these output blocks.
+:source-language!:
+
+----
 uBio NameBank; Cinna lateralis; | Catalogue of Life; Cinna lateralis Walter; Andropogon virginicus L. | ITIS; Cinna lateralis Walter; Andropogon virginicus L. | GBIF Backbone Taxonomy; Cinna lateralis Walter; Andropogon virginicus L. | EOL; Cinna lateralis Walter; | Tropicos - Missouri Botanical Garden; Cinna lateralis Walter; | The International Plant Names Index; Cinna lateralis Walter; | uBio NameBank; Cinna lateralis Walter; | uBio NameBank; Cinna lateralis Walter, 1788; | Arctos; Cinna lateralis Walter;
-....
+----
 
 Note que algunas fuentes encuentran el nombre pero no proveen un nombre aceptado, por ejemplo: 
 
-....
+----
 uBio NameBank; Cinna lateralis;
-....
+----
 
 no tiene un valor en el tercer lugar, mientras que:
 
-....
+----
 Catalogue of Life; Cinna lateralis Walter; Andropogon virginicus L.
-....
+----
 
 provee el nombre encontrado y el nombre válido.
 
 Note además que algunas fuentes tienen más de una variante asociada al nombre, por ejemplo:
 
-....
+----
 uBio NameBank; Cinna lateralis;
 uBio NameBank; Cinna lateralis Walter;
 uBio NameBank; Cinna lateralis Walter, 1788;
-....
+----
+
+:source-language: javascript
 
 IMPORTANT: No todos los nombres serán necesariamente encontrados en todas las fuentes consultadas, por lo que el número de fuentes variará de un nombre al otro. En consecuencia, la ubicación de las fuentes en la cadena de texto no será homogénea de un registro al otro. Una consecuencia de esto es que si usted quiere luego separar el contenido en campos distintos de acuerdo a la fuente consultada (e.g., un campo para ITIS, uno para Catalogue of Life, etc.), no podrá hacerlo de modo que cada nuevo campo tenga los datos de una misma y única fuente.
 
@@ -134,9 +139,9 @@ A partir de los resultados obtenidos, puede extraer los nombres separando la nue
 
 ==== Georreferenciación usando GeoLocate
 
-En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta al servicio, construiremos previamente dos facetas. La primera sobre el campo [source]`country`, dentro de la cual seleccionaremos el valor “Argentina”. La segunda faceta será sobre el campo [source]`genus`, dentro de la cual seleccionaremos el valor “Acacia”. Una vez aplicadas ambas facetas y escogidos los valores, verá que en la ventana principal sólo se muestra un subconjunto de registros que cumplen estas condiciones simultáneamente.
+En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta al servicio, construiremos previamente dos facetas. La primera sobre el campo [source]`"country"`, dentro de la cual seleccionaremos el valor “Argentina”. La segunda faceta será sobre el campo [source]`"genus"`, dentro de la cual seleccionaremos el valor “Acacia”. Una vez aplicadas ambas facetas y escogidos los valores, verá que en la ventana principal sólo se muestra un subconjunto de registros que cumplen estas condiciones simultáneamente.
 
-Llevaremos a cabo la georreferenciación a partir del campo [source]`locality`. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en la flecha azul -> Editar columnas -> Agregar columna accediendo a URLs…
+Llevaremos a cabo la georreferenciación a partir del campo [source]`"locality"`. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en la flecha azul -> Editar columnas -> Agregar columna accediendo a URLs…
 
 Se abrirá una nueva ventana (<<img-fig-46,Figura 46>>). Allí dé un nombre al nuevo campo, por ejemplo “GeoLocate_Json_georref”, y pegue en el cuadro de texto la siguiente expresión:
 
@@ -287,7 +292,7 @@ image::img/es.figure-47.jpg[Figura 47,align=center]
 NOTE: La expresión utilizada es muy simple y sólo le pide al servicio que resuelva la georreferenciación en base al campo localidad y teniendo como valor fijo “Argentina” para el campo país, pero sin especificar los valores de otros campos geográficos. Sin embargo, todos los campos se pueden incluir en la expresión para obtener resultados más específicos. Ello puede hacerse de dos maneras:
 
 . Establecer los valores de los campos como valores fijos, como hicimos con el país, agregando luego por ejemplo: `&state=VALOR` donde VALOR es el valor fijo que uno establece (e.g., “Córdoba”). Esto restringirá los resultados en función de esos parámetros.
-. Incluir los campos como valores a consultar, en cuyo caso para cada campo hay que incluir como valor: [source,javascript]`+escape(cells.NOMBREDELCAMPO.value.'url')+`
+. Incluir los campos como valores a consultar, en cuyo caso para cada campo hay que incluir como valor: [source]`escape(cells.NOMBREDELCAMPO.value,'url')`
 
 La expresión con todos los campos se verá entonces como:
 [source,javascript]
@@ -295,7 +300,7 @@ La expresión con todos los campos se verá entonces como:
 "http://www.museum.tulane.edu/webservices/geolocatesvcv2/glcwrap.aspx?country=Argentina&state=" +
   escape(cells.stateProvince.value,'url')+"&locality="+escape(cells.locality.value,'url')
 ----
-Note que el nombre del campo será el que tiene en su base de datos. Note también que en la base de datos dada para este ejercicio no hay un campo correspondiente a [source]`county`, pero GeoLocate permite incluirlo si lo hubiera.
+Note que el nombre del campo será el que tiene en su base de datos. Note también que en la base de datos dada para este ejercicio no hay un campo correspondiente a [source]`"county"`, pero GeoLocate permite incluirlo si lo hubiera.
 
 Para poder trabajar con estos resultados más cómodamente, debemos extraer de allí los valores de interés. En este paso debe tener cuidado. Debido a que no especificamos todos los campos geográficos en la consulta a GeoLocate, recuerde que los registros pueden tener más de un resultado posible, y que cada resultado tiene sus propios parámetros de georreferenciación.
 
@@ -319,7 +324,7 @@ forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)),
 Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura Json particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la <<img-fig-47,Figura 47>>).
 
 El nuevo campo tendrá valores como los siguientes, por ejemplo, para un registro cuya consulta devolvió tres resultados:
-[source]
+[source,notjavascript]
 ----
 -64.158097; -26.21252|-59.846115; -28.671732|-63.801314; -22.516365
 ----
@@ -363,27 +368,27 @@ Uno de los campos sobre el que se puede corroborar la calidad de los datos es el
 
 Recordemos primero la http://rs.tdwg.org/dwc/terms/index.htm#eventDate[*definición de [source]`"eventDate"` en el estándar Darwin Core*]:
 
-****
-_The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E)._
-****
+[quote]
+The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).
 
 Si piensa en un ejemplar de museo, [source]`"eventDate"` refiere a cuándo fue colectado el ejemplar. Si piensa en una observación, [source]`"eventDate"` refiere a cuándo fue realizada esa observación.
 
 Darwin Core sugiere que se utilice para capturar la información de fecha el estándar https://en.wikipedia.org/wiki/ISO_8601[ISO 8601:2004(E)]. Para fechas únicas, este estándar tiene el siguiente formato:
 
-****
+[source,notjavascript]
+----
 AAAA-MM-DDTHH:mmX
-****
+----
 
 Donde:
 
-* [source]`"AAAA"`: año, con cuatro dígitos.
-* [source]`"MM"`: mes, con dos dígitos. E.g.: mayo sería 05.
-* [source]`"DD"`: día, con dos dígitos. E.g.: segundo día de un mes sería 02.
-* [source]`"T"`: indica que lo que viene a continuación es la hora.
-* [source]`"HH"`: horas, con dos dígitos, en formato de 24 hs.
-* [source]`"mm"`: minutos, con dos dígitos.
-* [source]`"X"`: indica la zona horaria. La zona horaria se determina tomando como base UTC (Coordinated Universal Time). Si uno está justo sobre la zona horaria UTC, X se reemplaza por “Z”. Si uno está en otra zona horaria, debe reemplazarse X por la diferencia horaria correspondiente.
+* `AAAA`: año, con cuatro dígitos.
+* `MM`: mes, con dos dígitos. E.g.: mayo sería 05.
+* `DD`: día, con dos dígitos. E.g.: segundo día de un mes sería 02.
+* `T`: indica que lo que viene a continuación es la hora.
+* `HH`: horas, con dos dígitos, en formato de 24 hs.
+* `mm`: minutos, con dos dígitos.
+* `X`: indica la zona horaria. La zona horaria se determina tomando como base UTC (Coordinated Universal Time). Si uno está justo sobre la zona horaria UTC, X se reemplaza por “Z”. Si uno está en otra zona horaria, debe reemplazarse X por la diferencia horaria correspondiente.
 
 Por ejemplo, Argentina es UTC-3, o sea, 03horas00minutos al oeste (-) de UTC, por lo cual X debe reemplazarse por “-0300”.
 
@@ -445,9 +450,9 @@ En las dos líneas superiores, en cambio, “2” y “4” pueden ambos referir
 
 Debe tener esto en cuenta cuando utilice la herramienta para limpiar los datos.
 
-Ahora sí, invoque Date Parsing desde OpenRefine. Para ello, primero seleccione algunas fechas mediante una faceta, para reducir el tiempo de consulta. Luego, sobre la columna [source]`"eventDate"` haga click en la flecha azul --> Editar columna --> Agregar columna accediendo a URLs… (<<img-fig-49,Figura 49>>). En la ventana que aparece, nombre la nueva columna (por ejemplo “Canadensys_eventDate”) y pegue en el cuadro de texto la siguiente expresión:
+Ahora sí, invoque Date Parsing desde OpenRefine. Para ello, primero seleccione algunas fechas mediante una faceta, para reducir el tiempo de consulta. Luego, sobre la columna [source]`"eventDate"` haga click en la flecha azul -> Editar columna -> Agregar columna accediendo a URLs… (<<img-fig-49,Figura 49>>). En la ventana que aparece, nombre la nueva columna (por ejemplo “Canadensys_eventDate”) y pegue en el cuadro de texto la siguiente expresión:
 ----
-"http://data.canadensys.net/tools/dates.json?data="+escape(cells["eventDate"].value,"url")"
+"http://data.canadensys.net/tools/dates.json?data="+escape(cells["eventDate"].value,"url")
 ----
 Esta expresión le indica a la herramienta que evalúe los valores del campo [source]`"eventDate"` y que envíe los resultados en formato JSON.
  
@@ -462,9 +467,9 @@ NOTE: La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… v�
 image::img/es.figure-50.jpg[Figura 50,align=center]
 
 Fíjese que en el primer caso de la figura, Canadensys ha podido resolver la fecha, mientras que en el segundo caso no ha podido, dado que no puede interpretar inequívocamente “6” y “4” como día y mes o viceversa (como se explica más arriba).
-Ahora que tiene el JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el JSON, cree nuevas columnas: Editar columnas --> Agregar columna basada en esta columna (<<img-fig-51,Figura 51>>).
+Ahora que tiene el JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el JSON, cree nuevas columnas: Editar columnas -> Agregar columna basada en esta columna (<<img-fig-51,Figura 51>>).
 
-Para extraer sólo la fecha en formato ISO, en la ventana nombre la nueva columna (por ejemplo, “ISO_eventDate”) y en el cuadro de texto pegue la siguiente expresión:
+Para extraer sólo la fecha en formato ISO, en la ventana nombre la nueva columna (por ejemplo, [source]`"ISO_eventDate"`) y en el cuadro de texto pegue la siguiente expresión:
 ----
 forEach(value.parseJson().get("data").get("results"),v,v.get("iso8601"))[0])
 ----
@@ -475,9 +480,9 @@ image::img/es.figure-51.jpg[Figura 51,align=center]
 
 Para extraer el año, mes o día, pegue en cambio una de las siguientes expresiones:
 
-* Año: [source]`"forEach(value.parseJson().get("data").get("results"),v,v.get("year"))[0])"`
-* Mes: [source]`"forEach(value.parseJson().get("data").get("results"),v,v.get("month"))[0])"`
-* Día: [source]`"forEach(value.parseJson().get("data").get("results"),v,v.get("day"))[0])"`
+* Año: [source]`forEach(value.parseJson().get("data").get("results"),v,v.get("year"))[0])`
+* Mes: [source]`forEach(value.parseJson().get("data").get("results"),v,v.get("month"))[0])`
+* Día: [source]`forEach(value.parseJson().get("data").get("results"),v,v.get("day"))[0])`
 
 Verá que algunos de los resultados serán nulos, éstos corresponden a los casos que Canadensys no ha podido resolver (como se explica más arriba) (<<img-fig-52,Figura 52>>).
 

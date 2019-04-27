@@ -14,7 +14,7 @@ En esta guía se muestra cómo utilizar funciones básicas de OpenRefine para la
 
 Para hacer un mejor uso de esta guía, se recomienda seguir los pasos utilizando el programa OpenRefine y el conjunto de datos modelo provisto junto con esta guía. Todos los ejemplos presentados corresponden a un conjunto de datos de biodiversidad que ha sido específicamente modificado por los autores.
 
-En el texto, los [source]`nombres de los campos originales` se marcan con color verde claro.
+En el texto, los [source]`"nombres de los campos originales"` se marcan con color verde claro.
 
 ====	Software
 

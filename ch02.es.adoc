@@ -72,25 +72,25 @@ Veamos ahora cómo crear nuevas columnas con datos modificados a partir de colum
 ===== Concatenaciones
 
 Si desea crear un campo que sea la concatenación de otros dos campos separados, siga la siguiente ruta:
-Utilizaremos como ejemplo la concatenación de los campos [source]`genus` y [source]`specificEpithet`.
+Utilizaremos como ejemplo la concatenación de los campos [source]`"genus"` y [source]`"specificEpithet"`.
 
 Click en la flecha azul del campo [source]`genus`
 	-> Editar columnas 	-> Agregar columna basada en esta columna...
 
-Se abrirá una nueva ventana (<<img-fig-10,Figura 10>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`scientificName` en los datos).
+Se abrirá una nueva ventana (<<img-fig-10,Figura 10>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`"scientificName"` en los datos).
 
 En el cuadro de texto, pegue la siguiente expresión:
 
 Expresión ejemplo:	[source]`cells["genus"].value + " " + cells["specificEpithet"].value` +
 Expresión general:	[source]`cells["campo1"].value + " " + cells["campo2"].value`
 
-La expresión ejemplo concatena (`+`) los valores del campo [source]`genus` ([source]`cells["genus"].value`) y los del campo [source]`specificEpithet` ([source]`cells["specificEpithet"].value`), con un espacio entre los valores ("[source]`` ``").
+La expresión ejemplo concatena (`+`) los valores del campo [source]`"genus"` ([source]`cells["genus"].value`) y los del campo [source]`"specificEpithet"` ([source]`cells["specificEpithet"].value`), con un espacio entre los valores ("[source]`` ``").
 
 [#img-fig-10]
 .Figura 10
 image::img/es.figure-10.jpg[Figura 10,align=center]
 
-Note que esta expresión funciona cuando ambos campos, [source]`genus` y [source]`specificEpithet`, tienen valores, es decir no son nulos. Si alguno de los dos campos tiene valores nulos, entonces no se lleva a cabo la concatenación. Por ejemplo, si hay un valor para genus pero specificEpithet está vacío, el campo de concatenación aparecerá vacío. Esto se debe a que no se puede operar sobre valores nulos.
+Note que esta expresión funciona cuando ambos campos, [source]`"genus"` y [source]`"specificEpithet"`, tienen valores, es decir no son nulos. Si alguno de los dos campos tiene valores nulos, entonces no se lleva a cabo la concatenación. Por ejemplo, si hay un valor para genus pero specificEpithet está vacío, el campo de concatenación aparecerá vacío. Esto se debe a que no se puede operar sobre valores nulos.
 
 En este caso, puede sortear el problema utilizando en cambio la siguiente expresión:
 
@@ -161,9 +161,9 @@ NOTE: Para evitar de modo más general este problema de celdas nulas, cuando imp
 
 ===== Divisiones
 Si desea crear campos separados a partir de los valores en un único campo, siga la siguiente ruta:
-Utilizaremos como ejemplo la división del campo [source]`eventDate` para agregar tres campos: año, mes y día (year, month y day)
+Utilizaremos como ejemplo la división del campo [source]`"eventDate"` para agregar tres campos: año, mes y día (year, month y day)
 
-Click en la flecha azul del campo [source]`eventDate` -> Editar columnas -> Dividir en varias columnas...
+Click en la flecha azul del campo [source]`"eventDate"` -> Editar columnas -> Dividir en varias columnas...
 
 Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>). Allí debe escoger si se dividirá por separador o por longitud de caracteres, y en el primer caso qué tipo de separador se utilizará (puede ser espacio –tab-, coma, punto y coma, guión, etc.).
 En este caso, si exploramos los datos del campo original veremos que año, mes y día están separados por barras oblicuas (“/”), de modo que elegiremos esta barra como separador.
@@ -174,7 +174,7 @@ IMPORTANT: *Desmarque la opción “Eliminar esta columna” a la derecha*. Si l
 .Figura 11
 image::img/es.figure-11.jpg[Figura 11,align=center]
 
-Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`eventDate`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda (flecha azul -> Editar columnas -> Renombrar esta columna). En este caso, nómbrelos “year”, “month” y “day” según corresponda.
+Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`"eventDate"`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda (flecha azul -> Editar columnas -> Renombrar esta columna). En este caso, nómbrelos “year”, “month” y “day” según corresponda.
 
 
 IMPORTANT: Cuando efectúe este tipo de divisiones de campos utilizando como criterio o bien separadores o bien longitud de caracteres, asegúrese de que en el campo original no haya distintos formatos para diferentes registros. Vea el siguiente ejemplo:
@@ -182,15 +182,17 @@ IMPORTANT: Cuando efectúe este tipo de divisiones de campos utilizando como cri
 Se quiere separar un campo nombrado “coordenadas” que contiene datos de latitud y longitud separados por coma, del tipo: “-32.04588990, -54.98789901”, para obtener dos campos distintos, latitud y longitud. 
 
 Si todos los campos tienen el mismo formato, obtendrá dos campos nuevos de la siguiente forma:
-....
+[source,notjavascript]
+----
 campo 1: -32.04588990
 campo 2: -54.98789901
-....
+----
 
 En cambio, si en algún registro los valores dentro del campo coordenadas no están en formato decimal, entonces tendrá problemas al dividir el campo. Suponga como ejemplo que uno o más registros tienen valores con formato “34° 20’ 15,2’’ S, 54° 49’ 13’’ O”. En ese caso, la separación le dará 3 campos en vez de dos, con la latitud incorrectamente separada:
 
-....
+[source,notjavascript]
+----
 campo 1: 34° 20’ 15
 campo 2: 2’’ S
 campo 3: 54° 49´ 13´´ O
-....
+----

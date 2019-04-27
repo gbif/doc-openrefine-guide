@@ -6,7 +6,7 @@ NOTE: Estas instrucciones han sido adaptadas y traducidas al castellano a partir
 
 === Requerimientos
 
-.	http://www.oracle.com/technetwork/java/javase/downloads/index.html[Java JRE] instalado.
+.	https://www.oracle.com/technetwork/java/javase/downloads/index.html[Java JRE] instalado.
 .	https://www.google.com/chrome/browser/desktop/[Google Chrome] o https://www.mozilla.org/en-US/firefox/new/[Mozilla Firefox] instalados, evitar usar Internet Explorer.
 
 Para instalar OpenRefine 3.1 en su computadora, siga los siguientes pasos:

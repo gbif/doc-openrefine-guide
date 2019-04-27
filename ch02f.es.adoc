@@ -12,7 +12,7 @@ Para desmarcar el registro, haga click nuevamente sobre el ícono (que volverá 
 
 También puede marcar o desmarcar conjuntos de varios registros. 
 
-Para ello escoja algún criterio que los agrupe. Por ejemplo, si quiere marcar todos los registros del género Acacia, arme una faceta sobre el campo [source]`genus` (haga click sobre la flecha azul del campo -> Facetas -> Faceta de texto).
+Para ello escoja algún criterio que los agrupe. Por ejemplo, si quiere marcar todos los registros del género Acacia, arme una faceta sobre el campo [source]`"genus"` (haga click sobre la flecha azul del campo -> Facetas -> Faceta de texto).
 
 En la faceta, seleccione el valor “Acacia” haciendo click en el valor (verá que en la ventana principal sólo se mostrarán esos registros). 
 
