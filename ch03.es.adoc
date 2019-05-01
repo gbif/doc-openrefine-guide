@@ -8,24 +8,24 @@ Los proyectos con los que trabaja usando OpenRefine son guardados en su propia c
 
 Los directorios en que se guardan los proyectos se listan a continuación:
 
-Windows: dependiendo de la versión de Windows que utilice, los datos se encontrarán en uno de estos directorios:
+*Windows*: dependiendo de la versión de Windows que utilice, los datos se encontrarán en uno de estos directorios:
 
 * C:\Documents and Settings\(user id)\Local Settings\Application Data\OpenRefine
 * C:\Users\(user id)\AppData\Roaming\OpenRefine
 * C:\Users\(user id)\AppData\Local\OpenRefine
 * C:\Users\(user id)\OpenRefine
 
-MacOSX:
+*MacOS*:
 
 * ~/Library/Application Support/OpenRefine/
 * ~/Library/Application Support/Google/Refine/ (versions de Google Refine más antiguas)
 * Ingreso a través de /var/log/daemon.log - grep para com.google.refine.Refine
 
-Linux:
+*Linux*:
 
 * ~/.local/share/openrefine/
 
-=== Exportación de datos y proyectos
+=== Exportación de datos y proyectos [[sect-3.2]]
 
 OpenRefine ofrece varias opciones para exportar los datos y proyectos. Se puede acceder a estas opciones en la esquina superior derecha de la ventana del programa, haciendo click en el botón “Exportar” (<<img-fig-39,Figura 39>>).
 
