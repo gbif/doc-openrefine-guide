@@ -21,17 +21,23 @@ Hacer click en la flecha azul del campo -> Editar columnas -> Eliminar esta colu
 
 3.	*Mover un campo.*
 +
-Hacer click en la flecha azul del campo -> Editar columnas -> Mover columna al principio, Mover columna al final, Mover columna a la izquierda, Mover columna a la derecha
+Hacer click en la flecha azul del campo 
+-> Editar columnas -> Mover columna al principio 
+-> -> Mover columna al final
+-> -> Mover columna a la izquierda
+-> -> Mover columna a la derecha
 +
 Estas tres opciones pueden verse en la <<img-fig-07,Figura 7>>.
 +
 [#img-fig-07]
-.!Figura 7
+.Figura 7
 image::img/es.figure-07.jpg[Figura 7,align=center]
 
 4.	*Reordenar o eliminar varios campos a la vez.*
 +
-Hacer click en la flecha azul en el campo “Todo” (<<img-fig-08,Figura 8a>>) -> Editar columnas -> Ordenar / Eliminar columnas…
+Hacer click en la flecha azul en el campo “Todo” (<<img-fig-08,Figura 8a>>).
++
+-> Editar columnas -> Ordenar / Eliminar columnas…
 +
 Se abrirá entonces una ventana como la que se muestra en la <<img-fig-08,Figura 8b>>. Allí puede ordenar los campos simplemente arrastrándolos arriba o abajo en la lista, y eliminarlos arrastrándolos hacia la parte derecha de la ventana. Una vez que termine de modificar el orden de los campos, haga click en “Aceptar”.
 +
@@ -39,7 +45,7 @@ Se abrirá entonces una ventana como la que se muestra en la <<img-fig-08,Figura
 .Figura 8
 image::img/es.figure-08.jpg[Figura 8,align=center]
 
-En OpenRefine se considera que cualquiera de los cuatro cambios descriptos anteriormente son cambios a los datos, y por ende se registran como tales en el historial de cambios (Ver más abajo sección Deshacer/Rehacer cambios).
+En OpenRefine se considera que cualquiera de los cuatro cambios descriptos anteriormente son cambios a los datos, y por ende se registran como tales en el historial de cambios (Ver más abajo sección <<sect-2.5,Deshacer y rehacer cambios>>).
 
 ==== Nuevas columnas vacías
 
@@ -47,7 +53,7 @@ Se pueden crear nuevos campos en base a cero, uno o más campos preexistentes.
 
 Para crear un nuevo campo de cero, sobre cualquier columna preexistente siga la ruta: 
 
-Editar columnas -> Agregar columna basada en esta columna…
+ Editar columnas -> Agregar columna basada en esta columna…
 
 Se abrirá una ventana como la que se muestra en la <<img-fig-09,Figura 9>>.
 
@@ -75,7 +81,7 @@ Si desea crear un campo que sea la concatenación de otros dos campos separados,
 Utilizaremos como ejemplo la concatenación de los campos [source]`"genus"` y [source]`"specificEpithet"`.
 
 Click en la flecha azul del campo [source]`genus`
-	-> Editar columnas 	-> Agregar columna basada en esta columna...
+ -> Editar columnas 	-> Agregar columna basada en esta columna...
 
 Se abrirá una nueva ventana (<<img-fig-10,Figura 10>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`"scientificName"` en los datos).
 
@@ -125,15 +131,15 @@ Los resultados esperados utilizando cada una de las dos fórmulas se resumen en 
 
 |Filago
 
-|null
+|_null_
 
-|null
+|_null_
 
-|null
+|_null_
 
 |lasiocarpa
 
-|null
+|_null_
 
 .3+.^|2
 
@@ -145,11 +151,11 @@ Los resultados esperados utilizando cada una de las dos fórmulas se resumen en 
 
 |Filago
 
-|null
+|_null_
 
 |Filago
 
-|null
+|_null_
 
 |lasiocarpa
 
@@ -161,11 +167,14 @@ NOTE: Para evitar de modo más general este problema de celdas nulas, cuando imp
 
 ===== Divisiones
 Si desea crear campos separados a partir de los valores en un único campo, siga la siguiente ruta:
+
 Utilizaremos como ejemplo la división del campo [source]`"eventDate"` para agregar tres campos: año, mes y día (year, month y day)
 
-Click en la flecha azul del campo [source]`"eventDate"` -> Editar columnas -> Dividir en varias columnas...
+Click en la flecha azul del campo [source]`"eventDate"` 
+ -> Editar columnas -> Dividir en varias columnas...
 
 Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>). Allí debe escoger si se dividirá por separador o por longitud de caracteres, y en el primer caso qué tipo de separador se utilizará (puede ser espacio –tab-, coma, punto y coma, guión, etc.).
+
 En este caso, si exploramos los datos del campo original veremos que año, mes y día están separados por barras oblicuas (“/”), de modo que elegiremos esta barra como separador.
 
 IMPORTANT: *Desmarque la opción “Eliminar esta columna” a la derecha*. Si la deja seleccionada, perderá el campo original y sólo tendrá los tres nuevos campos.
@@ -178,18 +187,18 @@ Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del cam
 
 
 IMPORTANT: Cuando efectúe este tipo de divisiones de campos utilizando como criterio o bien separadores o bien longitud de caracteres, asegúrese de que en el campo original no haya distintos formatos para diferentes registros. Vea el siguiente ejemplo:
-
++
 Se quiere separar un campo nombrado “coordenadas” que contiene datos de latitud y longitud separados por coma, del tipo: “-32.04588990, -54.98789901”, para obtener dos campos distintos, latitud y longitud. 
-
++
 Si todos los campos tienen el mismo formato, obtendrá dos campos nuevos de la siguiente forma:
 [source,notjavascript]
 ----
 campo 1: -32.04588990
 campo 2: -54.98789901
 ----
-
++
 En cambio, si en algún registro los valores dentro del campo coordenadas no están en formato decimal, entonces tendrá problemas al dividir el campo. Suponga como ejemplo que uno o más registros tienen valores con formato “34° 20’ 15,2’’ S, 54° 49’ 13’’ O”. En ese caso, la separación le dará 3 campos en vez de dos, con la latitud incorrectamente separada:
-
++
 [source,notjavascript]
 ----
 campo 1: 34° 20’ 15
