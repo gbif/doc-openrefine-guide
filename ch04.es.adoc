@@ -14,7 +14,7 @@ Nos referimos a consultas a través de URLs cuando el proceso implica proveer a 
 
 ==== Resolución de nombres científicos usando Global Names Resolver
 
-En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`"scientificName"`) contra el servicio Global Names Resolver (http://resolver.globalnames.org, de aquí en más GNR).
+En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`"scientificName"`) contra el servicio http://resolver.globalnames.org[Global Names Resolver].
 
 Para acortar el tiempo de consulta, cree una faceta para el campo [source]`"genus"` (click en la flecha azul -> Facetas -> Faceta de texto) y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna parece tener 3 especies asociadas: C. lateralis (1 registro), C. arundinacea (6 registros) y C. latifolia (3 registros).
 
@@ -22,7 +22,7 @@ Para comparar los nombres contra el GNR, haremos un llamado al servicio y captur
 
 A partir del campo [source]`"scientificName"`, cree una nueva columna a partir de una dirección URL haciendo click en la flecha azul del campo y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
 
-Editar columnas	-> Agregar columna accediendo a URLs…
+ Editar columnas	-> Agregar columna accediendo a URLs…
 
 [#img-fig-43]
 .Figura 43
@@ -283,11 +283,11 @@ Note que los tres resultados del ejemplo corresponden a provincias distintas en 
 .Visualizando JSON
 --
 Para visualizar la estructura de los resultados en JSON de modo más amigable, puede probar copiando el resultado de alguna celda en un analizador de JSON en línea. Existen muchas opciones, una de ellas es http://json.parser.online.fr/. Allí, seleccionando distintas opciones arriba a la derecha podrá distinguir mejor la estructura, cuáles son los objetos, los arreglos y las cadenas de texto y cómo están relacionados unos con otros (<<img-fig-47,Figura 47>>). Esto puede ser muy útil a la hora de armar expresiones para desglosar el contenido de los campos en nuevos campos sin perder información.
+--
 
 [#img-fig-47]
 .Figura 47
 image::img/es.figure-47.jpg[Figura 47,align=center]
---
 
 NOTE: La expresión utilizada es muy simple y sólo le pide al servicio que resuelva la georreferenciación en base al campo localidad y teniendo como valor fijo “Argentina” para el campo país, pero sin especificar los valores de otros campos geográficos. Sin embargo, todos los campos se pueden incluir en la expresión para obtener resultados más específicos. Ello puede hacerse de dos maneras:
 
