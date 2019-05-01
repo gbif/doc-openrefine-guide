@@ -22,9 +22,9 @@ IMPORTANT: El hacer y deshacer en OpenRefine trabaja sobre “estados”. Eso qu
 ==== Guardar pasos para rehacer luego
 
 Es importante entonces que guarde sus pasos, especialmente para aquellos procesos más complejos. Para ello, en la pestaña “Deshacer/Rehacer”, haga click en el botón “Extraer…”. Se abrirá una nueva ventana, como se muestra en la <<img-fig-34,Figura 34>>, donde pueden seleccionar los pasos que desea guardar. Los pasos están dados en formato JSON  en el panel de la derecha.
----
+----
 JSON (Java Script Object Notation) es un formato que utiliza texto legible para los humanos para transmitir datos en la forma de pares de atributo:valor y de matrices de datos.
----  
+----  
 Puede marcar y desmarcar pasos en el panel de la izquierda para seleccionar los pasos de interés. Copie las expresiones de los pasos de interés que se muestran a la derecha a un procesador de texto (e.g., Notepad, MS Word, etc.) y guárdelas para uso posterior (en caso de que no esté familiarizado con el formato JSON, recuerde tomar nota de qué cambios representan esas expresiones).
 
 [#img-fig-34]
