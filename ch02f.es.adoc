@@ -16,7 +16,9 @@ Para ello escoja algún criterio que los agrupe. Por ejemplo, si quiere marcar t
 
 En la faceta, seleccione el valor “Acacia” haciendo click en el valor (verá que en la ventana principal sólo se mostrarán esos registros). 
 
-Para marcar todos esos registros con una bandera, haga click en la flecha azul del campo “Todo” y siga la siguiente ruta (<<img-fig-36,Figura 36>>) -> Editar filas -> Marcar filas con bandera
+Para marcar todos esos registros con una bandera, haga click en la flecha azul del campo “Todo” y siga la siguiente ruta (<<img-fig-36,Figura 36>>):
+
+ -> Editar filas -> Marcar filas con bandera
 
 [#img-fig-36]
 .Figura 36
@@ -26,7 +28,7 @@ Una vez que lo haya hecho, verá que todos los registros seleccionados están ma
 
 Para desmarcar todos esos registros, puede hacer click en la flecha azul del campo “Todo” y seguir la ruta:
 
-_Editar filas -> Desmarcar filas con bandera_
+ Editar filas -> Desmarcar filas con bandera
 
 Para marcar y desmarcar registros con estrellas, siga el mismo procedimiento con “estrellas” en lugar de “banderas”.
 
@@ -56,7 +58,7 @@ Puede repetir el proceso creando otro campo para las estrellas, usando la expres
 ----
 if(row.starred, "yes", "no")
 ----
-Para ver los pasos de exportación de datos, vea la sección de Exportación de proyectos.
+Para ver los pasos de exportación de datos, vea la sección de <<sect-3.2,Exportación de proyectos>>.
 
 ==== Uso de banderas y estrellas para eliminar registros
 
