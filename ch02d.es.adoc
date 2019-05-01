@@ -33,4 +33,4 @@ image::img/es.figure-32.jpg[Figura 32,align=center]
 
 Pruebe agrupamientos con distintos métodos para limpiar los datos.
 
-Para conocer los detalles de cada método de agrupamiento, puede https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth[consultar el repositorio de OpenRefine en GitHub].
+Para conocer los detalles de cada método de agrupamiento, puede https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth[consultar el repositorio de OpenRefine] en GitHub.
