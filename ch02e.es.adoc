@@ -1,3 +1,4 @@
+[[sect-2.5]]
 === Deshacer y rehacer cambios
 
 Ahora que ya ha acumulado una serie de modificaciones al conjunto de datos, veamos cómo se pueden deshacer y rehacer cambios.
