@@ -32,7 +32,7 @@ image::img/es.figure-14.jpg[Figura 14,align=center]
 
 Para corregir estos errores, asegúrese de que ninguno de los valores en la faceta están seleccionados y que el número de registros que se muestra arriba de la tabla es el total (24984). Sobre la columna [source]`"kingdom"`, haga click sobre la flecha azul y siga las siguientes opciones (<<img-fig-15,Figura 15>>):
 
-_Editar celdas 	-> Transformaciones comunes 	-> Quitar espacios al inicio y final_
+ Editar celdas 	-> Transformaciones comunes 	-> Quitar espacios al inicio y final
 
 Esta función permite eliminar espacios en blanco que puedan aparecer al principio y al final de cadenas de texto. Cuando termine este paso, los 24,984 registros deberían tener el valor “Plantae” en la columna [source]`"kingdom"`.
 
@@ -52,7 +52,7 @@ image::img/es.figure-16.jpg[Figura 16,align=center]
 
 Para corregir este error, sobre la columna [source]`"stateProvince"`, haga click sobre la flecha azul y siga la siguiente ruta (<<img-fig-17,Figura 17>>):
 
-_Editar celdas 	-> Transformaciones Comunes 	-> Contraer espacios consecutivos_
+ Editar celdas 	-> Transformaciones Comunes 	-> Contraer espacios consecutivos
 
 Esta función le permite convertir múltiples espacios en blanco en un único espacio en blanco.
 
@@ -68,7 +68,7 @@ Las facetas también pueden aplicarse a campos numéricos, y en ese caso son muy
 
 A modo de ejemplo, armaremos una faceta numérica sobre el campo [source]`"day"` que hemos creado más arriba. Para ello, hacer click en la flecha azul del campo y seguir la ruta:
 
-_Facetas -> Faceta numérica_
+ Facetas -> Faceta numérica
 
 Verá entonces una nueva ventana, la faceta, como se muestra en la <<img-fig-18,Figura 18>>.
 
@@ -90,11 +90,11 @@ Los tres errores encontrados deben ser consultados con la información original 
 
 Las facetas también permiten la detección y corrección de duplicados. 
 
-NOTE: cuando hablamos aquí de duplicados, nos referimos a valores duplicados dentro de una columna, no necesariamente a registros enteros duplicados, o a duplicados en el sentido biológico/de colecciones. Por ello, tenga especial cuidado a la hora de actuar sobre estos valores duplicados, pues podrían tener efectos a diferentes niveles.
+NOTE: Cuando hablamos aquí de duplicados, nos referimos a valores duplicados dentro de una columna, no necesariamente a registros enteros duplicados, o a duplicados en el sentido biológico/de colecciones. Por ello, tenga especial cuidado a la hora de actuar sobre estos valores duplicados, pues podrían tener efectos a diferentes niveles.
 
 Veremos un ejemplo de duplicados en la columna [source]`"catalogNumber"`. Para ello, haga click en la flecha azul y luego siga la siguiente ruta:
 
-_Facetas -> Facetas personalizadas -> Faceta por duplicados_
+ Facetas -> Facetas personalizadas -> Faceta por duplicados
 
 Verá entonces una ventana con la faceta, como se muestra en la <<img-fig-20,Figura 20>>, donde “true” (“verdadero”) refiere a los valores duplicados.
 
@@ -114,7 +114,7 @@ image::img/es.figure-21.jpg[Figura 21,align=center]
 
 Corrija los números de catálogo. Para hacerlo, edite las celdas individualmente: sobre la celda haga click en el botón “editar”, modifique el valor y haga click en “Aplicar” (<<img-fig-22,Figura 22>>). 
 
-NOTE: en la práctica la corrección de los números de catálogo sólo debe hacerse una vez que los números y los datos asociados han sido comprobados con las etiquetas de los especímenes.
+NOTE: En la práctica la corrección de los números de catálogo sólo debe hacerse una vez que los números y los datos asociados han sido comprobados con las etiquetas de los especímenes.
 
 [#img-fig-22]
 .Figura 22
@@ -134,7 +134,9 @@ Haciendo click en “Fije un límite”, se abrirá otra ventana donde puede cam
 
 Una vez que haya cambiado el valor límite, y si este valor es lo suficientemente grande, podrá ver todos los valores en la faceta del campo de interés (en el ejemplo anterior, el campo [source]`"specificEpithet"`).
 
-Alternativamente, para modificar en cualquier momento el límite en el número de valores que se pueden desplegar por faceta, puede ir a la siguiente dirección en su navegador web: *link:http://127.0.0.1:3333/preferences[]*
+Alternativamente, para modificar en cualquier momento el límite en el número de valores que se pueden desplegar por faceta, puede ir a la siguiente dirección en su navegador web: 
+
+ *link:http://127.0.0.1:3333/preferences[]*
 
 El navegador mostrará una ventana como ciertas opciones (<<img-fig-24,Figura 24a>>). Allí, establezca el límite preferido para las facetas editando la clave "ui.browsing.listFacet.limit". Para ello haga click en "core-index/edit", y en la ventana que se abre, coloque el nuevo valor límite y oprima “OK” (<<img-fig-24,Figura 24b>>).
 
