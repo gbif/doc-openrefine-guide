@@ -13,7 +13,10 @@ Para comenzar a utilizar OpenRefine debe cargar sus datos en el programa y crear
 image::img/es.figure-01.jpg[TODO This figure ought to have a text description,align=center]
 
 
-OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamente después de ejecutar la aplicación (<<img-fig-02,Figura 2>>). Si OpenRefine no abre, puede acceder manualmente ingresando la siguiente URL en su navegador: *link:http://127.0.0.1:3333[]*
+OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamente después de ejecutar la aplicación (<<img-fig-02,Figura 2>>). Si OpenRefine no abre, puede acceder manualmente ingresando la siguiente URL en su navegador: 
+
+ *link:http://127.0.0.1:3333[]*
+
 [#img-fig-02]
 .ADD CAPTION
 image::img/es.figure-02.jpg[Figura 2,align=center]
@@ -58,7 +61,7 @@ image::img/es.figure-05.jpg[Figura 5,align=center]
 [discrete]
 === Paso 3
 
-Cree el proyecto. Una vez que haya seleccionado las opciones de carga de datos, haga click en el botón “Crear Proyecto” arriba a la derecha.
+*Cree el proyecto*. Una vez que haya seleccionado las opciones de carga de datos, haga click en el botón “Crear Proyecto” arriba a la derecha.
 
 ****
 
@@ -66,7 +69,7 @@ Cree el proyecto. Una vez que haya seleccionado las opciones de carga de datos, 
 [discrete]
 === Paso 4
 
-¡Felicitaciones! Ya tiene un proyecto (lo verá como en la <<img-fig-06,Figura 6>>).
+*¡Felicitaciones!* Ya tiene un proyecto (lo verá como en la <<img-fig-06,Figura 6>>).
 
 [#img-fig-06]
 .Figura 6
