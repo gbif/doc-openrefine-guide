@@ -7,6 +7,7 @@ Paula F. Zermoglio & John R. Wieczorek
 :source-highlighter: pygments
 :source-language: javascript
 :experimental:
+:figure-caption!:
 
 ifdef::backend-html5[]
 _languageLinks:pdf[Este documento también está disponible en,PDF format]languageLinks:languages[ y en otros idiomas:,]._

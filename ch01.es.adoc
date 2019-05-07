@@ -9,7 +9,7 @@ Para comenzar a utilizar OpenRefine debe cargar sus datos en el programa y crear
 *Abra la aplicación OpenRefine*. Si utiliza Windows, se abrirá una ventana de comandos que mostrará las acciones que OpenRefine está realizando (<<img-fig-01,Figura 1>>). No cierre esta ventana mientras esté trabajando con el programa.
 
 [#img-fig-01]
-.TODO This figure needs a caption
+.Figura 1
 image::img/es.figure-01.jpg[TODO This figure ought to have a text description,align=center]
 
 OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamente después de ejecutar la aplicación (<<img-fig-02,Figura 2>>). Si OpenRefine no abre, puede acceder manualmente ingresando la siguiente URL en su navegador:
@@ -18,7 +18,7 @@ http://127.0.0.1:3333
 --
 
 [#img-fig-02]
-.ADD CAPTION
+.Figura 2
 image::img/es.figure-02.jpg[Figura 2,align=center]
 
 En el menú de la izquierda tiene opciones para crear, abrir o importar proyectos. Si usted no tiene ningún proyecto aún, en la opción de “Abrir proyecto” verá una lista vacía. 
