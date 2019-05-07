@@ -28,4 +28,4 @@ El conjunto de datos modelo utilizado en esta guía puede obtenerse aquí: link:
 
 El conjunto de datos modelo fue derivado a partir del conjunto de datos: 
 
- Williams J (2018). Colección de Herbario. Version 3.1. Facultad de Ciencias Naturales y Museo - U.N.L.P.. Occurrence dataset https://doi.org/10.15468/i9bj5r accessed via GBIF.org on 2019-04-18.
+_Williams J (2018). Colección de Herbario. Version 3.1. Facultad de Ciencias Naturales y Museo - U.N.L.P.. Occurrence dataset https://doi.org/10.15468/i9bj5r accessed via GBIF.org on 2019-04-18._
