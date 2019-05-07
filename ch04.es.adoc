@@ -16,13 +16,15 @@ Nos referimos a consultas a través de URLs cuando el proceso implica proveer a 
 
 En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`"scientificName"`) contra el servicio http://resolver.globalnames.org[Global Names Resolver].
 
-Para acortar el tiempo de consulta, cree una faceta para el campo [source]`"genus"` (click en la flecha azul -> Facetas -> Faceta de texto) y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna parece tener 3 especies asociadas: C. lateralis (1 registro), C. arundinacea (6 registros) y C. latifolia (3 registros).
+Para acortar el tiempo de consulta, cree una faceta para el campo [source]`"genus"` (click en "la &#9660; azul > Facetas > Faceta de texto") y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna parece tener 3 especies asociadas: C. lateralis (1 registro), C. arundinacea (6 registros) y C. latifolia (3 registros).
 
 Para comparar los nombres contra el GNR, haremos un llamado al servicio y capturaremos los resultados en un nuevo campo:
 
-A partir del campo [source]`"scientificName"`, cree una nueva columna a partir de una dirección URL haciendo click en la flecha azul del campo y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
+A partir del campo [source]`"scientificName"`, cree una nueva columna a partir de una dirección URL haciendo click en la &#9660; azul del campo y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
 
- Editar columnas	-> Agregar columna accediendo a URLs…
+--
+"Editar columnas > Agregar columna accediendo a URLs…"
+--
 
 [#img-fig-43]
 .Figura 43
@@ -61,7 +63,7 @@ Dado que GNR consulta varias fuentes de nombres taxonómicos, nos interesa saber
 * Nombre encontrado en la fuente: "name_string"
 * Nombre aceptado por la fuente: "current_name_string"
 
-Para ello, a partir del campo en JSON (en el ejemplo, GNR_Json_sciName), cree un nuevo campo (haga click en la flecha azul ->  Editar columnas -> Agregar columna basada en esta columna).
+Para ello, a partir del campo en JSON (en el ejemplo, GNR_Json_sciName), cree un nuevo campo (haga click en "la &#9660; azul >  Editar columnas > Agregar columna basada en esta columna").
 
 Dé un nombre al nuevo campo (por ejemplo, GNR_sciName_options) y en el cuadro de texto, coloque la siguiente expresión (<<img-fig-45,Figura 45>>): 
 
@@ -141,7 +143,7 @@ A partir de los resultados obtenidos, puede extraer los nombres separando la nue
 
 En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta al servicio, construiremos previamente dos facetas. La primera sobre el campo [source]`"country"`, dentro de la cual seleccionaremos el valor “Argentina”. La segunda faceta será sobre el campo [source]`"genus"`, dentro de la cual seleccionaremos el valor “Acacia”. Una vez aplicadas ambas facetas y escogidos los valores, verá que en la ventana principal sólo se muestra un subconjunto de registros que cumplen estas condiciones simultáneamente.
 
-Llevaremos a cabo la georreferenciación a partir del campo [source]`"locality"`. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en la flecha azul -> Editar columnas -> Agregar columna accediendo a URLs…
+Llevaremos a cabo la georreferenciación a partir del campo [source]`"locality"`. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en "la &#9660; azul > Editar columnas > Agregar columna accediendo a URLs…".
 
 Se abrirá una nueva ventana (<<img-fig-46,Figura 46>>). Allí dé un nombre al nuevo campo, por ejemplo “GeoLocate_Json_georref”, y pegue en el cuadro de texto la siguiente expresión:
 
@@ -310,7 +312,7 @@ Para extraer las coordenadas puede seguir dos métodos: 1) extraer latitud y lon
 
 *Método 1:* extraer latitud y longitud conjuntamente
 
-Haga click en la flecha azul del campo GeoLocate_Json_georref -> Editar columnas -> Agregar columna basada en esta columna.
+Haga click en "la &#9660; azul del campo [source]`"GeoLocate_Json_georref"` > Editar columnas > Agregar columna basada en esta columna".
 
 De un nombre al nuevo campo, por ejemplo, GeoLocate_parseCoord, y en el cuadro de texto pegue la siguiente expresión:
 
@@ -333,7 +335,7 @@ IMPORTANT: Note que GeoLocate provee como primer valor de coordenadas la longitu
 
 Dividiremos ahora este campo en tres partes, una para cada resultado:
 
-Haga click en la flecha azul del campo -> Editar columnas -> Dividir en varias columnas.
+Haga click en "la &#9660; azul del campo > Editar columnas > Dividir en varias columnas".
 
 Escoja como separador `|`. Desmarque la opción “Eliminar esta columna” si quiere mantener el campo original (esto es recomendable, siempre puede eliminar los campos después).
 
@@ -341,7 +343,7 @@ Tendrá entonces ahora una serie de campos con valores del tipo: `-64.158097; -2
 
 *Método 2:* extraer latitud y longitud independientemente
 
-Haga click en la flecha azul del campo GeoLocate_Json_georref -> Editar columnas -> Agregar columna basada en esta columna.
+Haga click en "la &#9660; azul del campo [source]`"GeoLocate_Json_georref"` > Editar columnas > Agregar columna basada en esta columna".
 
 De un nombre al nuevo campo, por ejemplo, GeoLocate_parseLong, y en el cuadro de texto pegue la siguiente expresión:
 [source,javascript]
@@ -450,7 +452,7 @@ En las dos líneas superiores, en cambio, “2” y “4” pueden ambos referir
 
 Debe tener esto en cuenta cuando utilice la herramienta para limpiar los datos.
 
-Ahora sí, invoque Date Parsing desde OpenRefine. Para ello, primero seleccione algunas fechas mediante una faceta, para reducir el tiempo de consulta. Luego, sobre la columna [source]`"eventDate"` haga click en la flecha azul -> Editar columna -> Agregar columna accediendo a URLs… (<<img-fig-49,Figura 49>>). En la ventana que aparece, nombre la nueva columna (por ejemplo “Canadensys_eventDate”) y pegue en el cuadro de texto la siguiente expresión:
+Ahora sí, invoque Date Parsing desde OpenRefine. Para ello, primero seleccione algunas fechas mediante una faceta, para reducir el tiempo de consulta. Luego, sobre la columna [source]`"eventDate"` haga click en "la &#9660; azul > Editar columna > Agregar columna accediendo a URLs…" (<<img-fig-49,Figura 49>>). En la ventana que aparece, nombre la nueva columna (por ejemplo “Canadensys_eventDate”) y pegue en el cuadro de texto la siguiente expresión:
 ----
 "http://data.canadensys.net/tools/dates.json?data="+escape(cells["eventDate"].value,"url")
 ----
@@ -467,7 +469,7 @@ NOTE: La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… v�
 image::img/es.figure-50.jpg[Figura 50,align=center]
 
 Fíjese que en el primer caso de la figura, Canadensys ha podido resolver la fecha, mientras que en el segundo caso no ha podido, dado que no puede interpretar inequívocamente “6” y “4” como día y mes o viceversa (como se explica más arriba).
-Ahora que tiene el JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el JSON, cree nuevas columnas: Editar columnas -> Agregar columna basada en esta columna (<<img-fig-51,Figura 51>>).
+Ahora que tiene el JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el JSON, cree nuevas columnas: "Editar columnas > Agregar columna basada en esta columna" (<<img-fig-51,Figura 51>>).
 
 Para extraer sólo la fecha en formato ISO, en la ventana nombre la nueva columna (por ejemplo, [source]`"ISO_eventDate"`) y en el cuadro de texto pegue la siguiente expresión:
 ----

@@ -32,7 +32,9 @@ image::img/es.figure-14.jpg[Figura 14,align=center]
 
 Para corregir estos errores, asegúrese de que ninguno de los valores en la faceta están seleccionados y que el número de registros que se muestra arriba de la tabla es el total (24984). Sobre la columna [source]`"kingdom"`, haga click sobre la flecha azul y siga las siguientes opciones (<<img-fig-15,Figura 15>>):
 
- Editar celdas 	-> Transformaciones comunes 	-> Quitar espacios al inicio y final
+--
+"Editar celdas > Transformaciones comunes > Quitar espacios al inicio y final"
+--
 
 Esta función permite eliminar espacios en blanco que puedan aparecer al principio y al final de cadenas de texto. Cuando termine este paso, los 24,984 registros deberían tener el valor “Plantae” en la columna [source]`"kingdom"`.
 
@@ -52,7 +54,9 @@ image::img/es.figure-16.jpg[Figura 16,align=center]
 
 Para corregir este error, sobre la columna [source]`"stateProvince"`, haga click sobre la flecha azul y siga la siguiente ruta (<<img-fig-17,Figura 17>>):
 
- Editar celdas 	-> Transformaciones Comunes 	-> Contraer espacios consecutivos
+--
+"Editar celdas > Transformaciones Comunes > Contraer espacios consecutivos"
+--
 
 Esta función le permite convertir múltiples espacios en blanco en un único espacio en blanco.
 
@@ -68,7 +72,9 @@ Las facetas también pueden aplicarse a campos numéricos, y en ese caso son muy
 
 A modo de ejemplo, armaremos una faceta numérica sobre el campo [source]`"day"` que hemos creado más arriba. Para ello, hacer click en la flecha azul del campo y seguir la ruta:
 
- Facetas -> Faceta numérica
+--
+"Facetas > Faceta numérica"
+--
 
 Verá entonces una nueva ventana, la faceta, como se muestra en la <<img-fig-18,Figura 18>>.
 
@@ -94,7 +100,9 @@ NOTE: Cuando hablamos aquí de duplicados, nos referimos a valores duplicados de
 
 Veremos un ejemplo de duplicados en la columna [source]`"catalogNumber"`. Para ello, haga click en la flecha azul y luego siga la siguiente ruta:
 
- Facetas -> Facetas personalizadas -> Faceta por duplicados
+--
+"Facetas > Facetas personalizadas > Faceta por duplicados"
+--
 
 Verá entonces una ventana con la faceta, como se muestra en la <<img-fig-20,Figura 20>>, donde “true” (“verdadero”) refiere a los valores duplicados.
 

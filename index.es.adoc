@@ -6,6 +6,7 @@ Paula F. Zermoglio & John R. Wieczorek
 :license: https://creativecommons.org/licenses/by/4.0
 :source-highlighter: pygments
 :source-language: javascript
+:experimental:
 
 ifdef::backend-html5[]
 _languageLinks:pdf[Este documento también está disponible en,PDF format]languageLinks:languages[ y en otros idiomas:,]._

@@ -11,21 +11,23 @@ Para estos casos es útil crear nuevos campos en nuevas columnas.
 
 Veamos primero algunas funciones básicas que se pueden aplicar sobre los campos:
 
-1.	*Renombrar un campo.* 
+1. *Renombrar un campo.*
 +
-Hacer click en la flecha azul del campo -> Editar columnas -> Renombrar esta columna
+Hacer click en "la &#9660; azul del campo > Editar columnas > Renombrar esta columna"
 
-2.	*Eliminar un campo.*
+2. *Eliminar un campo.*
 +
-Hacer click en la flecha azul del campo -> Editar columnas -> Eliminar esta columna
+Hacer click en "la &#9660; azul del campo > Editar columnas > Eliminar esta columna"
 
-3.	*Mover un campo.*
+3. *Mover un campo.*
 +
-Hacer click en la flecha azul del campo 
--> Editar columnas -> Mover columna al principio 
--> -> Mover columna al final
--> -> Mover columna a la izquierda
--> -> Mover columna a la derecha
+Hacer click en "la &#9660; azul del campo > Editar columnas > Mover columna al principio"
++
+… "la &#9660; azul del campo > Editar columnas > Mover columna al final"
++
+… "la &#9660; azul del campo > Editar columnas > Mover columna a la izquierda"
++
+… "la &#9660; azul del campo > Editar columnas > Mover columna a la derecha"
 +
 Estas tres opciones pueden verse en la <<img-fig-07,Figura 7>>.
 +
@@ -33,11 +35,9 @@ Estas tres opciones pueden verse en la <<img-fig-07,Figura 7>>.
 .Figura 7
 image::img/es.figure-07.jpg[Figura 7,align=center]
 
-4.	*Reordenar o eliminar varios campos a la vez.*
+4. *Reordenar o eliminar varios campos a la vez.*
 +
-Hacer click en la flecha azul en el campo “Todo” (<<img-fig-08,Figura 8a>>).
-+
--> Editar columnas -> Ordenar / Eliminar columnas…
+Hacer click en "la &#9660; azul en el campo [source]`"Todo"` > Editar columnas > Ordenar / Eliminar columnas…" (<<img-fig-08,Figura 8a>>).
 +
 Se abrirá entonces una ventana como la que se muestra en la <<img-fig-08,Figura 8b>>. Allí puede ordenar los campos simplemente arrastrándolos arriba o abajo en la lista, y eliminarlos arrastrándolos hacia la parte derecha de la ventana. Una vez que termine de modificar el orden de los campos, haga click en “Aceptar”.
 +
@@ -53,7 +53,7 @@ Se pueden crear nuevos campos en base a cero, uno o más campos preexistentes.
 
 Para crear un nuevo campo de cero, sobre cualquier columna preexistente siga la ruta: 
 
- Editar columnas -> Agregar columna basada en esta columna…
+"Editar columnas > Agregar columna basada en esta columna…"
 
 Se abrirá una ventana como la que se muestra en la <<img-fig-09,Figura 9>>.
 
@@ -80,8 +80,7 @@ Veamos ahora cómo crear nuevas columnas con datos modificados a partir de colum
 Si desea crear un campo que sea la concatenación de otros dos campos separados, siga la siguiente ruta:
 Utilizaremos como ejemplo la concatenación de los campos [source]`"genus"` y [source]`"specificEpithet"`.
 
-Click en la flecha azul del campo [source]`genus`
- -> Editar columnas 	-> Agregar columna basada en esta columna...
+Click en "la &#9660; azul del campo [source]`genus` > Editar columnas > Agregar columna basada en esta columna…"
 
 Se abrirá una nueva ventana (<<img-fig-10,Figura 10>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`"scientificName"` en los datos).
 
@@ -170,8 +169,7 @@ Si desea crear campos separados a partir de los valores en un único campo, siga
 
 Utilizaremos como ejemplo la división del campo [source]`"eventDate"` para agregar tres campos: año, mes y día (year, month y day)
 
-Click en la flecha azul del campo [source]`"eventDate"` 
- -> Editar columnas -> Dividir en varias columnas...
+Click en "la &#9660; azul del campo [source]`"eventDate"` > Editar columnas > Dividir en varias columnas…"
 
 Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>). Allí debe escoger si se dividirá por separador o por longitud de caracteres, y en el primer caso qué tipo de separador se utilizará (puede ser espacio –tab-, coma, punto y coma, guión, etc.).
 
@@ -183,7 +181,7 @@ IMPORTANT: *Desmarque la opción “Eliminar esta columna” a la derecha*. Si l
 .Figura 11
 image::img/es.figure-11.jpg[Figura 11,align=center]
 
-Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`"eventDate"`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda (flecha azul -> Editar columnas -> Renombrar esta columna). En este caso, nómbrelos “year”, “month” y “day” según corresponda.
+Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`"eventDate"`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda ("la &#9660; azul > Editar columnas > Renombrar esta columna"). En este caso, nómbrelos “year”, “month” y “day” según corresponda.
 
 
 [IMPORTANT]
