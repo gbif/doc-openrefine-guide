@@ -113,6 +113,7 @@ uBio NameBank; Cinna lateralis Walter;
 uBio NameBank; Cinna lateralis Walter, 1788;
 ----
 
+// Re-enable default Javascript formatting
 :source-language: javascript
 
 IMPORTANT: No todos los nombres serán necesariamente encontrados en todas las fuentes consultadas, por lo que el número de fuentes variará de un nombre al otro. En consecuencia, la ubicación de las fuentes en la cadena de texto no será homogénea de un registro al otro. Una consecuencia de esto es que si usted quiere luego separar el contenido en campos distintos de acuerdo a la fuente consultada (e.g., un campo para ITIS, uno para Catalogue of Life, etc.), no podrá hacerlo de modo que cada nuevo campo tenga los datos de una misma y única fuente.
