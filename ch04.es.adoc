@@ -69,14 +69,18 @@ Dé un nombre al nuevo campo (por ejemplo, GNR_sciName_options) y en el cuadro d
 
 [source,javascript]
 ----
-forEach(value.parseJson().get("data")[0].get("results"), v,
-  v.get("data_source_title") + "; " +
-  v.get("name_string") + "; " +
-  if(isBlank(v.get("current_name_string")), "", v.get("current_name_string")))
-.join(" | ")
+forEach(value.parseJson().get("data")[0].get("results"),                         <1>
+  v,                                                                             <2>
+  v.get("data_source_title") + "; "                                              <3>
+  + v.get("name_string") + "; "
+  + if(isBlank(v.get("current_name_string")), "", v.get("current_name_string"))  <4>
+).join(" | ")                                                                    <5>
 ----
-
-Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estructura secciones “data” y dentro de esta “results” –un “result” proveniente de cada fuente consultada (por ejemplo, un “result” de Catalogue of Life). Dentro de cada sección “results” extrae los valores de interés (“data_source_title”, “name_string” y “current_name_string”) y los separa con un “;”. Como no todas las fuentes proveen un nombre aceptado (“current_name_string”), la expresión [source]`if` especifica que si ese parámetro es nulo debe dejarse el espacio vacío ([source]``""``), y si no, colocar el valor extraído. Por último, une los grupos de valores extraídos en una única cadena de texto, separados por un [source]`` | ``.
+<1> Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estructura secciones “data” y dentro de esta “results”.
+<2> Un “result” proveniente de cada fuente consultada (por ejemplo, un “result” de Catalogue of Life).
+<3> Dentro de cada sección “results” extrae los valores de interés (“data_source_title”, “name_string” y “current_name_string”) y los separa con un “; ”.
+<4> Como no todas las fuentes proveen un nombre aceptado (“current_name_string”), la expresión [source]`if` especifica que si ese parámetro es nulo debe dejarse el espacio vacío ([source]``""``), y si no, colocar el valor extraído.
+<5> Por último, une los grupos de valores extraídos en una única cadena de texto, separados por un [source]`` | ``.
 
 [#img-fig-45]
 .Figura 45
