@@ -13,7 +13,7 @@ https://doi.org/10.15468/doc-gzjg-af18
 Tercera edición, Abril 2019.
 
 // if desired, include reference to provenance
-Este documento se basa en una publicación anterior….
+Este documento se basa en una publicación anterior de la guía por los mismos autores.
 
 === Imagen de la portada
 Caption. Credit, source, licence.
