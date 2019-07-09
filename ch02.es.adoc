@@ -61,7 +61,7 @@ Arriba de todo, coloque el nombre del nuevo campo.
 
 IMPORTANT: Debe tener extremo cuidado al escoger los nombres que dará a las nuevas columnas. Considere que el nombre sea indicativo de lo que contiene (e.g., no le ponga “Columna 1” o “Transformación 3”). OpenRefine no le dejará utilizar nombres que ya hayan sido utilizados para nombrar otros campos dentro del proyecto. Considere qué otros campos tiene en su base de datos original y no utilice nombres que ya hayan sido utilizados, se evitará así importar datos a columnas equivocadas al volver a su base de datos.
 
-Luego, en el cuadro de texto “Expresión” escriba: “null”. Ello quiere decir que se creará un campo con valores nulos. Luego oprima “Aceptar”. Alternativamente, en vez de “null” puede colocar la expresión: "", y el nuevo campo tendrá valores en blanco.
+Luego, en el cuadro de texto “Expresión” escriba: [source]`null`. Ello quiere decir que se creará un campo con valores nulos. Luego oprima “Aceptar”. Alternativamente, en vez de [source]`null` puede colocar la expresión: [source]`""`, y el nuevo campo tendrá valores en blanco.
 
 [#img-fig-09]
 .Figura 9
