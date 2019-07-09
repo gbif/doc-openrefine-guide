@@ -88,7 +88,7 @@ Busca las cadenas de texto que comienzan (`^`) con un espacio en blanco (`\s`).
 Busca las cadenas de texto que comienzan (`^`) con un dígito (`\d`).
 * `+^\D+`
 +
-Busca las cadenas de texto que comienzan (`^`) con un caracter no dígito (`\D`). Equivalente a la expresión con negación `^[^0-9]`.
+Busca las cadenas de texto que comienzan (`^`) con un caracter no dígito (`\D`). Equivalente a la expresión con negación `+^[^0-9]+`.
 * `+\d{4}+`
 +
 Busca cadenas de texto que contengan dígitos (`\d`), en particular 4 dígitos (`{4}`).
