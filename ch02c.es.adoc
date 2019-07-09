@@ -4,7 +4,7 @@
 
 OpenRefine permite el uso de filtros sobre campos particulares, función que puede ser muy útil para la limpieza de datos. Veremos un ejemplo a continuación.
 
-Ubique el campo [source]`"specificEpithet"` y cree una faceta de texto (haga click en "la &#9660; azul > Facetas > Faceta de texto"). Luego vaya nuevamente a la &9660; azul y cree un filtro de texto (“Filtro de texto”). Sobre el menú de la izquierda se abrirá una ventana como la que se muestra en la <<img-fig-25,Figura 25>>.
+Ubique el campo [source]`"specificEpithet"` y cree una faceta de texto (haga click en "la &#9660; azul > Facetas > Faceta de texto"). Luego vaya nuevamente a la &#9660; azul y cree un filtro de texto (“Filtro de texto”). Sobre el menú de la izquierda se abrirá una ventana como la que se muestra en la <<img-fig-25,Figura 25>>.
 
 [#img-fig-25]
 .Figura 25
