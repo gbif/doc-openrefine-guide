@@ -16,7 +16,7 @@ Para ello escoja algún criterio que los agrupe. Por ejemplo, si quiere marcar t
 
 En la faceta, seleccione el valor “Acacia” haciendo click en el valor (verá que en la ventana principal sólo se mostrarán esos registros). 
 
-Para marcar todos esos registros con una bandera, haga click en la &9660; azul del campo [source]`"Todo"` y siga la siguiente ruta (<<img-fig-36,Figura 36>>):
+Para marcar todos esos registros con una bandera, haga click en la &9660; azul del campo “Todo” y siga la siguiente ruta (<<img-fig-36,Figura 36>>):
 
 --
 "Editar filas > Marcar filas con bandera"
@@ -28,7 +28,7 @@ image::img/es.figure-36.jpg[Figura 36,align=center]
 
 Una vez que lo haya hecho, verá que todos los registros seleccionados están marcados ahora con una bandera.
 
-Para desmarcar todos esos registros, puede hacer click en la &#9660; azul del campo [source]`"Todo"` y seguir la ruta:
+Para desmarcar todos esos registros, puede hacer click en la &#9660; azul del campo “Todo” y seguir la ruta:
 
 --
 "Editar filas > Desmarcar filas con bandera"
@@ -69,9 +69,9 @@ Para ver los pasos de exportación de datos, vea la sección de <<sect-3.2,Expor
 Las banderas y estrellas se pueden utilizar para eliminar grupos de registros. Para ello, siga los siguientes pasos:
 
 . Marque con una bandera (o estrella) los registros deseados. Puede hacerlo uno por uno o en grupos a través del marcado dentro de facetas (ver más arriba).
-. Cree una faceta para la bandera. Haga click en "la &#9660; azul sobre el campo [source]`"Todo"` > Facetas > Faceta por bandera" (<<img-fig-38,Figura 38a>>).
+. Cree una faceta para la bandera. Haga click en "la &#9660; azul sobre el campo “Todo” > Facetas > Faceta por bandera" (<<img-fig-38,Figura 38a>>).
 . En esta nueva faceta, a la izquierda, seleccione la opción “true” haciendo click sobre ella. Ello le mostrará los registros a los que se ha asignado una bandera.
-. Haga click nuevamente sobre "la &#9660; azul del campo [source]`"Todo"` > Editar filas > Eliminar todas las filas que encajen" (<<img-fig-38,Figura 38b>>).
+. Haga click nuevamente sobre "la &#9660; azul del campo “Todo” > Editar filas > Eliminar todas las filas que encajen" (<<img-fig-38,Figura 38b>>).
 
 [#img-fig-38]
 .Figura 38

@@ -37,7 +37,7 @@ image::img/es.figure-07.jpg[Figura 7,align=center]
 
 4. *Reordenar o eliminar varios campos a la vez.*
 +
-Hacer click en "la &#9660; azul en el campo [source]`"Todo"` > Editar columnas > Ordenar / Eliminar columnas…" (<<img-fig-08,Figura 8a>>).
+Hacer click en "la &#9660; azul en el campo “Todo” > Editar columnas > Ordenar / Eliminar columnas…" (<<img-fig-08,Figura 8a>>).
 +
 Se abrirá entonces una ventana como la que se muestra en la <<img-fig-08,Figura 8b>>. Allí puede ordenar los campos simplemente arrastrándolos arriba o abajo en la lista, y eliminarlos arrastrándolos hacia la parte derecha de la ventana. Una vez que termine de modificar el orden de los campos, haga click en “Aceptar”.
 +
