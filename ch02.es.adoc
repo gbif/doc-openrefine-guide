@@ -108,7 +108,7 @@ Lo que dicha expresión significa es: concatenar ([source]`+`) dos partes, cada 
 
 Los resultados esperados utilizando cada una de las dos fórmulas se resumen en la siguiente tabla:
 
-.Generalized examples of the types of institutions designated as hosts of GBIF Participant nodes.
+.Tabla 1.
 [cols=4,options="header"]
 |===
 
