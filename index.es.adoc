@@ -4,7 +4,7 @@ Paula F. Zermoglio & John R. Wieczorek
 :revdate: {git-metadata-date} {git-metadata-time} {git-metadata-timezone}
 :title-logo-image: img/es.header-cover-figure.jpg
 :license: https://creativecommons.org/licenses/by/4.0
-:source-highlighter: pygments
+:source-highlighter: coderay
 :source-language: javascript
 :experimental:
 :figure-caption!:
