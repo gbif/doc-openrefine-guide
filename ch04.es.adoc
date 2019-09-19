@@ -169,10 +169,11 @@ En los resultados puede tener tres casos:
 ----
 {
   "engineVersion" : "GLC:5.21|U:1.01374|eng:1.0",
-  "numResults" : 0,
+  "numResults" : 0, <1>
   "executionTimems" : 171.6003
 }
 ----
+<1> Ningún resultado encontrado.
 
 *Caso 2)* Un único resultado encontrado. En la celda correspondiente verá, por ejemplo, lo siguiente:
 [source,javascript]
