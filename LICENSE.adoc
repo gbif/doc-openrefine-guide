@@ -1,12 +1,12 @@
 = Creative Commons — Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)
 
-UNLESS OTHERWISE NOTED, THE CONTENTS OF THIS DIRECTORY ARE LICENSED UNDER THE CREATIVE COMMONS ATTRIBUTION 4.0 INTERNATIONAL LICENSE.
+A MENOS QUE SE INDIQUE DE OTRA MANERA, EL CONTENIDO DE ESTE DIRECTORIO ESTÁ LICENCIADO BAJO LA LICENCIA INTERNACIONAL 4.0 DE LA ATRIBUCIÓN CREATIVE COMMONS.
 
 image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[CC-BY] image:https://creativecommons.org/images/deed/seal.png[Approved for Free Cultural Works]
 
-== License Summary of CC BY-SA 4.0 International
+== Resumen de licencia de CC BY-SA 4.0 Internacional
 
-_This section is a human-readable summary of (and not a substitute for) the full license included below._
+_Este es un resumen legible por humanos (y no un sustituto) de la https://creativecommons.org/licenses/by-sa/4.0/legalcode.es[licencia]._
 
 === Usted es libre de:
 
