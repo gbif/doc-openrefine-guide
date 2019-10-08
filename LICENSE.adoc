@@ -6,7 +6,7 @@ image:https://i.creativecommons.org/l/by-sa/4.0/88x31.png[CC-BY] image:https://c
 
 == Resumen de licencia de CC BY-SA 4.0 Internacional
 
-_Este es un resumen legible por humanos (y no un sustituto) de la https://creativecommons.org/licenses/by-sa/4.0/legalcode.es[licencia]._
+_Este es un resumen legible por humanos (y no un sustituto) de la completa incluida a continuación.
 
 === Usted es libre de:
 
@@ -28,7 +28,7 @@ No tiene que cumplir con la licencia para elementos del materiale en el dominio 
 
 No se dan garantías. La licencia podría no darle todos los permisos que necesita para el uso que tenga previsto. Por ejemplo, otros derechos como *publicidad, privacidad, o derechos morales* pueden limitar la forma en que utilice el material.
 
-== Creative Commons — Atribución/Reconocimiento-CompartirIgual 4.0 Internacional — CC BY-SA 4.0
+== Creative Commons — Atribución/Reconocimiento-CompartirIgual 4.0 Internacional
 
 FROM: https://creativecommons.org/licenses/by-sa/4.0/legalcode.es
 
@@ -39,7 +39,7 @@ Creative Commons Corporation ("Creative Commons") no es una firma de abogados ni
 
 Las licencias públicas de Creative Commons proporcionan un conjunto estándar de términos y condiciones que los creadores y otros titulares de derechos pueden utilizar para compartir obras originales de su autoría y cualquier otro material sujeto a derechos de autor y a otros derechos que se especifican en la licencia pública de más abajo. Las consideraciones siguientes son solo con fines informativos, no son exhaustivas y no forman parte de nuestras licencias.
 
-* *Consideraciones para licenciantes*: Nuestras licencias públicas están destinadas a ser utilizadas por aquellos autorizados a dar permiso al público para utilizar material en formas que de otra manera estarían restringidas por los derechos de autor y por otros derechos. Nuestras licencias son irrevocables. Los licenciantes deben leer y entender los términos y las condiciones de la licencia que elijan antes de aplicarla. Los licenciantes deben también contar con todos los derechos necesarios antes de aplicar nuestras licencias, de modo que el público pueda reutilizar el material según lo esperado. Los licenciantes deben identificar con claridad cualquier material que no esté sujeto a la licencia. Esto incluye materiales que se encuentren distribuidos con otra licencia de CC o materiales utilizados en virtud de alguna excepción o limitación al derecho de autor.http://wiki.creativecommons.org/Considerations_for_licensors_and_licensees#Considerations_for_licensors[Más consideraciones para Licenciantes] (_en inglés_).
+* *Consideraciones para licenciantes*: Nuestras licencias públicas están destinadas a ser utilizadas por aquellos autorizados a dar permiso al público para utilizar material en formas que de otra manera estarían restringidas por los derechos de autor y por otros derechos. Nuestras licencias son irrevocables. Los licenciantes deben leer y entender los términos y las condiciones de la licencia que elijan antes de aplicarla. Los licenciantes deben también contar con todos los derechos necesarios antes de aplicar nuestras licencias, de modo que el público pueda reutilizar el material según lo esperado. Los licenciantes deben identificar con claridad cualquier material que no esté sujeto a la licencia. Esto incluye materiales que se encuentren distribuidos con otra licencia de CC o materiales utilizados en virtud de alguna excepción o limitación al derecho de autor. http://wiki.creativecommons.org/Considerations_for_licensors_and_licensees#Considerations_for_licensors[Más consideraciones para Licenciantes] (_en inglés_).
 
 * *Consideraciones para el público*: Mediante el uso de una de nuestras licencias públicas, el licenciante concede el permiso para utilizar el Material Licenciado bajo los términos y las condiciones que se especifican. Si producto de la aplicación de una excepción o limitación al derecho de autor u otra razón, no es necesario aplicar la licencia para el uso requerido, se entenderá que dicho uso no se encuentra regulado por la licencia. Nuestras licencias solamente otorgan los permisos que por derecho de autor y derechos conexos el licenciante tiene potestad legal de otorgar. El uso del Material Licenciado podría estar restringido por razones distintas de la licencia, incluyendo el ejercicio de otros derechos de autor u otros derechos sobre el material. El licenciante puede solicitar peticiones especiales, como pedir que los cambios estén marcados o descritos. Aunque nuestras licencias no lo requieren, se lo alienta a respetar esas solicitudes dentro de lo razonable. http://wiki.creativecommons.org/Considerations_for_licensors_and_licensees#Considerations_for_licensees[Más consideraciones para licenciatarios] (_en inglés_).
 
