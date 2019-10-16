@@ -1,8 +1,10 @@
 == Prefacio
 
+ifeval::["{lang}" != "es"]
 === Comentarios Preliminares
 
-El texto e imágenes incluidos en esta guía están en idioma castellano (ES).
+El imágenes incluidos en esta guía están en idioma castellano.
+endif::[]
 
 === Objetivo
 
