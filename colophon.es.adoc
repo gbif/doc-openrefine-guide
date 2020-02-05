@@ -1,7 +1,7 @@
 == Colofón
 
 === Cita bibliográfica sugerida
-Zermoglio PF & Wieczorek JR. Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad. Tercera edición. GBIF Secretariat: Copenhagen. https://doi.org/10.15468/doc-gzjg-af18.
+Zermoglio PF & Wieczorek JR (2019) Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad. Tercera edición. GBIF Secretariat: Copenhagen. https://doi.org/10.15468/doc-gzjg-af18.
 
 === Licencia
 El documento Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad se publica bajo una licencia https://creativecommons.org/licenses/by-sa/4.0/deed.es[Atribución-CompartirIgual 4.0 Internacional].
