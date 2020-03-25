@@ -78,3 +78,5 @@ image::img/es.figure-06.jpg[Figura 6,align=center]
 NOTE: el número de líneas cargadas se muestra en este momento arriba de la tabla, aunque el número de filas mostradas en la tabla sea limitado. No desespere, OpenRefine sólo muestra hasta 50 líneas, pero las acciones que uno pueda tomar en la aplicación pueden tener efecto sobre filas aunque éstas no sean mostradas.
 
 ****
+
+<<<
