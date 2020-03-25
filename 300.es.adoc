@@ -68,3 +68,5 @@ image::img/es.figure-42.jpg[Figura 42,align=center]
 En esta pestaña puede seleccionar el formato de los datos para la descarga. Escoja el que prefiera y haga click en “Descargar”. Inmediatamente comenzará la descarga de los datos.
 
 También, para ver una vista previa de los datos que descargará, puede hacer click en “Vista previa”, y se abrirá otra ventana en su navegador web donde podrá ver una muestra de los datos a descargar.
+
+<<<
