@@ -20,4 +20,4 @@ Tercera edición, Abril 2019.
 Este documento se basa en una publicación anterior de la guía por los mismos autores.
 
 === Imagen de la portada
-Una manada de guanaco (_Lama guanicoe_), Lago Argentino, Santa Cruz, Argentina. Photo 2016 Diego Carús via https://www.gbif.org/occurrence/2005372769[iNaturalist Research-grade Observations], licenced under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
+Una manada de guanaco (_Lama guanicoe_), Lago Argentino, Santa Cruz, Argentina. Foto 2016 Diego Carús via https://www.gbif.org/occurrence/2005372769[iNaturalist Research-grade Observations], licenciada bajo http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
