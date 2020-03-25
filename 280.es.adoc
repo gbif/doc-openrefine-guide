@@ -78,3 +78,5 @@ Las banderas y estrellas se pueden utilizar para eliminar grupos de registros. P
 image::img/es.figure-38.jpg[Figura 38,align=center]
 
 De esta forma habrá eliminado todos los registros que fueron marcados con una bandera.
+
+<<<
