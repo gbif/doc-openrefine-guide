@@ -495,3 +495,5 @@ Verá que algunos de los resultados serán nulos, éstos corresponden a los caso
 image::img/es.figure-52.jpg[Figura 52,align=center]
 
 Para terminar de limpiar las fechas, entonces, tendrá que revisar los valores que no hayan sido estandarizados por la herramienta. Para ello, sobre el campo ISO_eventDate puede armar una faceta y seleccionar el valor “blank”. Luego, arme una faceta sobre el campo [source]`"eventDate"` (el que tenía los valores originales) y si estos son pocos, puede hacer un chequeo manual y completar el campo ISO_eventDate.
+
+<<<
