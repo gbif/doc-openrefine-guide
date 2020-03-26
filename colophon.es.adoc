@@ -5,7 +5,7 @@ endif::backend-html5[]
 == Colofón
 
 === Cita bibliográfica sugerida
-Zermoglio PF & Wieczorek JR (2020) Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad. Tercera edición. GBIF Secretariat: Copenhagen. https://doi.org/10.15468/doc-gzjg-af18.
+Zermoglio PF & Wieczorek JR (2020) Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad, Versión 3. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18.
 
 === Licencia
 El documento Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad se publica bajo una licencia https://creativecommons.org/licenses/by-sa/4.0/deed.es[Atribución-CompartirIgual 4.0 Internacional].
@@ -14,7 +14,7 @@ El documento Guía de Uso Básico de OpenRefine para la limpieza de datos sobre 
 https://doi.org/10.15468/doc-gzjg-af18
 
 === Control de documentos
-Tercera edición, Abril 2020.
+Versión 3, Abril 2020.
 
 // if desired, include reference to provenance
 Este documento se basa en una publicación anterior de la guía por los mismos autores.
