@@ -12,3 +12,21 @@ _This is information *about* this document's source code.  It is not part of the
 It is available in Spanish in both HTML and PDF at https://docs.gbif-uat.org/openrefine-guide/[Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad]. The location of these documents is currently considered temporary.
 
 The document is built using AsciiDoc, for guidance on how to make changes or suggestions see the https://docs.gbif.org/documentation-guidelines[GBIF Documentation Guidelines].
+
+== Syntax highlighting
+
+The syntax highligting in this document uses a more careful syntax than normal.
+
+----
+Inline expressions are marked up like this: [source]`cells["genus"].value`.
+
+Block expressions are marked up like this:
+
+  [source,javascript]
+  ----
+  if(isBlank(cells["genus"].value),
+     ""
+     cells["genus"].value
+  )
+  ----
+----
