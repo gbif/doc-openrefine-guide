@@ -8,6 +8,11 @@ Paula F. Zermoglio; John R. Wieczorek
 :source-language: javascript
 :experimental:
 :figure-caption!:
+// These attributes are for inclusion in menu macros, where the menu item includes a quoted column name.
+:genus: pass:q[[source]`"genus"`]
+:eventDate: pass:q[[source]`"eventDate"`]
+:scientificName: pass:q[[source]`"scientificName"`]
+:geolocate_json_georref: pass:q[[source]`"GeoLocate_Json_georref"`]
 
 ifdef::backend-html5[]
 languageLinks:combined[]

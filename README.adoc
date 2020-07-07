@@ -30,3 +30,26 @@ Block expressions are marked up like this:
   )
   ----
 ----
+
+== Menus
+
+Menus use the experimental https://asciidoctor.org/docs/user-manual/#menu-selections[menu selections] syntax.
+
+.Inline syntax.
+----
+"la &#9660; azul > Facetas > Faceta de texto"
+----
+
+.Full syntax for single items and single items with spaces
+----
+menu:Preferencias[]
+menu:la{sp}&#9660;{sp}azul[]
+----
+
+.Full syntax when including formatted text in the menu
+----
+// Attribute to be declared in index.es.adoc
+:genus: pass:q[[source]`"genus"`]
+
+menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{genus}[Editar columnas > Agregar columna basada en esta columna…]
+----

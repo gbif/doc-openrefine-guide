@@ -29,7 +29,7 @@ Los directorios en que se guardan los proyectos se listan a continuación:
 
 OpenRefine ofrece varias opciones para exportar los datos y proyectos. Se puede acceder a estas opciones en la esquina superior derecha de la ventana del programa, haciendo click en el botón “Exportar” (<<img-fig-39,Figura 39>>).
 
-Note que la primera opción, “Exportar proyecto”, permite exportar el proyecto completo, mientras que otras opciones (e.g., delimitado por... , Excel, etc.) permiten exportar los datos.
+Note que la primera opción, “Exportar proyecto”, permite exportar el proyecto completo, mientras que otras opciones (e.g., delimitado por… , Excel, etc.) permiten exportar los datos.
 
 [#img-fig-39]
 .Figura 39
@@ -49,7 +49,7 @@ Para exportar los datos y poder abrirlos en otro programa, puede seguir cualquie
 
 IMPORTANT: La exportación se realizará teniendo en cuenta las facetas y filtros aplicados. Esto implica que si usted tiene abierta por ejemplo una faceta, sólo los datos correspondientes a dicha faceta serán exportados. Por lo tanto, para exportar todos los datos, recuerde cerrar todos los filtros y facetas antes de hacer la exportación.
 
-Para una exportación más personalizada, en el menú “Exportar” escoja “Configurar exportación...”. Se abrirá una ventana como la mostrada en la <<img-fig-40,Figura 41>>, en la cual puede escoger una serie de opciones.
+Para una exportación más personalizada, en el menú “Exportar” escoja “Configurar exportación…”. Se abrirá una ventana como la mostrada en la <<img-fig-40,Figura 41>>, en la cual puede escoger una serie de opciones.
 
 [#img-fig-41]
 .Figura 41

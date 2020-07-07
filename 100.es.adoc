@@ -45,7 +45,7 @@ Verá entonces una pantalla como la que se muestra en la <<img-fig-04,Figura 4>>
 
 OpenRefine sugiere algunas de las codificaciones más utilizadas cuando se hace click en el cuadro de texto “Codificación de caracteres”. Asegúrese de escoger correctamente la codificación. Si está utilizando el conjunto de datos de prueba proporcionado, escoja UTF-8 (<<img-fig-05,Figura 5>>).
 
-OpenRefine presenta la opción de “Detectar y transformar texto en números, fechas, ...”. Si esta opción es seleccionada, el programa tratará de interpretar ciertos campos transformándolos a determinados formatos. Por ejemplo, si detecta campos de fecha, tratará de colocar los valores de las celdas de ese campo en formato de fecha estándar. Dada la naturaleza de los datos sobre biodiversidad con los que solemos trabajar, estas interpretaciones pueden ser incorrectas e introducir más errores. Asegúrese entonces de desmarque esta opción durante el paso de importación de datos.
+OpenRefine presenta la opción de “Detectar y transformar texto en números, fechas, …”. Si esta opción es seleccionada, el programa tratará de interpretar ciertos campos transformándolos a determinados formatos. Por ejemplo, si detecta campos de fecha, tratará de colocar los valores de las celdas de ese campo en formato de fecha estándar. Dada la naturaleza de los datos sobre biodiversidad con los que solemos trabajar, estas interpretaciones pueden ser incorrectas e introducir más errores. Asegúrese entonces de desmarque esta opción durante el paso de importación de datos.
 
 [#img-fig-04]
 .Figura 4

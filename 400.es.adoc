@@ -20,7 +20,7 @@ Para acortar el tiempo de consulta, cree una faceta para el campo [source]`"genu
 
 Para comparar los nombres contra el GNR, haremos un llamado al servicio y capturaremos los resultados en un nuevo campo:
 
-A partir del campo [source]`"scientificName"`, cree una nueva columna a partir de una dirección URL haciendo click en la &#9660; azul del campo y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
+A partir del campo [source]`"scientificName"`, cree una nueva columna a partir de una dirección URL haciendo click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo[] y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
 
 --
 "Editar columnas > Agregar columna accediendo a URLs…"
@@ -314,7 +314,7 @@ Para extraer las coordenadas puede seguir dos métodos: 1) extraer latitud y lon
 
 *Método 1:* extraer latitud y longitud conjuntamente
 
-Haga click en "la &#9660; azul del campo [source]`"GeoLocate_Json_georref"` > Editar columnas > Agregar columna basada en esta columna".
+Haga click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{geolocate_json_georref}[Editar columnas > Agregar columna basada en esta columna].
 
 De un nombre al nuevo campo, por ejemplo, GeoLocate_parseCoord, y en el cuadro de texto pegue la siguiente expresión:
 
@@ -345,7 +345,7 @@ Tendrá entonces ahora una serie de campos con valores del tipo: `-64.158097; -2
 
 *Método 2:* extraer latitud y longitud independientemente
 
-Haga click en "la &#9660; azul del campo [source]`"GeoLocate_Json_georref"` > Editar columnas > Agregar columna basada en esta columna".
+Haga click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{geolocate_json_georref}[Editar columnas > Agregar columna basada en esta columna].
 
 De un nombre al nuevo campo, por ejemplo, GeoLocate_parseLong, y en el cuadro de texto pegue la siguiente expresión:
 [source,javascript]

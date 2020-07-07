@@ -80,7 +80,7 @@ Veamos ahora cómo crear nuevas columnas con datos modificados a partir de colum
 Si desea crear un campo que sea la concatenación de otros dos campos separados, siga la siguiente ruta:
 Utilizaremos como ejemplo la concatenación de los campos [source]`"genus"` y [source]`"specificEpithet"`.
 
-Click en "la &#9660; azul del campo [source]`genus` > Editar columnas > Agregar columna basada en esta columna…"
+Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{genus}[Editar columnas > Agregar columna basada en esta columna…]
 
 Se abrirá una nueva ventana (<<img-fig-10,Figura 10>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`"scientificName"` en los datos).
 
@@ -169,7 +169,7 @@ Si desea crear campos separados a partir de los valores en un único campo, siga
 
 Utilizaremos como ejemplo la división del campo [source]`"eventDate"` para agregar tres campos: año, mes y día (year, month y day)
 
-Click en "la &#9660; azul del campo [source]`"eventDate"` > Editar columnas > Dividir en varias columnas…"
+Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{eventDate}[Editar columnas > Dividir en varias columnas…]
 
 Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>). Allí debe escoger si se dividirá por separador o por longitud de caracteres, y en el primer caso qué tipo de separador se utilizará (puede ser espacio –tab-, coma, punto y coma, guión, etc.).
 
