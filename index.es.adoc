@@ -1,4 +1,4 @@
-= Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad
+= Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad [borrador de revisión de la comunidad]
 Paula F. Zermoglio; John R. Wieczorek
 :toc: left
 :numbered:
