@@ -3,7 +3,7 @@
 ifeval::["{lang}" != "es"]
 === Comentarios Preliminares
 
-El imágenes incluidos en esta guía están en idioma castellano.
+Las imágenes incluidas en esta Guía están en idioma castellano.
 endif::[]
 
 === Objetivo
@@ -14,13 +14,15 @@ La presente guía ha sido construida con fines únicamente pedagógicos. El obje
 
 En esta guía se muestra cómo utilizar funciones básicas de OpenRefine para la evaluación y mejoramiento de la calidad de un conjunto de datos de biodiversidad. Los ejemplos de uso presentados en esta guía constituyen sólo algunas de las alternativas posibles para el tratamiento de datos en OpenRefine.
 
-Para hacer un mejor uso de esta guía, se recomienda seguir los pasos utilizando el programa OpenRefine y el conjunto de datos modelo provisto junto con esta guía. Todos los ejemplos presentados corresponden a un conjunto de datos de biodiversidad que ha sido específicamente modificado por los autores.
+Para hacer un mejor uso de esta guía, se recomienda seguir los pasos utilizando el programa OpenRefine y el conjunto de datos modelo provisto junto con este documento. Todos los ejemplos presentados corresponden a un conjunto de datos de biodiversidad que ha sido específicamente modificado por los autores.
 
-En el texto, los [source]`"nombres de los campos originales"` se marcan con color verde claro.
+En la Guía se utilizan los términos ‘campo’ y ‘columna’ indistintamente.
+
+En el texto se utiliza se utiliza el siguiente formato para los [source]`"nombres de los campos originales"`.
 
 ====	Software
 
-La versión de OpenRefine utilizada para la confección de esta guía es OpenRefine 3.3. Aunque la última versión disponible es la 3.4.1 esta ha presentado algunos problemas de memoria por lo tanto no se aborda en esta guía.
+La versión de OpenRefine utilizada para la confección de esta guía es OpenRefine 3.3. Aunque la última versión disponible es la 3.4.1, esta ha presentado algunos problemas de memoria y por lo tanto no se aborda en esta guía.
 
 Para ver detalles sobre cómo descargar e instalar OpenRefine en su computadora, ver el <<app-a,Apéndice 1>>.
 
