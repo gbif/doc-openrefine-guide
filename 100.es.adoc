@@ -75,7 +75,7 @@ image::img/es.figure-05.jpg[Figura 5,align=center]
 .Figura 6
 image::img/es.figure-06.jpg[Figura 6,align=center]
 
-NOTE: el número total de filas cargadas se muestra en este momento arriba de la tabla en negrita (para el caso del conjunto de datos provisto, 24984 filas). Sin embargo, verá que el número de filas mostradas en la tabla es limitado. No desespere, OpenRefine sólo muestra hasta 50 filas. Las acciones que uno pueda tomar en la aplicación, sin embargo, pueden tener efecto sobre otras filas aunque éstas no sean mostradas.
+NOTE: El número total de filas cargadas se muestra en este momento arriba de la tabla en negrita (para el caso del conjunto de datos provisto, 24984 filas). Sin embargo, verá que el número de filas mostradas en la tabla es limitado. No desespere, OpenRefine sólo muestra hasta 50 filas. Las acciones que uno pueda tomar en la aplicación, sin embargo, pueden tener efecto sobre otras filas aunque éstas no sean mostradas.
 
 ****
 
