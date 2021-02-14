@@ -24,11 +24,18 @@ Acá encontrará x rutinas de limpieza (Tabla 2), teniendo en cuenta diferentes 
 .Lista de rutinas para la validación de datos primarios sobre biodiversidad
 [cols=3*,options="header"]
 |===
-| Nombre | Enlace | Requerimientos 
-| Validación taxonómica con el API de GBIF | ValTaxonomicAPIGBIF_ValTaxonomicaAPIGBIF.txt  | Require acceso a internet para hacer la petición a una API
-| Validación taxonómica con Species Match de GBIF | ValTaxonomicSpeciesMatchGBIF_ValTaxonomicaSpeciesMatchGBIF.txt | Requiere que un archivo sea previamente cargado en OpenRefine para la ejecución de la rutina.
-| Validación taxonómica con el API de WoRMS (World Register of Marine Species) | ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt | Require acceso a internet para hacer la petición a una API
-| Validación de elevaciones con GeoNames | ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt | Require acceso a internet para hacer la petición a una API
+| Nombre | Uso | Requerimientos 
+| /link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIGBIF_ValTaxonomicaAPIGBIF.txt[Validación taxonómica con el API de GBIF.]
+| Validación taxonómica contra el árbol taxonómico de GBIF, permité validar registros de varios grupos biológicos a la vez, así como obtener la taxonomía superior de cada taxa.  | Require como mínimo los elementos [source]`"scientificName"` y [source]`"kingdon"` documentados y acceso a internet para hacer la petición a la API de GBIF.
+
+|  /link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicSpeciesMatchGBIF_ValTaxonomicaSpeciesMatchGBIF.txt[Validación taxonómica con Species Match de GBIF.] 
+| Validación taxonómica contra el árbol taxonómico de GBIF, a diferencia de la rutina anterior realiza la validación contra el archivo de resultados _normalized_ obtenido de /link:https://www.gbif.org/es/tools/species-lookup[Species Matching] permitiendo así aprovechar las funcionalidades de validación y limpieza de esta herramienta. La rutina facilita el cruce de los resultados contra el conjunto de datos original. | Require como mínimo el elemento [source]`"scientificName"` documentado y que el archivo _normalized_ sea previamente cargado en OpenRefine para la ejecución de la rutina.
+
+| /link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt[Validación taxonómica con el API de WoRMS (World Register of Marine Species]) 
+| Validación taxonómica específica para organismos marinos, valida los datos contra el /link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb))]. Permité obtener la taxonomía superior de cada taxa, así como elementos taxonómicos obligatorios para la publicación de datos a través de /link:https://obis.org/[OBIS]
+| Require como mínimo el elemento [source]`"scientificName"` documentado y acceso a internet para hacer la petición a  la API de WORMS.
+
+| /link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt[Validación de elevaciones con GeoNames] | Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de Geonames | Requiereacceso a internet para hacer la petición al API de  Geonames.
 |===
 
 
