@@ -16,15 +16,15 @@ Para ello escoja algún criterio que los agrupe. Por ejemplo, si quiere marcar t
 
 En la faceta, seleccione el valor “Acacia” haciendo click en el valor (verá que en la ventana principal sólo se mostrarán esos registros). 
 
-Para marcar todos esos registros con una bandera, haga click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}“Todo”[] y siga la siguiente ruta (<<img-fig-36,Figura 36>>):
+Para marcar todos esos registros con una bandera, haga click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}“Todo”[] y siga la siguiente ruta (<<img-fig-37,Figura 37>>):
 
 --
 "Editar filas > Marcar filas con bandera"
 --
 
-[#img-fig-36]
-.Figura 36
-image::img/es.figure-36.jpg[Figura 36,align=center]
+[#img-fig-37]
+.Figura 37
+image::img/es.figure-37.jpg[Figura 37,align=center]
 
 Una vez que lo haya hecho, verá que todos los registros seleccionados están marcados ahora con una bandera.
 
@@ -42,7 +42,7 @@ Si desea marcar los registros de modo que al exportar se conserven las marcas, d
 
 Cree un nuevo campo: sobre cualquier campo haga click en "la &#9660; azul > Editar columnas > Agregar columna basada en esta columna…"
 
-Se abrirá una ventana como la mostrada en la <<img-fig-37,Figura 37>>. Asigne un nombre al campo. Por ejemplo, si sus banderas significan que ha detectado errores en los registros, puede llamarlo “tieneError”.
+Se abrirá una ventana como la mostrada en la <<img-fig-38,Figura 38>>. Asigne un nombre al campo. Por ejemplo, si sus banderas significan que ha detectado errores en los registros, puede llamarlo “tieneError”.
 
 En el cuadro de texto pegue la siguiente expresión:
 [source,javascript]
@@ -53,9 +53,9 @@ Esta expresión hará que el campo nuevo tenga como valor “yes” si usted ha 
 
 Al oprimir “Aceptar” su campo se habrá creado. Verifique los valores que toma asignando a algunos registros una bandera.
 
-[#img-fig-37]
-.Figura 37
-image::img/es.figure-37.jpg[Figura 37,align=center]
+[#img-fig-38]
+.Figura 38
+image::img/es.figure-38.jpg[Figura 38,align=center]
 
 Puede repetir el proceso creando otro campo para las estrellas, usando la expresión:
 [source,javascript]
@@ -69,13 +69,13 @@ Para ver los pasos de exportación de datos, vea la sección de <<sect-3.2,Expor
 Las banderas y estrellas se pueden utilizar para eliminar grupos de registros. Para ello, siga los siguientes pasos:
 
 . Marque con una bandera (o estrella) los registros deseados. Puede hacerlo uno por uno o en grupos a través del marcado dentro de facetas (ver más arriba).
-. Cree una faceta para la bandera. Haga click en "la &#9660; azul sobre el campo “Todo” > Facetas > Faceta por bandera" (<<img-fig-38,Figura 38a>>).
+. Cree una faceta para la bandera. Haga click en "la &#9660; azul sobre el campo “Todo” > Facetas > Faceta por bandera" (<<img-fig-39,Figura 39a>>).
 . En esta nueva faceta, a la izquierda, seleccione la opción “true” haciendo click sobre ella. Ello le mostrará los registros a los que se ha asignado una bandera.
-. Haga click nuevamente sobre "la &#9660; azul del campo “Todo” > Editar filas > Eliminar todas las filas que encajen" (<<img-fig-38,Figura 38b>>).
+. Haga click nuevamente sobre "la &#9660; azul del campo “Todo” > Editar filas > Eliminar todas las filas que encajen" (<<img-fig-39,Figura 39b>>).
 
-[#img-fig-38]
-.Figura 38
-image::img/es.figure-38.jpg[Figura 38,align=center]
+[#img-fig-39]
+.Figura 39
+image::img/es.figure-39.jpg[Figura 39,align=center]
 
 De esta forma habrá eliminado todos los registros que fueron marcados con una bandera.
 
