@@ -147,7 +147,7 @@ Alternativamente, para modificar en cualquier momento el límite en el número d
 http://127.0.0.1:3333/preferences
 --
 
-El navegador mostrará una ventana como ciertas opciones (<<img-fig-25,Figura 25a>>). Allí, establezca el límite preferido para las facetas editando la clave “ui.browsing.listFacet.limit”. Para ello haga click en “core-index/edit”, y en la ventana que se abre, coloque el nuevo valor límite y oprima “OK” (<<img-fig-25,Figura 25b>>).
+El navegador mostrará una ventana con ciertas opciones (<<img-fig-25,Figura 25a>>). Allí, establezca el límite preferido para las facetas editando la clave “ui.browsing.listFacet.limit”. Para ello haga click en “core-index/edit”, y en la ventana que se abre, coloque el nuevo valor límite y oprima “OK” (<<img-fig-25,Figura 25b>>).
 
 [#img-fig-25]
 .Figura 25
