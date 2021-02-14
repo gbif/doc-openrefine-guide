@@ -43,4 +43,4 @@ Pegue en el cuadro de texto la expresión deseada (copie y pegue lo que guardó 
 .Figura 36
 image::img/es.figure-36.jpg[Figura 36,align=center]
 
-De este modo, puede rehacer pasos particulares o toda una rutina de trabajo, sobre el mismo conjunto de datos, o sobre otros conjuntos de datos (siempre y cuando las columnas sean las msimas).
+De este modo, puede rehacer pasos particulares o toda una rutina de trabajo, sobre el mismo conjunto de datos, o sobre otros conjuntos de datos (siempre y cuando las columnas sean las mismas).
