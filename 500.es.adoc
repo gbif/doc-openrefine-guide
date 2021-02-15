@@ -1,41 +1,46 @@
 == Rutinas de validación de la calidad de los datos
 
-A partir del uso de <<sect-4,servicios externos>> o archivos externos, y la posibilidad que ofrece OpenRefine de <<sect-2.5.2. guardar y rehacer pasos>> es posible crear rutinas para ejecutar de manera automática varias acciones de validación de calidad. 
+A partir del uso de <<sect-4,servicios>> o archivos externos, y la posibilidad que ofrece OpenRefine de <<sect-2.5.2. guardar y rehacer pasos>> es posible crear rutinas para ejecutar de manera automática varias acciones de validación de calidad. 
 
 Aprovechando las múltiples herramientas de calidad de datos ya existentes en la red de GBIF es posible abordar de manera semi-automatizada a través de OpenRefine los retos y problemas más comúnes de calidad que se presentan a nivel taxonómico y geográfico en un conjunto de datos. Acá se presentan diferentes rutinas que validan la calidad de los datos contrastando un conjunto de datos contra dichos servicios externos y agilizan la obtención de resultados a la vez que facilita una metodología de validación replicable.
 
 === ¿Cómo funcionan las rutinas?
 
-Las rutinas comparan la información documentada en el conjunto de datos contra diferentes fuentes de referencia, y a partir de dicha comparación crean columnas de validación donde se puede identificar la correspondencia entre el archivo original y la fuente de referencia a través de operadores lógicos que generan unos (1) y ceros (0) como indicadores de validación (Figura 2.).
+Las rutinas comparan la información documentada en el conjunto de datos contra diferentes fuentes de referencia, y a partir de dicha comparación crean columnas de validación donde se puede identificar la correspondencia entre el archivo original y la fuente de referencia a través de operadores lógicos que generan unos (1) y ceros (0) como indicadores de validación (<<img-fig-53,Figura 53>>).
 
 Los *indicadores de validación* se interpretan así:
 
 * 0: El valor documentado en el conjunto de datos NO coincide con la fuente de referencia, el valor debe ser revisado y ajustado en caso de ser necesario.
 * 1: El valor documentado en el conjunto de datos coincide con la fuente de referencia, no es necesario tomar acciones adicionales.
 
-Las rutinas utilizan como fuentes de validación (1) API’s (Interfaces de Programación de Aplicaciones) de repositorios globales taxonómicos y geográficos; y (2) archivos de texto plano obtenidos como resultado de herramientas de validación externas y  fuentes nacionales oficiales. Se explica a continuación cada fuente:
 
-Las rutinas cuya fuente de referencia es un API, hacen una consulta  a un <<sect-4,servicio externo>> y extraen la información necesaria para hacer la validación, esta se obtiene en formato JSON y es interpretada por la rutina para hacer la información legible dentro del conjunto de datos. Posteriormente el resultado de la consulta al API es comparado con el valor documentado en el conjunto de datos y se generan nuevas columnas con los indicadores de la validación.
+[#img-fig-53]
+.Figura 53. Ejemplo de los indicadores de validación
+image::img/es.figure-53.jpg[Figura 53,align=center]
+
+Las rutinas utilizan como fuentes de validaciónAPI’s (Interfaces de Programación de Aplicaciones) de repositorios globales taxonómicos y geográficos; o  archivos de texto plano obtenidos como resultado de herramientas de validación externas y  fuentes nacionales oficiales. Se explica a continuación cada fuente:
+
+Las rutinas cuya fuente de referencia es un API, hacen una consulta  a un <<sect-4,servicio externo>> y extraen la información necesaria para hacer la validación, esta se obtiene en formato JSON y es interpretada por la rutina para hacer la información legible dentro del conjunto de datos en forma de columnas. Posteriormente el resultado de la consulta al API es comparado con el valor documentado en el conjunto de datos y se generan nuevas columnas con los indicadores de la validación(unos y ceros).
 Las rutinas que usan como fuente archivos de texto plano, hacen una consulta sobre un archivo cargado previamente en OpenRefine, que posteriormente es comparado con el valor documentado en el conjunto de datos, como resultado de la comparación se generan nuevas columnas con los indicadores de la validación.
 
-Acá encontrará x rutinas de limpieza (Tabla 2), teniendo en cuenta diferentes escenarios al momento de realizar la validación, como la caída temporal de servicios web, o requisitos adicionales según la naturaleza de los datos, como por ejemplo el grupo biológico de interés. Cada rutina cuenta con una descripción en la sección inicial que detalla los requerimientos para su ejecución y su funcionamiento en los idiomas inglés y español.
+Acá encontrará  X rutinas de limpieza <<#table-scripts>>, teniendo en cuenta diferentes escenarios al momento de realizar la validación, como la caída temporal de servicios web, o requisitos adicionales según la naturaleza de los datos, como por ejemplo el grupo biológico de interés. 
 
 [#table-scripts]
 .Lista de rutinas para la validación de datos primarios sobre biodiversidad
 [cols=3*,options="header"]
 |===
 | Nombre | Uso | Requerimientos 
-| /link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIGBIF_ValTaxonomicaAPIGBIF.txt[Validación taxonómica con el API de GBIF.]
-| Validación taxonómica contra el árbol taxonómico de GBIF, permité validar registros de varios grupos biológicos a la vez, así como obtener la taxonomía superior de cada taxa.  | Require como mínimo los elementos [source]`"scientificName"` y [source]`"kingdon"` documentados y acceso a internet para hacer la petición a la API de GBIF.
+| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIGBIF_ValTaxonomicaAPIGBIF.txt[Validación taxonómica con el API de GBIF.]
+| Validación taxonómica contra el árbol taxonómico de GBIF, permité validar registros de varios grupos biológicos a la vez, así como obtener la taxonomía superior de cada taxa.  | Require como mínimo los elementos [source]`"scientificName"` y [source]`"kingdon"` documentados y acceso a internet para hacer la petición al API de GBIF.
 
-|  /link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicSpeciesMatchGBIF_ValTaxonomicaSpeciesMatchGBIF.txt[Validación taxonómica con Species Match de GBIF.] 
-| Validación taxonómica contra el árbol taxonómico de GBIF, a diferencia de la rutina anterior realiza la validación contra el archivo de resultados _normalized_ obtenido de /link:https://www.gbif.org/es/tools/species-lookup[Species Matching] permitiendo así aprovechar las funcionalidades de validación y limpieza de esta herramienta. La rutina facilita el cruce de los resultados contra el conjunto de datos original. | Require como mínimo el elemento [source]`"scientificName"` documentado y que el archivo _normalized_ sea previamente cargado en OpenRefine para la ejecución de la rutina.
+| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicSpeciesMatchGBIF_ValTaxonomicaSpeciesMatchGBIF.txt[Validación taxonómica con Species Match de GBIF.] 
+| Validación taxonómica contra el árbol taxonómico de GBIF, a diferencia de la rutina anterior realiza la validación contra el archivo de resultados _normalized_ obtenido de link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] permitiendo así aprovechar las funcionalidades de validación y limpieza de esta herramienta. La rutina facilita el cruce de los resultados obtenidos con link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] con el conjunto de datos original. | Require como mínimo el elemento [source]`"scientificName"` documentado y que el archivo _normalized_ sea previamente cargado en OpenRefine para la ejecución de la rutina.
 
-| /link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt[Validación taxonómica con el API de WoRMS (World Register of Marine Species]) 
-| Validación taxonómica específica para organismos marinos, valida los datos contra el /link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb))]. Permité obtener la taxonomía superior de cada taxa, así como elementos taxonómicos obligatorios para la publicación de datos a través de /link:https://obis.org/[OBIS]
+| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt[Validación taxonómica con el API de WoRMS (World Register of Marine Species]) 
+| Validación taxonómica específica para organismos marinos, valida los datos contra el link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)]. Permité obtener la taxonomía superior de cada taxa, así como elementos taxonómicos obligatorios para la publicación de datos a través de link:https://obis.org/[OBIS]
 | Require como mínimo el elemento [source]`"scientificName"` documentado y acceso a internet para hacer la petición a  la API de WORMS.
 
-| /link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt[Validación de elevaciones con GeoNames] | Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de Geonames | Requiereacceso a internet para hacer la petición al API de  Geonames.
+| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt[Validación de elevaciones con GeoNames] | Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de GeoNames | Requiere acceso a internet para hacer la petición al API de  Geonames.
 |===
 
 
@@ -47,20 +52,32 @@ Las rutinas se ejecutan de manera similar, los requerimientos específicos para 
 
 *Carga de los archivos a OpenRefine*
 
-Cree un proyecto en OpenRefine con el conjunto de datos que desea validar, si tiene dudas sobre cómo hacerlo revise la <<sect-1, sección 1>>. Asegúrese que el conjunto de datos o los elementos que desea validar estén estructurados en el estándar Darwin Core, si no lo están ajuste el nombre de cada columna según el estándar siguiendo las instrucciones de la << sect-2.1.1, sección 2.1.1>>.
+Cree un proyecto en OpenRefine con el conjunto de datos que desea validar, si tiene dudas sobre cómo hacerlo revise la <<sect-1, sección 1>>. Asegúrese que el conjunto de datos o los elementos que desea validar estén estructurados en el estándar Darwin Core, si no lo están ajuste el nombre de cada columna según el estándar siguiendo las instrucciones de la <<sect-2.1.1, sección 2.1.1>>.
 
-Si la rutina lo requiere cargue también en OpenRefine los archivos adicionales de validación (ver <<table-scripts,Tabla 1.>>), de lo contrario vaya directamente al paso 2.
+Según la validación que desee realizar asegurese de cumplir los requerimientos de la rutina. Si la rutina lo requiere cargue también en OpenRefine los archivos adicionales de validación (ver <<table-scripts,Tabla 1.>>), de lo contrario vaya directamente al paso 2.
 ****
 
 ****
 [discrete]
 === Paso 2
 
-*Seleccionar y copiar la rutina*
+*Ejecutar la rutina*
 
-Ubiqué la rutina de interés según la validación que desee realizar (ver <<table-scripts,Tabla 1.>>), revise las instrucciones y requerimientos al inicio para ejecutar la rutina  de interes y verifique que su conjunto de datos cumple todas las condiciones.
+Ubiqué la rutina de interés según la validación que desee realizar (ver <<table-scripts,Tabla 2.>>), copie el texto de la rutina de validación. Asegúrese de seleccionar solo la rutina -sin las intrucciones- y copiar todos  los corchetes iniciales ({) y finales (}) (<<img-fig-54,Figura 54>>).
 
-Copie el texto de la rutina de validación. Asegúrese de seleccionar todos  los corchetes iniciales ({) y finales (}), esto puede generar errores en la ejecución.
+[#img-fig-54]
+.Figura 54
+image::img/es.figure-54.jpg[Figura 54,align=center]
+
+Ubíquese en el conjunto de datos a validar en OpenRefine, diríjase al menú de arriba a la izquierda, seleccione la pestaña “Deshacer/Rehacer” y haga clic en el botón “Aplicar...”. A continuación se abrirá una ventana de texto vacía, pegue en el cuadro de texto la rutina a ejecutar y haga click en “Ejecutar Operaciones”. Si tiene dudas sobre este proceso revise la <<sect-2.5, sección 2.5>>.
+
+El avance de la ejecución de la rutina se observa en la parte superior de la pantalla (<<img-fig-55,Figura 55>>).
+
+[#img-fig-55]
+.Figura 55
+image::img/es.figure-55.jpg[Figura 55,align=center]
+
+Espere a que finalice la ejecución de la rutina. Las rutinas que requieren hacer llamados a servicios externos, dependen de la conexión a internet, estas consultas toman un tiempo en correr que varía según el número de filas del conjunto de datos, de la velocidad de la conexión y de la memoria RAM del equipo. 
 
 
 ****
@@ -68,23 +85,6 @@ Copie el texto de la rutina de validación. Asegúrese de seleccionar todos  los
 ****
 [discrete]
 === Paso 3
-
-*Ejecutar la rutina*
-
-Ubíquese en el conjunto de datos a validar en OpenRefine, diríjase al menú de arriba a la izquierda, seleccione la pestaña “Deshacer/Rehacer” y haga clic en el botón “Aplicar...”. A continuación se abrirá una ventana de texto vacía, pegue en el cuadro de texto la rutina a ejecutar y haga click en “Ejecutar Operaciones”. Si tiene dudas sobre este proceso revise la <<sect-2.5, sección 2.5>>
-
-Espere a que finalice la ejecución de la rutina. Las rutinas que requieren hacer llamados a servicios externos, dependen de la conexión a internet, estas consultas toman un tiempo en correr que varía según el número de filas del conjunto de datos, de la velocidad de la conexión y de la memoria RAM del equipo. 
-
-[[table-x]]
-[caption="Table x. "]
-
-El avance de la ejecución de la rutina se observa en la parte superior de la pantalla.
-
-****
-
-****
-[discrete]
-=== Paso 4
 
 **Resultados de la validación**
 
@@ -94,20 +94,26 @@ Al terminar la ejecución de la rutina, obtendrá nuevas  en el conjunto de dato
 
 * _Validation_: corresponden a los indicadores de validación (unos y ceros) que permiten rastrear diferencias entre el valor original y el valor sugerido, y realizar posteriormente una limpieza de los datos. 
 
+[#img-fig-56]
+.Figura 56
+image::img/es.figure-56.jpg[Figura 56,align=center]
+
+
 ****
 
 ****
 [discrete]
-=== Paso 6
+=== Paso 4
 
 **Limpieza de los datos**
 
-A partir de las nuevas columnas de validación seleccione los registros donde el valor original y el valor sugerido son diferentes (Identificador de validación = 0) y realice los ajustes que considere necesarios sobre los elementos del estándar Darwin Core. Se recomienda realizar este proceso de limpieza utilizando las funcionalidades de OpenRefine descritas en la sección << sect-2, de limpieza de datos.>>
+A partir de las nuevas columnas de validación seleccione los registros donde el valor original y el valor sugerido son diferentes (Identificador de validación = 0) y realice los ajustes que considere necesarios sobre los elementos del estándar Darwin Core. Se recomienda realizar este proceso de limpieza utilizando las funcionalidades de OpenRefine descritas en la sección << sect-2, de limpieza de datos>> (<<img-fig-57,Figura 57>>).
+
+[#img-fig-57]
+.Figura 57
+image::img/es.figure-57.jpg[Figura 57,align=center]
 
 Una vez terminada la validación y limpieza de sus datos, puede eliminar las columnas resultantes de la validación y dejar solo las columnas de interes.
-
-[[table-x]]
-[caption="Table x. "]
 
 ****
 
@@ -119,7 +125,7 @@ Una vez terminada la validación y limpieza de sus datos, puede eliminar las col
 
 * El conjunto de datos a validar debe tener como mínimo los elementos DwC [source]`"scientificName"` y [source]`"kingdon'"` documentados.
 
-* Si tambíen desea validar la taxonomía superior de su conjunto de dato se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdon"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`,[source]`"genus"`.
+* Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdon"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`,[source]`"genus"`.
 
 *Funcionamiento:*
 
@@ -127,15 +133,18 @@ Esta rutina obtiene y valida la información taxonómica de un conjunto de datos
 
 *Resultados:*
 
-En las primeras columnas del proyecto encontrara de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la figura x.
+En las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la (<<img-fig-58,Figura 58>>).
 
 
-// va una gráfica de ejemplo
+[#img-fig-58]
+.Figura 58
+image::img/es.figure-58.jpg[Figura 58,align=center]
 
-IMPORTANT: El llamado al API permite hacer una consulta sobre un número ilimitado de registros, sin embargo, se recomienda ejecutar la rutina haciendo un filtro por nombres científicos únicos, lo cual disminuirá  el tiempo de respuesta y agilizará la ejecución de la rutina.
+
+IMPORTANT: El llamado al API permite hacer una consulta sobre un número ilimitado de registros, sin embargo si su conjunto de datos tiene muchas filas se recomienda ejecutar la rutina haciendo un filtro por nombres científicos únicos, lo cual disminuirá  el tiempo de respuesta y agilizará la ejecución de la rutina.
 
 
-=== Validación taxonómica con Species Matching de GBIF
+=== Validación taxonómica con link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] de GBIF
 
 *Enlace a la rutina:*
 https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicSpeciesMatchGBIF_ValTaxonomicaSpeciesMatchGBIF.txt
@@ -144,35 +153,24 @@ https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomi
 
 * El conjunto de datos a validar debe tener como mínimo los elementos DwC [source]`"scientificName"` y [source]`"kingdon'"` documentados.
 
-* Si tambíen desea validar la taxonomía superior de su conjunto de dato se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdon"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`,[source]`"genus"`.
+* Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdon"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`,[source]`"genus"`.
 
-* Archivo titulado _normalized_ obtenido de el servicio Species Matching de GBIF (https://www.gbif.org/tools/species-lookup) y cargado en OpenRefine
+* Archivo titulado _normalized_ obtenido de la herramienta link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] y cargado en OpenRefine, el nombre del proyecto debe ser exactamente _normalized_.
+
+WARNING: El archivo _normalized' debe ser el único proyecto en OpenRefine titulado de esta manera. Cambie el nombre de cualquier otro archivo _normalized_ cargado previamente, de lo contrario la rutina no podrá identificar adecuadamente el archivo de referencia.
 
 
 *Funcionamiento:*
 
-La rutina obtiene y valida la información taxonómica de un conjunto de datos con el árbol taxonómico de GBIF a partir de un archivo de texto plano obtenido de la herramienta en línea de GBIF search/link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] y cargado en OpenRefine. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF y los compara con los elementos documentados en el archivo base, generando los indicadores de validación.
+La rutina obtiene y valida la información taxonómica de un conjunto de datos con el árbol taxonómico de GBIF a partir de el archivo de texto plano - normalized_ obtenido de la herramienta en línea link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] y cargado en OpenRefine. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF y los compara con los elementos documentados en el archivo base, generando los indicadores de validación.
 
-Al usar GBIF _Species matching_ como fuente de referencia, el usuario puede realizar una validación previa a OpenRefine directamente en _Species matching_, la cual es especialmente útil para verificar y resolver sinonimias complejas, como es el caso de los homónimos. 
+Al usar _Species matching_ como fuente de referencia, el usuario puede realizar una validación y limpieza previa a OpenRefine directamente en _Species matching_, la cual es especialmente útil para verificar y resolver sinonimias complejas, como es el caso de los homónimos. 
 
-A diferencia del API de GBIF, _Species matching_ tiene un límite de consulta de 6.000 registros o nombres científicos. Para evitar exceder el límite de consulta, se recomienda hacer la consulta en _Species matching_  por nombres científicos únicos.
+IMPORTANT: A diferencia del API de GBIF, _Species matching_ tiene un límite de consulta de 6.000 registros o nombres científicos. Para evitar exceder el límite de consulta, se recomienda hacer la consulta en _Species matching_  por nombres científicos únicos.
 
 *Resultados:*
 
-
-Importante
-El límite del servicio web Species Matching en una sola consulta es de 6000 registros o nombres científicos.
-Entonces existen dos opciones para ejecutar la reconciliación de nombres científicos:
-
-1-Usar occurrenceID, para conjuntos de datos por debajo de 6000 regsitros, la consulta en Species Matching se sebe hacer para todos los registros
-2-Usar el scientificName, conjunto de datos por encima de 6000 registros, a consulta en Species Matching se sebe hacer para taxa unicos (esta es la opción por defeto del script)
-Para cambiar entre las dos opciones remplace en esta rutina 'verbatimScientificName' por 'occurrenceID'
-
-Los nuevos datos seran guardados en columnas el inicio del conjunto de datos
-Los elementos taxonómicos son reorganizados para facilitar la validación taxonómicasn
-
-Advertencia
-El archivo 'normalized' debe ser el único nombrado con ese título en su directorio de OpenRefine, cambie el nombre de cualquier otro archivo 'normalized' cargado previamente
+Como en la rutina anterior, en las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la (<<img-fig-58,Figura 58>>).
 
 
 === Validación taxonómica con el API de WoRMS (_World Register of Marine Species_)
@@ -181,78 +179,22 @@ El archivo 'normalized' debe ser el único nombrado con ese título en su direct
 https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt
 
 *Requerimientos:*
-* Conjunto de datos con mínimo el elemento DwC 'scientificName' documentado
-* Para obtener la validación de la taxonomía superior también se requieren los elementos DwC: 'kingdom','phylum','class','order','family','genus'
+* El conjunto de datos a validar debe tener como mínimo el elemento DwC [source]`"scientificName"` documentado.
+
+* Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdon"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`,[source]`"genus"`.
 
 
 *Funcionamiento:*
-Esta rutina está diseñada especialmente para ser implementada en conjuntos de datos de grupos biológicos marinos, empleando una fuente de referencia específica para estos organismos, así mismo está pensada para que los conjuntos de datos cumplan con los requisitos necesarios para ser integrados en portales de datos de biodiversidad globales: tanto GBIF cómo OBIS (Ocean Biogeographic Information System).
+Esta rutina está diseñada para ser implementada en conjuntos de datos de grupos biológicos marinos, emplea como fuente de referencia los taxones marinos del link:https://www.lifewatch.be/en/lifewatch-species-information-backbone [árbol taxonómico de LifeWatch (LW-SIBb)]a través de un llamado al API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)].La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de LifeWatch y los compara con los elementos documentados en el archivo base, generando los indicadores de validación. 
 
+Adicionalmente a los elementos taxonómicos, esta rutina retorna otros elementos útiles como el [source]`"scientificNameID"` a partir del LSID de WORMS o AphiaID, elemento requerido para la publicación de datos a través de link:https://obis.org/ [OBIS (Ocean Biogeographic Information System)]. La rutina también permite obtener información sobre el tipo de hábitat del taxón (Elementos del estándar Darwin Core: [source]`"isMarine"`, [source]`"isFreshwater"`, [source]`"isBrackish"`, [source]`"isTerrestial"`).
 
-Obtiene y valida la información taxonómica de un conjunto de datos usando como referencia el árbol taxonómico de LifeWatch (LW-TaxBB), esto se hace a través de un llamado al API de WoRMS basado en el elemento nombre científico (‘scientificName’) del estándar Darwin Core documentado en el conjunto de datos. Como resultado, el llamado retorna la taxonomía superior, nombres aceptados, estatus taxonómico, autoría del nombre científico y otros elementos obligatorios para la publicación de datos a través de la plataforma de OBIS, como el identificador del nombre científico de acuerdo a Aphia (‘scientificNameID’). La rutina compara los elementos documentados en el archivo base con los retornados por el API, generando indicadores de validación. La rutina permite también obtener información sobre el tipo de hábitat del taxón (Elementos del estándar Darwin Core: isMarine, isFreshwater; isBrackish, isTerrestial).
 
 *Resultados:*
-
-Los nuevos datos seran guardados en columnas el inicio del conjunto de datos
-Los elementos taxonómicos son reorganizados para facilitar la validación taxonómicas
-
+En las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de LifeWatch y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la (<<img-fig-58,Figura 58>>), y los elementos adicionales [source]`"scientificNameID"`,[source]`"isMarine"`, [source]`"isFreshwater"`, [source]`"isBrackish"`, [source]`"isTerrestial"` (<<img-fig-59,Figura 58>>).
+.
 
 
-=== Transformación de fechas al estándar ISO con el servicio de conversión de ‘Canadensys’ (Aún por definir si queda)
-
-*Enlace a la rutina:*
-https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/DateTransform_TransformFechas.txt
-
-*Requerimientos:*
-* Conjunto de datos con el elemento DwC 'eventDate'
-
-*Funcionamiento:*
-A partir de las fechas documentadas en el conjunto de datos, se realiza una petición al API de Canandensys, el cual transforma las fechas en el estándar ISO 8106, retornando también los elementos year, month, y day. Si algún registro no tiene datos de fecha, la rutina mantiene los elementos eventDate, year, month y day vacíos. Los formatos de fecha aceptados por el API son: 
-
-Jun 13, 2008
-
-2 VII 1986
-
-15 Jan 2011
-
-1999/02/24
-
-2009 IV 02
-
-02/17/1921
-
-Hay que tener en cuenta que las fechas con meses en español (enero, junio, etc.), no son convertidas aún por la rutina. 
-
-
-Los nuevos datos seran guardados en columnas el inicio del conjunto de datos
-No todas las fechas son convertidas exitosamente por el API, revise las celdas donde el resultado haya sido nulo
-
-
-=== Validación de elevaciones con GeoNames. 
-
-*Enlace a la rutina:*
-https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt
-
-*Requerimientos:*
-1- El registro del cual se quiere obtener la elevación debe contar con coordenadas en grados decimales (Ejemplo: 4.7585, -74.5821)
-2- Las coordenadas deben estar documentadas como elementos Darwin Core. (decimalLatitude, decimalLongitude)
-3- Se debe crear un usuario en geonames. El usuario debe ser incluido en el script para que se realice la validación
-4- Si se quiere usar el servicio usando el modo "Demo" como usuario, este solo permite hasta 20000 consultas diarias(mundiales) por lo que no siempre esta disponible en este modo.
-
-*Funcionamiento:*
-
-Realiza un llamado al API de GeoNames (servicio SRTM-1) a partir de los elementos Darwin Core de latitud (‘decimalLatitude’) y longitud (‘decimalLongitude’) en grados decimales y retorna la elevación con una resolución de 30 metros por pixel y la compara con los elementos documentados en el archivo base, generando los indicadores de validación.
-
-Explicación de la rutina: 
-1-A partir de la coordenda en grados decimales, se hace una petición al servicio de elevaciones de GeoNames,
- que retorna la elevación en esa coordenada de acuerdo al modelo de elevación SRTM-1
-2-Crea un elemento verbatimCoordinates a partir de las coordenadas usadas para la petición al servicio de GeoNames
-
-
-
-Advertencias
-El límite del servicio con usuario en GeoNames es de 2000 registros diarios. Se recomienda hacer la consulta sobre valores únicos de coordenadas y no sobre el total de los registros.
-
-Para crear una cuenta en GeoNames, diríjanse al siguiente link:http://www.geonames.org/login y diligencien el cuadro create a new user account. El "Username" es muy importante pues es el que usarán para correr el script.
-
-Para reemplazar su nombre de usario en este script, use CTRL-B y busque "demo", remplacelo por su nombre de usuario (ej: "rortizg")
+[#img-fig-59]
+.Figura 59
+image::img/es.figure-59.jpg[Figura 59,align=center]
