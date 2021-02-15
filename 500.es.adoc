@@ -31,16 +31,19 @@ Acá encontrará  X rutinas de limpieza <<#table-scripts>>, teniendo en cuenta d
 |===
 | Nombre | Uso | Requerimientos 
 | link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIGBIF_ValTaxonomicaAPIGBIF.txt[Validación taxonómica con el API de GBIF.]
-| Validación taxonómica contra el árbol taxonómico de GBIF, permité validar registros de varios grupos biológicos a la vez, así como obtener la taxonomía superior de cada taxa.  | Require como mínimo los elementos [source]`"scientificName"` y [source]`"kingdon"` documentados y acceso a internet para hacer la petición al API de GBIF.
+| Validación taxonómica contra el árbol taxonómico de GBIF, permité validar registros de varios grupos biológicos a la vez, así como obtener la taxonomía superior de cada taxa.  
+| Requiere como mínimo los elementos [source]`"scientificName"` y [source]`"kingdon"` documentados y acceso a internet para hacer la petición al API de GBIF.
 
 | link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicSpeciesMatchGBIF_ValTaxonomicaSpeciesMatchGBIF.txt[Validación taxonómica con Species Match de GBIF.] 
-| Validación taxonómica contra el árbol taxonómico de GBIF, a diferencia de la rutina anterior realiza la validación contra el archivo de resultados _normalized_ obtenido de link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] permitiendo así aprovechar las funcionalidades de validación y limpieza de esta herramienta. La rutina facilita el cruce de los resultados obtenidos con link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] con el conjunto de datos original. | Require como mínimo el elemento [source]`"scientificName"` documentado y que el archivo _normalized_ sea previamente cargado en OpenRefine para la ejecución de la rutina.
+| Validación taxonómica contra el árbol taxonómico de GBIF, a diferencia de la rutina anterior realiza la validación contra el archivo de resultados _normalized_ obtenido de link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] permitiendo así aprovechar las funcionalidades de validación y limpieza de esta herramienta. La rutina facilita el cruce de los resultados obtenidos con link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] con el conjunto de datos original. 
+| Requiere como mínimo el elemento [source]`"scientificName"` documentado y que el archivo _normalized_ sea previamente cargado en OpenRefine para la ejecución de la rutina.
 
-| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt[Validación taxonómica con el API de WoRMS (World Register of Marine Species]) 
-| Validación taxonómica específica para organismos marinos, valida los datos contra el link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)]. Permité obtener la taxonomía superior de cada taxa, así como elementos taxonómicos obligatorios para la publicación de datos a través de link:https://obis.org/[OBIS]
-| Require como mínimo el elemento [source]`"scientificName"` documentado y acceso a internet para hacer la petición a  la API de WORMS.
+| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt[Validación taxonómica con el API de WoRMS (World Register of Marine Species)]
+| Validación taxonómica específica para organismos marinos, valida los datos contra el link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)] por medio de la API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. Permité obtener la taxonomía superior de cada taxa, así como elementos taxonómicos obligatorios para la publicación de datos a través de link:https://obis.org/[OBIS]
+| Requiere como mínimo el elemento [source]`"scientificName"` documentado y acceso a internet para hacer la petición al API de WORMS.
 
-| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt[Validación de elevaciones con GeoNames] | Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de GeoNames | Requiere acceso a internet para hacer la petición al API de  Geonames.
+| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt[Validación de elevaciones con GeoNames] | Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de GeoNames 
+| Requiere los elemento DwC [source]`"decimalLatitude"` y [source]`"decimalLongitude"` documentados adecuadamente y acceso a internet para hacer la petición al API de  GeoNames.
 |===
 
 
@@ -133,7 +136,7 @@ Esta rutina obtiene y valida la información taxonómica de un conjunto de datos
 
 *Resultados:*
 
-En las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la (<<img-fig-58,Figura 58>>).
+En las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la (<<img-fig-58,Figura 58>>).
 
 
 [#img-fig-58]
@@ -162,7 +165,7 @@ WARNING: El archivo _normalized' debe ser el único proyecto en OpenRefine titul
 
 *Funcionamiento:*
 
-La rutina obtiene y valida la información taxonómica de un conjunto de datos con el árbol taxonómico de GBIF a partir de el archivo de texto plano - normalized_ obtenido de la herramienta en línea link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] y cargado en OpenRefine. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF y los compara con los elementos documentados en el archivo base, generando los indicadores de validación.
+La rutina obtiene y valida la información taxonómica de un conjunto de datos con el árbol taxonómico de GBIF a partir de el archivo de texto plano _normalized_ obtenido de la herramienta en línea link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] y cargado en OpenRefine. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF y los compara con los elementos documentados en el archivo base, generando los indicadores de validación.
 
 Al usar _Species matching_ como fuente de referencia, el usuario puede realizar una validación y limpieza previa a OpenRefine directamente en _Species matching_, la cual es especialmente útil para verificar y resolver sinonimias complejas, como es el caso de los homónimos. 
 
@@ -170,7 +173,7 @@ IMPORTANT: A diferencia del API de GBIF, _Species matching_ tiene un límite de 
 
 *Resultados:*
 
-Como en la rutina anterior, en las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la (<<img-fig-58,Figura 58>>).
+Como en la rutina anterior, en las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren(0) como se muestra en la (<<img-fig-58,Figura 58>>).
 
 
 === Validación taxonómica con el API de WoRMS (_World Register of Marine Species_)
@@ -191,10 +194,39 @@ Adicionalmente a los elementos taxonómicos, esta rutina retorna otros elementos
 
 
 *Resultados:*
-En las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de LifeWatch y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la (<<img-fig-58,Figura 58>>), y los elementos adicionales [source]`"scientificNameID"`,[source]`"isMarine"`, [source]`"isFreshwater"`, [source]`"isBrackish"`, [source]`"isTerrestial"` (<<img-fig-59,Figura 58>>).
+En las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de LifeWatch y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la (<<img-fig-58,Figura 58>>), y los elementos adicionales [source]`"scientificNameID"`,[source]`"isMarine"`, [source]`"isFreshwater"`, [source]`"isBrackish"`, [source]`"isTerrestial"` (<<img-fig-59,Figura 59>>).
 .
 
 
 [#img-fig-59]
 .Figura 59
 image::img/es.figure-59.jpg[Figura 59,align=center]
+
+=== Validación de elevaciones con GeoNames. 
+
+*Enlace a la rutina:*
+https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt
+
+*Requerimientos:*
+* El conjunto de datos a validar debe tener como mínimo los elemento DwC [source]`"decimalLatitude"` y [source]`"decimalLongitude"` documentados adecuadamente.
+
+* Tener una cuenta activa en GeoNames, si no tiene una creela link;http://www.geonames.org/login[acá] antes de correr la rutina.
+
+
+
+*Funcionamiento:*
+
+WARNING: Antes de ejecutar la rutina remplace la palabra _demo_  en la expresión `_username=demo_` por el nombre de usuario de su cuenta de GeoNames, por ejemplo `_username=rortizgt_`. Si ejecuta la rutina sin hacer este cambio utilizará la opción de prueba (_demo_ ) la cual tiene el limite de  20.000 consultas *diarias mundiales*, por lo que al corre la rutina de este modo corre el riesgo de que el servicio no esté disponible y por lo tanto no obtendrá resultados.
+
+
+La rutina obtiene la elevación asociada a las coordenadas documentadas en los elementos [source]`"decimalLatitude"` y [source]`"decimalLongitude"` a partir del llamado al  del API de link: http://www.geonames.org/export/web-services.html[GeoNames] que utiliza el modelo de elevación STMR-1. La elevación es obtenida con una resolución de 30 metros por pixel, la rutina compara esta elevación contra el elemento [source]`"minimumElevationInMeters"` en el archivo base contra, generando los indicadores de validación.
+
+IMPORTANT: Se recomienda hacer la consulta sobre valores únicos de coordenadas y no sobre el total de los registros ya que el límite del servicio de GeoNames es de 2.000 registros diarios por usuario.
+
+*Resultados:*
+
+En las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor de elevación original, la elevación sugerida por GeoNames a partir de las coordenadas y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la (<<img-fig-60,Figura 60>>).
+
+[#img-fig-60]
+.Figura 60
+image::img/es.figure-60.jpg[Figura 60,align=center]
