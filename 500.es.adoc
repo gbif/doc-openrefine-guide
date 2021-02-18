@@ -272,10 +272,16 @@ Ejemplo:
 
 Línea de la rutina llamando al servicio `srtm1`: 
 
-*  "urlExpression": "grel:\"http://api.geonames.org/`"srtm1"`?lat=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[0]+\"&lng=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[1]+\"&username=rortizgeo\"",
-
+[source,javascript]
+---- 
+"urlExpression": "grel:\"http://api.geonames.org/`"srtm1"`?lat=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[0]+\"&lng=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[1]+\"&username=demo\"",
+----
 Reemplazo para llamar al servicio `gtopo30`
-- "urlExpression": "grel:\"http://api.geonames.org/`"gtopo30"`?lat=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[0]+\"&lng=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[1]+\"&username=rortizgeo\"",
+
+[source,javascript]
+----
+- "urlExpression": "grel:\"http://api.geonames.org/`"gtopo30"`?lat=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[0]+\"&lng=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[1]+\"&username=demo\"",
+----
 
 
 *Resultados:*
