@@ -1,12 +1,12 @@
 == Consultas a servicios externos
 
-OpenRefine ofrece la posibilidad de consultar fuentes externas, una función que es muy útil cuando se intenta mejorar la calidad de los datos. Para el caso particular de datos sobre biodiversidad, permite, por ejemplo, validar nombres taxonómicos y geográficos contra fuentes de información que se consideren confiables, completar rangos taxonómicos y campos geográficos superiores, georreferenciar, incorporar enlaces a imágenes almacenadas en sitios web, entre otros.
+OpenRefine ofrece la posibilidad de consultar fuentes externas, una función que es muy útil cuando se intenta mejorar la calidad de los datos. Para el caso particular de datos sobre biodiversidad, permite, por ejemplo, validar nombres taxonómicos y geográficos contra fuentes de información que se consideren confiables, completar rangos taxonómicos y campos de geografía administrativa, georreferenciar, incorporar enlaces a imágenes almacenadas en sitios web, entre otros.
 
-En OpenRefine las consultas externas pueden realizarse por dos vías: a través de URLs, o a través de servicios de reconciliación. En esta guía sólo se incluyen los métodos referidos a las consultas a través de URLs. Para ver explicaciones referidas al uso de algunos servicios de reconciliación consultar versiones anteriores de este documento; tener en cuenta que esos servicios no han sido actualizados en concordancia con las actualizaciones de OpenRefine, y muchos no funcionan a partir de OpenRefine 2.8.
+En OpenRefine las consultas externas pueden realizarse por dos vías: a través de URLs, o a través de servicios de reconciliación. En esta guía sólo se incluyen los métodos referidos a las consultas a través de URLs. Para ver explicaciones referidas al uso de algunos servicios de reconciliación consultar versiones anteriores de este documento; tener en cuenta que esos servicios no han sido actualizados en concordancia con las actualizaciones de OpenRefine, y muchos no funcionan a partir de la versión 2.8 de OpenRefine.
 
-NOTE: Debe recordarse que para poder realizar consultas a servicios que se encuentran en línea se requiere conexión a internet.
+NOTE: Debe recordarse que para poder realizar consultas a servicios que se encuentran en línea se requiere conexión a Internet.
 
-NOTE: La velocidad a la que se obtienen los resultados de las consultas depende de la velocidad de respuesta del servicio en particular. De esta forma, si se quieren comparar muchos registros, el tiempo de la operación será prolongado. Para acortar tiempos, se pueden hacer comparaciones de registros contra el servicio deseado dentro de una faceta, es decir, en una fracción particular de los registros.
+NOTE: La velocidad a la que se obtienen los resultados de las consultas depende de la velocidad de respuesta del servicio en particular. De esta forma, si se quieren obtener información para muchos registros, el tiempo de la operación será prolongado. Para acortar tiempos, se pueden hacer comparaciones de registros contra el servicio deseado dentro de facetas, es decir, en fracciones particulares de los registros.
 
 === Consultas externas a través de URLs
 
@@ -14,23 +14,23 @@ Nos referimos a consultas a través de URLs cuando el proceso implica proveer a 
 
 ==== Resolución de nombres científicos usando Global Names Resolver
 
-En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`"scientificName"`) contra el servicio http://resolver.globalnames.org[Global Names Resolver].
+En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`"scientificName"`) contra el servicio http://resolver.globalnames.org[Global Names Resolver] (de aquí en más "GNR").
 
-Para acortar el tiempo de consulta, cree una faceta para el campo [source]`"genus"` (click en "la &#9660; azul > Facetas > Faceta de texto") y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna parece tener 3 especies asociadas: C. lateralis (1 registro), C. arundinacea (6 registros) y C. latifolia (3 registros).
+Para acortar el tiempo de consulta, cree una faceta para el campo [source]`"genus"` (click en "la &#9660; azul > Facetas > Faceta de texto") y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna tiene 3 especies asociadas: _C. lateralis_ (1 registro), _C. arundinacea_ (6 registros) y _C. latifolia_ (3 registros); puede verlas listadas en el campo [source]`"scientificName"`.
 
 Para comparar los nombres contra el GNR, haremos un llamado al servicio y capturaremos los resultados en un nuevo campo:
 
-A partir del campo [source]`"scientificName"`, cree una nueva columna a partir de una dirección URL haciendo click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo[] y siguiendo la siguiente ruta (<<img-fig-43,Figura 43>>):
+A partir del campo [source]`"scientificName"`, cree una nueva columna a partir de una dirección URL haciendo click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo[] y siguiendo la siguiente ruta (<<img-fig-44,Figura 44>>):
 
 --
 "Editar columnas > Agregar columna accediendo a URLs…"
 --
 
-[#img-fig-43]
-.Figura 43
-image::img/es.figure-43.jpg[Figura 43,align=center]
+[#img-fig-44]
+.Figura 44
+image::img/es.figure-44.jpg[Figura 44,align=center]
 
-Se abrirá una ventana como la mostrada en la <<img-fig-44,Figura 44>>. Allí, dé un nombre al nuevo campo (por ejemplo, GNR_Json_sciName), y en el cuadro de texto coloque la siguiente expresión:
+Se abrirá una ventana como la mostrada en la <<img-fig-45,Figura 45>>. Allí, dé un nombre al nuevo campo (por ejemplo, GNR_Json_sciName), y en el cuadro de texto coloque la siguiente expresión:
 
 [source,javascript]
 ----
@@ -38,13 +38,13 @@ Se abrirá una ventana como la mostrada en la <<img-fig-44,Figura 44>>. Allí, d
   escape(cells["scientificName"].value,"url")
 ----
 
-Dicha expresión indica se hará una consulta en el GNR utilizando como valores de comparación aquellos que se encuentran en el campo [source]`"scientificName"`. Es importante que el nombre del campo que utiliza en la expresión sea idéntico al nombre del campo del cual tomará los valores originales, o de otro modo el llamado será infructuoso.
+Dicha expresión indica que se hará una consulta en el GNR utilizando como valores de comparación aquellos que se encuentran en el campo [source]`"scientificName"`. Es importante que el nombre del campo que utiliza en la expresión sea idéntico al nombre del campo del cual tomará los valores originales, o de otro modo el llamado será infructuoso.
 
-[#img-fig-44]
-.Figura 44
-image::img/es.figure-44.jpg[Figura 44,align=center]
+[#img-fig-45]
+.Figura 45
+image::img/es.figure-45.jpg[Figura 45,align=center]
 
-Note que en esta ventana, arriba a la derecha, tiene una opción para modificar el “Tiempo de retraso”. Este valor indica el tiempo que transcurre entre llamados o consultas sucesivas que se hacen al servicio en cuestión. Por defecto, el valor es de 5000 milisegundos. Puede reducir este tiempo para acelerar el proceso de comparación. Tenga en cuenta, sin embargo, que muchos servicios bloquean los llamados si éstos ocurren muy cercanos en el tiempo, pues consideran que puede tratarse de un ataque. El máximo número de consultas que pueden realizar por unidad de tiempo depende de cada servicio en particular. 
+Note que en esta ventana, arriba a la derecha, tiene una opción para modificar el “Tiempo de retraso”. Este valor indica el tiempo que transcurre entre llamados o consultas sucesivas que se hacen al servicio en cuestión. Por defecto, el valor es de 5000 milisegundos. Puede reducir este tiempo para acelerar el proceso de comparación. Tenga en cuenta, sin embargo, que muchos servicios bloquean los llamados si éstos ocurren muy cercanos en el tiempo, pues consideran que puede tratarse de un ataque. El máximo número de consultas que se pueden realizar por unidad de tiempo depende de cada servicio en particular. 
 
 NOTE: La expresión utilizada es muy general, y devolverá los valores de todos los parámetros que GNR provee respecto de un nombre científico. Puede consultar dichos parámetros en http://resolver.globalnames.org/api. Si no quiere obtener en el resultado todos los valores, puede modificar la expresión especificando valores para todos o algunos de los parámetros. Por ejemplo: GNR resuelve los nombres consultando diferentes fuentes, a las que asigna identificadores (data_source_id); si sólo quiere obtener los resultados provenientes de la fuente Catalogue of Life (que en GNR tiene id=1), puede utilizar la siguiente expresión:
 [source,javascript]
@@ -65,7 +65,7 @@ Dado que GNR consulta varias fuentes de nombres taxonómicos, nos interesa saber
 
 Para ello, a partir del campo en JSON (en el ejemplo, GNR_Json_sciName), cree un nuevo campo (haga click en "la &#9660; azul >  Editar columnas > Agregar columna basada en esta columna").
 
-Dé un nombre al nuevo campo (por ejemplo, GNR_sciName_options) y en el cuadro de texto, coloque la siguiente expresión (<<img-fig-45,Figura 45>>): 
+Dé un nombre al nuevo campo (por ejemplo, GNR_sciName_options) y en el cuadro de texto, coloque la siguiente expresión (<<img-fig-46,Figura 46>>): 
 
 [source,javascript]
 ----
@@ -78,9 +78,9 @@ forEach(value.parseJson().get("data")[0].get("results"), v,
 
 Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estructura secciones “data” y dentro de esta “results” –un “result” proveniente de cada fuente consultada (por ejemplo, un “result” de Catalogue of Life). Dentro de cada sección “results” extrae los valores de interés (“data_source_title”, “name_string” y “current_name_string”) y los separa con un “;”. Como no todas las fuentes proveen un nombre aceptado (“current_name_string”), la expresión [source]`if` especifica que si ese parámetro es nulo debe dejarse el espacio vacío ([source]``""``), y si no, colocar el valor extraído. Por último, une los grupos de valores extraídos en una única cadena de texto, separados por un [source]`` | ``.
 
-[#img-fig-45]
-.Figura 45
-image::img/es.figure-45.jpg[Figura 45,align=center]
+[#img-fig-46]
+.Figura 46
+image::img/es.figure-46.jpg[Figura 46,align=center]
 
 Una vez que haya creado el campo, verá que contiene, aún en formato JSON, los valores de interés extraídos de GNR. Por ejemplo:
 
@@ -146,19 +146,19 @@ En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta 
 
 Llevaremos a cabo la georreferenciación a partir del campo [source]`"locality"`. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en "la &#9660; azul > Editar columnas > Agregar columna accediendo a URLs…".
 
-Se abrirá una nueva ventana (<<img-fig-46,Figura 46>>). Allí dé un nombre al nuevo campo, por ejemplo “GeoLocate_Json_georref”, y pegue en el cuadro de texto la siguiente expresión:
+Se abrirá una nueva ventana (<<img-fig-47,Figura 47>>). Allí dé un nombre al nuevo campo, por ejemplo “GeoLocate_Json_georref”, y pegue en el cuadro de texto la siguiente expresión:
 
 [source,javascript]
 ----
-"http://www.museum.tulane.edu/webservices/geolocatesvcv2/glcwrap.aspx?Country=Argentina&fmt=json&Locality=" +
+"http://www.geo-locate.org/webservices/geolocatesvcv2/glcwrap.aspx?Country=Argentina&fmt=json&Locality=" +
   escape(value,'url')
 ----
 
 En esta expresión, `fmt` indica el formato en el que el resultado será devuelto por el servicio. GeoLocate ofrece dos posibles formatos, JSON y GeoJSON.
 
-[#img-fig-46]
-.Figura 46
-image::img/es.figure-46.jpg[Figura 46,align=center]
+[#img-fig-47]
+.Figura 47
+image::img/es.figure-47.jpg[Figura 47,align=center]
 
 Una vez que haya creado el nuevo campo con la expresión general, verá que contiene, en formato JSON, los resultados de la consulta en GeoLocate para cada localidad, con todos los parámetros y valores que este servicio reporta.
 
@@ -168,9 +168,9 @@ En los resultados puede tener tres casos:
 [source,javascript]
 ----
 {
-  "engineVersion" : "GLC:5.21|U:1.01374|eng:1.0",
+  "engineVersion" : "GLC:7.0|U:1.01374|eng:1.0",
   "numResults" : 0, <1>
-  "executionTimems" : 171.6003
+  "executionTimems" : 578.1462
 }
 ----
 <1> Ningún resultado encontrado.
@@ -179,9 +179,9 @@ En los resultados puede tener tres casos:
 [source,javascript]
 ----
 {
-  "engineVersion": "GLC:5.21|U:1.01374|eng:1.0",
+  "engineVersion": "GLC:7.0|U:1.01374|eng:1.0",
   "numResults": 1,
-  "executionTimems": 171.6003,
+  "executionTimems": 484.3969,
   "resultSet": {
     "type": "FeatureCollection",
     "features": [
@@ -218,9 +218,9 @@ En los resultados puede tener tres casos:
 [source,javascript]
 ----
 {
-  "engineVersion": "GLC:5.21|U:1.01374|eng:1.0",
+  "engineVersion": "GLC:7.0|U:1.01374|eng:1.0",
   "numResults": 3, <1>
-  "executionTimems": 187.2004,
+  "executionTimems": 468.7555,
   "resultSet": {
     "type": "FeatureCollection",
     "features": [
@@ -286,12 +286,12 @@ Note que los tres resultados del ejemplo corresponden a provincias distintas en 
 [NOTE]
 .Visualizando JSON
 --
-Para visualizar la estructura de los resultados en JSON de modo más amigable, puede probar copiando el resultado de alguna celda en un analizador de JSON en línea. Existen muchas opciones, una de ellas es http://json.parser.online.fr/. Allí, seleccionando distintas opciones arriba a la derecha podrá distinguir mejor la estructura, cuáles son los objetos, los arreglos y las cadenas de texto y cómo están relacionados unos con otros (<<img-fig-47,Figura 47>>). Esto puede ser muy útil a la hora de armar expresiones para desglosar el contenido de los campos en nuevos campos sin perder información.
+Para visualizar la estructura de los resultados en JSON de modo más amigable, puede probar copiando el resultado de alguna celda en un analizador de JSON en línea. Existen muchas opciones, una de ellas es http://json.parser.online.fr/. Allí, seleccionando distintas opciones arriba a la derecha podrá distinguir mejor la estructura, cuáles son los objetos, los arreglos y las cadenas de texto y cómo están relacionados unos con otros (<<img-fig-48,Figura 48>>). Esto puede ser muy útil a la hora de armar expresiones para desglosar el contenido de los campos en nuevos campos sin perder información.
 --
 
-[#img-fig-47]
-.Figura 47
-image::img/es.figure-47.jpg[Figura 47,align=center]
+[#img-fig-48]
+.Figura 48
+image::img/es.figure-48.jpg[Figura 48,align=center]
 
 NOTE: La expresión utilizada es muy simple y sólo le pide al servicio que resuelva la georreferenciación en base al campo localidad y teniendo como valor fijo “Argentina” para el campo país, pero sin especificar los valores de otros campos geográficos. Sin embargo, todos los campos se pueden incluir en la expresión para obtener resultados más específicos. Ello puede hacerse de dos maneras:
 
@@ -301,7 +301,7 @@ NOTE: La expresión utilizada es muy simple y sólo le pide al servicio que resu
 La expresión con todos los campos se verá entonces como:
 [source,javascript]
 ----
-"http://www.museum.tulane.edu/webservices/geolocatesvcv2/glcwrap.aspx?country=Argentina&state=" +
+"http://www.geo-locate.org/webservices/geolocatesvcv2/glcwrap.aspx?country=Argentina&state=" +
   escape(cells.stateProvince.value,'url')+"&locality="+escape(cells.locality.value,'url')
 ----
 Note que el nombre del campo será el que tiene en su base de datos. Note también que en la base de datos dada para este ejercicio no hay un campo correspondiente a [source]`"county"`, pero GeoLocate permite incluirlo si lo hubiera.
@@ -325,7 +325,7 @@ forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)),
 .join("|")
 ----
 
-Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura Json particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la <<img-fig-47,Figura 47>>).
+Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura Json particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la <<img-fig-48,Figura 48>>).
 
 El nuevo campo tendrá valores como los siguientes, por ejemplo, para un registro cuya consulta devolvió tres resultados:
 [source,notjavascript]
@@ -360,9 +360,11 @@ El nuevo campo creado tendrá valores como los siguientes: `-64.158097; -59.8461
 
 Puede repetir el proceso para obtener las latitudes, cambiando en la expresión anterior `[0]` por `[1]`, y luego separar los campos por resultado, utilizando como separador `;`.
 
-IMPORTANT: Debe tener en cuenta que, como se mencionó antes, cuantos más datos se provean al servicio de GeoLocate en la consulta más sencillo será desglosar los resultados después. El proceso de desglose puede ser muy engorroso y requiere que sea muy meticuloso a la hora de nombrar campos y separar contenido. Si no está familiarizado con el uso de JSON, es preferible que realice el desglose “pasito a pasito” para evitar perder o mezclar información. Por ejemplo, puede crear un documento con el flujo de trabajo donde enumere los pasos a seguir con todos los detalles necesarios (incluya allí el tipo de resultados que espera ver y cómo se verían en los campos).
+IMPORTANT: Debe tener en cuenta que, como se mencionó antes, cuantos más datos se provean al servicio de GeoLocate en la consulta más sencillo será desglosar los resultados después. El proceso de desglose puede ser muy engorroso y requiere que sea muy meticuloso/a a la hora de nombrar campos y separar contenido. Si no está familiarizado/a con el uso de JSON, es preferible que realice el desglose “pasito a pasito” para evitar perder o mezclar información. Por ejemplo, puede crear un documento con el flujo de trabajo donde enumere los pasos a seguir con todos los detalles necesarios (incluya allí el tipo de resultados que espera ver y cómo se verían en los campos).
 
 IMPORTANT: A la hora de agregar datos de georreferenciación, contraste siempre los resultados contra los campos geográficos que tiene. En el caso de tener varios resultados posibles, no siempre el primer resultado es el correcto. Recuerde reportar cuál fue el proceso de georreferenciación utilizado y todos los parámetros posibles asociados. Para consultar en qué campos de Darwin Core se reporta cada parámetro, puede referirse a: http://rs.tdwg.org/dwc/terms/#location, y consultar: https://github.com/tdwg/dwc-qa/wiki/Georeferences.
+
+NOTE: Para conocer más acerca de georreferenciación y las mejores prácticas asociadas, consulte Georeferencing Best Practices (Chapman & Wieczorek 2020).
 
 ==== Limpieza de fechas utilizando Canadensys Date Parsing
 
@@ -433,7 +435,7 @@ NOTE: Este formato también puede utilizarse para expresar rangos de fecha de ma
 
 ===== Limpieza de fechas
 
-Muchas veces, a pesar de lo que indica el estándar Darwin Core, encontramos en el campo [source]`"eventDate"` fechas que no siguen el formato sugerido. Para limpiarlas, puede hacer uso de la herramienta que ofrece http://data.canadensys.net/tools/dates[Canadensys: Date Parsing].
+Muchas veces, a pesar de lo que indica el estándar Darwin Core, encontramos en el campo [source]`"eventDate"` fechas que no siguen el formato sugerido. Para estandarizarlas, puede hacer uso de la herramienta que ofrece http://data.canadensys.net/tools/dates[Canadensys: Date Parsing].
 
 Esta herramienta permite interpretar fechas, devolviéndolas en formato estándar. Ejemplos de los tipos de valores que puede interpretar son:
 
@@ -442,11 +444,11 @@ Esta herramienta permite interpretar fechas, devolviéndolas en formato estánda
 * 2009 IV 02
 * 2 VII 1986
 
-Algunas fechas, sin embargo no las interpreta, veamos el siguiente ejemplo (<<img-fig-48,Figura 48>>):
+Algunas fechas, sin embargo no las interpreta, veamos el siguiente ejemplo (<<img-fig-49,Figura 49>>):
 
-[#img-fig-48]
-.Figura 48
-image::img/es.figure-48.jpg[Figura 48,align=center]
+[#img-fig-49]
+.Figura 49
+image::img/es.figure-49.jpg[Figura 49,align=center]
  
 En las dos líneas inferiores, “13” sólo puede referir a días, pues no hay un mes “13”.
 
@@ -454,33 +456,33 @@ En las dos líneas superiores, en cambio, “2” y “4” pueden ambos referir
 
 Debe tener esto en cuenta cuando utilice la herramienta para limpiar los datos.
 
-Ahora sí, invoque Date Parsing desde OpenRefine. Para ello, primero seleccione algunas fechas mediante una faceta, para reducir el tiempo de consulta. Luego, sobre la columna [source]`"eventDate"` haga click en "la &#9660; azul > Editar columna > Agregar columna accediendo a URLs…" (<<img-fig-49,Figura 49>>). En la ventana que aparece, nombre la nueva columna (por ejemplo “Canadensys_eventDate”) y pegue en el cuadro de texto la siguiente expresión:
+Ahora sí, invocaremos Date Parsing desde OpenRefine. Para ello, primero seleccione algunas fechas mediante una faceta, para reducir el tiempo de consulta. Luego, sobre la columna [source]`"eventDate"` haga click en "la &#9660; azul > Editar columna > Agregar columna accediendo a URLs…" (<<img-fig-50,Figura 50>>). En la ventana que aparece, nombre la nueva columna (por ejemplo “Canadensys_eventDate”) y pegue en el cuadro de texto la siguiente expresión:
 ----
 "http://data.canadensys.net/tools/dates.json?data="+escape(cells["eventDate"].value,"url")
 ----
-Esta expresión le indica a la herramienta que evalúe los valores del campo [source]`"eventDate"` y que envíe los resultados en formato JSON.
- 
-[#img-fig-49]
-.Figura 49
-image::img/es.figure-49.jpg[Figura 49,align=center]
-
-NOTE: La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… váyase a almorzar, o incluso a dormir y lo revisa al día siguiente… Cuando vuelva, encontrará el nuevo campo con los valores estandarizados! En formato JSON… (<<img-fig-50,Figura 50>>).
+Esta expresión le indica a la herramienta que evalúe los valores del campo [source]`"eventDate"` y que devuelva los resultados en formato JSON.
  
 [#img-fig-50]
 .Figura 50
 image::img/es.figure-50.jpg[Figura 50,align=center]
 
-Fíjese que en el primer caso de la figura, Canadensys ha podido resolver la fecha, mientras que en el segundo caso no ha podido, dado que no puede interpretar inequívocamente “6” y “4” como día y mes o viceversa (como se explica más arriba).
-Ahora que tiene el JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el JSON, cree nuevas columnas: "Editar columnas > Agregar columna basada en esta columna" (<<img-fig-51,Figura 51>>).
+NOTE: La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… váyase a almorzar, o incluso a dormir y lo revisa al día siguiente… Cuando vuelva, encontrará el nuevo campo con los valores estandarizados! En formato JSON… (<<img-fig-51,Figura 51>>).
+ 
+[#img-fig-51]
+.Figura 51
+image::img/es.figure-51.jpg[Figura 51,align=center]
 
-Para extraer sólo la fecha en formato ISO, en la ventana nombre la nueva columna (por ejemplo, [source]`"ISO_eventDate"`) y en el cuadro de texto pegue la siguiente expresión:
+Fíjese que en el primer caso de la figura, Canadensys ha podido resolver la fecha, mientras que en el segundo caso no ha podido, dado que no puede interpretar inequívocamente “6” y “4” como día y mes o viceversa (como se explica más arriba).
+Ahora que tiene el resultado en formato JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el resultado en JSON, cree nuevas columnas: "Editar columnas > Agregar columna basada en esta columna" (<<img-fig-52,Figura 52>>).
+
+Para extraer sólo la fecha en formato ISO, en la ventana nombre la nueva columna (por ejemplo, "ISO_eventDate") y en el cuadro de texto pegue la siguiente expresión:
 ----
 forEach(value.parseJson().get("data").get("results"),v,v.get("iso8601"))[0])
 ----
 
-[#img-fig-51]
-.Figura 51
-image::img/es.figure-51.jpg[Figura 51,align=center]
+[#img-fig-52]
+.Figura 52
+image::img/es.figure-52.jpg[Figura 52,align=center]
 
 Para extraer el año, mes o día, pegue en cambio una de las siguientes expresiones:
 
@@ -488,11 +490,11 @@ Para extraer el año, mes o día, pegue en cambio una de las siguientes expresio
 * Mes: [source]`forEach(value.parseJson().get("data").get("results"),v,v.get("month"))[0])`
 * Día: [source]`forEach(value.parseJson().get("data").get("results"),v,v.get("day"))[0])`
 
-Verá que algunos de los resultados serán nulos, éstos corresponden a los casos que Canadensys no ha podido resolver (como se explica más arriba) (<<img-fig-52,Figura 52>>).
+Verá que algunos de los resultados serán nulos, éstos corresponden a los casos que Canadensys no ha podido resolver (como se explica más arriba) (<<img-fig-53,Figura 53>>).
 
-[#img-fig-52]
-.Figura 52
-image::img/es.figure-52.jpg[Figura 52,align=center]
+[#img-fig-53]
+.Figura 53
+image::img/es.figure-53.jpg[Figura 53,align=center]
 
 Para terminar de limpiar las fechas, entonces, tendrá que revisar los valores que no hayan sido estandarizados por la herramienta. Para ello, sobre el campo ISO_eventDate puede armar una faceta y seleccionar el valor “blank”. Luego, arme una faceta sobre el campo [source]`"eventDate"` (el que tenía los valores originales) y si estos son pocos, puede hacer un chequeo manual y completar el campo ISO_eventDate.
 
