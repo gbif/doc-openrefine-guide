@@ -20,7 +20,7 @@ Observe el ejemplo de la (<<img-fig-53,Figura 53>>), en la primera fila el valor
 .Figura 53. Ejemplo de los indicadores de validación
 image::img/es.figure-53.jpg[Figura 53,align=center]
 
-Las rutinas utilizan como fuentes de validación API’s (Interfaces de Programación de Aplicaciones) de repositorios globales taxonómicos y geográficos; o  archivos de texto plano obtenidos como resultado de herramientas de validación externas o fuentes nacionales oficiales. Se explica a continuación cada fuente:
+Las rutinas utilizan como fuentes de validación API’s (Interfaces de Programación de Aplicaciones) de repositorios globales taxonómicos, geográficos yherramientas de estandarización; o  archivos de texto plano obtenidos como resultado de herramientas de validación externas o fuentes nacionales oficiales. Se explica a continuación cada fuente:
 
 Las rutinas cuya fuente de referencia es un API, hacen una consulta  a un <<sect-4,servicio externo>> y extraen la información necesaria para hacer la validación en formato JSON, que luego es interpretada por la rutina haciendo la información legible en forma de columnas dentro del conjunto de datos. Posteriormente el resultado de la consulta al API es comparado con el valor documentado en el conjunto de datos y se generan nuevas columnas con los indicadores de la validación (unos y ceros).
 Las rutinas que usan como fuente archivos de texto plano, hacen una consulta sobre un archivo cargado previamente en OpenRefine, que posteriormente es comparado con el valor documentado en el conjunto de datos, como resultado de la comparación se generan nuevas columnas con los indicadores de la validación.
@@ -41,13 +41,13 @@ Acá encontrará cinco (5) rutinas de limpieza <<#table-scripts>>, teniendo en c
 | Requiere como mínimo el elemento [source]`"scientificName"` documentado y que el archivo _normalized_ sea previamente cargado en OpenRefine para la ejecución de la rutina.
 
 | link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt[Validación taxonómica con el API de WoRMS (World Register of Marine Species)]
-| Validación taxonómica específica para organismos marinos, valida los datos contra el link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)] por medio de la API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. Permité obtener la taxonomía superior de cada taxa, así como elementos taxonómicos obligatorios para la publicación de datos a través de link:https://obis.org/[OBIS]
+| Validación taxonómica específica para organismos marinos, valida los datos contra el link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)] por medio de la API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. Permité obtener la taxonomía superior de cada taxa, así como elementos taxonómicos obligatorios para la publicación de datos a través de link:https://obis.org/[OBIS].
 | Requiere como mínimo el elemento [source]`"scientificName"` documentado y acceso a internet para hacer la petición al API de WORMS.
 
-| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt[Validación de elevaciones con GeoNames] | Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de GeoNames 
+| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt[Validación de elevaciones con GeoNames] | Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de GeoNames. 
 | Requiere los elemento DwC [source]`"decimalLatitude"` y [source]`"decimalLongitude"` documentados adecuadamente y acceso a internet para hacer la petición al API de  GeoNames.
 
-| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/DateTransform_TransformFechas.txt[Transformación de fechas al estándar ISO 8601 con el servicio de conversión de Canadensys] | Transformación de fechas en múltiples formatos al estándar ISO 8601
+| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/DateTransform_TransformFechas.txt[Transformación de fechas con Canadensys _Date Parsing_] | Transformación de fechas en múltiples formatos al estándar ISO 8601.
 | Requiere los elemento DwC [source]`"eventDate"`  documentado y acceso a internet para hacer la petición al API de  Canadensys.
 |===
 
@@ -145,7 +145,7 @@ Esta rutina obtiene y valida la información taxonómica de un conjunto de datos
 
 *Resultados:*
 
-En las primeras columnas del proyecto encontrará las columnas con dtos taxonómicos reorganizadas junto con nuevas columnas resultantes de la rutina. Primero encontrará las columnas asociadas al cruce con el árbol taxonómico y luego de manera intercalada columnas con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la (<<img-fig-58,Figura 58>>).
+En las primeras columnas del proyecto encontrará las columnas con los datos taxonómicos reorganizadas junto con nuevas columnas resultantes de la rutina. Primero encontrará las columnas asociadas al cruce con el árbol taxonómico y luego de manera intercalada columnas con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la (<<img-fig-58,Figura 58>>).
 
 [#img-fig-58]
 .Figura 58
@@ -168,7 +168,8 @@ A continuación se listan las columnas que encontrará despues de correr la ruti
 *  `callAPI`: Respuesta del API a la rutina, contiene todos los resultados en formato JSON.
 
 
-IMPORTANT: El llamado al API permite hacer una consulta sobre un número ilimitado de registros, sin embargo si su conjunto de datos tiene muchas filas se recomienda ejecutar la rutina haciendo un filtro por nombres científicos únicos, lo cual disminuirá  el tiempo de respuesta y agilizará la ejecución de la rutina.
+
+IMPORTANT: El llamado al API permite hacer una consulta sobre un número ilimitado de registros, sin embargo si su conjunto de datos tiene muchas filas se recomienda ejecutar la rutina sobre nombres científicos únicos, lo cual disminuirá  el tiempo de respuesta y agilizará la ejecución de la rutina.
 
 
 === Validación taxonómica con link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] de GBIF
@@ -232,15 +233,18 @@ A continuación se listan las columnas que encontrará despues de correr la ruti
 ** `near_1`:
 ** `near_2`:
 ** `near_3`:
-** `match_quarantine`:
-** `match_deleted`:
-
+** [source]`"match_quarantine"`:
+** [source]`"match_deleted"`:
 * [source]`"scientificNameID"`: Identificador del taxón contruido a partir del AphiaID en el árbol  taxonómico de WoRMS. 
+nameAccordingTo
+nameAccordingToID
+*  [source]`"isMarine"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon marino.
+* [source]`"isBrackish"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas salobres. 
+* [source]`"isFreshwater"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas continentales. i.e. taxones asociados a ríos o lagos.
 * [source]`"isTerrestial"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon terrestre.
 Examples: false
-* [source]`"isFreshwater"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas continentales. i.e. taxones asociados a ríos o lagos.
-* [source]`"isBrackish"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas salobres. 
-* [source]`"isMarine"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon marino.
+*/boorar NomAPIw
+* [source]`"callAPIworms"`: Respuesta del API a la rutina, contiene todos los resultados en formato JSON.
 
 
 === Validación de elevaciones con GeoNames. 
@@ -249,62 +253,43 @@ Examples: false
 https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt
 
 *Requerimientos:*
+
 * El conjunto de datos a validar debe tener como mínimo los elemento DwC [source]`"decimalLatitude"` y [source]`"decimalLongitude"` documentados adecuadamente.
 
-* Tener una cuenta activa en GeoNames, si no tiene una creela link:http://www.geonames.org/login[acá] antes de correr la rutina.
+* Tener una cuenta activa en GeoNames, si no tiene una link:http://www.geonames.org/login[creela] antes de correr la rutina.
 
 
 *Funcionamiento:*
 
-WARNING: Antes de ejecutar la rutina remplace la palabra _demo_  en la expresión `_username=demo_` por el nombre de usuario de su cuenta de GeoNames, por ejemplo `_username=rortizgt_`. Si ejecuta la rutina sin hacer este cambio utilizará la opción de prueba (_demo_ ) incorporada por defecto en la rutina, la cual tiene un límite de 20.000 consultas *diarias mundiales*, por lo que puede que el servicio esté agotado y no obtenga resultados.
+WARNING: Antes de ejecutar la rutina remplace la palabra _demo_  en la expresión `_username=demo_` por el nombre de usuario de su cuenta de GeoNames, por ejemplo `_username=rartizgt_`. Si ejecuta la rutina sin hacer este cambio utilizará la opción de prueba (`demo`) incorporada por defecto en la rutina, la cual tiene un límite de 20.000 consultas *diarias mundiales*, por lo que puede que el servicio esté agotado y no obtenga resultados.
 
-La rutina captura la elevación a partir de las coordenadas decimales documentadas en los elementos [source]`"decimalLatitude"` y [source]`"decimalLongitude"` del archivo base, a través de una consulta a los Servicios Web de link:http://www.geonames.org/export/web-services.html[GeoNames]. Para ello, esta rutina utiliza el modelo de elevación SRTM-1 (`"srtm1"`), que cuenta con una resolución aproximada de 30 metros. Sin embargo, el usuario puede usar otro de los modelos de elevación disponibles:
+La rutina captura la elevación a partir de las coordenadas decimales documentadas en los elementos [source]`"decimalLatitude"` y [source]`"decimalLongitude"` del archivo base, a través de una consulta a los Servicios Web de link:http://www.geonames.org/export/web-services.html[GeoNames]. Esta rutina utiliza el modelo de elevación SRTM-1 (`"srtm1"`), que cuenta con una resolución aproximada de 30 metros. Sin embargo, el usuario puede usar otro de los modelos de elevación disponibles:
 
 
 Modelos de elevación disponibles en link:http://www.geonames.org/export/web-services.html[GeoNames]:
-* SRTM3 (`"srtm3"`): Datos de elevación de la Shuttle Radar Topography Mission (SRTM), con resolución aproximada de 90 x 90 metros).
-* Astergdemv2 (`"astergdem"`): Datos de elevación del Aster Global Digital Elevation Model V2 (2011) con resolución aproximada de 30 x 30 metros.
+* SRTM3 (`"srtm3"`): Datos de elevación de la _Shuttle Radar Topography Mission (SRTM)_, con resolución aproximada de 90 x 90 metros.
+* Astergdemv2 (`"astergdem"`): Datos de elevación del _Aster Global Digital Elevation Model_ V2 (2011) con resolución aproximada de 30 x 30 metros.
 * GTOPO30 (`"gtopo30"`): Modelo de elevación global con resolución aproximada de 30 arcos por segundo, equivalente a una grilla de 1 km x 1 km.
 
-Para cambiar la fuente del modelo de elevación en la rutina debe dirigirse a la línea que hace el llamado al servicio SRTM-1 (srtm1), y remplazar el nombre del servicio por srtm3, astergdem o gtopo30:
-
-Ejemplo: 
-
-Línea de la rutina llamando al servicio `srtm1`: 
-
-[source,javascript]
----- 
-"urlExpression": "grel:\"http://api.geonames.org/`"srtm1"`?lat=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[0]+\"&lng=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[1]+\"&username=demo\"",
-----
-Reemplazo para llamar al servicio `gtopo30`
-
-[source,javascript]
-----
-- "urlExpression": "grel:\"http://api.geonames.org/`"gtopo30"`?lat=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[0]+\"&lng=\"+cells['uniqueDecimalCoordinates'].value.split(\" | \")[1]+\"&username=demo\"",
-----
-
+Para cambiar la fuente del modelo de elevación remplace en la rutina el valor `srtm1`  en la expresión `http://api.geonames.org/srtm1'` por el valor que corresponda al servicio que desea utilizar `srtm3`, `astergdem` o `gtopo30`.
 
 *Resultados:*
 
-Como resultado del llamado al API de Geonames, se crea el elemento no DwC `"elevationSuggested"`. Luego la rutina compara la elevación resultante con las elevaciones previamente documentadas en el archivo base generando nuevos elementos, como se muestra en la (<<img-fig-60,Figura 60>>).
+En las primeras columnas del proyecto encontrará las columnas con los datos de elevación reorganizadas junto con nuevas columnas resultantes de la rutina. Encontrará las cde manera intercalada las columnas originales, un valor sugerido de acuerdo al servicio de elevación y dos indicadores de validación (<<img-fig-60,Figura 60>>). El primer indicador contrasta la elevación obtenida con el servicio y el elemento [source]`"minimumElevationInMeters"` y debe ser interpretado así: 
+
+* 1: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es menor a 100 msnm
+* 0: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es mayor a 100 msnm
+* blank: No hay elevación mínima documentada.
+
+El segundo indicador contrasta la elevación obtenida con el servicio contra el rango de elevación indicado por los elementos [source]`"minimumElevationInMeters"` y [source]`"maximumElevationInMeters"` y debe ser interpretado así: 
+
+* 1: El rango de elevaciones contiene la elevación sugerida
+* 0: El rango de elevaciones NO contiene la elevación sugerida
+* blank: No hay elevación máxima documentada
 
 [#img-fig-60]
 .Figura 60
 image::img/es.figure-60.jpg[Figura 60,align=center]
-
-La comparación de la elevación resultante del llamado al API contra el elemento [source]`"minimumElevationInMeters"` genera un nuevo elemento `"elevationValidation"`. A partir de la diferencia de las elevaciones se designa un valor booleano que contiene los resultados de validación de la elevación como se indica a continuación:
-
-
-* 1: La diferencia entre la elevación en `"minimumElevationInMeters"` y `"elevationSuggested"` es menor a 100 m.s.n.m.
-* 0: La diferencia entre la elevación en `"minimumElevationInMeters"` y `"elevationSuggested"` es mayor a 100 m.s.n.m.
-* blank: No hay elevación mínima documentada.
-
-
-Si la elevación se encuentra documentanda en rangos ([source]`"minimumElevationInMeters"` y [source]`"maximumElevationInMeters"`) la rutina genera un elemento de validación `"elevationRangeValidation"` que evalúa si `"elevationSuggested"` se encuentra entre el rango de elevaciones, con los siguientes indicadores de validación.
-
-* 1: Se encuentra entre el rango de elevaciones.
-* 0: No se encuentra dentro del rango de elevaciones.
-* blank: No hay elevación máxima documentada
 
 
 IMPORTANT: La rutina se ejecuta sobre valores únicos de pares de coordenadas y se completa para los registros con la misma ubicación, no se realiza la consulta sobre el total de los registros ya que puede superar el límite de consultas por usuario al día.
@@ -312,29 +297,39 @@ IMPORTANT: La rutina se ejecuta sobre valores únicos de pares de coordenadas y 
 IMPORTANT: Si las coordenas se encuentran sobre plataforma marina, puede que reciba como resultado valores negativos (ej. -1, -3), o valores como: "/home/data/srtm1/N02/N02W080.zip" o "No data".
 
 
-=== Transformación de fechas al estándar ISO con el servicio de conversión de ‘Canadensys’.
+=== Transformación de fechas con Canadensys _Date Parsing_
+
+Esta rutina recopila los pasos de la sección <<sect-4.1.3>> y automatiza su ejecución para el mismo procedimiento.
 
 *Enlace a la rutina:*
+
 https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/DateTransform_TransformFechas.txt
 
 *Requerimientos:*
-* Conjunto de datos con el elemento DwC 'eventDate'
+
+* El conjunto de datos a validar debe tener como mínimo el elementos DwC `"eventDate"` documentado.
 
 *Funcionamiento:*
-A partir de la fecha documentada en el archivo base en el elemento [source]`"eventDate"`, se realiza una consulta al API de Canandensys, que retorna las fechas transformadas al estándar ISO 8601. Los formatos de fecha aceptados por el API son: 
 
-* Jun 13, 2008
-* 2 VII 1986
-* 15 Jan 2011
-* 1999/02/24
-* 2009 IV 02
-* 02/17/1921
+A partir de la fecha documentada en el archivo base en el elemento [source]`"eventDate"` se realiza una consulta al API de Canandensys que retorna las fechas transformadas al estándar ISO 8601. A diferencia de las rutinas anteriores el objetivo de esta rutina es transformar las fechas y no validarlas por ello no genera los identificadores de validación como en las demás rutinas.
 
-Los elementos resultantes de la ejecución de la rutina, serán agregados al inicio del conjunto de datos con los nombres `"eventDateSuggested"`, `"yearSuggested"`,`"monthSuggested"`, `"daySuggested"` y `"verbatimEventDateSuggested"` para no generar conflicto con elementos existentes en la base de datos que se encuentren ya estructurados bajo el estándar Darwin Core (<<img-fig-61,Figura 61>>). Si algún registro no tiene datos de fecha, se mantendrán vacíos los elementos resultantes de la rutina.
+*Resultados*
+
+En las primeras columnas del proyecto encontrará las columnas con los datos temporales reorganizadas junto con nuevas columnas resultantes de la rutina. 
+
+Los elementos resultantes de la ejecución de la rutina, serán agregados al inicio del conjunto de datos con los nombres:
+
+* [source]`"eventDateSuggested"`: Fecha transformada al estander ISO 8601.
+* [source]`"yearSuggested"`: Año extraido a partir de la transformación de la fecha.
+* [source]`"monthSuggested"`: Mes extraido a partir de la transformación de la fecha.
+* [source]`"daySuggested"`: Día extraido a partir de la transformación de la fecha.
+* [source]`"verbatimEventDateSuggested"`: Fecha en el formato original, no se asigna directamente al elemento DwC [source]`"verbatimEventDate"` para evitar conflictos.
+
+Para no generar conflicto con elementos ya existentes en el conjunto de datos todas las columnas generadas por la rutina se marcan como sugeridas o _Suggested_ (<<img-fig-61,Figura 61>>). Si algún registro no tiene datos de fecha, los elementos resultantes apareceran vacios.
 
 [#img-fig-61]
 .Figura 61
 image::img/es.figure-60.jpg[Figura 61,align=center]
 
 
-IMPORTANT: No todas las fechas son convertidas exitosamente por el API, revise las celdas donde el resultado haya sido nulo.
+IMPORTANT: Los formatos de fechas que son ambiguos, es decir no se diferencia con claridad los elementos no serán transformados revise las celdas donde el resultado haya sido nulo y realice los ajustes necesarios de manera manual.
