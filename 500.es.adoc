@@ -74,10 +74,6 @@ Ubiqué la rutina de interés según la validación que desee realizar, en el re
 
 Ubíquese en el conjunto de datos a validar en OpenRefine, diríjase al menú arriba a la izquierda, seleccione la pestaña “Deshacer/Rehacer” y haga clic en el botón “Aplicar...”. A continuación se abrirá una ventana de texto vacía, pegue en el cuadro de texto la rutina a ejecutar y haga click en “Ejecutar Operaciones” (<<img-fig-55,Figura 55>>). Si tiene dudas sobre este proceso revise la <<sect-2.5, sección 2.5>>.
 
-[#img-fig-55]
-.Figura 55
-image::img/es.figure-55.jpg[Figura 55,align=center]
-
 El avance de la ejecución de la rutina se observa en la parte superior de la pantalla (<<img-fig-55,Figura 55>>).
 
 [#img-fig-55]
