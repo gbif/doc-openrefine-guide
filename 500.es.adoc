@@ -1,6 +1,6 @@
 == Rutinas de validación de la calidad de los datos
 
-A partir del uso de <<sect-4,servicios>> o archivos externos, y la posibilidad que ofrece OpenRefine de <<sect-2.5.2. guardar y rehacer pasos>> es posible crear rutinas para ejecutar de manera automática varias acciones de validación de calidad. 
+A partir del uso de servicios o archivos externos (<<sect-4,ver sección 4>>), y la posibilidad que ofrece OpenRefine de guardar y rehacer pasos (<<#guardar-pasos-para-rehacer-luego, ver sección 2.5.2>> es posible crear rutinas para ejecutar de manera automática varias acciones de validación de calidad. 
 
 Aprovechando las múltiples herramientas de calidad de datos ya existentes en la red de GBIF es posible abordar de manera semi-automatizada a través de OpenRefine los retos y problemas más comúnes de calidad que se presentan a nivel taxonómico y geográfico en un conjunto de datos. Acá se presentan diferentes rutinas que validan la calidad de los datos contrastando un conjunto de datos contra dichos servicios externos y agilizan la obtención de resultados a la vez que facilita una metodología de validación replicable.
 
