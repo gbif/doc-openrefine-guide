@@ -1,4 +1,6 @@
-== Carga de datos y creación de un proyecto
+== Primeros pasos: datos y proyectos
+
+=== Carga de datos y creación de un proyecto
 
 Para comenzar a utilizar OpenRefine debe cargar sus datos en el programa y crear un proyecto. Para ello, siga los siguientes pasos:
 
@@ -46,7 +48,7 @@ Para seguir esta guía, cargue el archivo proporcionado, al que puede acceder a 
 
 NOTE: Si sube archivos con formato .xls o .xlsx, tenga en cuenta que no podrá modificar la codificación, y que pueden encontrarse algunos errores en los datos (ejemplo: los tildes en las palabras se verán como símbolos raros cuando cargue los datos). Para evitarse problemas, si trabaja con MS Excel es conveniente que exporte los datos como archivo .csv (de todas formas, tenga cuidado con la codificación, ver más abajo).
 
-Verá entonces una pantalla como la que se muestra en la <<img-fig-04,Figura 4>>. Allí puede ver una muestra de sus datos, dar nombre a su proyecto, y puede modificar varios aspectos de la carga de los datos al programa: codificación, criterio para la separación en columnas, inclusión o no de la primera fila, etc.
+Verá entonces una pantalla como la que se muestra en la <<img-fig-04,Figura 4>>. Allí puede ncontrar dos cuadros de texto arriba a la derecha, uno para indicar el nombre de su proyecto, y otro que permite asignar etiquetas (“tags”) a su proyecto. Puede asignar tantas etiquetas como desee, escribiéndolas en el cuadro. Las etiquetas le ayudarán a organizar mejor sus proyectos, y podrá verlas y editarlas a través del menú “Abrir proyecto” junto al nombre de su proyecto (ver sección “Abrir un proyecto y modificar sus metadatos” más abajo para más detalles sobre cómo agregar o cambiar etiquetas y otros elementos de los metadatos de los proyectos). Además, en esta pantalla puede ver una muestra de sus datos (tabla) y modificar varios aspectos de la carga de los datos al programa: codificación, criterio para la separación en columnas, inclusión o no de la primera fila, etc.
 
 OpenRefine sugiere algunas de las codificaciones más utilizadas cuando se hace click en el cuadro de texto “Codificación de caracteres”. Asegúrese de escoger correctamente la codificación. Si está utilizando el conjunto de datos de prueba proporcionado, escoja UTF-8 (<<img-fig-05,Figura 5>>).
 
@@ -85,5 +87,15 @@ image::img/es.figure-06.jpg[Figura 6,align=center]
 NOTE: El número total de filas cargadas se muestra en este momento arriba de la tabla en negrita (para el caso del conjunto de datos provisto, 24984 filas). Sin embargo, verá que el número de filas mostradas en la tabla es limitado. No desespere, OpenRefine sólo muestra hasta 50 filas. Las acciones que uno pueda tomar en la aplicación, sin embargo, pueden tener efecto sobre otras filas aunque éstas no sean mostradas.
 
 ****
+
+=== Abrir un proyecto y modificar sus metadatos
+
+Una vez que ha creado uno o más proyectos, podrá acceder a ellos a través del menú “Abrir proyecto” (<<img-fig-3,Figura 3>>. Cuando ingresa a este menú, verá listados todos sus proyectos, con una serie de metadatos básicos que puede utilizar para ordenar su lista (<<img-fig-7,Figura 7a>>). Los metadatos mostrados incluyen el nombre del proyecto, la fecha de última modificación, las etiquetas asignadas (“tags”), el número de filas, etc.
+
+[#img-fig-7]
+.Figura 7
+image::img/es.figure-7.jpg[Figura 7,align=center]
+
+Si desea editar los metadatos, debe ingresar a la opción “Acerca de”, a la izquierda en la tabla de proyectos (<<img-fig-7,Figura 7a>>). Se abrirá entonces una ventana como la mostrada en la <<img-fig-7,Figura 7b>>. Si desea modificar los distintos elementos de los metadatos, puede utilizar el botón “Editar” sobre cada parámetro. Por ejemplo, si olvidó colocar una etiqueta al crear un proyecto, puede hacerlo más tarde desde este menú. Contar con buenos metadatos puede ayudarle a organizar sus proyectos, sobre todo lleva a cabo trabajo colaborativo.
 
 <<<
