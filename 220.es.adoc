@@ -66,6 +66,20 @@ image::img/es.figure-18.jpg[Figura 18,align=center]
 
 Una vez que haya removido los espacios en blanco extra, en la faceta sólo verá un valor para “Buenos Aires”, con un número de registros que es la suma de los valores anteriores. Tenga en cuenta que si había otros valores con el mismo problema de dobles espacios entre palabras en esta misma columna, la modificación se aplicará a todos ellos, y no sólo a “Buenos Aires”. Puede comprobar cuántos valores se han modificado comparando el número de valores disponibles en la faceta antes y después de la transformación.
 
+===== Espacios en blanco extra en todo el conjunto de datos
+
+Habiendo visto cómo eliminar espacios en blanco extra, al principio, final o en medio de una cadena de texto, en campos determinados, existe una manera de realizar todas estas acciones al mismo tiempo sobre todos los campos de conjunto de datos. 
+Para ello, se debe ir a la columna “Todo”, hacer click sobre "la &#9660; azul > Transformar. 
+
+Se abrirá entonces una ventana, y en el cuadro de texto debe pegarse la siguiente expresión:
+[source,javascript]
+----
+value.trim().replace(/\s+/,' ') 
+----
+
+Al hacer click en “Aceptar” se eliminarán los espacios en blanco extra en todo el conjunto de datos. Los cambios serán registrados columna a columna en el historial de cambios (ver más abajo sección <<sect-2.5,Deshacer y rehacer cambios>>).
+
+
 ==== Inclusión y exclusión de registros usando facetas
 
 ===== Inclusión de registros con valores determinados para un campo dado
