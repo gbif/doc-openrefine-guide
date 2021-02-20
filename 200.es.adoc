@@ -2,12 +2,7 @@
 
 === Manejo básico de columnas
 
-Muchas veces no queremos modificar los datos directamente en los campos (columnas) en que se presentan, dado que queremos mantener los valores originales y/o queremos proveer información adicional basada en ciertos campos. Por ejemplo, podríamos tener como campos individuales el género y el epíteto específico y queremos agregar el campo nombre científico como concatenación de los dos; o viceversa: tenemos un único campo nombre científico y queremos mantener ese campo y proveer otros dos campos adicionales para género y epíteto, a partir de la división del anterior. 
-
-Para estos casos es útil crear nuevos campos en nuevas columnas.
-
-// Buscar otra denominación para que no sea igual al título de la sección -PZ
-==== Manejo básico de columnas
+==== Renombrar, eliminar y mover columnas
 
 Veamos primero algunas funciones básicas que se pueden aplicar sobre los campos:
 
@@ -76,6 +71,8 @@ El nuevo campo, con el nombre que le haya dado, aparecerá a la derecha de aquel
 IMPORTANT: Tenga en cuenta que las columnas nuevas que cree en la aplicación no estarán en su base de datos original. Al importar los datos que han sido limpiados de regreso a su base de datos, dependiendo de cómo esté estructurada esa base de datos, es posible que estas nuevas columnas no sean importadas o que reciba un mensaje de error de importación porque el número de campos del archivo no coincide con el de la base de datos. En estos casos, debe asegurarse de agregar previamente los nuevos campos en su base de datos si desea importar todos los campos nuevos.
 
 ==== Nuevas columnas a partir transformaciones simples de otras columnas
+
+Muchas veces no queremos modificar los datos directamente en los campos (columnas) en que se presentan, dado que queremos mantener los valores originales y/o queremos proveer información adicional basada en ciertos campos. Por ejemplo, podríamos tener como campos individuales el género y el epíteto específico y queremos agregar el campo nombre científico como concatenación de los dos; o viceversa: tenemos un único campo nombre científico y queremos mantener ese campo y proveer otros dos campos adicionales para género y epíteto, a partir de la división del anterior. Para estos casos es útil crear nuevos campos en nuevas columnas.
 
 Veamos ahora cómo crear nuevas columnas con datos modificados a partir de columnas preexistentes.
 
