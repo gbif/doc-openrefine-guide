@@ -7,25 +7,24 @@ NOTE: Estas instrucciones han sido adaptadas y traducidas al castellano a partir
 === Requerimientos
 
 .	https://www.oracle.com/technetwork/java/javase/downloads/index.html[Java JRE] instalado.
-.	https://www.google.com/chrome/browser/desktop/[Google Chrome] o https://www.mozilla.org/en-US/firefox/new/[Mozilla Firefox] instalados, evitar usar Internet Explorer.
+.	Navegador de internet instalado (preferentemente https://www.google.com/chrome/browser/desktop/[Google Chrome]).
 
-Para instalar OpenRefine 3.1 en su computadora, siga los siguientes pasos:
+Para instalar *OpenRefine 3.3* en su computadora, siga los siguientes pasos:
 
 === Instalación en MS Windows
-.	Descargue el https://github.com/OpenRefine/OpenRefine/releases/download/3.1/openrefine-win-3.1.zip[kit de Windows] aquí.
+.	Descargue aquí el https://github.com/OpenRefine/OpenRefine/releases/download/3.3/openrefine-win-3.3.zip[kit de Windows].
 .	Descomprima, y copie la carpeta en su computadora. Abra la carpeta y haga doble click en openrefine.exe. Si encuentra algún problema en este punto, haga doble click sobre refine.bat.
 .	Aparecerá una ventana de comando (que no debe cerrar) e inmediatamente después su navegador web mostrará una nueva ventana con la aplicación.
 
 === Instalación en Mac
-.	Descargue el http://openrefine.org/download.html[kit de Mac], ésta es la última versión estable.
+.	Descargue aquí el https://github.com/OpenRefine/OpenRefine/releases/download/3.3/openrefine-mac-3.3.dmg[kit de Mac].
 .	Abra y arrastre el icono en la carpeta Applications.
 .	Haga doble clic en él y su navegador web mostrará una nueva ventana con la aplicación.
 
-NOTE: Si tiene problemas para instalar Open Refine en Mac puede deberse a que sólo trabaja con Java 6 y 7. También puede probar instalando la última versión (no estable) disponible en la http://openrefine.org/download.html[web de OpenRefine].
-
-NOTE: Existe también una https://github.com/OpenRefine/OpenRefine/releases/download/3.1/openrefine-linux-3.1.tar.gz[versión para Linux].
+NOTE: Existe también una https://github.com/OpenRefine/OpenRefine/releases/download/3.3/openrefine-linux-3.3.tar.gz[versión para Linux].
 
 === Para saber más
 
-*	https://github.com/OpenRefine/OpenRefine/wiki/Installation-Instructions[Instrucciones adicionales sobre cómo instalar Open Refine]
-*	Si además quiere hacer algunas pruebas de uso, puede consultar las funciones básicas en la sección http://openrefine.org/index.html[_Introduction to OpenRefine_]
+*	Puede encontrar instrucciones adicionales para la instalación y consultar funciones básicas en el https://docs.openrefine.org/[Manual del Usuario de OpenRefine].
+*	Si desea instalar otras versiones del programa, puede encontrarlas en la página de https://openrefine.org/download.html[Descargas de Open Refine].
+* OpenRefine permite además trabajar con *Extensiones* creadas por miembros de la comunidad, que proveen diversas funciones. Puede consultar aquí la https://openrefine.org/download.html[Lista de Extensiones disponibles] con sus descripciones y las https://docs.openrefine.org/manual/installing/#installing-extensions[Instrucciones para Instalar Extensiones].
