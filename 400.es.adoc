@@ -1,5 +1,5 @@
 [[sect-4]]
-== Consultas a servicios externos
+== Consultas a servicios externos a través de URLs
 
 OpenRefine ofrece la posibilidad de consultar fuentes externas, una función que es muy útil cuando se intenta mejorar la calidad de los datos. Para el caso particular de datos sobre biodiversidad, permite, por ejemplo, validar nombres taxonómicos y geográficos contra fuentes de información que se consideren confiables, completar rangos taxonómicos y campos de geografía administrativa, georreferenciar, incorporar enlaces a imágenes almacenadas en sitios web, entre otros.
 
@@ -9,11 +9,10 @@ NOTE: Debe recordarse que para poder realizar consultas a servicios que se encue
 
 NOTE: La velocidad a la que se obtienen los resultados de las consultas depende de la velocidad de respuesta del servicio en particular. De esta forma, si se quieren obtener información para muchos registros, el tiempo de la operación será prolongado. Para acortar tiempos, se pueden hacer comparaciones de registros contra el servicio deseado dentro de facetas, es decir, en fracciones particulares de los registros.
 
-=== Consultas externas a través de URLs
 
 Nos referimos a consultas a través de URLs cuando el proceso implica proveer a OpenRefine con la dirección web (URL) de un determinado servicio y ciertos parámetros mínimos para obtener de dicho servicio un resultado.
 
-==== Resolución de nombres científicos usando Global Names Resolver
+=== Resolución de nombres científicos usando Global Names Resolver
 
 En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`"scientificName"`) contra el servicio http://resolver.globalnames.org[Global Names Resolver] (de aquí en más "GNR").
 
@@ -141,7 +140,7 @@ forEach(value.parseJson().get("data")[0].get("results"), v,
 
 A partir de los resultados obtenidos, puede extraer los nombres separando la nueva columna en columnas distintas utilizando separadores apropiados (ver sección de separación de columnas).
 
-==== Georreferenciación usando GeoLocate
+=== Georreferenciación usando GeoLocate
 
 En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta al servicio, construiremos previamente dos facetas. La primera sobre el campo [source]`"country"`, dentro de la cual seleccionaremos el valor “Argentina”. La segunda faceta será sobre el campo [source]`"genus"`, dentro de la cual seleccionaremos el valor “Acacia”. Una vez aplicadas ambas facetas y escogidos los valores, verá que en la ventana principal sólo se muestra un subconjunto de registros que cumplen estas condiciones simultáneamente.
 
@@ -367,9 +366,9 @@ IMPORTANT: A la hora de agregar datos de georreferenciación, contraste siempre 
 
 NOTE: Para conocer más acerca de georreferenciación y las mejores prácticas asociadas, consulte Georeferencing Best Practices (Chapman & Wieczorek 2020).
 
-==== Limpieza de fechas utilizando Canadensys Date Parsing
+=== Limpieza de fechas utilizando Canadensys Date Parsing
 
-===== Breve introducción
+==== Breve introducción
 
 Uno de los campos sobre el que se puede corroborar la calidad de los datos es el campo de fecha: [source]`"eventDate"`.
 
@@ -434,7 +433,7 @@ NOTE: Este formato también puede utilizarse para expresar rangos de fecha de ma
 | 2007-03-01T13:00:00Z/2008-05-11T15:30:00Z
 |===
 
-===== Limpieza de fechas
+==== Limpieza de fechas
 
 Muchas veces, a pesar de lo que indica el estándar Darwin Core, encontramos en el campo [source]`"eventDate"` fechas que no siguen el formato sugerido. Para estandarizarlas, puede hacer uso de la herramienta que ofrece https://data.canadensys.net/tools/dates[Canadensys: Date Parsing].
 
