@@ -5,15 +5,15 @@ Los agrupamientos permiten, como su nombre lo indica, agrupar valores de acuerdo
 
 Ubique el campo [source]`"stateProvince"` y arme una faceta de texto para este campo.
 
-En la ventana de la faceta, haga click en el botón “Agrupar”. Se abrirá entonces una ventana como la mostrada en la <<img-fig-33,Figura 33>>.
+En la ventana de la faceta, haga click en el botón “Agrupar”. Se abrirá entonces una ventana como la mostrada en la <<img-fig-34,Figura 34>>.
 
 Allí verá que algunos valores que son similares han sido agrupados por un algoritmo. El método y la función utilizados se muestran y se pueden modificar arriba de la lista de valores.
 
 La ventana también muestra el tamaño del clúster (“Número de valores” agrupados), cuántos registros hay por cluster (“Número de filas”) y por valor (entre paréntesis junto a los valores en “Valores en la agrupación”).
 
-[#img-fig-33]
-.Figura 33
-image::img/es.figure-33.jpg[Figura 33,align=center]
+[#img-fig-34]
+.Figura 34
+image::img/es.figure-34.jpg[Figura 34,align=center]
 
 Además, para cada cluster verá una opción para fusionar los valores (“¿Unir?”) y un recuadro donde se captura el nuevo valor que se asignará a todos los registros del cluster (“Nuevo valor de las celdas”). 
 
@@ -25,11 +25,11 @@ Haga click sobre “Unir seleccionados y reagrupar”.
 
 IMPORTANT: Cuando se agrupan valores se debe tener mucho cuidado a la hora de corregir registros. Esto es particularmente cierto para los nombres científicos, dado que variaciones en los nombres que podrían verse como aparentes errores (por ejemplo, si se evalúa el campo epíteto específico, pueden tenerse dos palabras iguales con diferente terminación –um, –us), no necesariamente lo sean (por ejemplo, si se evalúa también el campo género podría encontrarse que esos epítetos se aplican a géneros distintos, y que ambos son válidos). Por ello, si tiene dudas, consulte los registros completos. Y si aún tiene dudas, consulte en la colección. Otro ejemplo en que debe tenerse extremo cuidado es cuando se agrupan valores que difieren en el orden de las palabras. Un ejemplo típico se da en el campo de colectores. Aún cuando los agrupamientos pueden sugerir que “Colector A y Colector B” es lo mismo que “Colector B y Colector A”, ello puede no ser cierto, y el orden de los colectores puede tener en sí un valor particular. Nuevamente, antes de unificar, es fundamental consultar con la colección.
 
-Una vez resueltos los agrupamientos, si ha decidido no agrupar algunas de las opciones, las verá nuevamente en el re-agrupamiento; en caso contrario, el programa le indicará que no se han encontrado agrupaciones con el método seleccionado. Puede cambiar el método y la función que se utiliza para agrupar escogiendo entre las opciones del menú, como se muestra en la <<img-fig-34,Figura 34>>.
+Una vez resueltos los agrupamientos, si ha decidido no agrupar algunas de las opciones, las verá nuevamente en el re-agrupamiento; en caso contrario, el programa le indicará que no se han encontrado agrupaciones con el método seleccionado. Puede cambiar el método y la función que se utiliza para agrupar escogiendo entre las opciones del menú, como se muestra en la <<img-fig-35,Figura 35>>.
 
-[#img-fig-34]
-.Figura 34
-image::img/es.figure-34.jpg[Figura 34,align=center]
+[#img-fig-35]
+.Figura 35
+image::img/es.figure-35.jpg[Figura 35,align=center]
 
 Pruebe agrupamientos con distintos métodos para limpiar los datos.
 
