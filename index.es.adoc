@@ -1,5 +1,5 @@
-= Guía de Uso Básico de OpenRefine para la limpieza de datos sobre biodiversidad [borrador de revisión de la comunidad]
-Paula F. Zermoglio; John R. Wieczorek
+= Guía para la limpieza de datos sobre biodiversidad con OpenRefine [borrador de revisión de la comunidad]
+Paula F. Zermoglio; Camila A. Plata; John R. Wieczorek; Ricardo Ortiz; Leonardo Buitrago
 :toc: left
 :numbered:
 :revnumber: {git-metadata-branch}
