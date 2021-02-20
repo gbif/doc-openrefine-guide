@@ -24,27 +24,30 @@ Las rutinas utilizan como fuentes de validación API’s (Interfaces de Programa
 
 En la <<#table-scripts>> encontrará cinco (5) rutinas, que cubren diferentes escenarios al momento de realizar la validación, como la caída temporal de servicios web, o requisitos adicionales según la naturaleza de los datos, como por ejemplo el grupo biológico de interés. Se explica a continuación cada fuente:
 
+
 [#table-scripts]
 .Lista de rutinas para la validación de datos primarios sobre biodiversidad
 [cols=3*,options="header"]
 |===
 | Nombre | Uso | Requerimientos 
-| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIGBIF_ValTaxonomicaAPIGBIF.txt[Validación taxonómica con el API de GBIF]
+| <<sect-5.2, Validación taxonómica con el API de GBIF>>
 | Validación taxonómica que usa como referencia el árbol taxonómico de GBIF. Permite validar registros de varios grupos biológicos a la vez, así como obtener la taxonomía superior de cada taxa.
 | Requiere como mínimo los elementos [source]`"scientificName"` y [source]`"kingdon"` documentados y acceso a internet para hacer la petición al API de GBIF.
 
-| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicSpeciesMatchGBIF_ValTaxonomicaSpeciesMatchGBIF.txt[Validación taxonómica con Species Match de GBIF] 
+| <<#validación-taxonómica-con-species-matching-de-gbif,Validación taxonómica con Species Matching de GBIF>> 
 | Validación taxonómica que usa como referencia el árbol taxonómico de GBIF, a diferencia de la rutina anterior realiza la validación contra el archivo de resultados _normalized_ obtenido de link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] permitiendo así aprovechar las funcionalidades de validación y limpieza de esta herramienta. La rutina facilita el cruce de los resultados obtenidos con link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] con el conjunto de datos original. 
 | Requiere como mínimo el elemento [source]`"scientificName"` documentado y que el archivo _normalized_ sea previamente cargado en OpenRefine para la ejecución de la rutina.
 
-| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt[Validación taxonómica con el API de WoRMS (World Register of Marine Species)]
+| <<#validación-taxonómica-con-el-api-de-worms,Validación taxonómica con el API de WoRMS>>
 | Validación taxonómica específica para organismos marinos, que usa como referencia el link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)] por medio de la API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. Permite obtener la taxonomía superior de cada taxa, así como elementos taxonómicos obligatorios para la publicación de datos a través de link:https://obis.org/[OBIS].
 | Requiere como mínimo el elemento [source]`"scientificName"` documentado y acceso a internet para hacer la petición al API de WORMS.
 
-| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt[Validación de elevaciones con GeoNames] | Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de GeoNames. 
+|<<#validación-de-elevaciones-con-el-api-de-geonames,Validación de elevaciones con el API de GeoNames>>
+| Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de GeoNames. 
 | Requiere los elemento DwC [source]`"decimalLatitude"` y [source]`"decimalLongitude"` documentados adecuadamente y acceso a internet para hacer la petición al API de  GeoNames.
 
-| link:https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/DateTransform_TransformFechas.txt[Transformación de fechas con Canadensys _Date Parsing_] | Transformación de fechas en múltiples formatos al estándar ISO 8601.
+|<<#transformación-de-fechas-con-el-api-de-canadensys,Transformación de fechas con el API de Canadensys>> 
+| Transformación de fechas en múltiples formatos al estándar ISO 8601.
 | Requiere los elemento DwC [source]`"eventDate"`  documentado y acceso a internet para hacer la petición al API de  Canadensys.
 |===
 
