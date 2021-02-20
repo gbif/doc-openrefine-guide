@@ -26,6 +26,7 @@ La versión de OpenRefine utilizada para la confección de esta guía es OpenRef
 
 Para ver detalles sobre cómo descargar e instalar OpenRefine en su computadora, ver el <<app-a,Apéndice 1>>.
 
+[#datos]
 ====	Datos
 
 El conjunto de datos modelo utilizado en esta guía puede obtenerse aquí: link:../data/EjercicioModelo_OpenRefine_Datos.zip[EjercicioModelo_OpenRefine_Datos.csv,opts=download]. Descargar el archivo, y no manipularlo en otros programas (e.g., MS Excel) antes de abrirlo en OpenRefine, dado que ello puede cambiar los formatos y/o codificación del archivo.
