@@ -44,3 +44,21 @@ Pegue en el cuadro de texto la expresión deseada (copie y pegue lo que guardó 
 image::img/es.figure-37.jpg[Figura 37,align=center]
 
 De este modo, puede rehacer pasos particulares o toda una rutina de trabajo, sobre el mismo conjunto de datos, o sobre otros conjuntos de datos (siempre y cuando las columnas sean las mismas).
+
+==== Reutilizar expresiones regulares
+
+En las secciones anteriores de esta guía (y en la siguientes), muchas funciones involucran utilizar expresiones regulares. Si bien el guardado de pasos es muy útil para repetir procesos, OpenRefine también brinda un simple historial de expresiones regulares que se han utilizado previamente. Se puede acceder a esta lista de expresiones en cualquier ventana que uno abra a partir de una columna, si en dicha ventana se espera el uso de una expresión.
+
+Por ejemplo, al armar una nueva columna a partir del campo [source]`"kingdom"` (click en "la &#9660; azul en el campo > Editar columnas > Agregar columna basada en esta columna…" se abre una ventana como la mostrada en la (<<img-fig-38,Figura 38a>>).
+
+Allí, en la pestaña “Historial” pueden verse listadas las expresiones regulares que se han utilizado sobre este o cualquier otro campo. Para reutilizar las expresiones simplemente hacer click en “Reusar”.
+
+IMPORTANT: Las expresiones serán incorporadas a los cuadros de texto tal cual fueron utilizadas antes, es decir, podrían contener referencias a otros campos o parámetros no pertinentes. Siempre debe revisar las expresiones para asegurarse de que la función actuará sobre los campos y con los parámetros deseados antes de ejecutar la acción.
+
+Las distintas expresiones pueden ser destacadas haciendo click sobre la estrella que está a su izquierda (que se pintará de color amarillo, <<img-fig-38,Figura 38a>>). Las expresiones a las que se han asignado estrellas se listarán también bajo el menú “Con estrella” (<<img-fig-38,Figura 38b>>). Esta función es muy útil cuando la lista de expresiones utilizadas es muy larga y dentro de ella quiere resaltar expresiones de uso más frecuente.
+
+[#img-fig-38]
+.Figura 38
+image::img/es.figure-38.jpg[Figura 38,align=center]
+
+NOTE: La lista de expresiones utilizadas se mantiene en el programa, de modo que puede volver a utilizarla en el futuro. La asignación de estrellas a las expresiones, sin embargo, se mantiene únicamente en el marco de la sesión de trabajo, es decir, las estrellas se pierden si se cierra y reinicia el programa.
