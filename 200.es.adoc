@@ -26,23 +26,23 @@ Hacer click en
 +
 … "la &#9660; azul del campo > Editar columnas > Mover columna a la derecha"
 +
-Estas tres opciones pueden verse en la <<img-fig-07,Figura 7>>.
+Estas tres opciones pueden verse en la <<img-fig-08,Figura 8>>.
 +
-[#img-fig-07]
-.Figura 7
-image::img/es.figure-07.jpg[Figura 7,align=center]
+[#img-fig-08]
+.Figura 8
+image::img/es.figure-08.jpg[Figura 8,align=center]
 
 4. *Reordenar o eliminar varios campos a la vez.*
 +
 Para esta función se utiliza el campo “Todo”, que se encuentra como primera columna de la tabla. Este campo no forma parte de los datos originales, es agregado por el programa para permitir llevar a cabo ciertas funciones. 
 +
-Hacer click en "la &#9660; azul en el campo “Todo” > Editar columnas > Ordenar / Eliminar columnas…" (<<img-fig-08,Figura 8a>>).
+Hacer click en "la &#9660; azul en el campo “Todo” > Editar columnas > Ordenar / Eliminar columnas…" (<<img-fig-09,Figura 9a>>).
 +
-Se abrirá entonces una ventana como la que se muestra en la <<img-fig-08,Figura 8b>>. Allí puede ordenar los campos simplemente arrastrándolos arriba o abajo en la lista, y eliminarlos arrastrándolos hacia la parte derecha de la ventana. Una vez que termine de modificar el orden de los campos, haga click en “Aceptar”.
+Se abrirá entonces una ventana como la que se muestra en la <<img-fig-09,Figura 9b>>. Allí puede ordenar los campos simplemente arrastrándolos arriba o abajo en la lista, y eliminarlos arrastrándolos hacia la parte derecha de la ventana. Una vez que termine de modificar el orden de los campos, haga click en “Aceptar”.
 +
-[#img-fig-08]
-.Figura 8
-image::img/es.figure-08.jpg[Figura 8,align=center]
+[#img-fig-09]
+.Figura 9
+image::img/es.figure-09.jpg[Figura 9,align=center]
 
 En OpenRefine se considera que cualquiera de los cuatro cambios descriptos anteriormente son cambios a los datos, y por ende se registran como tales en el historial de cambios (ver más abajo sección <<sect-2.5,Deshacer y rehacer cambios>>).
 
@@ -54,7 +54,7 @@ Para crear un nuevo campo de cero, sobre cualquier columna preexistente siga la 
 
 "Editar columnas > Agregar columna basada en esta columna…"
 
-Se abrirá una ventana como la que se muestra en la <<img-fig-09,Figura 9>>.
+Se abrirá una ventana como la que se muestra en la <<img-fig-10,Figura 10>>.
 
 Arriba de todo, coloque el nombre del nuevo campo.
 
@@ -62,9 +62,9 @@ IMPORTANT: Debe tener extremo cuidado al escoger los nombres que dará a las nue
 
 Luego, en el cuadro de texto “Expresión” escriba: [source]`null`. Ello quiere decir que se creará un campo con valores nulos. Luego oprima “Aceptar”. Alternativamente, en vez de [source]`null` puede colocar la expresión: [source]`""`, y el nuevo campo tendrá valores en blanco.
 
-[#img-fig-09]
-.Figura 9
-image::img/es.figure-09.jpg[Figura 9,align=center]
+[#img-fig-10]
+.Figura 10
+image::img/es.figure-10.jpg[Figura 10,align=center]
 
 El nuevo campo, con el nombre que le haya dado, aparecerá a la derecha de aquel a partir del cual fue generado.
 
@@ -85,7 +85,7 @@ Si desea crear un campo que sea la concatenación de otros dos campos separados 
 Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{genus}[Editar columnas > Join columns…]
 (Notar que el nombre de la función y los menúes que se despliegan están en inglés en esta versión del programa).
 
-Se abrirá una nueva ventana (<<img-fig-10,Figura 10>>), donde puede seleccionar todas las columnas que desea unir.
+Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>), donde puede seleccionar todas las columnas que desea unir.
 
 El primer recuadro a la derecha le permite seleccionar qué separador utilizar entre los contenido de cada columna. Por ejemplo, puede utilizar un espacio " ". 
 Luego debe especificar qué hacer con los registros donde alguno de los campos a unir tiene valores nulos (por ejemplo, [source]`"genus"` tiene un valor pero [source]`"specificEpithet"` es nulo, o viceversa). Si elige la opción "Replace nulls with..." ("Reemplazar nulos con…"), puede especificar con qué reemplazar esos valores nulos (por ejemplo, algún caracter), o dejar ese recuadro vacío. Si, en cambio, escoge "Skip nulls" ("Saltear nulos"), para todos aquellos registros que tuvieran uno de los dos campos nulos no se llevará a cabo la unión.
@@ -96,9 +96,9 @@ Luego debe indicar si quiere los resultados sobre la misma columna sobre la que 
 
 Por último, tiene la opción de eliminar las columnas que dieron origen a la unión ("Delete joined columns", "Eliminar columnas unidas"). Si desea conservarlas, como en este caso, asegúrese de que esa opción está desmarcada.
 
-[#img-fig-10]
-.Figura 10
-image::img/es.figure-10.jpg[Figura 10,align=center]
+[#img-fig-11]
+.Figura 11
+image::img/es.figure-11.jpg[Figura 11,align=center]
 
 Los resultados esperados de acuerdo a distintos parámetros escogidos se resumen en la siguiente tabla:
 
@@ -210,7 +210,7 @@ Si optamos por una opción que contiene en los resultados espacios en blanco no 
 
 Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{genus}[Editar columnas > Agregar columna basada en esta columna…]
 
-Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`"scientificName"` en los datos).
+Se abrirá una nueva ventana (<<img-fig-12,Figura 12>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`"scientificName"` en los datos).
 
 En el cuadro de texto, pegue la siguiente expresión:
 
@@ -219,9 +219,9 @@ Expresión general:	[source]`cells["campo1"].value + " " + cells["campo2"].value
 
 La expresión ejemplo concatena (`+`) los valores del campo [source]`"genus"` ([source]`cells["genus"].value`) y los del campo [source]`"specificEpithet"` ([source]`cells["specificEpithet"].value`), con un espacio entre los valores ("[source]`` ``").
 
-[#img-fig-11]
-.Figura 11
-image::img/es.figure-11.jpg[Figura 11,align=center]
+[#img-fig-12]
+.Figura 12
+image::img/es.figure-12.jpg[Figura 12,align=center]
 
 Note que esta expresión funciona cuando ambos campos, [source]`"genus"` y [source]`"specificEpithet"`, tienen valores, es decir no son nulos. Si alguno de los dos campos tiene valores nulos, entonces no se lleva a cabo la concatenación. Por ejemplo, si hay un valor para genus pero specificEpithet está vacío, el campo de concatenación aparecerá vacío. Esto se debe a que no se puede operar sobre valores nulos.
 
@@ -311,15 +311,15 @@ Utilizaremos como ejemplo la división del campo [source]`"eventDate"` para agre
 
 Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{eventDate}[Editar columnas > Dividir en varias columnas…]
 
-Se abrirá una nueva ventana (<<img-fig-12,Figura 12>>). Allí debe escoger si se dividirá por separador o por longitud de caracteres, y en el primer caso qué tipo de separador se utilizará (puede ser espacio –tab-, coma, punto y coma, guión, etc.).
+Se abrirá una nueva ventana (<<img-fig-13,Figura 13>>). Allí debe escoger si se dividirá por separador o por longitud de caracteres, y en el primer caso qué tipo de separador se utilizará (puede ser espacio –tab-, coma, punto y coma, guión, etc.).
 
 En este caso, si exploramos los datos del campo original veremos que año, mes y día están separados por barras oblicuas (“/”), de modo que elegiremos esta barra como separador.
 
 IMPORTANT: *Desmarque la opción “Eliminar esta columna” a la derecha*. Si la deja seleccionada, perderá el campo original y sólo tendrá los tres nuevos campos.
 
-[#img-fig-12]
-.Figura 12
-image::img/es.figure-12.jpg[Figura 12,align=center]
+[#img-fig-13]
+.Figura 13
+image::img/es.figure-13.jpg[Figura 13,align=center]
 
 Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`"eventDate"`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda ("la &#9660; azul > Editar columnas > Renombrar esta columna"). En este caso, nómbrelos “year”, “month” y “day” según corresponda.
 
