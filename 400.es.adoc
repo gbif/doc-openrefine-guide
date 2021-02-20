@@ -436,7 +436,7 @@ NOTE: Este formato también puede utilizarse para expresar rangos de fecha de ma
 
 ===== Limpieza de fechas
 
-Muchas veces, a pesar de lo que indica el estándar Darwin Core, encontramos en el campo [source]`"eventDate"` fechas que no siguen el formato sugerido. Para estandarizarlas, puede hacer uso de la herramienta que ofrece http://data.canadensys.net/tools/dates[Canadensys: Date Parsing].
+Muchas veces, a pesar de lo que indica el estándar Darwin Core, encontramos en el campo [source]`"eventDate"` fechas que no siguen el formato sugerido. Para estandarizarlas, puede hacer uso de la herramienta que ofrece https://data.canadensys.net/tools/dates[Canadensys: Date Parsing].
 
 Esta herramienta permite interpretar fechas, devolviéndolas en formato estándar. Ejemplos de los tipos de valores que puede interpretar son:
 
@@ -498,5 +498,28 @@ Verá que algunos de los resultados serán nulos, éstos corresponden a los caso
 image::img/es.figure-53.jpg[Figura 53,align=center]
 
 Para terminar de limpiar las fechas, entonces, tendrá que revisar los valores que no hayan sido estandarizados por la herramienta. Para ello, sobre el campo ISO_eventDate puede armar una faceta y seleccionar el valor “blank”. Luego, arme una faceta sobre el campo [source]`"eventDate"` (el que tenía los valores originales) y si estos son pocos, puede hacer un chequeo manual y completar el campo ISO_eventDate.
+
+
+[NOTE]
+.Transformación de fechas usando expresiones regulares
+--
+La consulta del servicio de Canadensys Date Parsing es particularmente útil cuando se tienen en un mismo campo fechas con distintos formatos, pues permite resolverlas todas utilizando un único proceso. 
+En cambio, si todas las fechas están dadas en un único formato, resulta más rápido realizar transformaciones utilizando expresiones regulares. Para ello, a partir de la columna con fechas a estandarizar, por ejemplo [source]`"eventDate"`,
+Hacer click en "la &#9660; azul en el campo > Editar columnas > Agregar columna basada en esta columna…".
+En la ventana que se abre, dar nombre al nuevo campo (por ejemplo “standard_eventDate”), y en el cuadro de texto utilizar una expresión como la siguiente, que convierte el formato original a una cadena de texto con formato “año-mes-día”:
+[source,javascript]
+----
+value.toDate("formato_original").toString("yyyy-MM-dd") 
+---- 
+donde en lugar de “formato_original” debe colocar el formato utilizado en el campo a estandarizar, considerando el orden en que aparecen el año, mes y día, el número de dígitos de cada uno y los separadores utilizados (e.g., guión, barra, etc.).
+Por ejemplo, si las fechas originales están todas escritas de la forma “mes/día/año”, la expresión a utilizar sería:
+[source,javascript]
+----
+value.toDate("MM/dd/yyyy").toString("yyyy-MM-dd") 
+----
+Con el formato especificado arriba, la expresión convertirá por ejemplo una fecha “04/25/1989” a “1989-04-25”.
+
+Recordar que esta opción solo será útil aplicada a una columna si *todas* las fechas en esa columna tienen *el mismo formato*.
+--
 
 <<<
