@@ -37,7 +37,7 @@ image::img/es.figure-03.jpg[Figura 3,align=center]
 
 *Cargue los datos* (<<img-fig-02,Figura 2>>). Dentro de la opción “Crear proyecto”, escoja el archivo que desea cargar. Note que hay varios formatos posibles de archivos que se pueden subir (tsv, csv, xls, json, etc). Haga click en “Siguiente”. 
 
-Para seguir esta guía, cargue el archivo proporcionado, al que puede acceder a través del enlace provisto en la sección Prefacio: Cómo usar esta guía: Datos.
+Para seguir esta guía, cargue el archivo proporcionado, al que puede acceder a través del enlace provisto en la sección <<datos,Cómo usar esta guía: Datos>>.
 
 NOTE: Si sube archivos con formato .xls o .xlsx, tenga en cuenta que no podrá modificar la codificación, y que pueden encontrarse algunos errores en los datos (ejemplo: los tildes en las palabras se verán como símbolos raros cuando cargue los datos). Para evitarse problemas, si trabaja con MS Excel es conveniente que exporte los datos como archivo .csv (de todas formas, tenga cuidado con la codificación, ver más abajo).
 
