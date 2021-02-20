@@ -364,7 +364,7 @@ IMPORTANT: Debe tener en cuenta que, como se mencionó antes, cuantos más datos
 
 IMPORTANT: A la hora de agregar datos de georreferenciación, contraste siempre los resultados contra los campos geográficos que tiene. En el caso de tener varios resultados posibles, no siempre el primer resultado es el correcto. Recuerde reportar cuál fue el proceso de georreferenciación utilizado y todos los parámetros posibles asociados. Para consultar en qué campos de Darwin Core se reporta cada parámetro, puede referirse a: http://rs.tdwg.org/dwc/terms/#location, y consultar: https://github.com/tdwg/dwc-qa/wiki/Georeferences.
 
-NOTE: Para conocer más acerca de georreferenciación y las mejores prácticas asociadas, consulte Georeferencing Best Practices (Chapman & Wieczorek 2020).
+NOTE: Para conocer más acerca de georreferenciación y las mejores prácticas asociadas, consulte https://docs.gbif.org/georeferencing-best-practices/1.0/en/[Georeferencing Best Practices (Chapman & Wieczorek 2020)].
 
 === Limpieza de fechas utilizando Canadensys Date Parsing
 
