@@ -138,6 +138,8 @@ image::img/es.figure-21.jpg[Figura 21,align=center]
 
 Los tres errores encontrados deben ser consultados con la información original de los ejemplares en la colección, y los campos de fecha estrictamente deberían quedar vacíos para estos registros. Una opción es marcar estos registros para revisar más adelante, usando estrellas o banderas (ver sección sobre uso de estrellas y banderas).
 
+IMPORTANT: Si el campo sobre el que desea armar la faceta no es un campo con formato numérico (e.g., tiene formato texto, o fecha, etc.), la faceta numérica no le mostrará valores. En cambio, dirá que el campo no tenía valores numéricos (“No numeric value present.”). Para poder armar una faceta numérica tendrá entonces primero que transformar los datos de la columna de interés a formato numérico. Para ello, siga la ruta: click sobre "la &#9660; azul del campo > Editar celdas > Transformaciones comunes > A número".
+
 ==== Facetas y duplicados
 
 Las facetas también permiten la detección y corrección de duplicados. 
