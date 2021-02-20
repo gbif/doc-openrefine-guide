@@ -17,6 +17,8 @@ OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamen
 http://127.0.0.1:3333
 --
 
+Si bien puede ejecutar el programa utilizando cualquier navegador, nuestra recomendación es que utilice Google Chrome, pues otros navegadores suelen presentar diversos problemas, sobre todo cuando se intentan utilizar funciones más complejas.
+
 NOTE: Si bien OpenRefine utiliza la interfaz de un navegador para trabajar, todos los procesos (e.g., creación de proyectos, carga de datos, procesamiento, etc.) se realizan localmente, es decir, en su computadora, sin subir datos en línea. Por tanto, para utilizar la mayoría de las funciones del programa no hace falta una conexión a Internet. Algunas funciones, sin embargo, como las <<sect-4,Consultas a servicios externos>>, sí requieren conexión.
 
 
