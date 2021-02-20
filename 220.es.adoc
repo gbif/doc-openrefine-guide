@@ -66,6 +66,38 @@ image::img/es.figure-18.jpg[Figura 18,align=center]
 
 Una vez que haya removido los espacios en blanco extra, en la faceta sólo verá un valor para “Buenos Aires”, con un número de registros que es la suma de los valores anteriores. Tenga en cuenta que si había otros valores con el mismo problema de dobles espacios entre palabras en esta misma columna, la modificación se aplicará a todos ellos, y no sólo a “Buenos Aires”. Puede comprobar cuántos valores se han modificado comparando el número de valores disponibles en la faceta antes y después de la transformación.
 
+==== Inclusión y exclusión de registros usando facetas
+
+===== Inclusión de registros con valores determinados para un campo dado
+
+Las facetas pueden utilizarse para trabajar sobre registros con uno o más valores de interés en un campo en cuestión. 
+Para trabajar sobre un ejemplo, arme una faceta de texto sobre el campo [source]`"phylum"` (click sobre "la &#9660; azul > Facetas > Faceta de texto"). Verá que la faceta tiene varios valores. 
+Para seleccionar solo los registros que tienen como phylum, por ejemplo, “Lycopodiophyta”, debe hacer click sobre el valor mismo dentro de la faceta o sobre la opción “include” que se muestra a su derecha (<<img-fig-19,Figura 19a>>).
+
+[#img-fig-19]
+.Figura 19
+image::img/es.figure-19.jpg[Figura 19,align=center]
+
+IMPORTANT: Al seleccionar un valor dentro de una faceta, cualquier acción que tome a continuación sólo será aplicada a los registros incluidos bajo esa selección. 
+
+Puede seleccionar tantos valores como desee dentro de una faceta, utilizando “include” sucesivamente sobre cada uno de ellos.
+
+===== Exclusión de registros con valores determinados para un campo dado
+
+Para deseleccionar registros previamente seleccionados a través de una faceta, simplemente haga click sobre el valor nuevamente, o sobre la opción “exclude” que se muestra a su derecha (<<img-fig-19,Figura 19b>>). Puede deseleccionar tantos valores como desee utilizando “exclude” sucesivamente sobre cada uno de ellos.
+
+En ocasiones las facetas pueden contener muchos valores de interés diferentes sobre los que quisiéramos trabajar. En estos casos, puede ser muy engorroso seleccionar todos los valores de interés uno a uno. En cambio, se puede utilizar la función “invertir” selección. Para aplicar esta función, deben seleccionarse los valores que _no_ son de interés. Una vez seleccionados, en la parte superior de la faceta aparece la opción “invertir” (<<img-fig-19,Figura 19b>>). Haciendo click el programa nos brindará la selección inversa, incluyendo entonces los valores que _sí_ nos interesan.
+
+Por ejemplo, para el campo [source]`"phylum"` del ejemplo anterior, nos interesan todos los valores menos “Pinophyta”. Seleccionamos entonces “Pinophyta” haciendo click en “include” para este valor. Luego hacemos click en “invertir”, y como resultado habremos seleccionado todos los registros salvo aquellos que tienen el valor “Pinophyta” (<<img-fig-19,Figura 19c>>).
+
+Para revertir la inversión puede hacerse click en “invertir” nuevamente, volviendo entonces a los valores seleccionados inicialmente.
+
+===== Selección de registros sin valores para un campo dado
+
+En muchas ocasiones resulta muy útil poder identificar los registros que tienen un campo de interés vacío, sin valores. Utilizando facetas se pueden reconocer esos registros fácilmente, pues figuran dentro de la faceta con valor “(blank)” (ver por ejemplo este valor en la faceta compuesta para el apartado anterior, sobre el campo [source]`"phylum"`, <<img-fig-19,Figura 19>>) . 
+El valor “(blank)” se puede tratar como cualquier otro dentro de la faceta, es decir, se puede incluir, excluir, y editar, facilitando la evaluación y el mejoramiento de los registros.
+
+
 ==== Facetas numéricas
 
 Las facetas también pueden aplicarse a campos numéricos, y en ese caso son muy útiles para, por ejemplo, detectar valores fuera de rangos de interés.
@@ -76,19 +108,19 @@ A modo de ejemplo, armaremos una faceta numérica sobre el campo [source]`"day"`
 "Facetas > Faceta numérica"
 --
 
-Verá entonces una nueva ventana, la faceta, como se muestra en la <<img-fig-19,Figura 19>>.
-
-[#img-fig-19]
-.Figura 19
-image::img/es.figure-19.jpg[Figura 19,align=center]
-
-Allí se puede ver que el rango de días abarca desde 1 a 35 inclusive. Es decir, algunos números están fuera de rango, puesto que como máximo puede haber hasta día 31 en algunos meses.
-
-Se pueden seleccionar los registros con los valores superiores desplazando el botón a la izquierda del rango hacia la derecha. Ello incluirá en la tabla los registros por encima del rango seleccionado y, si no desmarca la opción “Blank”, también los blancos, como se muestra en la <<img-fig-20,Figura 20>> (en el ejemplo, tres filas en total: un caso con día 32, un caso con día 35 y un caso con día vacío). Si hubiera valores en el campo que no son numéricos, también podría verlos utilizando esta faceta.
+Verá entonces una nueva ventana, la faceta, como se muestra en la <<img-fig-20,Figura 20>>.
 
 [#img-fig-20]
 .Figura 20
 image::img/es.figure-20.jpg[Figura 20,align=center]
+
+Allí se puede ver que el rango de días abarca desde 1 a 35 inclusive. Es decir, algunos números están fuera de rango, puesto que como máximo puede haber hasta día 31 en algunos meses.
+
+Se pueden seleccionar los registros con los valores superiores desplazando el botón a la izquierda del rango hacia la derecha. Ello incluirá en la tabla los registros por encima del rango seleccionado y, si no desmarca la opción “Blank”, también los blancos, como se muestra en la <<img-fig-21,Figura 21>> (en el ejemplo, tres filas en total: un caso con día 32, un caso con día 35 y un caso con día vacío). Si hubiera valores en el campo que no son numéricos, también podría verlos utilizando esta faceta.
+
+[#img-fig-21]
+.Figura 21
+image::img/es.figure-21.jpg[Figura 21,align=center]
 
 Los tres errores encontrados deben ser consultados con la información original de los ejemplares en la colección, y los campos de fecha estrictamente deberían quedar vacíos para estos registros. Una opción es marcar estos registros para revisar más adelante, usando estrellas o banderas (ver sección sobre uso de estrellas y banderas).
 
@@ -104,41 +136,41 @@ Veremos un ejemplo de duplicados en la columna [source]`"catalogNumber"`. Para e
 "Facetas > Facetas personalizadas > Faceta por duplicados"
 --
 
-Verá entonces una ventana con la faceta, como se muestra en la <<img-fig-21,Figura 21>>, donde “true” (“verdadero”) refiere a los valores duplicados.
-
-[#img-fig-21]
-.Figura 21
-image::img/es.figure-21.jpg[Figura 21,align=center]
-
-Si hace click en “true”, la pantalla principal le mostrará los registros que tienen número de catálogo duplicado (<<img-fig-22,Figura 22>>). Observe por ejemplo los siguientes registros:
-
-* el primer y quinto registros tienen el mismo número de catálogo, 5567
-* el tercer registro (y otros más abajo que no son visibles entre los 25 primeros) no tiene número de catálogo (el valor nulo es lo que está duplicado).
-* etc.
+Verá entonces una ventana con la faceta, como se muestra en la <<img-fig-22,Figura 22>>, donde “true” (“verdadero”) refiere a los valores duplicados.
 
 [#img-fig-22]
 .Figura 22
 image::img/es.figure-22.jpg[Figura 22,align=center]
 
-Corrija los números de catálogo. Para hacerlo, edite las celdas individualmente: sobre la celda haga click en el botón “editar”, modifique el valor y haga click en “Aplicar” (<<img-fig-23,Figura 23>>). 
+Si hace click en “true”, la pantalla principal le mostrará los registros que tienen número de catálogo duplicado (<<img-fig-23,Figura 23>>). Observe por ejemplo los siguientes registros:
 
-NOTE: En la práctica la corrección de los números de catálogo sólo debe hacerse una vez que los números y los datos asociados han sido comprobados con las etiquetas de los especímenes.
+* el primer y quinto registros tienen el mismo número de catálogo, 5567
+* el tercer registro (y otros más abajo que no son visibles entre los 25 primeros) no tiene número de catálogo (el valor nulo es lo que está duplicado).
+* etc.
 
 [#img-fig-23]
 .Figura 23
 image::img/es.figure-23.jpg[Figura 23,align=center]
 
-==== Límite en el número de opciones de las Facetas
+Corrija los números de catálogo. Para hacerlo, edite las celdas individualmente: sobre la celda haga click en el botón “editar”, modifique el valor y haga click en “Aplicar” (<<img-fig-24,Figura 24>>). 
 
-En OpenRefine existe un límite para el número de elecciones de faceta que se muestran (“choices”). Muchas veces dicho número está pre-configurado a un valor de 2000. Ello quiere decir que sólo podrá ver 2000 opciones dentro de la faceta de interés.
-
-Por ejemplo, si tiene configurado el valor a 2000 y trata de armar una faceta de texto en el campo [source]`"specificEpithet"`, verá que a la derecha la faceta no muestra los valores esperados sino un mensaje que dice que hay demasiados valores para mostrar (<<img-fig-24,Figura 24a>>).
+NOTE: En la práctica la corrección de los números de catálogo sólo debe hacerse una vez que los números y los datos asociados han sido comprobados con las etiquetas de los especímenes.
 
 [#img-fig-24]
 .Figura 24
 image::img/es.figure-24.jpg[Figura 24,align=center]
 
-Haciendo click en “Fije un límite”, se abrirá otra ventana donde puede cambiar el límite al valor preferido (<<img-fig-24,Figura 24b>>).
+==== Límite en el número de opciones de las Facetas
+
+En OpenRefine existe un límite para el número de elecciones de faceta que se muestran (“choices”). Muchas veces dicho número está pre-configurado a un valor de 2000. Ello quiere decir que sólo podrá ver 2000 opciones dentro de la faceta de interés.
+
+Por ejemplo, si tiene configurado el valor a 2000 y trata de armar una faceta de texto en el campo [source]`"specificEpithet"`, verá que a la derecha la faceta no muestra los valores esperados sino un mensaje que dice que hay demasiados valores para mostrar (<<img-fig-25,Figura 25a>>).
+
+[#img-fig-25]
+.Figura 25
+image::img/es.figure-25.jpg[Figura 25,align=center]
+
+Haciendo click en “Fije un límite”, se abrirá otra ventana donde puede cambiar el límite al valor preferido (<<img-fig-25,Figura 25b>>).
 
 Una vez que haya cambiado el valor límite, y si este valor es lo suficientemente grande, podrá ver todos los valores en la faceta del campo de interés (en el ejemplo anterior, el campo [source]`"specificEpithet"`).
 
@@ -147,8 +179,8 @@ Alternativamente, para modificar en cualquier momento el límite en el número d
 http://127.0.0.1:3333/preferences
 --
 
-El navegador mostrará una ventana con ciertas opciones (<<img-fig-25,Figura 25a>>). Allí, establezca el límite preferido para las facetas editando la clave “ui.browsing.listFacet.limit”. Para ello haga click en “core-index/edit”, y en la ventana que se abre, coloque el nuevo valor límite y oprima “OK” (<<img-fig-25,Figura 25b>>).
+El navegador mostrará una ventana con ciertas opciones (<<img-fig-26,Figura 26a>>). Allí, establezca el límite preferido para las facetas editando la clave “ui.browsing.listFacet.limit”. Para ello haga click en “core-index/edit”, y en la ventana que se abre, coloque el nuevo valor límite y oprima “OK” (<<img-fig-26,Figura 26b>>).
 
-[#img-fig-25]
-.Figura 25
-image::img/es.figure-25.jpg[Figura 25,align=center]
+[#img-fig-26]
+.Figura 26
+image::img/es.figure-26.jpg[Figura 26,align=center]
