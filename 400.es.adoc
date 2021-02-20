@@ -325,7 +325,7 @@ forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)),
 .join("|")
 ----
 
-Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura Json particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la <<img-fig-49,Figura 49>>).
+Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura JSON particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la <<img-fig-49,Figura 49>>).
 
 El nuevo campo tendrá valores como los siguientes, por ejemplo, para un registro cuya consulta devolvió tres resultados:
 [source,notjavascript]
