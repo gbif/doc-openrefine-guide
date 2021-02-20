@@ -17,6 +17,9 @@ OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamen
 http://127.0.0.1:3333
 --
 
+NOTE: Si bien OpenRefine utiliza la interfaz de un navegador para trabajar, todos los procesos (e.g., creación de proyectos, carga de datos, procesamiento, etc.) se realizan localmente, es decir, en su computadora, sin subir datos en línea. Por tanto, para utilizar la mayoría de las funciones del programa no hace falta una conexión a Internet. Algunas funciones, sin embargo, como las <<sect-4,Consultas a servicios externos>>, sí requieren conexión.
+
+
 [#img-fig-02]
 .Figura 2
 image::img/es.figure-02.jpg[Figura 2,align=center]
@@ -62,6 +65,8 @@ image::img/es.figure-05.jpg[Figura 5,align=center]
 === Paso 3
 
 *Cree el proyecto*. Una vez que haya seleccionado las opciones de carga de datos, haga click en el botón “Crear Proyecto” arriba a la derecha.
+
+NOTE: Cuando se cargan datos en OpenRefine y se crea un proyecto, el programa hace una copia de los datos provistos. De esta forma, el archivo local original nunca se modifica, garantizando no perder los datos originales.
 
 ****
 
