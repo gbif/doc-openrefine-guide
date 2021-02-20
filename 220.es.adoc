@@ -128,7 +128,7 @@ NOTE: En la práctica la corrección de los números de catálogo sólo debe hac
 .Figura 23
 image::img/es.figure-23.jpg[Figura 23,align=center]
 
-==== Número de elecciones límite en las Facetas
+==== Límite en el número de opciones de las Facetas
 
 En OpenRefine existe un límite para el número de elecciones de faceta que se muestran (“choices”). Muchas veces dicho número está pre-configurado a un valor de 2000. Ello quiere decir que sólo podrá ver 2000 opciones dentro de la faceta de interés.
 
