@@ -255,7 +255,9 @@ A continuación se listan las columnas que encontrará despues de correr la ruti
 * [source]`"isTerrestial"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon terrestre.
 * [source]`"callAPIworms"`: Respuesta del API a la rutina, contiene todos los resultados en formato JSON.
 
-
+[#img-fig-64]
+.Figura 64
+image::img/es.figure-64.jpg[Figura 64,align=center]
 
 === Validación de elevaciones con el API de GeoNames. 
 
