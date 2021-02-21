@@ -203,7 +203,7 @@ _(con un espacio extra después de la coma)_
 |_null_
 |===
 
-Si optamos por una opción que contiene en los resultados espacios en blanco no deseados, podemos aplicar luego una transformación en las celdas de la columna resultado del tipo "Quitar espacios al inicio y al final" (ver sección §2.2.2).
+Si optamos por una opción que contiene en los resultados espacios en blanco no deseados, podemos aplicar luego una transformación en las celdas de la columna resultado del tipo "Quitar espacios al inicio y al final" (ver (<<#Facetas-y-espacios-en-blanco, sección 2.2.2>>)).
 
 
 *Ruta 2: Concatenación mediante expresiones regulares*
@@ -238,7 +238,7 @@ Lo que dicha expresión significa es: concatenar ([source]`+`) dos partes, cada 
 NOTE: Para evitar de modo más general este problema de celdas nulas, cuando importa el conjunto de datos para crear su proyecto al principio del proceso, puede asegurarse de NO seleccionar la opción “Store blank cells as nulls” (ver <<img-fig-04,Figura 4>>).
 
 La fórmula anterior (Expresión 2) resuelve el problema de tener valores nulos en la concatenación, pero al aplicarla, si alguno de los campos es nulo, el resultado tendrá espacios en blanco extra no deseados. Por ejemplo, si [source]`"genus"` es nulo, el valor resultante en el campo concatenado será " epíteto", con un espacio en blanco antes del epíteto; si [source]`"specificEpithet"` es nulo, el valor resultante será "genus ", con un espacio en blanco después del género; y si ambos son campos son nulos, el valor resultante será " ", un espacio en blanco. 
-Para resolver este problema, se puede: 1) aplicar una transformación en las celdas de la columna resultado del tipo "Quitar espacios al inicio y al final" (ver sección §2.2.2), o 2) incluir en la expresión la quita de espacios al inicio y al final. Siguiendo la segunda opción, la expresión final sería:
+Para resolver este problema, se puede: 1) aplicar una transformación en las celdas de la columna resultado del tipo "Quitar espacios al inicio y al final" (ver (<<#Facetas-y-espacios-en-blanco, sección 2.2.2>>)), o 2) incluir en la expresión la quita de espacios al inicio y al final. Siguiendo la segunda opción, la expresión final sería:
 
 [source,javascript]
 ----
