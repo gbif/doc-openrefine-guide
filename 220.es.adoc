@@ -20,6 +20,7 @@ Corrija los valores “Plante” y “Plants”. Cuando lo haga, habrá corregid
 .Figura 15
 image::img/es.figure-15.jpg[Figura 15,align=center]
 
+[#Facetas-y-espacios-en-blanco]
 ==== Facetas y espacios en blanco
 
 ===== Espacios en blanco extra al principio o al final de una cadena de texto
