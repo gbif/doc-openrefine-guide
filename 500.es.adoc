@@ -22,7 +22,7 @@ image::img/es.figure-57.jpg[Figura 57,align=center]
 
 Las rutinas utilizan como fuentes de validación API’s (Interfaces de Programación de Aplicaciones) de repositorios globales taxonómicos, geográficos o  archivos de texto plano obtenidos como resultado de herramientas de validación externas. 
 
-Encontrará cinco (5) rutinas que cubren diferentes escenarios al momento de realizar la validación, como la caída temporal de servicios web, o requisitos adicionales según la naturaleza de los datos, como por ejemplo el grupo biológico de interés (<<#table-scripts, Tabla 2>>). Se explica a continuación cada una:
+Encontrará cinco (5) rutinas que cubren diferentes escenarios al momento de realizar la validación, como la caída temporal de servicios web, o requisitos adicionales según la naturaleza de los datos, como por ejemplo el grupo biológico de interés (<<#table-scripts, Tabla 4>>). Se explica a continuación cada una:
 
 [#table-scripts]
 .Lista de rutinas para la validación de datos primarios sobre biodiversidad
