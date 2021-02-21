@@ -1,3 +1,4 @@
+[#Banderas-y-estrellas]
 === Marcado de registros: banderas y estrellas
 
 OpenRefine ofrece la opción de marcar los distintos registros con banderas (flags) y/o estrellas (stars). Esta opción es a veces muy útil para reconocer registros o grupos de registros rápidamente. 
