@@ -2,7 +2,7 @@
 
 A partir del uso de servicios o archivos externos (<<sect-4,ver sección 4>>), y la posibilidad que ofrece OpenRefine de guardar y rehacer pasos (<<#guardar-pasos-para-rehacer-luego, ver sección 2.5.2>>) es posible crear rutinas para ejecutar de manera automática varias acciones de validación de calidad. 
 
-Aprovechando las múltiples herramientas de calidad de datos ya existentes en la red de GBIF es posible abordar de manera semi-automatizada a través de OpenRefine los retos y problemas más comúnes de calidad que se presentan a nivel taxonómico y geográfico en un conjunto de datos. Acá se presentan diferentes rutinas que validan la calidad de los datos contrastando un conjunto de datos contra dichos servicios externos y agilizan la obtención de resultados a la vez que aseguran una metodología de validación replicable.
+Aprovechando las múltiples herramientas de calidad de datos ya existentes en la red de GBIF es posible abordar de manera semi-automatizada a través de OpenRefine los retos y problemas más comunes de calidad que se presentan a nivel taxonómico y geográfico en un conjunto de datos. Acá se presentan diferentes rutinas que validan la calidad de los datos contrastando un conjunto de datos contra dichos servicios externos y agilizan la obtención de resultados a la vez que aseguran una metodología de validación replicable.
 
 === ¿Cómo funcionan las rutinas?
 
@@ -22,7 +22,7 @@ image::img/es.figure-57.jpg[Figura 57,align=center]
 
 Las rutinas utilizan como fuentes de validación API’s (Interfaces de Programación de Aplicaciones) de repositorios globales taxonómicos, geográficos o  archivos de texto plano obtenidos como resultado de herramientas de validación externas. 
 
-Enncontrará cinco (5) rutinas que cubren diferentes escenarios al momento de realizar la validación, como la caída temporal de servicios web, o requisitos adicionales según la naturaleza de los datos, como por ejemplo el grupo biológico de interés (<<#table-scripts, Tabla 2>>). Se explica a continuación cada una:
+Encontrará cinco (5) rutinas que cubren diferentes escenarios al momento de realizar la validación, como la caída temporal de servicios web, o requisitos adicionales según la naturaleza de los datos, como por ejemplo el grupo biológico de interés (<<#table-scripts, Tabla 2>>). Se explica a continuación cada una:
 
 [#table-scripts]
 .Lista de rutinas para la validación de datos primarios sobre biodiversidad
@@ -63,7 +63,7 @@ Las cinco rutinas se ejecutan de manera similar, los detalles específicos para 
 
 Cree un proyecto en OpenRefine con el conjunto de datos que desea validar, si tiene dudas sobre cómo hacerlo revise la <<sect-1, sección 1>>. Asegúrese que el conjunto de datos o los elementos que desea validar estén estructurados en el estándar Darwin Core, si no lo están ajuste el nombre de cada columna según el estándar siguiendo las instrucciones de la <<sect-2.1.1, sección 2.1.1>>.
 
-Según la validación que desee realizar asegurese de cumplir los requerimientos de la rutina. Si la rutina lo requiere cargue también en OpenRefine los archivos adicionales de validación (ver <<table-scripts,Tabla 2.>>), de lo contrario vaya directamente al paso 2.
+Según la validación que desee realizar asegúrese de cumplir los requerimientos de la rutina. Si la rutina lo requiere cargue también en OpenRefine los archivos adicionales de validación (ver <<table-scripts,Tabla 2.>>), de lo contrario vaya directamente al paso 2.
 ****
 
 ****
@@ -72,14 +72,14 @@ Según la validación que desee realizar asegurese de cumplir los requerimientos
 
 *Ejecutar la rutina*
 
-Ubiqué en esta guía la rutina de interés según la validación que desee realizar, haga clic en el enlace a la rutina y será redirigido a Github donde encontrará un archivo de texto plano con la rutina, copie el texto de la rutina de validación (<<img-fig-58, Figura 58>>). Asegúrese de seleccionar solo la rutina -sin las intrucciones- y copiar todos  los corchetes iniciales ({) y finales (}).
+Ubiqué en esta guía la rutina de interés según la validación que desee realizar, haga clic en el enlace a la rutina y será redirigido a Github donde encontrará un archivo de texto plano con la rutina, copie el texto de la rutina de validación (<<img-fig-58, Figura 58>>). Asegúrese de seleccionar solo la rutina -sin las instrucciones- y copiar todos  los corchetes iniciales ({) y finales (}).
 
 [#img-fig-58]
 .Figura 58
 image::img/es.figure-58.jpg[Figura 58,align=center]
 
 
-Ubíquese en el conjunto de datos a validar en OpenRefine, diríjase al menú arriba a la izquierda, seleccione la pestaña “Deshacer/Rehacer” y haga clic en el botón “Aplicar...”. A continuación se abrirá una ventana de texto vacía, pegue en el cuadro de texto la rutina a ejecutar y haga click en “Ejecutar Operaciones” (<<img-fig-59,Figura 59>>). Si tiene dudas sobre este proceso revise la <<sect-2.5, sección 2.5>>.
+Ubíquese en el conjunto de datos a validar en OpenRefine, diríjase al menú arriba a la izquierda, seleccione la pestaña “Deshacer/Rehacer” y haga clic en el botón “Aplicar...”. A continuación se abrirá una ventana de texto vacía, pegue en el cuadro de texto la rutina a ejecutar y haga clic en “Ejecutar Operaciones” (<<img-fig-59,Figura 59>>). Si tiene dudas sobre este proceso revise la <<sect-2.5, sección 2.5>>.
 
 [#img-fig-59]
 .Figura 59
@@ -126,13 +126,13 @@ image::img/es.figure-61.jpg[Figura 61,align=center]
 
 A partir de las nuevas columnas de validación (finalizadas en las palabra _Suggested_) seleccione los registros donde el valor original y el valor sugerido son diferentes (identificador de validación = 0) y realice los ajustes que considere necesarios sobre los elementos del estándar Darwin Core. Se recomienda realizar este proceso de limpieza utilizando las funcionalidades de OpenRefine descritas en la (<<#limpieza-de-datos, Sección 2>>) de limpieza de datos. El proceso de validación con las rutinas busca facilitar la identificación de filas y elementos que necesitan ser verificados y limpiados, sin embargo *un identificador de validación con valor cero (0) no necesariamente implica que haya un error en los datos, cada publicador según su conocimiento de los datos y del grupo biológico debe determinar si los datos se deben ajustar y como.*
 
-Por ejemplo de la (<<img-fig-62,Figura 62>>) se muestra una <<#uso-de-facetas, Faceta de texto>> que permite seleccionar las filas cuyo indicador de validación es cero (0) para el elemento de familia y por lo tanto necesita ser verificado. En la primera fila se muestra una inconsistencia entre la familia documentada en el conjunto de datos original y la sugerida por la rutina, mientras en la segunda fila se evidencia un problema de tipeo. *En cada caso deber revisar de manera integral cada fila y decidir que ajuste se debe o no realizar*. 
+Por ejemplo de la (<<img-fig-62,Figura 62>>) se muestra una <<#uso-de-facetas, Faceta de texto>> que permite seleccionar las filas cuyo indicador de validación es cero (0) para el elemento de familia y por lo tanto necesita ser verificado. En la primera fila se muestra una inconsistencia entre la familia documentada en el conjunto de datos original y la sugerida por la rutina, mientras en la segunda fila se evidencia un problema de tipeo. *En cada caso debe revisar de manera integral cada fila y decidir que ajuste se debe o no realizar*. 
 
 [#img-fig-62]
 .Figura 62
 image::img/es.figure-62.jpg[Figura 62,align=center]
 
-Tenga en cuenta que los indentificadores de validación no cambiaran (de 0 a 1) automáticamente así usted haya ajustado los datos originales según las sugerencias de la rutina. Cambielos manualmente cuando realice la limpieza de cada fila indistintamente del ajsute realizado.
+Tenga en cuenta que los identificadores de validación no cambiarán (de 0 a 1) automáticamente así usted haya ajustado los datos originales según las sugerencias de la rutina. Cámbielos manualmente cuando realice la limpieza de cada fila indistintamente del ajuste realizado.
 
 Una vez terminada la validación y limpieza de sus datos, puede eliminar las columnas resultantes de la validación (finalizan en las palabras _Validation_ y _Suggested_) y dejar solo las columnas corregidas de su archivo original.
 
@@ -167,7 +167,7 @@ A continuación se listan las columnas que encontrará después de correr la rut
 * `taxonMatchType`: Indica el resultado del cruce de los datos originales con el árbol taxonómico de GBIF a partir de los elementos [source]`"scientificName"` y [source]`"kingdom"`. Los valores que encontrará en esta columna son:
 
 ** EXACT: La correspondencia entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico es completa.
-** FUZZY: La correspondencia entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico es parcial, el nombre difiere en su escritura. Comunmente indica errores de tipeo o diferencias por correcciones nomenclaturales (ejem: la terminación `i` vs. `ii` cuando la especie se dedica a una persona). 
+** FUZZY: La correspondencia entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico es parcial, el nombre difiere en su escritura. Comúnmente indica errores de tipeo o diferencias por correcciones nomenclaturales (ejem: la terminación `i` vs. `ii` cuando la especie se dedica a una persona). 
 ** HIGHERRANK: La correspondencia entre el nombre científico del conjunto de datos y el árbol taxonómico fue parcial, no se identificó el taxon al nivel taxonomico del [source]`"scientificName"` si no a un nivel superior. Por ejemplo si el [source]`"scientificName"` corresponde a una especie, la correspondencia con el árbol taxonómico de GBIF fue a nivel de género. Esto sucede porque el taxon aún no está en el árbol taxonómico de GBIF o por errores de tipeo mayores.
 ** NONE y BLANK: La correspondencia entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico fue *nula* o *hubo varias coincidencias* con muy poca información para determinar un resultado, esto sucede comunmente cuando hay homónimos o si el taxon aún no se encuentra en el árbol taxonómico de GBIF como es el caso de especies descritas recientemente o endémicas para las cuales se posee muy poca información.
 
@@ -238,25 +238,22 @@ En las primeras columnas del proyecto encontrará de manera intercalada una colu
 
 A continuación se listan las columnas que encontrará despues de correr la rutina adicionales a las ya mencionadas en las rutinas previas de validación taxonómica(<<img-fig-64,Figura 64>>):
 
-* [source]`"matchType"`:
+* [source]`"matchType"`: Indica el resultado del cruce de los datos originales con el árbol taxonómico de WORMS a partir del elemento [source]`"scientificName"`. Los valores que encontrará en esta columna son:
 
-** `"exact"`:
-** `"phonetic"`:
-** `"near_1"`:
-** `"near_2"`:
-** `"near_3"`:
-** `"match_quarantine"`:
-** `"match_deleted"`:
+** `"exact"`: La correspondencia entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico es completa.
+** `"phonetic"`: La correspondencia entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico es completa a nivel fonético a pesar de algunas diferencias menores en la escritura.
+** `"near_1"`: Hay una diferencia de un carácter entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico. Es una correspondencia bastante confiable.
+** `"near_2"`: Hay una diferencia de dos caracteres entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico. Se sugiere una revisión del nombre.
+** `"near_3"`: Hay una diferencia de tres caracteres entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico. Se requiere una revisión del nombre.
+** Para otras posibilidades poco frecuentes como`"match_quarantine"` y`"match_deleted"`, WoRMS recomienda contactarlos directamente.
 
 * [source]`"scientificNameID"`: Identificador del taxón contruido a partir del AphiaID en el árbol  taxonómico de WoRMS. 
-* [source]`"nameAccordingTo`:
-* [source]`"nameAccordingToID`:
+* [source]`"nameAccordingTo`: La referencia bibliográfica del nombre científico según WoRMS
+* [source]`"nameAccordingToID`: Identificador de la referencia bibliográfica del nombre científico según WoRMS.
 * [source]`"isMarine"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon marino.
 * [source]`"isBrackish"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas salobres. 
 * [source]`"isFreshwater"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas continentales. i.e. taxones asociados a ríos o lagos.
 * [source]`"isTerrestial"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon terrestre.
-Examples: false
-*/boorar NomAPIw
 * [source]`"callAPIworms"`: Respuesta del API a la rutina, contiene todos los resultados en formato JSON.
 
 [#img-fig-64]
@@ -266,23 +263,23 @@ image::img/es.figure-64.jpg[Figura 64,align=center]
 === Validación de elevaciones con el API de GeoNames. 
 
 *Enlace a la rutina:*
+
 https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt
 
 *Requerimientos:*
 
 * El conjunto de datos a validar debe tener como mínimo los elemento DwC [source]`"decimalLatitude"` y [source]`"decimalLongitude"` documentados adecuadamente.
 
-* Tener una cuenta activa en GeoNames, si no tiene una link:http://www.geonames.org/login[creela] antes de correr la rutina.
+* Tener una cuenta activa en GeoNames, si no tiene una link:http://www.geonames.org/login[regístrese aquí] antes de correr la rutina.
 
 
 *Funcionamiento:*
 
-WARNING: Antes de ejecutar la rutina remplace la palabra _demo_  en la expresión `_username=demo_` por el nombre de usuario de su cuenta de GeoNames, por ejemplo `_username=rartizgt_`. Si ejecuta la rutina sin hacer este cambio utilizará la opción de prueba (`demo`) incorporada por defecto en la rutina, la cual tiene un límite de 20.000 consultas *diarias mundiales*, por lo que puede que el servicio esté agotado y no obtenga resultados.
+WARNING: Antes de ejecutar la rutina remplace la palabra _demo_  en la expresión `_username=demo_` por su nombre de usuario en GeoNames, por ejemplo `_username=rartizgt_`. Si ejecuta la rutina sin hacer este cambio utilizará la opción de prueba (`demo`) incorporada por defecto en la rutina, la cual tiene un límite de 20.000 consultas *diarias mundiales*, por lo que puede que el servicio esté agotado y no obtenga resultados.
 
-La rutina captura la elevación a partir de las coordenadas decimales documentadas en los elementos [source]`"decimalLatitude"` y [source]`"decimalLongitude"` del archivo base, a través de una consulta a los Servicios Web de link:http://www.geonames.org/export/web-services.html[GeoNames]. Esta rutina utiliza el modelo de elevación SRTM-1 (`"srtm1"`), que cuenta con una resolución aproximada de 30 metros. Sin embargo, el usuario puede usar otro de los modelos de elevación disponibles:
+La rutina captura la elevación a partir de las coordenadas decimales documentadas en los elementos [source]`"decimalLatitude"` y [source]`"decimalLongitude"` del archivo base, a través de una consulta a los servicios de link:http://www.geonames.org/export/web-services.html[GeoNames]. La rutina se ejecuta sobre valores únicos de pares de coordenadas para evitar superar el límite de consultas diarias por usuario. 
 
-
-Modelos de elevación disponibles en link:http://www.geonames.org/export/web-services.html[GeoNames]:
+La rutina utiliza por defecto el modelo de elevación SRTM-1 (`"srtm1"`), que cuenta con una resolución aproximada de 30 metros. Sin embargo, el usuario puede usar otro de los link:http://www.geonames.org/export/web-services.html[modelos de elevación disponibles]:
 
 * SRTM3 (`"srtm3"`): Datos de elevación de la _Shuttle Radar Topography Mission (SRTM)_, con resolución aproximada de 90 x 90 metros.
 
@@ -290,35 +287,33 @@ Modelos de elevación disponibles en link:http://www.geonames.org/export/web-ser
 
 * GTOPO30 (`"gtopo30"`): Modelo de elevación global con resolución aproximada de 30 arcos por segundo, equivalente a una grilla de 1 km x 1 km.
 
-Para cambiar la fuente del modelo de elevación remplace en la rutina el valor `srtm1`  en la expresión `http://api.geonames.org/srtm1'` por el valor que corresponda al servicio que desea utilizar `srtm3`, `astergdem` o `gtopo30`.
+Para cambiar el modelo de elevación reemplace en la rutina el valor `srtm1`  en la expresión `http://api.geonames.org/srtm1'` por el valor que corresponda al servicio que desea utilizar `srtm3`, `astergdem` o `gtopo30`.
 
 *Resultados:*
 
-En las primeras columnas del proyecto encontrará las columnas con los datos de elevación reorganizadas junto con nuevas columnas resultantes de la rutina. Encontrará las cde manera intercalada las columnas originales, un valor sugerido de acuerdo al servicio de elevación y dos indicadores de validación (<<img-fig-63,Figura 63>>). El primer indicador contrasta la elevación obtenida con el servicio y el elemento [source]`"minimumElevationInMeters"` y debe ser interpretado así: 
+En las primeras columnas del proyecto encontrará las columnas con los datos de elevación reorganizadas junto con nuevas columnas resultantes de la rutina. Encontrará las de manera intercalada las columnas originales, un valor sugerido de acuerdo al servicio de elevación y dos indicadores de validación (<<img-fig-65,Figura 65>>). El primer indicador contrasta la elevación obtenida con el servicio y el elemento [source]`"minimumElevationInMeters"` y debe ser interpretado así: 
 
-* 1: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es menor a 100 msnm
-* 0: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es mayor a 100 msnm
+* *1*: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es menor a 100 msnm
+* *0*: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es mayor a 100 msnm
 * blank: No hay elevación mínima documentada.
 
 El segundo indicador contrasta la elevación obtenida con el servicio contra el rango de elevación indicado por los elementos [source]`"minimumElevationInMeters"` y [source]`"maximumElevationInMeters"` y debe ser interpretado así: 
 
-* 1: El rango de elevaciones contiene la elevación sugerida
-* 0: El rango de elevaciones NO contiene la elevación sugerida
+* *1*: El rango de elevaciones contiene la elevación sugerida.
+* *0*: El rango de elevaciones NO contiene la elevación sugerida.
 
 
-[#img-fig-63]
-.Figura 63
-image::img/es.figure-63.jpg[Figura 63,align=center]
+[#img-fig-65]
+.Figura 65
+image::img/es.figure-65.jpg[Figura 65,align=center]
 
-
-WARNING: La rutina se ejecuta sobre valores únicos de pares de coordenadas y se completa para los registros con la misma ubicación, no se realiza la consulta sobre el total de los registros ya que puede superar el límite de consultas por usuario al día.
 
 IMPORTANT: Si las coordenas se encuentran sobre plataforma marina, puede que reciba como resultado valores negativos (ej. -1, -3), o valores como: "/home/data/srtm1/N02/N02W080.zip" o "No data".
 
 
 === Transformación de fechas con el API de Canadensys
 
-Esta rutina recopila los pasos de la sección <<sect-4.1.3>> y automatiza su ejecución para el mismo procedimiento.
+Esta rutina recopila los pasos de la <<#limpieza-de-fechas-utilizando-canadensys-date-parsing, sección 4.3>> y automatiza su ejecución para el mismo procedimiento.
 
 *Enlace a la rutina:*
 
@@ -330,25 +325,30 @@ https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/DateTransfo
 
 *Funcionamiento:*
 
-A partir de la fecha documentada en el archivo base en el elemento [source]`"eventDate"` se realiza una consulta al API de Canandensys que retorna las fechas transformadas al estándar ISO 8601. A diferencia de las rutinas anteriores el objetivo de esta rutina es transformar las fechas, no validarlas, por ello no genera los identificadores de validación como en las demás rutinas.
+A partir de la fecha documentada en el archivo base en el elemento [source]`"eventDate"` se realiza una consulta al API de Canandensys que retorna las fechas transformadas al estándar ISO 8601. A diferencia de las rutinas anteriores el objetivo de esta rutina es transformar las fechas, por ello no retornará identificadores de validación.
 
 *Resultados*
 
 En las primeras columnas del proyecto encontrará las columnas con los datos temporales reorganizadas junto con nuevas columnas resultantes de la rutina. 
 
-Los elementos resultantes de la ejecución de la rutina, serán agregados al inicio del conjunto de datos con los nombres:
+A continuación se listan las columnas que encontrará después de correr la rutina:
 
-* [source]`"eventDateSuggested"`: Fecha transformada al estander ISO 8601.
-* [source]`"yearSuggested"`: Año extraído a partir de la transformación de la fecha.
-* [source]`"monthSuggested"`: Mes extraído a partir de la transformación de la fecha.
-* [source]`"daySuggested"`: Día extraído a partir de la transformación de la fecha.
-* [source]`"verbatimEventDateSuggested"`: Fecha en el formato original, no se asigna directamente al elemento DwC [source]`"verbatimEventDate"` para evitar conflictos.
+* `"eventDateSuggested"`: Fecha transformada al estándar ISO 8601.
+* `"yearSuggested"`: Año extraído a partir de la transformación de la fecha.
+* `"monthSuggested"`: Mes extraído a partir de la transformación de la fecha.
+* `"daySuggested"`: Día extraído a partir de la transformación de la fecha.
+* `"verbatimEventDateSuggested"`: Fecha en el formato original.
 
-Para no generar conflicto con elementos ya existentes en el conjunto de datos todas las columnas generadas por la rutina se marcan como sugeridas o _Suggested_ (<<img-fig-65,Figura 65>>). Si algún registro no tiene datos de fecha, los elementos resultantes apareceran vacios.
+Para no generar conflicto con elementos ya existentes en el conjunto de datos, todas las columnas generadas por la rutina se marcan como sugeridas o _Suggested_ (<<img-fig-66,Figura 66>>). Si algún registro no tiene datos de fecha, los elementos resultantes apareceran vacios.
 
-[#img-fig-65]
-.Figura 65
-image::img/es.figure-65.jpg[Figura 65,align=center]
+[#img-fig-66]
+.Figura 66
+image::img/es.figure-66.jpg[Figura 66,align=center]
 
 
 IMPORTANT: Los formatos de fechas que son ambiguos, es decir donde no se diferencia con claridad el mes, el día o el año, no son transformados. Revise las celdas donde el resultado haya sido nulo o vacío y realice los ajustes necesarios de forma manual.
+
+
+
+
+
