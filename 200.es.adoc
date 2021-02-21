@@ -90,7 +90,7 @@ Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>), donde puede seleccionar
 El primer recuadro a la derecha le permite seleccionar qué separador utilizar entre los contenido de cada columna. Por ejemplo, puede utilizar un espacio " ". 
 Luego debe especificar qué hacer con los registros donde alguno de los campos a unir tiene valores nulos (por ejemplo, [source]`"genus"` tiene un valor pero [source]`"specificEpithet"` es nulo, o viceversa). Si elige la opción "Replace nulls with..." ("Reemplazar nulos con…"), puede especificar con qué reemplazar esos valores nulos (por ejemplo, algún caracter), o dejar ese recuadro vacío. Si, en cambio, escoge "Skip nulls" ("Saltear nulos"), para todos aquellos registros que tuvieran uno de los dos campos nulos no se llevará a cabo la unión.
 
-IMPORTANT: Nota: Al escoger reemplazar los valores nulos y dejar el cuadro vacío (es decir, reemplazar por un caracter nulo), aún se hará la unión utilizando el separador indicado. Si el primer campo a unir tiene un valor no nulo y el segundo un valor nulo, el resultado será el valor del primer campo más el separador. Si el primer campo a unir tiene un valor nulo y el segundo un valor no nulo, el resultado será sólo el valor del segundo campo (sin separador). Para un ejemplo práctico, ver tabla más abajo.
+IMPORTANT: Nota: Al escoger reemplazar los valores nulos y dejar el cuadro vacío (es decir, reemplazar por un caracter nulo), aún se hará la unión utilizando el separador indicado. Si el primer campo a unir tiene un valor no nulo y el segundo un valor nulo, el resultado será el valor del primer campo más el separador. Si el primer campo a unir tiene un valor nulo y el segundo un valor no nulo, el resultado será sólo el valor del segundo campo (sin separador). Para un ejemplo práctico, ver <<#table-join, Tabla 1>> más abajo.
 
 Luego debe indicar si quiere los resultados sobre la misma columna sobre la que está actuando o en una columna nueva, y en ese caso, proveer un nombre para el nuevo campo. Puede llamar al nuevo campo "joint_scientificName", para indicar que se trata de la unión (note que ya hay un campo [source]`"scientificName"` en los datos). Siempre es recomendable crear un nuevo campo, y en todo caso eliminar los campos innecesarios luego.
 
@@ -100,7 +100,10 @@ Por último, tiene la opción de eliminar las columnas que dieron origen a la un
 .Figura 11
 image::img/es.figure-11.jpg[Figura 11,align=center]
 
-Los resultados esperados de acuerdo a distintos parámetros escogidos se resumen en la siguiente tabla:
+Los resultados esperados de acuerdo a distintos parámetros escogidos se resumen en la siguiente tabla (<<#table-join, Tabla 1>>):
+
+[#table-join]
+Tabla 1. Ejemplos de unión de dos columnas (“genus” y “specificEpithet”) en otra (“joint_scientificName), utilizando distintos separadores y tratamientos de nulos.
 
 [cols=5,options="header"]
 |===
@@ -247,7 +250,10 @@ Trim(if(isBlank(cells["genus"].value), "", cells["genus"].value) + " " + if(isBl
 _(Expresión 3)_
 donde se ha aplicado la función "Trim", que quita espacios en blanco no deseados al inicio y al final del valor de las celdas.
 
-Los resultados esperados utilizando cada una de las tres fórmulas se resumen en la siguiente tabla:
+Los resultados esperados utilizando cada una de las tres fórmulas se resumen en la siguiente tabla (<<#table-concat, Tabla 2>>):
+
+[#table-concat]
+Tabla 2. Ejemplos de concatenación de dos columnas (“genus” y “specificEpithet”) en otra (“concat_scientificName), utilizando distintos distintas expresiones (ver texto más arriba).
 
 [cols=4,options="header"]
 |===
