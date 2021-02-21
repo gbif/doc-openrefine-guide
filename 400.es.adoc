@@ -20,17 +20,17 @@ Para acortar el tiempo de consulta, cree una faceta para el campo [source]`"genu
 
 Para comparar los nombres contra el GNR, haremos un llamado al servicio y capturaremos los resultados en un nuevo campo:
 
-A partir del campo [source]`"scientificName"`, cree una nueva columna a partir de una dirección URL haciendo click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo[] y siguiendo la siguiente ruta (<<img-fig-45,Figura 45>>):
+A partir del campo [source]`"scientificName"`, cree una nueva columna a partir de una dirección URL haciendo click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo[] y siguiendo la siguiente ruta (<<img-fig-47,Figura 47>>):
 
 --
 "Editar columnas > Agregar columna accediendo a URLs…"
 --
 
-[#img-fig-45]
-.Figura 45
-image::img/es.figure-45.jpg[Figura 45,align=center]
+[#img-fig-47]
+.Figura 47
+image::img/es.figure-47.jpg[Figura 47,align=center]
 
-Se abrirá una ventana como la mostrada en la <<img-fig-46,Figura 46>>. Allí, dé un nombre al nuevo campo (por ejemplo, GNR_Json_sciName), y en el cuadro de texto coloque la siguiente expresión:
+Se abrirá una ventana como la mostrada en la <<img-fig-48,Figura 48>>. Allí, dé un nombre al nuevo campo (por ejemplo, GNR_Json_sciName), y en el cuadro de texto coloque la siguiente expresión:
 
 [source,javascript]
 ----
@@ -40,9 +40,9 @@ Se abrirá una ventana como la mostrada en la <<img-fig-46,Figura 46>>. Allí, d
 
 Dicha expresión indica que se hará una consulta en el GNR utilizando como valores de comparación aquellos que se encuentran en el campo [source]`"scientificName"`. Es importante que el nombre del campo que utiliza en la expresión sea idéntico al nombre del campo del cual tomará los valores originales, o de otro modo el llamado será infructuoso.
 
-[#img-fig-46]
-.Figura 46
-image::img/es.figure-46.jpg[Figura 46,align=center]
+[#img-fig-48]
+.Figura 48
+image::img/es.figure-48.jpg[Figura 48,align=center]
 
 Note que en esta ventana, arriba a la derecha, tiene una opción para modificar el “Tiempo de retraso”. Este valor indica el tiempo que transcurre entre llamados o consultas sucesivas que se hacen al servicio en cuestión. Por defecto, el valor es de 5000 milisegundos. Puede reducir este tiempo para acelerar el proceso de comparación. Tenga en cuenta, sin embargo, que muchos servicios bloquean los llamados si éstos ocurren muy cercanos en el tiempo, pues consideran que puede tratarse de un ataque. El máximo número de consultas que se pueden realizar por unidad de tiempo depende de cada servicio en particular. 
 
@@ -65,7 +65,7 @@ Dado que GNR consulta varias fuentes de nombres taxonómicos, nos interesa saber
 
 Para ello, a partir del campo en JSON (en el ejemplo, GNR_Json_sciName), cree un nuevo campo (haga click en "la &#9660; azul >  Editar columnas > Agregar columna basada en esta columna").
 
-Dé un nombre al nuevo campo (por ejemplo, GNR_sciName_options) y en el cuadro de texto, coloque la siguiente expresión (<<img-fig-47,Figura 47>>): 
+Dé un nombre al nuevo campo (por ejemplo, GNR_sciName_options) y en el cuadro de texto, coloque la siguiente expresión (<<img-fig-49,Figura 49>>): 
 
 [source,javascript]
 ----
@@ -78,9 +78,9 @@ forEach(value.parseJson().get("data")[0].get("results"), v,
 
 Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estructura secciones “data” y dentro de esta “results” –un “result” proveniente de cada fuente consultada (por ejemplo, un “result” de Catalogue of Life). Dentro de cada sección “results” extrae los valores de interés (“data_source_title”, “name_string” y “current_name_string”) y los separa con un “;”. Como no todas las fuentes proveen un nombre aceptado (“current_name_string”), la expresión [source]`if` especifica que si ese parámetro es nulo debe dejarse el espacio vacío ([source]``""``), y si no, colocar el valor extraído. Por último, une los grupos de valores extraídos en una única cadena de texto, separados por un [source]`` | ``.
 
-[#img-fig-47]
-.Figura 47
-image::img/es.figure-47.jpg[Figura 47,align=center]
+[#img-fig-49]
+.Figura 49
+image::img/es.figure-49.jpg[Figura 49,align=center]
 
 Una vez que haya creado el campo, verá que contiene, aún en formato JSON, los valores de interés extraídos de GNR. Por ejemplo:
 
@@ -146,7 +146,7 @@ En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta 
 
 Llevaremos a cabo la georreferenciación a partir del campo [source]`"locality"`. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en "la &#9660; azul > Editar columnas > Agregar columna accediendo a URLs…".
 
-Se abrirá una nueva ventana (<<img-fig-48,Figura 48>>). Allí dé un nombre al nuevo campo, por ejemplo “GeoLocate_Json_georref”, y pegue en el cuadro de texto la siguiente expresión:
+Se abrirá una nueva ventana (<<img-fig-50,Figura 50>>). Allí dé un nombre al nuevo campo, por ejemplo “GeoLocate_Json_georref”, y pegue en el cuadro de texto la siguiente expresión:
 
 [source,javascript]
 ----
@@ -156,9 +156,9 @@ Se abrirá una nueva ventana (<<img-fig-48,Figura 48>>). Allí dé un nombre al 
 
 En esta expresión, `fmt` indica el formato en el que el resultado será devuelto por el servicio. GeoLocate ofrece dos posibles formatos, JSON y GeoJSON.
 
-[#img-fig-48]
-.Figura 48
-image::img/es.figure-48.jpg[Figura 48,align=center]
+[#img-fig-50]
+.Figura 50
+image::img/es.figure-50.jpg[Figura 50,align=center]
 
 Una vez que haya creado el nuevo campo con la expresión general, verá que contiene, en formato JSON, los resultados de la consulta en GeoLocate para cada localidad, con todos los parámetros y valores que este servicio reporta.
 
@@ -286,12 +286,12 @@ Note que los tres resultados del ejemplo corresponden a provincias distintas en 
 [NOTE]
 .Visualizando JSON
 --
-Para visualizar la estructura de los resultados en JSON de modo más amigable, puede probar copiando el resultado de alguna celda en un analizador de JSON en línea. Existen muchas opciones, una de ellas es http://json.parser.online.fr/. Allí, seleccionando distintas opciones arriba a la derecha podrá distinguir mejor la estructura, cuáles son los objetos, los arreglos y las cadenas de texto y cómo están relacionados unos con otros (<<img-fig-49,Figura 49>>). Esto puede ser muy útil a la hora de armar expresiones para desglosar el contenido de los campos en nuevos campos sin perder información.
+Para visualizar la estructura de los resultados en JSON de modo más amigable, puede probar copiando el resultado de alguna celda en un analizador de JSON en línea. Existen muchas opciones, una de ellas es http://json.parser.online.fr/. Allí, seleccionando distintas opciones arriba a la derecha podrá distinguir mejor la estructura, cuáles son los objetos, los arreglos y las cadenas de texto y cómo están relacionados unos con otros (<<img-fig-51,Figura 51>>). Esto puede ser muy útil a la hora de armar expresiones para desglosar el contenido de los campos en nuevos campos sin perder información.
 --
 
-[#img-fig-49]
-.Figura 49
-image::img/es.figure-49.jpg[Figura 49,align=center]
+[#img-fig-51]
+.Figura 51
+image::img/es.figure-51.jpg[Figura 51,align=center]
 
 NOTE: La expresión utilizada es muy simple y sólo le pide al servicio que resuelva la georreferenciación en base al campo localidad y teniendo como valor fijo “Argentina” para el campo país, pero sin especificar los valores de otros campos geográficos. Sin embargo, todos los campos se pueden incluir en la expresión para obtener resultados más específicos. Ello puede hacerse de dos maneras:
 
@@ -325,7 +325,7 @@ forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)),
 .join("|")
 ----
 
-Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura JSON particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la <<img-fig-49,Figura 49>>).
+Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura JSON particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la <<img-fig-51,Figura 51>>).
 
 El nuevo campo tendrá valores como los siguientes, por ejemplo, para un registro cuya consulta devolvió tres resultados:
 [source,notjavascript]
@@ -444,11 +444,11 @@ Esta herramienta permite interpretar fechas, devolviéndolas en formato estánda
 * 2009 IV 02
 * 2 VII 1986
 
-Algunas fechas, sin embargo no las interpreta, veamos el siguiente ejemplo (<<img-fig-50,Figura 50>>):
+Algunas fechas, sin embargo no las interpreta, veamos el siguiente ejemplo (<<img-fig-52,Figura 52>>):
 
-[#img-fig-50]
-.Figura 50
-image::img/es.figure-50.jpg[Figura 50,align=center]
+[#img-fig-52]
+.Figura 52
+image::img/es.figure-52.jpg[Figura 52,align=center]
  
 En las dos líneas inferiores, “13” sólo puede referir a días, pues no hay un mes “13”.
 
@@ -456,33 +456,33 @@ En las dos líneas superiores, en cambio, “2” y “4” pueden ambos referir
 
 Debe tener esto en cuenta cuando utilice la herramienta para limpiar los datos.
 
-Ahora sí, invocaremos Date Parsing desde OpenRefine. Para ello, primero seleccione algunas fechas mediante una faceta, para reducir el tiempo de consulta. Luego, sobre la columna [source]`"eventDate"` haga click en "la &#9660; azul > Editar columna > Agregar columna accediendo a URLs…" (<<img-fig-51,Figura 51>>). En la ventana que aparece, nombre la nueva columna (por ejemplo “Canadensys_eventDate”) y pegue en el cuadro de texto la siguiente expresión:
+Ahora sí, invocaremos Date Parsing desde OpenRefine. Para ello, primero seleccione algunas fechas mediante una faceta, para reducir el tiempo de consulta. Luego, sobre la columna [source]`"eventDate"` haga click en "la &#9660; azul > Editar columna > Agregar columna accediendo a URLs…" (<<img-fig-53,Figura 53>>). En la ventana que aparece, nombre la nueva columna (por ejemplo “Canadensys_eventDate”) y pegue en el cuadro de texto la siguiente expresión:
 ----
 "http://data.canadensys.net/tools/dates.json?data="+escape(cells["eventDate"].value,"url")
 ----
 Esta expresión le indica a la herramienta que evalúe los valores del campo [source]`"eventDate"` y que devuelva los resultados en formato JSON.
  
-[#img-fig-51]
-.Figura 51
-image::img/es.figure-51.jpg[Figura 51,align=center]
+[#img-fig-53]
+.Figura 53
+image::img/es.figure-53.jpg[Figura 53,align=center]
 
-NOTE: La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… váyase a almorzar, o incluso a dormir y lo revisa al día siguiente… Cuando vuelva, encontrará el nuevo campo con los valores estandarizados! En formato JSON… (<<img-fig-52,Figura 52>>).
+NOTE: La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… váyase a almorzar, o incluso a dormir y lo revisa al día siguiente… Cuando vuelva, encontrará el nuevo campo con los valores estandarizados! En formato JSON… (<<img-fig-54,Figura 54>>).
  
-[#img-fig-52]
-.Figura 52
-image::img/es.figure-52.jpg[Figura 52,align=center]
+[#img-fig-54]
+.Figura 54
+image::img/es.figure-54.jpg[Figura 54,align=center]
 
 Fíjese que en el primer caso de la figura, Canadensys ha podido resolver la fecha, mientras que en el segundo caso no ha podido, dado que no puede interpretar inequívocamente “6” y “4” como día y mes o viceversa (como se explica más arriba).
-Ahora que tiene el resultado en formato JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el resultado en JSON, cree nuevas columnas: "Editar columnas > Agregar columna basada en esta columna" (<<img-fig-53,Figura 53>>).
+Ahora que tiene el resultado en formato JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el resultado en JSON, cree nuevas columnas: "Editar columnas > Agregar columna basada en esta columna" (<<img-fig-55,Figura 55>>).
 
 Para extraer sólo la fecha en formato ISO, en la ventana nombre la nueva columna (por ejemplo, "ISO_eventDate") y en el cuadro de texto pegue la siguiente expresión:
 ----
 forEach(value.parseJson().get("data").get("results"),v,v.get("iso8601"))[0])
 ----
 
-[#img-fig-53]
-.Figura 53
-image::img/es.figure-53.jpg[Figura 53,align=center]
+[#img-fig-55]
+.Figura 55
+image::img/es.figure-55.jpg[Figura 55,align=center]
 
 Para extraer el año, mes o día, pegue en cambio una de las siguientes expresiones:
 
@@ -490,11 +490,11 @@ Para extraer el año, mes o día, pegue en cambio una de las siguientes expresio
 * Mes: [source]`forEach(value.parseJson().get("data").get("results"),v,v.get("month"))[0])`
 * Día: [source]`forEach(value.parseJson().get("data").get("results"),v,v.get("day"))[0])`
 
-Verá que algunos de los resultados serán nulos, éstos corresponden a los casos que Canadensys no ha podido resolver (como se explica más arriba) (<<img-fig-54,Figura 54>>).
+Verá que algunos de los resultados serán nulos, éstos corresponden a los casos que Canadensys no ha podido resolver (como se explica más arriba) (<<img-fig-56,Figura 56>>).
 
-[#img-fig-54]
-.Figura 54
-image::img/es.figure-54.jpg[Figura 54,align=center]
+[#img-fig-56]
+.Figura 56
+image::img/es.figure-56.jpg[Figura 56,align=center]
 
 Para terminar de limpiar las fechas, entonces, tendrá que revisar los valores que no hayan sido estandarizados por la herramienta. Para ello, sobre el campo ISO_eventDate puede armar una faceta y seleccionar el valor “blank”. Luego, arme una faceta sobre el campo [source]`"eventDate"` (el que tenía los valores originales) y si estos son pocos, puede hacer un chequeo manual y completar el campo ISO_eventDate.
 
