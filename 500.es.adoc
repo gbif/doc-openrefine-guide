@@ -25,7 +25,7 @@ Las rutinas utilizan como fuentes de validación API’s (Interfaces de Programa
 Encontrará cinco (5) rutinas que cubren diferentes escenarios al momento de realizar la validación, como la caída temporal de servicios web, o requisitos adicionales según la naturaleza de los datos, como por ejemplo el grupo biológico de interés (<<#table-scripts, Tabla 4>>). Se explica a continuación cada una:
 
 [#table-scripts]
-Tabla 4.Lista de rutinas para la validación de datos primarios sobre biodiversidad
+Tabla 4. Lista de rutinas para la validación de datos primarios sobre biodiversidad
 [cols=3*,options="header"]
 |===
 | Nombre | Uso | Requerimientos 
@@ -61,9 +61,9 @@ Las cinco rutinas se ejecutan de manera similar, los detalles específicos para 
 
 *Carga de los archivos a OpenRefine*
 
-Cree un proyecto en OpenRefine con el conjunto de datos que desea validar, si tiene dudas sobre cómo hacerlo revise la <<sect-1, sección 1>>. Asegúrese que el conjunto de datos o los elementos que desea validar estén estructurados en el estándar Darwin Core, si no lo están ajuste el nombre de cada columna según el estándar siguiendo las instrucciones de la <<sect-2.1.1, sección 2.1.1>>.
+Cree un proyecto en OpenRefine con el conjunto de datos que desea validar, si tiene dudas sobre cómo hacerlo revise la <<#primeros-pasos-datos-y-proyectos, sección 1>>. Asegúrese que el conjunto de datos o los elementos que desea validar estén estructurados en el estándar Darwin Core, si no lo están ajuste el nombre de cada columna según el estándar siguiendo las instrucciones de la <<#renombrar-eliminar-y-mover-columnas, sección 2.1.1>>.
 
-Según la validación que desee realizar asegúrese de cumplir los requerimientos de la rutina. Si la rutina lo requiere cargue también en OpenRefine los archivos adicionales de validación (ver <<table-scripts,Tabla 2.>>), de lo contrario vaya directamente al paso 2.
+Según la validación que desee realizar asegúrese de cumplir los requerimientos de la rutina. Si la rutina lo requiere cargue también en OpenRefine los archivos adicionales de validación (ver <<#table-scripts,Tabla 2.>>), de lo contrario vaya directamente al paso 2.
 ****
 
 ****
