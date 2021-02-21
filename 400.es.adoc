@@ -400,9 +400,11 @@ Por ejemplo, Argentina es UTC-3, o sea, 03horas00minutos al oeste (-) de UTC, po
 
 NOTE: De este formato, uno puede utilizar tanto el formato completo (incluyendo la hora) como sólo la primera parte, AAAA-MM-DD.
 
-NOTE: Este formato también puede utilizarse para expresar rangos de fecha de manera estandarizada. Para ello, se usa el mismo formato y se separan las fechas con barras “/”, ver ejemplos abajo.
+NOTE: Este formato también puede utilizarse para expresar rangos de fecha de manera estandarizada. Para ello, se usa el mismo formato y se separan las fechas con barras “/”, ver ejemplos abajo (<<#table-date-examples, Tabla 3>>).
 
-.Ejemplos
+[#table-date-examples]
+Tabla 3. Ejemplos de formatos de fechas y su versión estandarizada.
+
 [cols=2*,options="header"]
 |===
 | Fecha original 
