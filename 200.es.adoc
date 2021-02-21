@@ -304,6 +304,7 @@ _(con un espacio en blanco)_
 |===
 
 
+[#División-de-columnas]
 ===== Divisiones
 Si desea crear campos separados a partir de los valores en un único campo, siga la siguiente ruta:
 
