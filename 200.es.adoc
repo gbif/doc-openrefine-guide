@@ -103,7 +103,7 @@ image::img/es.figure-11.jpg[Figura 11,align=center]
 Los resultados esperados de acuerdo a distintos parámetros escogidos se resumen en la siguiente tabla (<<#table-join, Tabla 1>>):
 
 [#table-join]
-Tabla 1. Ejemplos de unión de dos columnas (“genus” y “specificEpithet”) en otra (“joint_scientificName), utilizando distintos separadores y tratamientos de nulos.
+. Ejemplos de unión de dos columnas (“genus” y “specificEpithet”) en otra (“joint_scientificName), utilizando distintos separadores y tratamientos de nulos.
 
 [cols=5,options="header"]
 |===
@@ -253,7 +253,7 @@ donde se ha aplicado la función "Trim", que quita espacios en blanco no deseado
 Los resultados esperados utilizando cada una de las tres fórmulas se resumen en la siguiente tabla (<<#table-concat, Tabla 2>>):
 
 [#table-concat]
-Tabla 2. Ejemplos de concatenación de dos columnas (“genus” y “specificEpithet”) en otra (“concat_scientificName), utilizando distintos distintas expresiones (ver texto más arriba).
+. Ejemplos de concatenación de dos columnas (“genus” y “specificEpithet”) en otra (“concat_scientificName), utilizando distintos distintas expresiones (ver texto más arriba).
 
 [cols=4,options="header"]
 |===
