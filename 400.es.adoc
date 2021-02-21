@@ -138,7 +138,7 @@ forEach(value.parseJson().get("data")[0].get("results"), v,
 .join(" | ")
 ----
 
-A partir de los resultados obtenidos, puede extraer los nombres separando la nueva columna en columnas distintas utilizando separadores apropiados (ver sección de separación de columnas).
+A partir de los resultados obtenidos, puede extraer los nombres separando la nueva columna en columnas distintas utilizando separadores apropiados (ver <<#División-de-columnas, División de columnas>> en la sección 2.1.3).
 
 === Georreferenciación usando GeoLocate
 
