@@ -93,7 +93,6 @@ image::img/es.figure-60.jpg[Figura 60,align=center]
 
 Espere a que finalice la ejecución de la rutina. Las rutinas que requieren hacer llamados a servicios externos, dependen de la conexión a internet, estas consultas toman un tiempo en correr que varía según el número de filas del conjunto de datos, de la velocidad de la conexión y de la memoria RAM de su equipo. 
 
-
 ****
 
 ****
