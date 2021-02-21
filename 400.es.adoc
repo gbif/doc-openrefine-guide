@@ -403,7 +403,7 @@ NOTE: De este formato, uno puede utilizar tanto el formato completo (incluyendo 
 NOTE: Este formato también puede utilizarse para expresar rangos de fecha de manera estandarizada. Para ello, se usa el mismo formato y se separan las fechas con barras “/”, ver ejemplos abajo (<<#table-date-examples, Tabla 3>>).
 
 [#table-date-examples]
-. Ejemplos de formatos de fechas y su versión estandarizada.
+Tabla 3. Ejemplos de formatos de fechas y su versión estandarizada.
 
 [cols=2*,options="header"]
 |===
