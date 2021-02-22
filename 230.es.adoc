@@ -8,7 +8,7 @@ Ubique el campo [source]`"specificEpithet"` y cree una faceta de texto (haga cli
 
 [#img-fig-28]
 .Figura 28
-image::img/es.figure-28.jpg[Figura 28,align=center]
+image::img/es.figure-28.jpg[Figura 28,width=227,align=center]
 
 En el cuadro de texto puede escribir el valor sobre el cual desea filtrar.
 
@@ -18,7 +18,7 @@ En el menú de la izquierda, dentro de la faceta se mostrará el valor que usted
 
 [#img-fig-29]
 .Figura 29
-image::img/es.figure-29.jpg[Figura 29,align=center]
+image::img/es.figure-29.jpg[Figura 29,width=638,align=center]
 
 Note que verá dos valores, uno en letras minúsculas y otro en letras mayúsculas. Si sólo desea ver los valores escritos con minúscula, en el filtro debe seleccionar “Distingue mayúsculas y minúsculas”, o puede seleccionar “sp.” directamente sobre la faceta de [source]`"specificEpithet"`.
 
@@ -30,7 +30,7 @@ Abra una faceta de texto y un filtro para el campo [source]`"scientificName"`. E
 
 [#img-fig-30]
 .Figura 30
-image::img/es.figure-30.jpg[Figura 30,align=center]
+image::img/es.figure-30.jpg[Figura 30,width=511,align=center]
 
 Debe corregir esos nombres, sacando “sp.” y dejando solamente el nombre del género. Para no tener que hacerlo uno por uno, puede seguir los siguientes pasos.
 
@@ -38,7 +38,7 @@ Haga click sobre menu:la{sp}&#9660;{sp}azul{sp}en{sp}{scientificName}[Editar cel
 
 [#img-fig-31]
 .Figura 31
-image::img/es.figure-31.jpg[Figura 31,align=center]
+image::img/es.figure-31.jpg[Figura 31,width=236,align=center]
 
 Se abrirá entonces una ventana como la mostrada en la (<<img-fig-32,Figura 32>>). En el cuadro de texto, pegue la siguiente expresión:
 [source,javascript]
@@ -51,7 +51,7 @@ En la <<img-fig-32,Figura 32>> puede observar cómo se vería el resultado del c
 
 [#img-fig-32]
 .Figura 32
-image::img/es.figure-32.jpg[Figura 32,align=center]
+image::img/es.figure-32.jpg[Figura 32,width=464,align=center]
 
 Oprima “Aceptar” para ejecutar la transformación, y verá que en la faceta que ha sido filtrada ya no hay registros que contengan “sp.” como parte del valor en el campo [source]`"scientificName"`.
 
@@ -65,7 +65,7 @@ A modo de ejemplo, buscaremos valores en el campo [source]`"genus"` que comience
 
 [#img-fig-33]
 .Figura 33
-image::img/es.figure-33.jpg[Figura 33,align=center]
+image::img/es.figure-33.jpg[Figura 33,width=516,align=center]
 
 Siguiendo estos pasos, debería poder ver dos valores (<<img-fig-33,Figura 33b>>). Corrija estos valores filtrados, dado que el género debe comenzar con mayúscula.
 

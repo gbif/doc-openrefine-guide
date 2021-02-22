@@ -25,7 +25,7 @@ Para marcar todos esos registros con una bandera, haga click en menu:la{sp}&#966
 
 [#img-fig-40]
 .Figura 40
-image::img/es.figure-40.jpg[Figura 40,align=center]
+image::img/es.figure-40.jpg[Figura 40,width=260,align=center]
 
 Una vez que lo haya hecho, verá que todos los registros seleccionados están marcados ahora con una bandera.
 
@@ -56,7 +56,7 @@ Al oprimir “Aceptar” su campo se habrá creado. Verifique los valores que to
 
 [#img-fig-41]
 .Figura 41
-image::img/es.figure-41.jpg[Figura 41,align=center]
+image::img/es.figure-41.jpg[Figura 41,width=548,align=center]
 
 Puede repetir el proceso creando otro campo para las estrellas, usando la expresión:
 [source,javascript]
@@ -76,7 +76,7 @@ Las banderas y estrellas se pueden utilizar para eliminar grupos de registros. P
 
 [#img-fig-42]
 .Figura 42
-image::img/es.figure-42.jpg[Figura 42,align=center]
+image::img/es.figure-42.jpg[Figura 42,width=777,align=center]
 
 De esta forma habrá eliminado todos los registros que fueron marcados con una bandera.
 

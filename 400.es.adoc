@@ -28,7 +28,7 @@ A partir del campo [source]`"scientificName"`, cree una nueva columna a partir d
 
 [#img-fig-47]
 .Figura 47
-image::img/es.figure-47.jpg[Figura 47,align=center]
+image::img/es.figure-47.jpg[Figura 47,width=375,align=center]
 
 Se abrirá una ventana como la mostrada en la <<img-fig-48,Figura 48>>. Allí, dé un nombre al nuevo campo (por ejemplo, GNR_Json_sciName), y en el cuadro de texto coloque la siguiente expresión:
 
@@ -42,7 +42,7 @@ Dicha expresión indica que se hará una consulta en el GNR utilizando como valo
 
 [#img-fig-48]
 .Figura 48
-image::img/es.figure-48.jpg[Figura 48,align=center]
+image::img/es.figure-48.jpg[Figura 48,width=549,align=center]
 
 Note que en esta ventana, arriba a la derecha, tiene una opción para modificar el “Tiempo de retraso”. Este valor indica el tiempo que transcurre entre llamados o consultas sucesivas que se hacen al servicio en cuestión. Por defecto, el valor es de 5000 milisegundos. Puede reducir este tiempo para acelerar el proceso de comparación. Tenga en cuenta, sin embargo, que muchos servicios bloquean los llamados si éstos ocurren muy cercanos en el tiempo, pues consideran que puede tratarse de un ataque. El máximo número de consultas que se pueden realizar por unidad de tiempo depende de cada servicio en particular. 
 
@@ -80,7 +80,7 @@ Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estru
 
 [#img-fig-49]
 .Figura 49
-image::img/es.figure-49.jpg[Figura 49,align=center]
+image::img/es.figure-49.jpg[Figura 49,width=548,align=center]
 
 Una vez que haya creado el campo, verá que contiene, aún en formato JSON, los valores de interés extraídos de GNR. Por ejemplo:
 
@@ -158,7 +158,7 @@ En esta expresión, `fmt` indica el formato en el que el resultado será devuelt
 
 [#img-fig-50]
 .Figura 50
-image::img/es.figure-50.jpg[Figura 50,align=center]
+image::img/es.figure-50.jpg[Figura 50,width=548,align=center]
 
 Una vez que haya creado el nuevo campo con la expresión general, verá que contiene, en formato JSON, los resultados de la consulta en GeoLocate para cada localidad, con todos los parámetros y valores que este servicio reporta.
 
@@ -291,7 +291,7 @@ Para visualizar la estructura de los resultados en JSON de modo más amigable, p
 
 [#img-fig-51]
 .Figura 51
-image::img/es.figure-51.jpg[Figura 51,align=center]
+image::img/es.figure-51.jpg[Figura 51,width=683,align=center]
 
 NOTE: La expresión utilizada es muy simple y sólo le pide al servicio que resuelva la georreferenciación en base al campo localidad y teniendo como valor fijo “Argentina” para el campo país, pero sin especificar los valores de otros campos geográficos. Sin embargo, todos los campos se pueden incluir en la expresión para obtener resultados más específicos. Ello puede hacerse de dos maneras:
 
@@ -450,7 +450,7 @@ Algunas fechas, sin embargo no las interpreta, veamos el siguiente ejemplo (<<im
 
 [#img-fig-52]
 .Figura 52
-image::img/es.figure-52.jpg[Figura 52,align=center]
+image::img/es.figure-52.jpg[Figura 52,width=685,align=center]
  
 En las dos líneas inferiores, “13” sólo puede referir a días, pues no hay un mes “13”.
 
@@ -466,13 +466,13 @@ Esta expresión le indica a la herramienta que evalúe los valores del campo [so
  
 [#img-fig-53]
 .Figura 53
-image::img/es.figure-53.jpg[Figura 53,align=center]
+image::img/es.figure-53.jpg[Figura 53,width=547,align=center]
 
 NOTE: La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… váyase a almorzar, o incluso a dormir y lo revisa al día siguiente… Cuando vuelva, encontrará el nuevo campo con los valores estandarizados! En formato JSON… (<<img-fig-54,Figura 54>>).
  
 [#img-fig-54]
 .Figura 54
-image::img/es.figure-54.jpg[Figura 54,align=center]
+image::img/es.figure-54.jpg[Figura 54,width=520,align=center]
 
 Fíjese que en el primer caso de la figura, Canadensys ha podido resolver la fecha, mientras que en el segundo caso no ha podido, dado que no puede interpretar inequívocamente “6” y “4” como día y mes o viceversa (como se explica más arriba).
 Ahora que tiene el resultado en formato JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el resultado en JSON, cree nuevas columnas: "Editar columnas > Agregar columna basada en esta columna" (<<img-fig-55,Figura 55>>).
@@ -484,7 +484,7 @@ forEach(value.parseJson().get("data").get("results"),v,v.get("iso8601"))[0])
 
 [#img-fig-55]
 .Figura 55
-image::img/es.figure-55.jpg[Figura 55,align=center]
+image::img/es.figure-55.jpg[Figura 55,width=547,align=center]
 
 Para extraer el año, mes o día, pegue en cambio una de las siguientes expresiones:
 
@@ -496,7 +496,7 @@ Verá que algunos de los resultados serán nulos, éstos corresponden a los caso
 
 [#img-fig-56]
 .Figura 56
-image::img/es.figure-56.jpg[Figura 56,align=center]
+image::img/es.figure-56.jpg[Figura 56,width=607,align=center]
 
 Para terminar de limpiar las fechas, entonces, tendrá que revisar los valores que no hayan sido estandarizados por la herramienta. Para ello, sobre el campo ISO_eventDate puede armar una faceta y seleccionar el valor “blank”. Luego, arme una faceta sobre el campo [source]`"eventDate"` (el que tenía los valores originales) y si estos son pocos, puede hacer un chequeo manual y completar el campo ISO_eventDate.
 

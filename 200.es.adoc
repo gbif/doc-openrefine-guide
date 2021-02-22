@@ -30,7 +30,7 @@ Estas tres opciones pueden verse en la <<img-fig-08,Figura 8>>.
 +
 [#img-fig-08]
 .Figura 8
-image::img/es.figure-08.jpg[Figura 8,align=center]
+image::img/es.figure-08.jpg[Figura 8,width=375,align=center]
 
 4. *Reordenar o eliminar varios campos a la vez.*
 +
@@ -42,7 +42,7 @@ Se abrirá entonces una ventana como la que se muestra en la <<img-fig-09,Figura
 +
 [#img-fig-09]
 .Figura 9
-image::img/es.figure-09.jpg[Figura 9,align=center]
+image::img/es.figure-09.jpg[Figura 9,width=911,align=center]
 
 En OpenRefine se considera que cualquiera de los cuatro cambios descriptos anteriormente son cambios a los datos, y por ende se registran como tales en el historial de cambios (ver más abajo sección <<sect-2.5,Deshacer y rehacer cambios>>).
 
@@ -64,7 +64,7 @@ Luego, en el cuadro de texto “Expresión” escriba: [source]`null`. Ello quie
 
 [#img-fig-10]
 .Figura 10
-image::img/es.figure-10.jpg[Figura 10,align=center]
+image::img/es.figure-10.jpg[Figura 10,width=548,align=center]
 
 El nuevo campo, con el nombre que le haya dado, aparecerá a la derecha de aquel a partir del cual fue generado.
 
@@ -98,7 +98,7 @@ Por último, tiene la opción de eliminar las columnas que dieron origen a la un
 
 [#img-fig-11]
 .Figura 11
-image::img/es.figure-11.jpg[Figura 11,align=center]
+image::img/es.figure-11.jpg[Figura 11,width=689,align=center]
 
 Los resultados esperados de acuerdo a distintos parámetros escogidos se resumen en la siguiente tabla (<<#table-join, Tabla 1>>):
 
@@ -224,7 +224,7 @@ La expresión ejemplo concatena (`+`) los valores del campo [source]`"genus"` ([
 
 [#img-fig-12]
 .Figura 12
-image::img/es.figure-12.jpg[Figura 12,align=center]
+image::img/es.figure-12.jpg[Figura 12,width=548,align=center]
 
 Note que esta expresión funciona cuando ambos campos, [source]`"genus"` y [source]`"specificEpithet"`, tienen valores, es decir no son nulos. Si alguno de los dos campos tiene valores nulos, entonces no se lleva a cabo la concatenación. Por ejemplo, si hay un valor para genus pero specificEpithet está vacío, el campo de concatenación aparecerá vacío. Esto se debe a que no se puede operar sobre valores nulos.
 
@@ -326,7 +326,7 @@ IMPORTANT: *Desmarque la opción “Eliminar esta columna” a la derecha*. Si l
 
 [#img-fig-13]
 .Figura 13
-image::img/es.figure-13.jpg[Figura 13,align=center]
+image::img/es.figure-13.jpg[Figura 13,width=470,align=center]
 
 Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`"eventDate"`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda ("la &#9660; azul > Editar columnas > Renombrar esta columna"). En este caso, nómbrelos “year”, “month” y “day” según corresponda.
 

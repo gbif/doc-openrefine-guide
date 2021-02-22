@@ -26,7 +26,7 @@ NOTE: Si bien OpenRefine utiliza la interfaz de un navegador para trabajar, todo
 
 [#img-fig-02]
 .Figura 2
-image::img/es.figure-02.jpg[Figura 2,align=center]
+image::img/es.figure-02.jpg[Figura 2,width=1061,align=center]
 
 En el menú de la izquierda tiene opciones para crear, abrir o importar proyectos. Si usted no tiene ningún proyecto aún, en la opción de “Abrir proyecto” verá una lista vacía. 
 
@@ -34,7 +34,7 @@ Además puede cambiar la configuración de idioma. Para ello, haga click en “I
 
 [#img-fig-03]
 .Figura 3
-image::img/es.figure-03.jpg[Figura 3,align=center]
+image::img/es.figure-03.jpg[Figura 3,width=805,align=center]
 
 ****
 
@@ -56,11 +56,11 @@ OpenRefine presenta la opción de “Detectar y transformar texto en números, f
 
 [#img-fig-04]
 .Figura 4
-image::img/es.figure-04.jpg[Figura 4,align=center]
+image::img/es.figure-04.jpg[Figura 4,width=1066,align=center]
 
 [#img-fig-05]
 .Figura 5
-image::img/es.figure-05.jpg[Figura 5,align=center]
+image::img/es.figure-05.jpg[Figura 5,width=471,align=center]
 
 ****
 
@@ -82,7 +82,7 @@ NOTE: Cuando se cargan datos en OpenRefine y se crea un proyecto, el programa ha
 
 [#img-fig-06]
 .Figura 6
-image::img/es.figure-06.jpg[Figura 6,align=center]
+image::img/es.figure-06.jpg[Figura 6,width=683,align=center]
 
 NOTE: El número total de filas cargadas se muestra en este momento arriba de la tabla en negrita (para el caso del conjunto de datos provisto, 24984 filas). Sin embargo, verá que el número de filas mostradas en la tabla es limitado. No desespere, OpenRefine sólo muestra hasta 50 filas. Las acciones que uno pueda tomar en la aplicación, sin embargo, pueden tener efecto sobre otras filas aunque éstas no sean mostradas.
 
@@ -94,7 +94,7 @@ Una vez que ha creado uno o más proyectos, podrá acceder a ellos a través del
 
 [#img-fig-07]
 .Figura 7
-image::img/es.figure-07.jpg[Figura 7,align=center]
+image::img/es.figure-07.jpg[Figura 7,width=1071,align=center]
 
 Si desea editar los metadatos, debe ingresar a la opción “Acerca de”, a la izquierda en la tabla de proyectos (<<img-fig-7,Figura 7a>>). Se abrirá entonces una ventana como la mostrada en la <<img-fig-7,Figura 7b>>. Si desea modificar los distintos elementos de los metadatos, puede utilizar el botón “Editar” sobre cada parámetro. Por ejemplo, si olvidó colocar una etiqueta al crear un proyecto, puede hacerlo más tarde desde este menú. Contar con buenos metadatos puede ayudarle a organizar sus proyectos, sobre todo lleva a cabo trabajo colaborativo.
 
