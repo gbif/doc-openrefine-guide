@@ -1,8 +1,8 @@
 == Rutinas de validación de la calidad de los datos
 
-A partir del uso de servicios o archivos externos (<<sect-4,ver sección 4>>), y la posibilidad que ofrece OpenRefine de guardar y rehacer pasos (<<#guardar-pasos-para-rehacer-luego, ver sección 2.5.2>>) es posible crear rutinas para ejecutar de manera automática varias acciones de validación de calidad. 
+A partir del uso de servicios o archivos externos (<<sect-4,ver sección 4>>) y la posibilidad que ofrece OpenRefine de guardar y rehacer pasos (<<#guardar-pasos-para-rehacer-luego, ver sección 2.5.2>>) es posible crear rutinas para ejecutar de manera automática varias acciones de validación de calidad. 
 
-Aprovechando las múltiples herramientas de calidad de datos ya existentes en la red de GBIF es posible abordar de manera semi-automatizada a través de OpenRefine los retos y problemas más comunes de calidad que se presentan a nivel taxonómico y geográfico en un conjunto de datos. Acá se presentan diferentes rutinas que validan la calidad de los datos contrastando un conjunto de datos contra dichos servicios externos y agilizan la obtención de resultados a la vez que aseguran una metodología de validación replicable.
+Aprovechando las múltiples herramientas de calidad de datos ya existentes en la red de GBIF es posible abordar de manera semi-automatizada a través de OpenRefine los retos y problemas más comunes de calidad que se presentan a nivel taxonómico y geográfico en un conjunto de datos. Acá se presentan diferentes rutinas que validan la calidad de los datos contrastando un conjunto de datos contra dichos servicios externos y que agilizan la obtención de resultados a la vez que aseguran una metodología de validación replicable.
 
 === ¿Cómo funcionan las rutinas?
 
@@ -13,7 +13,7 @@ Los *indicadores de validación* se interpretan así:
 * *0*: El valor documentado en el conjunto de datos NO coincide con la fuente de referencia, el valor debe ser revisado y ajustado **en caso de ser necesario**.
 * *1*: El valor documentado en el conjunto de datos coincide con la fuente de referencia, no es necesario tomar acciones adicionales.
 
-Observe el ejemplo de la (<<img-fig-57,Figura 57>>), en la primera fila el valor original de la columna [source]`"family"` no coincide con la columna `"familySuggested"` ya que tiene un error de tipeo, por lo tanto el indicador de validación (columna `"familyValidation"`) es cero (0). Note que en las filas donde si hay coincidencia el indicador de validación (`"familyValidation"`) es uno (1).
+Observe el ejemplo de la (<<img-fig-57,Figura 57>>), en la primera fila el valor original de la columna [source]`"family"` no coincide con la columna `"familySuggested"` ya que tiene un error de tipeo, por lo tanto el indicador de validación (columna `"familyValidation"`) es cero (0). Note que en las filas donde sí hay coincidencia el indicador de validación (`"familyValidation"`) es uno (1).
 
 
 [#img-fig-57]
@@ -31,7 +31,7 @@ Tabla 4. Lista de rutinas para la validación de datos primarios sobre biodivers
 | Nombre | Uso | Requerimientos 
 | <<#validación-taxonómica-con-el-api-de-gbif, Validación taxonómica con el API de GBIF>>
 | Validación taxonómica que usa como referencia el árbol taxonómico de GBIF. Permite validar registros de varios grupos biológicos a la vez, así como obtener la taxonomía superior de cada taxa.
-| Requiere como mínimo los elementos [source]`"scientificName"` y [source]`"kingdon"` documentados y acceso a internet para hacer la petición al API de GBIF.
+| Requiere como mínimo los elementos [source]`"scientificName"` y [source]`"kingdom"` documentados y acceso a internet para hacer la petición al API de GBIF.
 
 | <<#validación-taxonómica-con-species-matching-de-gbif,Validación taxonómica con Species Matching de GBIF>> 
 | Validación taxonómica que usa como referencia el árbol taxonómico de GBIF, a diferencia de la rutina anterior realiza la validación contra el archivo de resultados _normalized_ obtenido de link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] permitiendo así aprovechar las funcionalidades de validación y limpieza de esta herramienta. La rutina facilita el cruce de los resultados obtenidos con link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] con el conjunto de datos original. 
@@ -51,7 +51,7 @@ Tabla 4. Lista de rutinas para la validación de datos primarios sobre biodivers
 |===
 
 Las rutinas cuya fuente de referencia es un API, hacen una consulta a un <<sect-4,servicio externo>> y obtienen una respuesta en formato JSON, la rutina interpreta esta respuesta y la hace legible en forma de columnas dentro del conjunto de datos. Posteriormente el resultado de la consulta al API es comparado con el valor documentado en el conjunto de datos y se generan nuevas columnas con los indicadores de la validación (unos y ceros).
-Las rutinas que usan como fuente archivos de texto plano, hacen una consulta sobre un archivo cargado previamente en OpenRefine, que posteriormente es comparado con el valor documentado en el conjunto de datos, como resultado de la comparación se generan nuevas columnas con los indicadores de la validación.
+Las rutinas que usan como fuente archivos de texto plano, hacen una consulta sobre un archivo cargado previamente en OpenRefine que posteriormente es comparado con el valor documentado en el conjunto de datos. Como resultado de la comparación se generan nuevas columnas con los indicadores de la validación.
 
 Las cinco rutinas se ejecutan de manera similar, los detalles específicos para cada una se detallan más adelante. En esta sección se presentan instrucciones generales para su ejecución en OpenRefine:
  
@@ -72,7 +72,7 @@ Según la validación que desee realizar asegúrese de cumplir los requerimiento
 
 *Ejecutar la rutina*
 
-Ubiqué en esta guía la rutina de interés según la validación que desee realizar, haga clic en el enlace a la rutina y será redirigido a Github donde encontrará un archivo de texto plano con la rutina, copie el texto de la rutina de validación (<<img-fig-58, Figura 58>>). Asegúrese de seleccionar solo la rutina -sin las instrucciones- y copiar todos  los corchetes iniciales ({) y finales (}).
+Ubique en esta guía la rutina de interés según la validación que desee realizar, haga clic en el enlace a la rutina y será redirigido a Github donde encontrará un archivo de texto plano con la rutina, copie el texto de la rutina de validación (<<img-fig-58, Figura 58>>). Asegúrese de seleccionar solo la rutina -sin las instrucciones- y copiar todos  los corchetes iniciales ({) y finales (}).
 
 [#img-fig-58]
 .Figura 58
@@ -108,7 +108,7 @@ Al terminar la ejecución de la rutina, obtendrá nuevas columnas en el conjunto
 * *_Validation_*: Corresponde a los indicadores de validación (unos y ceros) que permiten rastrear diferencias entre el valor original y el valor sugerido, y realizar posteriormente una limpieza de los datos. 
 
 
-En la (<<img-fig-61,Figura 61>>) se muestra un ejemplo de como se ven los identificadores de la validación y las nuevas columnas con las sugerencias después de correr la rutina; en el ejemplo se observa una validación taxonómica, las columnas de resultado varían según el objetivo de cada rutina.
+En la (<<img-fig-61,Figura 61>>) se muestra un ejemplo de cómo se ven los identificadores de la validación y las nuevas columnas con las sugerencias después de correr la rutina; en el ejemplo se observa una validación taxonómica, las columnas de resultado varían según el objetivo de cada rutina.
 
 [#img-fig-61]
 .Figura 61
@@ -123,9 +123,9 @@ image::img/es.figure-61.jpg[Figura 61,align=center]
 
 **Limpieza de los datos**
 
-A partir de las nuevas columnas de validación (finalizadas en las palabra _Suggested_) seleccione los registros donde el valor original y el valor sugerido son diferentes (identificador de validación = 0) y realice los ajustes que considere necesarios sobre los elementos del estándar Darwin Core. Se recomienda realizar este proceso de limpieza utilizando las funcionalidades de OpenRefine descritas en la (<<#limpieza-de-datos, Sección 2>>) de limpieza de datos. El proceso de validación con las rutinas busca facilitar la identificación de filas y elementos que necesitan ser verificados y limpiados, sin embargo *un identificador de validación con valor cero (0) no necesariamente implica que haya un error en los datos, cada publicador según su conocimiento de los datos y del grupo biológico debe determinar si los datos se deben ajustar y como.*
+A partir de las nuevas columnas de validación (finalizadas en las palabra _Suggested_) seleccione los registros donde el valor original y el valor sugerido son diferentes (identificador de validación = 0) y realice los ajustes que considere necesarios sobre los elementos del estándar Darwin Core. Se recomienda realizar este proceso de limpieza utilizando las funcionalidades de OpenRefine descritas en la (<<#limpieza-de-datos, Sección 2>>) de limpieza de datos. El proceso de validación con las rutinas busca facilitar la identificación de filas y elementos que necesitan ser verificados y limpiados, sin embargo, *un identificador de validación con valor cero (0) no necesariamente implica que haya un error en los datos. Cada publicador según su conocimiento de los datos y del grupo biológico debe determinar si los datos se deben ajustar y cómo.*
 
-Por ejemplo de la (<<img-fig-62,Figura 62>>) se muestra una <<#uso-de-facetas, Faceta de texto>> que permite seleccionar las filas cuyo indicador de validación es cero (0) para el elemento de familia y por lo tanto necesita ser verificado. En la primera fila se muestra una inconsistencia entre la familia documentada en el conjunto de datos original y la sugerida por la rutina, mientras en la segunda fila se evidencia un problema de tipeo. *En cada caso debe revisar de manera integral cada fila y decidir que ajuste se debe o no realizar*. 
+Por ejemplo de la (<<img-fig-62,Figura 62>>) se muestra una <<#uso-de-facetas, Faceta de texto>> que permite seleccionar las filas cuyo indicador de validación es cero (0) para el elemento de familia y por lo tanto necesita ser verificado. En la primera fila se muestra una inconsistencia entre la familia documentada en el conjunto de datos original y la sugerida por la rutina, mientras en la segunda fila se evidencia un problema de tipeo. *En cada caso debe revisar de manera integral cada fila y decidir qué ajuste se debe o no realizar*. 
 
 [#img-fig-62]
 .Figura 62
@@ -145,9 +145,9 @@ https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomi
 
 *Requerimientos:*
 
-* El conjunto de datos a validar debe tener como mínimo los elementos DwC [source]`"scientificName"` y [source]`"kingdon'"` documentados.
+* El conjunto de datos a validar debe tener como mínimo los elementos DwC [source]`"scientificName"` y [source]`"kingdom'"` documentados.
 
-* Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdon"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`,y [source]`"genus"`.
+* Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdom"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`, y [source]`"genus"`.
 
 *Funcionamiento:*
 
@@ -174,7 +174,7 @@ A continuación se listan las columnas que encontrará después de correr la rut
 * `"acceptedScientificName"`: Nombre científico aceptado según el árbol taxonómico de GBIF.
 * `"canonicalNameSuggested"`: Nombre canónico sugerido según el árbol taxonómico de GBIF.
 *  `"taxonRankSuggested"`: Categoría del taxon sugerido según el árbol taxonómico de GBIF (ejem: SPECIES, GENUS, FAMILY).
-*  `"taxonomicStatusSuggested"`: Estado del taxón sugerido según el árbol taxonómico de GBIF (ejem: ACCEPTED, SYNONYM).
+*  `"taxonomicStatusSuggested"`: Estado del taxon sugerido según el árbol taxonómico de GBIF (ejem: ACCEPTED, SYNONYM).
 *  Tripleta de elementos validados donde se encuentra la columna original del conjunto de datos, la columna de validación y la columna con la sugerencia según el árbol taxonómico, por ejemplo: [source]`"class"`,`"classValidation"`,`"classSuggested"`. Los siguientes elementos de estar documentados en el conjunto de datos original tendrán dicha tripleta: [source]`"scientificNameAuthorship"`, [source]`"kingdom"`, [source]`"phylum"`, [source]`"class"`, [source]`"order"`, [source]`"family"`, [source]`"genus"`, [source]`"specificEpithet"`
 *  `callAPI`: Respuesta del API a la rutina, contiene todos los resultados en formato JSON.
 
@@ -192,7 +192,7 @@ https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomi
 
 * El conjunto de datos a validar debe tener como mínimo el elemento DwC [source]`"scientificName"` documentado.
 
-* Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdon"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`,y [source]`"genus"`.
+* Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdom"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`, y [source]`"genus"`.
 
 * Archivo titulado _normalized_, obtenido de la herramienta link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] tras validar los datos originales, y cargado en OpenRefine, el título del proyecto debe ser exactamente *_normalized_*.
 
@@ -201,7 +201,7 @@ WARNING: El archivo _normalized_ debe ser el único proyecto en OpenRefine titul
 
 *Funcionamiento:*
 
-La rutina obtiene y valida la información taxonómica de un conjunto de datos con el árbol taxonómico de GBIF a partir de el archivo de texto plano _normalized_ obtenido de la herramienta en línea link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] y cargado en OpenRefine. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF y los compara con los elementos documentados en el archivo base, generando los indicadores de validación.
+La rutina obtiene y valida la información taxonómica de un conjunto de datos con el árbol taxonómico de GBIF a partir del archivo de texto plano _normalized_ obtenido de la herramienta en línea link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] y cargado en OpenRefine. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF y los compara con los elementos documentados en el archivo base, generando los indicadores de validación.
 
 Al usar _Species matching_ como fuente de referencia, el usuario puede realizar una validación y limpieza previa a OpenRefine directamente en _Species matching_, la cual es especialmente útil para verificar y resolver sinonimias complejas, como es el caso de los homónimos. 
 
@@ -222,14 +222,14 @@ https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomi
 
 * El conjunto de datos a validar debe tener como mínimo el elemento DwC [source]`"scientificName"` documentado.
 
-* Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdon"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`,y [source]`"genus"`.
+* Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`"scientificName"`, [source]`"kingdom"`,[source]`"phylum"`,[source]`"class"`,[source]`"order"`,[source]`"family"`, y [source]`"genus"`.
 
 
 *Funcionamiento:*
 
 Esta rutina está diseñada para ser implementada en conjuntos de datos de grupos biológicos marinos, emplea como fuente de referencia los taxones marinos del link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)] a través de un llamado al API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de LifeWatch y los compara con los elementos documentados en el archivo base, generando los indicadores de validación. 
 
-Adicionalmente a los elementos taxonómicos, esta rutina retorna otros elementos útiles  que dan información sobre el tipo de hábitat del taxón y el LSID de WORMS o AphiaID, elemento requerido para la publicación de datos a través de link:https://obis.org/[OBIS (Ocean Biodiversity Information System)].
+Adicionalmente a los elementos taxonómicos, esta rutina retorna otros elementos útiles  que dan información sobre el tipo de hábitat del taxon y el LSID de WORMS o AphiaID, elemento requerido para la publicación de datos a través de link:https://obis.org/[OBIS (Ocean Biodiversity Information System)].
 
 *Resultados:*
 
@@ -290,10 +290,10 @@ Para cambiar el modelo de elevación reemplace en la rutina el valor `srtm1`  en
 
 *Resultados:*
 
-En las primeras columnas del proyecto encontrará las columnas con los datos de elevación reorganizadas junto con nuevas columnas resultantes de la rutina. Encontrará las de manera intercalada las columnas originales, un valor sugerido de acuerdo al servicio de elevación y dos indicadores de validación (<<img-fig-65,Figura 65>>). El primer indicador contrasta la elevación obtenida con el servicio y el elemento [source]`"minimumElevationInMeters"` y debe ser interpretado así: 
+En las primeras columnas del proyecto encontrará las columnas con los datos de elevación reorganizadas junto con nuevas columnas resultantes de la rutina. Encontrará de manera intercalada las columnas originales, un valor sugerido de acuerdo al servicio de elevación y dos indicadores de validación (<<img-fig-65,Figura 65>>). El primer indicador contrasta la elevación obtenida con el servicio y el elemento [source]`"minimumElevationInMeters"` y debe ser interpretado así: 
 
-* *1*: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es menor a 100 msnm
-* *0*: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es mayor a 100 msnm
+* *1*: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es menor a 100 msnm.
+* *0*: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es mayor a 100 msnm.
 * blank: No hay elevación mínima documentada.
 
 El segundo indicador contrasta la elevación obtenida con el servicio contra el rango de elevación indicado por los elementos [source]`"minimumElevationInMeters"` y [source]`"maximumElevationInMeters"` y debe ser interpretado así: 
@@ -338,7 +338,7 @@ A continuación se listan las columnas que encontrará después de correr la rut
 * `"daySuggested"`: Día extraído a partir de la transformación de la fecha.
 * `"verbatimEventDateSuggested"`: Fecha en el formato original.
 
-Para no generar conflicto con elementos ya existentes en el conjunto de datos, todas las columnas generadas por la rutina se marcan como sugeridas o _Suggested_ (<<img-fig-66,Figura 66>>). Si algún registro no tiene datos de fecha, los elementos resultantes apareceran vacios.
+Para no generar conflicto con elementos ya existentes en el conjunto de datos, todas las columnas generadas por la rutina se marcan como sugeridas o _Suggested_ (<<img-fig-66,Figura 66>>). Si algún registro no tiene datos de fecha, los elementos resultantes aparecerán vacíos.
 
 [#img-fig-66]
 .Figura 66
