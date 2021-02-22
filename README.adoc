@@ -1,7 +1,7 @@
 https://docs.gbif.org/documentation-guidelines/[image:https://docs.gbif.org/documentation-guidelines/gbif-document-shield.svg[GBIF Document]]
 https://doi.org/10.15468/doc-gzjg-af18[image:https://zenodo.org/badge/DOI/10.15468/doc-gzjg-af18.svg[doi:10.15468/doc-gzjg-af18]]
 https://creativecommons.org/licenses/by-sa/4.0/[image:https://img.shields.io/badge/License-CC%20BY%2D-SA%204.0-lightgrey.svg[CC BY-SA 4.0]]
-https://builds.gbif.org/job/doc-openrefine-guide/[image:https://builds.gbif.org/job/doc-openrefine-guide/badge/icon[Build status]]
+https://builds.gbif.org/job/doc-openrefine-guide/lastBuild/console[image:https://builds.gbif.org/job/doc-openrefine-guide/badge/icon[Build status]]
 
 = Guía para la limpieza de datos sobre biodiversidad con OpenRefine
 
