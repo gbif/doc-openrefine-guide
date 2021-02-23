@@ -61,4 +61,4 @@ Las distintas expresiones pueden ser destacadas haciendo click sobre la estrella
 .Figura 39
 image::img/es.figure-39.jpg[Figura 39,width=1180,align=center]
 
-NOTE: La lista de expresiones utilizadas se mantiene en el programa, de modo que puede volver a utilizarla en el futuro. La asignación de estrellas a las expresiones, sin embargo, se mantiene únicamente en el marco de la sesión de trabajo, es decir, las estrellas se pierden si se cierra y reinicia el programa.
+NOTE: La lista de expresiones utilizadas se mantiene en el programa, de modo que puede volver a utilizarlas en el futuro a partir del historial o del menú “Con estrella”.
