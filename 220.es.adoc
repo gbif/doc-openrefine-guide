@@ -8,7 +8,7 @@ Ubique la columna [source]`"kingdom"` y haga click sobre menu:la{sp}&#9660;{sp}a
 
 [#img-fig-14]
 .Figura 14
-image::img/es.figure-14.jpg[Figura 14,width=512,align=center]
+image::img/es.figure-14.jpg[Figura 14,width=700,align=center]
 
 En dicha ventana de faceta, puede ordenar los valores alfabéticamente (haciendo click sobre “A-Z”) o según el número de registros asociados a cada valor (haciendo click sobre “conteo”).
 
@@ -18,7 +18,7 @@ Corrija los valores “Plante” y “Plants”. Cuando lo haga, habrá corregid
 
 [#img-fig-15]
 .Figura 15
-image::img/es.figure-15.jpg[Figura 15,width=557,align=center]
+image::img/es.figure-15.jpg[Figura 15,width=700,align=center]
 
 [#Facetas-y-espacios-en-blanco]
 ==== Facetas y espacios en blanco
@@ -29,7 +29,7 @@ Una vez que haya corregido los valores en el punto anterior, notará que aún ap
 
 [#img-fig-16]
 .Figura 16
-image::img/es.figure-16.jpg[Figura 16,width=230,align=center]
+image::img/es.figure-16.jpg[Figura 16,width=300,align=center]
 
 Para corregir estos errores, asegúrese de que ninguno de los valores en la faceta están seleccionados y de que el número de registros que se muestra arriba de la tabla es el total (24984). Sobre la columna [source]`"kingdom"`, haga click sobre menu:la{sp}&#9660;{sp}azul[] y siga las siguientes opciones (<<img-fig-17,Figura 17>>):
 
@@ -51,7 +51,7 @@ Note que en primer y tercer lugar figura aparentemente el mismo valor, “Buenos
 
 [#img-fig-18]
 .Figura 18
-image::img/es.figure-18.jpg[Figura 18,width=233,align=center]
+image::img/es.figure-18.jpg[Figura 18,width=300,align=center]
 
 Para corregir este error, sobre la columna [source]`"stateProvince"`, haga click sobre menu:la{sp}&#9660;{sp}azul[] y siga la siguiente ruta (<<img-fig-19,Figura 19>>):
 
@@ -127,7 +127,7 @@ Verá entonces una nueva ventana, la faceta, como se muestra en la <<img-fig-21,
 
 [#img-fig-21]
 .Figura 21
-image::img/es.figure-21.jpg[Figura 21,width=230,align=center]
+image::img/es.figure-21.jpg[Figura 21,width=300,align=center]
 
 Allí se puede ver que el rango de días abarca desde 1 a 35 inclusive. Es decir, algunos números están fuera de rango, puesto que como máximo puede haber hasta día 31 en algunos meses.
 
@@ -157,7 +157,7 @@ Verá entonces una ventana con la faceta, como se muestra en la <<img-fig-23,Fig
 
 [#img-fig-23]
 .Figura 23
-image::img/es.figure-23.jpg[Figura 23,width=230,align=center]
+image::img/es.figure-23.jpg[Figura 23,width=300,align=center]
 
 Si hace click en “true”, la pantalla principal le mostrará los registros que tienen número de catálogo duplicado (<<img-fig-24,Figura 24>>). Observe por ejemplo los siguientes registros:
 
@@ -185,7 +185,7 @@ Por ejemplo, si tiene configurado el valor a 2000 y trata de armar una faceta de
 
 [#img-fig-26]
 .Figura 26
-image::img/es.figure-26.jpg[Figura 26,width=468,align=center]
+image::img/es.figure-26.jpg[Figura 26,width=550,align=center]
 
 Haciendo click en “Fije un límite”, se abrirá otra ventana donde puede cambiar el límite al valor preferido (<<img-fig-26,Figura 26b>>).
 
