@@ -90,13 +90,13 @@ NOTE: El número total de filas cargadas se muestra en este momento arriba de la
 
 === Abrir un proyecto y modificar sus metadatos
 
-Una vez que ha creado uno o más proyectos, podrá acceder a ellos a través del menú “Abrir proyecto” (<<img-fig-3,Figura 3>>. Cuando ingresa a este menú, verá listados todos sus proyectos, con una serie de metadatos básicos que puede utilizar para ordenar su lista (<<img-fig-7,Figura 7a>>). Los metadatos mostrados incluyen el nombre del proyecto, la fecha de última modificación, las etiquetas asignadas (“tags”), el número de filas, etc.
+Una vez que ha creado uno o más proyectos, podrá acceder a ellos a través del menú “Abrir proyecto” (<<img-fig-03,Figura 3>>. Cuando ingresa a este menú, verá listados todos sus proyectos, con una serie de metadatos básicos que puede utilizar para ordenar su lista (<<img-fig-07,Figura 7a>>). Los metadatos mostrados incluyen el nombre del proyecto, la fecha de última modificación, las etiquetas asignadas (“tags”), el número de filas, etc.
 
 [#img-fig-07]
 .Figura 7
 image::img/es.figure-07.jpg[Figura 7,width=1071,align=center]
 
-Si desea editar los metadatos, debe ingresar a la opción “Acerca de”, a la izquierda en la tabla de proyectos (<<img-fig-7,Figura 7a>>). Se abrirá entonces una ventana como la mostrada en la <<img-fig-7,Figura 7b>>. Si desea modificar los distintos elementos de los metadatos, puede utilizar el botón “Editar” sobre cada parámetro. Por ejemplo, si olvidó colocar una etiqueta al crear un proyecto, puede hacerlo más tarde desde este menú. Contar con buenos metadatos puede ayudarle a organizar sus proyectos, sobre todo lleva a cabo trabajo colaborativo.
+Si desea editar los metadatos, debe ingresar a la opción “Acerca de”, a la izquierda en la tabla de proyectos (<<img-fig-07,Figura 7a>>). Se abrirá entonces una ventana como la mostrada en la <<img-fig-07,Figura 7b>>. Si desea modificar los distintos elementos de los metadatos, puede utilizar el botón “Editar” sobre cada parámetro. Por ejemplo, si olvidó colocar una etiqueta al crear un proyecto, puede hacerlo más tarde desde este menú. Contar con buenos metadatos puede ayudarle a organizar sus proyectos, sobre todo lleva a cabo trabajo colaborativo.
 
 === Asignar suficientes recursos al programa
 Para que OpenRefine pueda funcionar correctamente se requiere contar con suficiente memoria en la computadora asignada al programa. Especialmente si se trabajará con conjuntos de datos grandes, la memoria asignada afectará la velocidad de procesamiento e incluso podría limitar la capacidad para aplicar ciertas funciones. 
