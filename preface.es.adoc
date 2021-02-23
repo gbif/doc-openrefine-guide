@@ -31,7 +31,7 @@ Para ver detalles sobre cómo descargar e instalar OpenRefine en su computadora,
 
 El conjunto de datos modelo utilizado en esta guía puede obtenerse aquí: link:../data/EjercicioModelo_OpenRefine_Datos.csv[EjercicioModelo_OpenRefine_Datos.csv,opts=download]. Descargar el archivo, y no manipularlo en otros programas (e.g., MS Excel) antes de abrirlo en OpenRefine, dado que ello puede cambiar los formatos y/o codificación del archivo.
 
-El conjunto de datos modelo fue derivado a partir del conjunto de datos: 
+El conjunto de datos modelo fue derivado a partir de: 
 
 _Williams J (2018). Colección de Herbario. Version 3.1. Facultad de Ciencias Naturales y Museo - U.N.L.P.. Occurrence dataset https://doi.org/10.15468/i9bj5r accessed via GBIF.org on 2019-04-18._
 
