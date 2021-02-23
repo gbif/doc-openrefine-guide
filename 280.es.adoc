@@ -63,7 +63,7 @@ Puede repetir el proceso creando otro campo para las estrellas, usando la expres
 ----
 if(row.starred, "yes", "no")
 ----
-Para ver los pasos de exportación de datos, vea la sección de <<sect-3.2,Exportación de proyectos>>.
+Para ver los pasos de exportación de datos, vea la sección de <<sect-3.2,Exportación de datos y proyectos>>.
 
 ==== Uso de banderas y estrellas para eliminar registros
 
