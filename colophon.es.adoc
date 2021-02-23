@@ -5,7 +5,7 @@ endif::backend-html5[]
 == Colofón
 
 === Cita bibliográfica sugerida
-Zermoglio PF, Plata CA, Wieczorek JR, Ortiz R & Buitrago L (2020) Guía para la limpieza de datos sobre biodiversidad con OpenRefine, Versión 3 [borrador de revisión de la comunidad]. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18.
+Zermoglio PF, Plata CA, Wieczorek JR, Ortiz R & Buitrago L (2021) Guía para la limpieza de datos sobre biodiversidad con OpenRefine, Versión 3 [borrador de revisión de la comunidad]. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18.
 
 === Licencia
 El documento Guía para la limpieza de datos sobre biodiversidad con OpenRefine se publica bajo una licencia https://creativecommons.org/licenses/by-sa/4.0/deed.es[Atribución-CompartirIgual 4.0 Internacional].
