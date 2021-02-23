@@ -18,7 +18,7 @@ Observe el ejemplo de la (<<img-fig-57,Figura 57>>), en la primera fila el valor
 
 [#img-fig-57]
 .Figura 57. Ejemplo de los indicadores de validación
-image::img/es.figure-57.jpg[Figura 57,width=400,align=center]
+image::img/es.figure-57.jpg[Figura 57,width=500,align=center]
 
 Las rutinas utilizan como fuentes de validación API’s (Interfaces de Programación de Aplicaciones) de repositorios globales taxonómicos, geográficos o  archivos de texto plano obtenidos como resultado de herramientas de validación externas. 
 
@@ -83,13 +83,13 @@ Ubíquese en el conjunto de datos a validar en OpenRefine, diríjase al menú ar
 
 [#img-fig-59]
 .Figura 59
-image::img/es.figure-59.jpg[Figura 59,width=441,align=center]
+image::img/es.figure-59.jpg[Figura 59,width=500,align=center]
 
 El avance de la ejecución de la rutina se observa en la parte superior de la pantalla (<<img-fig-60,Figura 60>>).
 
 [#img-fig-60]
 .Figura 60
-image::img/es.figure-60.jpg[Figura 60,width=360,align=center]
+image::img/es.figure-60.jpg[Figura 60,width=500,align=center]
 
 Espere a que finalice la ejecución de la rutina. Las rutinas que requieren hacer llamados a servicios externos, dependen de la conexión a internet, estas consultas toman un tiempo en ejecutarse que varía según el número de filas del conjunto de datos, de la velocidad de la conexión y de la memoria RAM de su equipo. 
 
@@ -112,7 +112,7 @@ En la (<<img-fig-61,Figura 61>>) se muestra un ejemplo de cómo se ven los ident
 
 [#img-fig-61]
 .Figura 61
-image::img/es.figure-61.jpg[Figura 61,width=438,align=center]
+image::img/es.figure-61.jpg[Figura 61,width=500,align=center]
 
 
 ****
@@ -129,7 +129,7 @@ Por ejemplo de la (<<img-fig-62,Figura 62>>) se muestra una <<#uso-de-facetas, F
 
 [#img-fig-62]
 .Figura 62
-image::img/es.figure-62.jpg[Figura 62,width=465,align=center]
+image::img/es.figure-62.jpg[Figura 62,width=500,align=center]
 
 Tenga en cuenta que los identificadores de validación no cambiarán (de 0 a 1) automáticamente así usted haya ajustado los datos originales según las sugerencias de la rutina. Cámbielos manualmente cuando realice la limpieza de cada fila indistintamente del ajuste realizado.
 
@@ -159,7 +159,7 @@ En las primeras columnas del proyecto encontrará las columnas con los datos tax
 
 [#img-fig-63]
 .Figura 63
-image::img/es.figure-63.jpg[Figura 63,width=355,align=center]
+image::img/es.figure-63.jpg[Figura 63,width=650,align=center]
 
 A continuación se listan las columnas que encontrará después de ejecutar la rutina:
 
@@ -257,7 +257,7 @@ A continuación se listan las columnas que encontrará despues de ejecutar la ru
 
 [#img-fig-64]
 .Figura 64
-image::img/es.figure-64.jpg[Figura 64,width=491,align=center]
+image::img/es.figure-64.jpg[Figura 64,width=650,align=center]
 
 === Validación de elevaciones con el API de GeoNames. 
 
@@ -304,7 +304,7 @@ El segundo indicador contrasta la elevación obtenida con el servicio contra el 
 
 [#img-fig-65]
 .Figura 65
-image::img/es.figure-65.jpg[Figura 65,width=496,align=center]
+image::img/es.figure-65.jpg[Figura 65,width=650,align=center]
 
 
 IMPORTANT: Si las coordenas se encuentran sobre plataforma marina, puede que reciba como resultado valores negativos (ej. -1, -3), o valores como: "/home/data/srtm1/N02/N02W080.zip" o "No data".
@@ -342,7 +342,7 @@ Para no generar conflicto con elementos ya existentes en el conjunto de datos, t
 
 [#img-fig-66]
 .Figura 66
-image::img/es.figure-66.jpg[Figura 66,width=423,align=center]
+image::img/es.figure-66.jpg[Figura 66,width=650,align=center]
 
 
 IMPORTANT: Los formatos de fechas que son ambiguos, es decir donde no se diferencia con claridad el mes, el día o el año, no son transformados. Revise las celdas donde el resultado haya sido nulo o vacío y realice los ajustes necesarios de forma manual.
