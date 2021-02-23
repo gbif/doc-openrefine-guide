@@ -16,7 +16,7 @@ https://doi.org/10.15468/doc-gzjg-af18
 === Control de documentos
 Versión 3, edición de revisión comunitaria, Marzo 2020.
 
-Este documento se basa en una publicación anterior de la guía por los mismos autores.
+Este documento se basa en dos publicaciones anteriores producidas por los mismos autores de esta Guía.
 
 === Imagen de la portada
 Una manada de guanaco (_Lama guanicoe_), Lago Argentino, Santa Cruz, Argentina. Foto 2016 Diego Carús via https://www.gbif.org/occurrence/2005372769[iNaturalist Research-grade Observations], licenciada bajo http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
