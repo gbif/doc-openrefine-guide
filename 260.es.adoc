@@ -47,7 +47,7 @@ De este modo, puede rehacer pasos particulares o toda una rutina de trabajo, sob
 
 ==== Reutilizar expresiones regulares
 
-En las secciones anteriores de esta guía (y en la siguientes), muchas funciones involucran utilizar expresiones regulares. Si bien el guardado de pasos es muy útil para repetir procesos, OpenRefine también brinda un simple historial de expresiones regulares que se han utilizado previamente. Se puede acceder a esta lista de expresiones en cualquier ventana que uno abra a partir de una columna, si en dicha ventana se espera el uso de una expresión.
+En las secciones anteriores de esta guía (y en las siguientes), muchas funciones involucran utilizar expresiones regulares. Si bien el guardado de pasos es muy útil para repetir procesos, OpenRefine también brinda un simple historial de expresiones regulares que se han utilizado previamente. Se puede acceder a esta lista de expresiones en cualquier ventana que uno abra a partir de una columna, si en dicha ventana se espera el uso de una expresión.
 
 Por ejemplo, al armar una nueva columna a partir del campo [source]`"kingdom"` (click en "la &#9660; azul en el campo > Editar columnas > Agregar columna basada en esta columna…" se abre una ventana como la mostrada en la (<<img-fig-39,Figura 39a>>).
 
