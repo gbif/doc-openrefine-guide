@@ -14,7 +14,7 @@ El documento Guía para la limpieza de datos sobre biodiversidad con OpenRefine 
 https://doi.org/10.15468/doc-gzjg-af18
 
 === Control de documentos
-Versión 3, edición de revisión comunitaria, Marzo 2020.
+Versión 3, Febrero 2021.
 
 Este documento se basa en dos publicaciones anteriores producidas por los mismos autores de esta Guía.
 
