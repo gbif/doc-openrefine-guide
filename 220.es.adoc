@@ -167,7 +167,7 @@ Si hace click en “true”, la pantalla principal le mostrará los registros qu
 
 [#img-fig-24]
 .Figura 24
-image::img/es.figure-24.jpg[Figura 24,width=506,align=center]
+image::img/es.figure-24.jpg[Figura 24,width=550,align=center]
 
 Corrija los números de catálogo. Para hacerlo, edite las celdas individualmente: sobre la celda haga click en el botón “editar”, modifique el valor y haga click en “Aplicar” (<<img-fig-25,Figura 25>>). 
 
@@ -175,7 +175,7 @@ NOTE: En la práctica la corrección de los números de catálogo sólo debe hac
 
 [#img-fig-25]
 .Figura 25
-image::img/es.figure-25.jpg[Figura 25,width=410,align=center]
+image::img/es.figure-25.jpg[Figura 25,width=500,align=center]
 
 ==== Límite en el número de opciones de las Facetas
 
