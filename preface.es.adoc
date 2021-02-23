@@ -22,7 +22,7 @@ En el texto se utiliza el siguiente formato para los [source]`"nombres de los ca
 
 ====	Software
 
-La versión de OpenRefine utilizada para la confección de esta guía es OpenRefine 3.3. Aunque la última versión disponible es la 3.4.1, esta ha presentado algunos problemas de memoria y por lo tanto no se aborda en esta guía.
+La versión de OpenRefine utilizada para la confección de esta guía es OpenRefine 3.3. Aunque no es la última versión disponible, es la última con la cual todos los pasos explicados en esta Guía han sido probados sin presentar problemas.
 
 Para ver detalles sobre cómo descargar e instalar OpenRefine en su computadora, ver el <<app-a,Apéndice 1>>.
 
