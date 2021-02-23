@@ -83,13 +83,13 @@ Ubíquese en el conjunto de datos a validar en OpenRefine, diríjase al menú ar
 
 [#img-fig-59]
 .Figura 59
-image::img/es.figure-59.jpg[Figura 59,width=500,align=center]
+image::img/es.figure-59.jpg[Figura 59,width=600,align=center]
 
 El avance de la ejecución de la rutina se observa en la parte superior de la pantalla (<<img-fig-60,Figura 60>>).
 
 [#img-fig-60]
 .Figura 60
-image::img/es.figure-60.jpg[Figura 60,width=500,align=center]
+image::img/es.figure-60.jpg[Figura 60,width=650,align=center]
 
 Espere a que finalice la ejecución de la rutina. Las rutinas que requieren hacer llamados a servicios externos, dependen de la conexión a internet, estas consultas toman un tiempo en ejecutarse que varía según el número de filas del conjunto de datos, de la velocidad de la conexión y de la memoria RAM de su equipo. 
 
@@ -112,7 +112,7 @@ En la (<<img-fig-61,Figura 61>>) se muestra un ejemplo de cómo se ven los ident
 
 [#img-fig-61]
 .Figura 61
-image::img/es.figure-61.jpg[Figura 61,width=500,align=center]
+image::img/es.figure-61.jpg[Figura 61,width=650,align=center]
 
 
 ****
@@ -129,7 +129,7 @@ Por ejemplo de la (<<img-fig-62,Figura 62>>) se muestra una <<#uso-de-facetas, F
 
 [#img-fig-62]
 .Figura 62
-image::img/es.figure-62.jpg[Figura 62,width=500,align=center]
+image::img/es.figure-62.jpg[Figura 62,width=650,align=center]
 
 Tenga en cuenta que los identificadores de validación no cambiarán (de 0 a 1) automáticamente así usted haya ajustado los datos originales según las sugerencias de la rutina. Cámbielos manualmente cuando realice la limpieza de cada fila indistintamente del ajuste realizado.
 
