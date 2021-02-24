@@ -17,7 +17,7 @@ Observe el ejemplo de la <<img-fig-57,Figura 57>>, en la primera fila el valor o
 
 
 [#img-fig-57]
-.Figura 57. Ejemplo de los indicadores de validación
+.Figura 57
 image::img/es.figure-57.jpg[Figura 57,width=460,align=center]
 
 Las rutinas utilizan como fuentes de validación API’s (Interfaces de Programación de Aplicaciones) de repositorios globales taxonómicos, geográficos o  archivos de texto plano obtenidos como resultado de herramientas de validación externas. 
