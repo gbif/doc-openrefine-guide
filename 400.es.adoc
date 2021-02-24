@@ -352,7 +352,6 @@ De un nombre al nuevo campo, por ejemplo, GeoLocate_parseLong, y en el cuadro de
 ----
 forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)), w,
   w.geometry.coordinates[0]).join("; "))
-.join("|")
 ----
 Esta expresión es diferente a la usada anteriormente en que se especifica qué valor del arreglo coordenadas se desea obtener: `[0]`. En OpenRefine, el primer valor se indica con 0, el segundo con 1, y así sucesivamente. Dado que en los resultados de la consulta se indica primero la longitud, ésta será el valor `[0]`, y la latitud será el valor `[1]` dentro del arreglo “coordinates”.
 
