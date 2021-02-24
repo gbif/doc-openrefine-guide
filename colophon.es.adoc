@@ -5,20 +5,29 @@ endif::backend-html5[]
 == Colofón
 
 === Cita bibliográfica sugerida
-Zermoglio PF, Plata CA, Wieczorek JR, Ortiz R & Buitrago L (2021) Guía para la limpieza de datos sobre biodiversidad con OpenRefine, Versión 3 [borrador de revisión de la comunidad]. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18.
+
+Zermoglio PF, Plata CA, Wieczorek JR, Ortiz R & Buitrago L (2021) Guía para la limpieza de datos sobre biodiversidad con OpenRefine. Versión 3. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18.
+
+=== Autores
+
+https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], Camila Andrea Plata, https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], Ricardo Ortiz & Leonardo Buitrago
 
 === Licencia
+
 El documento Guía para la limpieza de datos sobre biodiversidad con OpenRefine se publica bajo una licencia https://creativecommons.org/licenses/by-sa/4.0/deed.es[Atribución-CompartirIgual 4.0 Internacional].
 
 === URI persistente
+
 https://doi.org/10.15468/doc-gzjg-af18
 
 === Control de documentos
+
 Versión 3, Febrero 2021.
 
 Este documento se basa en dos publicaciones anteriores producidas por los mismos autores de esta Guía.
 
 === Imagen de la portada
+
 Una manada de guanaco (_Lama guanicoe_), Lago Argentino, Santa Cruz, Argentina. Foto 2016 Diego Carús via https://www.gbif.org/occurrence/2005372769[iNaturalist Research-grade Observations], licenciada bajo http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0].
 
 <<<
