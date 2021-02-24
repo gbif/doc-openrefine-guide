@@ -465,7 +465,7 @@ Esta expresión le indica a la herramienta que evalúe los valores del campo [so
  
 [#img-fig-53]
 .Figura 53
-image::img/es.figure-53.png[Figura 53,width=547,align=center]
+image::img/es.figure-53.jpg[Figura 53,width=547,align=center]
 
 NOTE: La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… váyase a almorzar, o incluso a dormir y lo revisa al día siguiente… Cuando vuelva, encontrará el nuevo campo con los valores estandarizados! En formato JSON… (<<img-fig-54,Figura 54>>).
  
