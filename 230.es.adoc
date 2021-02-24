@@ -76,10 +76,10 @@ OpenRefine acepta un lenguaje de expresiones regulares Java, que puede consultar
 Busca las cadenas de texto que comienzan (`^`) con mayúscula de la A a la C (`[A-C]`)
 * `+^[^a-d]+`
 +
-Busca las cadenas de texto que comienzan (`^`) con cualquier caracter en minúscula salvo de la a a la d (`[^a-d]`) – el `^` dentro del `[]` indica negación.
+Busca las cadenas de texto que comienzan (`^`) con cualquier carácter en minúscula salvo de la a a la d (`[^a-d]`) – el `^` dentro del `[]` indica negación.
 * `+^\w+`
 +
-Busca las cadenas de texto que comienzan (`^`) con un una letra (`\w`) –de la a a la z, mayúscula o minúscula.
+Busca las cadenas de texto alfanuméricas que comienzan (`^`) con un número o una letra (`\w`) –de 0 a 9 o de la a a la z, mayúscula o minúscula, o el carácter '_'.
 * `+^\s+`
 +
 Busca las cadenas de texto que comienzan (`^`) con un espacio en blanco (`\s`).
@@ -88,16 +88,19 @@ Busca las cadenas de texto que comienzan (`^`) con un espacio en blanco (`\s`).
 Busca las cadenas de texto que comienzan (`^`) con un dígito (`\d`).
 * `+^\D+`
 +
-Busca las cadenas de texto que comienzan (`^`) con un caracter no dígito (`\D`). Equivalente a la expresión con negación `+^[^0-9]+`.
+Busca las cadenas de texto que comienzan (`^`) con un carácter no dígito (`\D`). Equivalente a la expresión con negación `+^[^0-9]+`.
 * `+\d{4}+`
 +
 Busca cadenas de texto que contengan dígitos (`\d`), en particular 4 dígitos (`{4}`).
 * `+^\w.*\d$+`
 +
-Busca las cadenas de texto que comiencen (`^`) con una letra (`\w`), sigan (`.`) cualquier caracter (`*`) y terminen (`$`) con un dígito (`\d`).
+Busca las cadenas de texto que comiencen (`^`) un carácter alfanumérico o el carácter '_' (`\w`), sigan (`.`) con cualquier carácter (`*`) y terminen (`$`) con un dígito (`\d`).
 * `+^[A-Z].*\s[A-Z]+`
 +
-Busca las cadenas de texto que comienzan (`^`) con mayúscula (`[A-Z]`) –cualquier mayúscula de la A a la Z– seguidas de (`.`) cualquier caracter (`*`), luego un espacio (`\s`), luego otra letra mayúscula (`[A-Z]`).
+Busca las cadenas de texto que comienzan (`^`) con mayúscula (`[A-Z]`) –cualquier mayúscula de la A a la Z– seguidas de (`.`) cualquier carácter (`*`), luego un espacio (`\s`), luego otra letra mayúscula (`[A-Z]`).
+* `+[À-ÖØ-öø-ÿ]+`
++
+Busca las cadenas de texto que contengan al menos un carácter especial ([À-ÖØ-öø-ÿ]) –dentro de los rangos de caracteres Unicode À-Ö o Ø-ö o ø-ÿ, por ejemplo caracteres con diacríticos (acentos graves, agudos, circunflejos, diéresis, virguillas, cedilla, etc.)
 
 Pruebe el uso de algunas de esas expresiones en distintos campos.
 
