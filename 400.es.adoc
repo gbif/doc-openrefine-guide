@@ -291,7 +291,7 @@ Para visualizar la estructura de los resultados en JSON de modo más amigable, p
 
 [#img-fig-51]
 .Figura 51
-image::img/es.figure-51.jpg[Figura 51,width=900,align=center]
+image::img/es.figure-51.png[Figura 51,width=900,align=center]
 
 NOTE: La expresión utilizada es muy simple y sólo le pide al servicio que resuelva la georreferenciación en base al campo localidad y teniendo como valor fijo “Argentina” para el campo país, pero sin especificar los valores de otros campos geográficos. Sin embargo, todos los campos se pueden incluir en la expresión para obtener resultados más específicos. Ello puede hacerse de dos maneras:
 
