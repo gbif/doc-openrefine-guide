@@ -140,7 +140,7 @@ forEach(value.parseJson().get("data")[0].get("results"), v,
 
 A partir de los resultados obtenidos, puede extraer los nombres separando la nueva columna en columnas distintas utilizando separadores apropiados (ver <<#División-de-columnas, Divisiones>> en la sección 2.1.3).
 
-=== Georreferenciación usando GeoLocate
+=== Georreferenciación usando GEOLocate
 
 En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta al servicio, construiremos previamente dos facetas. La primera sobre el campo [source]`"country"`, dentro de la cual seleccionaremos el valor “Argentina”. La segunda faceta será sobre el campo [source]`"genus"`, dentro de la cual seleccionaremos el valor “Acacia”. Una vez aplicadas ambas facetas y escogidos los valores, verá que en la ventana principal sólo se muestra un subconjunto de registros que cumplen estas condiciones simultáneamente.
 
@@ -154,17 +154,17 @@ Se abrirá una nueva ventana (<<img-fig-50,Figura 50>>). Allí dé un nombre al 
   escape(value,'url')
 ----
 
-En esta expresión, `fmt` indica el formato en el que el resultado será devuelto por el servicio. GeoLocate ofrece dos posibles formatos, JSON y GeoJSON.
+En esta expresión, `fmt` indica el formato en el que el resultado será devuelto por el servicio. GEOLocate ofrece dos posibles formatos, JSON y GeoJSON.
 
 [#img-fig-50]
 .Figura 50
 image::img/es.figure-50.jpg[Figura 50,width=548,align=center]
 
-Una vez que haya creado el nuevo campo con la expresión general, verá que contiene, en formato JSON, los resultados de la consulta en GeoLocate para cada localidad, con todos los parámetros y valores que este servicio reporta.
+Una vez que haya creado el nuevo campo con la expresión general, verá que contiene, en formato JSON, los resultados de la consulta en GEOLocate para cada localidad, con todos los parámetros y valores que este servicio reporta.
 
 En los resultados puede tener tres casos:
 
-*Caso 1)* Ningún resultado encontrado. Ello quiere decir que GeoLocate no ha podido ubicar la localidad de interés. En la celda correspondiente verá lo siguiente:
+*Caso 1)* Ningún resultado encontrado. Ello quiere decir que GEOLocate no ha podido ubicar la localidad de interés. En la celda correspondiente verá lo siguiente:
 [source,javascript]
 ----
 {
@@ -304,11 +304,11 @@ La expresión con todos los campos se verá entonces como:
 "http://www.geo-locate.org/webservices/geolocatesvcv2/glcwrap.aspx?country=Argentina&state=" +
   escape(cells.stateProvince.value,'url')+"&locality="+escape(cells.locality.value,'url')
 ----
-Note que el nombre del campo será el que tiene en su base de datos. Note también que en la base de datos dada para este ejercicio no hay un campo correspondiente a [source]`"county"`, pero GeoLocate permite incluirlo si lo hubiera.
+Note que el nombre del campo será el que tiene en su base de datos. Note también que en la base de datos dada para este ejercicio no hay un campo correspondiente a [source]`"county"`, pero GEOLocate permite incluirlo si lo hubiera.
 
-Para poder trabajar con estos resultados más cómodamente, debemos extraer de allí los valores de interés. En este paso debe tener cuidado. Debido a que no especificamos todos los campos geográficos en la consulta a GeoLocate, recuerde que los registros pueden tener más de un resultado posible, y que cada resultado tiene sus propios parámetros de georreferenciación.
+Para poder trabajar con estos resultados más cómodamente, debemos extraer de allí los valores de interés. En este paso debe tener cuidado. Debido a que no especificamos todos los campos geográficos en la consulta a GEOLocate, recuerde que los registros pueden tener más de un resultado posible, y que cada resultado tiene sus propios parámetros de georreferenciación.
 
-A modo de ejemplo, extraeremos en nuevos campos los valores de las coordenadas. (El conjunto de datos provisto para realizar los ejercicios de esta guía contiene campos originales de latitud y longitud provistos por la fuente, puede utilizarlos para contrastar los resultados obtenidos utilizando GeoLocate).
+A modo de ejemplo, extraeremos en nuevos campos los valores de las coordenadas. (El conjunto de datos provisto para realizar los ejercicios de esta guía contiene campos originales de latitud y longitud provistos por la fuente, puede utilizarlos para contrastar los resultados obtenidos utilizando GEOLocate).
 
 Para extraer las coordenadas puede seguir dos métodos: 1) extraer latitud y longitud conjuntamente y luego separar; o 2) extraer latitud y longitud de modo independiente.
 
@@ -333,7 +333,7 @@ El nuevo campo tendrá valores como los siguientes, por ejemplo, para un registr
 -64.158097; -26.21252|-59.846115; -28.671732|-63.801314; -22.516365
 ----
 
-IMPORTANT: Note que GeoLocate provee como primer valor de coordenadas la longitud y como segundo valor la latitud.
+IMPORTANT: Note que GEOLocate provee como primer valor de coordenadas la longitud y como segundo valor la latitud.
 
 Dividiremos ahora este campo en tres partes, una para cada resultado:
 
@@ -356,11 +356,11 @@ forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)),
 ----
 Esta expresión es diferente a la usada anteriormente en que se especifica qué valor del arreglo coordenadas se desea obtener: `[0]`. En OpenRefine, el primer valor se indica con 0, el segundo con 1, y así sucesivamente. Dado que en los resultados de la consulta se indica primero la longitud, ésta será el valor `[0]`, y la latitud será el valor `[1]` dentro del arreglo “coordinates”.
 
-El nuevo campo creado tendrá valores como los siguientes: `-64.158097; -59.846115; -63.801314` cada uno correspondiente a una longitud de uno de los resultados obtenidos de la consulta a GeoLocate para un determinado registro.
+El nuevo campo creado tendrá valores como los siguientes: `-64.158097; -59.846115; -63.801314` cada uno correspondiente a una longitud de uno de los resultados obtenidos de la consulta a GEOLocate para un determinado registro.
 
 Puede repetir el proceso para obtener las latitudes, cambiando en la expresión anterior `[0]` por `[1]`, y luego separar los campos por resultado, utilizando como separador `;`.
 
-IMPORTANT: Debe tener en cuenta que, como se mencionó antes, cuantos más datos se provean al servicio de GeoLocate en la consulta más sencillo será desglosar los resultados después. El proceso de desglose puede ser muy engorroso y requiere que sea muy meticuloso/a a la hora de nombrar campos y separar contenido. Si no está familiarizado/a con el uso de JSON, es preferible que realice el desglose “pasito a pasito” para evitar perder o mezclar información. Por ejemplo, puede crear un documento con el flujo de trabajo donde enumere los pasos a seguir con todos los detalles necesarios (incluya allí el tipo de resultados que espera ver y cómo se verían en los campos).
+IMPORTANT: Debe tener en cuenta que, como se mencionó antes, cuantos más datos se provean al servicio de GEOLocate en la consulta más sencillo será desglosar los resultados después. El proceso de desglose puede ser muy engorroso y requiere que sea muy meticuloso/a a la hora de nombrar campos y separar contenido. Si no está familiarizado/a con el uso de JSON, es preferible que realice el desglose “pasito a pasito” para evitar perder o mezclar información. Por ejemplo, puede crear un documento con el flujo de trabajo donde enumere los pasos a seguir con todos los detalles necesarios (incluya allí el tipo de resultados que espera ver y cómo se verían en los campos).
 
 IMPORTANT: A la hora de agregar datos de georreferenciación, contraste siempre los resultados contra los campos geográficos que tiene. En el caso de tener varios resultados posibles, no siempre el primer resultado es el correcto. Recuerde reportar cuál fue el proceso de georreferenciación utilizado y todos los parámetros posibles asociados. Para consultar en qué campos de Darwin Core se reporta cada parámetro, puede referirse a: http://rs.tdwg.org/dwc/terms/#location, y consultar: https://github.com/tdwg/dwc-qa/wiki/Georeferences.
 
