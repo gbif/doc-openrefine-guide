@@ -39,7 +39,7 @@ Tabla 4. Lista de rutinas para la validación de datos primarios sobre biodivers
 
 | <<#validación-taxonómica-con-el-api-de-worms,Validación taxonómica con el API de WoRMS>>
 | Validación taxonómica específica para organismos marinos, que usa como referencia el link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)] por medio de la API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. Permite obtener la taxonomía superior de cada taxa, así como elementos taxonómicos obligatorios para la publicación de datos a través de link:https://obis.org/[OBIS].
-| Requiere como mínimo el elemento DwC [source]`"scientificName"` documentado y acceso a internet para hacer la petición al API de WORMS.
+| Requiere como mínimo el elemento DwC [source]`"scientificName"` documentado y acceso a internet para hacer la petición al API de WoRMS.
 
 |<<#validación-de-elevaciones-con-el-api-de-geonames,Validación de elevaciones con el API de GeoNames>>
 | Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de GeoNames. 
@@ -72,7 +72,7 @@ Según la validación que desee realizar asegúrese de cumplir los requerimiento
 
 *Ejecutar la rutina*
 
-Ubique en esta guía la rutina de interés según la validación que desee realizar, haga clic en el enlace a la rutina y será redirigido a Github donde encontrará un archivo de texto plano con la rutina, copie el texto de la rutina de validación (<<img-fig-58, Figura 58>>). Asegúrese de seleccionar solo la rutina -sin las instrucciones- y copiar todos  los corchetes iniciales `{` y finales `}`.
+Ubique en esta guía la rutina de interés según la validación que desee realizar, haga clic en el enlace a la rutina y será redirigido a GitHub donde encontrará un archivo de texto plano con la rutina, copie el texto de la rutina de validación (<<img-fig-58, Figura 58>>). Asegúrese de seleccionar solo la rutina -sin las instrucciones- y copiar todos  los corchetes iniciales `{` y finales `}`.
 
 [#img-fig-58]
 .Figura 58
@@ -203,9 +203,9 @@ WARNING: El archivo _normalized_ debe ser el único proyecto en OpenRefine titul
 
 La rutina obtiene y valida la información taxonómica de un conjunto de datos con el árbol taxonómico de GBIF a partir del archivo de texto plano _normalized_ obtenido de la herramienta en línea link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] y cargado en OpenRefine. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF y los compara con los elementos documentados en el archivo base, generando los indicadores de validación.
 
-Al usar _Species matching_ como fuente de referencia, el usuario puede realizar una validación y limpieza previa a OpenRefine directamente en _Species matching_, la cual es especialmente útil para verificar y resolver sinonimias complejas, como es el caso de los homónimos. 
+Al usar _Species Matching_ como fuente de referencia, el usuario puede realizar una validación y limpieza previa a OpenRefine directamente en _Species Matching_, la cual es especialmente útil para verificar y resolver sinonimias complejas, como es el caso de los homónimos. 
 
-IMPORTANT: A diferencia del API de GBIF, _Species matching_ tiene un límite de consulta de 6.000 registros o nombres científicos. Para evitar exceder el límite de consulta, se recomienda hacer la consulta en _Species matching_  por nombres científicos únicos.
+IMPORTANT: A diferencia del API de GBIF, _Species Matching_ tiene un límite de consulta de 6.000 registros o nombres científicos. Para evitar exceder el límite de consulta, se recomienda hacer la consulta en _Species Matching_  por nombres científicos únicos.
 
 *Resultados:*
 
@@ -229,15 +229,15 @@ https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomi
 
 Esta rutina está diseñada para ser implementada en conjuntos de datos de grupos biológicos marinos, emplea como fuente de referencia los taxones marinos del link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)] a través de un llamado al API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de LifeWatch y los compara con los elementos documentados en el archivo base, generando los indicadores de validación. 
 
-Adicionalmente a los elementos taxonómicos, esta rutina retorna otros elementos útiles  que dan información sobre el tipo de hábitat del taxon y el LSID de WORMS o AphiaID, elemento requerido para la publicación de datos a través de link:https://obis.org/[OBIS (Ocean Biodiversity Information System)].
+Adicionalmente a los elementos taxonómicos, esta rutina retorna otros elementos útiles  que dan información sobre el tipo de hábitat del taxon y el LSID de WoRMS o AphiaID, elemento requerido para la publicación de datos a través de link:https://obis.org/[OBIS (Ocean Biodiversity Information System)].
 
 *Resultados:*
 
 En las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la las rutinas previas (<<img-fig-63,Figura 63>>).
 
-A continuación se listan las columnas que encontrará despues de ejecutar la rutina, adicionales a las ya mencionadas en las rutinas previas de validación taxonómica(<<img-fig-64,Figura 64>>):
+A continuación se listan las columnas que encontrará despues de ejecutar la rutina, adicionales a las ya mencionadas en las rutinas previas de validación taxonómica (<<img-fig-64,Figura 64>>):
 
-* [source]`"matchType"`: Indica el resultado del cruce de los datos originales con el árbol taxonómico de WORMS a partir del elemento [source]`"scientificName"`. Los valores que encontrará en esta columna son:
+* [source]`"matchType"`: Indica el resultado del cruce de los datos originales con el árbol taxonómico de WoRMS a partir del elemento [source]`"scientificName"`. Los valores que encontrará en esta columna son:
 
 ** `"exact"`: La correspondencia entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico es completa.
 ** `"phonetic"`: La correspondencia entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico es completa a nivel fonético a pesar de algunas diferencias menores en la escritura.
@@ -246,12 +246,12 @@ A continuación se listan las columnas que encontrará despues de ejecutar la ru
 ** `"near_3"`: Hay una diferencia de tres caracteres entre el [source]`"scientificName"` del conjunto de datos y el árbol taxonómico. Se requiere una revisión del nombre.
 ** Para otras posibilidades poco frecuentes como`"match_quarantine"` y`"match_deleted"`, WoRMS recomienda contactarlos directamente.
 
-* [source]`"scientificNameID"`: Identificador del taxón contruido a partir del AphiaID proveniente del árbol taxonómico de WoRMS. 
+* [source]`"scientificNameID"`: Identificador del taxón construido a partir del AphiaID proveniente del árbol taxonómico de WoRMS. 
 * [source]`"nameAccordingTo`: La referencia bibliográfica del nombre científico según WoRMS
 * [source]`"nameAccordingToID`: Identificador de la referencia bibliográfica del nombre científico según WoRMS.
 * [source]`"isMarine"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon marino.
 * [source]`"isBrackish"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas salobres. 
-* [source]`"isFreshwater"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas continentales. i.e. taxones asociados a ríos o lagos.
+* [source]`"isFreshwater"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas continentales, i.e. taxones asociados a ríos o lagos.
 * [source]`"isTerrestial"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon terrestre.
 * [source]`"callAPIworms"`: Respuesta del API a la rutina, contiene todos los resultados en formato JSON.
 
@@ -286,14 +286,14 @@ La rutina utiliza por defecto el modelo de elevación SRTM-1 (`"srtm1"`), que cu
 
 * GTOPO30 (`"gtopo30"`): Modelo de elevación global con resolución aproximada de 30 arcos por segundo, equivalente a una grilla de 1 km x 1 km.
 
-Para cambiar el modelo de elevación reemplace en la rutina el valor `srtm1`  en la expresión `http://api.geonames.org/srtm1'` por el valor que corresponda al servicio que desea utilizar `srtm3`, `astergdem` o `gtopo30`.
+Para cambiar el modelo de elevación reemplace en la rutina el valor `srtm1` en la expresión `grel:\"http://api.geonames.org/srtm1` por el valor que corresponda al servicio que desea utilizar `srtm3`, `astergdem` o `gtopo30`.
 
 *Resultados:*
 
 En las primeras columnas del proyecto encontrará las columnas con los datos de elevación reorganizadas junto con nuevas columnas resultantes de la rutina. Encontrará de manera intercalada las columnas originales, un valor sugerido de acuerdo al servicio de elevación y dos indicadores de validación (<<img-fig-65,Figura 65>>). El primer indicador contrasta la elevación obtenida con el servicio y el elemento [source]`"minimumElevationInMeters"` y debe ser interpretado así: 
 
-* *1*: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es menor a 100 msnm.
-* *0*: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es mayor a 100 msnm.
+* *1*: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es menor a 100 m.
+* *0*: La diferencia entre la elevación en [source]`"minimumElevationInMeters"` y [source]`"elevationSuggested"` es mayor a 100 m.
 * blank: No hay elevación mínima documentada.
 
 El segundo indicador contrasta la elevación obtenida con el servicio contra el rango de elevación indicado por los elementos [source]`"minimumElevationInMeters"` y [source]`"maximumElevationInMeters"` y debe ser interpretado así: 
@@ -320,7 +320,7 @@ https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/DateTransfo
 
 *Requerimientos:*
 
-* El conjunto de datos a validar debe tener como mínimo el elementos DwC `"eventDate"` documentado.
+* El conjunto de datos a validar debe tener como mínimo el elemento DwC `"eventDate"` documentado.
 
 *Funcionamiento:*
 
