@@ -13,7 +13,7 @@ Los *indicadores de validación* se interpretan así:
 * *0*: El valor documentado en el conjunto de datos NO coincide con la fuente de referencia, el valor debe ser revisado y ajustado **en caso de ser necesario**.
 * *1*: El valor documentado en el conjunto de datos coincide con la fuente de referencia, no es necesario tomar acciones adicionales.
 
-Observe el ejemplo de la (<<img-fig-57,Figura 57>>), en la primera fila el valor original de la columna [source]`"family"` no coincide con la columna `"familySuggested"` ya que tiene un error de tipeo, por lo tanto el indicador de validación (columna `"familyValidation"`) es cero (0). Note que en las filas donde sí hay coincidencia el indicador de validación (`"familyValidation"`) es uno (1).
+Observe el ejemplo de la <<img-fig-57,Figura 57>>, en la primera fila el valor original de la columna [source]`"family"` no coincide con la columna `"familySuggested"` ya que tiene un error de tipeo, por lo tanto el indicador de validación (columna `"familyValidation"`) es cero (0). Note que en las filas donde sí hay coincidencia el indicador de validación (`"familyValidation"`) es uno (1).
 
 
 [#img-fig-57]
@@ -108,7 +108,7 @@ Al terminar la ejecución de la rutina, obtendrá nuevas columnas en el conjunto
 * *_Validation_*: Corresponde a los indicadores de validación (unos y ceros) que permiten rastrear diferencias entre el valor original y el valor sugerido, y realizar posteriormente una limpieza de los datos. 
 
 
-En la (<<img-fig-61,Figura 61>>) se muestra un ejemplo de cómo se ven los identificadores de la validación y las nuevas columnas con las sugerencias después de ejecutar la rutina; en el ejemplo se observa una validación taxonómica, las columnas de resultado varían según el objetivo de cada rutina.
+En la <<img-fig-61,Figura 61>> se muestra un ejemplo de cómo se ven los identificadores de la validación y las nuevas columnas con las sugerencias después de ejecutar la rutina; en el ejemplo se observa una validación taxonómica, las columnas de resultado varían según el objetivo de cada rutina.
 
 [#img-fig-61]
 .Figura 61
@@ -123,9 +123,9 @@ image::img/es.figure-61.jpg[Figura 61,width=650,align=center]
 
 **Limpieza de los datos**
 
-A partir de las nuevas columnas de validación (finalizadas en las palabra _Suggested_) seleccione los registros donde el valor original y el valor sugerido son diferentes (identificador de validación = 0) y realice los ajustes que considere necesarios sobre los elementos del estándar Darwin Core. Se recomienda realizar este proceso de limpieza utilizando las funcionalidades de OpenRefine descritas en la (<<#limpieza-de-datos, Sección 2>>) de limpieza de datos. El proceso de validación con las rutinas busca facilitar la identificación de filas y elementos que necesitan ser verificados y limpiados, sin embargo, *un identificador de validación con valor cero (0) no necesariamente implica que haya un error en los datos. Cada publicador según su conocimiento de los datos y del grupo biológico debe determinar si los datos se deben ajustar y cómo.*
+A partir de las nuevas columnas de validación (finalizadas en las palabra _Suggested_) seleccione los registros donde el valor original y el valor sugerido son diferentes (identificador de validación = 0) y realice los ajustes que considere necesarios sobre los elementos del estándar Darwin Core. Se recomienda realizar este proceso de limpieza utilizando las funcionalidades de OpenRefine descritas en la <<#limpieza-de-datos, Sección 2>> de limpieza de datos. El proceso de validación con las rutinas busca facilitar la identificación de filas y elementos que necesitan ser verificados y limpiados, sin embargo, *un identificador de validación con valor cero (0) no necesariamente implica que haya un error en los datos. Cada publicador según su conocimiento de los datos y del grupo biológico debe determinar si los datos se deben ajustar y cómo.*
 
-Por ejemplo de la (<<img-fig-62,Figura 62>>) se muestra una <<#uso-de-facetas, Faceta de texto>> que permite seleccionar las filas cuyo indicador de validación es cero (0) para el elemento de familia y por lo tanto necesita ser verificado. En la primera fila se muestra una inconsistencia entre la familia documentada en el conjunto de datos original y la sugerida por la rutina, mientras en la segunda fila se evidencia un problema de tipeo. *En cada caso debe revisar de manera integral cada fila y decidir qué ajuste se debe o no realizar*. 
+Por ejemplo de la <<img-fig-62,Figura 62>> se muestra una <<#uso-de-facetas, Faceta de texto>> que permite seleccionar las filas cuyo indicador de validación es cero (0) para el elemento de familia y por lo tanto necesita ser verificado. En la primera fila se muestra una inconsistencia entre la familia documentada en el conjunto de datos original y la sugerida por la rutina, mientras en la segunda fila se evidencia un problema de tipeo. *En cada caso debe revisar de manera integral cada fila y decidir qué ajuste se debe o no realizar*. 
 
 [#img-fig-62]
 .Figura 62
@@ -155,7 +155,7 @@ Esta rutina valida la información taxonómica de un conjunto de datos usando co
 
 *Resultados:*
 
-En las primeras columnas del proyecto encontrará las columnas con los datos taxonómicos reorganizadas junto con nuevas columnas resultantes de la rutina. Primero encontrará las columnas asociadas al cruce con el árbol taxonómico y luego de manera intercalada columnas con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la (<<img-fig-63,Figura 63>>).
+En las primeras columnas del proyecto encontrará las columnas con los datos taxonómicos reorganizadas junto con nuevas columnas resultantes de la rutina. Primero encontrará las columnas asociadas al cruce con el árbol taxonómico y luego de manera intercalada columnas con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la <<img-fig-63,Figura 63>>.
 
 [#img-fig-63]
 .Figura 63
@@ -209,7 +209,7 @@ IMPORTANT: A diferencia del API de GBIF, _Species Matching_ tiene un límite de 
 
 *Resultados:*
 
-Como en la rutina anterior, en las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la (<<img-fig-63,Figura 63>>). Obtendrá las mismas  columnas que en la rutina anterior menos la columna `"callAPI"`.
+Como en la rutina anterior, en las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la <<img-fig-63,Figura 63>>. Obtendrá las mismas  columnas que en la rutina anterior menos la columna `"callAPI"`.
 
 
 === Validación taxonómica con el API de WoRMS
