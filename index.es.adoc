@@ -1,4 +1,4 @@
-= Guía para la limpieza de datos sobre biodiversidad con OpenRefine [borrador de revisión de la comunidad]
+= Guía para la limpieza de datos sobre biodiversidad con OpenRefine
 Paula F. Zermoglio; Camila A. Plata; John R. Wieczorek; Ricardo Ortiz; Leonardo Buitrago
 :toc: left
 :numbered:
