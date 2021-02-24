@@ -82,7 +82,7 @@ Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estru
 .Figura 49
 image::img/es.figure-49.jpg[Figura 49,width=548,align=center]
 
-Una vez que haya creado el campo, verá que contiene, aún en formato JSON, los valores de interés extraídos de GNR. Por ejemplo:
+Una vez que haya creado el campo, verá que contiene los valores de interés extraídos de GNR separados por ' | '. Por ejemplo:
 
 // Disable default Javascript formatting for these output blocks.
 :source-language!:
