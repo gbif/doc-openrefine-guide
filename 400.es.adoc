@@ -375,11 +375,11 @@ Uno de los campos sobre el que se puede corroborar la calidad de los datos es el
 Recordemos primero la http://rs.tdwg.org/dwc/terms/index.htm#eventDate[*definición de [source]`"eventDate"` en el estándar Darwin Core*]:
 
 [quote]
-The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use an encoding scheme, such as ISO 8601:2004(E).
+The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use a date that conforms to ISO 8601-1:2019.
 
 Si piensa en un ejemplar de museo, [source]`"eventDate"` refiere a cuándo fue colectado el ejemplar. Si piensa en una observación, [source]`"eventDate"` refiere a cuándo fue realizada esa observación.
 
-Darwin Core sugiere que se utilice para capturar la información de fecha el estándar https://en.wikipedia.org/wiki/ISO_8601[ISO 8601:2004(E)]. Para fechas únicas, este estándar tiene el siguiente formato:
+Darwin Core sugiere que se utilice para capturar la información de fecha el estándar https://en.wikipedia.org/wiki/ISO_8601[ISO 8601-1:2019]. Para fechas únicas, este estándar tiene el siguiente formato:
 
 [source,notjavascript]
 ----
