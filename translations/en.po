@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrefine-guide\n"
 "POT-Creation-Date: 2021-02-25 13:05+0000\n"
-"PO-Revision-Date: 2021-02-25 13:10\n"
+"PO-Revision-Date: 2021-02-25 15:29\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "Language: en_US\n"
@@ -20,35 +20,35 @@ msgstr ""
 #: index.es.adoc:1
 #, no-wrap
 msgid "Guía para la limpieza de datos sobre biodiversidad con OpenRefine"
-msgstr ""
+msgstr "Guide for biodiversity data cleaning with OpenRefine"
 
 #. type: Plain text
 #: index.es.adoc:3
 msgid "Paula F. Zermoglio; Camila A. Plata Corredor; John R. Wieczorek; Ricardo Ortiz Gallego; Leonardo Buitrago"
-msgstr ""
+msgstr "Paula F. Zermoglio; Camila A. Plata Corredor; John R. Wieczorek; Ricardo Ortiz Gallego; Leonardo Buitrago"
 
 #. type: Plain text
 #: index.es.adoc:21
 msgid "languageLinks:combined[]"
-msgstr ""
+msgstr "languageLinks:combined[]"
 
 #. type: Target for macro image
 #: colophon.es.adoc:2
 #, no-wrap
 msgid "img/web/photo.jpg"
-msgstr ""
+msgstr "img/web/photo.jpg"
 
 #. type: Title ==
 #: colophon.es.adoc:5
 #, no-wrap
 msgid "Colofón"
-msgstr ""
+msgstr "Colophon"
 
 #. type: Title ===
 #: colophon.es.adoc:7
 #, no-wrap
 msgid "Cita bibliográfica sugerida"
-msgstr ""
+msgstr "Suggested citation"
 
 #. type: Plain text
 #: colophon.es.adoc:10
@@ -59,18 +59,18 @@ msgstr ""
 #: colophon.es.adoc:11
 #, no-wrap
 msgid "Autores"
-msgstr ""
+msgstr "Authors"
 
 #. type: Plain text
 #: colophon.es.adoc:14
 msgid "https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0002-1632-9818[Camila A. Plata Corredor], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0003-1070-1081[Ricardo Ortiz Gallego] & https://orcid.org/0000-0002-0459-4024[Leonardo Buitrago]"
-msgstr ""
+msgstr "https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0002-1632-9818[Camila A. Plata Corredor], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0003-1070-1081[Ricardo Ortiz Gallego] & https://orcid.org/0000-0002-0459-4024[Leonardo Buitrago]"
 
 #. type: Title ===
 #: colophon.es.adoc:15
 #, no-wrap
 msgid "Licencia"
-msgstr ""
+msgstr "Licence"
 
 #. type: Plain text
 #: colophon.es.adoc:18
@@ -81,7 +81,7 @@ msgstr ""
 #: colophon.es.adoc:19
 #, no-wrap
 msgid "URI persistente"
-msgstr ""
+msgstr "Persistent URI"
 
 #. type: Plain text
 #: colophon.es.adoc:22
