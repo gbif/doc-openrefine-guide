@@ -1,0 +1,4448 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: openrefine-guide\n"
+"POT-Creation-Date: 2021-02-25 13:05+0000\n"
+"PO-Revision-Date: 2021-02-25 13:10\n"
+"Last-Translator: \n"
+"Language-Team: French\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Crowdin-Project: openrefine-guide\n"
+"X-Crowdin-Project-ID: 443338\n"
+"X-Crowdin-Language: fr\n"
+"X-Crowdin-File: /3.0/translations/index.pot\n"
+"X-Crowdin-File-ID: 378\n"
+
+#. type: Title =
+#: index.es.adoc:1
+#, no-wrap
+msgid "Guía para la limpieza de datos sobre biodiversidad con OpenRefine"
+msgstr ""
+
+#. type: Plain text
+#: index.es.adoc:3
+msgid "Paula F. Zermoglio; Camila A. Plata Corredor; John R. Wieczorek; Ricardo Ortiz Gallego; Leonardo Buitrago"
+msgstr ""
+
+#. type: Plain text
+#: index.es.adoc:21
+msgid "languageLinks:combined[]"
+msgstr ""
+
+#. type: Target for macro image
+#: colophon.es.adoc:2
+#, no-wrap
+msgid "img/web/photo.jpg"
+msgstr ""
+
+#. type: Title ==
+#: colophon.es.adoc:5
+#, no-wrap
+msgid "Colofón"
+msgstr ""
+
+#. type: Title ===
+#: colophon.es.adoc:7
+#, no-wrap
+msgid "Cita bibliográfica sugerida"
+msgstr ""
+
+#. type: Plain text
+#: colophon.es.adoc:10
+msgid "Zermoglio PF, Plata Corredor CA, Wieczorek JR, Ortiz Gallego R & Buitrago L (2021) Guía para la limpieza de datos sobre biodiversidad con OpenRefine. Versión 3. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18."
+msgstr ""
+
+#. type: Title ===
+#: colophon.es.adoc:11
+#, no-wrap
+msgid "Autores"
+msgstr ""
+
+#. type: Plain text
+#: colophon.es.adoc:14
+msgid "https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0002-1632-9818[Camila A. Plata Corredor], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0003-1070-1081[Ricardo Ortiz Gallego] & https://orcid.org/0000-0002-0459-4024[Leonardo Buitrago]"
+msgstr ""
+
+#. type: Title ===
+#: colophon.es.adoc:15
+#, no-wrap
+msgid "Licencia"
+msgstr ""
+
+#. type: Plain text
+#: colophon.es.adoc:18
+msgid "El documento Guía para la limpieza de datos sobre biodiversidad con OpenRefine se publica bajo una licencia https://creativecommons.org/licenses/by-sa/4.0/deed.es[Atribución-CompartirIgual 4.0 Internacional]."
+msgstr ""
+
+#. type: Title ===
+#: colophon.es.adoc:19
+#, no-wrap
+msgid "URI persistente"
+msgstr ""
+
+#. type: Plain text
+#: colophon.es.adoc:22
+msgid "https://doi.org/10.15468/doc-gzjg-af18"
+msgstr ""
+
+#. type: Title ===
+#: colophon.es.adoc:23
+#, no-wrap
+msgid "Control de documentos"
+msgstr ""
+
+#. type: Plain text
+#: colophon.es.adoc:26
+msgid "Versión 3, Febrero 2021."
+msgstr ""
+
+#. type: Plain text
+#: colophon.es.adoc:28
+msgid "Este documento se basa en dos publicaciones anteriores producidas por los mismos autores de esta Guía."
+msgstr ""
+
+#. type: Title ===
+#: colophon.es.adoc:29
+#, no-wrap
+msgid "Imagen de la portada"
+msgstr ""
+
+#. type: Plain text
+#: colophon.es.adoc:32
+msgid "Una manada de guanaco (_Lama guanicoe_), Lago Argentino, Santa Cruz, Argentina. Foto 2016 Diego Carús via https://www.gbif.org/occurrence/2005372769[iNaturalist Research-grade Observations], licenciada bajo http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0]."
+msgstr ""
+
+#. type: Plain text
+#: colophon.es.adoc:33 preface.es.adoc:38 100.es.adoc:107 280.es.adoc:83 300.es.adoc:72 400.es.adoc:525 afterword.es.adoc:7
+msgid "<<<"
+msgstr ""
+
+#. type: Title ==
+#: preface.es.adoc:1
+#, no-wrap
+msgid "Prefacio"
+msgstr ""
+
+#. type: Title ===
+#: preface.es.adoc:4
+#, no-wrap
+msgid "Comentarios Preliminares"
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:7
+msgid "Las imágenes incluidas en esta Guía están en idioma castellano."
+msgstr ""
+
+#. type: Title ===
+#: preface.es.adoc:9
+#, no-wrap
+msgid "Objetivo"
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:12
+msgid "La presente guía ha sido construida con fines únicamente pedagógicos. El objetivo de esta guía es mostrar cómo utilizar algunas de las funciones de OpenRefine que pueden utilizarse para evaluar y mejorar la calidad de datos de biodiversidad."
+msgstr ""
+
+#. type: Title ===
+#: preface.es.adoc:13
+#, no-wrap
+msgid "Cómo usar esta guía"
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:16
+msgid "En esta guía se muestra cómo utilizar algunas funciones de OpenRefine para la evaluación y mejoramiento de la calidad de un conjunto de datos de biodiversidad. Los ejemplos de uso presentados en esta guía constituyen sólo algunas de las alternativas posibles para el tratamiento de datos en OpenRefine."
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:18
+msgid "Para hacer un mejor uso de esta guía, se recomienda seguir los pasos utilizando el programa OpenRefine y el conjunto de datos modelo provisto junto con este documento. Todos los ejemplos presentados corresponden a un conjunto de datos de biodiversidad que ha sido específicamente modificado por los autores."
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:20
+msgid "En la Guía se utilizan los términos ‘campo’ y ‘columna’ indistintamente."
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:22
+msgid "En el texto se utiliza el siguiente formato para los [source]`\"nombres de los campos originales\"`."
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:24
+msgid "====\tSoftware"
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:26
+msgid "La versión de OpenRefine utilizada para la confección de esta guía es OpenRefine 3.3. Aunque no es la última versión disponible, es la última con la cual todos los pasos explicados en esta Guía han sido probados sin presentar problemas."
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:28
+msgid "Para ver detalles sobre cómo descargar e instalar OpenRefine en su computadora, ver el <<app-a,Apéndice 1>>."
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:31
+msgid "====\tDatos"
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:33
+msgid "El conjunto de datos modelo utilizado en esta guía puede obtenerse aquí: link:../data/EjercicioModelo_OpenRefine_Datos.csv[EjercicioModelo_OpenRefine_Datos.csv,opts=download]. Descargar el archivo, y no manipularlo en otros programas (e.g., MS Excel) antes de abrirlo en OpenRefine, dado que ello puede cambiar los formatos y/o codificación del archivo."
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:35
+msgid "El conjunto de datos modelo fue derivado a partir de:"
+msgstr ""
+
+#. type: Plain text
+#: preface.es.adoc:37
+msgid "_Williams J (2018). Colección de Herbario. Version 3.1. Facultad de Ciencias Naturales y Museo - U.N.L.P.. Occurrence dataset https://doi.org/10.15468/i9bj5r accessed via GBIF.org on 2019-04-18._"
+msgstr ""
+
+#. type: Title ==
+#: 100.es.adoc:1
+#, no-wrap
+msgid "Primeros pasos: datos y proyectos"
+msgstr ""
+
+#. type: Title ===
+#: 100.es.adoc:3
+#, no-wrap
+msgid "Carga de datos y creación de un proyecto"
+msgstr ""
+
+#. type: Plain text
+#: 100.es.adoc:6
+msgid "Para comenzar a utilizar OpenRefine debe cargar sus datos en el programa y crear un proyecto. Para ello, siga los siguientes pasos:"
+msgstr ""
+
+#. type: Title ===
+#: 100.es.adoc:9 500.es.adoc:60
+#, no-wrap
+msgid "Paso 1"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:12
+#, no-wrap
+msgid "*Abra la aplicación OpenRefine*. Si utiliza Windows, se abrirá una ventana de comandos que mostrará las acciones que OpenRefine está realizando (<<img-fig-01,Figura 1>>). *_No cierre esta ventana mientras esté trabajando con el programa._*\n"
+msgstr ""
+
+#. type: Block title
+#: 100.es.adoc:14
+#, no-wrap
+msgid "Figura 1"
+msgstr ""
+
+#. type: Target for macro image
+#: 100.es.adoc:15
+#, no-wrap
+msgid "img/es.figure-01.jpg"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:18
+msgid "OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamente después de ejecutar la aplicación (<<img-fig-02,Figura 2>>). Si OpenRefine no abre, puede acceder manualmente ingresando la siguiente URL en su navegador:"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:20
+msgid "http://127.0.0.1:3333"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:23
+msgid "Si bien puede ejecutar el programa utilizando cualquier navegador, nuestra recomendación es que utilice Google Chrome, pues otros navegadores suelen presentar diversos problemas, sobre todo cuando se intentan utilizar funciones más complejas."
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:25
+msgid "Si bien OpenRefine utiliza la interfaz de un navegador para trabajar, todos los procesos (e.g., creación de proyectos, carga de datos, procesamiento, etc.) se realizan localmente, es decir, en su computadora, sin subir datos en línea. Por tanto, para utilizar la mayoría de las funciones del programa no hace falta una conexión a Internet. Algunas funciones, sin embargo, como las <<sect-4,Consultas a servicios externos>>, sí requieren conexión."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 100.es.adoc:28 100.es.adoc:29
+#, no-wrap
+msgid "Figura 2"
+msgstr ""
+
+#. type: Target for macro image
+#: 100.es.adoc:29
+#, no-wrap
+msgid "img/es.figure-02.jpg"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:32
+msgid "En el menú de la izquierda tiene opciones para crear, abrir o importar proyectos. Si usted no tiene ningún proyecto aún, en la opción de “Abrir proyecto” verá una lista vacía."
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:34
+msgid "Además puede cambiar la configuración de idioma. Para ello, haga click en “Idioma” y en la siguiente pantalla (<<img-fig-03,Figura 3>>) seleccione el idioma preferido. Acepte los cambios. En esta guía se utilizará el idioma Español."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 100.es.adoc:36 100.es.adoc:37
+#, no-wrap
+msgid "Figura 3"
+msgstr ""
+
+#. type: Target for macro image
+#: 100.es.adoc:37
+#, no-wrap
+msgid "img/es.figure-03.jpg"
+msgstr ""
+
+#. type: Title ===
+#: 100.es.adoc:43 500.es.adoc:71
+#, no-wrap
+msgid "Paso 2"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:46
+#, no-wrap
+msgid "*Cargue los datos* (<<img-fig-02,Figura 2>>). Dentro de la opción “Crear proyecto”, escoja el archivo que desea cargar. Note que hay varios formatos posibles de archivos que se pueden subir (tsv, csv, xls, json, etc). Haga click en “Siguiente”. \n"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:48
+msgid "Para seguir esta guía, cargue el archivo proporcionado, al que puede acceder a través del enlace provisto en la sección <<datos,Cómo usar esta guía: Datos>>."
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:50
+msgid "Si sube archivos con formato .xls o .xlsx, tenga en cuenta que no podrá modificar la codificación, y que pueden encontrarse algunos errores en los datos (ejemplo: los tildes en las palabras se verán como símbolos raros cuando cargue los datos). Para evitarse problemas, si trabaja con MS Excel es conveniente que exporte los datos como archivo .csv (de todas formas, tenga cuidado con la codificación, ver más abajo)."
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:52
+msgid "Verá entonces una pantalla como la que se muestra en la <<img-fig-04,Figura 4>>. Allí puede encontrar dos cuadros de texto arriba a la derecha, uno para indicar el nombre de su proyecto, y otro que permite asignar etiquetas (“tags”) a su proyecto. Puede asignar tantas etiquetas como desee, escribiéndolas en el cuadro. Las etiquetas le ayudarán a organizar mejor sus proyectos, y podrá verlas y editarlas a través del menú “Abrir proyecto” junto al nombre de su proyecto (ver sección “Abrir un proyecto y modificar sus metadatos” más abajo para más detalles sobre cómo agregar o cambiar etiquetas y otros elementos de los metadatos de los proyectos). Además, en esta pantalla puede ver una muestra de sus datos (tabla) y modificar varios aspectos de la carga de los datos al programa: codificación, criterio para la separación en columnas, inclusión o no de las primeras filas, etc."
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:54
+msgid "OpenRefine sugiere algunas de las codificaciones más utilizadas cuando se hace click en el cuadro de texto “Codificación de caracteres”. Asegúrese de escoger correctamente la codificación. Si está utilizando el conjunto de datos de prueba proporcionado, escoja UTF-8 (<<img-fig-05,Figura 5>>)."
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:56
+msgid "OpenRefine presenta la opción de “Detectar y transformar texto en números, fechas, …”. Si esta opción es seleccionada, el programa tratará de interpretar ciertos campos transformándolos a determinados formatos. Por ejemplo, si detecta campos de fecha, tratará de colocar los valores de las celdas de ese campo en formato de fecha estándar. Dada la naturaleza de los datos sobre biodiversidad con los que solemos trabajar, estas interpretaciones pueden ser incorrectas e introducir más errores. Asegúrese entonces de desmarcar esta opción durante el paso de importación de datos."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 100.es.adoc:58 100.es.adoc:59
+#, no-wrap
+msgid "Figura 4"
+msgstr ""
+
+#. type: Target for macro image
+#: 100.es.adoc:59
+#, no-wrap
+msgid "img/es.figure-04.jpg"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 100.es.adoc:62 100.es.adoc:63
+#, no-wrap
+msgid "Figura 5"
+msgstr ""
+
+#. type: Target for macro image
+#: 100.es.adoc:63
+#, no-wrap
+msgid "img/es.figure-05.jpg"
+msgstr ""
+
+#. type: Title ===
+#: 100.es.adoc:69 500.es.adoc:100
+#, no-wrap
+msgid "Paso 3"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:72
+#, no-wrap
+msgid "*Cree el proyecto*. Una vez que haya seleccionado las opciones de carga de datos, haga click en el botón “Crear Proyecto” arriba a la derecha.\n"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:74
+msgid "Cuando se cargan datos en OpenRefine y se crea un proyecto, el programa hace una copia de los datos provistos. De esta forma, el archivo local original nunca se modifica, garantizando no perder los datos originales."
+msgstr ""
+
+#. type: Title ===
+#: 100.es.adoc:79 500.es.adoc:122
+#, no-wrap
+msgid "Paso 4"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:82
+#, no-wrap
+msgid "*¡Felicitaciones!* Ya tiene un proyecto (lo verá como en la <<img-fig-06,Figura 6>>).\n"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 100.es.adoc:84 100.es.adoc:85
+#, no-wrap
+msgid "Figura 6"
+msgstr ""
+
+#. type: Target for macro image
+#: 100.es.adoc:85
+#, no-wrap
+msgid "img/es.figure-06.jpg"
+msgstr ""
+
+#. type: delimited block *
+#: 100.es.adoc:88
+msgid "El número total de filas cargadas se muestra en este momento arriba de la tabla en negrita (para el caso del conjunto de datos provisto, 24984 filas). Sin embargo, verá que el número de filas mostradas en la tabla es limitado. No desespere, OpenRefine sólo muestra hasta 50 filas. Las acciones que uno pueda tomar en la aplicación, sin embargo, pueden tener efecto sobre otras filas aunque éstas no sean mostradas."
+msgstr ""
+
+#. type: Title ===
+#: 100.es.adoc:91
+#, no-wrap
+msgid "Abrir un proyecto y modificar sus metadatos"
+msgstr ""
+
+#. type: Plain text
+#: 100.es.adoc:94
+msgid "Una vez que ha creado uno o más proyectos, podrá acceder a ellos a través del menú “Abrir proyecto” (<<img-fig-03,Figura 3>>. Cuando ingresa a este menú, verá listados todos sus proyectos, con una serie de metadatos básicos que puede utilizar para ordenar su lista (<<img-fig-07,Figura 7a>>). Los metadatos mostrados incluyen el nombre del proyecto, la fecha de última modificación, las etiquetas asignadas (“tags”), el número de filas, etc."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 100.es.adoc:96 100.es.adoc:97
+#, no-wrap
+msgid "Figura 7"
+msgstr ""
+
+#. type: Target for macro image
+#: 100.es.adoc:97
+#, no-wrap
+msgid "img/es.figure-07.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 100.es.adoc:100
+msgid "Si desea editar los metadatos, debe ingresar a la opción “Acerca de”, a la izquierda en la tabla de proyectos (<<img-fig-07,Figura 7a>>). Se abrirá entonces una ventana como la mostrada en la <<img-fig-07,Figura 7b>>. Si desea modificar los distintos elementos de los metadatos, puede utilizar el botón “Editar” sobre cada parámetro. Por ejemplo, si olvidó colocar una etiqueta al crear un proyecto, puede hacerlo más tarde desde este menú. Contar con buenos metadatos puede ayudarle a organizar sus proyectos, sobre todo lleva a cabo trabajo colaborativo."
+msgstr ""
+
+#. type: Title ===
+#: 100.es.adoc:101
+#, no-wrap
+msgid "Asignar suficientes recursos al programa"
+msgstr ""
+
+#. type: Plain text
+#: 100.es.adoc:103
+msgid "Para que OpenRefine pueda funcionar correctamente se requiere contar con suficiente memoria en la computadora asignada al programa. Especialmente si se trabajará con conjuntos de datos grandes, la memoria asignada afectará la velocidad de procesamiento e incluso podría limitar la capacidad para aplicar ciertas funciones."
+msgstr ""
+
+#. type: Plain text
+#: 100.es.adoc:105
+msgid "Por defecto, el programa utiliza 1 gigabyte (GB, o 1024MB) de memoria, pero la cantidad de memoria asignada puede modificarse para optimizar el desempeño. Para conocer los detalles sobre cómo modificar la memoria asignada en distintos sistemas operativos, vea la documentación provista en el https://docs.openrefine.org/[Manual del Usuario de OpenRefine]."
+msgstr ""
+
+#. type: Title ==
+#: 200.es.adoc:1
+#, no-wrap
+msgid "Limpieza de datos "
+msgstr ""
+
+#. type: Title ===
+#: 200.es.adoc:3
+#, no-wrap
+msgid "Manejo básico de columnas"
+msgstr ""
+
+#. type: Title ====
+#: 200.es.adoc:5
+#, no-wrap
+msgid "Renombrar, eliminar y mover columnas"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:8
+msgid "Veamos primero algunas funciones básicas que se pueden aplicar sobre los campos:"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:10
+#, no-wrap
+msgid "*Renombrar un campo.*\n"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:12
+msgid "Hacer click en \"la &#9660; azul del campo > Editar columnas > Renombrar esta columna\""
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:14
+#, no-wrap
+msgid "*Eliminar un campo.*\n"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:16
+msgid "Hacer click en \"la &#9660; azul del campo > Editar columnas > Eliminar esta columna\""
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:18
+#, no-wrap
+msgid "*Mover un campo.*\n"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:20
+msgid "Hacer click en"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:22
+msgid "… \"la &#9660; azul del campo > Editar columnas > Mover columna al principio\""
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:24
+msgid "… \"la &#9660; azul del campo > Editar columnas > Mover columna al final\""
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:26
+msgid "… \"la &#9660; azul del campo > Editar columnas > Mover columna a la izquierda\""
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:28
+msgid "… \"la &#9660; azul del campo > Editar columnas > Mover columna a la derecha\""
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:30
+msgid "Estas tres opciones pueden verse en la <<img-fig-08,Figura 8>>."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 200.es.adoc:32 200.es.adoc:33
+#, no-wrap
+msgid "Figura 8"
+msgstr ""
+
+#. type: Target for macro image
+#: 200.es.adoc:33
+#, no-wrap
+msgid "img/es.figure-08.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:36
+#, no-wrap
+msgid "*Reordenar o eliminar varios campos a la vez.*\n"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:38
+msgid "Para esta función se utiliza el campo “Todo”, que se encuentra como primera columna de la tabla. Este campo no forma parte de los datos originales, es agregado por el programa para permitir llevar a cabo ciertas funciones."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:40
+msgid "Hacer click en \"la &#9660; azul en el campo “Todo” > Editar columnas > Ordenar / Eliminar columnas…\" (<<img-fig-09,Figura 9a>>)."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:42
+msgid "Se abrirá entonces una ventana como la que se muestra en la <<img-fig-09,Figura 9b>>. Allí puede ordenar los campos simplemente arrastrándolos arriba o abajo en la lista, y eliminarlos arrastrándolos hacia la parte derecha de la ventana. Una vez que termine de modificar el orden de los campos, haga click en “Aceptar”."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 200.es.adoc:44 200.es.adoc:45
+#, no-wrap
+msgid "Figura 9"
+msgstr ""
+
+#. type: Target for macro image
+#: 200.es.adoc:45
+#, no-wrap
+msgid "img/es.figure-09.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:48
+msgid "En OpenRefine se considera que cualquiera de los cuatro cambios descriptos anteriormente son cambios a los datos, y por ende se registran como tales en el historial de cambios (ver más abajo sección <<sect-2.5,Deshacer y rehacer cambios>>)."
+msgstr ""
+
+#. type: Title ====
+#: 200.es.adoc:49
+#, no-wrap
+msgid "Nuevas columnas vacías"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:52
+msgid "Se pueden crear nuevos campos en base a cero, uno o más campos preexistentes."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:54
+msgid "Para crear un nuevo campo de cero, sobre cualquier columna preexistente siga la ruta:"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:56
+msgid "\"Editar columnas > Agregar columna basada en esta columna…\""
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:58
+msgid "Se abrirá una ventana como la que se muestra en la <<img-fig-10,Figura 10>>."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:60
+msgid "Arriba de todo, coloque el nombre del nuevo campo."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:62
+msgid "Debe tener extremo cuidado al escoger los nombres que dará a las nuevas columnas. Considere que el nombre sea indicativo de lo que contiene (e.g., no utilice nombres tales como “Columna 1” o “Transformación 3”). OpenRefine no le dejará utilizar nombres que ya hayan sido utilizados para nombrar otros campos dentro del proyecto. Considere qué otros campos tiene en su base de datos original y no utilice nombres que ya hayan sido utilizados, se evitará así importar datos a columnas equivocadas al volver a su base de datos."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:64
+msgid "Luego, en el cuadro de texto “Expresión” escriba: [source]`null`. Ello quiere decir que se creará un campo con valores nulos. Luego oprima “Aceptar”. Alternativamente, en vez de [source]`null` puede colocar la expresión: [source]`\"\"`, y el nuevo campo tendrá valores en blanco."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 200.es.adoc:66 200.es.adoc:67
+#, no-wrap
+msgid "Figura 10"
+msgstr ""
+
+#. type: Target for macro image
+#: 200.es.adoc:67
+#, no-wrap
+msgid "img/es.figure-10.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:70
+msgid "El nuevo campo, con el nombre que le haya dado, aparecerá a la derecha de aquel a partir del cual fue generado."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:72
+msgid "Tenga en cuenta que las columnas nuevas que cree en la aplicación no estarán en su base de datos original. Al importar los datos que han sido limpiados de regreso a su base de datos, dependiendo de cómo esté estructurada esa base de datos, es posible que estas nuevas columnas no sean importadas o que reciba un mensaje de error de importación porque el número de campos del archivo no coincide con el de la base de datos. En estos casos, debe asegurarse de agregar previamente los nuevos campos en su base de datos si desea importar todos los campos nuevos."
+msgstr ""
+
+#. type: Title ====
+#: 200.es.adoc:73
+#, no-wrap
+msgid "Nuevas columnas a partir transformaciones simples de otras columnas"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:76
+msgid "Muchas veces no queremos modificar los datos directamente en los campos (columnas) en que se presentan, dado que queremos mantener los valores originales y/o queremos proveer información adicional basada en ciertos campos. Por ejemplo, podríamos tener como campos individuales el género y el epíteto específico y queremos agregar el campo nombre científico como concatenación de los dos; o viceversa: tenemos un único campo nombre científico y queremos mantener ese campo y proveer otros dos campos adicionales para género y epíteto, a partir de la división del anterior. Para estos casos es útil crear nuevos campos en nuevas columnas."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:78
+msgid "Veamos ahora cómo crear nuevas columnas con datos modificados a partir de columnas preexistentes."
+msgstr ""
+
+#. type: Title =====
+#: 200.es.adoc:79
+#, no-wrap
+msgid "Concatenaciones"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:82
+msgid "Si desea crear un campo que sea la concatenación de otros dos campos separados puede seguir dos rutas, que se describen a continuación, de acuerdo a la versión del programa que utilice. La primera ruta utiliza la función “Unir columnas” (o “Join columns”, como figura en el programa), y está disponible en la versión 3.3 y posteriores de OpenRefine. Las versiones anteriores del programa no tienen esta función, pero el mismo resultado puede obtenerse siguiendo la segunda ruta descripta abajo utilizando cualquier versión del programa. Para ambas rutas utilizaremos como ejemplo la concatenación de los campos [source]`\"genus\"` y [source]`\"specificEpithet\"`."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:84
+#, no-wrap
+msgid "*Ruta 1: Función “Unir columnas”*\n"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:87
+msgid "Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{genus}[Editar columnas > Join columns…] (Notar que el nombre de la función y los menúes que se despliegan están en inglés en esta versión del programa)."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:89
+msgid "Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>), donde puede seleccionar todas las columnas que desea unir."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:92
+msgid "El primer recuadro a la derecha le permite seleccionar qué separador utilizar entre los contenido de cada columna. Por ejemplo, puede utilizar un espacio \" \".  Luego debe especificar qué hacer con los registros donde alguno de los campos a unir tiene valores nulos (por ejemplo, [source]`\"genus\"` tiene un valor pero [source]`\"specificEpithet\"` es nulo, o viceversa). Si elige la opción \"Replace nulls with...\" (\"Reemplazar nulos con…\"), puede especificar con qué reemplazar esos valores nulos (por ejemplo, algún caracter), o dejar ese recuadro vacío. Si, en cambio, escoge \"Skip nulls\" (\"Saltear nulos\"), para todos aquellos registros que tuvieran uno de los dos campos nulos no se llevará a cabo la unión."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:94
+msgid "Nota: Al escoger reemplazar los valores nulos y dejar el cuadro vacío (es decir, reemplazar por un caracter nulo), aún se hará la unión utilizando el separador indicado. Si el primer campo a unir tiene un valor no nulo y el segundo un valor nulo, el resultado será el valor del primer campo más el separador. Si el primer campo a unir tiene un valor nulo y el segundo un valor no nulo, el resultado será sólo el valor del segundo campo (sin separador). Para un ejemplo práctico, ver <<#table-join, Tabla 1>> más abajo."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:96
+msgid "Luego debe indicar si quiere los resultados sobre la misma columna sobre la que está actuando o en una columna nueva, y en ese caso, proveer un nombre para el nuevo campo. Puede llamar al nuevo campo \"joint_scientificName\", para indicar que se trata de la unión (note que ya hay un campo [source]`\"scientificName\"` en los datos). Siempre es recomendable crear un nuevo campo, y en todo caso eliminar los campos innecesarios luego."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:98
+msgid "Por último, tiene la opción de eliminar las columnas que dieron origen a la unión (\"Delete joined columns\", \"Eliminar columnas unidas\"). Si desea conservarlas, como en este caso, asegúrese de que esa opción está desmarcada."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 200.es.adoc:100 200.es.adoc:101
+#, no-wrap
+msgid "Figura 11"
+msgstr ""
+
+#. type: Target for macro image
+#: 200.es.adoc:101
+#, no-wrap
+msgid "img/es.figure-11.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:104
+msgid "Los resultados esperados de acuerdo a distintos parámetros escogidos se resumen en la siguiente tabla (<<#table-join, Tabla 1>>):"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:107
+msgid "Tabla 1. Ejemplos de unión de dos columnas (“genus” y “specificEpithet”) en otra (“joint_scientificName), utilizando distintos separadores y tratamientos de nulos."
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:116
+#, no-wrap
+msgid "\n"
+"|Separador\n"
+"|Tratamiento de nulos\n"
+"|genus\n"
+"|specificEpithet\n"
+"|joint_scientificName\n"
+msgstr ""
+
+#. type: Block title
+#: 200.es.adoc:116
+#, no-wrap
+msgid "12+.^|\" \" "
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:118
+msgid "(un espacio)"
+msgstr ""
+
+#. type: Block title
+#: 200.es.adoc:118 200.es.adoc:164
+#, no-wrap
+msgid "4+.^|Reemplazar nulos con: \"\" "
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:135
+msgid "  (sin especificar)  |Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago _(con un espacio extra después del género)_ |_null_ |lasiocarpa |lasiocarpa |_null_ |_null_ |_null_"
+msgstr ""
+
+#. type: Block title
+#: 200.es.adoc:135 200.es.adoc:181
+#, no-wrap
+msgid "4+.^|Reemplazar nulos con: \"@\""
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:148
+msgid "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago @ |_null_ |lasiocarpa |@ lasiocarpa |_null_ |_null_ |@ @"
+msgstr ""
+
+#. type: Block title
+#: 200.es.adoc:148 200.es.adoc:194
+#, no-wrap
+msgid "4+.^|Saltear nulos"
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:161 200.es.adoc:277
+msgid "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |_null_ |_null_ |lasiocarpa |_null_ |_null_ |_null_ |_null_"
+msgstr ""
+
+#. type: Block title
+#: 200.es.adoc:161
+#, no-wrap
+msgid "12+.^|\", \" "
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:164
+msgid "  (coma y espacio)"
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:181
+msgid "  (sin especificar)  |Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ |Filago, _(con un espacio extra después de la coma)_ |_null_ |lasiocarpa |lasiocarpa |_null_ |_null_ |_null_"
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:194
+msgid "|Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ |Filago, @ |_null_ |lasiocarpa |@, lasiocarpa |_null_ |_null_ |@, @"
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:207
+msgid "|Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ |_null_ |_null_ |lasiocarpa |_null_ |_null_ |_null_ |_null_"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:210
+msgid "Si optamos por una opción que contiene en los resultados espacios en blanco no deseados, podemos aplicar luego una transformación en las celdas de la columna resultado del tipo \"Quitar espacios al inicio y al final\" (ver <<#Facetas-y-espacios-en-blanco, sección 2.2.2>>)."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:213
+#, no-wrap
+msgid "*Ruta 2: Concatenación mediante expresiones regulares*\n"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:215
+msgid "Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{genus}[Editar columnas > Agregar columna basada en esta columna…]"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:217
+msgid "Se abrirá una nueva ventana (<<img-fig-12,Figura 12>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`\"scientificName\"` en los datos)."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:219
+msgid "En el cuadro de texto, pegue la siguiente expresión:"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:222
+msgid "Expresión ejemplo:\t[source]`cells[\"genus\"].value + \" \" + cells[\"specificEpithet\"].value` _(Expresión 1)_ + Expresión general:\t[source]`cells[\"campo1\"].value + \" \" + cells[\"campo2\"].value`"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:224
+msgid "La expresión ejemplo concatena (`+`) los valores del campo [source]`\"genus\"` ([source]`cells[\"genus\"].value`) y los del campo [source]`\"specificEpithet\"` ([source]`cells[\"specificEpithet\"].value`), con un espacio entre los valores (\"[source]`` ``\")."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 200.es.adoc:226 200.es.adoc:227
+#, no-wrap
+msgid "Figura 12"
+msgstr ""
+
+#. type: Target for macro image
+#: 200.es.adoc:227
+#, no-wrap
+msgid "img/es.figure-12.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:230
+msgid "Note que esta expresión funciona cuando ambos campos, [source]`\"genus\"` y [source]`\"specificEpithet\"`, tienen valores, es decir no son nulos. Si alguno de los dos campos tiene valores nulos, entonces no se lleva a cabo la concatenación. Por ejemplo, si hay un valor para genus pero specificEpithet está vacío, el campo de concatenación aparecerá vacío. Esto se debe a que no se puede operar sobre valores nulos."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:232
+msgid "En este caso, puede sortear el problema utilizando en cambio la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 200.es.adoc:236
+#, no-wrap
+msgid "if(isBlank(cells[\"genus\"].value), \"\", cells[\"genus\"].value) + \" \" + if(isBlank(cells[\"specificEpithet\"].value), \"\", cells[\"specificEpithet\"].value)\n"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:238
+msgid "_(Expresión 2)_"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:240
+msgid "Lo que dicha expresión significa es: concatenar ([source]`+`) dos partes, cada una proviene de una sub-expresión [source]`if`, separadas por un espacio ([source]`+ \" \" +`). Cada una de estas sub-expresiones indica: si ([source]`if`) el valor del campo dado es nulo ([source]`isBlank(cells[\"genus\"].value)`), colocar un blanco ([source]`\"\"`), si no ([source]`,`), colocar el valor del campo ([source]`cells[\"genus\"].value`). La otra sub-expresión es lo mismo pero para epíteto específico."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:242
+msgid "Para evitar de modo más general este problema de celdas nulas, cuando importa el conjunto de datos para crear su proyecto al principio del proceso, puede asegurarse de NO seleccionar la opción “Store blank cells as nulls” (ver <<img-fig-04,Figura 4>>)."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:245
+msgid "La fórmula anterior (Expresión 2) resuelve el problema de tener valores nulos en la concatenación, pero al aplicarla, si alguno de los campos es nulo, el resultado tendrá espacios en blanco extra no deseados. Por ejemplo, si el valor de [source]`\"genus\"` es nulo, el valor resultante en el campo concatenado será \" epíteto\", con un espacio en blanco antes del epíteto; si el valor de [source]`\"specificEpithet\"` es nulo, el valor resultante será \"genus \", con un espacio en blanco después del género; y si los valores de ambos son campos son nulos, el valor resultante será \" \", un espacio en blanco.  Para resolver este problema, se puede: 1) aplicar una transformación en las celdas de la columna resultado del tipo \"Quitar espacios al inicio y al final\" (ver <<#Facetas-y-espacios-en-blanco, sección 2.2.2>>), o 2) incluir en la expresión la quita de espacios al inicio y al final. Siguiendo la segunda opción, la expresión final sería:"
+msgstr ""
+
+#. type: delimited block -
+#: 200.es.adoc:249
+#, no-wrap
+msgid "Trim(if(isBlank(cells[\"genus\"].value), \"\", cells[\"genus\"].value) + \" \" + if(isBlank(cells[\"specificEpithet\"].value), \"\", cells[\"specificEpithet\"].value))\n"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:252
+msgid "_(Expresión 3)_ donde se ha aplicado la función \"Trim\", que quita espacios en blanco no deseados al inicio y al final del valor de las celdas."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:254
+msgid "Los resultados esperados utilizando cada una de las tres fórmulas se resumen en la siguiente tabla (<<#table-concat, Tabla 2>>):"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:257
+msgid "Tabla 2. Ejemplos de concatenación de dos columnas (“genus” y “specificEpithet”) en otra (“concat_scientificName), utilizando distintas expresiones (ver texto más arriba)."
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:264
+#, no-wrap
+msgid "|Expresión\n"
+"|genus\n"
+"|specificEpithet\n"
+"|concat_scientificName\n"
+msgstr ""
+
+#. type: Block title
+#: 200.es.adoc:264
+#, no-wrap
+msgid "4+.^|1"
+msgstr ""
+
+#. type: Block title
+#: 200.es.adoc:277
+#, no-wrap
+msgid "4+.^|2"
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:297
+msgid "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago _(con un espacio en blanco después del género)_ |_null_ |lasiocarpa | lasiocarpa _(con un espacio en blanco antes del epíteto)_ |_null_ |_null_ | _(con un espacio en blanco)_"
+msgstr ""
+
+#. type: Block title
+#: 200.es.adoc:297
+#, no-wrap
+msgid "4+.^|3"
+msgstr ""
+
+#. type: Table
+#: 200.es.adoc:310
+msgid "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago |_null_ |lasiocarpa |lasiocarpa |_null_ |_null_ |_null_"
+msgstr ""
+
+#. type: Title =====
+#: 200.es.adoc:314
+#, no-wrap
+msgid "Divisiones"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:316
+msgid "Si desea crear campos separados a partir de los valores en un único campo, siga la siguiente ruta:"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:318
+msgid "Utilizaremos como ejemplo la división del campo [source]`\"eventDate\"` para agregar tres campos: año, mes y día (year, month y day)"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:320
+msgid "Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{eventDate}[Editar columnas > Dividir en varias columnas…]"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:322
+msgid "Se abrirá una nueva ventana (<<img-fig-13,Figura 13>>). Allí debe escoger si se dividirá por separador o por longitud de caracteres, y en el primer caso qué tipo de separador se utilizará (puede ser espacio, caracter de tabulación, coma, punto y coma, guión, etc.)."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:324
+msgid "En este caso, si exploramos los datos del campo original veremos que año, mes y día están separados por barras oblicuas (“/”), de modo que elegiremos esta barra como separador."
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:326
+#, no-wrap
+msgid "*Desmarque la opción “Eliminar esta columna” a la derecha*. Si la deja seleccionada, perderá el campo original y sólo tendrá los tres nuevos campos.\n"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 200.es.adoc:328 200.es.adoc:329
+#, no-wrap
+msgid "Figura 13"
+msgstr ""
+
+#. type: Target for macro image
+#: 200.es.adoc:329
+#, no-wrap
+msgid "img/es.figure-13.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:332
+msgid "Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`\"eventDate\"`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda (\"la &#9660; azul > Editar columnas > Renombrar esta columna\"). En este caso, nómbrelos “year”, “month” y “day” según corresponda."
+msgstr ""
+
+#. type: delimited block =
+#: 200.es.adoc:337
+msgid "Cuando efectúe este tipo de divisiones de campos utilizando como criterio ya sea separadores o longitud de caracteres, asegúrese de que en el campo original no haya distintos formatos para diferentes registros. Vea el siguiente ejemplo:"
+msgstr ""
+
+#. type: delimited block =
+#: 200.es.adoc:339
+msgid "Se quiere separar un campo nombrado “coordenadas” que contiene datos de latitud y longitud separados por coma, del tipo: “-32.04588990, -54.98789901”, para obtener dos campos distintos, latitud y longitud."
+msgstr ""
+
+#. type: delimited block =
+#: 200.es.adoc:341
+msgid "Si todos los campos tienen el mismo formato, obtendrá dos campos nuevos de la siguiente forma:"
+msgstr ""
+
+#. type: delimited block -
+#: 200.es.adoc:345
+#, no-wrap
+msgid "campo 1: -32.04588990\n"
+"campo 2: -54.98789901\n"
+msgstr ""
+
+#. type: Plain text
+#: 200.es.adoc:348
+msgid "En cambio, si en algún registro los valores dentro del campo coordenadas no están en formato decimal, entonces tendrá problemas al dividir el campo. Suponga como ejemplo que uno o más registros tienen valores con formato “34° 20’ 15,2’’ S, 54° 49’ 13’’ O”. En ese caso, la separación le dará 3 campos en vez de dos, con la latitud incorrectamente separada:"
+msgstr ""
+
+#. type: delimited block -
+#: 200.es.adoc:354
+#, no-wrap
+msgid "campo 1: 34° 20’ 15\n"
+"campo 2: 2’’ S\n"
+"campo 3: 54° 49´ 13´´ O\n"
+msgstr ""
+
+#. type: Title ===
+#: 220.es.adoc:1
+#, no-wrap
+msgid "Uso de Facetas"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:4
+msgid "La función “Facetas” es una forma de visualización de los datos, que permite el tratamiento en bloque de grupos de registros. Las facetas se pueden aplicar a celdas que contengan cualquier tipo de texto, números o fechas."
+msgstr ""
+
+#. type: Title ====
+#: 220.es.adoc:5
+#, no-wrap
+msgid "Facetas de texto"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:8
+msgid "Ubique la columna [source]`\"kingdom\"` y haga click sobre menu:la{sp}&#9660;{sp}azul[]. Dentro de “Facetas”, escoja “Faceta de texto”, como se muestra a continuación (<<img-fig-14,Figura 14a>>). Se abrirá entonces a la izquierda una ventana con la faceta (<<img-fig-14,Figura 14b>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:10 220.es.adoc:11
+#, no-wrap
+msgid "Figura 14"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:11
+#, no-wrap
+msgid "img/es.figure-14.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:14
+msgid "En dicha ventana de faceta, puede ordenar los valores alfabéticamente (haciendo click sobre “A-Z”) o según el número de registros asociados a cada valor (haciendo click sobre “conteo”)."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:16
+msgid "En la lista de valores podemos ver que hay algunos errores. Para corregirlos coloque el cursor sobre el valor que desea modificar y haga click en “editar”. Se abrirá entonces una pequeña ventana donde puede cambiar el valor (<<img-fig-15,Figura 15>>).  Para guardar el cambio haga click en “Aplicar”, ello aplicará el cambio a todos aquellos registros que tenían el valor dado."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:18
+msgid "Corrija los valores “Plante” y “Plants”. Cuando lo haga, habrá corregido todos los registros que contenían esos valores, y se modificará entonces el número de registros que tiene el valor “Plantae”."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:20 220.es.adoc:21
+#, no-wrap
+msgid "Figura 15"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:21
+#, no-wrap
+msgid "img/es.figure-15.jpg"
+msgstr ""
+
+#. type: Title ====
+#: 220.es.adoc:24
+#, no-wrap
+msgid "Facetas y espacios en blanco"
+msgstr ""
+
+#. type: Title =====
+#: 220.es.adoc:26
+#, no-wrap
+msgid "Espacios en blanco extra al principio o al final de una cadena de texto"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:29
+msgid "Una vez que haya corregido los valores en el punto anterior, notará que aún aparecen 3 valores “Plantae”, aparentemente iguales (<<img-fig-16,Figura 16>>). Sin embargo, estos valores sí son diferentes: tienen espacios adicionales al final del valor de texto."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:31 220.es.adoc:32
+#, no-wrap
+msgid "Figura 16"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:32
+#, no-wrap
+msgid "img/es.figure-16.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:35
+msgid "Para corregir estos errores, asegúrese de que ninguno de los valores en la faceta están seleccionados y de que el número de registros que se muestra arriba de la tabla es el total (24984). Sobre la columna [source]`\"kingdom\"`, haga click sobre menu:la{sp}&#9660;{sp}azul[] y siga las siguientes opciones (<<img-fig-17,Figura 17>>):"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:38
+msgid "\"Editar celdas > Transformaciones comunes > Quitar espacios al inicio y final\""
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:41
+msgid "Esta función permite eliminar espacios en blanco que puedan aparecer al principio y al final de cadenas de texto. Cuando termine este paso, los 24,984 registros deberían tener el valor “Plantae” en la columna [source]`\"kingdom\"`."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:43 220.es.adoc:44
+#, no-wrap
+msgid "Figura 17"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:44
+#, no-wrap
+msgid "img/es.figure-17.jpg"
+msgstr ""
+
+#. type: Title =====
+#: 220.es.adoc:46
+#, no-wrap
+msgid "Espacios en blanco extra entre palabras en una cadena de texto"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:49
+msgid "A veces en campos que contienen cadenas de texto con varias palabras puede haber espacios en blanco extra entre palabras. Para ver un ejemplo, ubique la columna [source]`\"stateProvince\"` en el conjunto de datos. Arme una faceta de texto para dicha columna (click sobre \"la &#9660; azul > Facetas > Faceta de texto\"). Luego, en la faceta, ordene los valores por número de registros asociados (seleccionando “conteo”). Verá entonces los valores que se encuentran en este campo como se muestra en la <<img-fig-18,Figura 18>>."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:51
+msgid "Note que en primer y tercer lugar figura aparentemente el mismo valor, “Buenos Aires”. La diferencia entre ambos valores es que uno de ellos tiene un doble espacio entre las palabras."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:53 220.es.adoc:54
+#, no-wrap
+msgid "Figura 18"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:54
+#, no-wrap
+msgid "img/es.figure-18.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:57
+msgid "Para corregir este error, sobre la columna [source]`\"stateProvince\"`, haga click sobre menu:la{sp}&#9660;{sp}azul[] y siga la siguiente ruta (<<img-fig-19,Figura 19>>):"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:60
+msgid "\"Editar celdas > Transformaciones Comunes > Contraer espacios consecutivos\""
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:63
+msgid "Esta función le permite convertir múltiples espacios en blanco en un único espacio en blanco."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:65 220.es.adoc:66
+#, no-wrap
+msgid "Figura 19"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:66
+#, no-wrap
+msgid "img/es.figure-19.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:69
+msgid "Una vez que haya removido los espacios en blanco extra, en la faceta sólo verá un valor para “Buenos Aires”, con un número de registros que es la suma de los valores anteriores. Tenga en cuenta que si había otros valores con el mismo problema de dobles espacios entre palabras en esta misma columna, la modificación se aplicará a todos ellos, y no sólo a “Buenos Aires”. Puede comprobar cuántos valores se han modificado comparando el número de valores disponibles en la faceta antes y después de la transformación."
+msgstr ""
+
+#. type: Title =====
+#: 220.es.adoc:70
+#, no-wrap
+msgid "Espacios en blanco extra en todo el conjunto de datos"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:74
+msgid "Habiendo visto cómo eliminar espacios en blanco extra, al principio, final o en medio de una cadena de texto, en campos determinados, existe una manera de realizar todas estas acciones al mismo tiempo sobre todos los campos de conjunto de datos.  Para ello, se debe ir a la columna “Todo”, hacer click sobre \"la &#9660; azul > Transformar."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:76
+msgid "Se abrirá entonces una ventana, y en el cuadro de texto debe pegarse la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 220.es.adoc:79
+#, no-wrap
+msgid "value.trim().replace(/\\s+/,' ') \n"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:82
+msgid "Al hacer click en “Aceptar” se eliminarán los espacios en blanco extra en todo el conjunto de datos. Los cambios serán registrados columna a columna en el historial de cambios (ver más abajo sección <<sect-2.5,Deshacer y rehacer cambios>>)."
+msgstr ""
+
+#. type: Title ====
+#: 220.es.adoc:84
+#, no-wrap
+msgid "Inclusión y exclusión de registros usando facetas"
+msgstr ""
+
+#. type: Title =====
+#: 220.es.adoc:86
+#, no-wrap
+msgid "Inclusión de registros con valores determinados para un campo dado"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:91
+msgid "Las facetas pueden utilizarse para trabajar sobre registros con uno o más valores de interés en un campo en cuestión.  Para trabajar sobre un ejemplo, arme una faceta de texto sobre el campo [source]`\"phylum\"` (click sobre \"la &#9660; azul > Facetas > Faceta de texto\"). Verá que la faceta tiene varios valores.  Para seleccionar solo los registros que tienen como phylum, por ejemplo, “Lycopodiophyta”, debe hacer click sobre el valor mismo dentro de la faceta o sobre la opción “include” que se muestra a su derecha (<<img-fig-20,Figura 20a>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:93 220.es.adoc:94
+#, no-wrap
+msgid "Figura 20"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:94
+#, no-wrap
+msgid "img/es.figure-20.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:97
+msgid "Al seleccionar un valor dentro de una faceta, cualquier acción que tome a continuación sólo será aplicada a los registros incluidos bajo esa selección."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:99
+msgid "Puede seleccionar tantos valores como desee dentro de una faceta, utilizando “include” sucesivamente sobre cada uno de ellos."
+msgstr ""
+
+#. type: Title =====
+#: 220.es.adoc:100
+#, no-wrap
+msgid "Exclusión de registros con valores determinados para un campo dado"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:103
+msgid "Para deseleccionar registros previamente seleccionados a través de una faceta, simplemente haga click sobre el valor nuevamente, o sobre la opción “exclude” que se muestra a su derecha (<<img-fig-20,Figura 20b>>). Puede deseleccionar tantos valores como desee utilizando “exclude” sucesivamente sobre cada uno de ellos."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:105
+msgid "En ocasiones las facetas pueden contener muchos valores de interés diferentes sobre los que quisiéramos trabajar. En estos casos, puede ser muy engorroso seleccionar todos los valores de interés uno a uno. En cambio, se puede utilizar la función “invertir” selección. Para aplicar esta función, deben seleccionarse los valores que _no_ son de interés. Una vez seleccionados, en la parte superior de la faceta aparece la opción “invertir” (<<img-fig-20,Figura 20b>>). Haciendo click el programa nos brindará la selección inversa, incluyendo entonces los valores que _sí_ nos interesan."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:107
+msgid "Por ejemplo, para el campo [source]`\"phylum\"` del ejemplo anterior, nos interesan todos los valores menos “Pinophyta”. Seleccionamos entonces “Pinophyta” haciendo click en “include” para este valor. Luego hacemos click en “invertir”, y como resultado habremos seleccionado todos los registros salvo aquellos que tienen el valor “Pinophyta” (<<img-fig-20,Figura 20c>>)."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:109
+msgid "Para revertir la inversión puede hacerse click en “invertir” nuevamente, volviendo entonces a los valores seleccionados inicialmente."
+msgstr ""
+
+#. type: Title =====
+#: 220.es.adoc:110
+#, no-wrap
+msgid "Selección de registros sin valores para un campo dado"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:114
+msgid "En muchas ocasiones resulta muy útil poder identificar los registros que tienen un campo de interés vacío, sin valores. Utilizando facetas se pueden reconocer esos registros fácilmente, pues figuran dentro de la faceta con valor “(blank)” (ver por ejemplo este valor en la faceta compuesta para el apartado anterior, sobre el campo [source]`\"phylum\"`, <<img-fig-20,Figura 20>>) .  El valor “(blank)” se puede tratar como cualquier otro dentro de la faceta, es decir, se puede incluir, excluir, y editar, facilitando la evaluación y el mejoramiento de los registros."
+msgstr ""
+
+#. type: Title ====
+#: 220.es.adoc:116
+#, no-wrap
+msgid "Facetas numéricas"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:119
+msgid "Las facetas también pueden aplicarse a campos numéricos, y en ese caso son muy útiles para, por ejemplo, detectar valores fuera de rangos de interés."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:121
+msgid "A modo de ejemplo, armaremos una faceta numérica sobre el campo [source]`\"day\"` que hemos creado más arriba. Para ello, hacer click en menu:la{sp}&#9660;{sp}azul[] del campo y seguir la ruta:"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:124
+msgid "\"Facetas > Faceta numérica\""
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:127
+msgid "Verá entonces una nueva ventana, la faceta, como se muestra en la <<img-fig-21,Figura 21>>."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:129 220.es.adoc:130
+#, no-wrap
+msgid "Figura 21"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:130
+#, no-wrap
+msgid "img/es.figure-21.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:133
+msgid "Allí se puede ver que el rango de días abarca desde 1 a 35 inclusive. Es decir, algunos números están fuera de rango, puesto que como máximo puede haber hasta día 31 en algunos meses."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:135
+msgid "Se pueden seleccionar los registros con los valores superiores desplazando el botón a la izquierda del rango hacia la derecha. Ello incluirá en la tabla los registros por encima del rango seleccionado y, si no desmarca la opción “Blank”, también los blancos, como se muestra en la <<img-fig-22,Figura 22>> (en el ejemplo, tres filas en total: un caso con día 32, un caso con día 35 y un caso con día vacío). Si hubiera valores en el campo que no son numéricos, también podría verlos utilizando esta faceta."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:137 220.es.adoc:138
+#, no-wrap
+msgid "Figura 22"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:138
+#, no-wrap
+msgid "img/es.figure-22.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:141
+msgid "Los tres errores encontrados deben ser consultados con la información original de los ejemplares en la colección, y los campos de fecha estrictamente deberían quedar vacíos para estos registros. Una opción es marcar estos registros para revisar más adelante, usando estrellas o banderas (ver sección sobre <<#Banderas-y-estrellas, uso de estrellas y banderas>>)."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:143
+msgid "Si el campo sobre el que desea armar la faceta no es un campo con formato numérico (e.g., tiene formato texto, o fecha, etc.), la faceta numérica no le mostrará valores. En cambio, dirá que el campo no tenía valores numéricos (“No numeric value present.”). Para poder armar una faceta numérica tendrá entonces primero que transformar los datos de la columna de interés a formato numérico. Para ello, siga la ruta: click sobre \"la &#9660; azul del campo > Editar celdas > Transformaciones comunes > A número\"."
+msgstr ""
+
+#. type: Title ====
+#: 220.es.adoc:144
+#, no-wrap
+msgid "Facetas y duplicados"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:147
+msgid "Las facetas también permiten la detección y corrección de duplicados."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:149
+msgid "Cuando hablamos aquí de duplicados, nos referimos a valores duplicados dentro de una columna, no necesariamente a registros enteros duplicados, o a duplicados en el sentido biológico/de colecciones. Por ello, tenga especial cuidado a la hora de actuar sobre estos valores duplicados, pues podrían tener efectos a diferentes niveles."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:151
+msgid "Veremos un ejemplo de duplicados en la columna [source]`\"catalogNumber\"`. Para ello, haga click en menu:la{sp}&#9660;{sp}azul[] y luego siga la siguiente ruta:"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:154
+msgid "\"Facetas > Facetas personalizadas > Faceta por duplicados\""
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:157
+msgid "Verá entonces una ventana con la faceta, como se muestra en la <<img-fig-23,Figura 23>>, donde “true” (“verdadero”) refiere a los valores duplicados."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:159 220.es.adoc:160
+#, no-wrap
+msgid "Figura 23"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:160
+#, no-wrap
+msgid "img/es.figure-23.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:163
+msgid "Si hace click en “true”, la pantalla principal le mostrará los registros que tienen número de catálogo duplicado (<<img-fig-24,Figura 24>>). Observe por ejemplo los siguientes registros:"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:165
+msgid "el primer y quinto registros tienen el mismo número de catálogo, 5567"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:166
+msgid "el tercer registro (y otros más abajo que no son visibles entre los 25 primeros) no tiene número de catálogo (el valor nulo es lo que está duplicado)."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:167
+msgid "etc."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:169 220.es.adoc:170
+#, no-wrap
+msgid "Figura 24"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:170
+#, no-wrap
+msgid "img/es.figure-24.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:173
+msgid "Corrija los números de catálogo. Para hacerlo, edite las celdas individualmente: sobre la celda haga click en el botón “editar”, modifique el valor y haga click en “Aplicar” (<<img-fig-25,Figura 25>>)."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:175
+msgid "En la práctica la corrección de los números de catálogo sólo debe hacerse una vez que los números y los datos asociados han sido comprobados con las etiquetas de los especímenes."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:177 220.es.adoc:178
+#, no-wrap
+msgid "Figura 25"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:178
+#, no-wrap
+msgid "img/es.figure-25.jpg"
+msgstr ""
+
+#. type: Title ====
+#: 220.es.adoc:180
+#, no-wrap
+msgid "Límite en el número de opciones de las Facetas"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:183
+msgid "En OpenRefine existe un límite para el número de elecciones de faceta que se muestran (“choices”). Muchas veces dicho número está pre-configurado a un valor de 2000. Ello quiere decir que sólo podrá ver 2000 opciones dentro de la faceta de interés."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:185
+msgid "Por ejemplo, si tiene configurado el valor a 2000 y trata de armar una faceta de texto en el campo [source]`\"specificEpithet\"`, verá que a la derecha la faceta no muestra los valores esperados sino un mensaje que dice que hay demasiados valores para mostrar (<<img-fig-26,Figura 26a>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:187 220.es.adoc:188
+#, no-wrap
+msgid "Figura 26"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:188
+#, no-wrap
+msgid "img/es.figure-26.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:191
+msgid "Haciendo click en “Fije un límite”, se abrirá otra ventana donde puede cambiar el límite al valor preferido (<<img-fig-26,Figura 26b>>)."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:193
+msgid "Una vez que haya cambiado el valor límite, y si este valor es lo suficientemente grande, podrá ver todos los valores en la faceta del campo de interés (en el ejemplo anterior, el campo [source]`\"specificEpithet\"`)."
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:195
+msgid "Alternativamente, para modificar en cualquier momento el límite en el número de valores que se pueden desplegar por faceta, puede ir a la siguiente dirección en su navegador web:"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:197
+msgid "http://127.0.0.1:3333/preferences"
+msgstr ""
+
+#. type: Plain text
+#: 220.es.adoc:200
+msgid "El navegador mostrará una ventana con ciertas opciones (<<img-fig-27,Figura 27a>>). Allí, establezca el límite preferido para las facetas editando la clave “ui.browsing.listFacet.limit”. Para ello haga click en “core-index/edit”, y en la ventana que se abre, coloque el nuevo valor límite y oprima “OK” (<<img-fig-27,Figura 27b>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 220.es.adoc:202 220.es.adoc:203
+#, no-wrap
+msgid "Figura 27"
+msgstr ""
+
+#. type: Target for macro image
+#: 220.es.adoc:203
+#, no-wrap
+msgid "img/es.figure-27.jpg"
+msgstr ""
+
+#. type: Title ===
+#: 230.es.adoc:1
+#, no-wrap
+msgid "Uso de Filtros"
+msgstr ""
+
+#. type: Title ====
+#: 230.es.adoc:3
+#, no-wrap
+msgid "Filtros simples"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:6
+msgid "OpenRefine permite el uso de filtros sobre campos particulares, función que puede ser muy útil para la limpieza de datos. Veremos un ejemplo a continuación."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:8
+msgid "Ubique el campo [source]`\"specificEpithet\"` y cree una faceta de texto (haga click en \"la &#9660; azul > Facetas > Faceta de texto\"). Luego vaya nuevamente a menu:la{sp}&#9660;{sp}azul[] y cree un filtro de texto (“Filtro de texto”). Sobre el menú de la izquierda se abrirá una ventana como la que se muestra en la <<img-fig-28,Figura 28>>."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 230.es.adoc:10 230.es.adoc:11
+#, no-wrap
+msgid "Figura 28"
+msgstr ""
+
+#. type: Target for macro image
+#: 230.es.adoc:11
+#, no-wrap
+msgid "img/es.figure-28.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:14
+msgid "En el cuadro de texto puede escribir el valor sobre el cual desea filtrar."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:16
+msgid "Por ejemplo, pruebe escribiendo “sp.”."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:18
+msgid "En el menú de la izquierda, dentro de la faceta se mostrará el valor que usted buscó, y en la pantalla principal se mostrarán los registros asociados que tienen dicho valor en el campo [source]`\"specificEpithet\"` (<<img-fig-29,Figura 29>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 230.es.adoc:20 230.es.adoc:21
+#, no-wrap
+msgid "Figura 29"
+msgstr ""
+
+#. type: Target for macro image
+#: 230.es.adoc:21
+#, no-wrap
+msgid "img/es.figure-29.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:24
+msgid "Note que verá dos valores, uno en letras minúsculas y otro en letras mayúsculas. Si sólo desea ver los valores escritos con minúscula, en el filtro debe seleccionar “Distingue mayúsculas y minúsculas”, o puede seleccionar “sp.” directamente sobre la faceta de [source]`\"specificEpithet\"`."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:26
+msgid "Corrija los valores “sp.” y “SP.” utilizando la función “editar” sobre los valores en la faceta (el valor correcto debería ser nulo)."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:28
+msgid "Cierre el filtro y la faceta de [source]`\"specificEpithet\"`."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:30
+msgid "Abra una faceta de texto y un filtro para el campo [source]`\"scientificName\"`. En el filtro, busque el valor “sp.”. Verá entonces varios valores para ese campo que incluyen “sp.”, como se muestra en la <<img-fig-30,Figura 30>>."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 230.es.adoc:32 230.es.adoc:33
+#, no-wrap
+msgid "Figura 30"
+msgstr ""
+
+#. type: Target for macro image
+#: 230.es.adoc:33
+#, no-wrap
+msgid "img/es.figure-30.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:36
+msgid "Debe corregir esos nombres, sacando “sp.” y dejando solamente el nombre del género. Para no tener que hacerlo uno por uno, puede seguir los siguientes pasos."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:38
+msgid "Haga click sobre menu:la{sp}&#9660;{sp}azul{sp}en{sp}{scientificName}[Editar celdas > Transformar…] (<<img-fig-31,Figura 31>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 230.es.adoc:40 230.es.adoc:41
+#, no-wrap
+msgid "Figura 31"
+msgstr ""
+
+#. type: Target for macro image
+#: 230.es.adoc:41
+#, no-wrap
+msgid "img/es.figure-31.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:44
+msgid "Se abrirá entonces una ventana como la mostrada en la (<<img-fig-32,Figura 32>>). En el cuadro de texto, pegue la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 230.es.adoc:47
+#, no-wrap
+msgid "value.replace(\" sp.\", \"\")\n"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:49
+msgid "Dicha expresión tiene la función de reemplazar lo que está entre las primeras comillas por aquello que está entre las segundas comillas, es decir, la porción [source]`\" sp.\"` (`[espacio]sp.`) por [source]``\"\"`` (nada)."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:51
+msgid "En la <<img-fig-32,Figura 32>> puede observar cómo se vería el resultado del cambio en la pestaña “Vista previa”."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 230.es.adoc:53 230.es.adoc:54
+#, no-wrap
+msgid "Figura 32"
+msgstr ""
+
+#. type: Target for macro image
+#: 230.es.adoc:54
+#, no-wrap
+msgid "img/es.figure-32.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:57
+msgid "Oprima “Aceptar” para ejecutar la transformación, y verá que en la faceta que ha sido filtrada ya no hay registros que contengan “sp.” como parte del valor en el campo [source]`\"scientificName\"`."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:59
+msgid "Cierre la faceta y el filtro del campo [source]`\"scientificName\"`."
+msgstr ""
+
+#. type: Title ====
+#: 230.es.adoc:60
+#, no-wrap
+msgid "Filtros con expresiones regulares"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:63
+msgid "Los filtros se pueden utilizar también incluyendo expresiones regulares, que permiten buscar ciertos patrones en los valores de los campos. Por ejemplo, se pueden buscar palabras que comiencen con ciertas letras, o que comiencen con mayúscula o minúscula, etc."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:65
+msgid "A modo de ejemplo, buscaremos valores en el campo [source]`\"genus\"` que comiencen con minúscula. Para ello, abra una faceta y un filtro de texto para el campo [source]`\"genus\"`. En el filtro coloque la siguiente expresión en el cuadro de texto: [source,regex]`^[a-z]`, y seleccione las opciones “Distingue mayúsculas y minúsculas” y “regex” (<<img-fig-33,Figura 33a>>). Con dicha expresión se pueden buscar los valores en los que la primera letra es minúscula."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 230.es.adoc:67 230.es.adoc:68
+#, no-wrap
+msgid "Figura 33"
+msgstr ""
+
+#. type: Target for macro image
+#: 230.es.adoc:68
+#, no-wrap
+msgid "img/es.figure-33.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:71
+msgid "Siguiendo estos pasos, debería poder ver dos valores (<<img-fig-33,Figura 33b>>). Corrija estos valores filtrados, dado que el género debe comenzar con mayúscula."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:73
+msgid "OpenRefine acepta un lenguaje de expresiones regulares Java, que puede consultar aquí: http://docs.oracle.com/javase/tutorial/essential/regex/. Algunas expresiones que pueden ser útiles como filtros para diversos campos son:"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:75
+msgid "`+^[A-C]+`"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:77
+msgid "Busca las cadenas de texto que comienzan (`^`) con mayúscula de la A a la C (`[A-C]`)"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:78
+msgid "`+^[^a-d]+`"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:80
+msgid "Busca las cadenas de texto que comienzan (`^`) con cualquier carácter en minúscula salvo de la a a la d (`[^a-d]`) – el `^` dentro del `[]` indica negación."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:81
+msgid "`+^\\w+`"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:83
+msgid "Busca las cadenas de texto alfanuméricas que comienzan (`^`) con un número o una letra (`\\w`) –de 0 a 9 o de la a a la z, mayúscula o minúscula, o el carácter '_'."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:84
+msgid "`+^\\s+`"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:86
+msgid "Busca las cadenas de texto que comienzan (`^`) con un espacio en blanco (`\\s`)."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:87
+msgid "`+^\\d+`"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:89
+msgid "Busca las cadenas de texto que comienzan (`^`) con un dígito (`\\d`)."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:90
+msgid "`+^\\D+`"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:92
+msgid "Busca las cadenas de texto que comienzan (`^`) con un carácter no dígito (`\\D`). Equivalente a la expresión con negación `+^[^0-9]+`."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:93
+msgid "`+\\d{4}+`"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:95
+msgid "Busca cadenas de texto que contengan dígitos (`\\d`), en particular 4 dígitos (`{4}`)."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:96
+msgid "`+^\\w.*\\d$+`"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:98
+msgid "Busca las cadenas de texto que comiencen (`^`) un carácter alfanumérico o el carácter '_' (`\\w`), sigan (`.`) con cualquier carácter (`*`) y terminen (`$`) con un dígito (`\\d`)."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:99
+msgid "`+^[A-Z].*\\s[A-Z]+`"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:101
+msgid "Busca las cadenas de texto que comienzan (`^`) con mayúscula (`[A-Z]`) –cualquier mayúscula de la A a la Z– seguidas de (`.`) cualquier carácter (`*`), luego un espacio (`\\s`), luego otra letra mayúscula (`[A-Z]`)."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:102
+msgid "`+[À-ÖØ-öø-ÿ]+`"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:104
+msgid "Busca las cadenas de texto que contengan al menos un carácter especial ([À-ÖØ-öø-ÿ]) –dentro de los rangos de caracteres Unicode À-Ö o Ø-ö o ø-ÿ, por ejemplo caracteres con diacríticos (acentos graves, agudos, circunflejos, diéresis, virguillas, cedilla, etc.)"
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:106
+msgid "Pruebe el uso de algunas de esas expresiones en distintos campos."
+msgstr ""
+
+#. type: Plain text
+#: 230.es.adoc:107
+msgid "_Para más ejemplos y usos, puede https://github.com/OpenRefine/OpenRefine/wiki[consultar el repositorio de OpenRefine] en GitHub._"
+msgstr ""
+
+#. type: Title ===
+#: 250.es.adoc:1
+#, no-wrap
+msgid "Uso de Agrupamientos"
+msgstr ""
+
+#. type: Title ====
+#: 250.es.adoc:3
+#, no-wrap
+msgid "Agrupamientos simples"
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:5
+msgid "Los agrupamientos permiten, como su nombre lo indica, agrupar valores de acuerdo a diferentes criterios. Por ejemplo, pueden agruparse valores de acuerdo al grado de similitud en cuanto a las letras que los componen o en cuanto a la fonética asociada. Esta función es muy útil para detectar y corregir errores de ortografía y variaciones en los datos."
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:7
+msgid "Ubique el campo [source]`\"stateProvince\"` y arme una faceta de texto para este campo."
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:9
+msgid "En la ventana de la faceta, haga click en el botón “Agrupar”. Se abrirá entonces una ventana como la mostrada en la <<img-fig-34,Figura 34>>."
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:11
+msgid "Allí verá que algunos valores que son similares han sido agrupados por un algoritmo. El método y la función utilizados se muestran y se pueden modificar arriba de la lista de valores."
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:13
+msgid "La ventana también muestra el tamaño del clúster (“Número de valores” agrupados), cuántos registros hay por cluster (“Número de filas”) y por valor (entre paréntesis junto a los valores en “Valores en la agrupación”)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 250.es.adoc:15 250.es.adoc:16
+#, no-wrap
+msgid "Figura 34"
+msgstr ""
+
+#. type: Target for macro image
+#: 250.es.adoc:16
+#, no-wrap
+msgid "img/es.figure-34.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:19
+msgid "Además, para cada cluster verá una opción para fusionar los valores (“¿Unir?”) y un recuadro donde se captura el nuevo valor que se asignará a todos los registros del cluster (“Nuevo valor de las celdas”)."
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:21
+msgid "OpenRefine asigna de forma predeterminada como nuevo valor aquel que presenta mayor número de registros asociados. Esto no es necesariamente correcto. Por ejemplo, en el caso “Corcega” y “Córcega” el valor correcto lleva tilde. Puede modificar el nuevo valor al que se unificará el agrupamiento haciendo click en el valor deseado si está listado o, en caso de ser diferente, editando directamente el recuadro “Nuevo valor de las celdas”. Recuerde que todos los valores dentro de un agrupamiento dado se unificarán al valor escogido. Por ejemplo, en el caso de que los valores agrupados sean “NINGUNO” y “ninguno”, podría agrupar a un nuevo valor vacío (pues “ninguno” no es un valor válido para una provincia)."
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:23
+msgid "Explore los valores agrupados por el algoritmo y corrija los que considere apropiados, seleccionando el valor correcto y marcando la casilla “¿Unir?”."
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:25
+msgid "Haga click sobre “Unir seleccionados y reagrupar”."
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:27
+msgid "Cuando se agrupan valores se debe tener mucho cuidado a la hora de corregir registros. Esto es particularmente cierto para los nombres científicos, dado que variaciones en los nombres que podrían verse como aparentes errores (por ejemplo, si se evalúa el campo epíteto específico, pueden tenerse dos palabras iguales con diferente terminación –um, –us), no necesariamente lo sean (por ejemplo, si se evalúa también el campo género podría encontrarse que esos epítetos se aplican a géneros distintos, y que ambos son válidos). Por ello, si tiene dudas, consulte los registros completos. Y si aún tiene dudas, consulte en la colección. Otro ejemplo en que debe tenerse extremo cuidado es cuando se agrupan valores que difieren en el orden de las palabras. Un ejemplo típico se da en el campo de colectores. Aún cuando los agrupamientos pueden sugerir que “Colector A y Colector B” es lo mismo que “Colector B y Colector A”, ello puede no ser cierto, y el orden de los colectores puede tener en sí un valor particular. Nuevamente, antes de unificar, es fundamental consultar con la colección."
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:29
+msgid "Una vez resueltos los agrupamientos, si ha decidido no agrupar algunas de las opciones, las verá nuevamente en el re-agrupamiento; en caso contrario, el programa le indicará que no se han encontrado agrupaciones con el método seleccionado. Puede cambiar el método y la función que se utiliza para agrupar escogiendo entre las opciones del menú, como se muestra en la <<img-fig-35,Figura 35>>."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 250.es.adoc:31 250.es.adoc:32
+#, no-wrap
+msgid "Figura 35"
+msgstr ""
+
+#. type: Target for macro image
+#: 250.es.adoc:32
+#, no-wrap
+msgid "img/es.figure-35.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:35
+msgid "Pruebe agrupamientos con distintos métodos para limpiar los datos."
+msgstr ""
+
+#. type: Plain text
+#: 250.es.adoc:36
+msgid "Para conocer los detalles de cada método de agrupamiento, puede https://github.com/OpenRefine/OpenRefine/wiki/Clustering-In-Depth[consultar el repositorio de OpenRefine] en GitHub."
+msgstr ""
+
+#. type: Title ===
+#: 260.es.adoc:2
+#, no-wrap
+msgid "Deshacer y rehacer cambios"
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:5
+msgid "Ahora que ya ha acumulado una serie de modificaciones al conjunto de datos, veamos cómo se pueden deshacer y rehacer cambios."
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:7
+msgid "En el menú de arriba a la izquierda, abra la pestaña “Deshacer/Rehacer”, que está asociada a un número que indica el número de cambios acumulados hasta ahora. Verá entonces una lista de pasos realizados, como se muestra en la <<img-fig-36,Figura 36a>>."
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:9
+msgid "Note que el paso resaltado en azul en la figura es el que determina el estado de los datos. Todos los pasos hasta el resaltado, inclusive, han sido aplicados a los datos. Todos aquellos pasos ubicados después del paso resaltado no han sido aplicados."
+msgstr ""
+
+#. type: Title ====
+#: 260.es.adoc:10
+#, no-wrap
+msgid "Deshacer pasos"
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:13
+msgid "Si quiere deshacer todo lo posterior a algún paso, simplemente haga click sobre el paso inmediatamente anterior. Por ejemplo, si quiere deshacer los últimos pasos a partir del paso 5, haga click en el paso 5, y los todos los posteriores se revertirán automáticamente (<<img-fig-36,Figura 36b>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 260.es.adoc:15 260.es.adoc:16
+#, no-wrap
+msgid "Figura 36"
+msgstr ""
+
+#. type: Target for macro image
+#: 260.es.adoc:16
+#, no-wrap
+msgid "img/es.figure-36.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:19
+msgid "Para rehacer un paso luego de haberlo deshecho, simplemente haga click en ese paso, teniendo en cuenta que entonces se llevarán a cabo todos los pasos intermedios también."
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:21
+msgid "El hacer y deshacer en OpenRefine trabaja sobre “estados”. Eso quiere decir que se puede ir y volver a estados determinados, por ejemplo, el estado de los datos una vez que se han hecho ciertas modificaciones. Ello implica que si se vuelve a un estado anterior y luego se realiza una nueva modificación a partir de ese estado, entonces perderá los pasos originales y no podrá recuperarlos. En el ejemplo de la <<img-fig-36,Figura 36>>, si se vuelve al paso 5 y luego realiza sobre los datos alguna otra operación, no podrá volver a los pasos 6 a 11 previos."
+msgstr ""
+
+#. type: Title ====
+#: 260.es.adoc:22
+#, no-wrap
+msgid "Guardar pasos para rehacer luego"
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:25
+msgid "Es importante entonces que guarde sus pasos, especialmente para aquellos procesos más complejos. Para ello, en la pestaña “Deshacer/Rehacer”, haga click en el botón “Extraer…”. Se abrirá una nueva ventana, como se muestra en la <<img-fig-37,Figura 37>>, donde puede seleccionar los pasos que desea guardar. Los pasos están dados en formato JSON en el panel de la derecha."
+msgstr ""
+
+#. type: delimited block *
+#: 260.es.adoc:27
+msgid "JSON (Java Script Object Notation) es un formato que utiliza texto legible para los humanos para transmitir datos en la forma de pares de atributo:valor y de matrices de datos."
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:29
+msgid "Puede marcar y desmarcar pasos en el panel de la izquierda para seleccionar los pasos de interés. Copie las expresiones de los pasos de interés que se muestran a la derecha a un procesador de texto (e.g., Notepad, MS Word, etc.) y guárdelas para uso posterior (en caso de que no esté familiarizado con el formato JSON, recuerde tomar nota de qué cambios representan esas expresiones)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 260.es.adoc:31 260.es.adoc:32
+#, no-wrap
+msgid "Figura 37"
+msgstr ""
+
+#. type: Target for macro image
+#: 260.es.adoc:32
+#, no-wrap
+msgid "img/es.figure-37.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:35
+msgid "Los cambios hechos a celdas particulares no tienen la opción de guardar expresiones. En el ejemplo anterior, <<img-fig-37,Figura 37>>, note que el cambio en una celda única del número de catálogo figura en gris y no puede ser seleccionado. Esto es una limitación actual de OpenRefine, por lo que si va a deshacer un cambio de esta naturaleza pero quiere rehacerlo luego, deberá tomar nota usted mismo de cuál fue el cambio y en qué celda de forma separada (e.g, “Cambié el número de catálogo del registro X, de “1234” a “1236””)."
+msgstr ""
+
+#. type: Title ====
+#: 260.es.adoc:36
+#, no-wrap
+msgid "Rehacer pasos guardados"
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:39
+msgid "Si desea rehacer pasos que tenga guardados (en formato JSON), dentro de la pestaña “Deshacer/Rehacer” haga click en el botón “Aplicar…”. Se abrirá entonces una ventana como la que se muestra en la <<img-fig-38,Figura 38>>, pero vacía."
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:41
+msgid "Pegue en el cuadro de texto la expresión deseada (copie y pegue lo que guardó en su procesador de texto en el apartado anterior) y haga click en “Ejecutar Operaciones”."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 260.es.adoc:43 260.es.adoc:44
+#, no-wrap
+msgid "Figura 38"
+msgstr ""
+
+#. type: Target for macro image
+#: 260.es.adoc:44
+#, no-wrap
+msgid "img/es.figure-38.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:47
+msgid "De este modo, puede rehacer pasos particulares o toda una rutina de trabajo, sobre el mismo conjunto de datos, o sobre otros conjuntos de datos (siempre y cuando las columnas sean las mismas)."
+msgstr ""
+
+#. type: Title ====
+#: 260.es.adoc:48
+#, no-wrap
+msgid "Reutilizar expresiones regulares"
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:51
+msgid "En las secciones anteriores de esta guía (y en las siguientes), muchas funciones involucran utilizar expresiones regulares. Si bien el guardado de pasos es muy útil para repetir procesos, OpenRefine también brinda un simple historial de expresiones regulares que se han utilizado previamente. Se puede acceder a esta lista de expresiones en cualquier ventana que uno abra a partir de una columna, si en dicha ventana se espera el uso de una expresión."
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:53
+msgid "Por ejemplo, al armar una nueva columna a partir del campo [source]`\"kingdom\"` (click en \"la &#9660; azul en el campo > Editar columnas > Agregar columna basada en esta columna…\" se abre una ventana como la mostrada en la (<<img-fig-39,Figura 39a>>)."
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:55
+msgid "Allí, en la pestaña “Historial” pueden verse listadas las expresiones regulares que se han utilizado sobre este o cualquier otro campo. Para reutilizar las expresiones simplemente hacer click en “Reusar”."
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:57
+msgid "Las expresiones serán incorporadas a los cuadros de texto tal cual fueron utilizadas antes, es decir, podrían contener referencias a otros campos o parámetros no pertinentes. Siempre debe revisar las expresiones para asegurarse de que la función actuará sobre los campos y con los parámetros deseados antes de ejecutar la acción."
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:59
+msgid "Las distintas expresiones pueden ser destacadas haciendo click sobre la estrella que está a su izquierda (que se pintará de color amarillo, <<img-fig-39,Figura 39a>>). Las expresiones a las que se han asignado estrellas se listarán también bajo el menú “Con estrella” (<<img-fig-39,Figura 39b>>). Esta función es muy útil cuando la lista de expresiones utilizadas es muy larga y dentro de ella quiere resaltar expresiones de uso más frecuente."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 260.es.adoc:61 260.es.adoc:62
+#, no-wrap
+msgid "Figura 39"
+msgstr ""
+
+#. type: Target for macro image
+#: 260.es.adoc:62
+#, no-wrap
+msgid "img/es.figure-39.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 260.es.adoc:64
+msgid "La lista de expresiones utilizadas se mantiene en el programa, de modo que puede volver a utilizarlas en el futuro a partir del historial o del menú “Con estrella”."
+msgstr ""
+
+#. type: Title ===
+#: 280.es.adoc:2
+#, no-wrap
+msgid "Marcado de registros: banderas y estrellas"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:5
+msgid "OpenRefine ofrece la opción de marcar los distintos registros con banderas (flags) y/o estrellas (stars). Esta opción es a veces muy útil para reconocer registros o grupos de registros rápidamente."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:7
+msgid "Las banderas y estrellas NO forman parte de los datos. Son solamente una herramienta que facilita el trabajo dentro del programa. Por ello, aunque el marcado se registra como un cambio en el historial de cambios del proyecto, cuando exporte los datos NO verá las columnas que corresponden a estas funciones. Es decir, si usted marcó algún registro con una bandera, por ejemplo, no verá esa bandera ni ninguna otra marca indicadora de su existencia en los datos exportados."
+msgstr ""
+
+#. type: Title ====
+#: 280.es.adoc:8
+#, no-wrap
+msgid "Marcado con banderas y estrellas"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:11
+msgid "Las banderas y estrellas se encuentran dentro del campo “Todo”. Para marcar un registro con una bandera o estrella, simplemente haga click sobre el ícono correspondiente en ese registro (que se pondrá de color amarillo)."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:13
+msgid "Para desmarcar el registro, haga click nuevamente sobre el ícono (que volverá a su color blanco original)."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:15
+msgid "También puede marcar o desmarcar conjuntos de varios registros."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:17
+msgid "Para ello escoja algún criterio que los agrupe. Por ejemplo, si quiere marcar todos los registros del género Acacia, arme una faceta sobre el campo [source]`\"genus\"` (haga click sobre \"la &#9660; azul del campo > Facetas > Faceta de texto\")."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:19
+msgid "En la faceta, seleccione el valor “Acacia” haciendo click en el valor (verá que en la ventana principal sólo se mostrarán esos registros)."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:21
+msgid "Para marcar todos esos registros con una bandera, haga click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}“Todo”[] y siga la siguiente ruta (<<img-fig-40,Figura 40>>):"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:24
+msgid "\"Editar filas > Marcar filas con bandera\""
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 280.es.adoc:27 280.es.adoc:28
+#, no-wrap
+msgid "Figura 40"
+msgstr ""
+
+#. type: Target for macro image
+#: 280.es.adoc:28
+#, no-wrap
+msgid "img/es.figure-40.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:31
+msgid "Una vez que lo haya hecho, verá que todos los registros seleccionados están marcados ahora con una bandera."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:33
+msgid "Para desmarcar todos esos registros, puede hacer click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}“Todo”[] y seguir la ruta:"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:36
+msgid "\"Editar filas > Desmarcar filas con bandera\""
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:39
+msgid "Para marcar y desmarcar registros con estrellas, siga el mismo procedimiento con “estrellas” en lugar de “banderas”."
+msgstr ""
+
+#. type: Title ====
+#: 280.es.adoc:40
+#, no-wrap
+msgid "Conservación de banderas y estrellas en la exportación"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:43
+msgid "Si desea marcar los registros de modo que al exportar se conserven las marcas, deberá crear un nuevo campo que capture esa información. Puede, por ejemplo, hacer lo siguiente:"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:45
+msgid "Cree un nuevo campo: sobre cualquier campo haga click en \"la &#9660; azul > Editar columnas > Agregar columna basada en esta columna…\""
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:47
+msgid "Se abrirá una ventana como la mostrada en la <<img-fig-41,Figura 41>>. Asigne un nombre al campo. Por ejemplo, si sus banderas significan que ha detectado errores en los registros, puede llamarlo “tieneError”."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:49
+msgid "En el cuadro de texto pegue la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 280.es.adoc:52
+#, no-wrap
+msgid "if(row.flagged, \"yes\", \"no\")\n"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:54
+msgid "Esta expresión hará que el campo nuevo tenga como valor “yes” si usted ha asignado una bandera al registro y “no” si no ha asignado una bandera."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:56
+msgid "Al oprimir “Aceptar” su campo se habrá creado. Verifique los valores que toma asignando a algunos registros una bandera."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 280.es.adoc:58 280.es.adoc:59
+#, no-wrap
+msgid "Figura 41"
+msgstr ""
+
+#. type: Target for macro image
+#: 280.es.adoc:59
+#, no-wrap
+msgid "img/es.figure-41.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:62
+msgid "Puede repetir el proceso creando otro campo para las estrellas, usando la expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 280.es.adoc:65
+#, no-wrap
+msgid "if(row.starred, \"yes\", \"no\")\n"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:67
+msgid "Para ver los pasos de exportación de datos, vea la sección de <<sect-3.2,Exportación de datos y proyectos>>."
+msgstr ""
+
+#. type: Title ====
+#: 280.es.adoc:68
+#, no-wrap
+msgid "Uso de banderas y estrellas para eliminar registros"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:71
+msgid "Las banderas y estrellas se pueden utilizar para eliminar grupos de registros. Para ello, siga los siguientes pasos:"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:73
+msgid "Marque con una bandera (o estrella) los registros deseados. Puede hacerlo uno por uno o en grupos a través del marcado dentro de facetas (ver más arriba)."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:74
+msgid "Cree una faceta para la bandera. Haga click en \"la &#9660; azul sobre el campo “Todo” > Facetas > Faceta por bandera\" (<<img-fig-42,Figura 42a>>)."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:75
+msgid "En esta nueva faceta, a la izquierda, seleccione la opción “true” haciendo click sobre ella. Ello le mostrará los registros a los que se ha asignado una bandera."
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:76
+msgid "Haga click nuevamente sobre \"la &#9660; azul del campo “Todo” > Editar filas > Eliminar todas las filas que encajen\" (<<img-fig-42,Figura 42b>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 280.es.adoc:78 280.es.adoc:79
+#, no-wrap
+msgid "Figura 42"
+msgstr ""
+
+#. type: Target for macro image
+#: 280.es.adoc:79
+#, no-wrap
+msgid "img/es.figure-42.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 280.es.adoc:82
+msgid "De esta forma habrá eliminado todos los registros que fueron marcados con una bandera."
+msgstr ""
+
+#. type: Title ==
+#: 300.es.adoc:1
+#, no-wrap
+msgid "Guardado y exportación de datos y proyectos"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:4
+msgid "Debe tener en cuenta que lo que guarda al usar el programa es el proyecto, y que ello no implica en ningún caso que los cambios que realice vayan a verse reflejados automáticamente en su base de datos original. Para ello, deberá exportar los datos desde OpenRefine e importarlos nuevamente a su base de datos."
+msgstr ""
+
+#. type: Title ===
+#: 300.es.adoc:5
+#, no-wrap
+msgid "Guardado de datos y proyectos"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:8
+msgid "Los proyectos con los que trabaja usando OpenRefine son guardados en su propia computadora de forma automática. En otras palabras, no existe un botón o un comando “Guardar”."
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:10
+msgid "Los directorios en que se guardan los proyectos se listan a continuación:"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:12
+#, no-wrap
+msgid "*Windows*: dependiendo de la versión de Windows que utilice, los datos se encontrarán en uno de estos directorios:\n"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:14
+msgid "C:\\Documents and Settings\\(user id)\\Local Settings\\Application Data\\OpenRefine"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:15
+msgid "C:\\Users\\(user id)\\AppData\\Roaming\\OpenRefine"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:16
+msgid "C:\\Users\\(user id)\\AppData\\Local\\OpenRefine"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:17
+msgid "C:\\Users\\(user id)\\OpenRefine"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:19
+#, no-wrap
+msgid "*MacOS*:\n"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:21
+msgid "~/Library/Application Support/OpenRefine/"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:22
+msgid "~/Library/Application Support/Google/Refine/ (versions de Google Refine más antiguas)"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:23
+msgid "Ingreso a través de /var/log/daemon.log - grep para com.google.refine.Refine"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:25
+#, no-wrap
+msgid "*Linux*:\n"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:27
+msgid "~/.local/share/openrefine/"
+msgstr ""
+
+#. type: Title ===
+#: 300.es.adoc:28
+#, no-wrap
+msgid "Exportación de datos y proyectos [[sect-3.2]]"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:31
+msgid "OpenRefine ofrece varias opciones para exportar los datos y proyectos. Se puede acceder a estas opciones en la esquina superior derecha de la ventana del programa, haciendo click en el botón “Exportar” (<<img-fig-43,Figura 43>>)."
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:33
+msgid "Note que la primera opción, “Exportar proyecto”, permite exportar el proyecto completo, mientras que otras opciones (e.g., delimitado por… , Excel, etc.) permiten exportar los datos."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 300.es.adoc:35 300.es.adoc:36
+#, no-wrap
+msgid "Figura 43"
+msgstr ""
+
+#. type: Target for macro image
+#: 300.es.adoc:36
+#, no-wrap
+msgid "img/es.figure-43.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:39
+msgid "La exportación de proyectos es útil cuando uno quiere abrir el mismo proyecto en OpenRefine en otra computadora."
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:41
+msgid "Haciendo click en “Exportar proyecto” se abrirá una ventana en la que puede escoger si exportar como archivo local o si exportar a Google Drive (<<img-fig-44,Figura 44>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 300.es.adoc:43 300.es.adoc:44
+#, no-wrap
+msgid "Figura 44"
+msgstr ""
+
+#. type: Target for macro image
+#: 300.es.adoc:44
+#, no-wrap
+msgid "img/es.figure-44.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:47
+msgid "Escoja la opción deseada y haga click en “Exportar”. El archivo exportado tendrá una extensión .tar.gz, que sólo puede ser abierto por el programa (no se descarga un archivo de datos que pueda abrir en un procesador de textos ni en una planilla de cálculo)."
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:49
+msgid "Para exportar los datos y poder abrirlos en otro programa, puede seguir cualquiera de las otras opciones, que resultarán en un archivo con uno de los formatos disponibles."
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:51
+msgid "La exportación de datos se realizará teniendo en cuenta las facetas y filtros aplicados. Esto implica que si usted tiene abierta por ejemplo una faceta, sólo los datos correspondientes a dicha faceta serán exportados. Por lo tanto, para asegurarse de exportar todos los datos, recuerde cerrar todos los filtros y facetas antes de hacer la exportación."
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:53
+msgid "Para una exportación más personalizada, en el menú “Exportar” escoja “Configurar exportación…”. Se abrirá una ventana como la mostrada en la <<img-fig-45,Figura 45>>, en la cual puede escoger una serie de opciones."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 300.es.adoc:55 300.es.adoc:56
+#, no-wrap
+msgid "Figura 45"
+msgstr ""
+
+#. type: Target for macro image
+#: 300.es.adoc:56
+#, no-wrap
+msgid "img/es.figure-45.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:59
+msgid "En la pestaña “Contenido” puede elegir qué campos exportar y modificar ciertos parámetros para cada campo individualmente."
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:61
+msgid "Observe que en esta pestaña también puede escoger ignorar todas las facetas y filtros al exportar, lo cual es muy útil en caso de que haya olvidado cerrar alguna."
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:63
+msgid "Para descargar los datos, vaya a la pestaña “Descarga”, como se ve en la <<img-fig-46,Figura 46>>."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 300.es.adoc:65 300.es.adoc:66
+#, no-wrap
+msgid "Figura 46"
+msgstr ""
+
+#. type: Target for macro image
+#: 300.es.adoc:66
+#, no-wrap
+msgid "img/es.figure-46.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:69
+msgid "En esta pestaña puede seleccionar el formato de los datos para la descarga. Escoja el que prefiera y haga click en “Descargar”. Inmediatamente comenzará la descarga de los datos."
+msgstr ""
+
+#. type: Plain text
+#: 300.es.adoc:71
+msgid "También, para ver una vista previa de los datos que descargará, puede hacer click en “Vista previa”, y se abrirá otra ventana en su navegador web donde podrá ver una muestra de los datos a descargar."
+msgstr ""
+
+#. type: Title ==
+#: 400.es.adoc:2
+#, no-wrap
+msgid "Consultas a servicios externos a través de URLs"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:5
+msgid "OpenRefine ofrece la posibilidad de consultar fuentes externas, una función que es muy útil cuando se intenta mejorar la calidad de los datos. Para el caso particular de datos sobre biodiversidad, permite, por ejemplo, validar nombres taxonómicos y geográficos contra fuentes de información que se consideren confiables, completar rangos taxonómicos y campos de geografía administrativa, georreferenciar, incorporar enlaces a imágenes almacenadas en sitios web, entre otros."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:7
+msgid "En OpenRefine las consultas externas pueden realizarse por dos vías: a través de URLs, o a través de servicios de reconciliación. En esta guía sólo se incluyen los métodos referidos a las consultas a través de URLs. Para ver explicaciones referidas al uso de algunos servicios de reconciliación consultar versiones anteriores de este documento; tener en cuenta que esos servicios no han sido actualizados en concordancia con las actualizaciones de OpenRefine, y muchos no funcionan a partir de la versión 2.8 de OpenRefine."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:9
+msgid "Debe recordarse que para poder realizar consultas a servicios que se encuentran en línea se requiere conexión a Internet."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:11
+msgid "La velocidad a la que se obtienen los resultados de las consultas depende de la velocidad de respuesta del servicio en particular. De esta forma, si se quiere obtener información para muchos registros, el tiempo de la operación será prolongado. Para acortar tiempos, se pueden hacer comparaciones de registros contra el servicio deseado dentro de facetas, es decir, en fracciones particulares de los registros."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:14
+msgid "Nos referimos a consultas a través de URLs cuando el proceso implica proveer a OpenRefine con la dirección web (URL) de un determinado servicio y ciertos parámetros mínimos para obtener de dicho servicio un resultado."
+msgstr ""
+
+#. type: Title ===
+#: 400.es.adoc:15
+#, no-wrap
+msgid "Resolución de nombres científicos usando Global Names Resolver"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:18
+msgid "En el ejemplo siguiente, compararemos los nombres científicos (contenidos en el campo [source]`\"scientificName\"`) contra el servicio http://resolver.globalnames.org[Global Names Resolver] (de aquí en más \"GNR\")."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:20
+msgid "Para acortar el tiempo de consulta, cree una faceta para el campo [source]`\"genus\"` (click en \"la &#9660; azul > Facetas > Faceta de texto\") y dentro de ella escoja el género Cinna. En el conjunto de datos utilizado Cinna tiene 3 especies asociadas: _C. lateralis_ (1 registro), _C. arundinacea_ (6 registros) y _C. latifolia_ (3 registros); puede verlas listadas en el campo [source]`\"scientificName\"`."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:22
+msgid "Para comparar los nombres contra el GNR, haremos un llamado al servicio y capturaremos los resultados en un nuevo campo:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:24
+msgid "A partir del campo [source]`\"scientificName\"`, cree una nueva columna a partir de una dirección URL haciendo click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo[] y siguiendo la siguiente ruta (<<img-fig-47,Figura 47>>):"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:27
+msgid "\"Editar columnas > Agregar columna accediendo a URLs…\""
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 400.es.adoc:30 400.es.adoc:31
+#, no-wrap
+msgid "Figura 47"
+msgstr ""
+
+#. type: Target for macro image
+#: 400.es.adoc:31
+#, no-wrap
+msgid "img/es.figure-47.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:34
+msgid "Se abrirá una ventana como la mostrada en la <<img-fig-48,Figura 48>>. Allí, dé un nombre al nuevo campo (por ejemplo, GNR_Json_sciName), y en el cuadro de texto coloque la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:39
+#, no-wrap
+msgid "\"http://resolver.globalnames.org/name_resolvers.json?names=\" +\n"
+"  escape(cells[\"scientificName\"].value,\"url\")\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:42
+msgid "Dicha expresión indica que se hará una consulta en el GNR utilizando como valores de comparación aquellos que se encuentran en el campo [source]`\"scientificName\"`. Es importante que el nombre del campo que utiliza en la expresión sea idéntico al nombre del campo del cual tomará los valores originales, o de otro modo el llamado será infructuoso."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 400.es.adoc:44 400.es.adoc:45
+#, no-wrap
+msgid "Figura 48"
+msgstr ""
+
+#. type: Target for macro image
+#: 400.es.adoc:45
+#, no-wrap
+msgid "img/es.figure-48.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:48
+msgid "Note que en esta ventana, arriba a la derecha, tiene una opción para modificar el “Tiempo de retraso”. Este valor indica el tiempo que transcurre entre llamados o consultas sucesivas que se hacen al servicio en cuestión. Por defecto, el valor es de 5000 milisegundos. Puede reducir este tiempo para acelerar el proceso de comparación. Tenga en cuenta, sin embargo, que muchos servicios bloquean los llamados si éstos ocurren muy cercanos en el tiempo, pues consideran que puede tratarse de un ataque. El máximo número de consultas que se pueden realizar por unidad de tiempo depende de cada servicio en particular."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:50
+msgid "La expresión utilizada es muy general, y devolverá los valores de todos los parámetros que GNR provee respecto de un nombre científico. Puede consultar dichos parámetros en http://resolver.globalnames.org/api. Si no quiere obtener en el resultado todos los valores, puede modificar la expresión especificando valores para todos o algunos de los parámetros. Por ejemplo: GNR resuelve los nombres consultando diferentes fuentes, a las que asigna identificadores (data_source_id); si sólo quiere obtener los resultados provenientes de la fuente Catalogue of Life (que en GNR tiene id=1), puede utilizar la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:55 400.es.adoc:128
+#, no-wrap
+msgid "\"http://resolver.globalnames.org/name_resolvers.json?names=\" +\n"
+"  escape(cells[\"scientificName\"].value,\"url\") +\n"
+"  \"&data_source_ids=1\"\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:57
+msgid "Una vez que haya creado el nuevo campo con la expresión general, verá que contiene, en formato JSON, los resultados de la consulta en GNR para cada nombre, con todos los parámetros y valores que GNR reporta."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:59
+msgid "Para poder trabajar con esto más cómodamente, debemos extraer de allí los valores de interés."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:61
+msgid "Dado que GNR consulta varias fuentes de nombres taxonómicos, nos interesa saber cuál es el nombre científico que figura en cada fuente. Algunas fuentes pueden tener listado el nombre pero considerarlo inválido y proveer el nombre correcto. Entonces, extraeremos del resultado en JSON, en un nuevo campo, los siguientes valores:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:63
+msgid "Fuente consultada: \"data_source_title\""
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:64
+msgid "Nombre encontrado en la fuente: \"name_string\""
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:65
+msgid "Nombre aceptado por la fuente: \"current_name_string\""
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:67
+msgid "Para ello, a partir del campo en JSON (en el ejemplo, GNR_Json_sciName), cree un nuevo campo (haga click en \"la &#9660; azul > Editar columnas > Agregar columna basada en esta columna\")."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:69
+msgid "Dé un nombre al nuevo campo (por ejemplo, GNR_sciName_options) y en el cuadro de texto, coloque la siguiente expresión (<<img-fig-49,Figura 49>>):"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:77 400.es.adoc:139
+#, no-wrap
+msgid "forEach(value.parseJson().get(\"data\")[0].get(\"results\"), v,\n"
+"  v.get(\"data_source_title\") + \"; \" +\n"
+"  v.get(\"name_string\") + \"; \" +\n"
+"  if(isBlank(v.get(\"current_name_string\")), \"\", v.get(\"current_name_string\")))\n"
+".join(\" | \")\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:80
+msgid "Dicha expresión analiza la cadena en formato JSON, que tiene dentro de su estructura secciones “data” y dentro de esta “results” –un “result” proveniente de cada fuente consultada (por ejemplo, un “result” de Catalogue of Life). Dentro de cada sección “results” extrae los valores de interés (“data_source_title”, “name_string” y “current_name_string”) y los separa con un “;”. Como no todas las fuentes proveen un nombre aceptado (“current_name_string”), la expresión [source]`if` especifica que si ese parámetro es nulo debe dejarse el espacio vacío ([source]``\"\"``), y si no, colocar el valor extraído. Por último, une los grupos de valores extraídos en una única cadena de texto, separados por un [source]`` | ``."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 400.es.adoc:82 400.es.adoc:83
+#, no-wrap
+msgid "Figura 49"
+msgstr ""
+
+#. type: Target for macro image
+#: 400.es.adoc:83
+#, no-wrap
+msgid "img/es.figure-49.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:86
+msgid "Una vez que haya creado el campo, verá que contiene los valores de interés extraídos de GNR separados por ' | '. Por ejemplo:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:92
+#, no-wrap
+msgid "uBio NameBank; Cinna lateralis; | Catalogue of Life; Cinna lateralis Walter; Andropogon virginicus L. | ITIS; Cinna lateralis Walter; Andropogon virginicus L. | GBIF Backbone Taxonomy; Cinna lateralis Walter; Andropogon virginicus L. | EOL; Cinna lateralis Walter; | Tropicos - Missouri Botanical Garden; Cinna lateralis Walter; | The International Plant Names Index; Cinna lateralis Walter; | uBio NameBank; Cinna lateralis Walter; | uBio NameBank; Cinna lateralis Walter, 1788; | Arctos; Cinna lateralis Walter;\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:95
+msgid "Note que algunas fuentes encuentran el nombre pero no proveen un nombre aceptado, por ejemplo:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:98
+#, no-wrap
+msgid "uBio NameBank; Cinna lateralis;\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:101
+msgid "no tiene un valor en el tercer lugar, mientras que:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:104
+#, no-wrap
+msgid "Catalogue of Life; Cinna lateralis Walter; Andropogon virginicus L.\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:107
+msgid "provee el nombre encontrado y el nombre válido."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:109
+msgid "Note además que algunas fuentes tienen más de una variante asociada al nombre, por ejemplo:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:114
+#, no-wrap
+msgid "uBio NameBank; Cinna lateralis;\n"
+"uBio NameBank; Cinna lateralis Walter;\n"
+"uBio NameBank; Cinna lateralis Walter, 1788;\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:120
+msgid "No todos los nombres serán necesariamente encontrados en todas las fuentes consultadas, por lo que el número de fuentes variará de un nombre al otro. En consecuencia, la ubicación de las fuentes en la cadena de texto no será homogénea de un registro al otro. Una consecuencia de esto es que si usted quiere luego separar el contenido en campos distintos de acuerdo a la fuente consultada (e.g., un campo para ITIS, uno para Catalogue of Life, etc.), no podrá hacerlo de modo que cada nuevo campo tenga los datos de una misma y única fuente."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:122
+msgid "En este caso, le conviene en cambio hacer varios llamados a GNR separados, cada uno especificando una fuente determinada. Como se menciona más arriba, si quiere por ejemplo sólo consultar los valores dados por Catalogue of Life, use la expresión siguiente:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:131
+msgid "y luego arme un nuevo campo extrayendo los resultados de interés, usando la expresión:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:142
+msgid "A partir de los resultados obtenidos, puede extraer los nombres separando la nueva columna en columnas distintas utilizando separadores apropiados (ver <<#División-de-columnas, Divisiones>> en la sección 2.1.3)."
+msgstr ""
+
+#. type: Title ===
+#: 400.es.adoc:143
+#, no-wrap
+msgid "Georreferenciación usando GEOLocate"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:146
+msgid "En este ejemplo, para facilitar la explicación y reducir el tiempo de consulta al servicio, construiremos previamente dos facetas. La primera sobre el campo [source]`\"country\"`, dentro de la cual seleccionaremos el valor “Argentina”. La segunda faceta será sobre el campo [source]`\"genus\"`, dentro de la cual seleccionaremos el valor “Acacia”. Una vez aplicadas ambas facetas y escogidos los valores, verá que en la ventana principal sólo se muestra un subconjunto de registros que cumplen estas condiciones simultáneamente."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:148
+msgid "Llevaremos a cabo la georreferenciación a partir del campo [source]`\"locality\"`. Para ello, cree un nuevo campo a partir de éste siguiendo la ruta: click en \"la &#9660; azul > Editar columnas > Agregar columna accediendo a URLs…\"."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:150
+msgid "Se abrirá una nueva ventana (<<img-fig-50,Figura 50>>). Allí dé un nombre al nuevo campo, por ejemplo “GeoLocate_Json_georref”, y pegue en el cuadro de texto la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:155
+#, no-wrap
+msgid "\"http://www.geo-locate.org/webservices/geolocatesvcv2/glcwrap.aspx?Country=Argentina&fmt=json&Locality=\" +\n"
+"  escape(value,'url')\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:158
+msgid "En esta expresión, `fmt` indica el formato en el que el resultado será devuelto por el servicio. GEOLocate ofrece dos posibles formatos, JSON y GeoJSON."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 400.es.adoc:160 400.es.adoc:161
+#, no-wrap
+msgid "Figura 50"
+msgstr ""
+
+#. type: Target for macro image
+#: 400.es.adoc:161
+#, no-wrap
+msgid "img/es.figure-50.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:164
+msgid "Una vez que haya creado el nuevo campo con la expresión general, verá que contiene, en formato JSON, los resultados de la consulta en GEOLocate para cada localidad, con todos los parámetros y valores que este servicio reporta."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:166
+msgid "En los resultados puede tener tres casos:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:168
+#, no-wrap
+msgid "*Caso 1)* Ningún resultado encontrado. Ello quiere decir que GEOLocate no ha podido ubicar la localidad de interés. En la celda correspondiente verá lo siguiente:\n"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:175
+#, no-wrap
+msgid "{\n"
+"  \"engineVersion\" : \"GLC:7.0|U:1.01374|eng:1.0\",\n"
+"  \"numResults\" : 0, <1>\n"
+"  \"executionTimems\" : 578.1462\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:177
+msgid "Ningún resultado encontrado."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:179
+#, no-wrap
+msgid "*Caso 2)* Un único resultado encontrado. En la celda correspondiente verá, por ejemplo, lo siguiente:\n"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:209
+#, no-wrap
+msgid "{\n"
+"  \"engineVersion\": \"GLC:7.0|U:1.01374|eng:1.0\",\n"
+"  \"numResults\": 1,\n"
+"  \"executionTimems\": 484.3969,\n"
+"  \"resultSet\": {\n"
+"    \"type\": \"FeatureCollection\",\n"
+"    \"features\": [\n"
+"      {\n"
+"        \"type\": \"Feature\",\n"
+"        \"geometry\": {\n"
+"          \"type\": \"Point\",\n"
+"          \"coordinates\": [ -64.471941, -23.643418 ] <1>\n"
+"        },\n"
+"        \"properties\": {\n"
+"          \"parsePattern\": \"YUTO\", <2>\n"
+"          \"precision\": \"High\",\n"
+"          \"score\": 79,\n"
+"          \"uncertaintyRadiusMeters\": 3036, <3>\n"
+"          \"uncertaintyPolygon\": \"Unavailable\", <4>\n"
+"          \"displacedDistanceMiles\": 0, <5>\n"
+"          \"displacedHeadingDegrees\": 0,\n"
+"          \"debug\": \":GazPartMatch=False|:inAdm=True|:Adm=JUJUY|:NPExtent=5040|:NP=YUTO|:KFID=|YUTO\" <6>\n"
+"        }\n"
+"      }\n"
+"    ],\n"
+"    \"crs\": { \"type\": \"EPSG\", \"properties\": { \"code\": 4326 } }\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:211
+msgid "Las coordenadas: [source,javascript]`\"coordinates\": [-64.471941, -23.643418]`"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:212
+msgid "Las localidad original que consultó: [source]`\"parsePattern\" : \"YUTO\"`"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:213
+msgid "El radio de incerteza en metros: [source]`\"uncertaintyRadiusMeters\" : 3036`"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:214
+msgid "El polígono de incerteza asociado: [source]`\"uncertaintyPolygon\" : \"Unavailable\"`, en este caso no disponible."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:215
+msgid "Los desplazamientos: distancia en millas y grados en una dirección: [source]`\"displacedDistanceMiles\" : 0, \"displacedHeadingDegrees\" : 0`, en este caso con valores `0` porque no se especifica desplazamiento de ningún tipo en la localidad (e.g., 45km de Yuto, o 45km N Yuto)."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:216
+msgid "La correspondencia en el gacetero consultado: `GazPartMatch`, y en éste la división administrativa bajo la cual se encontró la localidad: `|:Adm=JUJUY|`."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:218
+#, no-wrap
+msgid "*Caso 3)* Varios resultados encontrados para un mismo valor de localidad. Esto sucede comúnmente cuando no se especifican en la consulta niveles administrativos por debajo de país (e.g., podría haber en un mismo país varios lugares con el mismo nombre). Un ejemplo sería:\n"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:282
+#, no-wrap
+msgid "{\n"
+"  \"engineVersion\": \"GLC:7.0|U:1.01374|eng:1.0\",\n"
+"  \"numResults\": 3, <1>\n"
+"  \"executionTimems\": 468.7555,\n"
+"  \"resultSet\": {\n"
+"    \"type\": \"FeatureCollection\",\n"
+"    \"features\": [\n"
+"      {\n"
+"        \"type\": \"Feature\",\n"
+"        \"geometry\": {\n"
+"          \"type\": \"Point\",\n"
+"          \"coordinates\": [ -64.158097, -26.21252 ] <2>\n"
+"        },\n"
+"        \"properties\": {\n"
+"          \"parsePattern\": \"TARTAGAL\", <3>\n"
+"          \"precision\": \"High\",\n"
+"          \"score\": 83,\n"
+"          \"uncertaintyRadiusMeters\": 301,\n"
+"          \"uncertaintyPolygon\": \"Unavailable\",\n"
+"          \"displacedDistanceMiles\": 0,\n"
+"          \"displacedHeadingDegrees\": 0,\n"
+"          \"debug\": \":GazPartMatch=False|:inAdm=True|:Adm=SANTIAGO DEL ESTERO|:NPExtent=500|:NP=TARTAGAL|:KFID=|TARTAGAL\" <4>\n"
+"        }\n"
+"      },\n"
+"      {\n"
+"        \"type\": \"Feature\",\n"
+"        \"geometry\": {\n"
+"          \"type\": \"Point\",\n"
+"          \"coordinates\": [ -59.846115, -28.671732 ] <2>\n"
+"        },\n"
+"        \"properties\": {\n"
+"          \"parsePattern\": \"TARTAGAL\", <3>\n"
+"          \"precision\": \"High\",\n"
+"          \"score\": 83,\n"
+"          \"uncertaintyRadiusMeters\": 3036,\n"
+"          \"uncertaintyPolygon\": \"Unavailable\",\n"
+"          \"displacedDistanceMiles\": 0,\n"
+"          \"displacedHeadingDegrees\": 0,\n"
+"          \"debug\": \":GazPartMatch=False|:inAdm=True|:Adm=SANTA FE|:NPExtent=5040|:NP=TARTAGAL|:KFID=|TARTAGAL\" <4>\n"
+"        }\n"
+"      },\n"
+"      {\n"
+"        \"type\": \"Feature\",\n"
+"        \"geometry\": {\n"
+"          \"type\": \"Point\",\n"
+"          \"coordinates\": [ -63.801314, -22.516365 ] <2>\n"
+"        },\n"
+"        \"properties\": {\n"
+"          \"parsePattern\": \"TARTAGAL\", <3>\n"
+"          \"precision\": \"High\",\n"
+"          \"score\": 83,\n"
+"          \"uncertaintyRadiusMeters\": 3036,\n"
+"          \"uncertaintyPolygon\": \"Unavailable\",\n"
+"          \"displacedDistanceMiles\": 0,\n"
+"          \"displacedHeadingDegrees\": 0,\n"
+"          \"debug\": \":GazPartMatch=False|:inAdm=True|:Adm=SALTA|:NPExtent=5040|:NP=TARTAGAL|:KFID=|TARTAGAL\" <4>\n"
+"        }\n"
+"      }\n"
+"    ],\n"
+"    \"crs\": { \"type\": \"EPSG\", \"properties\": { \"code\": 4326 } }\n"
+"  }\n"
+"}\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:285
+msgid "Note que los tres resultados del ejemplo corresponden a provincias distintas en las que se encuentra una localidad “Tartagal”, puede comparar las coordenadas para cada una."
+msgstr ""
+
+#. type: Block title
+#: 400.es.adoc:287
+#, no-wrap
+msgid "Visualizando JSON"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:290
+msgid "Para visualizar la estructura de los resultados en JSON de modo más amigable, puede probar copiando el resultado de alguna celda en un analizador de JSON en línea. Existen muchas opciones, una de ellas es http://json.parser.online.fr/. Allí, seleccionando distintas opciones arriba a la derecha podrá distinguir mejor la estructura, cuáles son los objetos, los arreglos y las cadenas de texto y cómo están relacionados unos con otros (<<img-fig-51,Figura 51>>). Esto puede ser muy útil a la hora de armar expresiones para desglosar el contenido de los campos en nuevos campos sin perder información."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 400.es.adoc:293 400.es.adoc:294
+#, no-wrap
+msgid "Figura 51"
+msgstr ""
+
+#. type: Target for macro image
+#: 400.es.adoc:294
+#, no-wrap
+msgid "img/es.figure-51.png"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:297
+msgid "La expresión utilizada es muy simple y sólo le pide al servicio que resuelva la georreferenciación en base al campo localidad y teniendo como valor fijo “Argentina” para el campo país, pero sin especificar los valores de otros campos geográficos. Sin embargo, todos los campos se pueden incluir en la expresión para obtener resultados más específicos. Ello puede hacerse de dos maneras:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:299
+msgid "Establecer los valores de los campos como valores fijos, como hicimos con el país, agregando luego por ejemplo: `&state=VALOR` donde VALOR es el valor fijo que uno establece (e.g., “Córdoba”). Esto restringirá los resultados en función de esos parámetros."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:300
+msgid "Incluir los campos como valores a consultar, en cuyo caso para cada campo hay que incluir como valor: [source]`escape(cells.NOMBREDELCAMPO.value,'url')`"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:302
+msgid "La expresión con todos los campos se verá entonces como:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:306
+#, no-wrap
+msgid "\"http://www.geo-locate.org/webservices/geolocatesvcv2/glcwrap.aspx?country=Argentina&state=\" +\n"
+"  escape(cells.stateProvince.value,'url')+\"&locality=\"+escape(cells.locality.value,'url')\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:308
+msgid "Note que el nombre del campo será el que tiene en su base de datos. Note también que en la base de datos dada para este ejercicio no hay un campo correspondiente a [source]`\"county\"`, pero GEOLocate permite incluirlo si lo hubiera."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:310
+msgid "Para poder trabajar con estos resultados más cómodamente, debemos extraer de allí los valores de interés. En este paso debe tener cuidado. Debido a que no especificamos todos los campos geográficos en la consulta a GEOLocate, recuerde que los registros pueden tener más de un resultado posible, y que cada resultado tiene sus propios parámetros de georreferenciación."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:312
+msgid "A modo de ejemplo, extraeremos en nuevos campos los valores de las coordenadas. (El conjunto de datos provisto para realizar los ejercicios de esta guía contiene campos originales de latitud y longitud provistos por la fuente, puede utilizarlos para contrastar los resultados obtenidos utilizando GEOLocate)."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:314
+msgid "Para extraer las coordenadas puede seguir dos métodos: 1) extraer latitud y longitud conjuntamente y luego separar; o 2) extraer latitud y longitud de modo independiente."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:316
+#, no-wrap
+msgid "*Método 1:* extraer latitud y longitud conjuntamente\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:318 400.es.adoc:349
+msgid "Haga click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{geolocate_json_georref}[Editar columnas > Agregar columna basada en esta columna]."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:320
+msgid "De un nombre al nuevo campo, por ejemplo, GeoLocate_parseCoord, y en el cuadro de texto pegue la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:326
+#, no-wrap
+msgid "forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)), w,\n"
+"  w.geometry.coordinates.join(\"; \"))\n"
+".join(\"|\")\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:329
+msgid "Esta expresión es un poco más compleja que las que hemos estado utilizando, debido a que se requiere extraer información de una estructura JSON particular Objeto -> Arreglo -> Objeto -> Arreglo. (Puede visualizar la estructura en JSON como se menciona en la nota de la <<img-fig-51,Figura 51>>)."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:331
+msgid "El nuevo campo tendrá valores como los siguientes, por ejemplo, para un registro cuya consulta devolvió tres resultados:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:334
+#, no-wrap
+msgid "-64.158097; -26.21252|-59.846115; -28.671732|-63.801314; -22.516365\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:337
+msgid "Note que GEOLocate provee como primer valor de coordenadas la longitud y como segundo valor la latitud."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:339
+msgid "Dividiremos ahora este campo en tres partes, una para cada resultado:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:341
+msgid "Haga click en \"la &#9660; azul del campo > Editar columnas > Dividir en varias columnas\"."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:343
+msgid "Escoja como separador `|`. Desmarque la opción “Eliminar esta columna” si quiere mantener el campo original (esto es recomendable, siempre puede eliminar los campos después)."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:345
+msgid "Tendrá entonces ahora una serie de campos con valores del tipo: `-64.158097; -26.21252`. Sobre cada uno, puede realizar una nueva separación utilizando como separador `;`."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:347
+#, no-wrap
+msgid "*Método 2:* extraer latitud y longitud independientemente\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:351
+msgid "De un nombre al nuevo campo, por ejemplo, GeoLocate_parseLong, y en el cuadro de texto pegue la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:355
+#, no-wrap
+msgid "forEach(filter(value.parseJson().resultSet.features, v, isNonBlank(v.geometry)), w,\n"
+"  w.geometry.coordinates[0]).join(\"; \"))\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:357
+msgid "Esta expresión es diferente a la usada anteriormente en que se especifica qué valor del arreglo coordenadas se desea obtener: `[0]`. En OpenRefine, el primer valor se indica con 0, el segundo con 1, y así sucesivamente. Dado que en los resultados de la consulta se indica primero la longitud, ésta será el valor `[0]`, y la latitud será el valor `[1]` dentro del arreglo “coordinates”."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:359
+msgid "El nuevo campo creado tendrá valores como los siguientes: `-64.158097; -59.846115; -63.801314` cada uno correspondiente a una longitud de uno de los resultados obtenidos de la consulta a GEOLocate para un determinado registro."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:361
+msgid "Puede repetir el proceso para obtener las latitudes, cambiando en la expresión anterior `[0]` por `[1]`, y luego separar los campos por resultado, utilizando como separador `;`."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:363
+msgid "Debe tener en cuenta que, como se mencionó antes, cuantos más datos se provean al servicio de GEOLocate en la consulta más sencillo será desglosar los resultados después. El proceso de desglose puede ser muy engorroso y requiere que sea muy meticuloso/a a la hora de nombrar campos y separar contenido. Si no está familiarizado/a con el uso de JSON, es preferible que realice el desglose “pasito a pasito” para evitar perder o mezclar información. Por ejemplo, puede crear un documento con el flujo de trabajo donde enumere los pasos a seguir con todos los detalles necesarios (incluya allí el tipo de resultados que espera ver y cómo se verían en los campos)."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:365
+msgid "A la hora de agregar datos de georreferenciación, contraste siempre los resultados contra los campos geográficos que tiene. En el caso de tener varios resultados posibles, no siempre el primer resultado es el correcto. Recuerde reportar cuál fue el proceso de georreferenciación utilizado y todos los parámetros posibles asociados. Para consultar en qué campos de Darwin Core se reporta cada parámetro, puede referirse a: https://dwc.tdwg.org/terms/#location, y consultar: https://github.com/tdwg/dwc-qa/wiki/Georeferences."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:367
+msgid "Para conocer más acerca de georreferenciación y las mejores prácticas asociadas, consulte https://docs.gbif.org/georeferencing-best-practices/1.0/en/[Georeferencing Best Practices (Chapman & Wieczorek 2020)]."
+msgstr ""
+
+#. type: Title ===
+#: 400.es.adoc:368
+#, no-wrap
+msgid "Limpieza de fechas utilizando Canadensys Date Parsing"
+msgstr ""
+
+#. type: Title ====
+#: 400.es.adoc:370
+#, no-wrap
+msgid "Breve introducción"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:373
+msgid "Uno de los campos sobre el que se puede corroborar la calidad de los datos es el campo de fecha: [source]`\"eventDate\"`."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:375
+msgid "Recordemos primero la http://rs.tdwg.org/dwc/terms/index.htm#eventDate[*definición de [source]`\"eventDate\"` en el estándar Darwin Core*]:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:378
+msgid "The date-time or interval during which an Event occurred. For occurrences, this is the date-time when the event was recorded. Not suitable for a time in a geological context. Recommended best practice is to use a date that conforms to ISO 8601-1:2019."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:380
+msgid "Si piensa en un ejemplar de museo, [source]`\"eventDate\"` refiere a cuándo fue colectado el ejemplar. Si piensa en una observación, [source]`\"eventDate\"` refiere a cuándo fue realizada esa observación."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:382
+msgid "Darwin Core sugiere que se utilice para capturar la información de fecha el estándar https://en.wikipedia.org/wiki/ISO_8601[ISO 8601-1:2019]. Para fechas únicas, este estándar tiene el siguiente formato:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:386
+#, no-wrap
+msgid "AAAA-MM-DDTHH:mmX\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:389
+msgid "Donde:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:391
+msgid "`AAAA`: año, con cuatro dígitos."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:392
+msgid "`MM`: mes, con dos dígitos. E.g.: mayo sería 05."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:393
+msgid "`DD`: día, con dos dígitos. E.g.: segundo día de un mes sería 02."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:394
+msgid "`T`: indica que lo que viene a continuación es la hora."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:395
+msgid "`HH`: horas, con dos dígitos, en formato de 24 hs."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:396
+msgid "`mm`: minutos, con dos dígitos."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:397
+msgid "`X`: indica la zona horaria. La zona horaria se determina tomando como base UTC (Coordinated Universal Time). Si uno está justo sobre la zona horaria UTC, X se reemplaza por “Z”. Si uno está en otra zona horaria, debe reemplazarse X por la diferencia horaria correspondiente."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:399
+msgid "Por ejemplo, Argentina es UTC-3, o sea, 03horas00minutos al oeste (-) de UTC, por lo cual X debe reemplazarse por “-0300”."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:401
+msgid "De este formato, uno puede utilizar tanto el formato completo (incluyendo la hora) como sólo la primera parte, AAAA-MM-DD."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:403
+msgid "Este formato también puede utilizarse para expresar rangos de fecha de manera estandarizada. Para ello, se usa el mismo formato y se separan las fechas con barras “/”, ver ejemplos abajo (<<#table-date-examples, Tabla 3>>)."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:406
+msgid "Tabla 3. Ejemplos de formatos de fechas y su versión estandarizada."
+msgstr ""
+
+#. type: Table
+#: 400.es.adoc:435
+#, no-wrap
+msgid "| Fecha original \n"
+"| Fecha estandarizada\n\n"
+"| 12 Feb 1809\n"
+"| 1809-02-12\n\n"
+"| 12/02/1809\n"
+"| 1809-02-12\n\n"
+"| Jun 1906\n"
+"| 1906-06\n\n"
+"| 1971\n"
+"| 1971\n\n"
+"| 20 Feb 2009 8:40am UTC\n"
+"| 2009-02-20T08:40Z\n\n"
+"| 8 Mar 1963 2:07pm, en la zona horaria 6 horas más temprano que UTC\n"
+"| 1963-03-08T14:07-0600\n\n"
+"| 13-15 Nov 2007\n"
+"| 2007-11-13/15\n\n"
+"| 1 Mar 2007 1pm UTC – 11 May 2008 3:30pm UTC\n"
+"| 2007-03-01T13:00:00Z/2008-05-11T15:30:00Z\n"
+msgstr ""
+
+#. type: Title ====
+#: 400.es.adoc:437
+#, no-wrap
+msgid "Limpieza de fechas"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:440
+msgid "Muchas veces, a pesar de lo que indica el estándar Darwin Core, encontramos en el campo [source]`\"eventDate\"` fechas que no siguen el formato sugerido. Para estandarizarlas, puede hacer uso de la herramienta que ofrece https://data.canadensys.net/tools/dates[Canadensys: Date Parsing]."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:442
+msgid "Esta herramienta permite interpretar fechas, devolviéndolas en formato estándar. Ejemplos de los tipos de valores que puede interpretar son:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:444
+msgid "Jun 13, 2008"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:445
+msgid "15 Jan 2011"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:446
+msgid "2009 IV 02"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:447
+msgid "2 VII 1986"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:449
+msgid "Algunas fechas, sin embargo no las interpreta, veamos el siguiente ejemplo (<<img-fig-52,Figura 52>>):"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 400.es.adoc:451 400.es.adoc:452
+#, no-wrap
+msgid "Figura 52"
+msgstr ""
+
+#. type: Target for macro image
+#: 400.es.adoc:452
+#, no-wrap
+msgid "img/es.figure-52.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:455
+msgid "En las dos líneas inferiores, “13” sólo puede referir a días, pues no hay un mes “13”."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:457
+msgid "En las dos líneas superiores, en cambio, “2” y “4” pueden ambos referir a mes y día. Como en distintas partes del mundo se utilizan sistemas distintos (primero se pone día y luego mes, o viceversa), la herramienta no puede determinar inequívocamente cuál es cuál, y por ende no hace la interpretación."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:459
+msgid "Debe tener esto en cuenta cuando utilice la herramienta para limpiar los datos."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:461
+msgid "Ahora sí, invocaremos Date Parsing desde OpenRefine. Para ello, primero seleccione algunas fechas mediante una faceta, para reducir el tiempo de consulta. Luego, sobre la columna [source]`\"eventDate\"` haga click en \"la &#9660; azul > Editar columna > Agregar columna accediendo a URLs…\" (<<img-fig-53,Figura 53>>). En la ventana que aparece, nombre la nueva columna (por ejemplo “Canadensys_eventDate”) y pegue en el cuadro de texto la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:463
+#, no-wrap
+msgid "\"http://data.canadensys.net/tools/dates.json?data=\"+escape(cells[\"eventDate\"].value,\"url\")\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:465
+msgid "Esta expresión le indica a la herramienta que evalúe los valores del campo [source]`\"eventDate\"` y que devuelva los resultados en formato JSON."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 400.es.adoc:467 400.es.adoc:468
+#, no-wrap
+msgid "Figura 53"
+msgstr ""
+
+#. type: Target for macro image
+#: 400.es.adoc:468
+#, no-wrap
+msgid "img/es.figure-53.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:471
+msgid "La limpieza puede tomar bastante tiempo, incluso horas, sea paciente… váyase a almorzar, o incluso a dormir y lo revisa al día siguiente… Cuando vuelva, encontrará el nuevo campo con los valores estandarizados! En formato JSON… (<<img-fig-54,Figura 54>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 400.es.adoc:473 400.es.adoc:474
+#, no-wrap
+msgid "Figura 54"
+msgstr ""
+
+#. type: Target for macro image
+#: 400.es.adoc:474
+#, no-wrap
+msgid "img/es.figure-54.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:478
+msgid "Fíjese que en el primer caso de la figura, Canadensys ha podido resolver la fecha, mientras que en el segundo caso no ha podido, dado que no puede interpretar inequívocamente “6” y “4” como día y mes o viceversa (como se explica más arriba).  Ahora que tiene el resultado en formato JSON, extraeremos de allí los valores de interés. Podría extraer sólo la fecha en formato ISO, o también año, mes y día en campos separados. Para ello, a partir de la columna que tiene el resultado en JSON, cree nuevas columnas: \"Editar columnas > Agregar columna basada en esta columna\" (<<img-fig-55,Figura 55>>)."
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:480
+msgid "Para extraer sólo la fecha en formato ISO, en la ventana nombre la nueva columna (por ejemplo, \"ISO_eventDate\") y en el cuadro de texto pegue la siguiente expresión:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:482
+#, no-wrap
+msgid "forEach(value.parseJson().get(\"data\").get(\"results\"),v,v.get(\"iso8601\"))[0])\n"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 400.es.adoc:485 400.es.adoc:486
+#, no-wrap
+msgid "Figura 55"
+msgstr ""
+
+#. type: Target for macro image
+#: 400.es.adoc:486
+#, no-wrap
+msgid "img/es.figure-55.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:489
+msgid "Para extraer el año, mes o día, pegue en cambio una de las siguientes expresiones:"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:491
+msgid "Año: [source]`forEach(value.parseJson().get(\"data\").get(\"results\"),v,v.get(\"year\"))[0])`"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:492
+msgid "Mes: [source]`forEach(value.parseJson().get(\"data\").get(\"results\"),v,v.get(\"month\"))[0])`"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:493
+msgid "Día: [source]`forEach(value.parseJson().get(\"data\").get(\"results\"),v,v.get(\"day\"))[0])`"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:495
+msgid "Verá que algunos de los resultados serán nulos, éstos corresponden a los casos que Canadensys no ha podido resolver (como se explica más arriba) (<<img-fig-56,Figura 56>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 400.es.adoc:497 400.es.adoc:498
+#, no-wrap
+msgid "Figura 56"
+msgstr ""
+
+#. type: Target for macro image
+#: 400.es.adoc:498
+#, no-wrap
+msgid "img/es.figure-56.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:501
+msgid "Para terminar de limpiar las fechas, entonces, tendrá que revisar los valores que no hayan sido estandarizados por la herramienta. Para ello, sobre el campo ISO_eventDate puede armar una faceta y seleccionar el valor “blank”. Luego, arme una faceta sobre el campo [source]`\"eventDate\"` (el que tenía los valores originales) y si estos son pocos, puede hacer un chequeo manual y completar el campo ISO_eventDate."
+msgstr ""
+
+#. type: Block title
+#: 400.es.adoc:504
+#, no-wrap
+msgid "Transformación de fechas usando expresiones regulares"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:510
+msgid "La consulta del servicio de Canadensys Date Parsing es particularmente útil cuando se tienen en un mismo campo fechas con distintos formatos, pues permite resolverlas todas utilizando un único proceso.  En cambio, si todas las fechas están dadas en un único formato, resulta más rápido realizar transformaciones utilizando expresiones regulares. Para ello, a partir de la columna con fechas a estandarizar, por ejemplo [source]`\"eventDate\"`, Hacer click en \"la &#9660; azul en el campo > Editar columnas > Agregar columna basada en esta columna…\".  En la ventana que se abre, dar nombre al nuevo campo (por ejemplo “standard_eventDate”), y en el cuadro de texto utilizar una expresión como la siguiente, que convierte el formato original a una cadena de texto con formato “año-mes-día”:"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:517
+#, no-wrap
+msgid "value.toDate(\"formato_original\").toString(\"yyyy-MM-dd\") \n"
+"---- \n"
+"donde en lugar de “formato_original” debe colocar el formato utilizado en el campo a estandarizar, considerando el orden en que aparecen el año, mes y día, el número de dígitos de cada uno y los separadores utilizados (e.g., guión, barra, etc.).\n"
+"Por ejemplo, si las fechas originales están todas escritas de la forma “mes/día/año”, la expresión a utilizar sería:\n"
+"[source,javascript]\n"
+msgstr ""
+
+#. type: Plain text
+#: 400.es.adoc:519
+msgid "value.toDate(\"MM/dd/yyyy\").toString(\"yyyy-MM-dd\")"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:521
+#, no-wrap
+msgid "Con el formato especificado arriba, la expresión convertirá por ejemplo una fecha “04/25/1989” a “1989-04-25”.\n"
+msgstr ""
+
+#. type: delimited block -
+#: 400.es.adoc:523
+#, no-wrap
+msgid "Recordar que esta opción solo será útil aplicada a una columna si *todas* las fechas en esa columna tienen *el mismo formato*.\n"
+"--\n"
+msgstr ""
+
+#. type: Title ==
+#: 500.es.adoc:1
+#, no-wrap
+msgid "Rutinas de validación de la calidad de los datos"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:4
+msgid "A partir del uso de servicios o archivos externos (<<sect-4,ver sección 4>>) y la posibilidad que ofrece OpenRefine de guardar y rehacer pasos (<<#guardar-pasos-para-rehacer-luego, ver sección 2.5.2>>) es posible crear rutinas para ejecutar de manera automática varias acciones de validación de calidad."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:6
+msgid "Aprovechando las múltiples herramientas de calidad de datos ya existentes en la red de GBIF es posible abordar de manera semi-automatizada a través de OpenRefine los retos y problemas más comunes de calidad que se presentan a nivel taxonómico y geográfico en un conjunto de datos. Acá se presentan diferentes rutinas que validan la calidad de los datos contrastando un conjunto de datos contra dichos servicios externos agilizando la obtención de resultados y asegurando una metodología de validación replicable."
+msgstr ""
+
+#. type: Title ===
+#: 500.es.adoc:7
+#, no-wrap
+msgid "¿Cómo funcionan las rutinas?"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:10
+msgid "Las rutinas comparan la información documentada en el conjunto de datos contra diferentes fuentes de referencia, y a partir de dicha comparación crean columnas de validación donde se puede identificar la correspondencia entre el archivo original y la fuente de referencia a través de operadores lógicos, unos (1) y ceros (0), que funcionan como indicadores de validación."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:12
+msgid "Los *indicadores de validación* se interpretan así:"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:14
+#, no-wrap
+msgid "*0*: El valor documentado en el conjunto de datos NO coincide con la fuente de referencia, el valor debe ser revisado y ajustado **en caso de ser necesario**.\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:15
+#, no-wrap
+msgid "*1*: El valor documentado en el conjunto de datos coincide con la fuente de referencia, no es necesario tomar acciones adicionales.\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:17
+msgid "Observe el ejemplo de la <<img-fig-57,Figura 57>>, en la primera fila el valor original de la columna [source]`\"family\"` no coincide con la columna `\"familySuggested\"` ya que tiene un error de tipeo, por lo tanto el indicador de validación (columna `\"familyValidation\"`) es cero (0). Note que en las filas donde sí hay coincidencia el indicador de validación (`\"familyValidation\"`) es uno (1)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 500.es.adoc:20 500.es.adoc:21
+#, no-wrap
+msgid "Figura 57"
+msgstr ""
+
+#. type: Target for macro image
+#: 500.es.adoc:21
+#, no-wrap
+msgid "img/es.figure-57.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:24
+msgid "Las rutinas utilizan como fuentes de validación API’s (Interfaces de Programación de Aplicaciones) de repositorios globales taxonómicos, geográficos o archivos de texto plano obtenidos como resultado de herramientas de validación externas."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:26
+msgid "Se encuentran disponibles cinco (5) rutinas (<<#table-scripts, Tabla 4>>) las cuales incluyen adicionalmente posibles escenarios al momento de realizar la validación, tal como la caída temporal de servicios web, o requisitos adicionales según la naturaleza de los datos (e.g. el grupo biológico de interés). A continuación se explica cada una:"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:29
+msgid "Tabla 4. Lista de rutinas para la validación de datos primarios sobre biodiversidad"
+msgstr ""
+
+#. type: Table
+#: 500.es.adoc:51
+#, no-wrap
+msgid "| Nombre | Uso | Requerimientos \n"
+"| <<#validación-taxonómica-con-el-api-de-gbif, Validación taxonómica con el API de GBIF>>\n"
+"| Validación taxonómica que usa como referencia el link:https://doi.org/10.15468/39omei[árbol taxonómico de GBIF]. Permite validar registros de varios grupos biológicos a la vez, así como obtener la taxonomía superior de cada taxa.\n"
+"| Requiere como mínimo los elementos DwC [source]`\"scientificName\"` y [source]`\"kingdom\"` documentados y acceso a internet para hacer la petición al API de GBIF.\n\n"
+"| <<#validación-taxonómica-con-species-matching-de-gbif,Validación taxonómica con Species Matching de GBIF>> \n"
+"| Validación taxonómica que usa como referencia el link:https://doi.org/10.15468/39omei[árbol taxonómico de GBIF], a diferencia de la rutina anterior realiza la validación contra el archivo de resultados _normalized_ obtenido de link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] permitiendo así aprovechar las funcionalidades de validación y limpieza de esta herramienta. La rutina facilita el cruce de los resultados obtenidos con link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] con el conjunto de datos original. \n"
+"| Requiere como mínimo el elemento DwC [source]`\"scientificName\"` documentado y que el archivo _normalized_ sea previamente cargado en OpenRefine para la ejecución de la rutina.\n\n"
+"| <<#validación-taxonómica-con-el-api-de-worms,Validación taxonómica con el API de WoRMS>>\n"
+"| Validación taxonómica específica para organismos marinos, que usa como referencia el link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)] por medio de la API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. Permite obtener la taxonomía superior de cada taxa, así como elementos taxonómicos obligatorios para la publicación de datos a través de link:https://obis.org/[OBIS].\n"
+"| Requiere como mínimo el elemento DwC [source]`\"scientificName\"` documentado y acceso a internet para hacer la petición al API de WoRMS.\n\n"
+"|<<#validación-de-elevaciones-con-el-api-de-geonames,Validación de elevaciones con el API de GeoNames>>\n"
+"| Validación y/o obtención de la elevación a partir de las coordenadas usando el servicio geográfico de GeoNames. \n"
+"| Requiere los elemento DwC [source]`\"decimalLatitude\"` y [source]`\"decimalLongitude\"` documentados adecuadamente y acceso a internet para hacer la petición al API de  GeoNames.\n\n"
+"|<<#transformación-de-fechas-con-el-api-de-canadensys,Transformación de fechas con el API de Canadensys>> \n"
+"| Transformación de fechas en múltiples formatos al estándar ISO 8601.\n"
+"| Requiere el elemento DwC [source]`\"eventDate\"`  documentado y acceso a internet para hacer la petición al API de  Canadensys.\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:55
+msgid "Las rutinas cuya fuente de referencia es un API, hacen una consulta a un <<sect-4,servicio externo>> y obtienen una respuesta en formato JSON, la rutina interpreta esta respuesta y la hace legible en forma de columnas dentro del conjunto de datos. Posteriormente el resultado de la consulta al API es comparado con el valor documentado en el conjunto de datos y se generan nuevas columnas con los indicadores de la validación (unos y ceros).  Las rutinas que usan como fuente archivos de texto plano, hacen una consulta sobre un archivo cargado previamente en OpenRefine que posteriormente es comparado con el valor documentado en el conjunto de datos. Como resultado de la comparación se generan nuevas columnas con los indicadores de la validación."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:57
+msgid "Todas las rutinas se ejecutan de manera similar, los detalles específicos para cada una se explican más adelante. En esta sección se presentan instrucciones generales para su ejecución en OpenRefine:"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:63
+#, no-wrap
+msgid "*Carga de los archivos en OpenRefine*\n"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:65
+msgid "Cree un proyecto en OpenRefine con el conjunto de datos que desea validar, si tiene dudas sobre cómo hacerlo revise la <<#primeros-pasos-datos-y-proyectos, sección 1>>. Asegúrese que el conjunto de datos o los elementos que desea validar estén estructurados en el estándar Darwin Core, si no lo están ajuste el nombre de cada columna según el estándar siguiendo las instrucciones de la <<#renombrar-eliminar-y-mover-columnas, sección 2.1.1>>."
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:67
+msgid "Según la validación que desee realizar asegúrese de cumplir los requerimientos de la rutina. Si la rutina lo requiere cargue también en OpenRefine los archivos adicionales de validación (ver <<#table-scripts,Tabla 2.>>), de lo contrario vaya directamente al paso 2."
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:74
+#, no-wrap
+msgid "*Ejecutar la rutina*\n"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:76
+msgid "Ubique en esta guía la rutina de interés según la validación que desee realizar, haga clic en el enlace a la rutina y será redirigido a GitHub donde encontrará un archivo de texto plano con la rutina, copie el texto de la rutina de validación (<<img-fig-58, Figura 58>>). Asegúrese de seleccionar solo la rutina -sin las instrucciones- y copiar todos los corchetes iniciales `{` y finales `}`."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 500.es.adoc:78 500.es.adoc:79
+#, no-wrap
+msgid "Figura 58"
+msgstr ""
+
+#. type: Target for macro image
+#: 500.es.adoc:79
+#, no-wrap
+msgid "img/es.figure-58.jpg"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:83
+msgid "Ubíquese en el conjunto de datos a validar en OpenRefine, diríjase al menú arriba a la izquierda, seleccione la pestaña “Deshacer/Rehacer” y haga clic en el botón “Aplicar...”. A continuación se abrirá una ventana de texto vacía, pegue en el cuadro de texto la rutina a ejecutar y haga clic en “Ejecutar Operaciones” (<<img-fig-59,Figura 59>>). Si tiene dudas sobre este proceso revise la <<sect-2.5, sección 2.5>>."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 500.es.adoc:85 500.es.adoc:86
+#, no-wrap
+msgid "Figura 59"
+msgstr ""
+
+#. type: Target for macro image
+#: 500.es.adoc:86
+#, no-wrap
+msgid "img/es.figure-59.jpg"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:89
+msgid "El avance de la ejecución de la rutina se observa en la parte superior de la pantalla (<<img-fig-60,Figura 60>>)."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 500.es.adoc:91 500.es.adoc:92
+#, no-wrap
+msgid "Figura 60"
+msgstr ""
+
+#. type: Target for macro image
+#: 500.es.adoc:92
+#, no-wrap
+msgid "img/es.figure-60.jpg"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:95
+msgid "Espere a que finalice la ejecución de la rutina. Las rutinas que requieren hacer llamados a servicios externos, dependen de la conexión a internet, estas consultas toman un tiempo en ejecutarse que varía según el número de filas del conjunto de datos, de la velocidad de la conexión y de la memoria RAM de su equipo."
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:103
+#, no-wrap
+msgid "**Resultados de la validación**\n"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:105
+msgid "Al terminar la ejecución de la rutina, obtendrá nuevas columnas en el conjunto de datos, puede identificarlas por su terminación:"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:107
+#, no-wrap
+msgid "*_Suggested_*: Valores sugeridos resultantes de la validación con las fuentes de referencia, dependiendo de la rutina seleccionada pueden ser sugerencias taxonómicas, geográficas, o temporales.\n"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:109
+#, no-wrap
+msgid "*_Validation_*: Corresponde a los indicadores de validación (unos y ceros) que permiten rastrear diferencias entre el valor original y el valor sugerido, y realizar posteriormente una limpieza de los datos. \n"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:112
+msgid "En la <<img-fig-61,Figura 61>> se muestra un ejemplo de cómo se ven los identificadores de la validación y las nuevas columnas con las sugerencias después de ejecutar la rutina; en el ejemplo se observa una validación taxonómica, las columnas de resultado varían según el objetivo de cada rutina."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 500.es.adoc:114 500.es.adoc:115
+#, no-wrap
+msgid "Figura 61"
+msgstr ""
+
+#. type: Target for macro image
+#: 500.es.adoc:115
+#, no-wrap
+msgid "img/es.figure-61.jpg"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:125
+#, no-wrap
+msgid "**Limpieza de los datos**\n"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:127
+msgid "A partir de las nuevas columnas de validación (finalizadas en las palabra _Suggested_) seleccione los registros donde el valor original y el valor sugerido son diferentes (identificador de validación = 0) y realice los ajustes que considere necesarios sobre los elementos del estándar Darwin Core. Se recomienda realizar este proceso de limpieza utilizando las funcionalidades de OpenRefine descritas en la <<#limpieza-de-datos, Sección 2>> de limpieza de datos. El proceso de validación con las rutinas busca facilitar la identificación de filas y elementos que necesitan ser verificados y limpiados, sin embargo, *un identificador de validación con valor cero (0) no necesariamente implica que haya un error en los datos. Cada publicador según su conocimiento de los datos y del grupo biológico debe determinar si los datos se deben ajustar y cómo.*"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:129
+msgid "Por ejemplo de la <<img-fig-62,Figura 62>> se muestra una <<#uso-de-facetas, Faceta de texto>> que permite seleccionar las filas cuyo indicador de validación es cero (0) para el elemento de familia y por lo tanto necesita ser verificado. En la primera fila se muestra una inconsistencia entre la familia documentada en el conjunto de datos original y la sugerida por la rutina, mientras en la segunda fila se evidencia un problema de tipeo. *En cada caso debe revisar de manera integral cada fila y decidir qué ajuste se debe o no realizar*."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 500.es.adoc:131 500.es.adoc:132
+#, no-wrap
+msgid "Figura 62"
+msgstr ""
+
+#. type: Target for macro image
+#: 500.es.adoc:132
+#, no-wrap
+msgid "img/es.figure-62.jpg"
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:135
+msgid "Tenga en cuenta que los identificadores de validación no cambiarán (de 0 a 1) automáticamente así usted haya ajustado los datos originales según las sugerencias de la rutina. Cámbielos manualmente cuando realice la limpieza de cada fila indistintamente del ajuste realizado."
+msgstr ""
+
+#. type: delimited block *
+#: 500.es.adoc:137
+msgid "Una vez terminada la validación y limpieza de sus datos, puede eliminar las columnas resultantes de la validación (finalizan en las palabras _Validation_ y _Suggested_) y dejar solo las columnas corregidas de su archivo original."
+msgstr ""
+
+#. type: Title ===
+#: 500.es.adoc:140
+#, no-wrap
+msgid "Validación taxonómica con el API de GBIF"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:143
+#, no-wrap
+msgid "*Enlace a la rutina:* \n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:145
+msgid "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIGBIF_ValTaxonomicaAPIGBIF.txt"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:147 500.es.adoc:192 500.es.adoc:222 500.es.adoc:269 500.es.adoc:322
+#, no-wrap
+msgid "*Requerimientos:*\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:149
+msgid "El conjunto de datos a validar debe tener como mínimo los elementos DwC [source]`\"scientificName\"` y [source]`\"kingdom'\"` documentados."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:151 500.es.adoc:196 500.es.adoc:226
+msgid "Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`\"scientificName\"`, [source]`\"kingdom\"`,[source]`\"phylum\"`,[source]`\"class\"`,[source]`\"order\"`,[source]`\"family\"`, y [source]`\"genus\"`."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:153 500.es.adoc:203 500.es.adoc:229 500.es.adoc:276 500.es.adoc:326
+#, no-wrap
+msgid "*Funcionamiento:*\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:155
+msgid "Esta rutina valida la información taxonómica de un conjunto de datos usando como referencia el árbol taxonómico de GBIF, esto se hace a través de un llamado al API de GBIF basado en los elementos del estándar Darwin Core [source]`\"scientificName\"` y [source]`\"kingdom\"` documentados en el conjunto de datos. Como resultado, el llamado retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF. La rutina toma los valores obtenidos del árbol y los compara con los elementos documentados en el archivo base, generando los indicadores de validación."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:157 500.es.adoc:211 500.es.adoc:235 500.es.adoc:292
+#, no-wrap
+msgid "*Resultados:*\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:159
+msgid "En las primeras columnas del proyecto encontrará las columnas con los datos taxonómicos reorganizadas junto con nuevas columnas resultantes de la rutina. Primero encontrará las columnas asociadas al cruce con el árbol taxonómico y luego de manera intercalada columnas con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la <<img-fig-63,Figura 63>>."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 500.es.adoc:161 500.es.adoc:162
+#, no-wrap
+msgid "Figura 63"
+msgstr ""
+
+#. type: Target for macro image
+#: 500.es.adoc:162
+#, no-wrap
+msgid "img/es.figure-63.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:165 500.es.adoc:334
+msgid "A continuación se listan las columnas que encontrará después de ejecutar la rutina:"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:167
+msgid "`taxonMatchType`: Indica el resultado del cruce de los datos originales con el árbol taxonómico de GBIF a partir de los elementos [source]`\"scientificName\"` y [source]`\"kingdom\"`. Los valores que encontrará en esta columna son:"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:169
+msgid "EXACT: La correspondencia entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico es completa."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:170
+msgid "FUZZY: La correspondencia entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico es parcial, el nombre difiere en su escritura. Comúnmente indica errores de tipeo o diferencias por correcciones nomenclaturales (ejem: la terminación `i` vs. `ii` cuando la especie se dedica a una persona)."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:171
+msgid "HIGHERRANK: La correspondencia entre el nombre científico del conjunto de datos y el árbol taxonómico fue parcial. No se identificó el taxon a nivel taxonómico de [source]`\"scientificName\"` si no a un nivel superior. Por ejemplo si el [source]`\"scientificName\"` corresponde a una especie, la correspondencia con el árbol taxonómico de GBIF fue a nivel de género. Esto sucede porque el taxon aún no está en el árbol taxonómico de GBIF o por errores de tipeo mayores."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:172
+msgid "NONE y BLANK: La correspondencia entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico fue *nula* o *hubo varias coincidencias* con muy poca información para determinar un resultado, esto sucede comunmente cuando hay homónimos o si el taxon aún no se encuentra en el árbol taxonómico de GBIF, como es el caso de especies recientemente descritas o algunas endémicas."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:174
+msgid "[source]`\"scientificName\"`: Columna original del conjunto de datos."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:175
+msgid "`\"acceptedScientificName\"`: Nombre científico aceptado según el árbol taxonómico de GBIF."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:176
+msgid "`\"canonicalNameSuggested\"`: Nombre canónico sugerido según el árbol taxonómico de GBIF."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:177
+msgid "`\"taxonRankSuggested\"`: Categoría del taxon sugerido según el árbol taxonómico de GBIF (e.g.: SPECIES, GENUS, FAMILY)."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:178
+msgid "`\"taxonomicStatusSuggested\"`: Estado del taxon sugerido según el árbol taxonómico de GBIF (e.g.: ACCEPTED, SYNONYM)."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:179
+msgid "Tripleta de elementos validados donde se encuentra la columna original del conjunto de datos, la columna de validación y la columna con la sugerencia según el árbol taxonómico, por ejemplo: [source]`\"class\"`,`\"classValidation\"`,`\"classSuggested\"`. Los siguientes elementos de estar documentados en el conjunto de datos original tendrán dicha tripleta: [source]`\"scientificNameAuthorship\"`, [source]`\"kingdom\"`, [source]`\"phylum\"`, [source]`\"class\"`, [source]`\"order\"`, [source]`\"family\"`, [source]`\"genus\"`, [source]`\"specificEpithet\"`"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:180
+msgid "`callAPI`: Respuesta del API a la rutina, contiene todos los resultados en formato JSON."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:183
+msgid "El llamado al API permite hacer una consulta sobre un número ilimitado de registros, sin embargo si su conjunto de datos tiene muchas filas se recomienda ejecutar la rutina sobre nombres científicos únicos, lo cual disminuirá el tiempo de respuesta y agilizará la ejecución de la rutina."
+msgstr ""
+
+#. type: Title ===
+#: 500.es.adoc:185
+#, no-wrap
+msgid "Validación taxonómica con Species Matching de GBIF"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:188 500.es.adoc:218 500.es.adoc:265 500.es.adoc:318
+#, no-wrap
+msgid "*Enlace a la rutina:*\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:190
+msgid "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicSpeciesMatchGBIF_ValTaxonomicaSpeciesMatchGBIF.txt"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:194 500.es.adoc:224
+msgid "El conjunto de datos a validar debe tener como mínimo el elemento DwC [source]`\"scientificName\"` documentado."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:198
+msgid "Archivo titulado _normalized_, obtenido de la herramienta link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] tras validar los datos originales, y cargado en OpenRefine, el título del proyecto debe ser exactamente *_normalized_*."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:200
+msgid "El archivo _normalized_ debe ser el único proyecto en OpenRefine titulado de esta manera. Cambie el nombre de cualquier otro archivo _normalized_ cargado previamente, de lo contrario la rutina no podrá identificar adecuadamente el archivo de referencia."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:205
+msgid "La rutina obtiene y valida la información taxonómica de un conjunto de datos con el árbol taxonómico de GBIF a partir del archivo de texto plano _normalized_ obtenido de la herramienta en línea link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] y cargado en OpenRefine. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF y los compara con los elementos documentados en el archivo base, generando los indicadores de validación."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:207
+msgid "Al usar _Species Matching_ como fuente de referencia, el usuario puede realizar una validación y limpieza previa a OpenRefine directamente en _Species Matching_, la cual es especialmente útil para verificar y resolver sinonimias complejas, como es el caso de los homónimos."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:209
+msgid "A diferencia del API de GBIF, _Species Matching_ tiene un límite de consulta de 6.000 registros o nombres científicos. Para evitar exceder el límite de consulta, se recomienda hacer la consulta en _Species Matching_ por nombres científicos únicos."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:213
+msgid "Como en la rutina anterior, en las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la <<img-fig-63,Figura 63>>. Obtendrá las mismas columnas que en la rutina anterior menos la columna `\"callAPI\"`."
+msgstr ""
+
+#. type: Title ===
+#: 500.es.adoc:215
+#, no-wrap
+msgid "Validación taxonómica con el API de WoRMS"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:220
+msgid "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:231
+msgid "Esta rutina está diseñada para ser implementada en conjuntos de datos de grupos biológicos marinos, emplea como fuente de referencia los taxones marinos del link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)] a través de un llamado al API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de LifeWatch y los compara con los elementos documentados en el archivo base, generando los indicadores de validación."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:233
+msgid "Adicionalmente a los elementos taxonómicos, esta rutina retorna otros elementos útiles que dan información sobre el tipo de hábitat del taxon y el LSID de WoRMS o AphiaID, elemento requerido para la publicación de datos a través de link:https://obis.org/[OBIS (Ocean Biodiversity Information System)]."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:237
+msgid "En las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la las rutinas previas (<<img-fig-63,Figura 63>>)."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:239
+msgid "A continuación se listan las columnas que encontrará despues de ejecutar la rutina, adicionales a las ya mencionadas en las rutinas previas de validación taxonómica (<<img-fig-64,Figura 64>>):"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:241
+msgid "[source]`\"matchType\"`: Indica el resultado del cruce de los datos originales con el árbol taxonómico de WoRMS a partir del elemento [source]`\"scientificName\"`. Los valores que encontrará en esta columna son:"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:243
+msgid "`\"exact\"`: La correspondencia entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico es completa."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:244
+msgid "`\"phonetic\"`: La correspondencia entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico es completa a nivel fonético a pesar de algunas diferencias menores en la escritura."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:245
+msgid "`\"near_1\"`: Hay una diferencia de un carácter entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico. Es una correspondencia bastante confiable."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:246
+msgid "`\"near_2\"`: Hay una diferencia de dos caracteres entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico. Se sugiere una revisión del nombre."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:247
+msgid "`\"near_3\"`: Hay una diferencia de tres caracteres entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico. Se requiere una revisión del nombre."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:248
+msgid "Para otras posibilidades poco frecuentes como`\"match_quarantine\"` y`\"match_deleted\"`, WoRMS recomienda contactarlos directamente."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:250
+msgid "[source]`\"scientificNameID\"`: Identificador del taxón construido a partir del AphiaID proveniente del árbol taxonómico de WoRMS."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:251
+msgid "[source]`\"nameAccordingTo`: La referencia bibliográfica del nombre científico según WoRMS"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:252
+msgid "[source]`\"nameAccordingToID`: Identificador de la referencia bibliográfica del nombre científico según WoRMS."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:253
+msgid "[source]`\"isMarine\"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon marino."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:254
+msgid "[source]`\"isBrackish\"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas salobres."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:255
+msgid "[source]`\"isFreshwater\"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas continentales, i.e. taxones asociados a ríos o lagos."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:256
+msgid "[source]`\"isTerrestial\"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon terrestre."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:257
+msgid "[source]`\"callAPIworms\"`: Respuesta del API a la rutina, contiene todos los resultados en formato JSON."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 500.es.adoc:259 500.es.adoc:260
+#, no-wrap
+msgid "Figura 64"
+msgstr ""
+
+#. type: Target for macro image
+#: 500.es.adoc:260
+#, no-wrap
+msgid "img/es.figure-64.jpg"
+msgstr ""
+
+#. type: Title ===
+#: 500.es.adoc:262
+#, no-wrap
+msgid "Validación de elevaciones con el API de GeoNames. "
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:267
+msgid "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValElevationAPIGeoNames_ValElevacionAPIGeoNames.txt"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:271
+msgid "El conjunto de datos a validar debe tener como mínimo los elemento DwC [source]`\"decimalLatitude\"` y [source]`\"decimalLongitude\"` documentados adecuadamente."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:273
+msgid "Tener una cuenta activa en GeoNames, si no tiene una link:http://www.geonames.org/login[regístrese aquí] antes de correr la rutina."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:278
+msgid "Antes de ejecutar la rutina remplace la palabra _demo_ en la expresión `_username=demo_` por su nombre de usuario en GeoNames, por ejemplo `_username=rartizgt_`. Si ejecuta la rutina sin hacer este cambio utilizará la opción de prueba (`demo`) incorporada por defecto en la rutina, la cual tiene un límite de 20.000 consultas *diarias mundiales*, por lo que puede que el servicio esté agotado y no obtenga resultados."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:280
+msgid "La rutina captura la elevación a partir de las coordenadas decimales documentadas en los elementos DwC [source]`\"decimalLatitude\"` y [source]`\"decimalLongitude\"` del archivo base, a través de una consulta a los servicios de link:http://www.geonames.org/export/web-services.html[GeoNames]. La rutina se ejecuta sobre valores únicos de pares de coordenadas para evitar superar el límite de consultas diarias por usuario."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:282
+msgid "La rutina utiliza por defecto el modelo de elevación SRTM-1 (`\"srtm1\"`), que cuenta con una resolución aproximada de 30 metros. Sin embargo, el usuario puede usar otro de los link:http://www.geonames.org/export/web-services.html[modelos de elevación disponibles]:"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:284
+msgid "SRTM3 (`\"srtm3\"`): Datos de elevación de la _Shuttle Radar Topography Mission (SRTM)_, con resolución aproximada de 90 x 90 metros."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:286
+msgid "Astergdemv2 (`\"astergdem\"`): Datos de elevación del _Aster Global Digital Elevation Model V2_ (2011) con resolución aproximada de 30 x 30 metros."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:288
+msgid "GTOPO30 (`\"gtopo30\"`): Modelo de elevación global con resolución aproximada de 30 arcos por segundo, equivalente a una grilla de 1 km x 1 km."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:290
+msgid "Para cambiar el modelo de elevación reemplace en la rutina el valor `srtm1` en la expresión `grel:\\\"http://api.geonames.org/srtm1` por el valor que corresponda al servicio que desea utilizar `srtm3`, `astergdem` o `gtopo30`."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:294
+msgid "En las primeras columnas del proyecto encontrará las columnas con los datos de elevación reorganizadas junto con nuevas columnas resultantes de la rutina. Encontrará de manera intercalada las columnas originales, un valor sugerido de acuerdo al servicio de elevación y dos indicadores de validación (<<img-fig-65,Figura 65>>). El primer indicador contrasta la elevación obtenida con el servicio y el elemento [source]`\"minimumElevationInMeters\"` y debe ser interpretado así:"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:296
+#, no-wrap
+msgid "*1*: La diferencia entre la elevación en [source]`\"minimumElevationInMeters\"` y [source]`\"elevationSuggested\"` es menor a 100 m.\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:297
+#, no-wrap
+msgid "*0*: La diferencia entre la elevación en [source]`\"minimumElevationInMeters\"` y [source]`\"elevationSuggested\"` es mayor a 100 m.\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:298
+#, no-wrap
+msgid "blank: No hay elevación mínima documentada.\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:300
+msgid "El segundo indicador contrasta la elevación obtenida con el servicio contra el rango de elevación indicado por los elementos [source]`\"minimumElevationInMeters\"` y [source]`\"maximumElevationInMeters\"` y debe ser interpretado así:"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:302
+#, no-wrap
+msgid "*1*: El rango de elevaciones contiene la elevación sugerida.\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:303
+#, no-wrap
+msgid "*0*: El rango de elevaciones NO contiene la elevación sugerida.\n"
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 500.es.adoc:306 500.es.adoc:307
+#, no-wrap
+msgid "Figura 65"
+msgstr ""
+
+#. type: Target for macro image
+#: 500.es.adoc:307
+#, no-wrap
+msgid "img/es.figure-65.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:311
+msgid "Si las coordenas se encuentran sobre plataforma marina, puede que reciba como resultado valores negativos (ej. -1, -3), o valores como: \"/home/data/srtm1/N02/N02W080.zip\" o \"No data\"."
+msgstr ""
+
+#. type: Title ===
+#: 500.es.adoc:313
+#, no-wrap
+msgid "Transformación de fechas con el API de Canadensys"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:316
+msgid "Esta rutina recopila los pasos de la <<#limpieza-de-fechas-utilizando-canadensys-date-parsing, sección 4.3>> y automatiza su ejecución para el mismo procedimiento."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:320
+msgid "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/DateTransform_TransformFechas.txt"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:324
+msgid "El conjunto de datos a validar debe tener como mínimo el elemento DwC `\"eventDate\"` documentado."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:328
+msgid "A partir de la fecha documentada en el archivo base en el elemento [source]`\"eventDate\"` se realiza una consulta al API de Canandensys que retorna las fechas transformadas al estándar ISO 8601. A diferencia de las rutinas anteriores el objetivo de esta rutina es transformar las fechas, por ello no retornará identificadores de validación."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:330
+#, no-wrap
+msgid "*Resultados*\n"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:332
+msgid "En las primeras columnas del proyecto encontrará las columnas con los datos temporales reorganizadas junto con nuevas columnas resultantes de la rutina."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:336
+msgid "`\"eventDateSuggested\"`: Fecha transformada al estándar ISO 8601."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:337
+msgid "`\"yearSuggested\"`: Año extraído a partir de la transformación de la fecha."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:338
+msgid "`\"monthSuggested\"`: Mes extraído a partir de la transformación de la fecha."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:339
+msgid "`\"daySuggested\"`: Día extraído a partir de la transformación de la fecha."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:340
+msgid "`\"verbatimEventDateSuggested\"`: Fecha en el formato original."
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:342
+msgid "Para no generar conflicto con elementos ya existentes en el conjunto de datos, todas las columnas generadas por la rutina se marcan como sugeridas o _Suggested_ (<<img-fig-66,Figura 66>>). Si algún registro no tiene datos de fecha, los elementos resultantes aparecerán vacíos."
+msgstr ""
+
+#. type: Positional ($1) AttributeList argument for macro 'image'
+#: 500.es.adoc:344 500.es.adoc:345
+#, no-wrap
+msgid "Figura 66"
+msgstr ""
+
+#. type: Target for macro image
+#: 500.es.adoc:345
+#, no-wrap
+msgid "img/es.figure-66.jpg"
+msgstr ""
+
+#. type: Plain text
+#: 500.es.adoc:349
+msgid "Los formatos de fechas que son ambiguos, es decir donde no se diferencia con claridad el mes, el día o el año, no son transformados. Revise las celdas donde el resultado haya sido nulo o vacío y realice los ajustes necesarios de forma manual."
+msgstr ""
+
+#. type: Title ==
+#: afterword.es.adoc:1
+#, no-wrap
+msgid "Epílogo"
+msgstr ""
+
+#. type: Title ===
+#: afterword.es.adoc:3
+#, no-wrap
+msgid "Agradecimientos"
+msgstr ""
+
+#. type: Plain text
+#: afterword.es.adoc:6
+msgid "Los autores agradecen especialmente a David Bloom (VertNet) y Anabela Plos (GBIF Argentina, Museo Argentino de Ciencias Naturales “Bernardino Rivadavia”) por sus comentarios sobre versiones anteriores de esta guía. Esta guía ha sido actualizada en el marco de la iniciativa de actualización de documentación del Secretariado del Global Biodiversity Information Facility (GBIF). Este documento se ha actualizado en parte a partir de su uso en distintos cursos de entrenamiento organizados por diversas instituciones, entre las que se cuentan GBIF Argentina - Museo Ciencias Naturales “Bernardino Rivadavia”, GBIF España - Real Jardín Botánico de Madrid, y el SiB Colombia incorporando los comentarios de los respectivos alumnos. Las consultas, comentarios y sugerencias de Susana Devincenzi (IANIGLA-CONICET), usuaria incansable de OpenRefine, han sido de particular utilidad para mejorar esta guía. Los valiosos comentarios y sugerencias durante la etapa de revisión comunitaria de la guía por Carole Sinou (Canadensys) y Florencia Grattarola (Biodiversidata) permitieron mejorar el contenido de este documento. Se extienden los agradecimientos a otras personas que también contribuyeron de una u otra manera en esta versión del documento: Katia Cezón, Kyle Copas, Matt Blissett, Mélianie Raymond, Laura Russell, Néstor Beltrán y miembros del Panel Editorial de Documentación de GBIF."
+msgstr ""
+
+#. type: Title ==
+#: appa.es.adoc:3
+#, no-wrap
+msgid "Apéndice 1: instalación de OpenRefine [[app-a]]"
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:6
+msgid "Estas instrucciones han sido adaptadas y traducidas al castellano a partir de un instructivo preparado por el GBIF-BID Programme."
+msgstr ""
+
+#. type: Title ===
+#: appa.es.adoc:7
+#, no-wrap
+msgid "Requerimientos"
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:10
+msgid "https://www.oracle.com/technetwork/java/javase/downloads/index.html[Java JRE] instalado."
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:11
+msgid "Navegador de internet instalado (preferentemente https://www.google.com/chrome/browser/desktop/[Google Chrome])."
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:13
+msgid "Para instalar *OpenRefine 3.3* en su computadora, siga los siguientes pasos:"
+msgstr ""
+
+#. type: Title ===
+#: appa.es.adoc:14
+#, no-wrap
+msgid "Instalación en MS Windows"
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:16
+msgid "Descargue aquí el https://github.com/OpenRefine/OpenRefine/releases/download/3.3/openrefine-win-3.3.zip[kit de Windows]."
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:17
+msgid "Descomprima, y copie la carpeta en su computadora. Abra la carpeta y haga doble click en openrefine.exe. Si encuentra algún problema en este punto, haga doble click sobre refine.bat."
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:18
+msgid "Aparecerá una ventana de comando (que no debe cerrar) e inmediatamente después su navegador web mostrará una nueva ventana con la aplicación."
+msgstr ""
+
+#. type: Title ===
+#: appa.es.adoc:19
+#, no-wrap
+msgid "Instalación en Mac"
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:21
+msgid "Descargue aquí el https://github.com/OpenRefine/OpenRefine/releases/download/3.3/openrefine-mac-3.3.dmg[kit de Mac]."
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:22
+msgid "Abra y arrastre el icono en la carpeta Applications."
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:23
+msgid "Haga doble clic en él y su navegador web mostrará una nueva ventana con la aplicación."
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:25
+msgid "Existe también una https://github.com/OpenRefine/OpenRefine/releases/download/3.3/openrefine-linux-3.3.tar.gz[versión para Linux]."
+msgstr ""
+
+#. type: Title ===
+#: appa.es.adoc:26
+#, no-wrap
+msgid "Para saber más"
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:29
+msgid "Puede encontrar instrucciones adicionales para la instalación y consultar funciones básicas en el https://docs.openrefine.org/[Manual del Usuario de OpenRefine]."
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:30
+msgid "Si desea instalar otras versiones del programa, puede encontrarlas en la página de https://openrefine.org/download.html[Descargas de Open Refine]."
+msgstr ""
+
+#. type: Plain text
+#: appa.es.adoc:30
+msgid "OpenRefine permite además trabajar con *Extensiones* creadas por miembros de la comunidad, que proveen diversas funciones. Puede consultar aquí la https://openrefine.org/download.html[Lista de Extensiones disponibles] con sus descripciones y las https://docs.openrefine.org/manual/installing/#installing-extensions[Instrucciones para Instalar Extensiones]."
+msgstr ""
+
