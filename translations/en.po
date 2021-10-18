@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrefine-guide\n"
 "POT-Creation-Date: 2021-02-25 13:16+0000\n"
-"PO-Revision-Date: 2021-06-28 22:22\n"
+"PO-Revision-Date: 2021-10-18 14:19\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "Language: en_US\n"
@@ -48,7 +48,7 @@ msgstr "Suggested citation"
 #. type: Plain text
 #: colophon.es.adoc:10
 msgid "Zermoglio PF, Plata Corredor CA, Wieczorek JR, Ortiz Gallego R & Buitrago L (2021) Guía para la limpieza de datos sobre biodiversidad con OpenRefine. Versión 3. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18."
-msgstr ""
+msgstr "Zermoglio PF, Plata Corredor CA, Wieczorek JR, Ortiz Gallego R & Buitrago L (2021) Guide to cleaning biodiversity data with OpenRefine. Version 3. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18."
 
 #. type: Title ===
 #: colophon.es.adoc:11
@@ -70,7 +70,7 @@ msgstr "Licence"
 #. type: Plain text
 #: colophon.es.adoc:18
 msgid "El documento Guía para la limpieza de datos sobre biodiversidad con OpenRefine se publica bajo una licencia https://creativecommons.org/licenses/by-sa/4.0/deed.es[Atribución-CompartirIgual 4.0 Internacional]."
-msgstr ""
+msgstr "The document 'Guide to cleaning biodiversity data with OpenRefine' is published with the following licence https://creativecommons.org/licenses/by-sa/4.0/deed.es[Atribución-CompartirIgual 4.0 Internacional]."
 
 #. type: Title ===
 #: colophon.es.adoc:19
@@ -81,7 +81,7 @@ msgstr "Persistent URI"
 #. type: Plain text
 #: colophon.es.adoc:22
 msgid "https://doi.org/10.15468/doc-gzjg-af18"
-msgstr ""
+msgstr "https://doi.org/10.15468/doc-gzjg-af18"
 
 #. type: Title ===
 #: colophon.es.adoc:23
@@ -92,12 +92,12 @@ msgstr ""
 #. type: Plain text
 #: colophon.es.adoc:26
 msgid "Versión 3, Febrero 2021."
-msgstr ""
+msgstr "Version 3, February 2021."
 
 #. type: Plain text
 #: colophon.es.adoc:28
 msgid "Este documento se basa en dos publicaciones anteriores producidas por los mismos autores de esta Guía."
-msgstr ""
+msgstr "This document is based on previous publications by the same authors of this guide."
 
 #. type: Title ===
 #: colophon.es.adoc:29
@@ -108,223 +108,224 @@ msgstr ""
 #. type: Plain text
 #: colophon.es.adoc:32
 msgid "Una manada de guanaco (_Lama guanicoe_), Lago Argentino, Santa Cruz, Argentina. Foto 2016 Diego Carús via https://www.gbif.org/occurrence/2005372769[iNaturalist Research-grade Observations], licenciada bajo http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0]."
-msgstr ""
+msgstr "A herd of guanaco (_Lama guanicoe_), Lago Argentino, Santa Cruz, Argentina. Foto 2016 Diego Carús via https://www.gbif.org/occurrence/2005372769[iNaturalist Research-grade Observations], licensed under http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0]."
 
 #. type: Plain text
 #: colophon.es.adoc:33 preface.es.adoc:38 100.es.adoc:107 280.es.adoc:83 300.es.adoc:72 400.es.adoc:525 afterword.es.adoc:7
 msgid "<<<"
-msgstr ""
+msgstr "<<<"
 
 #. type: Title ==
 #: preface.es.adoc:1
 #, no-wrap
 msgid "Prefacio"
-msgstr ""
+msgstr "Preface"
 
 #. type: Title ===
 #: preface.es.adoc:4
 #, no-wrap
 msgid "Comentarios Preliminares"
-msgstr ""
+msgstr "Preliminary comments"
 
 #. type: Plain text
 #: preface.es.adoc:7
 msgid "Las imágenes incluidas en esta Guía están en idioma castellano."
-msgstr ""
+msgstr "The images that are included in this guide are in the Spanish language."
 
 #. type: Title ===
 #: preface.es.adoc:9
 #, no-wrap
 msgid "Objetivo"
-msgstr ""
+msgstr "Objective"
 
 #. type: Plain text
 #: preface.es.adoc:12
 msgid "La presente guía ha sido construida con fines únicamente pedagógicos. El objetivo de esta guía es mostrar cómo utilizar algunas de las funciones de OpenRefine que pueden utilizarse para evaluar y mejorar la calidad de datos de biodiversidad."
-msgstr ""
+msgstr "The current guide has been developed solely for educational purposes. The objective of the this guide is to show how to use some of the functions of OpenRefine that can be used to evaluate and improve the quality of biodiversity data."
 
 #. type: Title ===
 #: preface.es.adoc:13
 #, no-wrap
 msgid "Cómo usar esta guía"
-msgstr ""
+msgstr "How to use this guide"
 
 #. type: Plain text
 #: preface.es.adoc:16
 msgid "En esta guía se muestra cómo utilizar algunas funciones de OpenRefine para la evaluación y mejoramiento de la calidad de un conjunto de datos de biodiversidad. Los ejemplos de uso presentados en esta guía constituyen sólo algunas de las alternativas posibles para el tratamiento de datos en OpenRefine."
-msgstr ""
+msgstr "In this guide we show you how to use OpenRefine functions for the evaluation and improvement of the quality of a biodiversity dataset. The examples we use in this guide constitute only a few of the possible alternatives for the treatment of data in OpenRefine."
 
 #. type: Plain text
 #: preface.es.adoc:18
 msgid "Para hacer un mejor uso de esta guía, se recomienda seguir los pasos utilizando el programa OpenRefine y el conjunto de datos modelo provisto junto con este documento. Todos los ejemplos presentados corresponden a un conjunto de datos de biodiversidad que ha sido específicamente modificado por los autores."
-msgstr ""
+msgstr "To best use this guide, we recommend you follow the steps using the program OpenRefine and the model dataset provided with this document. All of the examples used correspond to biodiversity dataset that have been modified by the authors."
 
 #. type: Plain text
 #: preface.es.adoc:20
 msgid "En la Guía se utilizan los términos ‘campo’ y ‘columna’ indistintamente."
-msgstr ""
+msgstr "In the guide we use the terms \"field\" and \"column\" interchangeably."
 
 #. type: Plain text
 #: preface.es.adoc:22
 msgid "En el texto se utiliza el siguiente formato para los [source]`\"nombres de los campos originales\"`."
-msgstr ""
+msgstr "In the text, we use the following format for the [source]`\"names of the original fields\"`."
 
 #. type: Plain text
 #: preface.es.adoc:24
 msgid "====\tSoftware"
-msgstr ""
+msgstr "Software"
 
 #. type: Plain text
 #: preface.es.adoc:26
 msgid "La versión de OpenRefine utilizada para la confección de esta guía es OpenRefine 3.3. Aunque no es la última versión disponible, es la última con la cual todos los pasos explicados en esta Guía han sido probados sin presentar problemas."
-msgstr ""
+msgstr "The version of OpenRefine used in the development of this guide was OpenRefine 3.3. Even though it is not the latest available available, it is the one with which all of the steps in this guide have been tested without presenting any problems."
 
 #. type: Plain text
 #: preface.es.adoc:28
 msgid "Para ver detalles sobre cómo descargar e instalar OpenRefine en su computadora, ver el <<app-a,Apéndice 1>>."
-msgstr ""
+msgstr "To see the details on how to download and install openRefine on your computer, see the <<app-a,Apéndice 1>>."
 
 #. type: Plain text
 #: preface.es.adoc:31
 msgid "====\tDatos"
-msgstr ""
+msgstr "Data"
 
 #. type: Plain text
 #: preface.es.adoc:33
 msgid "El conjunto de datos modelo utilizado en esta guía puede obtenerse aquí: link:../data/EjercicioModelo_OpenRefine_Datos.csv[EjercicioModelo_OpenRefine_Datos.csv,opts=download]. Descargar el archivo, y no manipularlo en otros programas (e.g., MS Excel) antes de abrirlo en OpenRefine, dado que ello puede cambiar los formatos y/o codificación del archivo."
-msgstr ""
+msgstr "The model dataset used in this guide can be obtained here: link:../data/EjercicioModelo_OpenRefine_Datos.csv[EjercicioModelo_OpenRefine_Datos.csv,opts=download]. \n\n"
+"Download the file and do not modify it in other programs (e.g. MS Excel) before opening it in OpenRefine, as this can change the formats and/or coding within it."
 
 #. type: Plain text
 #: preface.es.adoc:35
 msgid "El conjunto de datos modelo fue derivado a partir de:"
-msgstr ""
+msgstr "The model dataset was derived from:"
 
 #. type: Plain text
 #: preface.es.adoc:37
 msgid "_Williams J (2018). Colección de Herbario. Version 3.1. Facultad de Ciencias Naturales y Museo - U.N.L.P.. Occurrence dataset https://doi.org/10.15468/i9bj5r accessed via GBIF.org on 2019-04-18._"
-msgstr ""
+msgstr "_Williams J (2018). Colección de Herbario. Version 3.1. Facultad de Ciencias Naturales y Museo - U.N.L.P.. Occurrence dataset https://doi.org/10.15468/i9bj5r accessed via GBIF.org on 2019-04-18._"
 
 #. type: Title ==
 #: 100.es.adoc:1
 #, no-wrap
 msgid "Primeros pasos: datos y proyectos"
-msgstr ""
+msgstr "First steps: data and projects"
 
 #. type: Title ===
 #: 100.es.adoc:3
 #, no-wrap
 msgid "Carga de datos y creación de un proyecto"
-msgstr ""
+msgstr "Upload of data and the creation of a project"
 
 #. type: Plain text
 #: 100.es.adoc:6
 msgid "Para comenzar a utilizar OpenRefine debe cargar sus datos en el programa y crear un proyecto. Para ello, siga los siguientes pasos:"
-msgstr ""
+msgstr "To start to use OpenRefine you should upload your data to the programe and create a project. This is done following these steps:"
 
 #. type: Title ===
 #: 100.es.adoc:9 500.es.adoc:60
 #, no-wrap
 msgid "Paso 1"
-msgstr ""
+msgstr "Step 1"
 
 #. type: delimited block *
 #: 100.es.adoc:12
 #, no-wrap
 msgid "*Abra la aplicación OpenRefine*. Si utiliza Windows, se abrirá una ventana de comandos que mostrará las acciones que OpenRefine está realizando (<<img-fig-01,Figura 1>>). *_No cierre esta ventana mientras esté trabajando con el programa._*\n"
-msgstr ""
+msgstr "*Open the application OpenRefine. If you use Windows, a command window which will you show the actions that OpenRefine is currently undertaking (<<img-fig-01,Figura 1>>).*_Do not close this window while you are working with the program._*\n"
 
 #. type: Block title
 #: 100.es.adoc:14
 #, no-wrap
 msgid "Figura 1"
-msgstr ""
+msgstr "Figure 1"
 
 #. type: Target for macro image
 #: 100.es.adoc:15
 #, no-wrap
 msgid "img/es.figure-01.jpg"
-msgstr ""
+msgstr "img/es.figure-01.jpg"
 
 #. type: delimited block *
 #: 100.es.adoc:18
 msgid "OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamente después de ejecutar la aplicación (<<img-fig-02,Figura 2>>). Si OpenRefine no abre, puede acceder manualmente ingresando la siguiente URL en su navegador:"
-msgstr ""
+msgstr "Immediately after you run the application, OpenRefine will open a default browser (<<img-fig-02,Figura 2>>). If Openrefine does not open, you can manually access it by using the following URL in your browser:"
 
 #. type: delimited block *
 #: 100.es.adoc:20
 msgid "http://127.0.0.1:3333"
-msgstr ""
+msgstr "http://127.0.0.1:3333"
 
 #. type: delimited block *
 #: 100.es.adoc:23
 msgid "Si bien puede ejecutar el programa utilizando cualquier navegador, nuestra recomendación es que utilice Google Chrome, pues otros navegadores suelen presentar diversos problemas, sobre todo cuando se intentan utilizar funciones más complejas."
-msgstr ""
+msgstr "Even though you can run the program using any browser, we recommend you use Google Chrome, as other browsers often display a range of issues, especially when they try to use more complex functions."
 
 #. type: delimited block *
 #: 100.es.adoc:25
 msgid "Si bien OpenRefine utiliza la interfaz de un navegador para trabajar, todos los procesos (e.g., creación de proyectos, carga de datos, procesamiento, etc.) se realizan localmente, es decir, en su computadora, sin subir datos en línea. Por tanto, para utilizar la mayoría de las funciones del programa no hace falta una conexión a Internet. Algunas funciones, sin embargo, como las <<sect-4,Consultas a servicios externos>>, sí requieren conexión."
-msgstr ""
+msgstr "Although OpenRefine uses the browser interface to work, all of the processes (e.g. the creation of projects, upload of data, processing etc.) are performed locally, that is to say, on your computer, without putting data online. As a result, most functions in OpenRefine do not require internet connection. Some functions, however, such as <<sect-4,Consultas a servicios externos>> do require connection."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 100.es.adoc:28 100.es.adoc:29
 #, no-wrap
 msgid "Figura 2"
-msgstr ""
+msgstr "Figure 2"
 
 #. type: Target for macro image
 #: 100.es.adoc:29
 #, no-wrap
 msgid "img/es.figure-02.jpg"
-msgstr ""
+msgstr "img/es.figure-02.jpg"
 
 #. type: delimited block *
 #: 100.es.adoc:32
 msgid "En el menú de la izquierda tiene opciones para crear, abrir o importar proyectos. Si usted no tiene ningún proyecto aún, en la opción de “Abrir proyecto” verá una lista vacía."
-msgstr ""
+msgstr "In the left menu, you have options to create, open or import projects. If you do not have a project yet, in the option “Open project” you will see an empty list."
 
 #. type: delimited block *
 #: 100.es.adoc:34
 msgid "Además puede cambiar la configuración de idioma. Para ello, haga click en “Idioma” y en la siguiente pantalla (<<img-fig-03,Figura 3>>) seleccione el idioma preferido. Acepte los cambios. En esta guía se utilizará el idioma Español."
-msgstr ""
+msgstr "Furthermore, you can change the language configuration. You must click on \"Language\" and on the following screen (<<img-fig-03,Figura 3>>) select your preferred language. Accept the changes. In this guide we will use the Spanish language."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 100.es.adoc:36 100.es.adoc:37
 #, no-wrap
 msgid "Figura 3"
-msgstr ""
+msgstr "Figure 3"
 
 #. type: Target for macro image
 #: 100.es.adoc:37
 #, no-wrap
 msgid "img/es.figure-03.jpg"
-msgstr ""
+msgstr "img/es.figure-03.jpg"
 
 #. type: Title ===
 #: 100.es.adoc:43 500.es.adoc:71
 #, no-wrap
 msgid "Paso 2"
-msgstr ""
+msgstr "Step 2"
 
 #. type: delimited block *
 #: 100.es.adoc:46
 #, no-wrap
 msgid "*Cargue los datos* (<<img-fig-02,Figura 2>>). Dentro de la opción “Crear proyecto”, escoja el archivo que desea cargar. Note que hay varios formatos posibles de archivos que se pueden subir (tsv, csv, xls, json, etc). Haga click en “Siguiente”. \n"
-msgstr ""
+msgstr "*Upload the data* (<<img-fig-02,Figura 2>>). In the option “Create proyject”, choose the file that would like to upload. Note that there are various, possible file formats that you can upload (tsv, csv, xls, json, etc). Click en “Next”. \n"
 
 #. type: delimited block *
 #: 100.es.adoc:48
 msgid "Para seguir esta guía, cargue el archivo proporcionado, al que puede acceder a través del enlace provisto en la sección <<datos,Cómo usar esta guía: Datos>>."
-msgstr ""
+msgstr "To follow this guide, upload the provided file that can be accessed via the link provided in the section <<datos,Cómo usar esta guía: Datos>>."
 
 #. type: delimited block *
 #: 100.es.adoc:50
 msgid "Si sube archivos con formato .xls o .xlsx, tenga en cuenta que no podrá modificar la codificación, y que pueden encontrarse algunos errores en los datos (ejemplo: los tildes en las palabras se verán como símbolos raros cuando cargue los datos). Para evitarse problemas, si trabaja con MS Excel es conveniente que exporte los datos como archivo .csv (de todas formas, tenga cuidado con la codificación, ver más abajo)."
-msgstr ""
+msgstr "If you upload files in the format .xls or xlsx., be aware that you will not be able to modify the coding, and that there may be some errors in the data (for example, tildes in words will be shown as unusual symbols when you upload the data). To avoid these problems, if you work with MS Excel , it is convenient to export the data as .csv file (in any case, be careful with the coding, see more below)."
 
 #. type: delimited block *
 #: 100.es.adoc:52
 msgid "Verá entonces una pantalla como la que se muestra en la <<img-fig-04,Figura 4>>. Allí puede encontrar dos cuadros de texto arriba a la derecha, uno para indicar el nombre de su proyecto, y otro que permite asignar etiquetas (“tags”) a su proyecto. Puede asignar tantas etiquetas como desee, escribiéndolas en el cuadro. Las etiquetas le ayudarán a organizar mejor sus proyectos, y podrá verlas y editarlas a través del menú “Abrir proyecto” junto al nombre de su proyecto (ver sección “Abrir un proyecto y modificar sus metadatos” más abajo para más detalles sobre cómo agregar o cambiar etiquetas y otros elementos de los metadatos de los proyectos). Además, en esta pantalla puede ver una muestra de sus datos (tabla) y modificar varios aspectos de la carga de los datos al programa: codificación, criterio para la separación en columnas, inclusión o no de las primeras filas, etc."
-msgstr ""
+msgstr "You will see a screen like the one that is shown here <<img-fig-04,Figura 4>>. At the top right of the screen, you will find two text boxes: one that indicates the name of your project, and the other allows you to assign tags to your project. You can assign as many tags as you like by writing them in the box. The tags will help you to better organize your projects and you will be able to see and edit them using the \"Open project\" menu next to the name of your project (see section \"Open a project and modify the metadata\" below for more information on how to aggregate and change tags and other project metadata elements). Furthermore, on this screen you can see a sample of your data (table) and modify various aspects of the how the programme uploads the data: coding, criteria for separation into columns, inclusion of the first lines, etc."
 
 #. type: delimited block *
 #: 100.es.adoc:54
@@ -340,31 +341,31 @@ msgstr ""
 #: 100.es.adoc:58 100.es.adoc:59
 #, no-wrap
 msgid "Figura 4"
-msgstr ""
+msgstr "Figure 4"
 
 #. type: Target for macro image
 #: 100.es.adoc:59
 #, no-wrap
 msgid "img/es.figure-04.jpg"
-msgstr ""
+msgstr "img/es.figure-04.jpg"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 100.es.adoc:62 100.es.adoc:63
 #, no-wrap
 msgid "Figura 5"
-msgstr ""
+msgstr "Figure 5"
 
 #. type: Target for macro image
 #: 100.es.adoc:63
 #, no-wrap
 msgid "img/es.figure-05.jpg"
-msgstr ""
+msgstr "img/es.figure-05.jpg"
 
 #. type: Title ===
 #: 100.es.adoc:69 500.es.adoc:100
 #, no-wrap
 msgid "Paso 3"
-msgstr ""
+msgstr "Step 3"
 
 #. type: delimited block *
 #: 100.es.adoc:72
@@ -381,7 +382,7 @@ msgstr ""
 #: 100.es.adoc:79 500.es.adoc:122
 #, no-wrap
 msgid "Paso 4"
-msgstr ""
+msgstr "Step 4"
 
 #. type: delimited block *
 #: 100.es.adoc:82
@@ -393,13 +394,13 @@ msgstr ""
 #: 100.es.adoc:84 100.es.adoc:85
 #, no-wrap
 msgid "Figura 6"
-msgstr ""
+msgstr "Figure 6"
 
 #. type: Target for macro image
 #: 100.es.adoc:85
 #, no-wrap
 msgid "img/es.figure-06.jpg"
-msgstr ""
+msgstr "img/es.figure-06.jpg"
 
 #. type: delimited block *
 #: 100.es.adoc:88
@@ -421,13 +422,13 @@ msgstr ""
 #: 100.es.adoc:96 100.es.adoc:97
 #, no-wrap
 msgid "Figura 7"
-msgstr ""
+msgstr "Figure 7"
 
 #. type: Target for macro image
 #: 100.es.adoc:97
 #, no-wrap
 msgid "img/es.figure-07.jpg"
-msgstr ""
+msgstr "img/es.figure-07.jpg"
 
 #. type: Plain text
 #: 100.es.adoc:100
@@ -454,7 +455,7 @@ msgstr ""
 #: 200.es.adoc:1
 #, no-wrap
 msgid "Limpieza de datos "
-msgstr ""
+msgstr "Data cleaning "
 
 #. type: Title ===
 #: 200.es.adoc:3
@@ -504,7 +505,7 @@ msgstr ""
 #. type: Plain text
 #: 200.es.adoc:20
 msgid "Hacer click en"
-msgstr ""
+msgstr "Click on"
 
 #. type: Plain text
 #: 200.es.adoc:22
@@ -535,7 +536,7 @@ msgstr ""
 #: 200.es.adoc:32 200.es.adoc:33
 #, no-wrap
 msgid "Figura 8"
-msgstr ""
+msgstr "Figure 8"
 
 #. type: Target for macro image
 #: 200.es.adoc:33
@@ -568,13 +569,13 @@ msgstr ""
 #: 200.es.adoc:44 200.es.adoc:45
 #, no-wrap
 msgid "Figura 9"
-msgstr ""
+msgstr "Figure 9"
 
 #. type: Target for macro image
 #: 200.es.adoc:45
 #, no-wrap
 msgid "img/es.figure-09.jpg"
-msgstr ""
+msgstr "img/es.figure-09.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:48
@@ -711,13 +712,13 @@ msgstr ""
 #: 200.es.adoc:100 200.es.adoc:101
 #, no-wrap
 msgid "Figura 11"
-msgstr ""
+msgstr "Figure 11"
 
 #. type: Target for macro image
 #: 200.es.adoc:101
 #, no-wrap
 msgid "img/es.figure-11.jpg"
-msgstr ""
+msgstr "img/es.figure-11.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:104
@@ -850,13 +851,13 @@ msgstr ""
 #: 200.es.adoc:226 200.es.adoc:227
 #, no-wrap
 msgid "Figura 12"
-msgstr ""
+msgstr "Figure 12"
 
 #. type: Target for macro image
 #: 200.es.adoc:227
 #, no-wrap
 msgid "img/es.figure-12.jpg"
-msgstr ""
+msgstr "img/es.figure-12.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:230
@@ -993,13 +994,13 @@ msgstr ""
 #: 200.es.adoc:328 200.es.adoc:329
 #, no-wrap
 msgid "Figura 13"
-msgstr ""
+msgstr "Figure 13"
 
 #. type: Target for macro image
 #: 200.es.adoc:329
 #, no-wrap
 msgid "img/es.figure-13.jpg"
-msgstr ""
+msgstr "img/es.figure-13.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:332
@@ -1094,13 +1095,13 @@ msgstr ""
 #: 220.es.adoc:20 220.es.adoc:21
 #, no-wrap
 msgid "Figura 15"
-msgstr ""
+msgstr "Figure 15"
 
 #. type: Target for macro image
 #: 220.es.adoc:21
 #, no-wrap
 msgid "img/es.figure-15.jpg"
-msgstr ""
+msgstr "img/es.figure-15.jpg"
 
 #. type: Title ====
 #: 220.es.adoc:24
@@ -1123,7 +1124,7 @@ msgstr ""
 #: 220.es.adoc:31 220.es.adoc:32
 #, no-wrap
 msgid "Figura 16"
-msgstr ""
+msgstr "Figura 16"
 
 #. type: Target for macro image
 #: 220.es.adoc:32
@@ -1150,13 +1151,13 @@ msgstr ""
 #: 220.es.adoc:43 220.es.adoc:44
 #, no-wrap
 msgid "Figura 17"
-msgstr ""
+msgstr "Figure 17"
 
 #. type: Target for macro image
 #: 220.es.adoc:44
 #, no-wrap
 msgid "img/es.figure-17.jpg"
-msgstr ""
+msgstr "img/es.figure-17.jpg"
 
 #. type: Title =====
 #: 220.es.adoc:46
@@ -1178,13 +1179,13 @@ msgstr ""
 #: 220.es.adoc:53 220.es.adoc:54
 #, no-wrap
 msgid "Figura 18"
-msgstr ""
+msgstr "Figure 18"
 
 #. type: Target for macro image
 #: 220.es.adoc:54
 #, no-wrap
 msgid "img/es.figure-18.jpg"
-msgstr ""
+msgstr "img/es.figure-18.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:57
@@ -1205,13 +1206,13 @@ msgstr ""
 #: 220.es.adoc:65 220.es.adoc:66
 #, no-wrap
 msgid "Figura 19"
-msgstr ""
+msgstr "Figure 19"
 
 #. type: Target for macro image
 #: 220.es.adoc:66
 #, no-wrap
 msgid "img/es.figure-19.jpg"
-msgstr ""
+msgstr "img/es.figure-19.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:69
