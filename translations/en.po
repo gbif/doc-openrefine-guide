@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrefine-guide\n"
 "POT-Creation-Date: 2021-02-25 13:16+0000\n"
-"PO-Revision-Date: 2021-10-18 14:19\n"
+"PO-Revision-Date: 2021-11-14 12:29\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "Language: en_US\n"
@@ -449,7 +449,7 @@ msgstr ""
 #. type: Plain text
 #: 100.es.adoc:105
 msgid "Por defecto, el programa utiliza 1 gigabyte (GB, o 1024MB) de memoria, pero la cantidad de memoria asignada puede modificarse para optimizar el desempeño. Para conocer los detalles sobre cómo modificar la memoria asignada en distintos sistemas operativos, vea la documentación provista en el https://docs.openrefine.org/[Manual del Usuario de OpenRefine]."
-msgstr ""
+msgstr "By default, the programme uses 1 Gigabyte (GB or 1024MB) of memory but the amount of memory designated can be modified to optimise performance. To know how to alter the designated memory on different operating systems, see the provided documentation in https://docs.openrefine.org/[ OpenRefine User Manual]."
 
 #. type: Title ==
 #: 200.es.adoc:1
@@ -461,13 +461,13 @@ msgstr "Data cleaning "
 #: 200.es.adoc:3
 #, no-wrap
 msgid "Manejo básico de columnas"
-msgstr ""
+msgstr "Basic column management"
 
 #. type: Title ====
 #: 200.es.adoc:5
 #, no-wrap
 msgid "Renombrar, eliminar y mover columnas"
-msgstr ""
+msgstr "Rename, delete and move columns"
 
 #. type: Plain text
 #: 200.es.adoc:8
