@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrefine-guide\n"
 "POT-Creation-Date: 2021-02-25 13:16+0000\n"
-"PO-Revision-Date: 2021-11-14 13:26\n"
+"PO-Revision-Date: 2021-11-14 14:27\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "Language: en_US\n"
@@ -789,7 +789,7 @@ msgstr ""
 #: 200.es.adoc:161
 #, no-wrap
 msgid "12+.^|\", \" "
-msgstr ""
+msgstr "12+.^|\", \" "
 
 #. type: Table
 #: 200.es.adoc:164
@@ -929,13 +929,13 @@ msgstr ""
 #: 200.es.adoc:264
 #, no-wrap
 msgid "4+.^|1"
-msgstr ""
+msgstr "4+.^|1"
 
 #. type: Block title
 #: 200.es.adoc:277
 #, no-wrap
 msgid "4+.^|2"
-msgstr ""
+msgstr "4+.^|2"
 
 #. type: Table
 #: 200.es.adoc:297
@@ -946,7 +946,7 @@ msgstr ""
 #: 200.es.adoc:297
 #, no-wrap
 msgid "4+.^|3"
-msgstr ""
+msgstr "4+.^|3"
 
 #. type: Table
 #: 200.es.adoc:310
@@ -957,7 +957,7 @@ msgstr ""
 #: 200.es.adoc:314
 #, no-wrap
 msgid "Divisiones"
-msgstr ""
+msgstr "Splits"
 
 #. type: Plain text
 #: 200.es.adoc:316
@@ -1046,7 +1046,7 @@ msgstr ""
 #: 220.es.adoc:1
 #, no-wrap
 msgid "Uso de Facetas"
-msgstr ""
+msgstr "Use of Facets"
 
 #. type: Plain text
 #: 220.es.adoc:4
@@ -1057,7 +1057,7 @@ msgstr ""
 #: 220.es.adoc:5
 #, no-wrap
 msgid "Facetas de texto"
-msgstr ""
+msgstr "Text Facets"
 
 #. type: Plain text
 #: 220.es.adoc:8
@@ -1068,13 +1068,13 @@ msgstr ""
 #: 220.es.adoc:10 220.es.adoc:11
 #, no-wrap
 msgid "Figura 14"
-msgstr ""
+msgstr "Figure 14"
 
 #. type: Target for macro image
 #: 220.es.adoc:11
 #, no-wrap
 msgid "img/es.figure-14.jpg"
-msgstr ""
+msgstr "img/es.figure-14.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:14
@@ -1130,7 +1130,7 @@ msgstr "Figura 16"
 #: 220.es.adoc:32
 #, no-wrap
 msgid "img/es.figure-16.jpg"
-msgstr ""
+msgstr "img/es.figure-16.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:35
@@ -1267,13 +1267,13 @@ msgstr ""
 #: 220.es.adoc:93 220.es.adoc:94
 #, no-wrap
 msgid "Figura 20"
-msgstr ""
+msgstr "Figure 20"
 
 #. type: Target for macro image
 #: 220.es.adoc:94
 #, no-wrap
 msgid "img/es.figure-20.jpg"
-msgstr ""
+msgstr "img/es.figure-20.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:97
@@ -1352,13 +1352,13 @@ msgstr ""
 #: 220.es.adoc:129 220.es.adoc:130
 #, no-wrap
 msgid "Figura 21"
-msgstr ""
+msgstr "Figure 21"
 
 #. type: Target for macro image
 #: 220.es.adoc:130
 #, no-wrap
 msgid "img/es.figure-21.jpg"
-msgstr ""
+msgstr "img/es.figure-21.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:133
@@ -1374,13 +1374,13 @@ msgstr ""
 #: 220.es.adoc:137 220.es.adoc:138
 #, no-wrap
 msgid "Figura 22"
-msgstr ""
+msgstr "Figure 22"
 
 #. type: Target for macro image
 #: 220.es.adoc:138
 #, no-wrap
 msgid "img/es.figure-22.jpg"
-msgstr ""
+msgstr "img/es.figure-22.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:141
@@ -1396,7 +1396,7 @@ msgstr ""
 #: 220.es.adoc:144
 #, no-wrap
 msgid "Facetas y duplicados"
-msgstr ""
+msgstr "Facets and duplicates"
 
 #. type: Plain text
 #: 220.es.adoc:147
@@ -1427,13 +1427,13 @@ msgstr ""
 #: 220.es.adoc:159 220.es.adoc:160
 #, no-wrap
 msgid "Figura 23"
-msgstr ""
+msgstr "Figure 23"
 
 #. type: Target for macro image
 #: 220.es.adoc:160
 #, no-wrap
 msgid "img/es.figure-23.jpg"
-msgstr ""
+msgstr "img/es.figure-23.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:163
@@ -1453,19 +1453,19 @@ msgstr ""
 #. type: Plain text
 #: 220.es.adoc:167
 msgid "etc."
-msgstr ""
+msgstr "etc."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 220.es.adoc:169 220.es.adoc:170
 #, no-wrap
 msgid "Figura 24"
-msgstr ""
+msgstr "Figure 24"
 
 #. type: Target for macro image
 #: 220.es.adoc:170
 #, no-wrap
 msgid "img/es.figure-24.jpg"
-msgstr ""
+msgstr "img/es.figure-24.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:173
@@ -1481,13 +1481,13 @@ msgstr ""
 #: 220.es.adoc:177 220.es.adoc:178
 #, no-wrap
 msgid "Figura 25"
-msgstr ""
+msgstr "Figure 25"
 
 #. type: Target for macro image
 #: 220.es.adoc:178
 #, no-wrap
 msgid "img/es.figure-25.jpg"
-msgstr ""
+msgstr "img/es.figure-25.jpg"
 
 #. type: Title ====
 #: 220.es.adoc:180
@@ -1509,13 +1509,13 @@ msgstr ""
 #: 220.es.adoc:187 220.es.adoc:188
 #, no-wrap
 msgid "Figura 26"
-msgstr ""
+msgstr "Figure 26"
 
 #. type: Target for macro image
 #: 220.es.adoc:188
 #, no-wrap
 msgid "img/es.figure-26.jpg"
-msgstr ""
+msgstr "img/es.figure-26.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:191
@@ -1546,13 +1546,13 @@ msgstr ""
 #: 220.es.adoc:202 220.es.adoc:203
 #, no-wrap
 msgid "Figura 27"
-msgstr ""
+msgstr "Figure 27"
 
 #. type: Target for macro image
 #: 220.es.adoc:203
 #, no-wrap
 msgid "img/es.figure-27.jpg"
-msgstr ""
+msgstr "img/es.figure-27.jpg"
 
 #. type: Title ===
 #: 230.es.adoc:1
@@ -1580,13 +1580,13 @@ msgstr ""
 #: 230.es.adoc:10 230.es.adoc:11
 #, no-wrap
 msgid "Figura 28"
-msgstr ""
+msgstr "Figure 28"
 
 #. type: Target for macro image
 #: 230.es.adoc:11
 #, no-wrap
 msgid "img/es.figure-28.jpg"
-msgstr ""
+msgstr "img/es.figure-28.jpg"
 
 #. type: Plain text
 #: 230.es.adoc:14
@@ -1607,13 +1607,13 @@ msgstr ""
 #: 230.es.adoc:20 230.es.adoc:21
 #, no-wrap
 msgid "Figura 29"
-msgstr ""
+msgstr "Figure 29"
 
 #. type: Target for macro image
 #: 230.es.adoc:21
 #, no-wrap
 msgid "img/es.figure-29.jpg"
-msgstr ""
+msgstr "img/es.figure-29.jpg"
 
 #. type: Plain text
 #: 230.es.adoc:24
@@ -1639,13 +1639,13 @@ msgstr ""
 #: 230.es.adoc:32 230.es.adoc:33
 #, no-wrap
 msgid "Figura 30"
-msgstr ""
+msgstr "Figure 30"
 
 #. type: Target for macro image
 #: 230.es.adoc:33
 #, no-wrap
 msgid "img/es.figure-30.jpg"
-msgstr ""
+msgstr "img/es.figure-30.jpg"
 
 #. type: Plain text
 #: 230.es.adoc:36
@@ -1661,13 +1661,13 @@ msgstr ""
 #: 230.es.adoc:40 230.es.adoc:41
 #, no-wrap
 msgid "Figura 31"
-msgstr ""
+msgstr "Figure 31"
 
 #. type: Target for macro image
 #: 230.es.adoc:41
 #, no-wrap
 msgid "img/es.figure-31.jpg"
-msgstr ""
+msgstr "img/es.figure-31.jpg"
 
 #. type: Plain text
 #: 230.es.adoc:44
@@ -1694,7 +1694,7 @@ msgstr ""
 #: 230.es.adoc:53 230.es.adoc:54
 #, no-wrap
 msgid "Figura 32"
-msgstr ""
+msgstr "Figure 32"
 
 #. type: Target for macro image
 #: 230.es.adoc:54
@@ -1753,7 +1753,7 @@ msgstr ""
 #. type: Plain text
 #: 230.es.adoc:75
 msgid "`+^[A-C]+`"
-msgstr ""
+msgstr "`+^[A-C]+`"
 
 #. type: Plain text
 #: 230.es.adoc:77
@@ -1763,7 +1763,7 @@ msgstr ""
 #. type: Plain text
 #: 230.es.adoc:78
 msgid "`+^[^a-d]+`"
-msgstr ""
+msgstr "`+^[^a-d]+`"
 
 #. type: Plain text
 #: 230.es.adoc:80
@@ -1773,7 +1773,7 @@ msgstr ""
 #. type: Plain text
 #: 230.es.adoc:81
 msgid "`+^\\w+`"
-msgstr ""
+msgstr "`+^\\w+`"
 
 #. type: Plain text
 #: 230.es.adoc:83
@@ -1783,7 +1783,7 @@ msgstr ""
 #. type: Plain text
 #: 230.es.adoc:84
 msgid "`+^\\s+`"
-msgstr ""
+msgstr "`+^\\s+`"
 
 #. type: Plain text
 #: 230.es.adoc:86
@@ -1793,7 +1793,7 @@ msgstr ""
 #. type: Plain text
 #: 230.es.adoc:87
 msgid "`+^\\d+`"
-msgstr ""
+msgstr "`+^\\d+`"
 
 #. type: Plain text
 #: 230.es.adoc:89
@@ -1803,7 +1803,7 @@ msgstr ""
 #. type: Plain text
 #: 230.es.adoc:90
 msgid "`+^\\D+`"
-msgstr ""
+msgstr "`+^\\D+`"
 
 #. type: Plain text
 #: 230.es.adoc:92
@@ -1813,7 +1813,7 @@ msgstr ""
 #. type: Plain text
 #: 230.es.adoc:93
 msgid "`+\\d{4}+`"
-msgstr ""
+msgstr "`+\\d{4}+`"
 
 #. type: Plain text
 #: 230.es.adoc:95
@@ -1823,7 +1823,7 @@ msgstr ""
 #. type: Plain text
 #: 230.es.adoc:96
 msgid "`+^\\w.*\\d$+`"
-msgstr ""
+msgstr "`+^\\w.*\\d$+`"
 
 #. type: Plain text
 #: 230.es.adoc:98
@@ -1833,7 +1833,7 @@ msgstr ""
 #. type: Plain text
 #: 230.es.adoc:99
 msgid "`+^[A-Z].*\\s[A-Z]+`"
-msgstr ""
+msgstr "`+^[A-Z].*\\s[A-Z]+`"
 
 #. type: Plain text
 #: 230.es.adoc:101
@@ -1843,7 +1843,7 @@ msgstr ""
 #. type: Plain text
 #: 230.es.adoc:102
 msgid "`+[À-ÖØ-öø-ÿ]+`"
-msgstr ""
+msgstr "`+[À-ÖØ-öø-ÿ]+`"
 
 #. type: Plain text
 #: 230.es.adoc:104
@@ -1997,13 +1997,13 @@ msgstr ""
 #: 260.es.adoc:15 260.es.adoc:16
 #, no-wrap
 msgid "Figura 36"
-msgstr ""
+msgstr "Figure 36"
 
 #. type: Target for macro image
 #: 260.es.adoc:16
 #, no-wrap
 msgid "img/es.figure-36.jpg"
-msgstr ""
+msgstr "img/es.figure-36.jpg"
 
 #. type: Plain text
 #: 260.es.adoc:19
@@ -2046,7 +2046,7 @@ msgstr "Figure 37"
 #: 260.es.adoc:32
 #, no-wrap
 msgid "img/es.figure-37.jpg"
-msgstr ""
+msgstr "img/es.figure-37.jpg"
 
 #. type: Plain text
 #: 260.es.adoc:35
@@ -2073,13 +2073,13 @@ msgstr ""
 #: 260.es.adoc:43 260.es.adoc:44
 #, no-wrap
 msgid "Figura 38"
-msgstr ""
+msgstr "Figure 38"
 
 #. type: Target for macro image
 #: 260.es.adoc:44
 #, no-wrap
 msgid "img/es.figure-38.jpg"
-msgstr ""
+msgstr "img/es.figure-38.jpg"
 
 #. type: Plain text
 #: 260.es.adoc:47
@@ -2269,13 +2269,13 @@ msgstr ""
 #: 280.es.adoc:58 280.es.adoc:59
 #, no-wrap
 msgid "Figura 41"
-msgstr ""
+msgstr "Figure 41"
 
 #. type: Target for macro image
 #: 280.es.adoc:59
 #, no-wrap
 msgid "img/es.figure-41.jpg"
-msgstr ""
+msgstr "img/es.figure-41.jpg"
 
 #. type: Plain text
 #: 280.es.adoc:62
@@ -2387,60 +2387,60 @@ msgstr ""
 #. type: Plain text
 #: 300.es.adoc:16
 msgid "C:\\Users\\(user id)\\AppData\\Local\\OpenRefine"
-msgstr ""
+msgstr "C:\\Users\\(user id)\\AppData\\Local\\OpenRefine"
 
 #. type: Plain text
 #: 300.es.adoc:17
 msgid "C:\\Users\\(user id)\\OpenRefine"
-msgstr ""
+msgstr "C:\\Users\\(user id)\\OpenRefine"
 
 #. type: Plain text
 #: 300.es.adoc:19
 #, no-wrap
 msgid "*MacOS*:\n"
-msgstr ""
+msgstr "*MacOS*:\n"
 
 #. type: Plain text
 #: 300.es.adoc:21
 msgid "~/Library/Application Support/OpenRefine/"
-msgstr ""
+msgstr "~/Library/Application Support/OpenRefine/"
 
 #. type: Plain text
 #: 300.es.adoc:22
 msgid "~/Library/Application Support/Google/Refine/ (versions de Google Refine más antiguas)"
-msgstr ""
+msgstr "~/Library/Application Support/Google/Refine/ (older versions of Google Refine)"
 
 #. type: Plain text
 #: 300.es.adoc:23
 msgid "Ingreso a través de /var/log/daemon.log - grep para com.google.refine.Refine"
-msgstr ""
+msgstr "Entry through /var/log/daemon.log - grep para com.google.refine.Refine"
 
 #. type: Plain text
 #: 300.es.adoc:25
 #, no-wrap
 msgid "*Linux*:\n"
-msgstr ""
+msgstr "*Linux*:\n"
 
 #. type: Plain text
 #: 300.es.adoc:27
 msgid "~/.local/share/openrefine/"
-msgstr ""
+msgstr "~/.local/share/openrefine/"
 
 #. type: Title ===
 #: 300.es.adoc:28
 #, no-wrap
 msgid "Exportación de datos y proyectos [[sect-3.2]]"
-msgstr ""
+msgstr "Exporting data and projects [[sect-3.2]]"
 
 #. type: Plain text
 #: 300.es.adoc:31
 msgid "OpenRefine ofrece varias opciones para exportar los datos y proyectos. Se puede acceder a estas opciones en la esquina superior derecha de la ventana del programa, haciendo click en el botón “Exportar” (<<img-fig-43,Figura 43>>)."
-msgstr ""
+msgstr "OpenRefine offers various options to export data and projects. You can access these options in the top right corner of the programme window by clicking on the \"Export\" button (<<img-fig-43,Figura 43>>)."
 
 #. type: Plain text
 #: 300.es.adoc:33
 msgid "Note que la primera opción, “Exportar proyecto”, permite exportar el proyecto completo, mientras que otras opciones (e.g., delimitado por… , Excel, etc.) permiten exportar los datos."
-msgstr ""
+msgstr "Note that the first option, \"Export project\", allows you to export the whole project, whereas the other options (e.g. delimited by...., Excel, etc.) will enable you to export the data."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 300.es.adoc:35 300.es.adoc:36
@@ -2457,12 +2457,12 @@ msgstr "img/es.figure-43.jpg"
 #. type: Plain text
 #: 300.es.adoc:39
 msgid "La exportación de proyectos es útil cuando uno quiere abrir el mismo proyecto en OpenRefine en otra computadora."
-msgstr ""
+msgstr "Exporting projects is useful when you want to open the same project in OpenRefine in another computer."
 
 #. type: Plain text
 #: 300.es.adoc:41
 msgid "Haciendo click en “Exportar proyecto” se abrirá una ventana en la que puede escoger si exportar como archivo local o si exportar a Google Drive (<<img-fig-44,Figura 44>>)."
-msgstr ""
+msgstr "Clicking on \"Export project\" will open a new window in which you can choose to export as a local file or export to Google Drive (<<img-fig-44, Figura 44>>)."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 300.es.adoc:43 300.es.adoc:44
@@ -2479,12 +2479,12 @@ msgstr "img/es.figure-44.jpg"
 #. type: Plain text
 #: 300.es.adoc:47
 msgid "Escoja la opción deseada y haga click en “Exportar”. El archivo exportado tendrá una extensión .tar.gz, que sólo puede ser abierto por el programa (no se descarga un archivo de datos que pueda abrir en un procesador de textos ni en una planilla de cálculo)."
-msgstr ""
+msgstr "Choose the desired option and click on \"Export\". The exported file will have the extension .tar.gz, that can only be opened by the programme (it does not download a file with data that can be opened with neither a text editor nor as a spreadsheet)."
 
 #. type: Plain text
 #: 300.es.adoc:49
 msgid "Para exportar los datos y poder abrirlos en otro programa, puede seguir cualquiera de las otras opciones, que resultarán en un archivo con uno de los formatos disponibles."
-msgstr ""
+msgstr "To export data and be able to open them in another programme, you can continue with any of the other options, which will result in a file in one of the available formats."
 
 #. type: Plain text
 #: 300.es.adoc:51
@@ -2521,7 +2521,7 @@ msgstr ""
 #. type: Plain text
 #: 300.es.adoc:63
 msgid "Para descargar los datos, vaya a la pestaña “Descarga”, como se ve en la <<img-fig-46,Figura 46>>."
-msgstr ""
+msgstr "To download the data, go to the window \"Download\", as shown here: <<img-fig-46,Figura 46>>."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 300.es.adoc:65 300.es.adoc:66
@@ -2611,13 +2611,13 @@ msgstr ""
 #: 400.es.adoc:30 400.es.adoc:31
 #, no-wrap
 msgid "Figura 47"
-msgstr ""
+msgstr "Figure 47"
 
 #. type: Target for macro image
 #: 400.es.adoc:31
 #, no-wrap
 msgid "img/es.figure-47.jpg"
-msgstr ""
+msgstr "img/es.figure-47.jpg"
 
 #. type: Plain text
 #: 400.es.adoc:34
@@ -2640,13 +2640,13 @@ msgstr ""
 #: 400.es.adoc:44 400.es.adoc:45
 #, no-wrap
 msgid "Figura 48"
-msgstr ""
+msgstr "Figure 48"
 
 #. type: Target for macro image
 #: 400.es.adoc:45
 #, no-wrap
 msgid "img/es.figure-48.jpg"
-msgstr ""
+msgstr "img/es.figure-48.jpg"
 
 #. type: Plain text
 #: 400.es.adoc:48
@@ -3042,13 +3042,13 @@ msgstr ""
 #: 400.es.adoc:293 400.es.adoc:294
 #, no-wrap
 msgid "Figura 51"
-msgstr ""
+msgstr "Figure 51"
 
 #. type: Target for macro image
 #: 400.es.adoc:294
 #, no-wrap
 msgid "img/es.figure-51.png"
-msgstr ""
+msgstr "img/es.figure-51.png"
 
 #. type: Plain text
 #: 400.es.adoc:297
@@ -3135,7 +3135,7 @@ msgstr ""
 #: 400.es.adoc:334
 #, no-wrap
 msgid "-64.158097; -26.21252|-59.846115; -28.671732|-63.801314; -22.516365\n"
-msgstr ""
+msgstr "-64.158097; -26.21252|-59.846115; -28.671732|-63.801314; -22.516365\n"
 
 #. type: Plain text
 #: 400.es.adoc:337
@@ -3220,7 +3220,7 @@ msgstr ""
 #: 400.es.adoc:370
 #, no-wrap
 msgid "Breve introducción"
-msgstr ""
+msgstr "Brief introduction"
 
 #. type: Plain text
 #: 400.es.adoc:373
@@ -3256,7 +3256,7 @@ msgstr ""
 #. type: Plain text
 #: 400.es.adoc:389
 msgid "Donde:"
-msgstr ""
+msgstr "Where:"
 
 #. type: Plain text
 #: 400.es.adoc:391
@@ -3340,7 +3340,7 @@ msgstr ""
 #: 400.es.adoc:437
 #, no-wrap
 msgid "Limpieza de fechas"
-msgstr ""
+msgstr "Data cleaning"
 
 #. type: Plain text
 #: 400.es.adoc:440
@@ -3469,13 +3469,13 @@ msgstr ""
 #: 400.es.adoc:485 400.es.adoc:486
 #, no-wrap
 msgid "Figura 55"
-msgstr ""
+msgstr "Figure 55"
 
 #. type: Target for macro image
 #: 400.es.adoc:486
 #, no-wrap
 msgid "img/es.figure-55.jpg"
-msgstr ""
+msgstr "img/es.figure-55.jpg"
 
 #. type: Plain text
 #: 400.es.adoc:489
@@ -3506,7 +3506,7 @@ msgstr ""
 #: 400.es.adoc:497 400.es.adoc:498
 #, no-wrap
 msgid "Figura 56"
-msgstr ""
+msgstr "Figure 56"
 
 #. type: Target for macro image
 #: 400.es.adoc:498
@@ -3611,13 +3611,13 @@ msgstr ""
 #: 500.es.adoc:20 500.es.adoc:21
 #, no-wrap
 msgid "Figura 57"
-msgstr ""
+msgstr "Figure 57"
 
 #. type: Target for macro image
 #: 500.es.adoc:21
 #, no-wrap
 msgid "img/es.figure-57.jpg"
-msgstr ""
+msgstr "img/es.figure-57.jpg"
 
 #. type: Plain text
 #: 500.es.adoc:24
@@ -3696,13 +3696,13 @@ msgstr ""
 #: 500.es.adoc:78 500.es.adoc:79
 #, no-wrap
 msgid "Figura 58"
-msgstr ""
+msgstr "Figure 58"
 
 #. type: Target for macro image
 #: 500.es.adoc:79
 #, no-wrap
 msgid "img/es.figure-58.jpg"
-msgstr ""
+msgstr "img/es.figure-58.jpg"
 
 #. type: delimited block *
 #: 500.es.adoc:83
@@ -3713,13 +3713,13 @@ msgstr ""
 #: 500.es.adoc:85 500.es.adoc:86
 #, no-wrap
 msgid "Figura 59"
-msgstr ""
+msgstr "Figure 59"
 
 #. type: Target for macro image
 #: 500.es.adoc:86
 #, no-wrap
 msgid "img/es.figure-59.jpg"
-msgstr ""
+msgstr "img/es.figure-59.jpg"
 
 #. type: delimited block *
 #: 500.es.adoc:89
@@ -3730,13 +3730,13 @@ msgstr ""
 #: 500.es.adoc:91 500.es.adoc:92
 #, no-wrap
 msgid "Figura 60"
-msgstr ""
+msgstr "Figure 60"
 
 #. type: Target for macro image
 #: 500.es.adoc:92
 #, no-wrap
 msgid "img/es.figure-60.jpg"
-msgstr ""
+msgstr "img/es.figure-60.jpg"
 
 #. type: delimited block *
 #: 500.es.adoc:95
@@ -3775,19 +3775,19 @@ msgstr ""
 #: 500.es.adoc:114 500.es.adoc:115
 #, no-wrap
 msgid "Figura 61"
-msgstr ""
+msgstr "Figure 61"
 
 #. type: Target for macro image
 #: 500.es.adoc:115
 #, no-wrap
 msgid "img/es.figure-61.jpg"
-msgstr ""
+msgstr "img/es.figure-61.jpg"
 
 #. type: delimited block *
 #: 500.es.adoc:125
 #, no-wrap
 msgid "**Limpieza de los datos**\n"
-msgstr ""
+msgstr "**Data cleaning**\n"
 
 #. type: delimited block *
 #: 500.es.adoc:127
@@ -3825,7 +3825,7 @@ msgstr ""
 #: 500.es.adoc:140
 #, no-wrap
 msgid "Validación taxonómica con el API de GBIF"
-msgstr ""
+msgstr "Taxonomic validation with the GBIF API"
 
 #. type: Plain text
 #: 500.es.adoc:143
@@ -3836,13 +3836,13 @@ msgstr ""
 #. type: Plain text
 #: 500.es.adoc:145
 msgid "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIGBIF_ValTaxonomicaAPIGBIF.txt"
-msgstr ""
+msgstr "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIGBIF_ValTaxonomicaAPIGBIF.txt"
 
 #. type: Plain text
 #: 500.es.adoc:147 500.es.adoc:192 500.es.adoc:222 500.es.adoc:269 500.es.adoc:322
 #, no-wrap
 msgid "*Requerimientos:*\n"
-msgstr ""
+msgstr "*Requirements*\n"
 
 #. type: Plain text
 #: 500.es.adoc:149
@@ -3858,7 +3858,7 @@ msgstr ""
 #: 500.es.adoc:153 500.es.adoc:203 500.es.adoc:229 500.es.adoc:276 500.es.adoc:326
 #, no-wrap
 msgid "*Funcionamiento:*\n"
-msgstr ""
+msgstr "*Operation*\n"
 
 #. type: Plain text
 #: 500.es.adoc:155
@@ -3993,7 +3993,7 @@ msgstr ""
 #. type: Plain text
 #: 500.es.adoc:205
 msgid "La rutina obtiene y valida la información taxonómica de un conjunto de datos con el árbol taxonómico de GBIF a partir del archivo de texto plano _normalized_ obtenido de la herramienta en línea link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] y cargado en OpenRefine. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF y los compara con los elementos documentados en el archivo base, generando los indicadores de validación."
-msgstr ""
+msgstr "The routine obtains and validates the taxonomic information from a dataset against the taxonomic backbone of GBIF from a plain text file _normalized_ obtained from the online tool link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] and uploaded to OpenRefine. The routine returns the matching higher taxonomy, accepted names, taxonomic status and scientific name authorship from GBIF´s taxonomic backbone and compares them with the documented elements in the original file, generating validation indicators."
 
 #. type: Plain text
 #: 500.es.adoc:207
@@ -4383,12 +4383,12 @@ msgstr "Installation on MS Windows"
 #. type: Plain text
 #: appa.es.adoc:16
 msgid "Descargue aquí el https://github.com/OpenRefine/OpenRefine/releases/download/3.3/openrefine-win-3.3.zip[kit de Windows]."
-msgstr ""
+msgstr "Download the https://github.com/OpenRefine/OpenRefine/releases/download/3.3/openrefine-win-3.3.zip[Windows kit]."
 
 #. type: Plain text
 #: appa.es.adoc:17
 msgid "Descomprima, y copie la carpeta en su computadora. Abra la carpeta y haga doble click en openrefine.exe. Si encuentra algún problema en este punto, haga doble click sobre refine.bat."
-msgstr ""
+msgstr "Decompress and copy the folder in your computer. Open the folder and click on openrefine.exe. If you have a problem at this point, double click on refine.bat."
 
 #. type: Plain text
 #: appa.es.adoc:18
@@ -4399,22 +4399,22 @@ msgstr ""
 #: appa.es.adoc:19
 #, no-wrap
 msgid "Instalación en Mac"
-msgstr ""
+msgstr "Installation on Mac"
 
 #. type: Plain text
 #: appa.es.adoc:21
 msgid "Descargue aquí el https://github.com/OpenRefine/OpenRefine/releases/download/3.3/openrefine-mac-3.3.dmg[kit de Mac]."
-msgstr ""
+msgstr "Download the https://github.com/OpenRefine/OpenRefine/releases/download/3.3/openrefine-mac-3.3.dmg[Mac kit]."
 
 #. type: Plain text
 #: appa.es.adoc:22
 msgid "Abra y arrastre el icono en la carpeta Applications."
-msgstr ""
+msgstr "Open and drag the icon into the Applications folder."
 
 #. type: Plain text
 #: appa.es.adoc:23
 msgid "Haga doble clic en él y su navegador web mostrará una nueva ventana con la aplicación."
-msgstr ""
+msgstr "Double click on it, and your web browser will open a new window with the application."
 
 #. type: Plain text
 #: appa.es.adoc:25
@@ -4425,17 +4425,17 @@ msgstr ""
 #: appa.es.adoc:26
 #, no-wrap
 msgid "Para saber más"
-msgstr ""
+msgstr "To find out more"
 
 #. type: Plain text
 #: appa.es.adoc:29
 msgid "Puede encontrar instrucciones adicionales para la instalación y consultar funciones básicas en el https://docs.openrefine.org/[Manual del Usuario de OpenRefine]."
-msgstr ""
+msgstr "You can get additional information on the installation and consult basic functions in the https://docs.openrefine.org/[OpenRefine User Manual]."
 
 #. type: Plain text
 #: appa.es.adoc:30
 msgid "Si desea instalar otras versiones del programa, puede encontrarlas en la página de https://openrefine.org/download.html[Descargas de Open Refine]."
-msgstr ""
+msgstr "If you would to install other versions of the programme, you can find them on the download page https://openrefine.org/download.html[Open Refine Downloads]."
 
 #. type: Plain text
 #: appa.es.adoc:30
