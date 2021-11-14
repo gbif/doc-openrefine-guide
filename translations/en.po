@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrefine-guide\n"
 "POT-Creation-Date: 2021-02-25 13:16+0000\n"
-"PO-Revision-Date: 2021-11-14 12:29\n"
+"PO-Revision-Date: 2021-11-14 13:26\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "Language: en_US\n"
@@ -472,35 +472,35 @@ msgstr "Rename, delete and move columns"
 #. type: Plain text
 #: 200.es.adoc:8
 msgid "Veamos primero algunas funciones básicas que se pueden aplicar sobre los campos:"
-msgstr ""
+msgstr "Firstly, let´s look at some basic functions that can be applied to the fields:"
 
 #. type: Plain text
 #: 200.es.adoc:10
 #, no-wrap
 msgid "*Renombrar un campo.*\n"
-msgstr ""
+msgstr "*Rename a field*\n"
 
 #. type: Plain text
 #: 200.es.adoc:12
 msgid "Hacer click en \"la &#9660; azul del campo > Editar columnas > Renombrar esta columna\""
-msgstr ""
+msgstr "Click on the \"&#9660; blue of the field > Edit columns > Rename this field\""
 
 #. type: Plain text
 #: 200.es.adoc:14
 #, no-wrap
 msgid "*Eliminar un campo.*\n"
-msgstr ""
+msgstr "*Delete a field*\n"
 
 #. type: Plain text
 #: 200.es.adoc:16
 msgid "Hacer click en \"la &#9660; azul del campo > Editar columnas > Eliminar esta columna\""
-msgstr ""
+msgstr "Click on the \"&#9660; blue of the field > Edit columns > Delete this column\""
 
 #. type: Plain text
 #: 200.es.adoc:18
 #, no-wrap
 msgid "*Mover un campo.*\n"
-msgstr ""
+msgstr "*Move a field.* \n"
 
 #. type: Plain text
 #: 200.es.adoc:20
@@ -530,7 +530,7 @@ msgstr ""
 #. type: Plain text
 #: 200.es.adoc:30
 msgid "Estas tres opciones pueden verse en la <<img-fig-08,Figura 8>>."
-msgstr ""
+msgstr "These three options can be seen in <<img-fig-08,Figura 8>>."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 200.es.adoc:32 200.es.adoc:33
@@ -542,18 +542,18 @@ msgstr "Figure 8"
 #: 200.es.adoc:33
 #, no-wrap
 msgid "img/es.figure-08.jpg"
-msgstr ""
+msgstr "img/es.figure-08.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:36
 #, no-wrap
 msgid "*Reordenar o eliminar varios campos a la vez.*\n"
-msgstr ""
+msgstr "*Reorganizing or deleting various fields at the same time.*\n"
 
 #. type: Plain text
 #: 200.es.adoc:38
 msgid "Para esta función se utiliza el campo “Todo”, que se encuentra como primera columna de la tabla. Este campo no forma parte de los datos originales, es agregado por el programa para permitir llevar a cabo ciertas funciones."
-msgstr ""
+msgstr "For this function we use the field \"All\", which is the first column in the table. This field does not constitute an element of the original data and is aggregated by the programme to allow for the realization of certain functions."
 
 #. type: Plain text
 #: 200.es.adoc:40
@@ -563,7 +563,7 @@ msgstr ""
 #. type: Plain text
 #: 200.es.adoc:42
 msgid "Se abrirá entonces una ventana como la que se muestra en la <<img-fig-09,Figura 9b>>. Allí puede ordenar los campos simplemente arrastrándolos arriba o abajo en la lista, y eliminarlos arrastrándolos hacia la parte derecha de la ventana. Una vez que termine de modificar el orden de los campos, haga click en “Aceptar”."
-msgstr ""
+msgstr "A new window like <<img-fig-09,Figura 9b>> will then open. There you will be able to organize the fields by simply dragging them up and down the list, and delete them by dragging them towards the right side of the window. Once you have completed changing the order of the fields, click \"Accept\"."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 200.es.adoc:44 200.es.adoc:45
@@ -586,7 +586,7 @@ msgstr ""
 #: 200.es.adoc:49
 #, no-wrap
 msgid "Nuevas columnas vacías"
-msgstr ""
+msgstr "New, empty columns"
 
 #. type: Plain text
 #: 200.es.adoc:52
@@ -606,17 +606,17 @@ msgstr ""
 #. type: Plain text
 #: 200.es.adoc:58
 msgid "Se abrirá una ventana como la que se muestra en la <<img-fig-10,Figura 10>>."
-msgstr ""
+msgstr "A new window will open like this one <<img-fig-10,Figura 10>>."
 
 #. type: Plain text
 #: 200.es.adoc:60
 msgid "Arriba de todo, coloque el nombre del nuevo campo."
-msgstr ""
+msgstr "Above everything, input the name of the new field."
 
 #. type: Plain text
 #: 200.es.adoc:62
 msgid "Debe tener extremo cuidado al escoger los nombres que dará a las nuevas columnas. Considere que el nombre sea indicativo de lo que contiene (e.g., no utilice nombres tales como “Columna 1” o “Transformación 3”). OpenRefine no le dejará utilizar nombres que ya hayan sido utilizados para nombrar otros campos dentro del proyecto. Considere qué otros campos tiene en su base de datos original y no utilice nombres que ya hayan sido utilizados, se evitará así importar datos a columnas equivocadas al volver a su base de datos."
-msgstr ""
+msgstr "You should be extremely careful when choosing the names that you will give to the new columns. The name should be indicative of the content (e.g. don't use names like \"Column 1\" or \"Transformed 3\"). OpenRefine will not allow you to use names that have already been used for other columns in the project. Think about which other fields you have in your original database and don´t use names that have already been used, this will avoid importing data from the wrong columns when going back to your database."
 
 #. type: Plain text
 #: 200.es.adoc:64
@@ -627,7 +627,7 @@ msgstr ""
 #: 200.es.adoc:66 200.es.adoc:67
 #, no-wrap
 msgid "Figura 10"
-msgstr ""
+msgstr "Figure 10"
 
 #. type: Target for macro image
 #: 200.es.adoc:67
@@ -649,7 +649,7 @@ msgstr ""
 #: 200.es.adoc:73
 #, no-wrap
 msgid "Nuevas columnas a partir transformaciones simples de otras columnas"
-msgstr ""
+msgstr "New columns from simple transformations of other columns"
 
 #. type: Plain text
 #: 200.es.adoc:76
@@ -659,13 +659,13 @@ msgstr ""
 #. type: Plain text
 #: 200.es.adoc:78
 msgid "Veamos ahora cómo crear nuevas columnas con datos modificados a partir de columnas preexistentes."
-msgstr ""
+msgstr "We will now see how to create new columns with modified data from existing columns."
 
 #. type: Title =====
 #: 200.es.adoc:79
 #, no-wrap
 msgid "Concatenaciones"
-msgstr ""
+msgstr "Concatenations"
 
 #. type: Plain text
 #: 200.es.adoc:82
@@ -1700,7 +1700,7 @@ msgstr ""
 #: 230.es.adoc:54
 #, no-wrap
 msgid "img/es.figure-32.jpg"
-msgstr ""
+msgstr "img/es.figure-32.jpg"
 
 #. type: Plain text
 #: 230.es.adoc:57
@@ -1732,13 +1732,13 @@ msgstr ""
 #: 230.es.adoc:67 230.es.adoc:68
 #, no-wrap
 msgid "Figura 33"
-msgstr ""
+msgstr "Figure 33"
 
 #. type: Target for macro image
 #: 230.es.adoc:68
 #, no-wrap
 msgid "img/es.figure-33.jpg"
-msgstr ""
+msgstr "img/es.figure-33.jpg"
 
 #. type: Plain text
 #: 230.es.adoc:71
@@ -1901,13 +1901,13 @@ msgstr ""
 #: 250.es.adoc:15 250.es.adoc:16
 #, no-wrap
 msgid "Figura 34"
-msgstr ""
+msgstr "Figure 34"
 
 #. type: Target for macro image
 #: 250.es.adoc:16
 #, no-wrap
 msgid "img/es.figure-34.jpg"
-msgstr ""
+msgstr "img/es.figure-34.jpg"
 
 #. type: Plain text
 #: 250.es.adoc:19
@@ -1943,13 +1943,13 @@ msgstr ""
 #: 250.es.adoc:31 250.es.adoc:32
 #, no-wrap
 msgid "Figura 35"
-msgstr ""
+msgstr "Figure 35"
 
 #. type: Target for macro image
 #: 250.es.adoc:32
 #, no-wrap
 msgid "img/es.figure-35.jpg"
-msgstr ""
+msgstr "img/es.figure-35.jpg"
 
 #. type: Plain text
 #: 250.es.adoc:35
@@ -2040,7 +2040,7 @@ msgstr ""
 #: 260.es.adoc:31 260.es.adoc:32
 #, no-wrap
 msgid "Figura 37"
-msgstr ""
+msgstr "Figure 37"
 
 #. type: Target for macro image
 #: 260.es.adoc:32
@@ -2121,13 +2121,13 @@ msgstr ""
 #: 260.es.adoc:61 260.es.adoc:62
 #, no-wrap
 msgid "Figura 39"
-msgstr ""
+msgstr "Figure 39"
 
 #. type: Target for macro image
 #: 260.es.adoc:62
 #, no-wrap
 msgid "img/es.figure-39.jpg"
-msgstr ""
+msgstr "img/es.figure-39.jpg"
 
 #. type: Plain text
 #: 260.es.adoc:64
@@ -2195,18 +2195,18 @@ msgstr ""
 #: 280.es.adoc:27 280.es.adoc:28
 #, no-wrap
 msgid "Figura 40"
-msgstr ""
+msgstr "Figure 40"
 
 #. type: Target for macro image
 #: 280.es.adoc:28
 #, no-wrap
 msgid "img/es.figure-40.jpg"
-msgstr ""
+msgstr "img/es.figure-40.jpg"
 
 #. type: Plain text
 #: 280.es.adoc:31
 msgid "Una vez que lo haya hecho, verá que todos los registros seleccionados están marcados ahora con una bandera."
-msgstr ""
+msgstr "Once you have done this, you will see that all of the selected records are now marked with a flag."
 
 #. type: Plain text
 #: 280.es.adoc:33
@@ -2247,7 +2247,7 @@ msgstr ""
 #. type: Plain text
 #: 280.es.adoc:49
 msgid "En el cuadro de texto pegue la siguiente expresión:"
-msgstr ""
+msgstr "In the text box, copy the following expression:"
 
 #. type: delimited block -
 #: 280.es.adoc:52
@@ -2328,13 +2328,13 @@ msgstr ""
 #: 280.es.adoc:78 280.es.adoc:79
 #, no-wrap
 msgid "Figura 42"
-msgstr ""
+msgstr "Figure 42"
 
 #. type: Target for macro image
 #: 280.es.adoc:79
 #, no-wrap
 msgid "img/es.figure-42.jpg"
-msgstr ""
+msgstr "img/es.figure-42.jpg"
 
 #. type: Plain text
 #: 280.es.adoc:82
@@ -2446,13 +2446,13 @@ msgstr ""
 #: 300.es.adoc:35 300.es.adoc:36
 #, no-wrap
 msgid "Figura 43"
-msgstr ""
+msgstr "Figure 43"
 
 #. type: Target for macro image
 #: 300.es.adoc:36
 #, no-wrap
 msgid "img/es.figure-43.jpg"
-msgstr ""
+msgstr "img/es.figure-43.jpg"
 
 #. type: Plain text
 #: 300.es.adoc:39
@@ -2468,13 +2468,13 @@ msgstr ""
 #: 300.es.adoc:43 300.es.adoc:44
 #, no-wrap
 msgid "Figura 44"
-msgstr ""
+msgstr "Figure 44"
 
 #. type: Target for macro image
 #: 300.es.adoc:44
 #, no-wrap
 msgid "img/es.figure-44.jpg"
-msgstr ""
+msgstr "img/es.figure-44.jpg"
 
 #. type: Plain text
 #: 300.es.adoc:47
@@ -2500,13 +2500,13 @@ msgstr ""
 #: 300.es.adoc:55 300.es.adoc:56
 #, no-wrap
 msgid "Figura 45"
-msgstr ""
+msgstr "Figure 45"
 
 #. type: Target for macro image
 #: 300.es.adoc:56
 #, no-wrap
 msgid "img/es.figure-45.jpg"
-msgstr ""
+msgstr "img/es.figure-45.jpg"
 
 #. type: Plain text
 #: 300.es.adoc:59
@@ -2527,13 +2527,13 @@ msgstr ""
 #: 300.es.adoc:65 300.es.adoc:66
 #, no-wrap
 msgid "Figura 46"
-msgstr ""
+msgstr "Figure 46"
 
 #. type: Target for macro image
 #: 300.es.adoc:66
 #, no-wrap
 msgid "img/es.figure-46.jpg"
-msgstr ""
+msgstr "img/es.figure-46.jpg"
 
 #. type: Plain text
 #: 300.es.adoc:69
@@ -2725,13 +2725,13 @@ msgstr ""
 #: 400.es.adoc:82 400.es.adoc:83
 #, no-wrap
 msgid "Figura 49"
-msgstr ""
+msgstr "Figure 49"
 
 #. type: Target for macro image
 #: 400.es.adoc:83
 #, no-wrap
 msgid "img/es.figure-49.jpg"
-msgstr ""
+msgstr "img/es.figure-49.jpg"
 
 #. type: Plain text
 #: 400.es.adoc:86
@@ -2841,13 +2841,13 @@ msgstr ""
 #: 400.es.adoc:160 400.es.adoc:161
 #, no-wrap
 msgid "Figura 50"
-msgstr ""
+msgstr "Figure 50"
 
 #. type: Target for macro image
 #: 400.es.adoc:161
 #, no-wrap
 msgid "img/es.figure-50.jpg"
-msgstr ""
+msgstr "img/es.figure-50.jpg"
 
 #. type: Plain text
 #: 400.es.adoc:164
@@ -2857,7 +2857,7 @@ msgstr ""
 #. type: Plain text
 #: 400.es.adoc:166
 msgid "En los resultados puede tener tres casos:"
-msgstr ""
+msgstr "In the results there may be three instances:"
 
 #. type: Plain text
 #: 400.es.adoc:168
@@ -2878,7 +2878,7 @@ msgstr ""
 #. type: Plain text
 #: 400.es.adoc:177
 msgid "Ningún resultado encontrado."
-msgstr ""
+msgstr "No result found."
 
 #. type: Plain text
 #: 400.es.adoc:179
@@ -2922,7 +2922,7 @@ msgstr ""
 #. type: Plain text
 #: 400.es.adoc:211
 msgid "Las coordenadas: [source,javascript]`\"coordinates\": [-64.471941, -23.643418]`"
-msgstr ""
+msgstr "The coordinates: [source,javascript]`\"coordinates\": [-64.471941, -23.643418]`"
 
 #. type: Plain text
 #: 400.es.adoc:212
@@ -3355,22 +3355,22 @@ msgstr ""
 #. type: Plain text
 #: 400.es.adoc:444
 msgid "Jun 13, 2008"
-msgstr ""
+msgstr "Jun 13, 2008"
 
 #. type: Plain text
 #: 400.es.adoc:445
 msgid "15 Jan 2011"
-msgstr ""
+msgstr "15 Jan 2011"
 
 #. type: Plain text
 #: 400.es.adoc:446
 msgid "2009 IV 02"
-msgstr ""
+msgstr "2009 IV 02"
 
 #. type: Plain text
 #: 400.es.adoc:447
 msgid "2 VII 1986"
-msgstr ""
+msgstr "2 VII 1986"
 
 #. type: Plain text
 #: 400.es.adoc:449
@@ -3381,13 +3381,13 @@ msgstr ""
 #: 400.es.adoc:451 400.es.adoc:452
 #, no-wrap
 msgid "Figura 52"
-msgstr ""
+msgstr "Figure 52"
 
 #. type: Target for macro image
 #: 400.es.adoc:452
 #, no-wrap
 msgid "img/es.figure-52.jpg"
-msgstr ""
+msgstr "img/es.figure-52.jpg"
 
 #. type: Plain text
 #: 400.es.adoc:455
@@ -3424,13 +3424,13 @@ msgstr ""
 #: 400.es.adoc:467 400.es.adoc:468
 #, no-wrap
 msgid "Figura 53"
-msgstr ""
+msgstr "Figure 53"
 
 #. type: Target for macro image
 #: 400.es.adoc:468
 #, no-wrap
 msgid "img/es.figure-53.jpg"
-msgstr ""
+msgstr "img/es.figure-53.jpg"
 
 #. type: Plain text
 #: 400.es.adoc:471
@@ -3441,13 +3441,13 @@ msgstr ""
 #: 400.es.adoc:473 400.es.adoc:474
 #, no-wrap
 msgid "Figura 54"
-msgstr ""
+msgstr "Figure 54"
 
 #. type: Target for macro image
 #: 400.es.adoc:474
 #, no-wrap
 msgid "img/es.figure-54.jpg"
-msgstr ""
+msgstr "img/es.figure-54.jpg"
 
 #. type: Plain text
 #: 400.es.adoc:478
@@ -3562,7 +3562,7 @@ msgstr ""
 #: 500.es.adoc:1
 #, no-wrap
 msgid "Rutinas de validación de la calidad de los datos"
-msgstr ""
+msgstr "Validation routines for data quality"
 
 #. type: Plain text
 #: 500.es.adoc:4
@@ -3578,12 +3578,12 @@ msgstr ""
 #: 500.es.adoc:7
 #, no-wrap
 msgid "¿Cómo funcionan las rutinas?"
-msgstr ""
+msgstr "How do the routines work?"
 
 #. type: Plain text
 #: 500.es.adoc:10
 msgid "Las rutinas comparan la información documentada en el conjunto de datos contra diferentes fuentes de referencia, y a partir de dicha comparación crean columnas de validación donde se puede identificar la correspondencia entre el archivo original y la fuente de referencia a través de operadores lógicos, unos (1) y ceros (0), que funcionan como indicadores de validación."
-msgstr ""
+msgstr "The routines compare the documented information in the dataset against different source references, and from this comparison, create validation columns where matches between the original folder and the source reference can be identified using logical operators, ones (1) and zeros (0), acting as indicators of validation."
 
 #. type: Plain text
 #: 500.es.adoc:12
@@ -3685,7 +3685,7 @@ msgstr ""
 #: 500.es.adoc:74
 #, no-wrap
 msgid "*Ejecutar la rutina*\n"
-msgstr ""
+msgstr "*Execute the routine*\n"
 
 #. type: delimited block *
 #: 500.es.adoc:76
@@ -3803,13 +3803,13 @@ msgstr ""
 #: 500.es.adoc:131 500.es.adoc:132
 #, no-wrap
 msgid "Figura 62"
-msgstr ""
+msgstr "Figure 62"
 
 #. type: Target for macro image
 #: 500.es.adoc:132
 #, no-wrap
 msgid "img/es.figure-62.jpg"
-msgstr ""
+msgstr "img/es.figure-62.jpg"
 
 #. type: delimited block *
 #: 500.es.adoc:135
@@ -3869,7 +3869,7 @@ msgstr ""
 #: 500.es.adoc:157 500.es.adoc:211 500.es.adoc:235 500.es.adoc:292
 #, no-wrap
 msgid "*Resultados:*\n"
-msgstr ""
+msgstr "*Results:*\n"
 
 #. type: Plain text
 #: 500.es.adoc:159
@@ -3880,13 +3880,13 @@ msgstr ""
 #: 500.es.adoc:161 500.es.adoc:162
 #, no-wrap
 msgid "Figura 63"
-msgstr ""
+msgstr "Figure 63"
 
 #. type: Target for macro image
 #: 500.es.adoc:162
 #, no-wrap
 msgid "img/es.figure-63.jpg"
-msgstr ""
+msgstr "img/es.figure-63.jpg"
 
 #. type: Plain text
 #: 500.es.adoc:165 500.es.adoc:334
@@ -4271,12 +4271,12 @@ msgstr ""
 #: 500.es.adoc:330
 #, no-wrap
 msgid "*Resultados*\n"
-msgstr ""
+msgstr "*Results*\n"
 
 #. type: Plain text
 #: 500.es.adoc:332
 msgid "En las primeras columnas del proyecto encontrará las columnas con los datos temporales reorganizadas junto con nuevas columnas resultantes de la rutina."
-msgstr ""
+msgstr "In the first columns of the project you will find the columns with the temporal data reorganized with new columns resulting from the routine."
 
 #. type: Plain text
 #: 500.es.adoc:336
@@ -4312,13 +4312,13 @@ msgstr ""
 #: 500.es.adoc:344 500.es.adoc:345
 #, no-wrap
 msgid "Figura 66"
-msgstr ""
+msgstr "Figure 66"
 
 #. type: Target for macro image
 #: 500.es.adoc:345
 #, no-wrap
 msgid "img/es.figure-66.jpg"
-msgstr ""
+msgstr "img/es.figure-66.jpg"
 
 #. type: Plain text
 #: 500.es.adoc:349
@@ -4329,13 +4329,13 @@ msgstr ""
 #: afterword.es.adoc:1
 #, no-wrap
 msgid "Epílogo"
-msgstr ""
+msgstr "Epilogue"
 
 #. type: Title ===
 #: afterword.es.adoc:3
 #, no-wrap
 msgid "Agradecimientos"
-msgstr ""
+msgstr "Acknowledgements"
 
 #. type: Plain text
 #: afterword.es.adoc:6
@@ -4357,7 +4357,7 @@ msgstr ""
 #: appa.es.adoc:7
 #, no-wrap
 msgid "Requerimientos"
-msgstr ""
+msgstr "Requirements"
 
 #. type: Plain text
 #: appa.es.adoc:10
@@ -4378,7 +4378,7 @@ msgstr ""
 #: appa.es.adoc:14
 #, no-wrap
 msgid "Instalación en MS Windows"
-msgstr ""
+msgstr "Installation on MS Windows"
 
 #. type: Plain text
 #: appa.es.adoc:16
