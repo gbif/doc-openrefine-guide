@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-06-01 16:42+0000\n"
+"POT-Creation-Date: 2023-06-01 16:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1126,11 +1126,10 @@ msgstr ""
 
 #. type: Plain text
 #: 200.es.adoc:222
-#, no-wrap
 msgid ""
 "Expresión ejemplo:\t[source]`cells[\"genus\"].value + \" \" + "
-"cells[\"specificEpithet\"].value` _(Expresión 1)_\n"
-"Expresión general:\t[source]`cells[\"campo1\"].value + \" \" + "
+"cells[\"specificEpithet\"].value` _(Expresión 1)_ + Expresión "
+"general:\t[source]`cells[\"campo1\"].value + \" \" + "
 "cells[\"campo2\"].value`"
 msgstr ""
 
