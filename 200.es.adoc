@@ -236,7 +236,7 @@ if(isBlank(cells["genus"].value), "", cells["genus"].value) + " " + if(isBlank(c
 ----
 _(Expresión 2)_
 
-Lo que dicha expresión significa es: concatenar ([source]`+`) dos partes, cada una proviene de una sub-expresión [source]`if`, separadas por un espacio ([source]`+ " " +`). Cada una de estas sub-expresiones indica: si ([source]`if`) el valor del campo dado es nulo ([source]`isBlank(cells["genus"].value)`), colocar un blanco  ([source]`""`), si no ([source]`,`), colocar el valor del campo ([source]`cells["genus"].value`). La otra sub-expresión es lo mismo pero para epíteto específico.
+Lo que dicha expresión significa es: concatenar ([source]`\+`) dos partes, cada una proviene de una sub-expresión [source]`if`, separadas por un espacio ([source]`+ " " +`). Cada una de estas sub-expresiones indica: si ([source]`if`) el valor del campo dado es nulo ([source]`isBlank(cells["genus"].value)`), colocar un blanco  ([source]`""`), si no ([source]`,`), colocar el valor del campo ([source]`cells["genus"].value`). La otra sub-expresión es lo mismo pero para epíteto específico.
 
 NOTE: Para evitar de modo más general este problema de celdas nulas, cuando importa el conjunto de datos para crear su proyecto al principio del proceso, puede asegurarse de NO seleccionar la opción “Store blank cells as nulls” (ver <<img-fig-04,Figura 4>>).
 

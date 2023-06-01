@@ -7,13 +7,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2021-02-25 13:16+0000\n"
+"POT-Creation-Date: 2023-06-01 16:42+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #. type: Title =
@@ -131,7 +131,8 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: colophon.es.adoc:33 preface.es.adoc:38 100.es.adoc:107 280.es.adoc:83 300.es.adoc:72 400.es.adoc:525 afterword.es.adoc:7
+#: colophon.es.adoc:33 preface.es.adoc:38 100.es.adoc:107 280.es.adoc:83
+#: 300.es.adoc:72 400.es.adoc:525 afterword.es.adoc:7
 msgid "<<<"
 msgstr ""
 
@@ -996,7 +997,6 @@ msgstr ""
 #: 200.es.adoc:116
 #, no-wrap
 msgid ""
-"\n"
 "|Separador\n"
 "|Tratamiento de nulos\n"
 "|genus\n"
@@ -1024,7 +1024,7 @@ msgstr ""
 #. type: Table
 #: 200.es.adoc:135
 msgid ""
-"  (sin especificar)  |Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ "
+"(sin especificar)  |Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ "
 "|Filago _(con un espacio extra después del género)_ |_null_ |lasiocarpa "
 "|lasiocarpa |_null_ |_null_ |_null_"
 msgstr ""
@@ -1063,13 +1063,13 @@ msgstr ""
 
 #. type: Table
 #: 200.es.adoc:164
-msgid "  (coma y espacio)"
+msgid "(coma y espacio)"
 msgstr ""
 
 #. type: Table
 #: 200.es.adoc:181
 msgid ""
-"  (sin especificar)  |Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ "
+"(sin especificar)  |Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ "
 "|Filago, _(con un espacio extra después de la coma)_ |_null_ |lasiocarpa "
 "|lasiocarpa |_null_ |_null_ |_null_"
 msgstr ""
@@ -1126,10 +1126,11 @@ msgstr ""
 
 #. type: Plain text
 #: 200.es.adoc:222
+#, no-wrap
 msgid ""
 "Expresión ejemplo:\t[source]`cells[\"genus\"].value + \" \" + "
-"cells[\"specificEpithet\"].value` _(Expresión 1)_ + Expresión "
-"general:\t[source]`cells[\"campo1\"].value + \" \" + "
+"cells[\"specificEpithet\"].value` _(Expresión 1)_\n"
+"Expresión general:\t[source]`cells[\"campo1\"].value + \" \" + "
 "cells[\"campo2\"].value`"
 msgstr ""
 
@@ -1189,7 +1190,7 @@ msgstr ""
 #. type: Plain text
 #: 200.es.adoc:240
 msgid ""
-"Lo que dicha expresión significa es: concatenar ([source]`+`) dos partes, "
+"Lo que dicha expresión significa es: concatenar ([source]`\\+`) dos partes, "
 "cada una proviene de una sub-expresión [source]`if`, separadas por un "
 "espacio ([source]`+ \" \" +`). Cada una de estas sub-expresiones indica: si "
 "([source]`if`) el valor del campo dado es nulo "
@@ -5315,7 +5316,8 @@ msgid "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValT
 msgstr ""
 
 #. type: Plain text
-#: 500.es.adoc:147 500.es.adoc:192 500.es.adoc:222 500.es.adoc:269 500.es.adoc:322
+#: 500.es.adoc:147 500.es.adoc:192 500.es.adoc:222 500.es.adoc:269
+#: 500.es.adoc:322
 #, no-wrap
 msgid "*Requerimientos:*\n"
 msgstr ""
@@ -5337,7 +5339,8 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: 500.es.adoc:153 500.es.adoc:203 500.es.adoc:229 500.es.adoc:276 500.es.adoc:326
+#: 500.es.adoc:153 500.es.adoc:203 500.es.adoc:229 500.es.adoc:276
+#: 500.es.adoc:326
 #, no-wrap
 msgid "*Funcionamiento:*\n"
 msgstr ""
