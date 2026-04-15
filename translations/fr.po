@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: openrefine-guide\n"
-"POT-Creation-Date: 2021-02-25 13:16+0000\n"
-"PO-Revision-Date: 2021-06-28 22:22\n"
+"POT-Creation-Date: 2026-04-15 13:19+0000\n"
+"PO-Revision-Date: 2026-04-15 13:24\n"
 "Last-Translator: \n"
 "Language-Team: French\n"
 "Language: fr_FR\n"
@@ -20,720 +20,720 @@ msgstr ""
 #: index.es.adoc:1
 #, no-wrap
 msgid "Guía para la limpieza de datos sobre biodiversidad con OpenRefine"
-msgstr ""
+msgstr "Guide sur le nettoyage de données de biodiversité avec OpenRefine"
 
 #. type: Plain text
 #: index.es.adoc:26
 msgid "languageLinks:combined[]"
-msgstr ""
+msgstr "languageLinks:combined[]"
 
 #. type: Target for macro image
 #: colophon.es.adoc:2
 #, no-wrap
 msgid "img/web/photo.jpg"
-msgstr ""
+msgstr "img/web/photo.jpg"
 
 #. type: Title ==
 #: colophon.es.adoc:5
 #, no-wrap
 msgid "Colofón"
-msgstr ""
+msgstr "Colophon"
 
 #. type: Title ===
 #: colophon.es.adoc:7
 #, no-wrap
 msgid "Cita bibliográfica sugerida"
-msgstr ""
+msgstr "Citation bibliographique suggérée"
 
 #. type: Plain text
 #: colophon.es.adoc:10
 msgid "Zermoglio PF, Plata Corredor CA, Wieczorek JR, Ortiz Gallego R & Buitrago L (2021) Guía para la limpieza de datos sobre biodiversidad con OpenRefine. Versión 3. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18."
-msgstr ""
+msgstr "Zermoglio PF, Plata Corredor CA, Wieczorek JR, Ortiz Gallego R & Buitrago L (2021) Guía para la limpieza de datos sobre biodiversidad con OpenRefine. Versión 3. Copenhagen: GBIF Secretariat. https://doi.org/10.15468/doc-gzjg-af18."
 
 #. type: Title ===
 #: colophon.es.adoc:11
 #, no-wrap
 msgid "Autores"
-msgstr ""
+msgstr "Auteurs"
 
 #. type: Plain text
 #: colophon.es.adoc:14
 msgid "https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0002-1632-9818[Camila A. Plata Corredor], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0003-1070-1081[Ricardo Ortiz Gallego] & https://orcid.org/0000-0002-0459-4024[Leonardo Buitrago]"
-msgstr ""
+msgstr "https://orcid.org/0000-0002-6056-5084[Paula F. Zermoglio], https://orcid.org/0000-0002-1632-9818[Camila A. Plata Corredor], https://orcid.org/0000-0003-1144-0290[John R. Wieczorek], https://orcid.org/0000-0003-1070-1081[Ricardo Ortiz Gallego] & https://orcid.org/0000-0002-0459-4024[Leonardo Buitrago]"
 
 #. type: Title ===
 #: colophon.es.adoc:15
 #, no-wrap
 msgid "Licencia"
-msgstr ""
+msgstr "Licence"
 
 #. type: Plain text
 #: colophon.es.adoc:18
 msgid "El documento Guía para la limpieza de datos sobre biodiversidad con OpenRefine se publica bajo una licencia https://creativecommons.org/licenses/by-sa/4.0/deed.es[Atribución-CompartirIgual 4.0 Internacional]."
-msgstr ""
+msgstr "Le document Guide sur le nettoyage de données de biodiversité avec OpenRefine est publié sous licence https://creativecommons.org/licenses/by-sa/4.0/deed.fr[Attribution - Partage dans les Mêmes Conditions 4.0 International]."
 
 #. type: Title ===
 #: colophon.es.adoc:19
 #, no-wrap
 msgid "URI persistente"
-msgstr ""
+msgstr "URI permanent"
 
 #. type: Plain text
 #: colophon.es.adoc:22
 msgid "https://doi.org/10.15468/doc-gzjg-af18"
-msgstr ""
+msgstr "https://doi.org/10.15468/doc-gzjg-af18"
 
 #. type: Title ===
 #: colophon.es.adoc:23
 #, no-wrap
 msgid "Control de documentos"
-msgstr ""
+msgstr "Contrôle des documents"
 
 #. type: Plain text
 #: colophon.es.adoc:26
 msgid "Versión 3, Febrero 2021."
-msgstr ""
+msgstr "Version 3, Février 2021."
 
 #. type: Plain text
 #: colophon.es.adoc:28
 msgid "Este documento se basa en dos publicaciones anteriores producidas por los mismos autores de esta Guía."
-msgstr ""
+msgstr "Ce document se base sur deux publications antérieures produitent par les mêmes auteurs de ce Guide."
 
 #. type: Title ===
 #: colophon.es.adoc:29
 #, no-wrap
 msgid "Imagen de la portada"
-msgstr ""
+msgstr "Image de couverture"
 
 #. type: Plain text
 #: colophon.es.adoc:32
 msgid "Una manada de guanaco (_Lama guanicoe_), Lago Argentino, Santa Cruz, Argentina. Foto 2016 Diego Carús via https://www.gbif.org/occurrence/2005372769[iNaturalist Research-grade Observations], licenciada bajo http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0]."
-msgstr ""
+msgstr "Un troupeau de guanaco (_Lama guanicoe_), Lago Argentino, Santa Cruz, Argentine. Photo 2016 Diego Carús via https://www.gbif.org/occurrence/2005372769[iNaturalist Research-grade Observations], sous licence http://creativecommons.org/licenses/by-nc/4.0/[CC BY-NC 4.0]."
 
 #. type: Plain text
-#: colophon.es.adoc:33 preface.es.adoc:38 100.es.adoc:107 280.es.adoc:83 300.es.adoc:72 400.es.adoc:525 afterword.es.adoc:7
+#: colophon.es.adoc:33 preface.es.adoc:38 100.es.adoc:107 280.es.adoc:83
+#: 300.es.adoc:72 400.es.adoc:525 afterword.es.adoc:7
 msgid "<<<"
-msgstr ""
+msgstr "<<<"
 
 #. type: Title ==
 #: preface.es.adoc:1
 #, no-wrap
 msgid "Prefacio"
-msgstr ""
+msgstr "Préface"
 
 #. type: Title ===
 #: preface.es.adoc:4
 #, no-wrap
 msgid "Comentarios Preliminares"
-msgstr ""
+msgstr "Commentaires préliminaires"
 
 #. type: Plain text
 #: preface.es.adoc:7
 msgid "Las imágenes incluidas en esta Guía están en idioma castellano."
-msgstr ""
+msgstr "Les images incluses dans ce Guide sont en castillan."
 
 #. type: Title ===
 #: preface.es.adoc:9
 #, no-wrap
 msgid "Objetivo"
-msgstr ""
+msgstr "Objectif"
 
 #. type: Plain text
 #: preface.es.adoc:12
 msgid "La presente guía ha sido construida con fines únicamente pedagógicos. El objetivo de esta guía es mostrar cómo utilizar algunas de las funciones de OpenRefine que pueden utilizarse para evaluar y mejorar la calidad de datos de biodiversidad."
-msgstr ""
+msgstr "Le présent guide a été développé uniquement à des fins éducatives. L'objectif de ce guide est de montrer de quelle manière utiliser certaines des fonctions d'OpenRefine afin d'évaluer et d'améliorer la qualité de données de biodiversité."
 
 #. type: Title ===
 #: preface.es.adoc:13
 #, no-wrap
 msgid "Cómo usar esta guía"
-msgstr ""
+msgstr "Comment utiliser ce guide"
 
 #. type: Plain text
 #: preface.es.adoc:16
 msgid "En esta guía se muestra cómo utilizar algunas funciones de OpenRefine para la evaluación y mejoramiento de la calidad de un conjunto de datos de biodiversidad. Los ejemplos de uso presentados en esta guía constituyen sólo algunas de las alternativas posibles para el tratamiento de datos en OpenRefine."
-msgstr ""
+msgstr "Ce guide présente comment utiliser certaines fonctions de OpenRefine à des fins d'évaluation et d'amélioration de la qualité d'un jeu de données de biodiversité. Les exemples d'utilisation présentés dans ce guide constituent seulement quelques-unes des alternatives possibles pour le traitement des données dans OpenRefine."
 
 #. type: Plain text
 #: preface.es.adoc:18
 msgid "Para hacer un mejor uso de esta guía, se recomienda seguir los pasos utilizando el programa OpenRefine y el conjunto de datos modelo provisto junto con este documento. Todos los ejemplos presentados corresponden a un conjunto de datos de biodiversidad que ha sido específicamente modificado por los autores."
-msgstr ""
+msgstr "Afin d'optimiser l'utilité de ce guide, nous recommandons de suivre les étapes en utilisant le programme OpenRefine en conjonction avec les jeux de données modèles fournis avec ce document. Tous les exemples présentés correspondent à un jeu de données de biodiversité ayant été spécifiquement modifié par les auteurs."
 
 #. type: Plain text
 #: preface.es.adoc:20
 msgid "En la Guía se utilizan los términos ‘campo’ y ‘columna’ indistintamente."
-msgstr ""
+msgstr "Dans ce Guide, les termes \"champs\" et \"colonne\" sont utilisés indifféremment."
 
 #. type: Plain text
 #: preface.es.adoc:22
 msgid "En el texto se utiliza el siguiente formato para los [source]`\"nombres de los campos originales\"`."
-msgstr ""
+msgstr "Dans le texte, nous utilisons le format suivant pour les [source]`\"noms des champs d'origine\"`."
 
 #. type: Plain text
 #: preface.es.adoc:24
 msgid "====\tSoftware"
-msgstr ""
+msgstr "====\tLogiciel"
 
 #. type: Plain text
 #: preface.es.adoc:26
 msgid "La versión de OpenRefine utilizada para la confección de esta guía es OpenRefine 3.3. Aunque no es la última versión disponible, es la última con la cual todos los pasos explicados en esta Guía han sido probados sin presentar problemas."
-msgstr ""
+msgstr "La version d'OpenRefine utilisée pour la création de ce guide est OpenRefine 3.3. Bien que ce ne soit pas la dernière version disponible, c'est la version avec laquelle toutes les étapes expliquées dans ce Guide ont été testées sans présenter de problèmes."
 
 #. type: Plain text
 #: preface.es.adoc:28
 msgid "Para ver detalles sobre cómo descargar e instalar OpenRefine en su computadora, ver el <<app-a,Apéndice 1>>."
-msgstr ""
+msgstr "Pour voir les détails concernant la manière de télécharger et installer OpenRefine sur son ordinateur, veuillez vous référer à <<app-a,Apéndice 1>>."
 
 #. type: Plain text
 #: preface.es.adoc:31
 msgid "====\tDatos"
-msgstr ""
+msgstr "====\tDonnées"
 
 #. type: Plain text
 #: preface.es.adoc:33
 msgid "El conjunto de datos modelo utilizado en esta guía puede obtenerse aquí: link:../data/EjercicioModelo_OpenRefine_Datos.csv[EjercicioModelo_OpenRefine_Datos.csv,opts=download]. Descargar el archivo, y no manipularlo en otros programas (e.g., MS Excel) antes de abrirlo en OpenRefine, dado que ello puede cambiar los formatos y/o codificación del archivo."
-msgstr ""
+msgstr "Le jeu de données modèle utilisé dans ce guide peut être récupéré ici : link:../data/EjercicioModelo_OpenRefine_Datos.csv[EjercicioModelo_OpenRefine_Datos.csv,opts=download]. Téléchargez le fichier, mais ne le manipulez pas dans un autre programme (ex. MS Excel) avant de l'ouvrir dans OpenRefine, étant donné que ces programmes peuvent modifier le formatage et/ou l'encodage du fichier."
 
 #. type: Plain text
 #: preface.es.adoc:35
 msgid "El conjunto de datos modelo fue derivado a partir de:"
-msgstr ""
+msgstr "Le jeu de données modèle est dérivé de :"
 
 #. type: Plain text
 #: preface.es.adoc:37
 msgid "_Williams J (2018). Colección de Herbario. Version 3.1. Facultad de Ciencias Naturales y Museo - U.N.L.P.. Occurrence dataset https://doi.org/10.15468/i9bj5r accessed via GBIF.org on 2019-04-18._"
-msgstr ""
+msgstr "_Williams J (2018). Colección de Herbario. Version 3.1. Facultad de Ciencias Naturales y Museo - U.N.L.P.. Occurrence dataset https://doi.org/10.15468/i9bj5r accessed via GBIF.org on 2019-04-18._"
 
 #. type: Title ==
 #: 100.es.adoc:1
 #, no-wrap
 msgid "Primeros pasos: datos y proyectos"
-msgstr ""
+msgstr "Premières étapes : données et projets"
 
 #. type: Title ===
 #: 100.es.adoc:3
 #, no-wrap
 msgid "Carga de datos y creación de un proyecto"
-msgstr ""
+msgstr "Chargement des données et création d'un projet"
 
 #. type: Plain text
 #: 100.es.adoc:6
 msgid "Para comenzar a utilizar OpenRefine debe cargar sus datos en el programa y crear un proyecto. Para ello, siga los siguientes pasos:"
-msgstr ""
+msgstr "Pour commencer à utiliser OpenRefine, vous devez charger vos données dans le programme et créer un projet. Pour ce faire, suivez les étapes suivantes :"
 
 #. type: Title ===
 #: 100.es.adoc:9 500.es.adoc:60
 #, no-wrap
 msgid "Paso 1"
-msgstr ""
+msgstr "Étape 1"
 
 #. type: delimited block *
 #: 100.es.adoc:12
 #, no-wrap
 msgid "*Abra la aplicación OpenRefine*. Si utiliza Windows, se abrirá una ventana de comandos que mostrará las acciones que OpenRefine está realizando (<<img-fig-01,Figura 1>>). *_No cierre esta ventana mientras esté trabajando con el programa._*\n"
-msgstr ""
+msgstr "*Ouvrez l'application OpenRefine*. Si vous utilisez Windows, une fenêtre du terminal s'ouvrira, vous montrant les actions que OpenRefine est en train de réaliser (<<img-fig-01,Figura 1>>). *_Ne fermez pas cette fenêtre puisque celle-ci travaille avec le programme._*\n"
 
 #. type: Block title
 #: 100.es.adoc:14
 #, no-wrap
 msgid "Figura 1"
-msgstr ""
+msgstr "Figure 1"
 
 #. type: Target for macro image
 #: 100.es.adoc:15
 #, no-wrap
 msgid "img/es.figure-01.jpg"
-msgstr ""
+msgstr "img/es.figure-01.jpg"
 
 #. type: delimited block *
 #: 100.es.adoc:18
 msgid "OpenRefine se abrirá en el navegador que usted utilice por defecto inmediatamente después de ejecutar la aplicación (<<img-fig-02,Figura 2>>). Si OpenRefine no abre, puede acceder manualmente ingresando la siguiente URL en su navegador:"
-msgstr ""
+msgstr "OpenRefine s'ouvre dans votre navigateur par défaut immédiatement après avoir exécuté l'application (<<img-fig-02,Figura 2>>). Si OpenRefine ne s'ouvre pas, vous pouvez l'ouvrir manuellement en entrant l'URL suivante dans votre navigateur :"
 
 #. type: delimited block *
 #: 100.es.adoc:20
 msgid "http://127.0.0.1:3333"
-msgstr ""
+msgstr "http://127.0.0.1:3333"
 
 #. type: delimited block *
 #: 100.es.adoc:23
 msgid "Si bien puede ejecutar el programa utilizando cualquier navegador, nuestra recomendación es que utilice Google Chrome, pues otros navegadores suelen presentar diversos problemas, sobre todo cuando se intentan utilizar funciones más complejas."
-msgstr ""
+msgstr "Bien qu'il soit possible d'exécuter le programme dans n'importe quel navigateur, notre recommandation est d'utiliser Google Chrome, puisque d'autres navigateurs pourraient présenter divers problèmes, surtout en essayent d'utiliser des fonctions plus complexes."
 
 #. type: delimited block *
 #: 100.es.adoc:25
 msgid "Si bien OpenRefine utiliza la interfaz de un navegador para trabajar, todos los procesos (e.g., creación de proyectos, carga de datos, procesamiento, etc.) se realizan localmente, es decir, en su computadora, sin subir datos en línea. Por tanto, para utilizar la mayoría de las funciones del programa no hace falta una conexión a Internet. Algunas funciones, sin embargo, como las <<sect-4,Consultas a servicios externos>>, sí requieren conexión."
-msgstr ""
+msgstr "Bien qu'OpenRefine utilise l'interface d'un navigateur pour travailler, tous les processus (par ex. la création de projets, le chargement des données, les actions, etc.) sont effectués localement, ce qui signifie, dans votre ordinateur, sans que les données ne soient téléchargées en ligne. Ainsi, une connexion Internet n'est pas nécessaire pour effectuer la plupart des fonctions du programme. Certaines fonctions par contre, comme les <<sect-4,Requêtes auprès de services externes>>, nécessitent une connexion."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 100.es.adoc:28 100.es.adoc:29
 #, no-wrap
 msgid "Figura 2"
-msgstr ""
+msgstr "Figure 2"
 
 #. type: Target for macro image
 #: 100.es.adoc:29
 #, no-wrap
 msgid "img/es.figure-02.jpg"
-msgstr ""
+msgstr "img/es.figure-02.jpg"
 
 #. type: delimited block *
 #: 100.es.adoc:32
 msgid "En el menú de la izquierda tiene opciones para crear, abrir o importar proyectos. Si usted no tiene ningún proyecto aún, en la opción de “Abrir proyecto” verá una lista vacía."
-msgstr ""
+msgstr "Dans le menu à gauche, plusieurs options permettent de créer, ouvrir ou importer des projets. Si vous n'avez encore aucun projet, vous verrez une liste vide dans la section \"Ouvrir un projet\"."
 
 #. type: delimited block *
 #: 100.es.adoc:34
 msgid "Además puede cambiar la configuración de idioma. Para ello, haga click en “Idioma” y en la siguiente pantalla (<<img-fig-03,Figura 3>>) seleccione el idioma preferido. Acepte los cambios. En esta guía se utilizará el idioma Español."
-msgstr ""
+msgstr "De plus, il est possible de modifier les paramètres de langues. Pour cela, il suffit de cliquer sur \"Languages\" ou \"Langues\", de sélectionner la langue préférée dans la fenêtre suivante (<<img-fig-03,Figura 3>>) et d'accepter les modifications. Dans ce guide, nous utilisons l'espagnol dans les figures (langue d'origine du guide) et le français dans le texte."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 100.es.adoc:36 100.es.adoc:37
 #, no-wrap
 msgid "Figura 3"
-msgstr ""
+msgstr "Figure 3"
 
 #. type: Target for macro image
 #: 100.es.adoc:37
 #, no-wrap
 msgid "img/es.figure-03.jpg"
-msgstr ""
+msgstr "img/es.figure-03.jpg"
 
 #. type: Title ===
 #: 100.es.adoc:43 500.es.adoc:71
 #, no-wrap
 msgid "Paso 2"
-msgstr ""
+msgstr "Étape 2"
 
 #. type: delimited block *
 #: 100.es.adoc:46
 #, no-wrap
 msgid "*Cargue los datos* (<<img-fig-02,Figura 2>>). Dentro de la opción “Crear proyecto”, escoja el archivo que desea cargar. Note que hay varios formatos posibles de archivos que se pueden subir (tsv, csv, xls, json, etc). Haga click en “Siguiente”. \n"
-msgstr ""
+msgstr "*Chargement des données* (<<img-fig-02,Figure 2>>). Dans l'option \"Créer un projet\", choisissez le fichier que vous souhaitez charger. Notez qu'il est possible de charger différents formats de fichier (tsv, csv, xls, json, etc). Cliquez ensuite sur \"Suivant\".\n"
 
 #. type: delimited block *
 #: 100.es.adoc:48
 msgid "Para seguir esta guía, cargue el archivo proporcionado, al que puede acceder a través del enlace provisto en la sección <<datos,Cómo usar esta guía: Datos>>."
-msgstr ""
+msgstr "Afin de pouvoir suivre ce guide, chargez le fichier fourni, auquel vous avez accès à partir du lien présent dans la section <<données,Comment utiliser ce guide: Données>>."
 
 #. type: delimited block *
 #: 100.es.adoc:50
 msgid "Si sube archivos con formato .xls o .xlsx, tenga en cuenta que no podrá modificar la codificación, y que pueden encontrarse algunos errores en los datos (ejemplo: los tildes en las palabras se verán como símbolos raros cuando cargue los datos). Para evitarse problemas, si trabaja con MS Excel es conveniente que exporte los datos como archivo .csv (de todas formas, tenga cuidado con la codificación, ver más abajo)."
-msgstr ""
+msgstr "Si vous téléchargez un fichier au format .xls ou .xlsx, prenez en considération le fait qu'il ne sera pas possible de modifier l'encodage des caractères et que vous pourriez rencontrer quelques erreurs dans les données (exemple : les accents dans les mots pourraient apparaître comme des symboles étranges lors du chargement des données). Afin d'éviter ce problème, si vous travaillez avec MS Excel, il est pratique d'exporter les données comme un fichier .csv (quoi qu'il en soit, faites attention à l'encodage, que nous aborderons ci-dessous)."
 
 #. type: delimited block *
 #: 100.es.adoc:52
 msgid "Verá entonces una pantalla como la que se muestra en la <<img-fig-04,Figura 4>>. Allí puede encontrar dos cuadros de texto arriba a la derecha, uno para indicar el nombre de su proyecto, y otro que permite asignar etiquetas (“tags”) a su proyecto. Puede asignar tantas etiquetas como desee, escribiéndolas en el cuadro. Las etiquetas le ayudarán a organizar mejor sus proyectos, y podrá verlas y editarlas a través del menú “Abrir proyecto” junto al nombre de su proyecto (ver sección “Abrir un proyecto y modificar sus metadatos” más abajo para más detalles sobre cómo agregar o cambiar etiquetas y otros elementos de los metadatos de los proyectos). Además, en esta pantalla puede ver una muestra de sus datos (tabla) y modificar varios aspectos de la carga de los datos al programa: codificación, criterio para la separación en columnas, inclusión o no de las primeras filas, etc."
-msgstr ""
+msgstr "Vous verrez par la suite une fenêtre telle que celle présentée dans la <<img-fig-04,Figure 4>>. Vous y trouverez deux zones de texte en haut à droite, l'une pour indiquer le nom du projet et la seconde pour assigner des étiquettes (\"tags\") au projet. Il est possible d'assigner autant d'étiquette que vous le souhaitez, en les indiquant dans la zone appropriée. Les étiquettes aident à mieux organiser vos projets, et vous pourrez les voir et les modifier via le menu \"Ouvrir un projet\", à côté du nom du projet (voir la section \"Ouvrir un projet et modifier ses métadonnées\" ci-dessous, afin de voir plus en détail comment ajouter ou modifier les étiquettes et d'autres éléments des métadonnées des projets). Enfin, cette fenêtre permet de prévisualiser les données (table) et de modifier différents aspects du chargement des données dans le programme : encodage, critères de séparation des colonnes, inclusion ou nom de la première ligne, etc."
 
 #. type: delimited block *
 #: 100.es.adoc:54
 msgid "OpenRefine sugiere algunas de las codificaciones más utilizadas cuando se hace click en el cuadro de texto “Codificación de caracteres”. Asegúrese de escoger correctamente la codificación. Si está utilizando el conjunto de datos de prueba proporcionado, escoja UTF-8 (<<img-fig-05,Figura 5>>)."
-msgstr ""
+msgstr "OpenRefine suggère quelques-uns des encodages les plus couramment utilisés lorsque vous cliquez dans la zone de texte \"Encodage des caractères\". Assurez-vous de choisir correctement l'encodage. Si vous utilisez le jeu de données fourni, choisissez UTF-8 (<<img-fig-05,Figura 5>>)."
 
 #. type: delimited block *
 #: 100.es.adoc:56
 msgid "OpenRefine presenta la opción de “Detectar y transformar texto en números, fechas, …”. Si esta opción es seleccionada, el programa tratará de interpretar ciertos campos transformándolos a determinados formatos. Por ejemplo, si detecta campos de fecha, tratará de colocar los valores de las celdas de ese campo en formato de fecha estándar. Dada la naturaleza de los datos sobre biodiversidad con los que solemos trabajar, estas interpretaciones pueden ser incorrectas e introducir más errores. Asegúrese entonces de desmarcar esta opción durante el paso de importación de datos."
-msgstr ""
+msgstr "OpenRefine propose l'option de \"Détecter et transformer le texte en nombres, dates, ...\". Si cette option est sélectionnée, le programme tentera d'interpréter certains champs en les transformant selon les formats déterminés. Par exemple, s'il détecte des champs contenant des dates, il tentera de modifier les valeurs des cellules de ces champs au format de dates standardisées. Au regard de la nature des données de biodiversité avec lesquelles nous travaillons, ces interprétations pourraient être erronées et introduire de nouvelles erreurs. Assurez-vous donc de désélectionner cette option lors de l'étape d'importation des données."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 100.es.adoc:58 100.es.adoc:59
 #, no-wrap
 msgid "Figura 4"
-msgstr ""
+msgstr "Figure 4"
 
 #. type: Target for macro image
 #: 100.es.adoc:59
 #, no-wrap
 msgid "img/es.figure-04.jpg"
-msgstr ""
+msgstr "img/es.figure-04.jpg"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 100.es.adoc:62 100.es.adoc:63
 #, no-wrap
 msgid "Figura 5"
-msgstr ""
+msgstr "Figure 5"
 
 #. type: Target for macro image
 #: 100.es.adoc:63
 #, no-wrap
 msgid "img/es.figure-05.jpg"
-msgstr ""
+msgstr "img/es.figure-05.jpg"
 
 #. type: Title ===
 #: 100.es.adoc:69 500.es.adoc:100
 #, no-wrap
 msgid "Paso 3"
-msgstr ""
+msgstr "Étape 3"
 
 #. type: delimited block *
 #: 100.es.adoc:72
 #, no-wrap
 msgid "*Cree el proyecto*. Una vez que haya seleccionado las opciones de carga de datos, haga click en el botón “Crear Proyecto” arriba a la derecha.\n"
-msgstr ""
+msgstr "*Créer un projet*. Une fois que vous aurez sélectionné les options de chargement des données, cliquez sur le bouton \"Créer un projet\" en haut à gauche.\n"
 
 #. type: delimited block *
 #: 100.es.adoc:74
 msgid "Cuando se cargan datos en OpenRefine y se crea un proyecto, el programa hace una copia de los datos provistos. De esta forma, el archivo local original nunca se modifica, garantizando no perder los datos originales."
-msgstr ""
+msgstr "Quand les données sont chargées dans OpenRefine et qu'un projet est créé, le programme fait une copie des données fournies. De cette manière, le fichier local original n'est aucunement modifié, garantissant de conserver les données originales intactes."
 
 #. type: Title ===
 #: 100.es.adoc:79 500.es.adoc:122
 #, no-wrap
 msgid "Paso 4"
-msgstr ""
+msgstr "Étape 4"
 
 #. type: delimited block *
 #: 100.es.adoc:82
 #, no-wrap
 msgid "*¡Felicitaciones!* Ya tiene un proyecto (lo verá como en la <<img-fig-06,Figura 6>>).\n"
-msgstr ""
+msgstr "*Félicitations !* Vous avez un projet (vous le verrez tel que sur la <<img-fig-06,Figure 6>>).\n"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 100.es.adoc:84 100.es.adoc:85
 #, no-wrap
 msgid "Figura 6"
-msgstr ""
+msgstr "Figure 6"
 
 #. type: Target for macro image
 #: 100.es.adoc:85
 #, no-wrap
 msgid "img/es.figure-06.jpg"
-msgstr ""
+msgstr "img/es.figure-06.jpg"
 
 #. type: delimited block *
 #: 100.es.adoc:88
 msgid "El número total de filas cargadas se muestra en este momento arriba de la tabla en negrita (para el caso del conjunto de datos provisto, 24984 filas). Sin embargo, verá que el número de filas mostradas en la tabla es limitado. No desespere, OpenRefine sólo muestra hasta 50 filas. Las acciones que uno pueda tomar en la aplicación, sin embargo, pueden tener efecto sobre otras filas aunque éstas no sean mostradas."
-msgstr ""
+msgstr "Le nombre total de lignes chargées est visible à ce moment-là en gras en haut de la table (pour le jeu de données fourni, 24984 lignes). Néanmoins, vous verrez que le nombre de lignes visible dans la table est limité. Ne désespérez pas, OpenRefine n'affiche que jusqu'à 50 lignes. Les actions qui sont effectuées dans l'application, néanmoins, seront effectives dans les autres lignes même si elles ne sont pas affichées."
 
 #. type: Title ===
 #: 100.es.adoc:91
 #, no-wrap
 msgid "Abrir un proyecto y modificar sus metadatos"
-msgstr ""
+msgstr "Ouvrir un projet et modifier ses métadonnées"
 
 #. type: Plain text
 #: 100.es.adoc:94
 msgid "Una vez que ha creado uno o más proyectos, podrá acceder a ellos a través del menú “Abrir proyecto” (<<img-fig-03,Figura 3>>. Cuando ingresa a este menú, verá listados todos sus proyectos, con una serie de metadatos básicos que puede utilizar para ordenar su lista (<<img-fig-07,Figura 7a>>). Los metadatos mostrados incluyen el nombre del proyecto, la fecha de última modificación, las etiquetas asignadas (“tags”), el número de filas, etc."
-msgstr ""
+msgstr "Une fois que vous aurez créé un ou plusieurs projets, vous pourrez accéder à ceux-ci via le menu \"Ouvrir un projet\" (<<img-fig-03,Figure 3>>). Lorsque vous entrez dans ce menu, vous verrez une liste de tous les projets, accompagnés d'une série de métadonnées de base que vous pourrez utiliser pour ordonner votre liste (<<img-fig-07,Figure 7a>>). Les métadonnées affichées incluent le nom du projet, la date de la dernière modification, les étiquettes assignées (\"tags\"), le nombre de lignes, etc."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 100.es.adoc:96 100.es.adoc:97
 #, no-wrap
 msgid "Figura 7"
-msgstr ""
+msgstr "Figure 7"
 
 #. type: Target for macro image
 #: 100.es.adoc:97
 #, no-wrap
 msgid "img/es.figure-07.jpg"
-msgstr ""
+msgstr "img/es.figure-07.jpg"
 
 #. type: Plain text
 #: 100.es.adoc:100
 msgid "Si desea editar los metadatos, debe ingresar a la opción “Acerca de”, a la izquierda en la tabla de proyectos (<<img-fig-07,Figura 7a>>). Se abrirá entonces una ventana como la mostrada en la <<img-fig-07,Figura 7b>>. Si desea modificar los distintos elementos de los metadatos, puede utilizar el botón “Editar” sobre cada parámetro. Por ejemplo, si olvidó colocar una etiqueta al crear un proyecto, puede hacerlo más tarde desde este menú. Contar con buenos metadatos puede ayudarle a organizar sus proyectos, sobre todo lleva a cabo trabajo colaborativo."
-msgstr ""
+msgstr "Si vous désirez modifier les métadonnées, vous devez cliquer sur l'option \"Détails\", à gauche dans la liste des projets (<<img-fig-07,Figure 7a>>). Une fenêtre s'ouvrira alors, tel que montré sur la <<img-fig-07,Figure 7b>>. Si vous souhaitez modifier un élément précis des métadonnées, vous pouvez utiliser le bouton \"Éditer\" correspondant à cet élément. Par exemple, si vous avez oublié d'assigner une étiquette lors de la création d'un projet, vous pourrez le faire plus tard via ce menu. Avoir de bonnes métadonnées peut vous aider à organiser vos projets, surtout lorsque vous effectuez un travail colaboratif."
 
 #. type: Title ===
 #: 100.es.adoc:101
 #, no-wrap
 msgid "Asignar suficientes recursos al programa"
-msgstr ""
+msgstr "Allouer suffisamment de ressources au programme"
 
 #. type: Plain text
 #: 100.es.adoc:103
 msgid "Para que OpenRefine pueda funcionar correctamente se requiere contar con suficiente memoria en la computadora asignada al programa. Especialmente si se trabajará con conjuntos de datos grandes, la memoria asignada afectará la velocidad de procesamiento e incluso podría limitar la capacidad para aplicar ciertas funciones."
-msgstr ""
+msgstr "Afin que OpenRefine puisse fonctionner correctement, il est nécessaire d'allouer suffisamment de mémoire au programme. Ceci est particulièrement important losrque vous travaillez avec de larges jeux de données, puisque la mémoire assignée affectera la vitesse de traitement et pourrait limiter la capacité d'utiliser certaines fonctions."
 
 #. type: Plain text
 #: 100.es.adoc:105
 msgid "Por defecto, el programa utiliza 1 gigabyte (GB, o 1024MB) de memoria, pero la cantidad de memoria asignada puede modificarse para optimizar el desempeño. Para conocer los detalles sobre cómo modificar la memoria asignada en distintos sistemas operativos, vea la documentación provista en el https://docs.openrefine.org/[Manual del Usuario de OpenRefine]."
-msgstr ""
+msgstr "Par défaut, le programme utilise 1 gigabyte (GB, ou 1024MB) de mémoire, mais la quantité de mémoire assignée peut être modifiée afin d'optimiser la performance. Afin de connaître les détails sur la manière de modifier la quantité de mémoire assignée dans des systèmes d'exploitation différents, veuillez vous référer à la documention fournie dans le https://docs.openrefine.org/[Manuel d'utilisation d'OpenRefine]."
 
 #. type: Title ==
 #: 200.es.adoc:1
 #, no-wrap
 msgid "Limpieza de datos "
-msgstr ""
+msgstr "Nettoyage Des Données "
 
 #. type: Title ===
 #: 200.es.adoc:3
 #, no-wrap
 msgid "Manejo básico de columnas"
-msgstr ""
+msgstr "Manipulation de base des colonnes"
 
 #. type: Title ====
 #: 200.es.adoc:5
 #, no-wrap
 msgid "Renombrar, eliminar y mover columnas"
-msgstr ""
+msgstr "Renommer, supprimer et déplacer des colonnes"
 
 #. type: Plain text
 #: 200.es.adoc:8
 msgid "Veamos primero algunas funciones básicas que se pueden aplicar sobre los campos:"
-msgstr ""
+msgstr "Voyons en premier quelques fonctions de bases pouvant être appliquées aux champs :"
 
 #. type: Plain text
 #: 200.es.adoc:10
 #, no-wrap
 msgid "*Renombrar un campo.*\n"
-msgstr ""
+msgstr "*Renommer un champ*\n"
 
 #. type: Plain text
 #: 200.es.adoc:12
 msgid "Hacer click en \"la &#9660; azul del campo > Editar columnas > Renombrar esta columna\""
-msgstr ""
+msgstr "Cliquez sur \"la &#9660; bleue du champ > Éditer la colonne > Renommer cette colonne\""
 
 #. type: Plain text
 #: 200.es.adoc:14
 #, no-wrap
 msgid "*Eliminar un campo.*\n"
-msgstr ""
+msgstr "*Supprimer un champ*\n"
 
 #. type: Plain text
 #: 200.es.adoc:16
 msgid "Hacer click en \"la &#9660; azul del campo > Editar columnas > Eliminar esta columna\""
-msgstr ""
+msgstr "Cliquez sur \"la &#9660; bleue du champ > Éditer la colonne > Supprimer cette colonne\""
 
 #. type: Plain text
 #: 200.es.adoc:18
 #, no-wrap
 msgid "*Mover un campo.*\n"
-msgstr ""
+msgstr "*Déplacer un champ*\n"
 
 #. type: Plain text
 #: 200.es.adoc:20
 msgid "Hacer click en"
-msgstr ""
+msgstr "Cliquez sur"
 
 #. type: Plain text
 #: 200.es.adoc:22
 msgid "… \"la &#9660; azul del campo > Editar columnas > Mover columna al principio\""
-msgstr ""
+msgstr "... \"la &#9660; bleue du champ > Éditer la colonne > Déplacer la colonne en premier\""
 
 #. type: Plain text
 #: 200.es.adoc:24
 msgid "… \"la &#9660; azul del campo > Editar columnas > Mover columna al final\""
-msgstr ""
+msgstr "... \"la &#9660; bleue du champ > Éditer la colonne > Déplacer la colonne en dernier\""
 
 #. type: Plain text
 #: 200.es.adoc:26
 msgid "… \"la &#9660; azul del campo > Editar columnas > Mover columna a la izquierda\""
-msgstr ""
+msgstr "... \"la &#9660; bleue du champ > Éditer la colonne > Déplacer la colonne à gauche\""
 
 #. type: Plain text
 #: 200.es.adoc:28
 msgid "… \"la &#9660; azul del campo > Editar columnas > Mover columna a la derecha\""
-msgstr ""
+msgstr "... \"la &#9660; bleue du champ > Éditer la colonne > Déplacer la colonne à droite\""
 
 #. type: Plain text
 #: 200.es.adoc:30
 msgid "Estas tres opciones pueden verse en la <<img-fig-08,Figura 8>>."
-msgstr ""
+msgstr "Ces trois options sont visibles dans la <<img-fig-08,Figure 8>>."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 200.es.adoc:32 200.es.adoc:33
 #, no-wrap
 msgid "Figura 8"
-msgstr ""
+msgstr "Figure 8"
 
 #. type: Target for macro image
 #: 200.es.adoc:33
 #, no-wrap
 msgid "img/es.figure-08.jpg"
-msgstr ""
+msgstr "img/es.figure-08.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:36
 #, no-wrap
 msgid "*Reordenar o eliminar varios campos a la vez.*\n"
-msgstr ""
+msgstr "*Réordonner ou éliminer plusieurs champs à la fois*\n"
 
 #. type: Plain text
 #: 200.es.adoc:38
 msgid "Para esta función se utiliza el campo “Todo”, que se encuentra como primera columna de la tabla. Este campo no forma parte de los datos originales, es agregado por el programa para permitir llevar a cabo ciertas funciones."
-msgstr ""
+msgstr "Cette fonction est disponible via le champ \"Toutes\", qui correspond à la première colonne de la table. Ce champ ne fait pas partie des données originales, il est ajouté par le programme pour lui permettre d'exécuter certaines fonctions."
 
 #. type: Plain text
 #: 200.es.adoc:40
 msgid "Hacer click en \"la &#9660; azul en el campo “Todo” > Editar columnas > Ordenar / Eliminar columnas…\" (<<img-fig-09,Figura 9a>>)."
-msgstr ""
+msgstr "Cliquez sur \"la &#9660; bleue dans le champ \"Toutes\" > Éditer les colonnes > Retrier / Supprimer les colonnes...\" (<<img-fig-09,Figure 9a>>)."
 
 #. type: Plain text
 #: 200.es.adoc:42
 msgid "Se abrirá entonces una ventana como la que se muestra en la <<img-fig-09,Figura 9b>>. Allí puede ordenar los campos simplemente arrastrándolos arriba o abajo en la lista, y eliminarlos arrastrándolos hacia la parte derecha de la ventana. Una vez que termine de modificar el orden de los campos, haga click en “Aceptar”."
-msgstr ""
+msgstr "Une fenêtre comme celle illustrée dans la <<img-fig-09,Figure 9b>> s'ouvrira alors. Dans cette fenêtre, vous pouvez réordonner les champs simplement en les faisant glisser vers le haut ou vers le bas dans la liste, et les supprimer en les faisant glisser vers le côté droit de la fenêtre. Une fois que vous avez terminé de modifier l'ordre des champs, cliquez sur \"OK\"."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 200.es.adoc:44 200.es.adoc:45
 #, no-wrap
 msgid "Figura 9"
-msgstr ""
+msgstr "Figure 9"
 
 #. type: Target for macro image
 #: 200.es.adoc:45
 #, no-wrap
 msgid "img/es.figure-09.jpg"
-msgstr ""
+msgstr "img/es.figure-09.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:48
 msgid "En OpenRefine se considera que cualquiera de los cuatro cambios descriptos anteriormente son cambios a los datos, y por ende se registran como tales en el historial de cambios (ver más abajo sección <<sect-2.5,Deshacer y rehacer cambios>>)."
-msgstr ""
+msgstr "Dans OpenRefine, chacune des quatre modifications décrites ci-dessus est considérée comme une modification des données et est donc enregistrée comme telle dans l'historique des modifications (voir la section <<sect-2.5,Annuler et rétablir les modifications>> ci-après)."
 
 #. type: Title ====
 #: 200.es.adoc:49
 #, no-wrap
 msgid "Nuevas columnas vacías"
-msgstr ""
+msgstr "Nouvelles colonnes vides"
 
 #. type: Plain text
 #: 200.es.adoc:52
 msgid "Se pueden crear nuevos campos en base a cero, uno o más campos preexistentes."
-msgstr ""
+msgstr "Il est possible de créer de nouveaux champs en partant de zéro, d'un ou de plusieurs champs préexistants."
 
 #. type: Plain text
 #: 200.es.adoc:54
 msgid "Para crear un nuevo campo de cero, sobre cualquier columna preexistente siga la ruta:"
-msgstr ""
+msgstr "Pour créer un nouveau champ à partir de zéro, sur n'importe quelle colonne existante, suivez ce chemin :"
 
 #. type: Plain text
 #: 200.es.adoc:56
 msgid "\"Editar columnas > Agregar columna basada en esta columna…\""
-msgstr ""
+msgstr "\"Éditer la colonne > Ajouter une colonne en fonction de cette colonne...\""
 
 #. type: Plain text
 #: 200.es.adoc:58
 msgid "Se abrirá una ventana como la que se muestra en la <<img-fig-10,Figura 10>>."
-msgstr ""
+msgstr "Une fenêtre, telle que celle présentée dans la <<img-fig-10,Figure 10>>, s'ouvrira."
 
 #. type: Plain text
 #: 200.es.adoc:60
 msgid "Arriba de todo, coloque el nombre del nuevo campo."
-msgstr ""
+msgstr "Avant tout, déterminez le nom du nouveau champ."
 
 #. type: Plain text
 #: 200.es.adoc:62
 msgid "Debe tener extremo cuidado al escoger los nombres que dará a las nuevas columnas. Considere que el nombre sea indicativo de lo que contiene (e.g., no utilice nombres tales como “Columna 1” o “Transformación 3”). OpenRefine no le dejará utilizar nombres que ya hayan sido utilizados para nombrar otros campos dentro del proyecto. Considere qué otros campos tiene en su base de datos original y no utilice nombres que ya hayan sido utilizados, se evitará así importar datos a columnas equivocadas al volver a su base de datos."
-msgstr ""
+msgstr "Vous devez être extrêmement prudent lors du choix des noms que vous donnerez aux nouvelles colonnes. Considérez le nom comme une indication de ce qu'elle contient (par exemple, n'utilisez pas de noms tels que \"Colonne 1\" ou \"Transformation 3\"). OpenRefine ne vous permettra pas d'utiliser des noms qui sont déjà utilisés pour nommer d'autres champs du projet. Tenez compte des autres champs que vous avez dans votre base de données d'origine et n'utilisez pas de noms qui ont déjà été utilisés, cela évitera d'importer des données dans les mauvaises colonnes lorsque vous reviendrez dans votre base de données."
 
 #. type: Plain text
 #: 200.es.adoc:64
 msgid "Luego, en el cuadro de texto “Expresión” escriba: [source]`null`. Ello quiere decir que se creará un campo con valores nulos. Luego oprima “Aceptar”. Alternativamente, en vez de [source]`null` puede colocar la expresión: [source]`\"\"`, y el nuevo campo tendrá valores en blanco."
-msgstr ""
+msgstr "Ensuite, dans la zone de texte \"Expression\", saisissez : [source]`null`. Cela signifie qu'un champ avec des valeurs nulles sera créé. Appuyez ensuite sur \"Ok\". Alternativement, au lieu de [source]`null` vous pouvez mettre l'expression : [source]`\"\"`, et le nouveau champ aura des valeurs vides."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 200.es.adoc:66 200.es.adoc:67
 #, no-wrap
 msgid "Figura 10"
-msgstr ""
+msgstr "Figure 10"
 
 #. type: Target for macro image
 #: 200.es.adoc:67
 #, no-wrap
 msgid "img/es.figure-10.jpg"
-msgstr ""
+msgstr "img/es.figure-10.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:70
 msgid "El nuevo campo, con el nombre que le haya dado, aparecerá a la derecha de aquel a partir del cual fue generado."
-msgstr ""
+msgstr "Le nouveau champ, avec le nom que vous lui avez donné, apparaîtra à droite de celui à partir duquel il a été généré."
 
 #. type: Plain text
 #: 200.es.adoc:72
 msgid "Tenga en cuenta que las columnas nuevas que cree en la aplicación no estarán en su base de datos original. Al importar los datos que han sido limpiados de regreso a su base de datos, dependiendo de cómo esté estructurada esa base de datos, es posible que estas nuevas columnas no sean importadas o que reciba un mensaje de error de importación porque el número de campos del archivo no coincide con el de la base de datos. En estos casos, debe asegurarse de agregar previamente los nuevos campos en su base de datos si desea importar todos los campos nuevos."
-msgstr ""
+msgstr "Notez que toutes les nouvelles colonnes que vous créez dans l'application ne figureront pas dans votre base de données d'origine. Lors de l'importation des données qui ont été nettoyées dans votre base de données, selon la structure de cette base de données, ces nouvelles colonnes pourraient ne pas être importées ou vous pouvez recevoir un message d'erreur d'importation car le nombre de champs dans le fichier ne correspond pas à celui dans la base de données. Dans ces cas, vous devez vous assurer de pré-ajouter les nouveaux champs dans votre base de données si vous souhaitez importer tous les nouveaux champs."
 
 #. type: Title ====
 #: 200.es.adoc:73
 #, no-wrap
 msgid "Nuevas columnas a partir transformaciones simples de otras columnas"
-msgstr ""
+msgstr "Nouvelles colonnes à partir de simples transformations d'autres colonnes"
 
 #. type: Plain text
 #: 200.es.adoc:76
 msgid "Muchas veces no queremos modificar los datos directamente en los campos (columnas) en que se presentan, dado que queremos mantener los valores originales y/o queremos proveer información adicional basada en ciertos campos. Por ejemplo, podríamos tener como campos individuales el género y el epíteto específico y queremos agregar el campo nombre científico como concatenación de los dos; o viceversa: tenemos un único campo nombre científico y queremos mantener ese campo y proveer otros dos campos adicionales para género y epíteto, a partir de la división del anterior. Para estos casos es útil crear nuevos campos en nuevas columnas."
-msgstr ""
+msgstr "Souvent, nous ne voulons pas modifier les données directement dans les champs (colonnes) dans lesquelles elles apparaissent, car nous voulons conserver les valeurs d'origine et/ou nous voulons fournir des informations supplémentaires en fonction de certains champs. Par exemple, nous pourrions avoir le genre et l'épithète spécifique comme champs individuels et nous voulons ajouter le champ du nom scientifique comme une concaténation des deux ; ou vice versa : nous avons un seul champ de nom scientifique et nous voulons conserver ce champ et fournir deux champs supplémentaires pour le genre et l'épithète, basés sur la division du précédent. Dans ces cas-là, il est utile de créer de nouveaux champs dans de nouvelles colonnes."
 
 #. type: Plain text
 #: 200.es.adoc:78
 msgid "Veamos ahora cómo crear nuevas columnas con datos modificados a partir de columnas preexistentes."
-msgstr ""
+msgstr "Voyons maintenant comment créer de nouvelles colonnes avec des données modifiées à partir de colonnes préexistantes."
 
 #. type: Title =====
 #: 200.es.adoc:79
 #, no-wrap
 msgid "Concatenaciones"
-msgstr ""
+msgstr "Concaténations"
 
 #. type: Plain text
 #: 200.es.adoc:82
 msgid "Si desea crear un campo que sea la concatenación de otros dos campos separados puede seguir dos rutas, que se describen a continuación, de acuerdo a la versión del programa que utilice. La primera ruta utiliza la función “Unir columnas” (o “Join columns”, como figura en el programa), y está disponible en la versión 3.3 y posteriores de OpenRefine. Las versiones anteriores del programa no tienen esta función, pero el mismo resultado puede obtenerse siguiendo la segunda ruta descripta abajo utilizando cualquier versión del programa. Para ambas rutas utilizaremos como ejemplo la concatenación de los campos [source]`\"genus\"` y [source]`\"specificEpithet\"`."
-msgstr ""
+msgstr "Si vous souhaitez créer un champ qui est la concaténation de deux autres champs distincts, vous pouvez suivre deux chemins, qui sont décrits ci-dessous, selon la version du programme que vous utilisez. Le premier itinéraire utilise la fonction \" Joindre des colonnes... \" (ou \" Join columns \", telle qu'elle apparaît dans le programme), et est disponible dans OpenRefine version 3.3 et ultérieure. Les anciennes versions du programme n'ont pas cette fonction, mais le même résultat peut être obtenu en suivant le deuxième chemin ci-dessous, en utilisant n'importe quelle version du programme. Pour les deux routes, nous utiliserons comme exemple la concaténation des champs [source]`\"genus\"` et [source]`\"specificEpithet\"`."
 
 #. type: Plain text
 #: 200.es.adoc:84
 #, no-wrap
 msgid "*Ruta 1: Función “Unir columnas”*\n"
-msgstr ""
+msgstr "*Chemin 1 : Fonction \"Joindre des colonnes...\"*\n"
 
 #. type: Plain text
 #: 200.es.adoc:87
 msgid "Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{genus}[Editar columnas > Join columns…] (Notar que el nombre de la función y los menúes que se despliegan están en inglés en esta versión del programa)."
-msgstr ""
+msgstr "Cliquez sur menu:la {sp}&#9660;{sp}bleue{sp}du{sp}champ{sp}{genus}[Éditer la colonne > Joindre des colonnes...](Veuillez noter que le nom de la fonction et des menus déroulants sont en anglais dans cette version du programme)."
 
 #. type: Plain text
 #: 200.es.adoc:89
 msgid "Se abrirá una nueva ventana (<<img-fig-11,Figura 11>>), donde puede seleccionar todas las columnas que desea unir."
-msgstr ""
+msgstr "Une nouvelle fenêtre s'ouvrira (<<img-fig-11,Figure 11>>), dans laquelle vous pourrez sélectionner toutes les colonnes que vous souhaitez joindre."
 
 #. type: Plain text
 #: 200.es.adoc:92
 msgid "El primer recuadro a la derecha le permite seleccionar qué separador utilizar entre los contenido de cada columna. Por ejemplo, puede utilizar un espacio \" \".  Luego debe especificar qué hacer con los registros donde alguno de los campos a unir tiene valores nulos (por ejemplo, [source]`\"genus\"` tiene un valor pero [source]`\"specificEpithet\"` es nulo, o viceversa). Si elige la opción \"Replace nulls with...\" (\"Reemplazar nulos con…\"), puede especificar con qué reemplazar esos valores nulos (por ejemplo, algún caracter), o dejar ese recuadro vacío. Si, en cambio, escoge \"Skip nulls\" (\"Saltear nulos\"), para todos aquellos registros que tuvieran uno de los dos campos nulos no se llevará a cabo la unión."
-msgstr ""
+msgstr "La première case à droite vous permet de sélectionner le séparateur à utiliser entre le contenu de chaque colonne. Par exemple, vous pouvez utiliser un espace \" \". Vous devez ensuite spécifier que faire avec les enregistrements où l'un des champs à joindre a des valeurs nulles (par exemple, [source]`\"genus\"` a une valeur mais [source]`\"specificEpithet\"` est nul, ou vice versa). Si vous choisissez l'option \"Remplacer les valeurs nulles avec\", vous pouvez spécifier par quoi remplacer ces valeurs nulles (par exemple, n'importe quel caractère) ou laisser cette case vide. Si vous choisissez plutôt \"Ignorer les valeurs nulles\", tous les enregistrements contenant des valeurs nulles dans l'un des deux champs ne seront pas joints."
 
 #. type: Plain text
 #: 200.es.adoc:94
 msgid "Nota: Al escoger reemplazar los valores nulos y dejar el cuadro vacío (es decir, reemplazar por un caracter nulo), aún se hará la unión utilizando el separador indicado. Si el primer campo a unir tiene un valor no nulo y el segundo un valor nulo, el resultado será el valor del primer campo más el separador. Si el primer campo a unir tiene un valor nulo y el segundo un valor no nulo, el resultado será sólo el valor del segundo campo (sin separador). Para un ejemplo práctico, ver <<#table-join, Tabla 1>> más abajo."
-msgstr ""
+msgstr "Remarque : En choisissant de remplacer les valeurs nulles et de laisser la case vide (c'est-à-dire remplacer par un caractère nul), l'union se fera à l'aide du séparateur indiqué. Si le premier champ à joindre possède une valeur non nulle et le second une valeur nulle, le résultat sera la valeur du premier champ plus le séparateur. Si le premier champ à joindre a une valeur nulle et le second une valeur non nulle, le résultat sera uniquement la valeur du second champ (sans séparateur). Pour un exemple pratique, voir <<#table-join, Tableau 1>> ci-dessous."
 
 #. type: Plain text
 #: 200.es.adoc:96
 msgid "Luego debe indicar si quiere los resultados sobre la misma columna sobre la que está actuando o en una columna nueva, y en ese caso, proveer un nombre para el nuevo campo. Puede llamar al nuevo campo \"joint_scientificName\", para indicar que se trata de la unión (note que ya hay un campo [source]`\"scientificName\"` en los datos). Siempre es recomendable crear un nuevo campo, y en todo caso eliminar los campos innecesarios luego."
-msgstr ""
+msgstr "Ensuite, vous devez indiquer si vous voulez les résultats dans la même colonne sur laquelle vous travaillez ou sur une nouvelle colonne, et dans ce cas, fournir un nom pour le nouveau champ. Vous pouvez nommer le nouveau champ \"joint_scientificName\", pour indiquer qu'il s'agit du résultat de l'union (notez qu'il existe déjà un champ [source]`\"scientificName\"` dans les données). Il est toujours recommandé de créer un nouveau champ et, dans tous les cas, de supprimer ultérieurement les champs inutiles."
 
 #. type: Plain text
 #: 200.es.adoc:98
 msgid "Por último, tiene la opción de eliminar las columnas que dieron origen a la unión (\"Delete joined columns\", \"Eliminar columnas unidas\"). Si desea conservarlas, como en este caso, asegúrese de que esa opción está desmarcada."
-msgstr ""
+msgstr "Finalement, vous avez la possibilité de supprimer les colonnes ayant été utilisée pour l'union (\"Supprimer les colonnes jointes\", \"Éliminer les colonnes unies\"). Si vous souhaitez les conserver, comme dans ce cas, assurez-vous que cette option n'est pas cochée."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 200.es.adoc:100 200.es.adoc:101
 #, no-wrap
 msgid "Figura 11"
-msgstr ""
+msgstr "Figure 11"
 
 #. type: Target for macro image
 #: 200.es.adoc:101
 #, no-wrap
 msgid "img/es.figure-11.jpg"
-msgstr ""
+msgstr "img/es.figure-11.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:104
 msgid "Los resultados esperados de acuerdo a distintos parámetros escogidos se resumen en la siguiente tabla (<<#table-join, Tabla 1>>):"
-msgstr ""
+msgstr "Les résultats attendus en fonction des différents paramètres choisis sont résumés dans le tableau suivant (<<#table-join, Tableau 1>>) :"
 
 #. type: Plain text
 #: 200.es.adoc:107
 msgid "Tabla 1. Ejemplos de unión de dos columnas (“genus” y “specificEpithet”) en otra (“joint_scientificName), utilizando distintos separadores y tratamientos de nulos."
-msgstr ""
+msgstr "Tableau 1. Exemples de jonction de deux colonnes (\"genus\" et \"specificEpithet\") dans une autre colonne (\"joint_scientificName), en utilisant différents séparateurs et traitements de valeurs nulles."
 
 #. type: Table
 #: 200.es.adoc:116
 #, no-wrap
-msgid "\n"
-"|Separador\n"
+msgid "|Separador\n"
 "|Tratamiento de nulos\n"
 "|genus\n"
 "|specificEpithet\n"
@@ -744,176 +744,178 @@ msgstr ""
 #: 200.es.adoc:116
 #, no-wrap
 msgid "12+.^|\" \" "
-msgstr ""
+msgstr "12+.^|\" \" "
 
 #. type: Table
 #: 200.es.adoc:118
 msgid "(un espacio)"
-msgstr ""
+msgstr "(un espace)"
 
 #. type: Block title
 #: 200.es.adoc:118 200.es.adoc:164
 #, no-wrap
 msgid "4+.^|Reemplazar nulos con: \"\" "
-msgstr ""
+msgstr "4+.^|Remplacer les valeurs nulles par : \"\" "
 
 #. type: Table
 #: 200.es.adoc:135
-msgid "  (sin especificar)  |Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago _(con un espacio extra después del género)_ |_null_ |lasiocarpa |lasiocarpa |_null_ |_null_ |_null_"
+msgid "(sin especificar)  |Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago _(con un espacio extra después del género)_ |_null_ |lasiocarpa |lasiocarpa |_null_ |_null_ |_null_"
 msgstr ""
 
 #. type: Block title
 #: 200.es.adoc:135 200.es.adoc:181
 #, no-wrap
 msgid "4+.^|Reemplazar nulos con: \"@\""
-msgstr ""
+msgstr "4+.^|Remplacer les valeurs nulles par : \"@\""
 
 #. type: Table
 #: 200.es.adoc:148
 msgid "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago @ |_null_ |lasiocarpa |@ lasiocarpa |_null_ |_null_ |@ @"
-msgstr ""
+msgstr "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago @ |_null_ |lasiocarpa |@ lasiocarpa |_null_ |_null_ |@ @"
 
 #. type: Block title
 #: 200.es.adoc:148 200.es.adoc:194
 #, no-wrap
 msgid "4+.^|Saltear nulos"
-msgstr ""
+msgstr "4+.^|Ignorer les valeurs nulles"
 
 #. type: Table
 #: 200.es.adoc:161 200.es.adoc:277
 msgid "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |_null_ |_null_ |lasiocarpa |_null_ |_null_ |_null_ |_null_"
-msgstr ""
+msgstr "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |_null_ |_null_ |lasiocarpa |_null_ |_null_ |_null_ |_null_"
 
 #. type: Block title
 #: 200.es.adoc:161
 #, no-wrap
 msgid "12+.^|\", \" "
-msgstr ""
+msgstr "12+.^|\", \" "
 
 #. type: Table
 #: 200.es.adoc:164
-msgid "  (coma y espacio)"
+msgid "(coma y espacio)"
 msgstr ""
 
 #. type: Table
 #: 200.es.adoc:181
-msgid "  (sin especificar)  |Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ |Filago, _(con un espacio extra después de la coma)_ |_null_ |lasiocarpa |lasiocarpa |_null_ |_null_ |_null_"
+msgid "(sin especificar)  |Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ |Filago, _(con un espacio extra después de la coma)_ |_null_ |lasiocarpa |lasiocarpa |_null_ |_null_ |_null_"
 msgstr ""
 
 #. type: Table
 #: 200.es.adoc:194
 msgid "|Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ |Filago, @ |_null_ |lasiocarpa |@, lasiocarpa |_null_ |_null_ |@, @"
-msgstr ""
+msgstr "|Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ |Filago, @ |_null_ |lasiocarpa |@, lasiocarpa |_null_ |_null_ |@, @"
 
 #. type: Table
 #: 200.es.adoc:207
 msgid "|Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ |_null_ |_null_ |lasiocarpa |_null_ |_null_ |_null_ |_null_"
-msgstr ""
+msgstr "|Filago |lasiocarpa |Filago, lasiocarpa |Filago |_null_ |_null_ |_null_ |lasiocarpa |_null_ |_null_ |_null_ |_null_"
 
 #. type: Plain text
 #: 200.es.adoc:210
 msgid "Si optamos por una opción que contiene en los resultados espacios en blanco no deseados, podemos aplicar luego una transformación en las celdas de la columna resultado del tipo \"Quitar espacios al inicio y al final\" (ver <<#Facetas-y-espacios-en-blanco, sección 2.2.2>>)."
-msgstr ""
+msgstr "Si vous optez pour une option qui contient des espaces blancs indésirables dans les résultats, vous pouvez alors appliquer une transformation dans les cellules de la colonne de résultat du type \"Supprimer les espaces de début et de fin\" (voir <<#Facets-et-espaces-vide, section 2.2.2>>)."
 
 #. type: Plain text
 #: 200.es.adoc:213
 #, no-wrap
 msgid "*Ruta 2: Concatenación mediante expresiones regulares*\n"
-msgstr ""
+msgstr "*Chemin 2 : Concaténation à l'aide d'expressions régulières*\n"
 
 #. type: Plain text
 #: 200.es.adoc:215
 msgid "Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{genus}[Editar columnas > Agregar columna basada en esta columna…]"
-msgstr ""
+msgstr "Cliquez sur menu:la{sp}&#9660;{sp}bleue{sp}du{sp}champ{sp}{genus}[Editer la colonne > Ajouter une colonne en fonction de cette colonne…]"
 
 #. type: Plain text
 #: 200.es.adoc:217
 msgid "Se abrirá una nueva ventana (<<img-fig-12,Figura 12>>). Puede llamar al nuevo campo “concat_scientificName”, para indicar que se trata de la concatenación (note que ya hay un campo [source]`\"scientificName\"` en los datos)."
-msgstr ""
+msgstr "Une nouvelle fenêtre s'ouvrira (<<img-fig-12, Figure 12>>). Vous pouvez appeler le nouveau champ \"concat_scientificName\", pour indiquer qu'il s'agit de la concaténation (notez qu'il existe déjà un champ [source]`\"scientificName\"` dans les données)."
 
 #. type: Plain text
 #: 200.es.adoc:219
 msgid "En el cuadro de texto, pegue la siguiente expresión:"
-msgstr ""
+msgstr "Dans la zone de texte, collez l'expression suivante :"
 
 #. type: Plain text
 #: 200.es.adoc:222
-msgid "Expresión ejemplo:\t[source]`cells[\"genus\"].value + \" \" + cells[\"specificEpithet\"].value` _(Expresión 1)_ + Expresión general:\t[source]`cells[\"campo1\"].value + \" \" + cells[\"campo2\"].value`"
+#, no-wrap
+msgid "Expresión ejemplo:\t[source]`cells[\"genus\"].value + \" \" + cells[\"specificEpithet\"].value` _(Expresión 1)_\n"
+"Expresión general:\t[source]`cells[\"campo1\"].value + \" \" + cells[\"campo2\"].value`"
 msgstr ""
 
 #. type: Plain text
 #: 200.es.adoc:224
 msgid "La expresión ejemplo concatena (`+`) los valores del campo [source]`\"genus\"` ([source]`cells[\"genus\"].value`) y los del campo [source]`\"specificEpithet\"` ([source]`cells[\"specificEpithet\"].value`), con un espacio entre los valores (\"[source]`` ``\")."
-msgstr ""
+msgstr "L'exemple d'expression fait la concaténation (`+`) des valeurs du champ [source]`\"genus\"` ([source]`cells[\"genus\"].value`) et du champ [source]`\"specificEpithet\"` ([source]`cells[\"specificEpithet\"].value`), avec un espace entre les valeurs (\"[source]`` ``\")."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 200.es.adoc:226 200.es.adoc:227
 #, no-wrap
 msgid "Figura 12"
-msgstr ""
+msgstr "Figure 12"
 
 #. type: Target for macro image
 #: 200.es.adoc:227
 #, no-wrap
 msgid "img/es.figure-12.jpg"
-msgstr ""
+msgstr "img/es.figure-12.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:230
 msgid "Note que esta expresión funciona cuando ambos campos, [source]`\"genus\"` y [source]`\"specificEpithet\"`, tienen valores, es decir no son nulos. Si alguno de los dos campos tiene valores nulos, entonces no se lleva a cabo la concatenación. Por ejemplo, si hay un valor para genus pero specificEpithet está vacío, el campo de concatenación aparecerá vacío. Esto se debe a que no se puede operar sobre valores nulos."
-msgstr ""
+msgstr "Notez que cette expression fonctionne lorsque les champs [source]`\"genus\"` et [source]`\"specificEpithet\"` ont des valeurs, c'est-à-dire qu'ils ne sont pas nuls. Si l'un des deux champs contient des valeurs nulles, la concaténation n'est pas effectuée. Par exemple, s'il existe une valeur pour genus mais que specificEpithet est vide, le champ de concaténation apparaîtra vide. Ceci est dû au fait que vous ne pouvez pas opérer sur des valeurs nulles."
 
 #. type: Plain text
 #: 200.es.adoc:232
 msgid "En este caso, puede sortear el problema utilizando en cambio la siguiente expresión:"
-msgstr ""
+msgstr "Dans ce cas, vous pouvez contourner le problème en utilisant à la place l'expression suivante :"
 
 #. type: delimited block -
 #: 200.es.adoc:236
 #, no-wrap
 msgid "if(isBlank(cells[\"genus\"].value), \"\", cells[\"genus\"].value) + \" \" + if(isBlank(cells[\"specificEpithet\"].value), \"\", cells[\"specificEpithet\"].value)\n"
-msgstr ""
+msgstr "if(isBlank(cells[\"genus\"].value), \"\", cells[\"genus\"].value) + \" \" + if(isBlank(cells[\"specificEpithet\"].value), \"\", cells[\"specificEpithet\"].value)\n"
 
 #. type: Plain text
 #: 200.es.adoc:238
 msgid "_(Expresión 2)_"
-msgstr ""
+msgstr "_(Expression 2)_"
 
 #. type: Plain text
 #: 200.es.adoc:240
-msgid "Lo que dicha expresión significa es: concatenar ([source]`+`) dos partes, cada una proviene de una sub-expresión [source]`if`, separadas por un espacio ([source]`+ \" \" +`). Cada una de estas sub-expresiones indica: si ([source]`if`) el valor del campo dado es nulo ([source]`isBlank(cells[\"genus\"].value)`), colocar un blanco ([source]`\"\"`), si no ([source]`,`), colocar el valor del campo ([source]`cells[\"genus\"].value`). La otra sub-expresión es lo mismo pero para epíteto específico."
+msgid "Lo que dicha expresión significa es: concatenar ([source]`\\+`) dos partes, cada una proviene de una sub-expresión [source]`if`, separadas por un espacio ([source]`+ \" \" +`). Cada una de estas sub-expresiones indica: si ([source]`if`) el valor del campo dado es nulo ([source]`isBlank(cells[\"genus\"].value)`), colocar un blanco ([source]`\"\"`), si no ([source]`,`), colocar el valor del campo ([source]`cells[\"genus\"].value`). La otra sub-expresión es lo mismo pero para epíteto específico."
 msgstr ""
 
 #. type: Plain text
 #: 200.es.adoc:242
 msgid "Para evitar de modo más general este problema de celdas nulas, cuando importa el conjunto de datos para crear su proyecto al principio del proceso, puede asegurarse de NO seleccionar la opción “Store blank cells as nulls” (ver <<img-fig-04,Figura 4>>)."
-msgstr ""
+msgstr "Pour éviter plus généralement ce problème de cellules nulles, lorsque vous importez le jeu de données pour créer votre projet au début du processus, vous pouvez vous assurer de ne PAS sélectionner l'option \"Enregistrer les cellules vides comme des valeurs nulles\" (\"Store blank cells as nulls\") (voir <<img-fig-04 , Figure 4>>)."
 
 #. type: Plain text
 #: 200.es.adoc:245
 msgid "La fórmula anterior (Expresión 2) resuelve el problema de tener valores nulos en la concatenación, pero al aplicarla, si alguno de los campos es nulo, el resultado tendrá espacios en blanco extra no deseados. Por ejemplo, si el valor de [source]`\"genus\"` es nulo, el valor resultante en el campo concatenado será \" epíteto\", con un espacio en blanco antes del epíteto; si el valor de [source]`\"specificEpithet\"` es nulo, el valor resultante será \"genus \", con un espacio en blanco después del género; y si los valores de ambos son campos son nulos, el valor resultante será \" \", un espacio en blanco.  Para resolver este problema, se puede: 1) aplicar una transformación en las celdas de la columna resultado del tipo \"Quitar espacios al inicio y al final\" (ver <<#Facetas-y-espacios-en-blanco, sección 2.2.2>>), o 2) incluir en la expresión la quita de espacios al inicio y al final. Siguiendo la segunda opción, la expresión final sería:"
-msgstr ""
+msgstr "La formule ci-dessus (Expression 2) résout le problème d'avoir des valeurs nulles dans la concaténation, mais lors de son application, si l'un des champs est nul, le résultat aura des espaces blancs supplémentaires indésirables. Par exemple, si la valeur de [source]`\"genus\"` est nulle, la valeur résultante dans le champ concaténé sera \" épithète\", avec un espace blanc avant l'épithète ; si la valeur de [source]`\"specificEpithet\"` est nulle, la valeur résultante sera \"genus \", avec un espace après le genre ; et si les valeurs des deux champs sont nulles, la valeur résultante sera \" \", un espace vide. Pour résoudre ce problème, vous pouvez : 1) appliquer une transformation sur les cellules de la colonne de résultat du type \"Supprimer les espaces de début et de fin\" (voir <<#Facets-and-blank-spaces, section 2.2.2 >>) , ou 2) inclure dans l'expression la suppression des espaces de début et de fin. Suivant la seconde option, l'expression finale serait :"
 
 #. type: delimited block -
 #: 200.es.adoc:249
 #, no-wrap
 msgid "Trim(if(isBlank(cells[\"genus\"].value), \"\", cells[\"genus\"].value) + \" \" + if(isBlank(cells[\"specificEpithet\"].value), \"\", cells[\"specificEpithet\"].value))\n"
-msgstr ""
+msgstr "Trim(if(isBlank(cells[\"genus\"].value), \"\", cells[\"genus\"].value) + \" \" + if(isBlank(cells[\"specificEpithet\"].value), \"\", cells[\"specificEpithet\"].value))\n"
 
 #. type: Plain text
 #: 200.es.adoc:252
 msgid "_(Expresión 3)_ donde se ha aplicado la función \"Trim\", que quita espacios en blanco no deseados al inicio y al final del valor de las celdas."
-msgstr ""
+msgstr "_(Expression 3)_ où la fonction \"Trim\" a été appliquée, supprimant les espaces blancs indésirables au début et à la fin de la valeur des cellules."
 
 #. type: Plain text
 #: 200.es.adoc:254
 msgid "Los resultados esperados utilizando cada una de las tres fórmulas se resumen en la siguiente tabla (<<#table-concat, Tabla 2>>):"
-msgstr ""
+msgstr "Les résultats attendus en utilisant chacune des trois formules sont résumés dans le tableau suivant (<<#table-concat, Tableau 2>>) :"
 
 #. type: Plain text
 #: 200.es.adoc:257
 msgid "Tabla 2. Ejemplos de concatenación de dos columnas (“genus” y “specificEpithet”) en otra (“concat_scientificName), utilizando distintas expresiones (ver texto más arriba)."
-msgstr ""
+msgstr "Tableau 2. Exemples de concaténation de deux colonnes (\"genus\" et \"specificEpithet\") dans une autre (\"concat_scientificName), en utilisant des expressions différentes (voir texte ci-dessus)."
 
 #. type: Table
 #: 200.es.adoc:264
@@ -922,116 +924,120 @@ msgid "|Expresión\n"
 "|genus\n"
 "|specificEpithet\n"
 "|concat_scientificName\n"
-msgstr ""
+msgstr "|Expression\n"
+"|genus\n"
+"|specificEpithet\n"
+"|concat_scientificName\n"
 
 #. type: Block title
 #: 200.es.adoc:264
 #, no-wrap
 msgid "4+.^|1"
-msgstr ""
+msgstr "4+.^|1"
 
 #. type: Block title
 #: 200.es.adoc:277
 #, no-wrap
 msgid "4+.^|2"
-msgstr ""
+msgstr "4+.^|2"
 
 #. type: Table
 #: 200.es.adoc:297
 msgid "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago _(con un espacio en blanco después del género)_ |_null_ |lasiocarpa | lasiocarpa _(con un espacio en blanco antes del epíteto)_ |_null_ |_null_ | _(con un espacio en blanco)_"
-msgstr ""
+msgstr "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago _(avec un espace blanc après le genre)_ |_null_ |lasiocarpa | lasiocarpa _(avec un espace blanc avant l'épithète)_ |_null_ |_null_ | _(avec un espace blanc)_"
 
 #. type: Block title
 #: 200.es.adoc:297
 #, no-wrap
 msgid "4+.^|3"
-msgstr ""
+msgstr "4+.^|3"
 
 #. type: Table
 #: 200.es.adoc:310
 msgid "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago |_null_ |lasiocarpa |lasiocarpa |_null_ |_null_ |_null_"
-msgstr ""
+msgstr "|Filago |lasiocarpa |Filago lasiocarpa |Filago |_null_ |Filago |_null_ |lasiocarpa |lasiocarpa |_null_ |_null_ |_null_"
 
 #. type: Title =====
 #: 200.es.adoc:314
 #, no-wrap
 msgid "Divisiones"
-msgstr ""
+msgstr "Divisions"
 
 #. type: Plain text
 #: 200.es.adoc:316
 msgid "Si desea crear campos separados a partir de los valores en un único campo, siga la siguiente ruta:"
-msgstr ""
+msgstr "Si vous souhaitez créer des champs séparés à partir des valeurs d'un seul champ, suivez le chemin ci-dessous :"
 
 #. type: Plain text
 #: 200.es.adoc:318
 msgid "Utilizaremos como ejemplo la división del campo [source]`\"eventDate\"` para agregar tres campos: año, mes y día (year, month y day)"
-msgstr ""
+msgstr "A titre d'exemple nous allons utiliser la division du champ [source]`\"eventDate\"` pour ajouter trois champs : année, mois et jour (year, month et day)"
 
 #. type: Plain text
 #: 200.es.adoc:320
 msgid "Click en menu:la{sp}&#9660;{sp}azul{sp}del{sp}campo{sp}{eventDate}[Editar columnas > Dividir en varias columnas…]"
-msgstr ""
+msgstr "Cliquez sur menu:la{sp}&#9660;{sp}bleue{sp}du{sp}campo{sp}{eventDate}[Editer la colonne > Diviser en plusieurs colonnes…]"
 
 #. type: Plain text
 #: 200.es.adoc:322
 msgid "Se abrirá una nueva ventana (<<img-fig-13,Figura 13>>). Allí debe escoger si se dividirá por separador o por longitud de caracteres, y en el primer caso qué tipo de separador se utilizará (puede ser espacio, caracter de tabulación, coma, punto y coma, guión, etc.)."
-msgstr ""
+msgstr "Une nouvelle fenêtre s'ouvrira (<<img-fig-13, Figure 13>>), dans laquelle vous devez choisir si la division se fera par séparateur ou par longueur de champs, et dans le premier cas quel type de séparateur sera utilisé (il peut s'agir d'un espace, d'une tabulation, d'une virgule, d'un point-virgule, d'un trait d'union, etc.)."
 
 #. type: Plain text
 #: 200.es.adoc:324
 msgid "En este caso, si exploramos los datos del campo original veremos que año, mes y día están separados por barras oblicuas (“/”), de modo que elegiremos esta barra como separador."
-msgstr ""
+msgstr "Dans ce cas-ci, si nous explorons les données du champ d'origine, nous verrons que l'année, le mois et le jour sont séparés par des barres obliques (\"/\"), et nous choisirons donc cette barre oblique comme séparateur."
 
 #. type: Plain text
 #: 200.es.adoc:326
 #, no-wrap
 msgid "*Desmarque la opción “Eliminar esta columna” a la derecha*. Si la deja seleccionada, perderá el campo original y sólo tendrá los tres nuevos campos.\n"
-msgstr ""
+msgstr "*Décochez l'option \"Supprimer cette colonne\" à droite*. Si vous la laissez sélectionnée, vous perdrez le champ d'origine et n'aurez plus que les trois nouveaux champs.\n"
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 200.es.adoc:328 200.es.adoc:329
 #, no-wrap
 msgid "Figura 13"
-msgstr ""
+msgstr "Figure 13"
 
 #. type: Target for macro image
 #: 200.es.adoc:329
 #, no-wrap
 msgid "img/es.figure-13.jpg"
-msgstr ""
+msgstr "img/es.figure-13.jpg"
 
 #. type: Plain text
 #: 200.es.adoc:332
 msgid "Una vez que oprima Aceptar, se crearán las nuevas columnas a la derecha del campo [source]`\"eventDate\"`. OpenRefine las nombra automáticamente agregando números al final del nombre (en este caso: eventDate1, eventDate2 y eventDate3). Cambie los nombres de las columnas por los que corresponda (\"la &#9660; azul > Editar columnas > Renombrar esta columna\"). En este caso, nómbrelos “year”, “month” y “day” según corresponda."
-msgstr ""
+msgstr "Une fois que vous avez cliqué sur OK, les nouvelles colonnes seront créées à droite du champ [source]`\"eventDate\"`. OpenRefine les nomme automatiquement en ajoutant des chiffres à la fin du nom (dans ce cas-ci : eventDate1, eventDate2 et eventDate3). Remplacez les noms de colonnes par ceux qui conviennent (« la &#9660; bleue > Éditer la colonne > Renommer cette colonne »). Dans ce cas-ci, nommez-les en conséquence \"année\", \"mois\" et \"jour\"."
 
 #. type: delimited block =
 #: 200.es.adoc:337
 msgid "Cuando efectúe este tipo de divisiones de campos utilizando como criterio ya sea separadores o longitud de caracteres, asegúrese de que en el campo original no haya distintos formatos para diferentes registros. Vea el siguiente ejemplo:"
-msgstr ""
+msgstr "Lorsque vous effectuez ce type de division de champ en utilisant des séparateurs ou la longueur des champs comme critères, assurez-vous que le champ d'origine n'a pas de formats différents pour différents enregistrements. Voir l'exemple suivant :"
 
 #. type: delimited block =
 #: 200.es.adoc:339
 msgid "Se quiere separar un campo nombrado “coordenadas” que contiene datos de latitud y longitud separados por coma, del tipo: “-32.04588990, -54.98789901”, para obtener dos campos distintos, latitud y longitud."
-msgstr ""
+msgstr "Vous souhaitez séparer un champ nommé « coordonnées » qui contient des données de latitude et de longitude séparées par des virgules, du type : « -32.04588990, -54.98789901 », pour obtenir deux champs différents, latitude et longitude."
 
 #. type: delimited block =
 #: 200.es.adoc:341
 msgid "Si todos los campos tienen el mismo formato, obtendrá dos campos nuevos de la siguiente forma:"
-msgstr ""
+msgstr "Si tous les champs ont le même format, vous obtiendrez deux nouveaux champs comme suit :"
 
 #. type: delimited block -
 #: 200.es.adoc:345
 #, no-wrap
 msgid "campo 1: -32.04588990\n"
 "campo 2: -54.98789901\n"
-msgstr ""
+msgstr "champ 1 : -32.04588990\n"
+"champ 2 : -54.98789901\n"
 
 #. type: Plain text
 #: 200.es.adoc:348
 msgid "En cambio, si en algún registro los valores dentro del campo coordenadas no están en formato decimal, entonces tendrá problemas al dividir el campo. Suponga como ejemplo que uno o más registros tienen valores con formato “34° 20’ 15,2’’ S, 54° 49’ 13’’ O”. En ese caso, la separación le dará 3 campos en vez de dos, con la latitud incorrectamente separada:"
-msgstr ""
+msgstr "Au contraire, si dans un enregistrement les valeurs à l'intérieur du champ des coordonnées ne sont pas au format décimal, vous aurez des problèmes pour diviser le champ. Supposons par exemple qu'un ou plusieurs enregistrements aient des valeurs au format \"34° 20' 15,2'' S, 54° 49' 13'' W\". Dans ce cas, la séparation vous donnera 3 champs au lieu de deux, avec la latitude mal séparée :"
 
 #. type: delimited block -
 #: 200.es.adoc:354
@@ -1039,352 +1045,354 @@ msgstr ""
 msgid "campo 1: 34° 20’ 15\n"
 "campo 2: 2’’ S\n"
 "campo 3: 54° 49´ 13´´ O\n"
-msgstr ""
+msgstr "champ 1 : 34° 20’ 15\n"
+"champ 2 : 2’’ S\n"
+"champ 3 : 54° 49´ 13´´ O\n"
 
 #. type: Title ===
 #: 220.es.adoc:1
 #, no-wrap
 msgid "Uso de Facetas"
-msgstr ""
+msgstr "Utilisation des Facettes"
 
 #. type: Plain text
 #: 220.es.adoc:4
 msgid "La función “Facetas” es una forma de visualización de los datos, que permite el tratamiento en bloque de grupos de registros. Las facetas se pueden aplicar a celdas que contengan cualquier tipo de texto, números o fechas."
-msgstr ""
+msgstr "La fonction « Facettes » est une forme de visualisation de données, qui permet le traitement en bloc de groupes d'enregistrements. Les facettes peuvent être appliquées aux cellules qui contiennent n'importe quel type de texte, de nombres ou de dates."
 
 #. type: Title ====
 #: 220.es.adoc:5
 #, no-wrap
 msgid "Facetas de texto"
-msgstr ""
+msgstr "Facettes textuelles"
 
 #. type: Plain text
 #: 220.es.adoc:8
 msgid "Ubique la columna [source]`\"kingdom\"` y haga click sobre menu:la{sp}&#9660;{sp}azul[]. Dentro de “Facetas”, escoja “Faceta de texto”, como se muestra a continuación (<<img-fig-14,Figura 14a>>). Se abrirá entonces a la izquierda una ventana con la faceta (<<img-fig-14,Figura 14b>>)."
-msgstr ""
+msgstr "Localisez la colonne [source]`\"royaume\"` et cliquez sur menu:la{sp}&#9660;{sp}bleue[]. Dans \"Facette\", choisissez \"Facette textuelle\", comme indiqué ci-dessous (<<img-fig-14, Figure 14a>>). Une fenêtre s'ouvrira alors sur la gauche avec la facette (<<img-fig-14, Figure 14b>>)."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 220.es.adoc:10 220.es.adoc:11
 #, no-wrap
 msgid "Figura 14"
-msgstr ""
+msgstr "Figure 14"
 
 #. type: Target for macro image
 #: 220.es.adoc:11
 #, no-wrap
 msgid "img/es.figure-14.jpg"
-msgstr ""
+msgstr "img/es.figure-14.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:14
 msgid "En dicha ventana de faceta, puede ordenar los valores alfabéticamente (haciendo click sobre “A-Z”) o según el número de registros asociados a cada valor (haciendo click sobre “conteo”)."
-msgstr ""
+msgstr "Dans ladite fenêtre de facette, vous pouvez ordonner les valeurs par ordre alphabétique (en cliquant sur « nom ») ou selon le nombre d'enregistrements associés à chaque valeur (en cliquant sur « compte »)."
 
 #. type: Plain text
 #: 220.es.adoc:16
 msgid "En la lista de valores podemos ver que hay algunos errores. Para corregirlos coloque el cursor sobre el valor que desea modificar y haga click en “editar”. Se abrirá entonces una pequeña ventana donde puede cambiar el valor (<<img-fig-15,Figura 15>>).  Para guardar el cambio haga click en “Aplicar”, ello aplicará el cambio a todos aquellos registros que tenían el valor dado."
-msgstr ""
+msgstr "Dans la liste des valeurs, nous pouvons voir qu'il y a des erreurs. Pour les corriger, placez le curseur sur la valeur que vous souhaitez modifier et cliquez sur « éditer ». Une petite fenêtre s'ouvrira alors, dans laquelle vous pourrez modifier la valeur (<<img-fig-15,Figure 15>>). Pour enregistrer la modification, cliquez sur \"Appliquer\", cela appliquera la modification à tous les enregistrements qui avaient la valeur donnée."
 
 #. type: Plain text
 #: 220.es.adoc:18
 msgid "Corrija los valores “Plante” y “Plants”. Cuando lo haga, habrá corregido todos los registros que contenían esos valores, y se modificará entonces el número de registros que tiene el valor “Plantae”."
-msgstr ""
+msgstr "Corrigez les valeurs « Plante » et « Plants ». Ce faisant, vous aurez corrigé tous les enregistrements qui contenaient ces valeurs et le nombre d'enregistrements ayant la valeur « Plantae » sera alors modifié."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 220.es.adoc:20 220.es.adoc:21
 #, no-wrap
 msgid "Figura 15"
-msgstr ""
+msgstr "Figure 15"
 
 #. type: Target for macro image
 #: 220.es.adoc:21
 #, no-wrap
 msgid "img/es.figure-15.jpg"
-msgstr ""
+msgstr "img/es.figure-15.jpg"
 
 #. type: Title ====
 #: 220.es.adoc:24
 #, no-wrap
 msgid "Facetas y espacios en blanco"
-msgstr ""
+msgstr "Facettes et espaces blancs"
 
 #. type: Title =====
 #: 220.es.adoc:26
 #, no-wrap
 msgid "Espacios en blanco extra al principio o al final de una cadena de texto"
-msgstr ""
+msgstr "Espaces blancs supplémentaires au début ou à la fin d'une chaîne de texte"
 
 #. type: Plain text
 #: 220.es.adoc:29
 msgid "Una vez que haya corregido los valores en el punto anterior, notará que aún aparecen 3 valores “Plantae”, aparentemente iguales (<<img-fig-16,Figura 16>>). Sin embargo, estos valores sí son diferentes: tienen espacios adicionales al final del valor de texto."
-msgstr ""
+msgstr "Une fois que vous avez corrigé les valeurs au point précédent, vous remarquerez que 3 valeurs \"Plantae\" apparaissent toujours, apparemment identiques (<<img-fig-16,Figure 16>>). Cependant, ces valeurs sont différentes : elles ont des espaces supplémentaires à la fin de la valeur textuelle."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 220.es.adoc:31 220.es.adoc:32
 #, no-wrap
 msgid "Figura 16"
-msgstr ""
+msgstr "Figure 16"
 
 #. type: Target for macro image
 #: 220.es.adoc:32
 #, no-wrap
 msgid "img/es.figure-16.jpg"
-msgstr ""
+msgstr "img/es.figure-16.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:35
 msgid "Para corregir estos errores, asegúrese de que ninguno de los valores en la faceta están seleccionados y de que el número de registros que se muestra arriba de la tabla es el total (24984). Sobre la columna [source]`\"kingdom\"`, haga click sobre menu:la{sp}&#9660;{sp}azul[] y siga las siguientes opciones (<<img-fig-17,Figura 17>>):"
-msgstr ""
+msgstr "Pour corriger ces erreurs, assurez-vous qu'aucune des valeurs de la facette n'est sélectionnée et que le nombre d'enregistrements affichés au-dessus du tableau correspond au total (24984). Sur la colonne [source]`\"kingdom\"`, cliquez sur menu:la{sp}&#9660;{sp}bleue[] et suivez les options suivantes (<<img-fig-17,Figure 17>>) :"
 
 #. type: Plain text
 #: 220.es.adoc:38
 msgid "\"Editar celdas > Transformaciones comunes > Quitar espacios al inicio y final\""
-msgstr ""
+msgstr "\"Éditer les cellules > Transformations courantes > Supprimer les espaces de début et de fin\""
 
 #. type: Plain text
 #: 220.es.adoc:41
 msgid "Esta función permite eliminar espacios en blanco que puedan aparecer al principio y al final de cadenas de texto. Cuando termine este paso, los 24,984 registros deberían tener el valor “Plantae” en la columna [source]`\"kingdom\"`."
-msgstr ""
+msgstr "Cette fonction vous permet de supprimer les espaces blancs qui peuvent apparaître au début et à la fin des chaînes de texte. Lorsque vous avez terminé cette étape, les 24 984 enregistrements doivent avoir la valeur \"Plantae\" dans la colonne [source]`\"kingdom\"`."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 220.es.adoc:43 220.es.adoc:44
 #, no-wrap
 msgid "Figura 17"
-msgstr ""
+msgstr "Figure 17"
 
 #. type: Target for macro image
 #: 220.es.adoc:44
 #, no-wrap
 msgid "img/es.figure-17.jpg"
-msgstr ""
+msgstr "img/es.figure-17.jpg"
 
 #. type: Title =====
 #: 220.es.adoc:46
 #, no-wrap
 msgid "Espacios en blanco extra entre palabras en una cadena de texto"
-msgstr ""
+msgstr "Espaces blancs supplémentaires entre les mots dans une chaîne de texte"
 
 #. type: Plain text
 #: 220.es.adoc:49
 msgid "A veces en campos que contienen cadenas de texto con varias palabras puede haber espacios en blanco extra entre palabras. Para ver un ejemplo, ubique la columna [source]`\"stateProvince\"` en el conjunto de datos. Arme una faceta de texto para dicha columna (click sobre \"la &#9660; azul > Facetas > Faceta de texto\"). Luego, en la faceta, ordene los valores por número de registros asociados (seleccionando “conteo”). Verá entonces los valores que se encuentran en este campo como se muestra en la <<img-fig-18,Figura 18>>."
-msgstr ""
+msgstr "Parfois, dans les champs qui contiennent des chaînes de texte avec plusieurs mots, il peut y avoir des espaces supplémentaires entre les mots. Pour voir un exemple, localisez la colonne [source]`\"stateProvince\"` dans l'ensemble de données. Créez une facette textuelle pour ladite colonne (cliquez sur \"la &#9660; bleue > Facettes > Facette textuelle\"). Ensuite, dans la facette, triez les valeurs par nombre d'enregistrements associés (en sélectionnant « compte »). Vous verrez alors les valeurs trouvées dans ce champ comme indiqué dans la <<img-fig-18,Figure 18>>."
 
 #. type: Plain text
 #: 220.es.adoc:51
 msgid "Note que en primer y tercer lugar figura aparentemente el mismo valor, “Buenos Aires”. La diferencia entre ambos valores es que uno de ellos tiene un doble espacio entre las palabras."
-msgstr ""
+msgstr "Notez qu'en première et troisième place apparaît apparemment la même valeur, \"Buenos Aires\". La différence entre les deux valeurs est que l'une d'elles a un double espace entre les mots."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 220.es.adoc:53 220.es.adoc:54
 #, no-wrap
 msgid "Figura 18"
-msgstr ""
+msgstr "Figure 18"
 
 #. type: Target for macro image
 #: 220.es.adoc:54
 #, no-wrap
 msgid "img/es.figure-18.jpg"
-msgstr ""
+msgstr "img/es.figure-18.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:57
 msgid "Para corregir este error, sobre la columna [source]`\"stateProvince\"`, haga click sobre menu:la{sp}&#9660;{sp}azul[] y siga la siguiente ruta (<<img-fig-19,Figura 19>>):"
-msgstr ""
+msgstr "Pour corriger cette erreur, sur la colonne [source]`\"stateProvince\"`, cliquez sur menu:la{sp}&#9660;{sp}bleue[] et suivez le chemin suivant (<<img-fig-19, Figure 19>>) :"
 
 #. type: Plain text
 #: 220.es.adoc:60
 msgid "\"Editar celdas > Transformaciones Comunes > Contraer espacios consecutivos\""
-msgstr ""
+msgstr "\"Editer les cellules > Transformations courantes > Rassembler les espaces consécutifs\""
 
 #. type: Plain text
 #: 220.es.adoc:63
 msgid "Esta función le permite convertir múltiples espacios en blanco en un único espacio en blanco."
-msgstr ""
+msgstr "Cette fonction vous permet de convertir plusieurs espaces blancs en un seul espace blanc."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 220.es.adoc:65 220.es.adoc:66
 #, no-wrap
 msgid "Figura 19"
-msgstr ""
+msgstr "Figure 19"
 
 #. type: Target for macro image
 #: 220.es.adoc:66
 #, no-wrap
 msgid "img/es.figure-19.jpg"
-msgstr ""
+msgstr "img/es.figure-19.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:69
 msgid "Una vez que haya removido los espacios en blanco extra, en la faceta sólo verá un valor para “Buenos Aires”, con un número de registros que es la suma de los valores anteriores. Tenga en cuenta que si había otros valores con el mismo problema de dobles espacios entre palabras en esta misma columna, la modificación se aplicará a todos ellos, y no sólo a “Buenos Aires”. Puede comprobar cuántos valores se han modificado comparando el número de valores disponibles en la faceta antes y después de la transformación."
-msgstr ""
+msgstr "Une fois que vous avez supprimé les espaces blancs supplémentaires, vous ne verrez qu'une seule valeur pour \"Buenos Aires\" dans la facette, avec un nombre d'enregistrements correspondant à la somme des valeurs précédentes. Tenez compte du fait que s'il y avait d'autres valeurs avec le même problème de doubles espaces entre les mots dans cette même colonne, la modification s'appliquera à toutes ces valeurs, et pas seulement à \"Buenos Aires\". Vous pouvez vérifier combien de valeurs ont été modifiées en comparant le nombre de valeurs disponibles dans la facette avant et après la transformation."
 
 #. type: Title =====
 #: 220.es.adoc:70
 #, no-wrap
 msgid "Espacios en blanco extra en todo el conjunto de datos"
-msgstr ""
+msgstr "Espaces blancs supplémentaires dans l'ensemble du jeu de données"
 
 #. type: Plain text
 #: 220.es.adoc:74
 msgid "Habiendo visto cómo eliminar espacios en blanco extra, al principio, final o en medio de una cadena de texto, en campos determinados, existe una manera de realizar todas estas acciones al mismo tiempo sobre todos los campos de conjunto de datos.  Para ello, se debe ir a la columna “Todo”, hacer click sobre \"la &#9660; azul > Transformar."
-msgstr ""
+msgstr "Après avoir vu comment supprimer les espaces blancs supplémentaires, au début, à la fin ou au milieu d'une chaîne de texte, dans des champs donnés, il existe un moyen d'effectuer toutes ces actions en même temps sur tous les champs du jeu de données. Pour cela, il faut aller dans la colonne \"Tous\", cliquer sur \"la &#9660; bleue > Transformer\"."
 
 #. type: Plain text
 #: 220.es.adoc:76
 msgid "Se abrirá entonces una ventana, y en el cuadro de texto debe pegarse la siguiente expresión:"
-msgstr ""
+msgstr "Une fenêtre s'ouvrira alors et l'expression suivante devra être collée dans la zone de texte :"
 
 #. type: delimited block -
 #: 220.es.adoc:79
 #, no-wrap
 msgid "value.trim().replace(/\\s+/,' ') \n"
-msgstr ""
+msgstr "value.trim().replace(/\\s+/,' ')\n"
 
 #. type: Plain text
 #: 220.es.adoc:82
 msgid "Al hacer click en “Aceptar” se eliminarán los espacios en blanco extra en todo el conjunto de datos. Los cambios serán registrados columna a columna en el historial de cambios (ver más abajo sección <<sect-2.5,Deshacer y rehacer cambios>>)."
-msgstr ""
+msgstr "Cliquer sur \"OK\" supprimera tout espace blanc supplémentaire dans l'ensemble du jeu de données. Les modifications seront enregistrées colonne par colonne dans le journal des modifications (voir ci-dessous la section <<sect-2.5,Annuler et rétablir les modifications>>)."
 
 #. type: Title ====
 #: 220.es.adoc:84
 #, no-wrap
 msgid "Inclusión y exclusión de registros usando facetas"
-msgstr ""
+msgstr "Inclusion et exclusion d'enregistrements à l'aide de facettes"
 
 #. type: Title =====
 #: 220.es.adoc:86
 #, no-wrap
 msgid "Inclusión de registros con valores determinados para un campo dado"
-msgstr ""
+msgstr "Inclure des enregistrements avec des valeurs données pour un champ donné"
 
 #. type: Plain text
 #: 220.es.adoc:91
 msgid "Las facetas pueden utilizarse para trabajar sobre registros con uno o más valores de interés en un campo en cuestión.  Para trabajar sobre un ejemplo, arme una faceta de texto sobre el campo [source]`\"phylum\"` (click sobre \"la &#9660; azul > Facetas > Faceta de texto\"). Verá que la faceta tiene varios valores.  Para seleccionar solo los registros que tienen como phylum, por ejemplo, “Lycopodiophyta”, debe hacer click sobre el valor mismo dentro de la faceta o sobre la opción “include” que se muestra a su derecha (<<img-fig-20,Figura 20a>>)."
-msgstr ""
+msgstr "Les facettes peuvent être utilisées pour travailler sur des enregistrements avec une ou plusieurs valeurs d'intérêt dans un champ donné. Pour travailler sur un exemple, construisez une facette textuelle sur le champ [source]`\"phylum\"` (cliquez sur \"la &#9660; bleue > Facettes > Facette textuelle\"). Vous verrez que la facette a plusieurs valeurs. Pour sélectionner uniquement les enregistrements qui ont, par exemple, \"Lycopodiophyta\" comme phylum, vous devez cliquer sur la valeur elle-même dans la facette ou sur l'option \"inclure\" affichée à droite (<<img-fig-20, Figure 20a> >)."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 220.es.adoc:93 220.es.adoc:94
 #, no-wrap
 msgid "Figura 20"
-msgstr ""
+msgstr "Figure 20"
 
 #. type: Target for macro image
 #: 220.es.adoc:94
 #, no-wrap
 msgid "img/es.figure-20.jpg"
-msgstr ""
+msgstr "img/es.figure-20.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:97
 msgid "Al seleccionar un valor dentro de una faceta, cualquier acción que tome a continuación sólo será aplicada a los registros incluidos bajo esa selección."
-msgstr ""
+msgstr "Lorsque vous sélectionnez une valeur dans une facette, toute action que vous entreprenez par la suite ne sera appliquée qu'aux enregistrements inclus sous cette sélection."
 
 #. type: Plain text
 #: 220.es.adoc:99
 msgid "Puede seleccionar tantos valores como desee dentro de una faceta, utilizando “include” sucesivamente sobre cada uno de ellos."
-msgstr ""
+msgstr "Vous pouvez sélectionner autant de valeurs que vous le souhaitez au sein d'une facette, en utilisant successivement « inclure » sur chacune d'entre elles."
 
 #. type: Title =====
 #: 220.es.adoc:100
 #, no-wrap
 msgid "Exclusión de registros con valores determinados para un campo dado"
-msgstr ""
+msgstr "Exclure des enregistrements avec des valeurs données pour un champ donné"
 
 #. type: Plain text
 #: 220.es.adoc:103
 msgid "Para deseleccionar registros previamente seleccionados a través de una faceta, simplemente haga click sobre el valor nuevamente, o sobre la opción “exclude” que se muestra a su derecha (<<img-fig-20,Figura 20b>>). Puede deseleccionar tantos valores como desee utilizando “exclude” sucesivamente sobre cada uno de ellos."
-msgstr ""
+msgstr "Pour désélectionner les enregistrements précédemment sélectionnés via une facette, il suffit de cliquer à nouveau sur la valeur, ou sur l'option \"exclure\" affichée à sa droite (<<img-fig-20, Figure 20b>>). Vous pouvez désélectionner autant de valeurs que vous le souhaitez en utilisant « exclure » successivement sur chacune d'elles."
 
 #. type: Plain text
 #: 220.es.adoc:105
 msgid "En ocasiones las facetas pueden contener muchos valores de interés diferentes sobre los que quisiéramos trabajar. En estos casos, puede ser muy engorroso seleccionar todos los valores de interés uno a uno. En cambio, se puede utilizar la función “invertir” selección. Para aplicar esta función, deben seleccionarse los valores que _no_ son de interés. Una vez seleccionados, en la parte superior de la faceta aparece la opción “invertir” (<<img-fig-20,Figura 20b>>). Haciendo click el programa nos brindará la selección inversa, incluyendo entonces los valores que _sí_ nos interesan."
-msgstr ""
+msgstr "Parfois, les facettes peuvent contenir de nombreuses valeurs d'intérêt différentes sur lesquelles nous aimerions travailler. Dans ces cas, il peut être très fastidieux de sélectionner toutes les valeurs d'intérêt une par une. Au lieu de cela, vous pouvez utiliser la fonction de sélection \"inverser\". Pour appliquer cette fonction, les valeurs qui ne sont _pas_ d'intérêt doivent être sélectionnées. Une fois sélectionnées, l'option « inverser » apparaît en haut de la facette (<<img-fig-20, Figure 20b>>). En cliquant sur cette option, le programme nous fournira la sélection inverse, incluant donc les valeurs qui nous intéressent."
 
 #. type: Plain text
 #: 220.es.adoc:107
 msgid "Por ejemplo, para el campo [source]`\"phylum\"` del ejemplo anterior, nos interesan todos los valores menos “Pinophyta”. Seleccionamos entonces “Pinophyta” haciendo click en “include” para este valor. Luego hacemos click en “invertir”, y como resultado habremos seleccionado todos los registros salvo aquellos que tienen el valor “Pinophyta” (<<img-fig-20,Figura 20c>>)."
-msgstr ""
+msgstr "Par exemple, pour le champ [source]`\"phylum\"` de l'exemple précédent, nous nous intéressons à toutes les valeurs sauf \"Pinophyta\". Nous sélectionnons alors « Pinophyta » en cliquant sur « inclure » pour cette valeur. Ensuite nous cliquons sur « inverser », résultant dans la sélection de tous les enregistrements sauf ceux qui ont la valeur « Pinophyta » (<<img-fig-20, Figure 20c>>)."
 
 #. type: Plain text
 #: 220.es.adoc:109
 msgid "Para revertir la inversión puede hacerse click en “invertir” nuevamente, volviendo entonces a los valores seleccionados inicialmente."
-msgstr ""
+msgstr "Pour annuler l'inversement, vous pouvez cliquer à nouveau sur \"inverser\", permettant de revenir aux valeurs initialement sélectionnées."
 
 #. type: Title =====
 #: 220.es.adoc:110
 #, no-wrap
 msgid "Selección de registros sin valores para un campo dado"
-msgstr ""
+msgstr "Sélection d'enregistrements sans valeurs pour un champ donné"
 
 #. type: Plain text
 #: 220.es.adoc:114
 msgid "En muchas ocasiones resulta muy útil poder identificar los registros que tienen un campo de interés vacío, sin valores. Utilizando facetas se pueden reconocer esos registros fácilmente, pues figuran dentro de la faceta con valor “(blank)” (ver por ejemplo este valor en la faceta compuesta para el apartado anterior, sobre el campo [source]`\"phylum\"`, <<img-fig-20,Figura 20>>) .  El valor “(blank)” se puede tratar como cualquier otro dentro de la faceta, es decir, se puede incluir, excluir, y editar, facilitando la evaluación y el mejoramiento de los registros."
-msgstr ""
+msgstr "Dans de nombreuses occasions, il est très utile de pouvoir identifier les enregistrements qui ont un champ d'intérêt vide, sans valeurs. Grâce aux facettes, ces enregistrements peuvent être facilement reconnus, puisqu'ils apparaissent dans la facette avec la valeur « (blank) » (voir par exemple cette valeur dans la facette composite de la section précédente, sur le champ [source]`\"phylum \"`, < <img-fig-20,Figure 20>>) . La valeur « (blank) » peut être traitée comme n'importe quelle autre dans la facette, c'est-à-dire qu'elle peut être incluse, exclue et modifiée, ce qui facilite l'évaluation et l'amélioration des enregistrements."
 
 #. type: Title ====
 #: 220.es.adoc:116
 #, no-wrap
 msgid "Facetas numéricas"
-msgstr ""
+msgstr "Facettes numériques"
 
 #. type: Plain text
 #: 220.es.adoc:119
 msgid "Las facetas también pueden aplicarse a campos numéricos, y en ese caso son muy útiles para, por ejemplo, detectar valores fuera de rangos de interés."
-msgstr ""
+msgstr "Les facettes peuvent également être appliquées à des champs numériques, et dans ce cas, elles sont par exemple très utiles pour détecter des valeurs en dehors des plages d'intérêt."
 
 #. type: Plain text
 #: 220.es.adoc:121
 msgid "A modo de ejemplo, armaremos una faceta numérica sobre el campo [source]`\"day\"` que hemos creado más arriba. Para ello, hacer click en menu:la{sp}&#9660;{sp}azul[] del campo y seguir la ruta:"
-msgstr ""
+msgstr "Par exemple, nous allons créer une facette numérique sur le champ [source]`\"day\"` que nous avons créé précédemment. Pour cela, cliquez sur menu:la{sp}&#9660;{sp}bleue[] du champ et suivez le chemin :"
 
 #. type: Plain text
 #: 220.es.adoc:124
 msgid "\"Facetas > Faceta numérica\""
-msgstr ""
+msgstr "\"Facettes > Facette numérique\""
 
 #. type: Plain text
 #: 220.es.adoc:127
 msgid "Verá entonces una nueva ventana, la faceta, como se muestra en la <<img-fig-21,Figura 21>>."
-msgstr ""
+msgstr "Vous verrez alors une nouvelle fenêtre, la facette, comme illustré à la <<img-fig-21, Figure 21>>."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 220.es.adoc:129 220.es.adoc:130
 #, no-wrap
 msgid "Figura 21"
-msgstr ""
+msgstr "Figure 21"
 
 #. type: Target for macro image
 #: 220.es.adoc:130
 #, no-wrap
 msgid "img/es.figure-21.jpg"
-msgstr ""
+msgstr "img/es.figure-21.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:133
 msgid "Allí se puede ver que el rango de días abarca desde 1 a 35 inclusive. Es decir, algunos números están fuera de rango, puesto que como máximo puede haber hasta día 31 en algunos meses."
-msgstr ""
+msgstr "Ici, vous pouvez voir que la plage de jours va de 1 à 35 inclus. En d'autres termes, certains chiffres sont en dehors de la plage, puisqu'il peut y avoir au plus jusqu'à 31 jours dans certains mois."
 
 #. type: Plain text
 #: 220.es.adoc:135
 msgid "Se pueden seleccionar los registros con los valores superiores desplazando el botón a la izquierda del rango hacia la derecha. Ello incluirá en la tabla los registros por encima del rango seleccionado y, si no desmarca la opción “Blank”, también los blancos, como se muestra en la <<img-fig-22,Figura 22>> (en el ejemplo, tres filas en total: un caso con día 32, un caso con día 35 y un caso con día vacío). Si hubiera valores en el campo que no son numéricos, también podría verlos utilizando esta faceta."
-msgstr ""
+msgstr "Les enregistrements avec les valeurs les plus élevées peuvent être sélectionnés en déplaçant le bouton à la gauche de la plage vers la droite. Cela inclura dans le tableau les enregistrements au-dessus de la plage sélectionnée et, si vous ne décochez pas l'option \"Blank\", également les enregistrements vides, comme indiqué dans la <<img-fig-22, Figure 22>> (dans l'exemple, trois rangées au total : un cas avec le jour 32, un cas avec le jour 35 et un cas avec le jour vide). S'il y avait des valeurs non numériques dans le champ, vous pourriez également les afficher à l'aide de cette facette."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 220.es.adoc:137 220.es.adoc:138
 #, no-wrap
 msgid "Figura 22"
-msgstr ""
+msgstr "Figure 22"
 
 #. type: Target for macro image
 #: 220.es.adoc:138
 #, no-wrap
 msgid "img/es.figure-22.jpg"
-msgstr ""
+msgstr "img/es.figure-22.jpg"
 
 #. type: Plain text
 #: 220.es.adoc:141
 msgid "Los tres errores encontrados deben ser consultados con la información original de los ejemplares en la colección, y los campos de fecha estrictamente deberían quedar vacíos para estos registros. Una opción es marcar estos registros para revisar más adelante, usando estrellas o banderas (ver sección sobre <<#Banderas-y-estrellas, uso de estrellas y banderas>>)."
-msgstr ""
+msgstr "Les trois erreurs trouvées doivent être comparées avec les informations originales des spécimens de la collection, et les champs de date doivent être strictement laissés vides pour ces enregistrements. Une option consiste à marquer ces enregistrements pour une révision ultérieure, à l'aide d'étoiles ou de drapeaux (voir la section <<#Drapeaux-et-étoiles, utilisation d'étoiles et de drapeaux>>)."
 
 #. type: Plain text
 #: 220.es.adoc:143
@@ -3838,7 +3846,8 @@ msgid "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValT
 msgstr ""
 
 #. type: Plain text
-#: 500.es.adoc:147 500.es.adoc:192 500.es.adoc:222 500.es.adoc:269 500.es.adoc:322
+#: 500.es.adoc:147 500.es.adoc:192 500.es.adoc:222 500.es.adoc:269
+#: 500.es.adoc:322
 #, no-wrap
 msgid "*Requerimientos:*\n"
 msgstr ""
@@ -3854,7 +3863,8 @@ msgid "Si también desea validar la taxonomía superior de su conjunto de datos 
 msgstr ""
 
 #. type: Plain text
-#: 500.es.adoc:153 500.es.adoc:203 500.es.adoc:229 500.es.adoc:276 500.es.adoc:326
+#: 500.es.adoc:153 500.es.adoc:203 500.es.adoc:229 500.es.adoc:276
+#: 500.es.adoc:326
 #, no-wrap
 msgid "*Funcionamiento:*\n"
 msgstr ""
