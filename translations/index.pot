@@ -23,14 +23,7 @@ msgid "Guía para la limpieza de datos sobre biodiversidad con OpenRefine"
 msgstr ""
 
 #. type: Plain text
-#: index.es.adoc:3
-msgid ""
-"Paula F. Zermoglio; Camila A. Plata Corredor; John R. Wieczorek; Ricardo "
-"Ortiz Gallego; Leonardo Buitrago"
-msgstr ""
-
-#. type: Plain text
-#: index.es.adoc:21
+#: index.es.adoc:26
 msgid "languageLinks:combined[]"
 msgstr ""
 
@@ -1197,7 +1190,7 @@ msgstr ""
 #. type: Plain text
 #: 200.es.adoc:240
 msgid ""
-"Lo que dicha expresión significa es: concatenar ([source]`+`) dos partes, "
+"Lo que dicha expresión significa es: concatenar ([source]`\\+`) dos partes, "
 "cada una proviene de una sub-expresión [source]`if`, separadas por un "
 "espacio ([source]`+ \" \" +`). Cada una de estas sub-expresiones indica: si "
 "([source]`if`) el valor del campo dado es nulo "

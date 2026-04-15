@@ -1,5 +1,10 @@
 = Guía para la limpieza de datos sobre biodiversidad con OpenRefine
-Paula F. Zermoglio; Camila A. Plata Corredor; John R. Wieczorek; Ricardo Ortiz Gallego; Leonardo Buitrago
+:authorcount: 5
+:author_1: Paula F. Zermoglio
+:author_2: Camila A. Plata Corredor
+:author_3: John R. Wieczorek
+:author_4: Ricardo Ortiz Gallego
+:author_5: Leonardo Buitrago
 :toc: left
 :numbered:
 :revnumber: {git-metadata-branch}
