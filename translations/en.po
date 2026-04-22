@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openrefine-guide\n"
 "POT-Creation-Date: 2026-04-15 13:19+0000\n"
-"PO-Revision-Date: 2026-04-15 13:24\n"
+"PO-Revision-Date: 2026-04-20 14:51\n"
 "Last-Translator: \n"
 "Language-Team: English\n"
 "Language: en_US\n"
@@ -3851,12 +3851,12 @@ msgstr "*Requirements*\n"
 #. type: Plain text
 #: 500.es.adoc:149
 msgid "El conjunto de datos a validar debe tener como mínimo los elementos DwC [source]`\"scientificName\"` y [source]`\"kingdom'\"` documentados."
-msgstr ""
+msgstr "The dataset to be validated must have at least the elements DwC [source]'\"scientificName\"' and [source]'\"kingdom'\"' documented."
 
 #. type: Plain text
 #: 500.es.adoc:151 500.es.adoc:196 500.es.adoc:226
 msgid "Si también desea validar la taxonomía superior de su conjunto de datos se requieren los elementos DwC: [source]`\"scientificName\"`, [source]`\"kingdom\"`,[source]`\"phylum\"`,[source]`\"class\"`,[source]`\"order\"`,[source]`\"family\"`, y [source]`\"genus\"`."
-msgstr ""
+msgstr "If you also want to validate the top taxonomy of your dataset you require the DwC elements: [source]`\"scientificName\"`, [source]`\"kingdom\"`,[source]`\"phylum\"`,[source]`\"class\"`,[source]`\"order\"`,[source]`\"family\"`, and [source]`\"genus\"`."
 
 #. type: Plain text
 #: 500.es.adoc:153 500.es.adoc:203 500.es.adoc:229 500.es.adoc:276
@@ -3868,7 +3868,7 @@ msgstr "*Operation*\n"
 #. type: Plain text
 #: 500.es.adoc:155
 msgid "Esta rutina valida la información taxonómica de un conjunto de datos usando como referencia el árbol taxonómico de GBIF, esto se hace a través de un llamado al API de GBIF basado en los elementos del estándar Darwin Core [source]`\"scientificName\"` y [source]`\"kingdom\"` documentados en el conjunto de datos. Como resultado, el llamado retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de GBIF. La rutina toma los valores obtenidos del árbol y los compara con los elementos documentados en el archivo base, generando los indicadores de validación."
-msgstr ""
+msgstr "This routine validates the taxonomic information of a dataset using as reference the GBIF taxonomic tree, this is done through a call to the GBIF API based on the Darwin Core standard elements [source]`\"scientificName\"` and [source]`\"kingdom\"` documented in the dataset. As a result, the call returns the top taxonomy, accepted names, taxonomic status and authorship of the scientific name according to the GBIF taxonomic tree. The routine takes the values obtained from the tree and compares them with the elements documented in the base file, generating the validation indicators."
 
 #. type: Plain text
 #: 500.es.adoc:157 500.es.adoc:211 500.es.adoc:235 500.es.adoc:292
@@ -3879,7 +3879,7 @@ msgstr "*Results:*\n"
 #. type: Plain text
 #: 500.es.adoc:159
 msgid "En las primeras columnas del proyecto encontrará las columnas con los datos taxonómicos reorganizadas junto con nuevas columnas resultantes de la rutina. Primero encontrará las columnas asociadas al cruce con el árbol taxonómico y luego de manera intercalada columnas con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la <<img-fig-63,Figura 63>>."
-msgstr ""
+msgstr "In the first columns of the project you will find the columns with the taxonomic data reorganized along with new columns resulting from the routine. First you will find the columns associated with the crossing with the taxonomic tree and then interspersed columns with the original taxonomic value, a suggested value according to the GBIF taxonomic tree and the validation indicator indicating whether the values are equal (1) or differ (0) as shown in the <<img-fig-63,Figura 63>>."
 
 #. type: Positional ($1) AttributeList argument for macro 'image'
 #: 500.es.adoc:161 500.es.adoc:162
@@ -3896,104 +3896,104 @@ msgstr "img/es.figure-63.jpg"
 #. type: Plain text
 #: 500.es.adoc:165 500.es.adoc:334
 msgid "A continuación se listan las columnas que encontrará después de ejecutar la rutina:"
-msgstr ""
+msgstr "The following are the columns you'll encounter after running the routine:"
 
 #. type: Plain text
 #: 500.es.adoc:167
 msgid "`taxonMatchType`: Indica el resultado del cruce de los datos originales con el árbol taxonómico de GBIF a partir de los elementos [source]`\"scientificName\"` y [source]`\"kingdom\"`. Los valores que encontrará en esta columna son:"
-msgstr ""
+msgstr "'Taxon Match Type': Indicates the result of cross-referencing the original data with the GBIF taxonomic tree from the [source]'\"scientific Name\"' and [source]'\"kingdom\"' elements. The values you will find in this column are:"
 
 #. type: Plain text
 #: 500.es.adoc:169
 msgid "EXACT: La correspondencia entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico es completa."
-msgstr ""
+msgstr "EXACT: The correspondence between the [source]'\"scientific Name\"' of the dataset and the taxonomic tree is complete."
 
 #. type: Plain text
 #: 500.es.adoc:170
 msgid "FUZZY: La correspondencia entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico es parcial, el nombre difiere en su escritura. Comúnmente indica errores de tipeo o diferencias por correcciones nomenclaturales (ejem: la terminación `i` vs. `ii` cuando la especie se dedica a una persona)."
-msgstr ""
+msgstr "FUZZY: The correspondence between the [source]`\"scientificName\"` of the dataset and the taxonomic tree is partial, the name differs in its spelling. Commonly indicates typing errors or differences due to nomenclatural corrections (e.g., the ending `i` vs. `ii` when the species is dedicated to a person)."
 
 #. type: Plain text
 #: 500.es.adoc:171
 msgid "HIGHERRANK: La correspondencia entre el nombre científico del conjunto de datos y el árbol taxonómico fue parcial. No se identificó el taxon a nivel taxonómico de [source]`\"scientificName\"` si no a un nivel superior. Por ejemplo si el [source]`\"scientificName\"` corresponde a una especie, la correspondencia con el árbol taxonómico de GBIF fue a nivel de género. Esto sucede porque el taxon aún no está en el árbol taxonómico de GBIF o por errores de tipeo mayores."
-msgstr ""
+msgstr "HIGHERRANK: The correspondence between the scientific name of the dataset and the taxonomic tree was partial. The taxon was not identified at the taxonomic level of [source]`\"scientificName\"` but at a higher level. For example, if the [source]`\"scientificName\"` corresponds to a species, the correspondence with the GBIF taxonomic tree was at the genus level. This happens because the taxon is not yet in the GBIF taxonomic tree or because of major typing errors."
 
 #. type: Plain text
 #: 500.es.adoc:172
 msgid "NONE y BLANK: La correspondencia entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico fue *nula* o *hubo varias coincidencias* con muy poca información para determinar un resultado, esto sucede comunmente cuando hay homónimos o si el taxon aún no se encuentra en el árbol taxonómico de GBIF, como es el caso de especies recientemente descritas o algunas endémicas."
-msgstr ""
+msgstr "NONE and BLANK: The correspondence between the [source]`\"scientificName\"` of the dataset and the taxonomic tree was *null* or *there were several matches* with too little information to determine a result, this commonly happens when there are homonyms or if the taxon is not yet found in the GBIF taxonomic tree, as is the case of recently described species or some endemics."
 
 #. type: Plain text
 #: 500.es.adoc:174
 msgid "[source]`\"scientificName\"`: Columna original del conjunto de datos."
-msgstr ""
+msgstr "[source]`\"scientific Name\"`: Original column of the dataset."
 
 #. type: Plain text
 #: 500.es.adoc:175
 msgid "`\"acceptedScientificName\"`: Nombre científico aceptado según el árbol taxonómico de GBIF."
-msgstr ""
+msgstr "'\"accepted Scientific Name\"': Accepted scientific name according to the GBIF taxonomic tree."
 
 #. type: Plain text
 #: 500.es.adoc:176
 msgid "`\"canonicalNameSuggested\"`: Nombre canónico sugerido según el árbol taxonómico de GBIF."
-msgstr ""
+msgstr "'\"canonical Name Suggested\"': Suggested canonical name based on the GBIF taxonomic tree."
 
 #. type: Plain text
 #: 500.es.adoc:177
 msgid "`\"taxonRankSuggested\"`: Categoría del taxon sugerido según el árbol taxonómico de GBIF (e.g.: SPECIES, GENUS, FAMILY)."
-msgstr ""
+msgstr "'\"taxon Rank Suggested\"': Category of the suggested taxon according to the GBIF taxonomic tree (e.g.: SPECIES, GENUS, FAMILY)."
 
 #. type: Plain text
 #: 500.es.adoc:178
 msgid "`\"taxonomicStatusSuggested\"`: Estado del taxon sugerido según el árbol taxonómico de GBIF (e.g.: ACCEPTED, SYNONYM)."
-msgstr ""
+msgstr "'\"taxonomic Status Suggested\"': Status of the suggested taxon according to the GBIF taxonomic tree (e.g.: ACCEPTED, SYNONYM)."
 
 #. type: Plain text
 #: 500.es.adoc:179
 msgid "Tripleta de elementos validados donde se encuentra la columna original del conjunto de datos, la columna de validación y la columna con la sugerencia según el árbol taxonómico, por ejemplo: [source]`\"class\"`,`\"classValidation\"`,`\"classSuggested\"`. Los siguientes elementos de estar documentados en el conjunto de datos original tendrán dicha tripleta: [source]`\"scientificNameAuthorship\"`, [source]`\"kingdom\"`, [source]`\"phylum\"`, [source]`\"class\"`, [source]`\"order\"`, [source]`\"family\"`, [source]`\"genus\"`, [source]`\"specificEpithet\"`"
-msgstr ""
+msgstr "Triplet of validated elements where the original column of the dataset, the validation column and the column with the suggestion according to the taxonomic tree are found, for example: [source]`\"class\"`,`\"classValidation\"`,`\"classSuggested\"`. The following elements if documented in the original dataset will have such a triplet: [source]`\"scientificNameAuthorship\"`, [source]`\"kingdom\"`, [source]`\"phylum\"`, [source]`\"class\"`, [source]`\"order\"`, [source]`\"family\"`, [source]`\"genus\"`, [source]`\"specificEpithet\"`, [source]`\"genus\"`, [source]`\"genus\"`, [source]`\"genus\"`, [source]`\"specificEpithet\"`."
 
 #. type: Plain text
 #: 500.es.adoc:180
 msgid "`callAPI`: Respuesta del API a la rutina, contiene todos los resultados en formato JSON."
-msgstr ""
+msgstr "'callAPI': API response to the routine, contains all results in JSON format."
 
 #. type: Plain text
 #: 500.es.adoc:183
 msgid "El llamado al API permite hacer una consulta sobre un número ilimitado de registros, sin embargo si su conjunto de datos tiene muchas filas se recomienda ejecutar la rutina sobre nombres científicos únicos, lo cual disminuirá el tiempo de respuesta y agilizará la ejecución de la rutina."
-msgstr ""
+msgstr "The API call allows you to query an unlimited number of records, however if your dataset has many rows it is recommended to run the routine on unique scientific names, which will decrease the response time and speed up the execution of the routine."
 
 #. type: Title ===
 #: 500.es.adoc:185
 #, no-wrap
 msgid "Validación taxonómica con Species Matching de GBIF"
-msgstr ""
+msgstr "Taxonomic validation with GBIF Species Matching"
 
 #. type: Plain text
 #: 500.es.adoc:188 500.es.adoc:218 500.es.adoc:265 500.es.adoc:318
 #, no-wrap
 msgid "*Enlace a la rutina:*\n"
-msgstr ""
+msgstr "*Link to routine:*\n"
 
 #. type: Plain text
 #: 500.es.adoc:190
 msgid "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicSpeciesMatchGBIF_ValTaxonomicaSpeciesMatchGBIF.txt"
-msgstr ""
+msgstr "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicSpeciesMatchGBIF_ValTaxonomicaSpeciesMatchGBIF.txt"
 
 #. type: Plain text
 #: 500.es.adoc:194 500.es.adoc:224
 msgid "El conjunto de datos a validar debe tener como mínimo el elemento DwC [source]`\"scientificName\"` documentado."
-msgstr ""
+msgstr "The dataset to be validated must have at least the DwC [source]'\"scientific Name\"' element documented."
 
 #. type: Plain text
 #: 500.es.adoc:198
 msgid "Archivo titulado _normalized_, obtenido de la herramienta link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] tras validar los datos originales, y cargado en OpenRefine, el título del proyecto debe ser exactamente *_normalized_*."
-msgstr ""
+msgstr "File titled _normalized_, obtained from the tool link:https://www.gbif.org/es/tools/species-lookup[_Species Matching_] after validating the original data, and loaded in Open Refine, the project title must be exactly *_normalized_*."
 
 #. type: Plain text
 #: 500.es.adoc:200
 msgid "El archivo _normalized_ debe ser el único proyecto en OpenRefine titulado de esta manera. Cambie el nombre de cualquier otro archivo _normalized_ cargado previamente, de lo contrario la rutina no podrá identificar adecuadamente el archivo de referencia."
-msgstr ""
+msgstr "The _normalized_ file must be the only project in Open Refine titled in this way. Rename any other _normalized_ file previously loaded, otherwise the routine will not be able to properly identify the reference file."
 
 #. type: Plain text
 #: 500.es.adoc:205
@@ -4003,108 +4003,108 @@ msgstr "The routine obtains and validates the taxonomic information from a datas
 #. type: Plain text
 #: 500.es.adoc:207
 msgid "Al usar _Species Matching_ como fuente de referencia, el usuario puede realizar una validación y limpieza previa a OpenRefine directamente en _Species Matching_, la cual es especialmente útil para verificar y resolver sinonimias complejas, como es el caso de los homónimos."
-msgstr ""
+msgstr "By using _Species Matching_ as a reference source, the user can perform pre-Open Refine validation and cleanup directly in _Species Matching_, which is especially useful for verifying and resolving complex synonyms, such as homonyms."
 
 #. type: Plain text
 #: 500.es.adoc:209
 msgid "A diferencia del API de GBIF, _Species Matching_ tiene un límite de consulta de 6.000 registros o nombres científicos. Para evitar exceder el límite de consulta, se recomienda hacer la consulta en _Species Matching_ por nombres científicos únicos."
-msgstr ""
+msgstr "Unlike the GBIF API, _Species Matching_ has a query limit of 6,000 records or scientific names. To avoid exceeding the query limit, it is recommended to query _Species Matching_ by unique scientific names."
 
 #. type: Plain text
 #: 500.es.adoc:213
 msgid "Como en la rutina anterior, en las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico de GBIF y el indicador de validación indicando si los valores son iguales (1) o difieren (0) como se muestra en la <<img-fig-63,Figura 63>>. Obtendrá las mismas columnas que en la rutina anterior menos la columna `\"callAPI\"`."
-msgstr ""
+msgstr "As in the previous routine, in the first columns of the project you will find interleaved a column with the original taxonomic value, a suggested value according to the GBIF taxonomic tree, and the validation indicator indicating whether the values are the same (1) or differ (0) as shown in the <<img-fig-63,Figura 63>>. You'll get the same columns as in the previous routine minus the 'callAPI'' column."
 
 #. type: Title ===
 #: 500.es.adoc:215
 #, no-wrap
 msgid "Validación taxonómica con el API de WoRMS"
-msgstr ""
+msgstr "Taxonomic validation with the GBIF API"
 
 #. type: Plain text
 #: 500.es.adoc:220
 msgid "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt"
-msgstr ""
+msgstr "https://github.com/SIB-Colombia/data-quality-open-refine/blob/master/ValTaxonomicAPIWoRMS_ValTaxonomicaAPIWoRMS.txt"
 
 #. type: Plain text
 #: 500.es.adoc:231
 msgid "Esta rutina está diseñada para ser implementada en conjuntos de datos de grupos biológicos marinos, emplea como fuente de referencia los taxones marinos del link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[árbol taxonómico de LifeWatch (LW-SIBb)] a través de un llamado al API de link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. La rutina retorna la taxonomía superior, nombres aceptados, estatus taxonómico y autoría del nombre científico de acuerdo al árbol taxonómico de LifeWatch y los compara con los elementos documentados en el archivo base, generando los indicadores de validación."
-msgstr ""
+msgstr "This routine is designed to be implemented in datasets of marine biological groups, using as a reference source the marine taxa of the link:https://www.lifewatch.be/en/lifewatch-species-information-backbone[LifeWatch taxonomic tree (LW-SIBb)] through a call to the API link:http://www.marinespecies.org/aphia.php?p=webservice[WoRMS (_World Register of Marine Species_)]. The routine returns the higher taxonomy, accepted names, taxonomic status and authorship of the scientific name according to the LifeWatch taxonomic tree and compares them with the elements documented in the base file, generating the validation indicators."
 
 #. type: Plain text
 #: 500.es.adoc:233
 msgid "Adicionalmente a los elementos taxonómicos, esta rutina retorna otros elementos útiles que dan información sobre el tipo de hábitat del taxon y el LSID de WoRMS o AphiaID, elemento requerido para la publicación de datos a través de link:https://obis.org/[OBIS (Ocean Biodiversity Information System)]."
-msgstr ""
+msgstr "In addition to the taxonomic elements, this routine returns other useful elements that provide information on the habitat type of the taxon and the LSID of Worms or Afraid, which is required for the publication of data through link:https://obis.org/ [OBIS (Ocean Biodiversity Information System)]."
 
 #. type: Plain text
 #: 500.es.adoc:237
 msgid "En las primeras columnas del proyecto encontrará de manera intercalada una columna con el valor taxonómico original, un valor sugerido de acuerdo al árbol taxonómico y el indicador de validación indicando si los valores son iguales (1) o difieren como se muestra en la las rutinas previas (<<img-fig-63,Figura 63>>)."
-msgstr ""
+msgstr "In the first columns of the project you will find interspersed a column with the original taxonomic value, a suggested value according to the taxonomic tree and the validation indicator indicating whether the values are equal (1) or differ as shown in the previous routines (<<img-fig-63,Figura 63>>)."
 
 #. type: Plain text
 #: 500.es.adoc:239
 msgid "A continuación se listan las columnas que encontrará despues de ejecutar la rutina, adicionales a las ya mencionadas en las rutinas previas de validación taxonómica (<<img-fig-64,Figura 64>>):"
-msgstr ""
+msgstr "Listed below are the columns that you will find after executing the routine, in addition to those already mentioned in the previous taxonomic validation routines (<<img-fig-64,Figura 64>>):"
 
 #. type: Plain text
 #: 500.es.adoc:241
 msgid "[source]`\"matchType\"`: Indica el resultado del cruce de los datos originales con el árbol taxonómico de WoRMS a partir del elemento [source]`\"scientificName\"`. Los valores que encontrará en esta columna son:"
-msgstr ""
+msgstr "[source]`\"match Type\"`: Indicates the result of crossing the original data with the Worms taxonomic tree from the [source]`\"scientific Name\"` element. The values you will find in this column are:"
 
 #. type: Plain text
 #: 500.es.adoc:243
 msgid "`\"exact\"`: La correspondencia entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico es completa."
-msgstr ""
+msgstr "''exact\"': The correspondence between the [source]'\"scientific Name\"' of the dataset and the taxonomic tree is complete."
 
 #. type: Plain text
 #: 500.es.adoc:244
 msgid "`\"phonetic\"`: La correspondencia entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico es completa a nivel fonético a pesar de algunas diferencias menores en la escritura."
-msgstr ""
+msgstr "Phonetic\"`: The correspondence between the [source]`\"scientificName\"` of the dataset and the taxonomic tree is complete at the phonetic level despite some minor differences in spelling."
 
 #. type: Plain text
 #: 500.es.adoc:245
 msgid "`\"near_1\"`: Hay una diferencia de un carácter entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico. Es una correspondencia bastante confiable."
-msgstr ""
+msgstr "`\"near_1\"`: There is a one character difference between the [source]`\"scientificName\"` of the dataset and the taxonomic tree. This is a fairly reliable match."
 
 #. type: Plain text
 #: 500.es.adoc:246
 msgid "`\"near_2\"`: Hay una diferencia de dos caracteres entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico. Se sugiere una revisión del nombre."
-msgstr ""
+msgstr "`\"near_2\"`: There is a two-character difference between the [source]`\"scientificName\"` of the dataset and the taxonomic tree. A revision of the name is suggested."
 
 #. type: Plain text
 #: 500.es.adoc:247
 msgid "`\"near_3\"`: Hay una diferencia de tres caracteres entre el [source]`\"scientificName\"` del conjunto de datos y el árbol taxonómico. Se requiere una revisión del nombre."
-msgstr ""
+msgstr "`\"near_3\"`: There is a three-character difference between the [source]`\"scientificName\"` of the dataset and the taxonomic tree. A revision of the name is required."
 
 #. type: Plain text
 #: 500.es.adoc:248
 msgid "Para otras posibilidades poco frecuentes como`\"match_quarantine\"` y`\"match_deleted\"`, WoRMS recomienda contactarlos directamente."
-msgstr ""
+msgstr "For other rare possibilities such as`\"match_quarantine\"` and`\"match_deleted\"`, WoRMS recommends contacting them directly."
 
 #. type: Plain text
 #: 500.es.adoc:250
 msgid "[source]`\"scientificNameID\"`: Identificador del taxón construido a partir del AphiaID proveniente del árbol taxonómico de WoRMS."
-msgstr ""
+msgstr "[source]`\"scientificNameID\"`: Taxon identifier constructed from the AphiaID from the WoRMS taxonomic tree."
 
 #. type: Plain text
 #: 500.es.adoc:251
 msgid "[source]`\"nameAccordingTo`: La referencia bibliográfica del nombre científico según WoRMS"
-msgstr ""
+msgstr "[source]`\"nameAccordingTo`: The bibliographic reference of the scientific name according to WoRMS"
 
 #. type: Plain text
 #: 500.es.adoc:252
 msgid "[source]`\"nameAccordingToID`: Identificador de la referencia bibliográfica del nombre científico según WoRMS."
-msgstr ""
+msgstr "[source]`\"nameAccordingToID`: Identifier of the bibliographic reference of the scientific name according to WoRMS."
 
 #. type: Plain text
 #: 500.es.adoc:253
 msgid "[source]`\"isMarine\"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon marino."
-msgstr ""
+msgstr "[source]'\"isMarine\"': A boolean value (TRUE or FALSE) that indicates whether the record corresponds to a marine taxon."
 
 #. type: Plain text
 #: 500.es.adoc:254
 msgid "[source]`\"isBrackish\"`: Valor booleano (TRUE o FALSE) que indica si el registro corresponde a un taxon de aguas salobres."
-msgstr ""
+msgstr "[source]'\"brackish"
 
 #. type: Plain text
 #: 500.es.adoc:255
